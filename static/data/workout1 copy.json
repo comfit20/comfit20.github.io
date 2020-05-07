@@ -1,0 +1,135 @@
+{
+  "startTime": "now",
+  "elements": [{
+      "id": 0,
+      "heading": "Wait for Group Session",
+      "name": "Session will start soon",
+      "duration": 0,
+      "gifpath": "static/movie/waitnextworkout.mp4"
+    },
+    {
+      "id": 1,
+      "heading": "Introduction to workouts",
+      "name": ["Crunches", "Burpees", "Mountain Climber", "Sumo Squat", "Jumping Lunges", "Push Up"],
+      "duration": 10,
+      "gifpath": ""
+    },
+    {
+      "id": 2,
+      "heading": "Get Ready to Warm Up",
+      "name": " Let's go !!!!! ",
+      "duration": 10,
+      "gifpath": "static/movie/getready.mp4"
+    },
+    {
+      "id": 3,
+      "heading": "Warm Up",
+      "name": "Jumping Jacks",
+      "duration": 25,
+      "gifpath": "static/movie/JumpingJack.mp4"
+    },
+
+    {
+      "id": 4,
+      "heading": "Warm Up",
+      "name": "Squat Pulses",
+      "duration": 25,
+      "gifpath": "static/movie/SquatPulses.mp4"
+    },
+    {
+      "id": 5,
+      "heading": "Warm Up",
+      "name": "5 Shoulder Circles & Windmill",
+      "duration": 25,
+      "gifpath": "static/movie/ShouldrCircles.mp4"
+    },
+
+    {
+      "id": 6,
+      "heading": "Workout Time",
+      "name": "Crunches",
+      "duration": 40,
+      "gifpath": "static/movie/Crunches.mp4"
+    },
+    {
+      "id": 7,
+      "heading": "Rest",
+      "name": "Up Next: Burpees",
+      "duration": 10,
+      "gifpath": "static/movie/Rest1.mp4"
+    },
+    {
+      "id": 8,
+      "heading": "Workout Time",
+      "name": "Burpees",
+      "duration": 40,
+      "gifpath": "static/movie/Burpee.mp4"
+    },
+
+    {
+      "id": 9,
+      "heading": "Rest",
+      "name": "Up Next: Mountain Climber",
+      "duration": 10,
+      "gifpath": "static/movie/Rest1.mp4"
+    },
+    {
+      "id": 10,
+      "heading": "Workout Time",
+      "name": "Mountain Climber",
+      "duration": 40,
+      "gifpath": "static/movie/MountainClimber.mp4"
+    },
+    {
+      "id": 11,
+      "heading": "Rest",
+      "name": "Up Next: Sumo Squat",
+      "duration": 10,
+      "gifpath": "static/movie/Rest1.mp4"
+    },
+
+    {
+      "id": 12,
+      "heading": "Workout Time",
+      "name": "Sumo Squat",
+      "duration": 40,
+      "gifpath": "static/movie/SumoSquat.mp4"
+    },
+    {
+      "id": 13,
+      "heading": "Rest",
+      "name": "Up Next: Jumping Lunges",
+      "duration": 10,
+      "gifpath": "static/movie/Rest1.mp4"
+    },
+    {
+      "id": 14,
+      "heading": "Workout Time",
+      "name": "Jumping Lunges",
+      "duration": 40,
+      "gifpath": "static/movie/PlyoLunges.mp4"
+    },
+    {
+      "id": 15,
+      "heading": "Rest",
+      "name": "Up Next: Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/Rest1.mp4"
+    },
+    {
+      "id": 16,
+      "heading": "Workout Time",
+      "name": "Push Up",
+      "duration": 40,
+      "gifpath": "static/movie/PushUp.mp4"
+    },
+
+    {
+      "id": 17,
+      "heading": "Water Break",
+      "name": "Up Next: Crunches",
+      "duration": 45,
+      "gifpath": "static/movie/WaterRefill.mp4"
+    }
+  ]
+}

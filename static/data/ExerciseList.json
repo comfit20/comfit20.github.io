@@ -1,0 +1,170 @@
+{
+  "exercises": [
+
+    {
+      "id": 1,
+      "category": ["legs", "warmup"],
+      "name": "Jumping Jacks",
+      "level": "easy",
+      "gifpath": "static/movie/JumpingJack.mp4"
+    },
+
+    {
+
+      "id": 2,
+      "category": ["legs", "warmup"],
+      "name": "Squat Pulses",
+      "level": "easy",
+      "gifpath": "static/movie/SquatPulses.mp4"
+    },
+    {
+      "id": 3,
+      "category": ["warmup"],
+      "name": "5 Shoulder Circles & Windmill",
+      "level": "easy",
+      "gifpath": "static/movie/ShouldrCircles.mp4"
+    },
+
+    {
+      "id": 4,
+      "category": ["legs"],
+      "name": "Fast Feet & Jump",
+      "level": "middle",
+      "gifpath": "static/movie/FastFeetJump.mp4"
+    },
+
+    {
+      "id": 5,
+      "category": ["legs"],
+      "name": "Inner Sole Tap",
+      "level": "middle",
+      "gifpath": "static/movie/InnerSoleTap.mp4"
+    },
+
+
+    {
+      "id": 6,
+      "category": ["legs"],
+      "name": "Squat and Knee Tap",
+      "level": "easy",
+      "gifpath": "static/movie/SquatKneeTap.mp4"
+    },
+
+
+    {
+      "id": 7,
+      "category": ["legs"],
+      "name": "Frog Squats",
+      "level": "easy",
+      "gifpath": "static/movie/FrogSquat.mp4"
+    },
+
+    {
+      "id": 8,
+      "category": ["legs"],
+      "name": "10 High Knee & 3 Tuck Jumps",
+      "level": "hard",
+      "gifpath": "static/movie/HighKneeTuckJump.mp4"
+    },
+
+    {
+      "id": 9,
+      "category": ["belly"],
+      "name": "Crunches",
+      "level": "easy",
+      "gifpath": "static/movie/Crunches.mp4"
+    },
+    {
+      "id": 10,
+      "category": ["core"],
+      "name": "Burpees",
+      "level": "hard",
+      "gifpath": "static/movie/Burpee.mp4"
+    },
+
+
+    {
+      "id": 11,
+      "category": ["core"],
+      "name": "Mountain Climber",
+      "level": "middle",
+      "gifpath": "static/movie/MountainClimber.mp4"
+    },
+
+
+    {
+      "id": 12,
+      "category": ["legs"],
+      "name": "Sumo Squat",
+      "level": "easy",
+      "gifpath": "static/movie/SumoSquat.mp4"
+    },
+
+    {
+      "id": 13,
+      "category": ["legs"],
+      "name": "Jumping Lunges",
+      "level": "middle",
+      "gifpath": "static/movie/PlyoLunges.mp4"
+    },
+
+    {
+      "id": 14,
+      "category": ["core"],
+      "name": "Push Up",
+      "level": "middle",
+      "gifpath": "static/movie/PushUp.mp4"
+    },
+    {
+      "id": 15,
+      "category": ["legs"],
+      "name": "Fast Feet In & Out",
+      "level": "middle",
+      "gifpath": "static/movie/6FeetInOut.mp4"
+    },
+
+    {
+      "id": 16,
+      "category": ["core"],
+      "name": "Plank",
+      "level": "easy",
+      "gifpath": "static/movie/Plank.mp4"
+    },
+
+
+    {
+      "id": 17,
+      "category": ["legs"],
+      "name": "Squat Walk",
+      "level": "middle",
+      "gifpath": "static/movie/SquatWalk.mp4"
+    },
+
+
+    {
+      "id": 18,
+      "category": ["belly"],
+      "name": "Sit Up",
+      "level": "easy",
+      "gifpath": "static/movie/SitUp.mp4"
+    },
+
+    {
+      "id": 19,
+      "category": ["legs"],
+      "name": "Rope Jump",
+      "level": "easy",
+      "gifpath": "static/movie/RopeJump.mp4"
+    },
+
+    {
+      "id": 20,
+      "category": ["legs"],
+      "name": "Butt Kicker",
+      "level": "easy",
+      "gifpath": "static/movie/ButtKicker.mp4"
+    }
+
+
+  ]
+}

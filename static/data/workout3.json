@@ -1,0 +1,136 @@
+{
+  "startTime": "now",
+  "elements": [{
+      "id": 0,
+      "heading": "Wait for Group Session",
+      "name": "Session will start soon",
+      "duration": 0,
+      "gifpath": "static/movie/waitnextworkout.mp4"
+    },
+    {
+      "id": 1,
+      "heading": "Introduction to workouts",
+      "name": ["Fast Feet & Jump", "Inner Sole Tap", "Squat Knee Tap", "Frog squats", "10 High Knee, 3 Tuck Jump", "Crunches"],
+      "duration": 10,
+      "gifpath": ""
+    },
+    {
+      "id": 2,
+      "heading": "Get Ready to Warm Up",
+      "name": " Let's go !!!!! ",
+      "duration": 10,
+      "gifpath": "static/movie/getready.mp4"
+    },
+    {
+      "id": 3,
+      "heading": "Warm Up",
+      "name": "Jumping Jacks",
+      "duration": 25,
+      "gifpath": "static/movie/JumpingJack.mp4"
+    },
+
+    {
+      "id": 4,
+      "heading": "Warm Up",
+      "name": "Squat Pulses",
+      "duration": 25,
+      "gifpath": "static/movie/SquatPulses.mp4"
+    },
+    {
+      "id": 5,
+      "heading": "Warm Up",
+      "name": "5 Shoulder Circles & Windmill",
+      "duration": 25,
+      "gifpath": "static/movie/ShouldrCircles.mp4"
+    },
+
+
+    {
+      "id": 6,
+      "heading": "Workout Time",
+      "name": "Fast Feet & Jump",
+      "duration": 40,
+      "gifpath": "static/movie/FastFeetJump.mp4"
+    },
+    {
+      "id": 7,
+      "heading": "Rest",
+      "name": "Up Next: Inner Sole Tap",
+      "duration": 10,
+      "gifpath": "static/movie/Rest1.mp4"
+    },
+    {
+      "id": 8,
+      "heading": "Workout Time",
+      "name": "Inner Sole Tap",
+      "duration": 40,
+      "gifpath": "static/movie/InnerSoleTap.mp4"
+    },
+
+    {
+      "id": 9,
+      "heading": "Rest",
+      "name": "Up Next: Squat & Knee Tap",
+      "duration": 10,
+      "gifpath": "static/movie/Rest1.mp4"
+    },
+    {
+      "id": 10,
+      "heading": "Workout Time",
+      "name": "Squat & Knee Tap",
+      "duration": 40,
+      "gifpath": "static/movie/SquatKneeTap.mp4"
+    },
+    {
+      "id": 11,
+      "heading": "Rest",
+      "name": "Up Next: Frog Squats",
+      "duration": 10,
+      "gifpath": "static/movie/Rest1.mp4"
+    },
+
+    {
+      "id": 12,
+      "heading": "Workout Time",
+      "name": "Frog Squats",
+      "duration": 40,
+      "gifpath": "static/movie/FrogSquat.mp4"
+    },
+    {
+      "id": 13,
+      "heading": "Rest",
+      "name": "Up Next: 10 High Knee & 3 Tuck Jumps",
+      "duration": 10,
+      "gifpath": "static/movie/Rest1.mp4"
+    },
+    {
+      "id": 14,
+      "heading": "Workout Time",
+      "name": "10 High Knee & 3 Tuck Jumps",
+      "duration": 40,
+      "gifpath": "static/movie/HighKneeTuckJump.mp4"
+    },
+    {
+      "id": 15,
+      "heading": "Rest",
+      "name": "Up Next: Crunches",
+      "duration": 10,
+      "gifpath": "static/movie/Rest1.mp4"
+    },
+    {
+      "id": 16,
+      "heading": "Workout Time",
+      "name": "Crunches",
+      "duration": 40,
+      "gifpath": "static/movie/Crunches.mp4"
+    },
+
+    {
+      "id": 17,
+      "heading": "Water Break",
+      "name": "Up Next: Fast Feet & Jump",
+      "duration": 45,
+      "gifpath": "static/movie/WaterRefill.mp4"
+    }
+  ]
+}

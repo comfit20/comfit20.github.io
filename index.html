@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>ComFIT</title>
+
+    <link href="static/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <script defer src="./static/js/all.min.js"></script> <!--load all styles -->
+    <link rel="stylesheet" href="./static/css/cover.css">
+
+</head>
+
+<body class="text-center">
+
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column  w-75 ">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h1 class="masthead-brand"><a  href="index.html">ComFIT</a></h1>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="schedule.html">Schedule</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main role="main" class="inner cover">
+        <div class="cover-container">
+            <div class="row">
+                <div class="card-group col-sm-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: #555;">
+                            <h3 class="card-title font-weight-bold">Next Scheduled workout</h3>
+
+                            <div class=" p-3 m-3"><a id="next-0" class="btn btn-primary">Mon, 27 Apr 2020 02:30:00 GMT</a>
+                                <!--                                <a><i class="fa fa-share-square fa_custom fa-2x"></i></a>-->
+                                <!--                                <a id="next-0-share-fb"><i class="fab fa-facebook-square fa-2x"></i></a>-->
+                                <!--                                    <a id="next-0-share-ig"><i class="fab fa-instagram-square fa-2x "></i></a>-->
+                                <!--                                <a id="next-0-share-twitter"><i class="fab fa-twitter-square fa-2x"></i></a>-->
+                                <div>
+                                    <input class="row " id="next-0-link"/>
+                                    <button class="btn clipboard-button" data-clipboard-target="#next-0-link" data-toggle="tooltip" data-placement="bottom" title="Copy to Clipboard">
+                                        <i class="fa fa-share-square fa_custom"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- <div class=" p-3 m-3"><a id="next-1" class="btn btn-primary">Mon, 27 Apr 2020 02:30:00 GMT</a> -->
+                                <!--                            <a><i class="fa fa-share-square fa_custom fa-2x"></i></a>-->
+                                <!--                            <a id="next-1-share-fb"><i class="fab fa-facebook-square fa-2x"></i></a>-->
+                                <!--                            <a id="next-1-share-ig"><i class="fab fa-instagram-square fa-2x "></i></a>-->
+                                <!--                            <a id="next-1-share-twitter"><i class="fab fa-twitter-square fa-2x"></i></a>-->
+                                <!-- <div>
+                                    <input class="row" id="next-1-link"/>
+                                    <button class="btn clipboard-button" data-clipboard-target="#next-1-link" data-toggle="tooltip" data-placement="bottom" title="Copy to Clipboard">
+                                        <i class="fa fa-share-square fa_custom"></i>
+                                    </button>
+                                </div> -->
+                            <!-- </div> -->
+                            <!-- <div class=" p-3 m-3"><a id="next-2" class="btn btn-primary">Mon, 27 Apr 2020 02:30:00 GMT</a> -->
+                                <!--                            <a><i class="fa fa-share-square fa_custom fa-2x"></i></a>-->
+                                <!--                            <a id="next-2-share-fb"><i class="fab fa-facebook-square fa-2x"></i></a>-->
+                                <!--                            <a id="next-2-share-ig"><i class="fab fa-instagram-square fa-2x "></i></a>-->
+                                <!--                            <a id="next-2-share-twitter"><i class="fab fa-twitter-square fa-2x"></i></a>-->
+                                <!-- <div>
+                                    <input class="row" id="next-2-link"/>
+                                    <button class="btn clipboard-button" data-clipboard-target="#next-2-link" data-toggle="tooltip" data-placement="bottom" title="Copy to Clipboard">
+                                        <i class="fa fa-share-square fa_custom"></i>
+                                    </button>
+                                </div>                        </div> -->
+                            <h3 class="card-title font-weight-bold">Ready-to-go workout</h3>
+                            <a href="workout.html?workout=workout1.json" class="btn btn-primary m-3">Workout</a>
+                            <!-- <a href="workout.html?workout=workout2.json" class="btn btn-primary m-3">Workout 2</a>
+                            <a href="workout.html?workout=workout3.json" class="btn btn-primary m-3">Workout 3</a> -->
+                            <h3 class="card-title font-weight-bold">More Flexibility in your workouts</h3>
+                            <a href="selection.html" class="btn btn-primary m-3">Create your own workout</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card-group col-sm-6">
+                    <div class="card">
+                        <div class="card-body" style="background-color: #555;">
+                            <h3 class="card-title font-weight-bold">Private</h3>
+                            <a href="workout.html?workout=workout1.json" class="btn btn-primary m-3">Workout 1</a>
+                            <a href="workout.html?workout=workout2.json" class="btn btn-primary m-3">Workout 2</a>
+                            <a href="workout.html?workout=workout3.json" class="btn btn-primary m-3">Workout 3</a>
+                            <a href="selection.html" class="btn btn-primary m-3">Create your own workout</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                </div>
+            </div>
+
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+<!--            <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>-->
+        </div>
+    </footer>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="./static/libs/easytimer.min.js"></script>
+<script type="text/javascript" src="./static//libs/jquery.plugin.js"></script>
+<script type="text/javascript" src="./static//libs/jquery.countdown.js"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/plugin/utc.js"></script>
+<script>dayjs.extend(window.dayjs_plugin_utc)</script>
+
+<script src="./static/libs/clipboard.min.js"></script>
+<script src="./static/js/index.js"></script>
+
+</body>
+</html>

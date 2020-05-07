@@ -1,0 +1,34 @@
+{
+  "startTime": "2020-04-24T19:27:00-07:00",
+  "elements":
+  [ {
+    "id": 0,
+    "name": "Wait for Next Group Workout",
+    "text": "Workout",
+    "duration": 0
+  },{
+    "id": 1,
+    "name": "Intro",
+    "text": "Workout",
+    "duration": 100
+  },
+    {
+      "id": 2,
+      "name": "Workout",
+      "text": "Crunches",
+      "duration": 100
+    },
+    {
+      "id": 3,
+      "name": "Workout",
+      "text": "Pullups",
+      "duration": 100
+    },
+    {
+      "id": 4,
+      "name": "Drinking Break",
+      "text": "Drink",
+      "duration": 100
+    }
+  ]
+}
