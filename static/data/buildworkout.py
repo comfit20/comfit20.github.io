@@ -160,7 +160,7 @@ while (rounds > 0):
 		      "id": n,
 		      "heading": "Water Break",
 		      "name": "Up Next: "+ exercises[0],
-		      "duration": 4,
+		      "duration": 35,
 		      "gifpath": "static/movie/WaterRefill.mp4",
           "sound": 'audiorest'
 		    }
