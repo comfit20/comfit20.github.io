@@ -1,0 +1,10 @@
+.indicator-expired {
+  background-color: red !important;
+  opacity: 0.5 !important;
+}
+
+.indicator-water {
+  background-color: blue !important;
+  opacity: 0.5 !important;
+
+}

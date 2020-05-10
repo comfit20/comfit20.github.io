@@ -12,8 +12,7 @@ exerlist = exerlist['exercises']
 # 'Squat and Knee Tap','Rope Jump','Frog Squats',
 # '10 High Knee & 3 Tuck Jumps','Crunches', 'Mountain Climber']
 
-exercises = ['Squat Walk', 'Jumping Lunges', 'Burpees',
- 'Plank','Sit Up','Inner Sole Tap', 'Squat and Knee Tap','Rope Jump','Frog Squats','Crunches']
+exercises = ['Squat Walk', 'Jumping Lunges', 'Burpees']
 
 # exercises = ['Inner Sole Tap', 'Squat and Knee Tap']
 
@@ -23,7 +22,7 @@ warmups = ['Jumping Jacks', 'Butt Kicker', 'Squat Pulses','5 Shoulder Circles & 
 
 duration_work = 40
 duration_rest = 10
-duration_warmup = 25
+duration_warmup = 2
 
 
 arrayelements = [{
@@ -74,7 +73,7 @@ getreadywu = {
       "heading": "Get Ready to Warm Up",
       "name": " Let's go !!!!! ",
       "duration": 10,
-      "gifpath": "static/movie/getready.mp4"
+      "gifpath": "static/movie/getready.mp4",
       "sound": None,
       "indicator": False
     }
@@ -173,7 +172,7 @@ while (rounds > 0):
 		      "heading": "Water Break",
 		      "name": "Up Next: "+ exercises[0],
 		      "duration": 35,
-		      "gifpath": "static/movie/WaterRefill.mp4"
+		      "gifpath": "static/movie/WaterRefill.mp4",
           "sound": 'audiorest',
           "indicator": False
 		    }

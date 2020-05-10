@@ -1,0 +1,177 @@
+{
+   "startTime":"now",
+   "elements":[
+      {
+         "id":0,
+         "heading":"Wait for Group Session",
+         "name":"Session will start soon",
+         "duration":0,
+         "gifpath":"static/movie/waitnextworkout.mp4",
+         "sound":null,
+         "indicator":false
+      },
+     
+      {
+         "id":6,
+         "heading":"Warm Up",
+         "name":"Jumping Jacks",
+         "duration":2,
+         "gifpath":"static/movie/JumpingJack.mp4",
+         "sound":"audiowork",
+         "indicator":false
+      },
+      {
+         "id":12,
+         "heading":"Workout Time",
+         "name":"Squat Walk",
+         "duration":3,
+         "gifpath":"static/movie/SquatWalk.mp4",
+         "sound":"audiowork",
+         "indicator":true
+      },
+      {
+         "id":13,
+         "heading":"Rest",
+         "name":"Up Next: Jumping Lunges",
+         "duration":2,
+         "gifpath":"static/movie/Rest1.mp4",
+         "sound":"audiorest",
+         "indicator":false
+      },
+      {
+         "id":14,
+         "heading":"Workout Time",
+         "name":"Jumping Lunges",
+         "duration":3,
+         "gifpath":"static/movie/PlyoLunges.mp4",
+         "sound":"audiowork",
+         "indicator":true
+      },
+      {
+         "id":15,
+         "heading":"Rest",
+         "name":"Up Next: Burpees",
+         "duration":2,
+         "gifpath":"static/movie/Rest1.mp4",
+         "sound":"audiorest",
+         "indicator":false
+      },
+      {
+         "id":16,
+         "heading":"Workout Time",
+         "name":"Burpees",
+         "duration":40,
+         "gifpath":"static/movie/Burpee.mp4",
+         "sound":"audiowork",
+         "indicator":true
+      },
+      {
+         "id":17,
+         "heading":"Water Break",
+         "name":"Up Next: Squat Walk",
+         "duration":35,
+         "gifpath":"static/movie/WaterRefill.mp4",
+         "sound":"audiorest",
+         "indicator": false
+      },
+      {
+         "id":18,
+         "heading":"Workout Time",
+         "name":"Squat Walk",
+         "duration":40,
+         "gifpath":"static/movie/SquatWalk.mp4",
+         "sound":"audiowork",
+         "indicator":true
+      },
+      {
+         "id":19,
+         "heading":"Rest",
+         "name":"Up Next: Jumping Lunges",
+         "duration":10,
+         "gifpath":"static/movie/Rest1.mp4",
+         "sound":"audiorest",
+         "indicator":false
+      },
+      {
+         "id":20,
+         "heading":"Workout Time",
+         "name":"Jumping Lunges",
+         "duration":40,
+         "gifpath":"static/movie/PlyoLunges.mp4",
+         "sound":"audiowork",
+         "indicator":true
+      },
+      {
+         "id":21,
+         "heading":"Rest",
+         "name":"Up Next: Burpees",
+         "duration":10,
+         "gifpath":"static/movie/Rest1.mp4",
+         "sound":"audiorest",
+         "indicator":false
+      },
+      {
+         "id":22,
+         "heading":"Workout Time",
+         "name":"Burpees",
+         "duration":40,
+         "gifpath":"static/movie/Burpee.mp4",
+         "sound":"audiowork",
+         "indicator":true
+      },
+      {
+         "id":23,
+         "heading":"Water Break",
+         "name":"Up Next: Squat Walk",
+         "duration":35,
+         "gifpath":"static/movie/WaterRefill.mp4",
+         "sound":"audiorest",
+         "indicator":false
+      },
+      {
+         "id":24,
+         "heading":"Workout Time",
+         "name":"Squat Walk",
+         "duration":40,
+         "gifpath":"static/movie/SquatWalk.mp4",
+         "sound":"audiowork",
+         "indicator":true
+      },
+      {
+         "id":25,
+         "heading":"Rest",
+         "name":"Up Next: Jumping Lunges",
+         "duration":10,
+         "gifpath":"static/movie/Rest1.mp4",
+         "sound":"audiorest",
+         "indicator":false
+      },
+      {
+         "id":26,
+         "heading":"Workout Time",
+         "name":"Jumping Lunges",
+         "duration":40,
+         "gifpath":"static/movie/PlyoLunges.mp4",
+         "sound":"audiowork",
+         "indicator":true
+      },
+      {
+         "id":27,
+         "heading":"Rest",
+         "name":"Up Next: Burpees",
+         "duration":10,
+         "gifpath":"static/movie/Rest1.mp4",
+         "sound":"audiorest",
+         "indicator":false
+      },
+      {
+         "id":28,
+         "heading":"Workout Time",
+         "name":"Burpees",
+         "duration":40,
+         "gifpath":"static/movie/Burpee.mp4",
+         "sound":"audiowork",
+         "indicator":true
+      }
+   ]
+}

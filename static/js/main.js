@@ -1,7 +1,7 @@
 var sequence = []
 var counter = 0;
-var audiowork = new Audio('./static/sounds/AirHorn-SoundBible.com-964603082.wav');
-var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav');
+// var audiowork = new Audio('./static/sounds/AirHorn-SoundBible.com-964603082.wav');
+// var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav');
 
 $(document).ready(function(){
     var workoutFile = "";
@@ -101,16 +101,19 @@ function createCarousel(data) {
         }
 
             content.appendTo('.carousel-inner');
-        $('<li data-targe="#carousel" data-slide-to="' + elem.id + '"></li>').appendTo('.carousel-indicators');
+            console.log(elem.ind)
+            var ind = $('<li id="ind-'+elem.id +'"data-targe="#carousel" data-slide-to="' + elem.id + '"></li>');
+            ind.appendTo('.carousel-indicators');
+            if(elem.indicator == false){
+                ind.hide();
+        }
     })
     // ------------    SHOW CAROUSEL    -------------
     $('#carousel').carousel();
-    $('.carousel-indicators > li').first().addClass('active');
+    //$('.carousel-indicators > li').first().addClass('active');
     $('.carousel-item').first().addClass('active');
 }
 
-// var audio = new Audio('audio_file.mp3');
-// audio.play();
 
 
 
@@ -127,16 +130,6 @@ function startJqueryTimer(startTime) {
     }
 
     var element = startTime['elements'].shift()
-    if(element['sound']=="audiowork"){
-        audiowork.play();
-        console.log('playaudiowork')
-    }
-    if(element['sound']=="audiorest"){
-        audiorest.play();
-        console.log('playaudiorest')
-    }
-
-
     if(element.expired){
         console.log("Element is expired. Dont start timer")
         $(".carousel.active").empty()
@@ -144,6 +137,17 @@ function startJqueryTimer(startTime) {
         startJqueryTimer(startTime);
         return;
     }
+
+    // if(element['sound']=="audiowork"){
+    //     audiowork.play();
+    //     console.log('playaudiowork')
+    // }
+    // if(element['sound']=="audiorest"){
+    //     audiorest.play();
+    //     console.log('playaudiorest')
+    // }
+
+
     $('#heading').text(element.heading);
     var elemId = uniqId()
     var timer_gui = $("#timer-"+element.id).text("00:00").css('font-size', 'xx-large');
@@ -155,6 +159,7 @@ function startJqueryTimer(startTime) {
             console.log("expired"+element.id)
             $('#heading').text('-');
             $(".carousel.active").empty()
+            $("#ind-"+element.id).addClass('indicator-expired')
             $('.carousel').carousel(element.carousel_index+1);
             console.log('carousel go to next')
             startJqueryTimer(startTime);
