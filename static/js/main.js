@@ -1,7 +1,7 @@
 var sequence = []
 var counter = 0;
-// var audiowork = new Audio('./static/sounds/AirHorn-SoundBible.com-964603082.wav');
-// var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav');
+var audiowork = new Audio('./static/sounds/AirHorn-SoundBible.com-964603082.wav');
+var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav');
 
 $(document).ready(function(){
     var workoutFile = "";
@@ -101,11 +101,17 @@ function createCarousel(data) {
         }
 
             content.appendTo('.carousel-inner');
-            console.log(elem.ind)
+            //console.log(elem.ind)
             var ind = $('<li id="ind-'+elem.id +'"data-targe="#carousel" data-slide-to="' + elem.id + '"></li>');
+            if(elem.indicator == "water_break"){
+               // $("#ind-"+elem.id).addClass('indicator-water');}
+                ind.addClass('indicator-water');}
+                console.log("fefef")
             ind.appendTo('.carousel-indicators');
-            if(elem.indicator == false){
+            if(elem.indicator == "hidden"){
                 ind.hide();
+                //ind-"+element.id).addClass('indicator-expired');
+                
         }
     })
     // ------------    SHOW CAROUSEL    -------------
@@ -138,14 +144,14 @@ function startJqueryTimer(startTime) {
         return;
     }
 
-    // if(element['sound']=="audiowork"){
-    //     audiowork.play();
-    //     console.log('playaudiowork')
-    // }
-    // if(element['sound']=="audiorest"){
-    //     audiorest.play();
-    //     console.log('playaudiorest')
-    // }
+    if(element['sound']=="audiowork"){
+        audiowork.play();
+        console.log('playaudiowork')
+    }
+    if(element['sound']=="audiorest"){
+        audiorest.play();
+        console.log('playaudiorest')
+    }
 
 
     $('#heading').text(element.heading);
@@ -159,7 +165,8 @@ function startJqueryTimer(startTime) {
             console.log("expired"+element.id)
             $('#heading').text('-');
             $(".carousel.active").empty()
-            $("#ind-"+element.id).addClass('indicator-expired')
+            
+            $("#ind-"+element.id).addClass('indicator-expired');
             $('.carousel').carousel(element.carousel_index+1);
             console.log('carousel go to next')
             startJqueryTimer(startTime);
