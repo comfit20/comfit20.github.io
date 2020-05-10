@@ -7,11 +7,15 @@ exerlist = exerlist['exercises']
 
 
 
+# exercises = ['Squat Walk', 'Jumping Lunges', 'Burpees',
+# 'Plank','Sit Up','Inner Sole Tap', 
+# 'Squat and Knee Tap','Rope Jump','Frog Squats',
+# '10 High Knee & 3 Tuck Jumps','Crunches', 'Mountain Climber']
+
 exercises = ['Squat Walk', 'Jumping Lunges', 'Burpees',
-'Plank','Sit Up','Inner Sole Tap', 
-'Squat and Knee Tap','Rope Jump','Frog Squats',
-'10 High Knee & 3 Tuck Jumps','Crunches', 'Mountain Climber']
-#exercises = ['Inner Sole Tap', 'Squat and Knee Tap']
+ 'Plank','Sit Up','Inner Sole Tap', 'Squat and Knee Tap','Rope Jump','Frog Squats','Crunches']
+
+# exercises = ['Inner Sole Tap', 'Squat and Knee Tap']
 
 #todo: write the same code for warm up list
 
@@ -28,7 +32,8 @@ arrayelements = [{
       "name": "Session will start soon",
       "duration": 0,
       "gifpath": "static/movie/waitnextworkout.mp4",
-      "sound": None
+      "sound": None,
+      "indicator": False
     },
     {
       "id": 1,
@@ -36,7 +41,8 @@ arrayelements = [{
       "name": exercises,
       "duration": 5,
       "gifpath": "",
-      "sound": None
+      "sound": None,
+      "indicator": False
     }]
 
 ##### introduction to workout
@@ -53,7 +59,8 @@ for i in range(len(exercises)):
         "name": exer_elem['name'],
         "duration": 10,
         "gifpath": exer_elem['gifpath'],
-        "sound": None
+        "sound": None,
+        "indicator": False
       }
     
 
@@ -67,8 +74,9 @@ getreadywu = {
       "heading": "Get Ready to Warm Up",
       "name": " Let's go !!!!! ",
       "duration": 10,
-      "gifpath": "static/movie/getready.mp4",
-      "sound": None
+      "gifpath": "static/movie/getready.mp4"
+      "sound": None,
+      "indicator": False
     }
 
 arrayelements.append(dict(getreadywu))
@@ -89,7 +97,8 @@ for i in range(len(warmups)):
         "name": exer_elem['name'],
         "duration": duration_warmup,
         "gifpath": exer_elem['gifpath'],
-        "sound": 'audiowork'
+        "sound": 'audiowork',
+        "indicator": False
       }
     
     arrayelements.append(dict(wu))
@@ -106,7 +115,8 @@ getreadywork = {
       "name": " Let's go !!!!! ",
       "duration": 5,
       "gifpath": "static/movie/getready.mp4",
-      "sound": None
+      "sound": None,
+      "indicator": False    
     }
 
 arrayelements.append(dict(getreadywork))
@@ -131,7 +141,8 @@ while (rounds > 0):
 	      "name": exer_elem['name'],
 	      "duration": duration_work,
 	      "gifpath": exer_elem['gifpath'],
-        "sound": 'audiowork'
+        "sound": 'audiowork',
+        "indicator": True
 	    }
 		
 
@@ -145,7 +156,8 @@ while (rounds > 0):
 		    "name": "Up Next: "+exercises[i+1],
 		    "duration": duration_rest,
 		    "gifpath": "static/movie/Rest1.mp4",
-        "sound": 'audiorest'
+        "sound": 'audiorest',
+        "indicator": False
 		    }
 
 			arrayelements.append(dict(rest))
@@ -161,8 +173,9 @@ while (rounds > 0):
 		      "heading": "Water Break",
 		      "name": "Up Next: "+ exercises[0],
 		      "duration": 35,
-		      "gifpath": "static/movie/WaterRefill.mp4",
-          "sound": 'audiorest'
+		      "gifpath": "static/movie/WaterRefill.mp4"
+          "sound": 'audiorest',
+          "indicator": False
 		    }
 
 		n = n+1 
