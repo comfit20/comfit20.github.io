@@ -3,10 +3,7 @@ type="text/javascript">
             var next_monday = new Date();
             next_monday.setDate(next_monday.getDate() + (1 + 7 - next_monday.getDay()) % 7);
             console.log(next_monday);
-            var next_tuesday = new Date();
-            next_tuesday.setDate(next_tuesday.getDate() + (2 + 7 - next_tuesday.getDay()) % 7);
-            console.log(next_tuesday);
-            var next_wednesday = new Date();
+            var next_wednesday = new Date()
             next_wednesday.setDate(next_wednesday.getDate() + (3 + 7 - next_wednesday.getDay()) % 7);
             console.log(next_wednesday);
             var next_friday = new Date();
@@ -14,16 +11,16 @@ type="text/javascript">
             console.log(next_friday);
 
 
-            //    
-            var time_list = [next_monday]
-            time_list.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
-            console.log(time_list)
+            var time_list = [next_monday,next_wednesday,next_friday]
+            var time_complete = setTimeTo8and11(time_list)
+            time_complete.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
+            console.log(time_complete)
 
-            $.each(time_list, function (idx,time) {
-                time.setHours(11)
-                time.setMinutes(32)
-                time.setSeconds(0)
-            $("#next-"+idx).text(dayjs(time).toString());
+
+            $.each(time_complete, function (idx,time) {
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hours: 'numeric' };
+
+            $("#next-"+idx).text(time.toLocaleTimeString(undefined,options));
             var share_link = window.location.hostname+'/workout.html?timestamp='+time.toISOString();
             $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
             // $("#next-"+idx+"-share-fb").attr('href','https://www.facebook.com/sharer.php?u='+share_link);
@@ -38,8 +35,22 @@ type="text/javascript">
 
     });
 
-    function createJsonForTimestamp(timestamp) {
+    function setTimeTo8and11(time_list) {
+        var return_list = []
+        $.each(time_list, function (idx,time) {
+            var time_830 = new Date(time);
+            var time_1130 = new Date(time);
 
+            time_830.setHours(8)
+            time_830.setMinutes(32)
+            time_830.setSeconds(0)
+            return_list.push(time_830)
+            time_1130.setHours(11)
+            time_1130.setMinutes(32)
+            time_1130.setSeconds(0)
+            return_list.push(time_1130)
+        });
+        return return_list;
     }
 
     function GFG_Fun2() {

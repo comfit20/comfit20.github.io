@@ -235,6 +235,69 @@
          "name":"Burpee 180C Turn",
          "level":"hard",
          "gifpath":"static/movie/Burpee180Turn.mp4"
+      },
+      {
+         "id":27,
+         "category":[
+            "legs"
+         ],
+         "name":"Calf Rises",
+         "level":"middle",
+         "gifpath":"static/movie/CalfRises.mp4"
+      },
+      {
+         "id":28,
+         "category":[
+            "core"
+         ],
+         "name":"Crab Walk",
+         "level":"hard",
+         "gifpath":"static/movie/CrabWalk.mp4"
+      },
+      {
+         "id":29,
+         "category":[
+            "arms"
+         ],
+         "name":"Diamond Push Up",
+         "level":"hard",
+         "gifpath":"static/movie/DiamondPushup.mp4"
+      },
+            {
+         "id":30,
+         "category":[
+            "core"
+         ],
+         "name":"Donkey Kick (n+1)",
+         "level":"hard",
+         "gifpath":"static/movie/DonkeyKick.mp4"
+      },
+            {
+         "id":31,
+         "category":[
+            "core"
+         ],
+         "name":"10 Fast Feet & Push Up",
+         "level":"hard",
+         "gifpath":"static/movie/FastFeetPushUp.mp4"
+      },
+            {
+         "id":32,
+         "category":[
+            "belly"
+         ],
+         "name":"Flutter Kicks (Scissor)",
+         "level":"hard",
+         "gifpath":"static/movie/FlutterKicks.mp4"
+      },
+            {
+         "id":33,
+         "category":[
+            "legs"
+         ],
+         "name":"3 Frog Squat & 3 Plank Jump",
+         "level":"hard",
+         "gifpath":"static/movie/FrogSquatPlankJump.mp4"
       }
    ]
 }
