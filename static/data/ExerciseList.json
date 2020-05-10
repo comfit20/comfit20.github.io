@@ -298,6 +298,295 @@
          "name":"3 Frog Squat & 3 Plank Jump",
          "level":"hard",
          "gifpath":"static/movie/FrogSquatPlankJump.mp4"
+      },
+            {
+         "id":34,
+         "category":[
+            "legs"
+         ],
+         "name":"Glute Bridge",
+         "level":"easy",
+         "gifpath":"static/movie/GluteBridge.mp4"
+      },
+            {
+         "id":35,
+         "category":[
+            "belly"
+         ],
+         "name":"Heel Touch Crunches",
+         "level":"hard",
+         "gifpath":"static/movie/HeelTouchCrunches.mp4"
+      },
+            {
+         "id":36,
+         "category":[
+            "core"
+         ],
+         "name":"High Plank Low Plank",
+         "level":"hard",
+         "gifpath":"static/movie/HighPlankLowPlank.mp4"
+      },
+            {
+         "id":37,
+         "category":[
+            "warmup"
+         ],
+         "name":"Hip Circles",
+         "level":"easy",
+         "gifpath":"static/movie/HipCircles.mp4"
+      },
+            {
+         "id":38,
+         "category":[
+            "legs"
+         ],
+         "name":"Hurdles",
+         "level":"middle",
+         "gifpath":"static/movie/Hurdles.mp4"
+      },
+            {
+         "id":38,
+         "category":[
+            "legs"
+         ],
+         "name":"IceSkater",
+         "level":"middle",
+         "gifpath":"static/movie/IceSkater.mp4"
+      },
+            {
+         "id":39,
+         "category":[
+            "core"
+         ],
+         "name":"InchWorm",
+         "level":"middle",
+         "gifpath":"static/movie/InchWorm.mp4"
+      },
+            {
+         "id":40,
+         "category":[
+            "belly"
+         ],
+         "name":"Jack Knife",
+         "level":"middle",
+         "gifpath":"static/movie/JackKnife.mp4"
+      },
+            {
+         "id":41,
+         "category":[
+            "legs"
+         ],
+         "name":"Jump & Squat Backwards",
+         "level":"middle",
+         "gifpath":"static/movie/JumpSquatBackwards.mp4"
+      },
+            {
+         "id":42,
+         "category":[
+            "legs"
+         ],
+         "name":"Jump Squat",
+         "level":"middle",
+         "gifpath":"static/movie/JumpSquatSquat.mp4"
+      },
+            {
+         "id":43,
+         "category":[
+            "legs"
+         ],
+         "name":"Knee Rise Tap",
+         "level":"middle",
+         "gifpath":"static/movie/KneeRiseTap.mp4"
+      },
+            {
+         "id":44,
+         "category":[
+            "legs"
+         ],
+         "name":"Ladder",
+         "level":"middle",
+         "gifpath":"static/movie/Ladder.mp4"
+      },
+            {
+         "id":45,
+         "category":[
+            "belly"
+         ],
+         "name":"Leg Lift And Hold",
+         "level":"middle",
+         "gifpath":"static/movie/LegLiftAndHold.mp4"
+      },
+            {
+         "id":46,
+         "category":[
+            "core"
+         ],
+         "name":"Mountain Climber Side Step",
+         "level":"hard",
+         "gifpath":"static/movie/MountainClimberSideStep.mp4"
+      },
+            {
+         "id":47,
+         "category":[
+            "core"
+         ],
+         "name":"Plan Dips",
+         "level":"hard",
+         "gifpath":"static/movie/PlankDips.mp4"
+      },
+            {
+         "id":48,
+         "category":[
+            "core"
+         ],
+         "name":"Prayer Pulse",
+         "level":"easy",
+         "gifpath":"static/movie/PrayerPulse.mp4"
+      },
+            {
+         "id":49,
+         "category":[
+            "core"
+         ],
+         "name":"Push & Squat & Turn",
+         "level":"hard",
+         "gifpath":"static/movie/PushSquatTurn.mp4"
+      },
+            {
+         "id":50,
+         "category":[
+            "core"
+         ],
+         "name":"Push Up & Side Turn",
+         "level":"middle",
+         "gifpath":"static/movie/PushUpSideTurn.mp4"
+      },
+            {
+         "id":51,
+         "category":[
+            "belly"
+         ],
+         "name":"Russian Twist",
+         "level":"easy",
+         "gifpath":"static/movie/RussianTwist.mp4"
+      },
+            {
+         "id":52,
+         "category":[
+            "core"
+         ],
+         "name":"Shoot Through",
+         "level":"easy",
+         "gifpath":"static/movie/ShootThrough.mp4"
+      },
+            {
+         "id":53,
+         "category":[
+            "core"
+         ],
+         "name":"Shoulder Tap",
+         "level":"easy",
+         "gifpath":"static/movie/ShoulderTap.mp4"
+      },
+            {
+         "id":54,
+         "category":[
+            "legs"
+         ],
+         "name":"Side Lunges",
+         "level":"easy",
+         "gifpath":"static/movie/SideLunges.mp4"
+      },
+            {
+         "id":55,
+         "category":[
+            "belly"
+         ],
+         "name":"Side Plank Crunches",
+         "level":"middle",
+         "gifpath":"static/movie/SidePlankCrunches.mp4"
+      },
+            {
+         "id":56,
+         "category":[
+            "legs"
+         ],
+         "name":"Single Leg Donkey Kick",
+         "level":"easy",
+         "gifpath":"static/movie/SingleLegDonkeyKick.mp4"
+      },
+            {
+         "id":57,
+         "category":[
+            "legs"
+         ],
+         "name":"Single Leg Glute Bridge",
+         "level":"easy",
+         "gifpath":"static/movie/SingleLegGluteBridge.mp4"
+      },
+            {
+         "id":58,
+         "category":[
+            "arms"
+         ],
+         "name":"Spiderman Push Up",
+         "level":"hard",
+         "gifpath":"static/movie/SpidermanPushup.mp4"
+      },
+            {
+         "id":59,
+         "category":[
+            "legs"
+         ],
+         "name":"Squat Jump & Touch",
+         "level":"middle",
+         "gifpath":"static/movie/SquatJumpTouch.mp4"
+      },
+            {
+         "id":60,
+         "category":[
+            "arms"
+         ],
+         "name":"Star Push Up Jump",
+         "level":"hard",
+         "gifpath":"static/movie/StarPushUpJump.mp4"
+      },
+            {
+         "id":61,
+         "category":[
+            "arms"
+         ],
+         "name":"Static Spiderman",
+         "level":"hard",
+         "gifpath":"static/movie/StaticSpiderman.mp4"
+      },
+            {
+         "id":62,
+         "category":[
+            "arms"
+         ],
+         "name":"Superman (alt: Pull Ups)",
+         "level":"hard",
+         "gifpath":"static/movie/Superman.mp4"
+      },
+            {
+         "id":63,
+         "category":[
+            "arms"
+         ],
+         "name":"Swimmer",
+         "level":"easy",
+         "gifpath":"static/movie/Swimmer.mp4"
+      },
+            {
+         "id":64,
+         "category":[
+            "belly"
+         ],
+         "name":"Windshield Wiper",
+         "level":"easy",
+         "gifpath":"static/movie/WindshieldWiper.mp4"
       }
    ]
+   
 }
