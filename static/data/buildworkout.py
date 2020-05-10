@@ -13,19 +13,22 @@ exerlist = exerlist['exercises']
 # 'Squat and Knee Tap','Rope Jump','Frog Squats',
 # '10 High Knee & 3 Tuck Jumps','Crunches', 'Mountain Climber']
 
-exercises = ['Squat Walk', 'Jumping Lunges']
+exercises = [ '3 Fast Knee Rise', 'Bicycle Crunches', '6 Fast Feet In & Out', 'Shoot Through', 
+'Jump Squat (+ Touch)','Side Plank Crunches','Single Leg Donkey Kick', 'Single-Leg Glute Bridge', 'High Plank Shoulder Tap',
+'Push Up + Side Turn', 'Jumping Jacks','Leg Lift & Hold']
+
 
 
 # exercises = ['Inner Sole Tap', 'Squat and Knee Tap']
 
 #todo: write the same code for warm up list
 
-warmups = ['Jumping Jacks', 'Butt Kicker', 'Squat Pulses','5 Shoulder Circles & Windmill','Burpees']#'Glute bridge','Single Leg Hip Circles', '5 shoulder circles + 2 wind mills',
+warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']#'Glute bridge','Single Leg Hip Circles', '5 shoulder circles + 2 wind mills',
 
-duration_work = 2
-duration_rest = 2
-duration_warmup = 2
-duration_waterbreak =2
+duration_work = 40
+duration_rest = 10
+duration_warmup = 25
+duration_waterbreak =35
 
 applaus = random.randint(1,3)
 print(applaus)
@@ -43,7 +46,7 @@ arrayelements = [{
     {
       "id": 1,
       "heading": "Workout Timimg:",
-      "name": ["12 exercises", "40 sec work", "10 sec rest", "3 rounds"],
+      "name": [str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", "3 rounds"],
       # "heading": "Introduction to workouts: 40 work, 10 rest, 3 rounds",
       # "name": exercises,
       "duration": 5,
@@ -59,6 +62,7 @@ for i in range(len(exercises)):
 
     exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
     exer_elem = exerlist[exer_index]
+    print(exer_elem)
 
     wo1 =     {
         "id": n,

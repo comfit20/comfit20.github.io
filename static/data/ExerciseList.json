@@ -133,7 +133,7 @@
          "category":[
             "legs"
          ],
-         "name":"Fast Feet In & Out",
+         "name":"6 Fast Feet In & Out",
          "level":"middle",
          "gifpath":"static/movie/6FeetInOut.mp4"
       },
@@ -331,7 +331,7 @@
          "category":[
             "warmup"
          ],
-         "name":"Hip Circles",
+         "name":"Single Leg Hip Circles",
          "level":"easy",
          "gifpath":"static/movie/HipCircles.mp4"
       },
@@ -394,7 +394,7 @@
          "category":[
             "legs"
          ],
-         "name":"Knee Rise Tap",
+         "name":"3 Fast Knee Rise",
          "level":"middle",
          "gifpath":"static/movie/KneeRiseTap.mp4"
       },
@@ -412,7 +412,7 @@
          "category":[
             "belly"
          ],
-         "name":"Leg Lift And Hold",
+         "name":"Leg Lift & Hold",
          "level":"middle",
          "gifpath":"static/movie/LegLiftAndHold.mp4"
       },
@@ -457,7 +457,7 @@
          "category":[
             "core"
          ],
-         "name":"Push Up & Side Turn",
+         "name":"Push Up + Side Turn",
          "level":"middle",
          "gifpath":"static/movie/PushUpSideTurn.mp4"
       },
@@ -484,7 +484,7 @@
          "category":[
             "core"
          ],
-         "name":"Shoulder Tap",
+         "name":"High Plank Shoulder Tap",
          "level":"easy",
          "gifpath":"static/movie/ShoulderTap.mp4"
       },
@@ -520,7 +520,7 @@
          "category":[
             "legs"
          ],
-         "name":"Single Leg Glute Bridge",
+         "name":"Single-Leg Glute Bridge",
          "level":"easy",
          "gifpath":"static/movie/SingleLegGluteBridge.mp4"
       },
@@ -538,7 +538,7 @@
          "category":[
             "legs"
          ],
-         "name":"Squat Jump & Touch",
+         "name":"Jump Squat (+ Touch)",
          "level":"middle",
          "gifpath":"static/movie/SquatJumpTouch.mp4"
       },
