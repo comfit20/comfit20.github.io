@@ -10,7 +10,7 @@
     {
       "id": 1,
       "heading": "Introduction to workouts",
-      "name": ["Fast Feet & Out", "Plank", "Squat Walk", "Sit Up", "Rope Jump", "Butt Kicker"],
+      "name": ["Fast Feet and Out", "Plank", "Squat Walk", "Sit Up", "Rope Jump", "Butt Kicker"],
       "duration": 10,
       "gifpath": ""
     },
@@ -39,7 +39,7 @@
     {
       "id": 5,
       "heading": "Warm Up",
-      "name": "5 Shoulder Circles & Windmill",
+      "name": "5 Shoulder Circles and Windmill",
       "duration": 25,
       "gifpath": "static/movie/ShouldrCircles.mp4"
     },
@@ -49,7 +49,7 @@
     {
       "id": 6,
       "heading": "Workout Time",
-      "name": "Fast Feet In & Out",
+      "name": "Fast Feet In and Out",
       "duration": 40,
       "gifpath": "static/movie/6FeetInOut.mp4"
     },
@@ -129,7 +129,7 @@
     {
       "id": 17,
       "heading": "Water Break",
-      "name": "Up Next: Fast Feet In & Out",
+      "name": "Up Next: Fast Feet In and Out",
       "duration": 45,
       "gifpath": "static/movie/WaterRefill.mp4"
     }

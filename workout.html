@@ -69,7 +69,18 @@
 <script src="./static//libs/easytimer.min.js"></script>
 <script type="text/javascript" src="./static/libs/jquery.plugin.js"></script>
 <script type="text/javascript" src="./static/libs/jquery.countdown.js"></script>
-<script type="text/javascript" src="./static/js/main.js"></script>
+<script type="text/javascript" src="./static/js/brython.js"></script>
+<script type="text/python3">
+    from browser import document, alert,window
 
+    def parse_workout_list(workout_list):
+        alert("Hi from python!"+str(workout_list))
+        workout_json = {"test":"a"}
+        #Parse your list here and put it into workout_json variable
+        window.workoutJson = "'"+str(workout_json)+"'"
+
+    window.parse_workout_list = parse_workout_list
+</script>
+<script type="text/javascript" src="./static/js/main.js"></script>
 </body>
 </html>

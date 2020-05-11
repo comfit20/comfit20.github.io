@@ -4,14 +4,21 @@ var audiowork = new Audio('./static/sounds/AirHorn-SoundBible.com-964603082.wav'
 var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav');
 
 $(document).ready(function(){
+    brython()
+
     var workoutFile = "";
-    let searchParams = new URLSearchParams(window.location.search)
+    var searchParams = new URLSearchParams(window.location.search)
     if(searchParams.has('workout')) {
         workoutFile = searchParams.get('workout');
     }else{
         console.log("Could not find workout in URL Use default workout1.json")
         workoutFile = "workout1.json"
     }
+    var workout_list = ["Crunches","Situps"]
+    parse_workout_list(workout_list)
+    var workoutJson = console.log(JSON.parse(JSON.stringify(window.workoutJson)));
+    console.log(workoutJson)
+
     //console.log(jsonObject);
     fetch('./static/data/'+workoutFile)
         .then((response) => {
