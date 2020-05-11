@@ -71,11 +71,11 @@
 <script type="text/javascript" src="./static/libs/jquery.countdown.js"></script>
 <script type="text/javascript" src="./static/js/brython.js"></script>
 <script type="text/python3">
-    from browser import document, alert,window
-
+    from browser import document, alert,window 
+    
     def parse_workout_list(workout_list):
-        workout_json = {"test":"a"}
         #Parse your list here and put it into workout_json variable
+        workout_json = {"test":"a"}
         window.workoutJson = "'"+str(workout_json)+"'"
 
     window.parse_workout_list = parse_workout_list

@@ -16,7 +16,10 @@ $(document).ready(function(){
         console.log("Could not find workout in URL Use default workout1.json")
         workoutFile = "workout1.json"
     }
-    var workout_list = ["Crunches","Situps"]
+    var workout_list = searchParams.get("workout_list")
+    console.log(workout_list)
+
+    
     parse_workout_list(workout_list)
     var workoutJson = console.log(JSON.parse(JSON.stringify(window.workoutJson)));
     console.log(workoutJson)
@@ -49,6 +52,8 @@ $(document).ready(function(){
             data.elements.sort(function(a, b){
                 return a.id - b.id;
             });
+
+
 
             var time_list = [startTime]
             var old_time = startTime;

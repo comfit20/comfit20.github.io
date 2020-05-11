@@ -126,7 +126,7 @@
             exercise_list.push(element.name)
         });
         console.log(exercise_list);
-
+        window.location.href='workout.html?workout_list='+JSON.stringify(exercise_list)
         return false;
     }
 </script>
