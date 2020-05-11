@@ -2,6 +2,11 @@ var sequence = []
 var counter = 0;
 var audiowork = new Audio('./static/sounds/AirHorn-SoundBible.com-964603082.wav');
 var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav');
+var audiofinish = new Audio('./static/sounds/finish.wav');
+
+
+
+
 
 $(document).ready(function(){
     var workoutFile = "";
@@ -146,13 +151,17 @@ function startJqueryTimer(startTime) {
 
     if(element['sound']=="audiowork"){
         audiowork.play();
-        console.log('playaudiowork')
+
     }
     if(element['sound']=="audiorest"){
         audiorest.play();
-        console.log('playaudiorest')
+        
     }
 
+    if(element['sound']=="audiofinish"){
+        audiofinish.play();
+        console.log(audiofinish)
+    }
 
     $('#heading').text(element.heading);
     var elemId = uniqId()
