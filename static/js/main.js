@@ -5,9 +5,6 @@ var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav
 var audiofinish = new Audio('./static/sounds/finish.wav');
 
 
-
-
-
 $(document).ready(function(){
     brython()
 
