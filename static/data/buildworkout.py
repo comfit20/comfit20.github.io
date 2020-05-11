@@ -19,7 +19,7 @@ exercises = [ '3 Fast Knee Rise', 'Bicycle Crunches', '6 Fast Feet In & Out', 'S
 
 
 
-# exercises = ['Inner Sole Tap', 'Squat and Knee Tap']
+#exercises = ['Inner Sole Tap', 'Squat and Knee Tap']
 
 #todo: write the same code for warm up list
 
@@ -28,7 +28,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
 duration_work = 40
 duration_rest = 10
 duration_warmup = 25
-duration_waterbreak =35
+duration_waterbreak =45
 
 applaus = random.randint(1,3)
 print(applaus)
@@ -49,7 +49,7 @@ arrayelements = [{
       "name": [str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", "3 rounds"],
       # "heading": "Introduction to workouts: 40 work, 10 rest, 3 rounds",
       # "name": exercises,
-      "duration": 5,
+      "duration": 10,
       "gifpath": "",
       "sound": None,
       "indicator": "hidden"
@@ -190,10 +190,16 @@ while (rounds > 0):
 		    }
 
 		n = n+1 
-
+    
+    
 		arrayelements.append(dict(water))
 
+   
+
 	rounds = rounds-1
+
+n = n-1
+print(n)
 
 finished = {
       "id": n,
@@ -201,7 +207,7 @@ finished = {
       "name": " Well Done !!!!! ",
       "duration": 20,
       "gifpath": "static/movie/Applause"+str(applaus)+".mp4",
-      "sound": 'audiorest',
+      "sound": 'audiofinish',
       "indicator": "hidden"  
     }
 
