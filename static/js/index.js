@@ -3,24 +3,26 @@ type="text/javascript">
             var next_monday = new Date();
             next_monday.setDate(next_monday.getDate() + (1 + 7 - next_monday.getDay()) % 7);
             console.log(next_monday);
+
             var next_wednesday = new Date()
             next_wednesday.setDate(next_wednesday.getDate() + (3 + 7 - next_wednesday.getDay()) % 7);
             console.log(next_wednesday);
+
             var next_friday = new Date();
             next_friday.setDate(next_friday.getDate() + (5 + 7 - next_friday.getDay()) % 7);
             console.log(next_friday);
 
-            var next_monday_am = new Date();
-            next_monday.setDate(next_monday.getDate() + (1 + 7 - next_monday.getDay()) % 7);
-            console.log(next_monday);
-            var next_wednesday_am = new Date()
-            next_wednesday.setDate(next_wednesday.getDate() + (3 + 7 - next_wednesday.getDay()) % 7);
-            console.log(next_wednesday);
-            var next_friday_am = new Date();
-            next_friday.setDate(next_friday.getDate() + (5 + 7 - next_friday.getDay()) % 7);
-            console.log(next_friday);
+            // var next_monday_am = new Date();
+            // next_monday.setDate(next_monday.getDate() + (1 + 7 - next_monday.getDay()) % 7);
+            // console.log(next_monday);
+            // var next_wednesday_am = new Date()
+            // next_wednesday.setDate(next_wednesday.getDate() + (3 + 7 - next_wednesday.getDay()) % 7);
+            // console.log(next_wednesday);
+            // var next_friday_am = new Date();
+            // next_friday.setDate(next_friday.getDate() + (5 + 7 - next_friday.getDay()) % 7);
+            // console.log(next_friday);
 
-            var time_list = [next_monday_am, next_wednesday_am,next_friday_am, next_monday, next_wednesday,next_friday]
+            var time_list = [next_wednesday,next_friday, next_monday]
             var time_complete = setTimeTo8and11(time_list)
             time_complete.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
             console.log(time_complete)
@@ -52,14 +54,14 @@ type="text/javascript">
             var time_830 = new Date(time);
             var time_1130 = new Date(time);
 
-            // time_830.setHours(8)
-            // time_830.setMinutes(32)
-            // time_830.setSeconds(0)
-            // return_list.push(time_830)
-            time_1130.setHours(11)
-            time_1130.setMinutes(32)
-            time_1130.setSeconds(0)
-            return_list.push(time_1130)
+            time_830.setHours(8)
+            time_830.setMinutes(32)
+            time_830.setSeconds(0)
+            return_list.push(time_830)
+            // time_1130.setHours(11)
+            // time_1130.setMinutes(32)
+            // time_1130.setSeconds(0)
+            // return_list.push(time_1130)
         });
         return return_list;
     }

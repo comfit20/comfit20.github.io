@@ -34,7 +34,7 @@
          "category":[
             "legs"
          ],
-         "name":"Fast Feet & Jump",
+         "name":"10 Fast Feet & Jump",
          "level":"middle",
          "gifpath":"static/movie/FastFeetJump.mp4"
       },
@@ -196,7 +196,7 @@
          "category":[
             "legs"
          ],
-         "name":"Backlunge & 3 Pulses",
+         "name":"Backward Lunge & 3 Pulses",
          "level":"easy",
          "gifpath":"static/movie/BacklungePulse.mp4"
       },
@@ -295,7 +295,7 @@
          "category":[
             "legs"
          ],
-         "name":"3 Frog Squat & 3 Plank Jump",
+         "name":"3 Frog Squats & 6 Plank Jumps",
          "level":"hard",
          "gifpath":"static/movie/FrogSquatPlankJump.mp4"
       },
@@ -349,7 +349,7 @@
          "category":[
             "legs"
          ],
-         "name":"IceSkater",
+         "name":"Ice Skater",
          "level":"middle",
          "gifpath":"static/movie/IceSkater.mp4"
       },
@@ -385,7 +385,7 @@
          "category":[
             "legs"
          ],
-         "name":"Jump Squat",
+         "name":"2 Squats, 2 Squat Jumps",
          "level":"middle",
          "gifpath":"static/movie/JumpSquatSquat.mp4"
       },
@@ -457,7 +457,7 @@
          "category":[
             "core"
          ],
-         "name":"Push Up + Side Turn",
+         "name":"Push Up & Side Turn",
          "level":"middle",
          "gifpath":"static/movie/PushUpSideTurn.mp4"
       },
