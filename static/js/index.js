@@ -5,7 +5,7 @@ type="text/javascript">
             console.log(next_monday);
 
             var next_wednesday = new Date()
-            next_wednesday.setDate(next_wednesday.getDate() + (2 + 7 - next_wednesday.getDay()) % 7);
+            next_wednesday.setDate(next_wednesday.getDate() + (3 + 7 - next_wednesday.getDay()) % 7);
             console.log(next_wednesday);
 
             var next_friday = new Date();
@@ -54,8 +54,8 @@ type="text/javascript">
             var time_830 = new Date(time);
             var time_1130 = new Date(time);
 
-            time_830.setHours(17)
-            time_830.setMinutes(04)
+            time_830.setHours(8)
+            time_830.setMinutes(32)
             time_830.setSeconds(0)
             return_list.push(time_830)
             // time_1130.setHours(11)

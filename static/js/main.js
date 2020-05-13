@@ -97,7 +97,7 @@ function createCarousel(data) {
             wrapper.append('<div id=timer-'+elem.id+'></div>')
             content = wrapper;
         }else {
-           content = $('<div class="carousel-item"><h2 id="name-'+elem.id+'">'+elem.name+'</h2>' +
+           content = $('<div class="carousel-item"><h1 id="name-'+elem.id+'">'+elem.name+'</h1>' +
                 '<video onloadeddata="this.play();"  playsinline loop muted preload autoplay>\n' +
                 '    <source src="'+elem.gifpath+'" type="video/mp4" />\n' +
                 '    Your browser does not support the video tag or the file format of this video.\n' +
@@ -111,8 +111,9 @@ function createCarousel(data) {
             if(elem.indicator == "water_break"){
                // $("#ind-"+elem.id).addClass('indicator-water');}
                 ind.addClass('indicator-water');}
-                console.log("fefef")
+                
             ind.appendTo('.carousel-indicators');
+            
             if(elem.indicator == "hidden"){
                 ind.hide();
                 //ind-"+element.id).addClass('indicator-expired');

@@ -52,7 +52,7 @@
          "category":[
             "legs"
          ],
-         "name":"Squat and Knee Tap",
+         "name":"Squat & Knee Rise",
          "level":"easy",
          "gifpath":"static/movie/SquatKneeTap.mp4"
       },
@@ -62,7 +62,7 @@
             "legs"
          ],
          "name":"Frog Squats",
-         "level":"easy",
+         "level":"middle",
          "gifpath":"static/movie/FrogSquat.mp4"
       },
       {
@@ -225,7 +225,7 @@
          ],
          "name":"Bird Dog",
          "level":"easy",
-         "gifpath":"static/movie/BicycleCrunches.mp4"
+         "gifpath":"static/movie/BirdDog.mp4"
       },
       {
          "id":26,
@@ -341,7 +341,7 @@
             "legs"
          ],
          "name":"Hurdles",
-         "level":"middle",
+         "level":"hard",
          "gifpath":"static/movie/Hurdles.mp4"
       },
             {
@@ -358,7 +358,7 @@
          "category":[
             "core"
          ],
-         "name":"InchWorm",
+         "name":"Inch Worm",
          "level":"middle",
          "gifpath":"static/movie/InchWorm.mp4"
       },
@@ -368,7 +368,7 @@
             "belly"
          ],
          "name":"Jack Knife",
-         "level":"middle",
+         "level":"hard",
          "gifpath":"static/movie/JackKnife.mp4"
       },
             {
@@ -403,7 +403,7 @@
          "category":[
             "legs"
          ],
-         "name":"Ladder",
+         "name":"Ladder (alt: Fast Feet)",
          "level":"middle",
          "gifpath":"static/movie/Ladder.mp4"
       },
@@ -430,7 +430,7 @@
          "category":[
             "core"
          ],
-         "name":"Plan Dips",
+         "name":"Plank Dips",
          "level":"hard",
          "gifpath":"static/movie/PlankDips.mp4"
       },
@@ -503,7 +503,7 @@
             "belly"
          ],
          "name":"Side Plank Crunches",
-         "level":"middle",
+         "level":"hard",
          "gifpath":"static/movie/SidePlankCrunches.mp4"
       },
             {

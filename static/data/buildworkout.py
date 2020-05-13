@@ -7,8 +7,8 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Backward Lunge & 3 Pulses', 'Push Up & Side Turn', '2 Squats, 2 Squat Jumps', 'Ice Skater', 'Leg Lift & Hold', 'Static Spiderman',
- '10 Fast Feet & Jump', 'Calf Rises', 'Swimmer',  'Side Plank Crunches', '3 Frog Squats & 6 Plank Jumps', 'Diamond Push Up']
+exercises = ['Swimmer', 'Inch Worm', 'Frog Squats', 'Bird Dog', 'Butt Kicker', 'Mountain Climber', 
+'Windshield Wiper', 'Russian Twist', 'Plank', 'Squat & Knee Rise', 'Crunches', 'Ladder (alt: Fast Feet)']
 
 
  #'3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches']
@@ -29,10 +29,12 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #decrease 60, 40, 20 = 120 sec,  12 exercises water breaks
   #repeat 10 exercise 45 + 20 + 45 + 20; no water break
 
-workoutstyle = 'regular' # change workout styles here
+workoutstyle = 'decrease' # change workout styles here
 
 duration_warmup = 25
 
+
+############################################### WORKOUT STYLE REGULAR
 if workoutstyle == 'regular':
 
   duration_work = 40
@@ -55,9 +57,9 @@ if workoutstyle == 'regular':
       },
       {
         "id": 1,
-        "heading": "Workout Timimg:",
+        "heading": "Workout Timing:",
         "name": ["workout style: "+workoutstyle,str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "click anywhere on screen to start sound"],
-        # "heading": "Introduction to workouts: 40 work, 10 rest, 3 rounds",
+        # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
         "duration": 10,
         "gifpath": "",
@@ -72,11 +74,11 @@ if workoutstyle == 'regular':
 
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
-      print(exer_elem)
+      #print(exer_elem)
 
       wo1 =     {
           "id": n,
-          "heading": "Introduction to workouts",
+          "heading": "Introduction to exercises",
           "name": exer_elem['name'],
           "duration": 10,
           "gifpath": exer_elem['gifpath'],
@@ -136,7 +138,7 @@ if workoutstyle == 'regular':
         "name": " Let's go !!!!! ",
         "duration": 5,
         "gifpath": "static/movie/getready.mp4",
-        "sound": None,
+        "sound": 'audiorest',
         "indicator": "hidden"  
       }
 
@@ -147,7 +149,13 @@ if workoutstyle == 'regular':
 
   ################# TIMING 3 repeats ##### todo: add script for different timing
 
- 
+  #to get movie of next exercise. could not make it work wihtin the loop
+  gifpath_next = []
+  for i in range(len(exercises)-1):
+
+    exer_index_next = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i+1]), None)
+    exer_elem_next = exerlist[exer_index_next]
+    gifpath_next.append(exer_elem_next['gifpath']) 
 
   while (rounds > 0):
 
@@ -156,16 +164,18 @@ if workoutstyle == 'regular':
   		exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
   		exer_elem = exerlist[exer_index]
 
+      #print(
+
   		wo1 =     {
   	      "id": n,
-  	      "heading": "Workout Time",
+  	      "heading": "Work",
   	      "name": exer_elem['name'],
   	      "duration": duration_work,
   	      "gifpath": exer_elem['gifpath'],
           "sound": 'audiowork',
           "indicator": "exer_visible"
   	    }
-  		
+  	 
 
   		arrayelements.append(dict(wo1))
 
@@ -174,9 +184,10 @@ if workoutstyle == 'regular':
   			rest = {
   		    "id": n+1,
   		    "heading": "Rest",
-  		    "name": "Up Next: "+exercises[i+1],
+  		    "name": "Up Next",#: "+exercises[i+1],
   		    "duration": duration_rest,
-  		    "gifpath": "static/movie/Rest1.mp4",
+  		    #"gifpath": "static/movie/Rest1.mp4",
+          "gifpath": gifpath_next[i],
           "sound": 'audiorest',
           "indicator": "hidden"
   		    }
@@ -184,6 +195,8 @@ if workoutstyle == 'regular':
   			arrayelements.append(dict(rest))
 
   		n = n+2
+
+      
 
   	if rounds == 1:
   		break 
@@ -204,9 +217,12 @@ if workoutstyle == 'regular':
       
   		arrayelements.append(dict(water))
 
+
      
 
   	rounds = rounds-1
+
+  
 
   n = n-1
   #print(n)
@@ -248,9 +264,9 @@ if workoutstyle == 'increase':
       },
       {
         "id": 1,
-        "heading": "Workout Timimg:",
+        "heading": "Workout Timing:",
         "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work + 2*20 sec increase", str(duration_rest)+ " sec rest", str(rounds)+" rounds","click anywhere on screen to start sound"],
-        # "heading": "Introduction to workouts: 40 work, 10 rest, 3 rounds",
+        # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
         "duration": 10,
         "gifpath": "",
@@ -269,7 +285,7 @@ if workoutstyle == 'increase':
 
       wo1 =     {
           "id": n,
-          "heading": "Introduction to workouts",
+          "heading": "Introduction to exercises",
           "name": exer_elem['name'],
           "duration": 10,
           "gifpath": exer_elem['gifpath'],
@@ -329,7 +345,7 @@ if workoutstyle == 'increase':
         "name": " Let's go !!!!! ",
         "duration": 5,
         "gifpath": "static/movie/getready.mp4",
-        "sound": None,
+        "sound": 'audiowork',
         "indicator": "hidden"  
       }
 
@@ -341,6 +357,13 @@ if workoutstyle == 'increase':
   ################# TIMING 3 repeats #####
 
   cal_work =  []
+  gifpath_next = []
+  for i in range(len(exercises)-1):
+
+    exer_index_next = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i+1]), None)
+    exer_elem_next = exerlist[exer_index_next]
+    gifpath_next.append(exer_elem_next['gifpath']) 
+
 
   
 
@@ -353,7 +376,7 @@ if workoutstyle == 'increase':
 
       wo1 =     {
           "id": n,
-          "heading": "Workout Time",
+          "heading": "Work",
           "name": exer_elem['name'],
           "duration": duration_work,
           "gifpath": exer_elem['gifpath'],
@@ -369,9 +392,9 @@ if workoutstyle == 'increase':
         rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Up Next: "+exercises[i+1],
+          "name": "Up Next:",
           "duration": duration_rest,
-          "gifpath": "static/movie/Rest1.mp4",
+          "gifpath": gifpath_next[i],
           "sound": 'audiorest',
           "indicator": "hidden"
           }
@@ -424,8 +447,8 @@ if workoutstyle == 'increase':
   arrayelements.append(dict(finished))
 
 
-##############################################################  WORKOUTSTYLE DECREASE ##################
-
+##############################################################  WORKOUTSTYLE DECREASE ##############################################################
+##############################################################  WORKOUTSTYLE DECREASE ##############################################################
 
 if workoutstyle == 'decrease':
 
@@ -449,9 +472,9 @@ if workoutstyle == 'decrease':
       },
       {
         "id": 1,
-        "heading": "Workout Timimg:",
+        "heading": "Workout Timing:",
         "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work - 2*20 sec decrease", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "click anywhere on screen to start sound"],
-        # "heading": "Introduction to workouts: 40 work, 10 rest, 3 rounds",
+        # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
         "duration": 10,
         "gifpath": "",
@@ -470,7 +493,7 @@ if workoutstyle == 'decrease':
 
       wo1 =     {
           "id": n,
-          "heading": "Introduction to workouts",
+          "heading": "Introduction to exercises",
           "name": exer_elem['name'],
           "duration": 10,
           "gifpath": exer_elem['gifpath'],
@@ -530,7 +553,7 @@ if workoutstyle == 'decrease':
         "name": " Let's go !!!!! ",
         "duration": 5,
         "gifpath": "static/movie/getready.mp4",
-        "sound": None,
+        "sound": 'audiorest',
         "indicator": "hidden"  
       }
 
@@ -543,7 +566,13 @@ if workoutstyle == 'decrease':
 
   cal_work =  []
 
-  
+  gifpath_next = []
+  for i in range(len(exercises)-1):
+
+    exer_index_next = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i+1]), None)
+    exer_elem_next = exerlist[exer_index_next]
+    gifpath_next.append(exer_elem_next['gifpath']) 
+
 
   while (rounds > 0):
 
@@ -554,7 +583,7 @@ if workoutstyle == 'decrease':
 
       wo1 =     {
           "id": n,
-          "heading": "Workout Time",
+          "heading": "Work",
           "name": exer_elem['name'],
           "duration": duration_work,
           "gifpath": exer_elem['gifpath'],
@@ -570,9 +599,9 @@ if workoutstyle == 'decrease':
         rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Up Next: "+exercises[i+1],
+          "name": "Up Next:",
           "duration": duration_rest,
-          "gifpath": "static/movie/Rest1.mp4",
+          "gifpath": gifpath_next[i],
           "sound": 'audiorest',
           "indicator": "hidden"
           }
@@ -624,7 +653,9 @@ if workoutstyle == 'decrease':
 
   arrayelements.append(dict(finished))
 
-##############################################################  WOKROUTSTYLE REPEAT 
+
+##############################################################  WOKROUTSTYLE REPEAT   ############################################################## 
+##############################################################  WOKROUTSTYLE REPEAT   ############################################################## 
 
 
 if workoutstyle == 'repeat':
@@ -652,7 +683,7 @@ if workoutstyle == 'repeat':
         "id": 1,
         "heading": "Workout Timimg:",
         "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work CHANGE ", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "No water break"],
-        # "heading": "Introduction to workouts: 40 work, 10 rest, 3 rounds",
+        # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
         "duration": 10,
         "gifpath": "",
@@ -671,7 +702,7 @@ if workoutstyle == 'repeat':
 
       wo1 =     {
           "id": n,
-          "heading": "Introduction to workouts",
+          "heading": "Introduction to exercises",
           "name": exer_elem['name'],
           "duration": 10,
           "gifpath": exer_elem['gifpath'],
@@ -731,7 +762,7 @@ if workoutstyle == 'repeat':
         "name": " Let's go !!!!! ",
         "duration": 5,
         "gifpath": "static/movie/getready.mp4",
-        "sound": None,
+        "sound": 'audiorest',
         "indicator": "hidden"  
       }
 
@@ -758,7 +789,7 @@ if workoutstyle == 'repeat':
 
       wo1 =     {
           "id": n,
-          "heading": "Workout Time",
+          "heading": "Work",
           "name": exer_elem['name'],
           "duration": duration_work,
           "gifpath": exer_elem['gifpath'],
@@ -774,7 +805,7 @@ if workoutstyle == 'repeat':
         rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Up Next: "+exercises[i+1],
+          "name": "Up Next:",
           "duration": duration_rest,
           "gifpath": "static/movie/Rest1.mp4",
           "sound": 'audiorest',
