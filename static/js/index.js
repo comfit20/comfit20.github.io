@@ -54,7 +54,7 @@ type="text/javascript">
             var time_830 = new Date(time);
             var time_1130 = new Date(time);
 
-            time_830.setHours(8)
+            time_830.setHours(11)
             time_830.setMinutes(32)
             time_830.setSeconds(0)
             return_list.push(time_830)
