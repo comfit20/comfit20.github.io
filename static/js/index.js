@@ -22,7 +22,7 @@ type="text/javascript">
             // next_friday.setDate(next_friday.getDate() + (5 + 7 - next_friday.getDay()) % 7);
             // console.log(next_friday);
 
-            var time_list = [next_wednesday,next_friday, next_monday]
+            var time_list = [next_friday, next_monday,next_wednesday]
             var time_complete = setTimeTo8and11(time_list)
             time_complete.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
             console.log(time_complete)
@@ -54,7 +54,7 @@ type="text/javascript">
             var time_830 = new Date(time);
             var time_1130 = new Date(time);
 
-            time_830.setHours(11)
+            time_830.setHours(8)
             time_830.setMinutes(32)
             time_830.setSeconds(0)
             return_list.push(time_830)

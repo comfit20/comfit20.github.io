@@ -7,8 +7,8 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Swimmer', 'Inch Worm', 'Frog Squats', 'Bird Dog', 'Butt Kicker', 'Mountain Climber', 
-'Windshield Wiper', 'Russian Twist', 'Plank', 'Squat & Knee Rise', 'Crunches', 'Ladder (alt: Fast Feet)']
+exercises = ['Sumo Squat', 'Burpee & Jump 180', 'Backward Lunge & 3 Pulses', 'Diamond Push Up','Jump & Squat Backwards', 'Plank Dips', 
+ 'Fast Front Kicks', 'Windshield Wiper', 'Static Spiderman',  'Heel Touch Crunches', '3 Frog Squats & 6 Plank Jumps', 'Bear Crawl']
 
 
  #'3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches']
@@ -29,10 +29,11 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #decrease 60, 40, 20 = 120 sec,  12 exercises water breaks
   #repeat 10 exercise 45 + 20 + 45 + 20; no water break
 
-workoutstyle = 'decrease' # change workout styles here
+workoutstyle = 'regular' # change workout styles here
 
 duration_warmup = 25
-
+applaus = random.randint(1,2)
+#print(applaus)
 
 ############################################### WORKOUT STYLE REGULAR
 if workoutstyle == 'regular':
@@ -42,8 +43,6 @@ if workoutstyle == 'regular':
   duration_waterbreak =35
   rounds = 3
 
-  applaus = random.randint(1,3)
-  print(applaus)
 
 
   arrayelements = [{
@@ -137,7 +136,7 @@ if workoutstyle == 'regular':
         "heading": "Get Ready to Work Out",
         "name": " Let's go !!!!! ",
         "duration": 5,
-        "gifpath": "static/movie/getready.mp4",
+        "gifpath": "static/movie/GetReadyToWorkout.mp4",
         "sound": 'audiorest',
         "indicator": "hidden"  
       }
@@ -249,9 +248,6 @@ if workoutstyle == 'increase':
   duration_waterbreak = 15
   rounds = 3
 
-  applaus = random.randint(1,3)
-  print(applaus)
-
 
   arrayelements = [{
         "id": 0,
@@ -344,7 +340,7 @@ if workoutstyle == 'increase':
         "heading": "Get Ready to Work Out",
         "name": " Let's go !!!!! ",
         "duration": 5,
-        "gifpath": "static/movie/getready.mp4",
+        "gifpath": "static/movie/GetReadyToWorkout.mp4",
         "sound": 'audiowork',
         "indicator": "hidden"  
       }
@@ -457,9 +453,6 @@ if workoutstyle == 'decrease':
   duration_waterbreak =45
   rounds = 3
 
-  applaus = random.randint(1,3)
-  print(applaus)
-
 
   arrayelements = [{
         "id": 0,
@@ -552,7 +545,7 @@ if workoutstyle == 'decrease':
         "heading": "Get Ready to Work Out",
         "name": " Let's go !!!!! ",
         "duration": 5,
-        "gifpath": "static/movie/getready.mp4",
+        "gifpath": "static/movie/GetReadyToWorkout.mp4",
         "sound": 'audiorest',
         "indicator": "hidden"  
       }
@@ -666,9 +659,6 @@ if workoutstyle == 'repeat':
 
   rounds = 4
 
-  applaus = random.randint(1,3)
-  print(applaus)
-
 
   arrayelements = [{
         "id": 0,
@@ -761,7 +751,7 @@ if workoutstyle == 'repeat':
         "heading": "Get Ready to Work Out",
         "name": " Let's go !!!!! ",
         "duration": 5,
-        "gifpath": "static/movie/getready.mp4",
+        "gifpath": "static/movie/GetReadyToWorkout.mp4",
         "sound": 'audiorest',
         "indicator": "hidden"  
       }
