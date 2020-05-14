@@ -8,7 +8,7 @@ exerlist = exerlist['exercises']
 
 
 exercises = ['Sumo Squat', 'Burpee & Jump 180', 'Backward Lunge & 3 Pulses', 'Diamond Push Up','Jump & Squat Backwards', 'Plank Dips', 
- 'Fast Front Kicks', 'Flutter Kicks (Scissor)', 'Static Spiderman',  'Heel Touch Crunches', '3 Frog Squats & 6 Plank Jumps', 'Bear Crawl']
+ 'Fast Front Kicks', 'Flutter Kicks (Scissor)', 'Static Spiderman',  'Heel Touch Crunches']#, '3 Frog Squats & 6 Plank Jumps', 'Bear Crawl']
 
 
  #'3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches']
@@ -27,9 +27,10 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #regular 12 exercises, 40 s *3 = 120 s; * 1440 s = 24 minutes work, + 6 min rest 
   #increase 20, 40, 60 = 120 sec,  12 exercises only one water break? water breaks
   #decrease 60, 40, 20 = 120 sec,  12 exercises water breaks
-  #repeat 10 exercise 45 + 20 + 45 + 20; no water break
+  #repeat_iso 10 exercise 3*45 no water break
+  #repeatdifferenttimes 10 exercise 45 + 20 + 45 + 20; no water break
 
-workoutstyle = 'regular' # change workout styles here
+workoutstyle = 'repeat_iso' # change workout styles here
 
 duration_warmup = 25
 applaus = random.randint(1,2)
@@ -73,6 +74,7 @@ if workoutstyle == 'regular':
 
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
+
       #print(exer_elem)
 
       wo1 =     {
@@ -108,11 +110,10 @@ if workoutstyle == 'regular':
 
   #write part for warm up
   for i in range(len(warmups)):
-      #print(len(warmups))
+
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == warmups[i]), None)
       exer_elem = exerlist[exer_index]
-      #print(exer_index)
-      #print(exer_elem)
+
       wu =     {
           "id": n,
           "heading": "Warm Up",
@@ -126,7 +127,7 @@ if workoutstyle == 'regular':
       arrayelements.append(dict(wu))
       
       n = n+1
-      #print(n)
+    
 
 
 
@@ -144,7 +145,7 @@ if workoutstyle == 'regular':
   arrayelements.append(dict(getreadywork))
    
   n = n +1 
-  #print(n)
+ 
 
   ################# TIMING 3 repeats ##### todo: add script for different timing
 
@@ -163,7 +164,7 @@ if workoutstyle == 'regular':
   		exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
   		exer_elem = exerlist[exer_index]
 
-      #print(
+
 
   		wo1 =     {
   	      "id": n,
@@ -179,7 +180,7 @@ if workoutstyle == 'regular':
   		arrayelements.append(dict(wo1))
 
   		if i < len(exercises)-1:
-  	 		#print('hello worlds')
+  	 
   			rest = {
   		    "id": n+1,
   		    "heading": "Rest",
@@ -224,7 +225,7 @@ if workoutstyle == 'regular':
   
 
   n = n-1
-  #print(n)
+
 
   finished = {
         "id": n,
@@ -647,18 +648,25 @@ if workoutstyle == 'decrease':
   arrayelements.append(dict(finished))
 
 
-##############################################################  WOKROUTSTYLE REPEAT   ############################################################## 
-##############################################################  WOKROUTSTYLE REPEAT   ############################################################## 
+##############################################################  WOKROUTSTYLE REPEAT ISO  ############################################################## 
+##############################################################  WOKROUTSTYLE REPEAT ISO  ############################################################## 
 
 
-if workoutstyle == 'repeat':
+if workoutstyle == 'repeat_iso':
 
   duration_work = 45
-  duration_rest = 10
-  duration_waterbreak = 35
+  duration_rest = 15
+  duration_waterbreak = 0
+  rounds = 3
 
-  rounds = 4
+  exercises_new = [] 
 
+  for i in range(len(exercises)):
+    exercises_new.append(exercises[i])
+    exercises_new.append(exercises[i])
+    exercises_new.append(exercises[i])
+    exercises_new.append(exercises[i])
+  
 
   arrayelements = [{
         "id": 0,
@@ -672,7 +680,7 @@ if workoutstyle == 'repeat':
       {
         "id": 1,
         "heading": "Workout Timimg:",
-        "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work CHANGE ", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "No water break"],
+        "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "No water break"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
         "duration": 10,
@@ -764,57 +772,53 @@ if workoutstyle == 'repeat':
   ################# TIMING 4 repeats ##### workoutstyle repeat
 
   cal_work =  []
-
-  repeat_exer = rounds
-
-
   
+  #to get movie of next exercise. could not make it work wihtin the loop
+  gifpath_next = []
+  for i in range(len(exercises_new)-1):
 
-  for i in range(len(exercises)):
+    exer_index_next = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises_new[i+1]), None)
+    exer_elem_next = exerlist[exer_index_next]
+    gifpath_next.append(exer_elem_next['gifpath']) 
 
-    while (repeat_exer > 0):
 
-      exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
-      exer_elem = exerlist[exer_index]
+  for i in range(len(exercises_new)):
 
-      wo1 =     {
-          "id": n,
-          "heading": "Work",
-          "name": exer_elem['name'],
-          "duration": duration_work,
-          "gifpath": exer_elem['gifpath'],
-          "sound": 'audiowork',
-          "indicator": "exer_visible"
-        }
-      
+    exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises_new[i]), None)
+    exer_elem = exerlist[exer_index]
+    #print(exer_elem)
+    wo1 =     {
+        "id": n,
+        "heading": "Work",
+        "name": exer_elem['name'],
+        "duration": duration_work,
+        "gifpath": exer_elem['gifpath'],
+        "sound": 'audiowork',
+        "indicator": "exer_visible"
+      }
+    
 
-      arrayelements.append(dict(wo1))
+    arrayelements.append(dict(wo1))
 
-      if i < len(exercises)-1:
+    if i < len(exercises_new)-1:
         #print('hello worlds')
-        rest = {
+      rest = {
           "id": n+1,
           "heading": "Rest",
           "name": "Up Next:",
           "duration": duration_rest,
-          "gifpath": "static/movie/Rest1.mp4",
+          "gifpath": gifpath_next[i],
           "sound": 'audiorest',
           "indicator": "hidden"
           }
 
-        arrayelements.append(dict(rest))
+      arrayelements.append(dict(rest))
 
-        repeat_exer = repeat_exer - 1
+        #cal_work.append(duration_work) #ti calculate amount of time for checking
 
-        n= n+2
+    n = n+2
 
-
-      n = n+2
-
-    
-
-  # duration_work = duration_work - 20
-  # duration_rest = duration_rest - 5
+    #n= n+1
 
 
   n = n-1
@@ -831,6 +835,12 @@ if workoutstyle == 'repeat':
     }
 
   arrayelements.append(dict(finished))
+
+
+##############################################################  WOKROUTSTYLE REPEAT DIFFERENT TIMING ############################################################## 
+##############################################################  WOKROUTSTYLE REPEAT DIFFERENT TIMING ############################################################## 
+
+
 
 ########################################################
 ########################################################   CREATING JSON FILE  
