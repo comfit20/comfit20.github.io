@@ -8,7 +8,7 @@ exerlist = exerlist['exercises']
 
 
 exercises = ['Sumo Squat', 'Burpee & Jump 180', 'Backward Lunge & 3 Pulses', 'Diamond Push Up','Jump & Squat Backwards', 'Plank Dips', 
- 'Fast Front Kicks', 'Windshield Wiper', 'Static Spiderman',  'Heel Touch Crunches', '3 Frog Squats & 6 Plank Jumps', 'Bear Crawl']
+ 'Fast Front Kicks', 'Flutter Kicks (Scissor)', 'Static Spiderman',  'Heel Touch Crunches', '3 Frog Squats & 6 Plank Jumps', 'Bear Crawl']
 
 
  #'3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches','3 Fast Knee Rise', 'Bicycle Crunches']
