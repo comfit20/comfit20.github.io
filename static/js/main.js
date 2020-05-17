@@ -98,7 +98,7 @@ function createCarousel(data) {
             content = wrapper;
         }else {
            content = $('<div class="carousel-item"><h1 id="name-'+elem.id+'">'+elem.name+'</h1>' +
-                '<video onloadeddata="this.play();"  playsinline loop muted preload autoplay>\n' +
+                '<video class="main-video" onloadeddata="this.play();"  playsinline loop muted preload autoplay>\n' +
                 '    <source src="'+elem.gifpath+'" type="video/mp4" />\n' +
                 '    Your browser does not support the video tag or the file format of this video.\n' +
                 '</video>'+
