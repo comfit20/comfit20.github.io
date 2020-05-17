@@ -187,7 +187,7 @@
          "category":[
             "core"
          ],
-         "name":"4 Sprawls & 2 PushUps",
+         "name":"4 Sprawl & 2 Push Up",
          "level":"hard",
          "gifpath":"static/movie/4Sprawls2PushUps.mp4"
       },
@@ -268,7 +268,7 @@
          "category":[
             "core"
          ],
-         "name":"Donkey Kick (n+1)",
+         "name":"Jump & Donkey Kick (n+1)",
          "level":"hard",
          "gifpath":"static/movie/DonkeyKick.mp4"
       },
@@ -322,7 +322,7 @@
          "category":[
             "core"
          ],
-         "name":"High Plank Low Plank",
+         "name":"Low & High Plank Switch",
          "level":"hard",
          "gifpath":"static/movie/HighPlankLowPlank.mp4"
       },
