@@ -11,8 +11,8 @@
 .carousel-indicators li{
 height: 20px !important;
 width: 70px !important;
-/*margin-right: 2px !important;
-margin-left: 2px !important;*/
+margin-right: 2px !important;
+margin-left: 2px !important;
 }
 
 .main-video{width: 100%;}
