@@ -12,24 +12,14 @@ type="text/javascript">
             next_friday.setDate(next_friday.getDate() + (5 + 7 - next_friday.getDay()) % 7);
             console.log(next_friday);
 
-            // var next_monday_am = new Date();
-            // next_monday.setDate(next_monday.getDate() + (1 + 7 - next_monday.getDay()) % 7);
-            // console.log(next_monday);
-            // var next_wednesday_am = new Date()
-            // next_wednesday.setDate(next_wednesday.getDate() + (3 + 7 - next_wednesday.getDay()) % 7);
-            // console.log(next_wednesday);
-            // var next_friday_am = new Date();
-            // next_friday.setDate(next_friday.getDate() + (5 + 7 - next_friday.getDay()) % 7);
-            // console.log(next_friday);
-
-            var time_list = [next_monday,next_wednesday]
+            var time_list = [next_monday,next_wednesday,next_friday]
             var time_complete = setTimeTo8and11(time_list)
             time_complete.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
             console.log(time_complete)
-            console.log('here is time complete')
-
+           
 
             $.each(time_complete, function (idx,time) {
+                console.log('show time')
                 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hours: 'numeric' };
 
             $("#next-"+idx).text(time.toLocaleTimeString(undefined,options));
@@ -57,16 +47,20 @@ type="text/javascript">
             time_830.setHours(8)
             time_830.setMinutes(32)
             time_830.setSeconds(0)
-            return_list.push(time_830)
-            // time_1130.setHours(11)
-            // time_1130.setMinutes(32)
-            // time_1130.setSeconds(0)
+            if(dayjs().isBefore(dayjs(time_830).add(1,'hour'))){
+            return_list.push(time_830)};
+            time_1130.setHours(11)
+            time_1130.setMinutes(32)
+            time_1130.setSeconds(0)
+            if(dayjs().isBefore(dayjs(time_1130).add(1,'hour'))){
+            return_list.push(time_1130)};
             // return_list.push(time_1130)
+
+
         });
         return return_list;
     }
 
-    console.log(return_list)
 
     function GFG_Fun2() {
         var date = new Date();
