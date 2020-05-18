@@ -24,7 +24,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_iso 10 exercise 3*45 no water break
   #repeat_diff erenttimes 10 exercise 45 + 25 + 45 + 25 (1400); no water break
 
-workoutstyle = 'repeat_diff' # change workout styles here
+workoutstyle = 'decrease' # change workout styles here
 
 duration_warmup = 25
 applaus = random.randint(1,2)
@@ -52,7 +52,7 @@ if workoutstyle == 'regular':
       {
         "id": 1,
         "heading": "Workout Timing:",
-        "name": ["workout style: "+workoutstyle,str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "click anywhere on screen to start sound"],
+        "name": ["workout style: "+workoutstyle,str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
         "duration": 10,
@@ -256,7 +256,7 @@ if workoutstyle == 'increase':
       {
         "id": 1,
         "heading": "Workout Timing:",
-        "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work + 2*20 sec increase", str(duration_rest)+ " sec rest", str(rounds)+" rounds","click anywhere on screen to start sound"],
+        "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work + 2*20 sec increase", str(duration_rest)+ " sec rest", str(rounds)+" rounds"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
         "duration": 10,
@@ -461,7 +461,7 @@ if workoutstyle == 'decrease':
       {
         "id": 1,
         "heading": "Workout Timing:",
-        "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work - 2*20 sec decrease", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "click anywhere on screen to start sound"],
+        "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work - 2*20 sec decrease", str(duration_rest)+ " sec rest", str(rounds)+" rounds"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
         "duration": 10,

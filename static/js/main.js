@@ -1,5 +1,6 @@
 var sequence = []
 var counter = 0;
+
 var audiowork = new Audio('./static/sounds/AirHorn-SoundBible.com-964603082.wav');
 var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav');
 var audiofinish = new Audio('./static/sounds/finish.wav');
