@@ -4,6 +4,10 @@ type="text/javascript">
             next_monday.setDate(next_monday.getDate() + (1 + 7 - next_monday.getDay()) % 7);
             console.log(next_monday);
 
+            var next_tuesday = new Date()
+            next_tuesday.setDate(next_tuesday.getDate() + (2 + 7 - next_tuesday.getDay()) % 7);
+            console.log(next_tuesday);
+
             var next_wednesday = new Date()
             next_wednesday.setDate(next_wednesday.getDate() + (3 + 7 - next_wednesday.getDay()) % 7);
             console.log(next_wednesday);
@@ -12,11 +16,12 @@ type="text/javascript">
             next_friday.setDate(next_friday.getDate() + (5 + 7 - next_friday.getDay()) % 7);
             console.log(next_friday);
 
-            var time_list = [next_monday,next_wednesday,next_friday]
+            var time_list = [next_monday,next_tuesday, next_wednesday,next_friday]
             var time_complete = setTimeTo8and11(time_list)
             time_complete.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
             console.log(time_complete)
-           
+            
+
 
             $.each(time_complete, function (idx,time) {
                 console.log('show time')
@@ -43,6 +48,7 @@ type="text/javascript">
         $.each(time_list, function (idx,time) {
             var time_830 = new Date(time);
             var time_1130 = new Date(time);
+            var time_1700 = new Date(time);
 
             time_830.setHours(8)
             time_830.setMinutes(32)
@@ -54,7 +60,14 @@ type="text/javascript">
             time_1130.setSeconds(0)
             if(dayjs().isBefore(dayjs(time_1130).add(1,'hour'))){
             return_list.push(time_1130)};
-            // return_list.push(time_1130)
+            time_1700.setHours(17)
+            time_1700.setMinutes(2)
+            time_1700.setSeconds(0)
+            if(dayjs().isBefore(dayjs(time_1700).add(1,'hour'))){
+            return_list.push(time_1700)};
+
+
+
 
 
         });

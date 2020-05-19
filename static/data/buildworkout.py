@@ -7,8 +7,8 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Sit Up', 'Mountain Climber Side Step', 'Rope Jump',  'Squat Walk', 'Low & High Plank Switch', 'Bicycle Crunches', 'Jump & Donkey Kick (n+1)',
- '2 Squats, 2 Squat Jumps', 'Side Lunges', '10 Fast Feet & Jump']  
+exercises = ['Superman (alt: Pull Ups)', 'Inch Worm', 'Frog Squats', 'Bird Dog', 'Butt Kicker', 'Mountain Climber', 'Windshield Wiper', 
+'Russian Twist', 'Plank', 'Squat & Knee Rise', 'Crunches', 'Ladder (alt: Fast Feet)']  
 
 
 #todo: write the same code for warm up list
