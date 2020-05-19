@@ -1,5 +1,6 @@
 var sequence = []
 var counter = 0;
+
 var audiowork = new Audio('./static/sounds/AirHorn-SoundBible.com-964603082.wav');
 var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav');
 var audiofinish = new Audio('./static/sounds/finish.wav');
@@ -104,8 +105,8 @@ function createCarousel(data) {
             wrapper.append('<div id=timer-'+elem.id+'></div>')
             content = wrapper;
         }else {
-           content = $('<div class="carousel-item"><h2 id="name-'+elem.id+'">'+elem.name+'</h2>' +
-                '<video onloadeddata="this.play();"  playsinline loop muted preload autoplay>\n' +
+           content = $('<div class="carousel-item"><h1 id="name-'+elem.id+'">'+elem.name+'</h1>' +
+                '<video class="main-video" onloadeddata="this.play();"  playsinline loop muted preload autoplay>\n' +
                 '    <source src="'+elem.gifpath+'" type="video/mp4" />\n' +
                 '    Your browser does not support the video tag or the file format of this video.\n' +
                 '</video>'+
@@ -118,8 +119,9 @@ function createCarousel(data) {
             if(elem.indicator == "water_break"){
                // $("#ind-"+elem.id).addClass('indicator-water');}
                 ind.addClass('indicator-water');}
-                console.log("fefef")
+                
             ind.appendTo('.carousel-indicators');
+            
             if(elem.indicator == "hidden"){
                 ind.hide();
                 //ind-"+element.id).addClass('indicator-expired');
