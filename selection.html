@@ -7,14 +7,12 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>ComFIT</title>
+    <title>COMFit</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <!-- CDN example (unpkg) -->
-    <link href="static/css/global.css" rel="stylesheet"> 
-    
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="https://unpkg.com/dayjs@1.8.21/plugin/utc.js"></script>
     <script>dayjs.extend(window.dayjs_plugin_utc)</script>
@@ -28,7 +26,7 @@
 
 </head>
 
-<body class="text-center custom-body">
+<body class="text-center">
 
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column  w-75 ">
     <header class="masthead mb-auto">
@@ -42,9 +40,15 @@
             </nav>        </div>
     </header>
 
-  <main role="main" class="inner cover">
+
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Create your own workout</h1>
+        <br class="lead"> <b>Coming soon.</b> </br>  
+
+    </main>
+    <!-- <main role="main" class="inner cover">
         <div class="cover-container">
-            <form id="main-form" class="needs-validation" novalidate onSubmit="return submitcheck(this);">
+            <form class="needs-validation" novalidate>
                 <div id="selections" class="form-row">
                     <div class="form-group">
                         <label for="dashboard-filter">Number of Rounds</label>
@@ -73,6 +77,7 @@
             </form>
 
             </div>
+ -->
     </main>
 
     <footer class="mastfoot mt-auto">
@@ -102,35 +107,21 @@
             .then((data) => {
                 parseExercisesToForm(data);
             });
+
     });
-    
+
     function parseExercisesToForm(data) {
 
         $.each (data['exercises'], function(index,elem) {
-            $( '<div class="col-md-3 mb-3"' +
-                '' +
-                '' +
-                '' +
-                '>' +
-               '<div class="form-check">' +
-            ' <input type="checkbox" class="form-check-input" name="'+elem.name+'">' +
-            '   <label class="form-check-label" for='+elem.name+'">'+elem.name+'</label>'+
+            $( '<div class="col-md-3 mb-3">' +
+               '<div class="custom-control custom-checkbox">' +
+            ' <input type="checkbox" class="custom-control-input" id="exercise-'+elem.id+'">' +
+            '   <label class="custom-control-label" for=excercise-'+elem.id+'">'+elem.name+'</label>'+
             '</div></div>').appendTo("#excercises-boxes");
         });
 
     }
 
-    function submitcheck(element)
-    {
-        var selected_elements = $(element).serializeArray();
-        exercise_list = [];
-        $.each (selected_elements,function (index,element) {
-            exercise_list.push(element.name)
-        });
-        console.log(exercise_list);
-
-        return false;
-    }
 </script>
 
 </body>
