@@ -10,36 +10,27 @@ var audiofinish = new Audio('./static/sounds/finish.wav');
 
 
 $(document).ready(function(){
-    brython()
-
-    var workoutFile = "";
+    //Get workoutfile from URL, if not there take workout1.json as default
+    var workoutFile = "workout1.json";
     var searchParams = new URLSearchParams(window.location.search)
     if(searchParams.has('workout')) {
         workoutFile = searchParams.get('workout');
-    }else{
-        console.log("Could not find workout in URL Use default workout1.json")
-        workoutFile = "workout1.json"
     }
-    var workout_list = ["Crunches","Situps"]
-    parse_workout_list(workout_list)
-    var workoutJson = console.log(JSON.parse(JSON.stringify(window.workoutJson)));
-    console.log(workoutJson)
 
-    //console.log(jsonObject);
+    // Load workoutfile
     fetch('./static/data/'+workoutFile)
         .then((response) => {
             return response.json();
         })
         .then((data) => {
 
+            // If workout file loaded, check if timestamp is in URL
+            // If not, set time to now TODO: Clean this up
             let searchParams = new URLSearchParams(window.location.search)
             if(searchParams.has('timestamp')) {
                 let timestamp = searchParams.get('timestamp')
-
-
                 console.log("Timestamp found!!")
                 data.startTime = dayjs(timestamp);
-
             }else{
                 data.startTime = 'now';
             }
@@ -54,6 +45,7 @@ $(document).ready(function(){
                 return a.id - b.id;
             });
 
+            // Calculate start time for each workout. Needed if someone joins after the workout started
             var time_list = [startTime]
             var old_time = startTime;
             data['elements'].forEach(function (item, index) {
@@ -61,21 +53,13 @@ $(document).ready(function(){
                 old_time = item.timeStamp
             });
 
+            // Crate the carousel based on the data loaded from the json
             createCarousel(data);
+
+            // Start the timers for each page on the carousel
             parseResults(data);
 
         });
-
-    $("#wo_bar").hide()
-
-    $('#start').on('click', function(event) {
-        event.preventDefault(); // To prevent following the link (optional)
-        var fiveMinutes = 60 * 0.1,
-            display = document.querySelector('#time');
-        startTimer(fiveMinutes, display);
-        $(this).hide();
-        $("#wo_bar").show();
-    });
 
 });
 
