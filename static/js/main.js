@@ -2,10 +2,14 @@ var sequence = []
 var counter = 0;
 
 var audiowork = new Audio('./static/sounds/AirHorn-SoundBible.com-964603082.wav');
+audiowork.muted = true
 var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav');
+audiorest.muted = true
 var audiofinish = new Audio('./static/sounds/finish.wav');
+audiofinish.muted = true
 
-
+// Variable to store current state of audio: mute or unmute? By default everything muted = true
+var audio_mute = true;
 
 
 
@@ -179,4 +183,30 @@ function startJqueryTimer(startTime) {
 
 function uniqId() {
     return Math.round(new Date().getTime() + (Math.random() * 100));
+}
+
+function toggleSound() {
+    var icon = $("#sound-icon");
+    var button = $("#sound-button-custom");
+    // Change icon from volume up to volume mute (see font-awesome) or the other way around
+    icon.toggleClass('fa-volume-up fa-volume-mute');
+    if(audio_mute){
+        console.log("Audio from mute to unmute")
+        // Set all sounds to unmute
+        audiowork.muted = false
+        audiorest.muted = false
+        audiofinish.muted = false
+        audio_mute = false
+        // Change text of tooltip -> This is shown if you hover over the button
+        button.attr('title','Sound is on')
+    }else{
+        console.log("Audio from unmute to mute")
+        // Set all sounds to mute
+        audiowork.muted = true
+        audiorest.muted = true
+        audiofinish.muted = true
+        audio_mute = true
+        // Change text of tooltip -> This is shown if you hover over the button
+        button.attr('title','Sound is off')
+    }
 }

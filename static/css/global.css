@@ -9,3 +9,12 @@ box-shadow: inset 0 0 0rem rgba(0, 0, 0, .5);}
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
+
+.input-check-exercise{
+    text-align: left;
+}
+
+.carousel-indicators{
+    margin-left: 3%;
+    margin-right: 3%;
+}
