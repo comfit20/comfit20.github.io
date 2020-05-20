@@ -1,41 +1,40 @@
 var sequence = []
 var counter = 0;
+
 var audiowork = new Audio('./static/sounds/AirHorn-SoundBible.com-964603082.wav');
+audiowork.muted = true
 var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav');
+audiorest.muted = true
 var audiofinish = new Audio('./static/sounds/finish.wav');
+audiofinish.muted = true
+
+// Variable to store current state of audio: mute or unmute? By default everything muted = true
+var audio_mute = true;
+
 
 
 $(document).ready(function(){
-    brython()
-
-    var workoutFile = "";
+    //Get workoutfile from URL, if not there take workout1.json as default
+    var workoutFile = "workout1.json";
     var searchParams = new URLSearchParams(window.location.search)
     if(searchParams.has('workout')) {
         workoutFile = searchParams.get('workout');
-    }else{
-        console.log("Could not find workout in URL Use default workout1.json")
-        workoutFile = "workout1.json"
     }
-    var workout_list = ["Crunches","Situps"]
-    parse_workout_list(workout_list)
-    var workoutJson = console.log(JSON.parse(JSON.stringify(window.workoutJson)));
-    console.log(workoutJson)
 
-    //console.log(jsonObject);
-    fetch('./static/data/'+workoutFile)
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
+    // Load workoutfile from jsonbinio
+    let req = new XMLHttpRequest();
 
+    req.onreadystatechange = () => {
+        if (req.readyState == XMLHttpRequest.DONE) {
+            console.log(req.responseText);
+            var data = JSON.parse(req.responseText).record
+            // If workout file loaded, check if timestamp is in URL
+            // If not, set time to now TODO: Clean this up
             let searchParams = new URLSearchParams(window.location.search)
             if(searchParams.has('timestamp')) {
                 let timestamp = searchParams.get('timestamp')
-
-
                 console.log("Timestamp found!!")
                 data.startTime = dayjs(timestamp);
-
             }else{
                 data.startTime = 'now';
             }
@@ -50,6 +49,7 @@ $(document).ready(function(){
                 return a.id - b.id;
             });
 
+            // Calculate start time for each workout. Needed if someone joins after the workout started
             var time_list = [startTime]
             var old_time = startTime;
             data['elements'].forEach(function (item, index) {
@@ -57,21 +57,27 @@ $(document).ready(function(){
                 old_time = item.timeStamp
             });
 
+            // Crate the carousel based on the data loaded from the json
             createCarousel(data);
+
+            // Start the timers for each page on the carousel
             parseResults(data);
 
-        });
+            $("#wait-spinner").css("visibility","hidden");
+            $("#sound-button-custom").css("visibility","visible");
+        }
+    };
 
-    $("#wo_bar").hide()
+    if(workoutFile=="5ec4a5ad18c8475bf16c9fcb"){
+        workoutFile = workoutFile + "/latest"
+    }
 
-    $('#start').on('click', function(event) {
-        event.preventDefault(); // To prevent following the link (optional)
-        var fiveMinutes = 60 * 0.1,
-            display = document.querySelector('#time');
-        startTimer(fiveMinutes, display);
-        $(this).hide();
-        $("#wo_bar").show();
-    });
+    req.open("GET", "https://api.jsonbin.io/v3/b/"+workoutFile, true);
+    req.setRequestHeader("X-Master-Key",
+        "$2b$10$/ldSxL8e6TFRK4PEwQ8lMOCN501mvWVBeVQ78d1ULQHEakRFuS9By");
+    req.send();
+
+
 
 });
 
@@ -101,9 +107,9 @@ function createCarousel(data) {
             wrapper.append('<div id=timer-'+elem.id+'></div>')
             content = wrapper;
         }else {
-           content = $('<div class="carousel-item"><h2 id="name-'+elem.id+'">'+elem.name+'</h2>' +
-                '<video onloadeddata="this.play();"  playsinline loop muted preload autoplay>\n' +
-                '    <source src="'+elem.gifpath+'" type="video/mp4" />\n' +
+           content = $('<div class="carousel-item"><h1 id="name-'+elem.id+'">'+elem.name+'</h1>' +
+                '<video class="main-video" preload="metadata" playsinline loop muted autoplay>\n' +
+                '    <source src="'+elem.gifpath+'#t=0.1" type="video/mp4" />\n' +
                 '    Your browser does not support the video tag or the file format of this video.\n' +
                 '</video>'+
                 '<div id=timer-'+elem.id+'></div>')
@@ -115,8 +121,9 @@ function createCarousel(data) {
             if(elem.indicator == "water_break"){
                // $("#ind-"+elem.id).addClass('indicator-water');}
                 ind.addClass('indicator-water');}
-                console.log("fefef")
+                
             ind.appendTo('.carousel-indicators');
+            
             if(elem.indicator == "hidden"){
                 ind.hide();
                 //ind-"+element.id).addClass('indicator-expired');
@@ -170,7 +177,14 @@ function startJqueryTimer(startTime) {
     $('#heading').text(element.heading);
     var elemId = uniqId()
     var timer_gui = $("#timer-"+element.id).text("00:00").css('font-size', 'xx-large');
-
+    if(element.indicator == "hidden" && (element.heading!=="Rest")){
+        // If current page has no indictator, hide indicator bar
+        console.log("Unmake visible")
+        $(".carousel-indicators").css("visibility","hidden");
+    }else{
+        console.log("Make visible")
+        $(".carousel-indicators").css("visibility","visible");
+    }
     timer_gui.countdown({
         until: new Date((element['timeStamp'])),
         compact: true, format: 'dhMS',
@@ -190,4 +204,30 @@ function startJqueryTimer(startTime) {
 
 function uniqId() {
     return Math.round(new Date().getTime() + (Math.random() * 100));
+}
+
+function toggleSound() {
+    var icon = $("#sound-icon");
+    var button = $("#sound-button-custom");
+    // Change icon from volume up to volume mute (see font-awesome) or the other way around
+    icon.toggleClass('fa-volume-up fa-volume-mute');
+    if(audio_mute){
+        console.log("Audio from mute to unmute")
+        // Set all sounds to unmute
+        audiowork.muted = false
+        audiorest.muted = false
+        audiofinish.muted = false
+        audio_mute = false
+        // Change text of tooltip -> This is shown if you hover over the button
+        button.attr('title','Sound is on')
+    }else{
+        console.log("Audio from unmute to mute")
+        // Set all sounds to mute
+        audiowork.muted = true
+        audiorest.muted = true
+        audiofinish.muted = true
+        audio_mute = true
+        // Change text of tooltip -> This is shown if you hover over the button
+        button.attr('title','Sound is off')
+    }
 }

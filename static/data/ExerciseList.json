@@ -586,6 +586,15 @@
          "name":"Windshield Wiper",
          "level":"easy",
          "gifpath":"static/movie/WindshieldWiper.mp4"
+      },
+            {
+         "id":65,
+         "category":[
+            "legs"
+         ],
+         "name":"Fast Front Kicks",
+         "level":"easy",
+         "gifpath":"static/movie/FastFrontKick.mp4"
       }
    ]
    

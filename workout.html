@@ -10,19 +10,19 @@
     <title>ComFIT</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="./static//css/cover.css">
-    <link rel="stylesheet" href="./static/css/workout.css">
+    <link rel="stylesheet" href="./static/css/cover.css">
+    <!-- Custom styles created for ComFit20 -->
+    <link href="./static/css/global.css" rel="stylesheet">
+    <link href="./static/css/workout.css" rel="stylesheet">
 
 
 </head>
 
-<body class="text-center">
+<body class="text-center custom-body">
 
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column  w-100 ">
     <header class="masthead mb-auto">
@@ -37,7 +37,7 @@
     </header>
 
     <main role="main" class="inner cover">
-        <h3 id="heading"></h3> <!-- include content from heading workout files here -->
+        <h1 id="heading"></h1> <!-- include content from heading workout files here -->
         <div id="content">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  data-interval="false" data-wrap="false" data-touch="false">
 
@@ -46,8 +46,13 @@
 
             </div>
             <ol class="carousel-indicators" style="position: relative;">
-
         </ol>
+            <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button>
+            <div id="wait-spinner" class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+
+
         </div>
         </div>
     </main>
@@ -66,20 +71,11 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="./static//libs/easytimer.min.js"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script defer src="./static/js/all.min.js"></script>
+
 <script type="text/javascript" src="./static/libs/jquery.plugin.js"></script>
 <script type="text/javascript" src="./static/libs/jquery.countdown.js"></script>
-<script type="text/javascript" src="./static/js/brython.js"></script>
-<script type="text/python3">
-    from browser import document, alert,window
-
-    def parse_workout_list(workout_list):
-        workout_json = {"test":"a"}
-        #Parse your list here and put it into workout_json variable
-        window.workoutJson = "'"+str(workout_json)+"'"
-
-    window.parse_workout_list = parse_workout_list
-</script>
 <script type="text/javascript" src="./static/js/main.js"></script>
 </body>
 </html>
