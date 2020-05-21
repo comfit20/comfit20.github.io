@@ -34,7 +34,7 @@
          "category":[
             "legs"
          ],
-         "name":"Fast Feet & Jump",
+         "name":"10 Fast Feet & Jump",
          "level":"middle",
          "gifpath":"static/movie/FastFeetJump.mp4"
       },
@@ -52,7 +52,7 @@
          "category":[
             "legs"
          ],
-         "name":"Squat and Knee Tap",
+         "name":"Squat & Knee Rise",
          "level":"easy",
          "gifpath":"static/movie/SquatKneeTap.mp4"
       },
@@ -62,7 +62,7 @@
             "legs"
          ],
          "name":"Frog Squats",
-         "level":"easy",
+         "level":"middle",
          "gifpath":"static/movie/FrogSquat.mp4"
       },
       {
@@ -187,7 +187,7 @@
          "category":[
             "core"
          ],
-         "name":"4 Sprawls & 2 PushUps",
+         "name":"4 Sprawl & 2 Push Up",
          "level":"hard",
          "gifpath":"static/movie/4Sprawls2PushUps.mp4"
       },
@@ -196,7 +196,7 @@
          "category":[
             "legs"
          ],
-         "name":"Backlunge & 3 Pulses",
+         "name":"Backward Lunge & 3 Pulses",
          "level":"easy",
          "gifpath":"static/movie/BacklungePulse.mp4"
       },
@@ -225,14 +225,14 @@
          ],
          "name":"Bird Dog",
          "level":"easy",
-         "gifpath":"static/movie/BicycleCrunches.mp4"
+         "gifpath":"static/movie/BirdDog.mp4"
       },
       {
          "id":26,
          "category":[
             "core"
          ],
-         "name":"Burpee 180C Turn",
+         "name":"Burpee & Jump 180",
          "level":"hard",
          "gifpath":"static/movie/Burpee180Turn.mp4"
       },
@@ -268,7 +268,7 @@
          "category":[
             "core"
          ],
-         "name":"Donkey Kick (n+1)",
+         "name":"Jump & Donkey Kick (n+1)",
          "level":"hard",
          "gifpath":"static/movie/DonkeyKick.mp4"
       },
@@ -295,7 +295,7 @@
          "category":[
             "legs"
          ],
-         "name":"3 Frog Squat & 3 Plank Jump",
+         "name":"3 Frog Squats & 6 Plank Jumps",
          "level":"hard",
          "gifpath":"static/movie/FrogSquatPlankJump.mp4"
       },
@@ -322,7 +322,7 @@
          "category":[
             "core"
          ],
-         "name":"High Plank Low Plank",
+         "name":"Low & High Plank Switch",
          "level":"hard",
          "gifpath":"static/movie/HighPlankLowPlank.mp4"
       },
@@ -341,7 +341,7 @@
             "legs"
          ],
          "name":"Hurdles",
-         "level":"middle",
+         "level":"hard",
          "gifpath":"static/movie/Hurdles.mp4"
       },
             {
@@ -349,7 +349,7 @@
          "category":[
             "legs"
          ],
-         "name":"IceSkater",
+         "name":"Ice Skater",
          "level":"middle",
          "gifpath":"static/movie/IceSkater.mp4"
       },
@@ -358,7 +358,7 @@
          "category":[
             "core"
          ],
-         "name":"InchWorm",
+         "name":"Inch Worm",
          "level":"middle",
          "gifpath":"static/movie/InchWorm.mp4"
       },
@@ -368,7 +368,7 @@
             "belly"
          ],
          "name":"Jack Knife",
-         "level":"middle",
+         "level":"hard",
          "gifpath":"static/movie/JackKnife.mp4"
       },
             {
@@ -385,7 +385,7 @@
          "category":[
             "legs"
          ],
-         "name":"Jump Squat",
+         "name":"2 Squats, 2 Squat Jumps",
          "level":"middle",
          "gifpath":"static/movie/JumpSquatSquat.mp4"
       },
@@ -403,7 +403,7 @@
          "category":[
             "legs"
          ],
-         "name":"Ladder",
+         "name":"Ladder (alt: Fast Feet)",
          "level":"middle",
          "gifpath":"static/movie/Ladder.mp4"
       },
@@ -430,7 +430,7 @@
          "category":[
             "core"
          ],
-         "name":"Plan Dips",
+         "name":"Plank Dips",
          "level":"hard",
          "gifpath":"static/movie/PlankDips.mp4"
       },
@@ -457,7 +457,7 @@
          "category":[
             "core"
          ],
-         "name":"Push Up + Side Turn",
+         "name":"Push Up & Side Turn",
          "level":"middle",
          "gifpath":"static/movie/PushUpSideTurn.mp4"
       },
@@ -503,7 +503,7 @@
             "belly"
          ],
          "name":"Side Plank Crunches",
-         "level":"middle",
+         "level":"hard",
          "gifpath":"static/movie/SidePlankCrunches.mp4"
       },
             {
@@ -596,6 +596,7 @@
          "level":"easy",
          "gifpath":"static/movie/FastFrontKick.mp4"
       }
+
    ]
    
 }
