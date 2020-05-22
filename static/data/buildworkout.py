@@ -124,8 +124,6 @@ if workoutstyle == 'regular':
     
 
 
-
-
   getreadywork = {
         "id": n,
         "heading": "Get Ready to Work Out",
