@@ -8,7 +8,7 @@ exerlist = exerlist['exercises']
 
 
 exercises = ['10 Fast Feet & Jump', 'Plank', 'Frog Squats', 'Sit Up', 'Fast Front Kicks', 'Push Up & Side Turn', 
-'Jack Knife', 'Shoot through', 'Ladder (alt: Fast Feet)','Side Plank Crunches',  'Inch Worm', 'Low & High Plank Switch']
+'Jack Knife', 'Shoot Through', 'Ladder (alt: Fast Feet)','Side Plank Crunches', 'Inch Worm', 'Low & High Plank Switch']
 
 # [ 'Backward Lunge & 3 Pulses','10 High Knee & 3 Tuck Jumps', 'Push Up & Side Turn', 'Heel Touch Crunches', 'Calf Rises',
 #  'Mountain Climber',  'Leg Lift & Hold', 'Jump Squat (+ Touch)', 'Static Spiderman']  
