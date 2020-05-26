@@ -1,602 +1,656 @@
 {
-   "exercises":[
-      {
-         "id":1,
-         "category":[
+   "exercises": [{
+         "id": 1,
+         "category": [
             "legs",
             "warmup"
          ],
-         "name":"Jumping Jacks",
-         "level":"easy",
-         "gifpath":"static/movie/JumpingJack.mp4"
+         "name": "Jumping Jacks",
+         "level": "easy",
+         "gifpath": "static/movie/JumpingJack.mp4"
       },
       {
-         "id":2,
-         "category":[
+         "id": 2,
+         "category": [
             "legs",
             "warmup"
          ],
-         "name":"Squat Pulses",
-         "level":"easy",
-         "gifpath":"static/movie/SquatPulses.mp4"
+         "name": "Squat Pulses",
+         "level": "easy",
+         "gifpath": "static/movie/SquatPulses.mp4"
       },
       {
-         "id":3,
-         "category":[
+         "id": 3,
+         "category": [
             "warmup"
          ],
-         "name":"5 Shoulder Circles & Windmill",
-         "level":"easy",
-         "gifpath":"static/movie/ShouldrCircles.mp4"
+         "name": "5 Shoulder Circles & Windmill",
+         "level": "easy",
+         "gifpath": "static/movie/ShouldrCircles.mp4"
       },
       {
-         "id":4,
-         "category":[
+         "id": 4,
+         "category": [
             "legs"
          ],
-         "name":"10 Fast Feet & Jump",
-         "level":"middle",
-         "gifpath":"static/movie/FastFeetJump.mp4"
+         "name": "10 Fast Feet & Jump",
+         "level": "middle",
+         "gifpath": "static/movie/FastFeetJump.mp4"
       },
       {
-         "id":5,
-         "category":[
+         "id": 5,
+         "category": [
             "legs"
          ],
-         "name":"Inner Sole Tap",
-         "level":"middle",
-         "gifpath":"static/movie/InnerSoleTap.mp4"
+         "name": "Inner Sole Tap",
+         "level": "middle",
+         "gifpath": "static/movie/InnerSoleTap.mp4"
       },
       {
-         "id":6,
-         "category":[
+         "id": 6,
+         "category": [
             "legs"
          ],
-         "name":"Squat & Knee Rise",
-         "level":"easy",
-         "gifpath":"static/movie/SquatKneeTap.mp4"
+         "name": "Squat & Knee Rise",
+         "level": "easy",
+         "gifpath": "static/movie/SquatKneeTap.mp4"
       },
       {
-         "id":7,
-         "category":[
+         "id": 7,
+         "category": [
             "legs"
          ],
-         "name":"Frog Squats",
-         "level":"middle",
-         "gifpath":"static/movie/FrogSquat.mp4"
+         "name": "Frog Squats",
+         "level": "middle",
+         "gifpath": "static/movie/FrogSquat.mp4"
       },
       {
-         "id":8,
-         "category":[
+         "id": 8,
+         "category": [
             "legs"
          ],
-         "name":"10 High Knee & 3 Tuck Jumps",
-         "level":"hard",
-         "gifpath":"static/movie/HighKneeTuckJump.mp4"
+         "name": "10 High Knee & 3 Tuck Jumps",
+         "level": "hard",
+         "gifpath": "static/movie/HighKneeTuckJump.mp4"
       },
       {
-         "id":9,
-         "category":[
+         "id": 9,
+         "category": [
             "belly"
          ],
-         "name":"Crunches",
-         "level":"easy",
-         "gifpath":"static/movie/Crunches.mp4"
+         "name": "Crunches",
+         "level": "easy",
+         "gifpath": "static/movie/Crunches.mp4"
       },
       {
-         "id":10,
-         "category":[
+         "id": 10,
+         "category": [
             "core"
          ],
-         "name":"Burpees",
-         "level":"hard",
-         "gifpath":"static/movie/Burpee.mp4"
+         "name": "Burpees",
+         "level": "hard",
+         "gifpath": "static/movie/Burpee.mp4"
       },
       {
-         "id":11,
-         "category":[
+         "id": 11,
+         "category": [
             "core"
          ],
-         "name":"Mountain Climber",
-         "level":"middle",
-         "gifpath":"static/movie/MountainClimber.mp4"
+         "name": "Mountain Climber",
+         "level": "middle",
+         "gifpath": "static/movie/MountainClimber.mp4"
       },
       {
-         "id":12,
-         "category":[
+         "id": 12,
+         "category": [
             "legs"
          ],
-         "name":"Sumo Squat",
-         "level":"easy",
-         "gifpath":"static/movie/SumoSquat.mp4"
+         "name": "Sumo Squat",
+         "level": "easy",
+         "gifpath": "static/movie/SumoSquat.mp4"
       },
       {
-         "id":13,
-         "category":[
+         "id": 13,
+         "category": [
             "legs"
          ],
-         "name":"Jumping Lunges",
-         "level":"middle",
-         "gifpath":"static/movie/PlyoLunges.mp4"
+         "name": "Jumping Lunges",
+         "level": "middle",
+         "gifpath": "static/movie/PlyoLunges.mp4"
       },
       {
-         "id":14,
-         "category":[
+         "id": 14,
+         "category": [
             "core"
          ],
-         "name":"Push Up",
-         "level":"middle",
-         "gifpath":"static/movie/PushUp.mp4"
+         "name": "Push Up",
+         "level": "middle",
+         "gifpath": "static/movie/PushUp.mp4"
       },
       {
-         "id":15,
-         "category":[
+         "id": 15,
+         "category": [
             "legs"
          ],
-         "name":"6 Fast Feet In & Out",
-         "level":"middle",
-         "gifpath":"static/movie/6FeetInOut.mp4"
+         "name": "6 Fast Feet In & Out",
+         "level": "middle",
+         "gifpath": "static/movie/6FeetInOut.mp4"
       },
       {
-         "id":16,
-         "category":[
+         "id": 16,
+         "category": [
             "core"
          ],
-         "name":"Plank",
-         "level":"easy",
-         "gifpath":"static/movie/Plank.mp4"
+         "name": "Plank",
+         "level": "easy",
+         "gifpath": "static/movie/Plank.mp4"
       },
       {
-         "id":17,
-         "category":[
+         "id": 17,
+         "category": [
             "legs"
          ],
-         "name":"Squat Walk",
-         "level":"middle",
-         "gifpath":"static/movie/SquatWalk.mp4"
+         "name": "Squat Walk",
+         "level": "middle",
+         "gifpath": "static/movie/SquatWalk.mp4"
       },
       {
-         "id":18,
-         "category":[
+         "id": 18,
+         "category": [
             "belly"
          ],
-         "name":"Sit Up",
-         "level":"middle",
-         "gifpath":"static/movie/SitUp.mp4"
+         "name": "Sit Up",
+         "level": "middle",
+         "gifpath": "static/movie/SitUp.mp4"
       },
       {
-         "id":19,
-         "category":[
+         "id": 19,
+         "category": [
             "legs"
          ],
-         "name":"Rope Jump",
-         "level":"easy",
-         "gifpath":"static/movie/RopeJump.mp4"
+         "name": "Rope Jump",
+         "level": "easy",
+         "gifpath": "static/movie/RopeJump.mp4"
       },
       {
-         "id":20,
-         "category":[
+         "id": 20,
+         "category": [
             "legs"
          ],
-         "name":"Butt Kicker",
-         "level":"easy",
-         "gifpath":"static/movie/ButtKicker.mp4"
+         "name": "Butt Kicker",
+         "level": "easy",
+         "gifpath": "static/movie/ButtKicker.mp4"
       },
       {
-         "id":21,
-         "category":[
+         "id": 21,
+         "category": [
             "core"
          ],
-         "name":"4 Sprawl & 2 Push Up",
-         "level":"hard",
-         "gifpath":"static/movie/4Sprawls2PushUps.mp4"
+         "name": "4 Sprawl & 2 Push Up",
+         "level": "hard",
+         "gifpath": "static/movie/4Sprawls2PushUps.mp4"
       },
       {
-         "id":22,
-         "category":[
+         "id": 22,
+         "category": [
             "legs"
          ],
-         "name":"Backward Lunge & 3 Pulses",
-         "level":"easy",
-         "gifpath":"static/movie/BacklungePulse.mp4"
+         "name": "Backward Lunge & 3 Pulses",
+         "level": "easy",
+         "gifpath": "static/movie/BacklungePulse.mp4"
       },
       {
-         "id":23,
-         "category":[
+         "id": 23,
+         "category": [
             "core"
          ],
-         "name":"Bear Crawl",
-         "level":"middle",
-         "gifpath":"static/movie/BearCrawl.mp4"
+         "name": "Bear Crawl",
+         "level": "middle",
+         "gifpath": "static/movie/BearCrawl.mp4"
       },
       {
-         "id":24,
-         "category":[
+         "id": 24,
+         "category": [
             "belly"
          ],
-         "name":"Bicycle Crunches",
-         "level":"middle",
-         "gifpath":"static/movie/BicycleCrunches.mp4"
+         "name": "Bicycle Crunches",
+         "level": "middle",
+         "gifpath": "static/movie/BicycleCrunches.mp4"
       },
       {
-         "id":25,
-         "category":[
+         "id": 25,
+         "category": [
             "core"
          ],
-         "name":"Bird Dog",
-         "level":"easy",
-         "gifpath":"static/movie/BirdDog.mp4"
+         "name": "Bird Dog",
+         "level": "easy",
+         "gifpath": "static/movie/BirdDog.mp4"
       },
       {
-         "id":26,
-         "category":[
+         "id": 26,
+         "category": [
             "core"
          ],
-         "name":"Burpee & Jump 180",
-         "level":"hard",
-         "gifpath":"static/movie/Burpee180Turn.mp4"
+         "name": "Burpee & Jump 180",
+         "level": "hard",
+         "gifpath": "static/movie/Burpee180Turn.mp4"
       },
       {
-         "id":27,
-         "category":[
+         "id": 27,
+         "category": [
             "legs"
          ],
-         "name":"Calf Rises",
-         "level":"middle",
-         "gifpath":"static/movie/CalfRises.mp4"
+         "name": "Calf Rises",
+         "level": "middle",
+         "gifpath": "static/movie/CalfRises.mp4"
       },
       {
-         "id":28,
-         "category":[
+         "id": 28,
+         "category": [
             "core"
          ],
-         "name":"Crab Walk",
-         "level":"hard",
-         "gifpath":"static/movie/CrabWalk.mp4"
+         "name": "Crab Walk",
+         "level": "hard",
+         "gifpath": "static/movie/CrabWalk.mp4"
       },
       {
-         "id":29,
-         "category":[
+         "id": 29,
+         "category": [
             "arms"
          ],
-         "name":"Diamond Push Up",
-         "level":"hard",
-         "gifpath":"static/movie/DiamondPushup.mp4"
+         "name": "Diamond Push Up",
+         "level": "hard",
+         "gifpath": "static/movie/DiamondPushup.mp4"
       },
-            {
-         "id":30,
-         "category":[
+      {
+         "id": 30,
+         "category": [
             "core"
          ],
-         "name":"Jump & Donkey Kick (n+1)",
-         "level":"hard",
-         "gifpath":"static/movie/DonkeyKick.mp4"
+         "name": "Jump & Donkey Kick (n+1)",
+         "level": "hard",
+         "gifpath": "static/movie/DonkeyKick.mp4"
       },
-            {
-         "id":31,
-         "category":[
+      {
+         "id": 31,
+         "category": [
             "core"
          ],
-         "name":"10 Fast Feet & Push Up",
-         "level":"hard",
-         "gifpath":"static/movie/FastFeetPushUp.mp4"
+         "name": "10 Fast Feet & Push Up",
+         "level": "hard",
+         "gifpath": "static/movie/FastFeetPushUp.mp4"
       },
-            {
-         "id":32,
-         "category":[
+      {
+         "id": 32,
+         "category": [
             "belly"
          ],
-         "name":"Flutter Kicks (Scissor)",
-         "level":"hard",
-         "gifpath":"static/movie/FlutterKicks.mp4"
+         "name": "Flutter Kicks (Scissor)",
+         "level": "hard",
+         "gifpath": "static/movie/FlutterKicks.mp4"
       },
-            {
-         "id":33,
-         "category":[
+      {
+         "id": 33,
+         "category": [
             "legs"
          ],
-         "name":"3 Frog Squats & 6 Plank Jumps",
-         "level":"hard",
-         "gifpath":"static/movie/FrogSquatPlankJump.mp4"
+         "name": "3 Frog Squats & 6 Plank Jumps",
+         "level": "hard",
+         "gifpath": "static/movie/FrogSquatPlankJump.mp4"
       },
-            {
-         "id":34,
-         "category":[
+      {
+         "id": 34,
+         "category": [
             "legs"
          ],
-         "name":"Glute Bridge",
-         "level":"easy",
-         "gifpath":"static/movie/GluteBridge.mp4"
+         "name": "Glute Bridge",
+         "level": "easy",
+         "gifpath": "static/movie/GluteBridge.mp4"
       },
-            {
-         "id":35,
-         "category":[
+      {
+         "id": 35,
+         "category": [
             "belly"
          ],
-         "name":"Heel Touch Crunches",
-         "level":"hard",
-         "gifpath":"static/movie/HeelTouchCrunches.mp4"
+         "name": "Heel Touch Crunches",
+         "level": "hard",
+         "gifpath": "static/movie/HeelTouchCrunches.mp4"
       },
-            {
-         "id":36,
-         "category":[
+      {
+         "id": 36,
+         "category": [
             "core"
          ],
-         "name":"Low & High Plank Switch",
-         "level":"hard",
-         "gifpath":"static/movie/HighPlankLowPlank.mp4"
+         "name": "Low & High Plank Switch",
+         "level": "hard",
+         "gifpath": "static/movie/HighPlankLowPlank.mp4"
       },
-            {
-         "id":37,
-         "category":[
+      {
+         "id": 37,
+         "category": [
             "warmup"
          ],
-         "name":"Single Leg Hip Circles",
-         "level":"easy",
-         "gifpath":"static/movie/HipCircles.mp4"
+         "name": "Single Leg Hip Circles",
+         "level": "easy",
+         "gifpath": "static/movie/HipCircles.mp4"
       },
-            {
-         "id":38,
-         "category":[
+      {
+         "id": 38,
+         "category": [
             "legs"
          ],
-         "name":"Hurdles",
-         "level":"hard",
-         "gifpath":"static/movie/Hurdles.mp4"
+         "name": "Hurdles",
+         "level": "hard",
+         "gifpath": "static/movie/Hurdles.mp4"
       },
-            {
-         "id":38,
-         "category":[
+      {
+         "id": 38,
+         "category": [
             "legs"
          ],
-         "name":"Ice Skater",
-         "level":"middle",
-         "gifpath":"static/movie/IceSkater.mp4"
+         "name": "Ice Skater",
+         "level": "middle",
+         "gifpath": "static/movie/IceSkater.mp4"
       },
-            {
-         "id":39,
-         "category":[
+      {
+         "id": 39,
+         "category": [
             "core"
          ],
-         "name":"Inch Worm",
-         "level":"middle",
-         "gifpath":"static/movie/InchWorm.mp4"
+         "name": "Inch Worm",
+         "level": "middle",
+         "gifpath": "static/movie/InchWorm.mp4"
       },
-            {
-         "id":40,
-         "category":[
+      {
+         "id": 40,
+         "category": [
             "belly"
          ],
-         "name":"Jack Knife",
-         "level":"hard",
-         "gifpath":"static/movie/JackKnife.mp4"
+         "name": "Jack Knife",
+         "level": "hard",
+         "gifpath": "static/movie/JackKnife.mp4"
       },
-            {
-         "id":41,
-         "category":[
+      {
+         "id": 41,
+         "category": [
             "legs"
          ],
-         "name":"Jump & Squat Backwards",
-         "level":"middle",
-         "gifpath":"static/movie/JumpSquatBackwards.mp4"
+         "name": "Jump & Squat Backwards",
+         "level": "middle",
+         "gifpath": "static/movie/JumpSquatBackwards.mp4"
       },
-            {
-         "id":42,
-         "category":[
+      {
+         "id": 42,
+         "category": [
             "legs"
          ],
-         "name":"2 Squats, 2 Squat Jumps",
-         "level":"middle",
-         "gifpath":"static/movie/JumpSquatSquat.mp4"
+         "name": "2 Squats, 2 Squat Jumps",
+         "level": "middle",
+         "gifpath": "static/movie/JumpSquatSquat.mp4"
       },
-            {
-         "id":43,
-         "category":[
+      {
+         "id": 43,
+         "category": [
             "legs"
          ],
-         "name":"3 Fast Knee Rise",
-         "level":"middle",
-         "gifpath":"static/movie/KneeRiseTap.mp4"
+         "name": "3 Fast Knee Rise",
+         "level": "middle",
+         "gifpath": "static/movie/KneeRiseTap.mp4"
       },
-            {
-         "id":44,
-         "category":[
+      {
+         "id": 44,
+         "category": [
             "legs"
          ],
-         "name":"Ladder (alt: Fast Feet)",
-         "level":"middle",
-         "gifpath":"static/movie/Ladder.mp4"
+         "name": "Ladder (alt: Fast Feet)",
+         "level": "middle",
+         "gifpath": "static/movie/Ladder.mp4"
       },
-            {
-         "id":45,
-         "category":[
+      {
+         "id": 45,
+         "category": [
             "belly"
          ],
-         "name":"Leg Lift & Hold",
-         "level":"middle",
-         "gifpath":"static/movie/LegLiftAndHold.mp4"
+         "name": "Leg Lift & Hold",
+         "level": "middle",
+         "gifpath": "static/movie/LegLiftAndHold.mp4"
       },
-            {
-         "id":46,
-         "category":[
+      {
+         "id": 46,
+         "category": [
             "core"
          ],
-         "name":"Mountain Climber Side Step",
-         "level":"hard",
-         "gifpath":"static/movie/MountainClimberSideStep.mp4"
+         "name": "Mountain Climber Side Step",
+         "level": "hard",
+         "gifpath": "static/movie/MountainClimberSideStep.mp4"
       },
-            {
-         "id":47,
-         "category":[
+      {
+         "id": 47,
+         "category": [
             "core"
          ],
-         "name":"Plank Dips",
-         "level":"hard",
-         "gifpath":"static/movie/PlankDips.mp4"
+         "name": "Plank Dips",
+         "level": "hard",
+         "gifpath": "static/movie/PlankDips.mp4"
       },
-            {
-         "id":48,
-         "category":[
+      {
+         "id": 48,
+         "category": [
             "core"
          ],
-         "name":"Prayer Pulse",
-         "level":"easy",
-         "gifpath":"static/movie/PrayerPulse.mp4"
+         "name": "Prayer Pulse",
+         "level": "easy",
+         "gifpath": "static/movie/PrayerPulse.mp4"
       },
-            {
-         "id":49,
-         "category":[
+      {
+         "id": 49,
+         "category": [
             "core"
          ],
-         "name":"Push & Squat & Turn",
-         "level":"hard",
-         "gifpath":"static/movie/PushSquatTurn.mp4"
+         "name": "Push & Squat & Turn",
+         "level": "hard",
+         "gifpath": "static/movie/PushSquatTurn.mp4"
       },
-            {
-         "id":50,
-         "category":[
+      {
+         "id": 50,
+         "category": [
             "core"
          ],
-         "name":"Push Up & Side Turn",
-         "level":"middle",
-         "gifpath":"static/movie/PushUpSideTurn.mp4"
+         "name": "Push Up & Side Turn",
+         "level": "middle",
+         "gifpath": "static/movie/PushUpSideTurn.mp4"
       },
-            {
-         "id":51,
-         "category":[
+      {
+         "id": 51,
+         "category": [
             "belly"
          ],
-         "name":"Russian Twist",
-         "level":"easy",
-         "gifpath":"static/movie/RussianTwist.mp4"
+         "name": "Russian Twist",
+         "level": "easy",
+         "gifpath": "static/movie/RussianTwist.mp4"
       },
-            {
-         "id":52,
-         "category":[
+      {
+         "id": 52,
+         "category": [
             "core"
          ],
-         "name":"Shoot Through",
-         "level":"easy",
-         "gifpath":"static/movie/ShootThrough.mp4"
+         "name": "Shoot Through",
+         "level": "easy",
+         "gifpath": "static/movie/ShootThrough.mp4"
       },
-            {
-         "id":53,
-         "category":[
+      {
+         "id": 53,
+         "category": [
             "core"
          ],
-         "name":"High Plank Shoulder Tap",
-         "level":"easy",
-         "gifpath":"static/movie/ShoulderTap.mp4"
+         "name": "High Plank Shoulder Tap",
+         "level": "easy",
+         "gifpath": "static/movie/ShoulderTap.mp4"
       },
-            {
-         "id":54,
-         "category":[
+      {
+         "id": 54,
+         "category": [
             "legs"
          ],
-         "name":"Side Lunges",
-         "level":"easy",
-         "gifpath":"static/movie/SideLunges.mp4"
+         "name": "Side Lunges",
+         "level": "easy",
+         "gifpath": "static/movie/SideLunges.mp4"
       },
-            {
-         "id":55,
-         "category":[
+      {
+         "id": 55,
+         "category": [
             "belly"
          ],
-         "name":"Side Plank Crunches",
-         "level":"hard",
-         "gifpath":"static/movie/SidePlankCrunches.mp4"
+         "name": "Side Plank Crunches",
+         "level": "hard",
+         "gifpath": "static/movie/SidePlankCrunches.mp4"
       },
-            {
-         "id":56,
-         "category":[
+      {
+         "id": 56,
+         "category": [
             "legs"
          ],
-         "name":"Single Leg Donkey Kick",
-         "level":"easy",
-         "gifpath":"static/movie/SingleLegDonkeyKick.mp4"
+         "name": "Single Leg Donkey Kick",
+         "level": "easy",
+         "gifpath": "static/movie/SingleLegDonkeyKick.mp4"
       },
-            {
-         "id":57,
-         "category":[
+      {
+         "id": 57,
+         "category": [
             "legs"
          ],
-         "name":"Single-Leg Glute Bridge",
-         "level":"easy",
-         "gifpath":"static/movie/SingleLegGluteBridge.mp4"
+         "name": "Single-Leg Glute Bridge",
+         "level": "easy",
+         "gifpath": "static/movie/SingleLegGluteBridge.mp4"
       },
-            {
-         "id":58,
-         "category":[
+      {
+         "id": 58,
+         "category": [
             "arms"
          ],
-         "name":"Spiderman Push Up",
-         "level":"hard",
-         "gifpath":"static/movie/SpidermanPushup.mp4"
+         "name": "Spiderman Push Up",
+         "level": "hard",
+         "gifpath": "static/movie/SpidermanPushup.mp4"
       },
-            {
-         "id":59,
-         "category":[
+      {
+         "id": 59,
+         "category": [
             "legs"
          ],
-         "name":"Jump Squat (+ Touch)",
-         "level":"middle",
-         "gifpath":"static/movie/SquatJumpTouch.mp4"
+         "name": "Jump Squat (+ Touch)",
+         "level": "middle",
+         "gifpath": "static/movie/SquatJumpTouch.mp4"
       },
-            {
-         "id":60,
-         "category":[
+      {
+         "id": 60,
+         "category": [
             "arms"
          ],
-         "name":"Star Push Up Jump",
-         "level":"hard",
-         "gifpath":"static/movie/StarPushUpJump.mp4"
+         "name": "Star Push Up Jump",
+         "level": "hard",
+         "gifpath": "static/movie/StarPushUpJump.mp4"
       },
-            {
-         "id":61,
-         "category":[
+      {
+         "id": 61,
+         "category": [
             "arms"
          ],
-         "name":"Static Spiderman",
-         "level":"hard",
-         "gifpath":"static/movie/StaticSpiderman.mp4"
+         "name": "Static Spiderman",
+         "level": "hard",
+         "gifpath": "static/movie/StaticSpiderman.mp4"
       },
-            {
-         "id":62,
-         "category":[
+      {
+         "id": 62,
+         "category": [
             "arms"
          ],
-         "name":"Superman (alt: Pull Ups)",
-         "level":"hard",
-         "gifpath":"static/movie/Superman.mp4"
+         "name": "Superman (alt: Pull Ups)",
+         "level": "hard",
+         "gifpath": "static/movie/Superman.mp4"
       },
-            {
-         "id":63,
-         "category":[
+      {
+         "id": 63,
+         "category": [
             "arms"
          ],
-         "name":"Swimmer",
-         "level":"easy",
-         "gifpath":"static/movie/Swimmer.mp4"
+         "name": "Swimmer",
+         "level": "easy",
+         "gifpath": "static/movie/Swimmer.mp4"
       },
-            {
-         "id":64,
-         "category":[
+      {
+         "id": 64,
+         "category": [
             "belly"
          ],
-         "name":"Windshield Wiper",
-         "level":"easy",
-         "gifpath":"static/movie/WindshieldWiper.mp4"
+         "name": "Windshield Wiper",
+         "level": "easy",
+         "gifpath": "static/movie/WindshieldWiper.mp4"
       },
-            {
-         "id":65,
-         "category":[
+      {
+         "id": 65,
+         "category": [
             "legs"
          ],
-         "name":"Fast Front Kicks",
-         "level":"easy",
-         "gifpath":"static/movie/FastFrontKick.mp4"
+         "name": "Fast Front Kicks",
+         "level": "easy",
+         "gifpath": "static/movie/FastFrontKick.mp4"
+      },
+      {
+         "id": 66,
+         "category": [
+            "legs"
+         ],
+         "name": "Fast Squats",
+         "level": "easy",
+         "gifpath": "static/movie/FastSquat.mp4"
+      },
+      {
+         "id": 67,
+         "category": [
+            "legs"
+         ],
+         "name": "2 Jumping Jack & 1 Tuck Jump",
+         "level": "hard",
+         "gifpath": "static/movie/JumpingJackTuckJump.mp4"
+      },
+      {
+         "id": 68,
+         "category": [
+            "core"
+         ],
+         "name": "Plank to Bear & Tap Knees",
+         "level": "middle",
+         "gifpath": "static/movie/PlankToBearKnees.mp4"
+      },
+      {
+         "id": 69,
+         "category": [
+            "leg"
+         ],
+         "name": "Side Hops",
+         "level": "middle",
+         "gifpath": "static/movie/SideHops.mp4"
+      },
+      {
+         "id": 70,
+         "category": [
+            "belly"
+         ],
+         "name": "V Crunch & Clap Under Leg",
+         "level": "hard",
+         "gifpath": "static/movie/VCrunchClap.mp4"
+      },
+      {
+         "id": 71,
+         "category": [
+            "legs"
+         ],
+         "name": "Wall Sit",
+         "level": "middle",
+         "gifpath": "static/movie/WallSit.mp4"
       }
 
+
    ]
-   
+
 }
