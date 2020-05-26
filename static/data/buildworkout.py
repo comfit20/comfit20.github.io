@@ -7,8 +7,12 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['10 Fast Feet & Jump', 'Plank', 'Frog Squats', 'Sit Up', 'Fast Front Kicks', 'Push Up & Side Turn', 
-'Jack Knife', 'Shoot Through', 'Ladder (alt: Fast Feet)','Side Plank Crunches', 'Inch Worm', 'Low & High Plank Switch']
+exercises = ['Rope Jump', 'Sit Up', 'Bear Crawl',  'Fast Squats', 'V Crunch & Clap Under Leg', 'Superman (alt: Pull Ups)',
+ '2 Jumping Jack & 1 Tuck Jump', 'Wall Sit (alt: Squat)', 'Plank']
+
+
+# ['10 Fast Feet & Jump', 'Plank', 'Frog Squats', 'Sit Up', 'Fast Front Kicks', 'Push Up & Side Turn', 
+# 'Jack Knife', 'Shoot Through', 'Ladder (alt: Fast Feet)','Side Plank Crunches', 'Inch Worm', 'Low & High Plank Switch']
 
 # [ 'Backward Lunge & 3 Pulses','10 High Knee & 3 Tuck Jumps', 'Push Up & Side Turn', 'Heel Touch Crunches', 'Calf Rises',
 #  'Mountain Climber',  'Leg Lift & Hold', 'Jump Squat (+ Touch)', 'Static Spiderman']  
@@ -27,7 +31,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_iso 10 exercise 3*45 no water break
   #repeat_diff erenttimes 10 exercise 45 + 25 + 45 + 25 (1400); no water break
 
-workoutstyle = 'regular' # change workout styles here
+workoutstyle = 'repeat_iso' # change workout styles here
 
 duration_warmup = 25
 applaus = random.randint(1,2)
@@ -690,7 +694,7 @@ if workoutstyle == 'repeat_iso':
 
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
-      #print(exer_elem)
+      print(exer_elem)
 
       wo1 =     {
           "id": n,
