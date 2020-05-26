@@ -198,10 +198,15 @@
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css"/>
 <script src="./static/libs/clipboard.min.js"></script>
+<script type="text/javascript" src="./static/js/testfunc.js"></script>
+
 <script type="text/javascript">
     var number_of_workouts = 0;
     $(document).ready(function () {
 
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
         fetch('./static/data/ExerciseList.json')
             .then((response) => {
                 return response.json();
@@ -228,15 +233,25 @@
     }
 
     function parseExercisesToForm(data) {
-        $.each(data['exercises'], function (index, elem) {
+        // Filter for categories
+        const belly_list = data['exercises'].filter(excercise => excercise.category.includes("belly"));
+        const legs_list = data['exercises'].filter(excercise => excercise.category.includes("legs"));
+        const core_list = data['exercises'].filter(excercise => excercise.category.includes("core"));
+
+        categorys = [core_list,legs_list,belly_list]
+        $.each(categorys,function (index, category) {
+            var wrapper = $("<div class='form-row'></div>")
+            $('<h2 class="col-sm-12">'+category[0].category[0]+'</h2>').appendTo(wrapper);
+        $.each(category, function (index, elem) {
             $('<div class="col-md-4 mb-3 input-check-exercise"' +
                 '>' +
                 '<div class="form-check">' +
                 ' <input type="checkbox" class="form-check-input" name="' + elem.name + '" id="exercise-' + elem.id + '">' +
                 '   <label class="form-check-label" for=' + elem.name + '">' + elem.name + '</br></label>' +
-                '</div></div>').appendTo("#excercises-boxes");
+                '</div></div>').appendTo(wrapper);
         });
-
+        wrapper.appendTo("#excercises-boxes")
+        });
     }
 
     function submitcheck(element) {
@@ -266,12 +281,12 @@
         $('.modal-body').empty();
         $('.modal-body').append("<h5>Summary</h5>");
         $('.modal-body').append(ul);
-
-        fetch('./static/data/workouttest.json')
+        fetch('./static/data/ExerciseList.json')
             .then((response) => {
                 return response.json();
             })
             .then((data) => {
+                var data = generateWorkoutJson(selected_duration,selected_rounds,data,exercise_list)
                 uploadToJsonBin(data, selected_date, null);
             });
 
@@ -284,6 +299,7 @@
         let req = new XMLHttpRequest();
         req.onreadystatechange = () => {
             if (req.readyState == XMLHttpRequest.DONE) {
+                console.log(req)
                 var response = JSON.parse(req.responseText)
                 if(timestamp=="now"){
                     timestamp= dayjs().add(20,'seconds').toLocaleString();
@@ -293,12 +309,11 @@
                 document.getElementById('next-0-link').value = window.location.hostname+"/workout.html?workout=" + response.metadata.id + "&timestamp=" + timestamp;
             }
         };
-        console.log(JSON.stringify(data))
         req.open("POST", "https://api.jsonbin.io/v3/b", true);
         req.setRequestHeader("Content-Type", "application/json");
         req.setRequestHeader("X-Master-Key", "$2b$10$/ldSxL8e6TFRK4PEwQ8lMOCN501mvWVBeVQ78d1ULQHEakRFuS9By");
         req.setRequestHeader("X-Collection-Id", "5ec4960ff7c0f67062cfa6fa");
-        req.send(JSON.stringify(data));
+        req.send(data);
     }
 </script>
 
