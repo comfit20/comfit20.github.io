@@ -21,64 +21,59 @@ $(document).ready(function(){
         workoutFile = searchParams.get('workout');
     }
 
-    // Load workoutfile from jsonbinio
-    let req = new XMLHttpRequest();
+    if(searchParams.has('excercises')) {
+        console.log("Helljo")
+        var exercise_list = searchParams.get('excercises');
+        fetch('./static/data/ExerciseList.json')
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                let searchParams = new URLSearchParams(window.location.search)
+                var selected_duration = searchParams.get("wo_duration")
+                var selected_rounds = searchParams.get("wo_rounds")
 
-    req.onreadystatechange = () => {
-        if (req.readyState == XMLHttpRequest.DONE) {
-            console.log(req.responseText);
-            var data = JSON.parse(req.responseText).record
-            // If workout file loaded, check if timestamp is in URL
-            // If not, set time to now TODO: Clean this up
-            let searchParams = new URLSearchParams(window.location.search)
-            if(searchParams.has('timestamp')) {
-                let timestamp = searchParams.get('timestamp')
-                console.log("Timestamp found!!")
-                data.startTime = dayjs(timestamp);
-            }else{
-                data.startTime = 'now';
-            }
+                    var generated_workout = generateWorkoutJson(selected_duration,selected_rounds,data,JSON.parse(exercise_list))
 
-            var startTime = null;
-            if(data.startTime!="now"){
-                startTime = dayjs(data.startTime)
-            }else{
-                startTime = dayjs(Date.now())
-            }
-            data.elements.sort(function(a, b){
-                return a.id - b.id;
+                console.log(generated_workout)
+
+                if(searchParams.has('timestamp')) {
+                    let timestamp = searchParams.get('timestamp')
+                    console.log("Timestamp found!!")
+                    data.startTime = dayjs(timestamp);
+                }else{
+                    generated_workout.startTime = 'now';
+                }
+
+                var startTime = null;
+                if(generated_workout.startTime!="now"){
+                    startTime = dayjs(data.startTime)
+                }else{
+                    startTime = dayjs(Date.now())
+                }
+                generated_workout.elements.sort(function(a, b){
+                    return a.id - b.id;
+                });
+
+                // Calculate start time for each workout. Needed if someone joins after the workout started
+                var time_list = [startTime]
+                var old_time = startTime;
+
+                generated_workout['elements'].forEach(function (item, index) {
+                    item.timeStamp = old_time.add(item.duration,'seconds')
+                    old_time = item.timeStamp
+                });
+
+                // Crate the carousel based on the data loaded from the json
+                createCarousel(generated_workout);
+
+                // Start the timers for each page on the carousel
+                parseResults(generated_workout);
+
+                $("#wait-spinner").css("visibility","hidden");
+                $("#sound-button-custom").css("visibility","visible");
             });
-
-            // Calculate start time for each workout. Needed if someone joins after the workout started
-            var time_list = [startTime]
-            var old_time = startTime;
-            data['elements'].forEach(function (item, index) {
-                item.timeStamp = old_time.add(item.duration,'seconds')
-                old_time = item.timeStamp
-            });
-
-            // Crate the carousel based on the data loaded from the json
-            createCarousel(data);
-
-            // Start the timers for each page on the carousel
-            parseResults(data);
-
-            $("#wait-spinner").css("visibility","hidden");
-            $("#sound-button-custom").css("visibility","visible");
-        }
-    };
-
-    if(workoutFile=="5ec4a5ad18c8475bf16c9fcb"){
-        workoutFile = workoutFile + "/latest"
     }
-
-    req.open("GET", "https://api.jsonbin.io/v3/b/"+workoutFile, true);
-    req.setRequestHeader("X-Master-Key",
-        "$2b$10$/ldSxL8e6TFRK4PEwQ8lMOCN501mvWVBeVQ78d1ULQHEakRFuS9By");
-    req.send();
-
-
-
 });
 
 function createCarousel(data) {

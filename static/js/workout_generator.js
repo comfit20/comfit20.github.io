@@ -2,8 +2,8 @@ function generateWorkoutJson(duration_work,rounds,exerjson,exercises) {
     console.log("Hello!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", exercises)
     var workout = {};
 
-        exerlist = exerjson['exercises'] // get array exercises from json file
-
+        exerlist  = exerjson['exercises'] // get array exercises from json file
+        console.log(exerlist)
         var applaus = 1 //random.randint(1,2)
 
         var warmups = ['Jumping Jacks', 'Single Leg Hip Circles', 'Squat Pulses', 'Glute Bridge', '5 Shoulder Circles & Windmill', 'Burpees']
@@ -231,7 +231,7 @@ function generateWorkoutJson(duration_work,rounds,exerjson,exercises) {
 
 //document.getElementById("demo").innerHTML = JSON.stringify(workout)
         console.log("Json returend~!!!!!!!!!!!!!!!!!!!!!!!",workout)
-        return JSON.stringify(workout);
+        return workout;
 
 };
 

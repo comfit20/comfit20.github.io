@@ -43,7 +43,7 @@ type="text/javascript">
             const options = { weekday: 'long', month: 'long', day: 'numeric', hours: 'numeric' };
 
             $("#next-"+idx).text(time.toLocaleTimeString(undefined,options));
-            var share_link = window.location.hostname+'/workout.html?workout='+workout_id+'&timestamp='+time.toISOString();
+            var share_link = window.location.hostname+'/workout.html?workout_file='+workout_id+'&timestamp='+time.toISOString();
             $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout="+workout_id);
             // $("#next-"+idx+"-share-fb").attr('href','https://www.facebook.com/sharer.php?u='+share_link);
             // $('#next-'+idx+'-share-twitter').attr('href','https://twitter.com/intent/tweet?url='+share_link);

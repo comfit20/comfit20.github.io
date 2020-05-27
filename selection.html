@@ -198,7 +198,7 @@
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css"/>
 <script src="./static/libs/clipboard.min.js"></script>
-<script type="text/javascript" src="./static/js/testfunc.js"></script>
+<script type="text/javascript" src="static/js/workout_generator.js"></script>
 
 <script type="text/javascript">
     var number_of_workouts = 0;
@@ -281,39 +281,22 @@
         $('.modal-body').empty();
         $('.modal-body').append("<h5>Summary</h5>");
         $('.modal-body').append(ul);
-        fetch('./static/data/ExerciseList.json')
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                var data = generateWorkoutJson(selected_duration,selected_rounds,data,exercise_list)
-                uploadToJsonBin(data, selected_date, null);
-            });
-
+        createModal(exercise_list,selected_date,selected_duration,selected_rounds);
         return false;
     }
 
-    function uploadToJsonBin(data, timestamp, successCallback) {
+    function createModal(exercises, timestamp, duration,rounds) {
         //Here workout.json should be created and saved in jsonbin.io
-        $('.modal').modal()
-        let req = new XMLHttpRequest();
-        req.onreadystatechange = () => {
-            if (req.readyState == XMLHttpRequest.DONE) {
-                console.log(req)
-                var response = JSON.parse(req.responseText)
+        $('.modal').modal();
                 if(timestamp=="now"){
                     timestamp= dayjs().add(20,'seconds').toLocaleString();
                 }
-                $('#btn-go-to-workout').attr("href", "workout.html?workout=" + response.metadata.id + "&timestamp=" + timestamp);
+                $('#btn-go-to-workout').attr("href", "workout.html?excercises=" + encodeURIComponent(JSON.stringify(exercises)) + "&timestamp=" + timestamp +"&wo_duration=" + duration + "&rounds="+rounds);
                 var clipboard = new ClipboardJS('.clipboard-button');
-                document.getElementById('next-0-link').value = window.location.hostname+"/workout.html?workout=" + response.metadata.id + "&timestamp=" + timestamp;
-            }
-        };
-        req.open("POST", "https://api.jsonbin.io/v3/b", true);
-        req.setRequestHeader("Content-Type", "application/json");
-        req.setRequestHeader("X-Master-Key", "$2b$10$/ldSxL8e6TFRK4PEwQ8lMOCN501mvWVBeVQ78d1ULQHEakRFuS9By");
-        req.setRequestHeader("X-Collection-Id", "5ec4960ff7c0f67062cfa6fa");
-        req.send(data);
+                document.getElementById('next-0-link').value = window.location.hostname+"/workout.html?excercises=" + exercises + "&timestamp=" + timestamp +"&wo_duration=" + duration + "&rounds="+rounds;
+
+
+
     }
 </script>
 
