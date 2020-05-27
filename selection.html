@@ -293,7 +293,7 @@
                 }
                 $('#btn-go-to-workout').attr("href", "workout.html?excercises=" + encodeURIComponent(JSON.stringify(exercises)) + "&timestamp=" + timestamp +"&wo_duration=" + duration + "&rounds="+rounds);
                 var clipboard = new ClipboardJS('.clipboard-button');
-                document.getElementById('next-0-link').value = window.location.hostname+"/workout.html?excercises=" + exercises + "&timestamp=" + timestamp +"&wo_duration=" + duration + "&rounds="+rounds;
+                document.getElementById('next-0-link').value = window.location.hostname+"/workout.html?excercises=" + encodeURIComponent(JSON.stringify(exercises)) + "&timestamp=" + timestamp +"&wo_duration=" + duration + "&rounds="+rounds;
 
 
 
