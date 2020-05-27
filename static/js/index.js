@@ -19,17 +19,27 @@ type="text/javascript">
             var time_list = [next_monday,next_tuesday, next_wednesday,next_friday]
             var time_complete = setTimeTo8and11(time_list)
             time_complete.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
+            console.log('here comes time complete sorted')
             console.log(time_complete)
             
+            var allworkouts = ['workout2', 'workout3', 'workout4']
+            console.log(allworkouts)    
 
 
             $.each(time_complete, function (idx,time) {
                 console.log('show time')
                 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hours: 'numeric' };
 
+
             $("#next-"+idx).text(time.toLocaleTimeString(undefined,options));
             var share_link = window.location.hostname+'/workout.html?timestamp='+time.toISOString();
+
+
+            // wrrite loop: if Mon, Wed, ,, is in timecomplete[1] then workout 1, else add random numer to workout and concatenate string. 
+
+
             $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
+
             // $("#next-"+idx+"-share-fb").attr('href','https://www.facebook.com/sharer.php?u='+share_link);
             // $('#next-'+idx+'-share-twitter').attr('href','https://twitter.com/intent/tweet?url='+share_link);
             // $('#next-'+idx+'-share-ig').attr('href','https://instagram.com/');

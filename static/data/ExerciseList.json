@@ -43,7 +43,7 @@
             "legs"
          ],
          "name": "Inner Sole Tap",
-         "level": "middle",
+         "level": "hard",
          "gifpath": "static/movie/InnerSoleTap.mp4"
       },
       {
@@ -646,7 +646,7 @@
             "legs"
          ],
          "name": "Wall Sit (alt: Squat)",
-         "level": "middle",
+         "level": "easy",
          "gifpath": "static/movie/WallSit.mp4"
       }
 

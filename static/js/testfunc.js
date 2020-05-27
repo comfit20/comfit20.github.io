@@ -10,7 +10,7 @@ exerlist = exerjson['exercises'] // get array exercises from json file
 
 var applaus = 1 //random.randint(1,2)
 
-var exercises = ['Superman (alt: Pull Ups)', 'Inch Worm', 'Frog Squats', 'Bird Dog', 'Butt Kicker']
+var exercises = ['Superman (alt: Pull Ups)', 'Inch Worm'] // 'Frog Squats', 'Bird Dog', ['Superman (alt: Pull Ups)', 'Inch Worm', 'Frog Squats', 'Bird Dog' ,'Butt Kicker']
 
 var warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']
 
@@ -142,8 +142,9 @@ for (i = 0; i <  warmups.length; i++)
 
 var gifpath_next = []
 
-for (i = 0; i <  warmups.length-1; i++)
+for (i = 0; i <  exercises.length-1; i++)
   { exer_index_next =exerlist.map(function(e) { return e.name; }).indexOf(exercises[i]);
+console.log(i)
     exer_elem_next = exerlist[exer_index_next]
     gifpath_next.push(exer_elem_next['gifpath']) 
   }
