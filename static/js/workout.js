@@ -15,14 +15,23 @@ var audio_mute = true;
 
 $(document).ready(function(){
     //Get workoutfile from URL, if not there take workout1.json as default
+    // If workoutfile is specified, load it from the file
     var workoutFile = "workout1.json";
     var searchParams = new URLSearchParams(window.location.search)
     if(searchParams.has('workout')) {
         workoutFile = searchParams.get('workout');
-    }
+        fetch('./static/data/'+workoutFile)
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
 
+                buildSiteFromWorkoutFile(data)
+
+            });
+    }
+    // Otherwise parse it from the exercises list
     if(searchParams.has('excercises')) {
-        console.log("Helljo")
         var exercise_list = searchParams.get('excercises');
         fetch('./static/data/ExerciseList.json')
             .then((response) => {
@@ -35,46 +44,52 @@ $(document).ready(function(){
 
                     var generated_workout = generateWorkoutJson(selected_duration,selected_rounds,data,JSON.parse(exercise_list))
 
-                console.log(generated_workout)
+                buildSiteFromWorkoutFile(generated_workout)
 
-                if(searchParams.has('timestamp')) {
-                    let timestamp = searchParams.get('timestamp')
-                    console.log("Timestamp found!!")
-                    data.startTime = dayjs(timestamp);
-                }else{
-                    generated_workout.startTime = 'now';
-                }
-
-                var startTime = null;
-                if(generated_workout.startTime!="now"){
-                    startTime = dayjs(data.startTime)
-                }else{
-                    startTime = dayjs(Date.now())
-                }
-                generated_workout.elements.sort(function(a, b){
-                    return a.id - b.id;
-                });
-
-                // Calculate start time for each workout. Needed if someone joins after the workout started
-                var time_list = [startTime]
-                var old_time = startTime;
-
-                generated_workout['elements'].forEach(function (item, index) {
-                    item.timeStamp = old_time.add(item.duration,'seconds')
-                    old_time = item.timeStamp
-                });
-
-                // Crate the carousel based on the data loaded from the json
-                createCarousel(generated_workout);
-
-                // Start the timers for each page on the carousel
-                parseResults(generated_workout);
-
-                $("#wait-spinner").css("visibility","hidden");
-                $("#sound-button-custom").css("visibility","visible");
             });
+    }});
+
+
+function buildSiteFromWorkoutFile(workoutjson){
+    let searchParams = new URLSearchParams(window.location.search)
+    console.log(workoutjson)
+    if(searchParams.has('timestamp')) {
+        let timestamp = searchParams.get('timestamp')
+        console.log("Timestamp found!!")
+        workoutjson.startTime = dayjs(timestamp);
+    }else{
+        workoutjson.startTime = 'now';
     }
-});
+
+    var startTime = null;
+    if(workoutjson.startTime!="now"){
+        startTime = dayjs(workoutjson.startTime)
+    }else{
+        startTime = dayjs(Date.now())
+    }
+    workoutjson.elements.sort(function(a, b){
+        return a.id - b.id;
+    });
+
+    // Calculate start time for each workout. Needed if someone joins after the workout started
+    var time_list = [startTime]
+    var old_time = startTime;
+
+    workoutjson.elements.forEach(function (item, index) {
+        item.timeStamp = old_time.add(item.duration,'seconds')
+        old_time = item.timeStamp
+    });
+
+    // Crate the carousel based on the data loaded from the json
+    createCarousel(workoutjson);
+
+    // Start the timers for each page on the carousel
+    parseResults(workoutjson);
+
+    $("#wait-spinner").css("visibility","hidden");
+    $("#sound-button-custom").css("visibility","visible");
+
+}
 
 function createCarousel(data) {
     var expired_count = 0;

@@ -135,7 +135,7 @@ function generateWorkoutJson(duration_work,rounds,exerjson,exercises) {
 
         var gifpath_next = []
 
-        for (i = 0; i < warmups.length - 1; i++) {
+        for (i = 0; i < exercises.length; i++) {
             exer_index_next = exerlist.map(function (e) {
                 return e.name;
             }).indexOf(exercises[i]);

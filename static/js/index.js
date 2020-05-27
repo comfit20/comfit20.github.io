@@ -1,20 +1,10 @@
 type="text/javascript">
     $(document).ready(function(){
         // Get current active workout from workout_active.json
-
-        var workout_id = ""
-        fetch('./static/data/workout_active.json')
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                workout_id = data.workout_id
-                renderWebsite(workout_id);
-            });
-
+        renderWebsite()
     });
 
-    function renderWebsite(workout_id) {
+    function renderWebsite() {
         var next_monday = new Date();
         next_monday.setDate(next_monday.getDate() + (1 + 7 - next_monday.getDay()) % 7);
         console.log(next_monday);
@@ -34,7 +24,6 @@ type="text/javascript">
         var time_list = [next_monday,next_tuesday, next_wednesday,next_friday]
         var time_complete = setTimeTo8and11(time_list)
         time_complete.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
-        console.log(workout_id)
 
 
 
@@ -43,8 +32,8 @@ type="text/javascript">
             const options = { weekday: 'long', month: 'long', day: 'numeric', hours: 'numeric' };
 
             $("#next-"+idx).text(time.toLocaleTimeString(undefined,options));
-            var share_link = window.location.hostname+'/workout.html?workout_file='+workout_id+'&timestamp='+time.toISOString();
-            $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout="+workout_id);
+            var share_link = window.location.hostname+'/workout.html?workout_file=workout1.json'+'&timestamp='+time.toISOString();
+            $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
             // $("#next-"+idx+"-share-fb").attr('href','https://www.facebook.com/sharer.php?u='+share_link);
             // $('#next-'+idx+'-share-twitter').attr('href','https://twitter.com/intent/tweet?url='+share_link);
             // $('#next-'+idx+'-share-ig').attr('href','https://instagram.com/');
