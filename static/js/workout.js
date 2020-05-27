@@ -25,9 +25,7 @@ $(document).ready(function(){
                 return response.json();
             })
             .then((data) => {
-
                 buildSiteFromWorkoutFile(data)
-
             });
     }
     // Otherwise parse it from the exercises list
@@ -55,7 +53,9 @@ function buildSiteFromWorkoutFile(workoutjson){
     console.log(workoutjson)
     if(searchParams.has('timestamp')) {
         let timestamp = searchParams.get('timestamp')
-        console.log("Timestamp found!!")
+        if(timestamp==""){
+            timestamp = new Date()
+        }
         workoutjson.startTime = dayjs(timestamp);
     }else{
         workoutjson.startTime = 'now';

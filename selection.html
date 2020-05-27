@@ -237,8 +237,9 @@
         const belly_list = data['exercises'].filter(excercise => excercise.category.includes("belly"));
         const legs_list = data['exercises'].filter(excercise => excercise.category.includes("legs"));
         const core_list = data['exercises'].filter(excercise => excercise.category.includes("core"));
+        const arms_list = data['exercises'].filter(excercise => excercise.category.includes("arms"));
 
-        categorys = [core_list,legs_list,belly_list]
+        categorys = [core_list,legs_list,belly_list,arms_list]
         $.each(categorys,function (index, category) {
             var wrapper = $("<div class='form-row'></div>")
             $('<h2 class="col-sm-12">'+category[0].category[0]+'</h2>').appendTo(wrapper);
