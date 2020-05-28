@@ -40,7 +40,8 @@ rounds = parseInt(rounds)
             {
                 "id": 1,
                 "heading": "Workout Timing:",
-                "name": ["workout style: add stuff back in "],
+                "name": ["workout style: regular",exercises.length+" exercises", duration_work+ " sec work", duration_rest+ " sec rest", rounds+" rounds" ],
+                // str(duration_rest)+ " sec rest", str(rounds)+" rounds"]
                 "duration": 10,
                 "gifpath": "",
                 "sound": null,
@@ -123,7 +124,7 @@ rounds = parseInt(rounds)
         getreadywork = {
             "id": n,
             "heading": "Get Ready to Work Out",
-            "name": " Let's go !!!!! ",
+            "name": " Let's go: "+exercises[0],
             "duration": 5,
             "gifpath": "static/movie/GetReadyToWorkout.mp4",
             "sound": 'audiorest',
@@ -175,7 +176,7 @@ rounds = parseInt(rounds)
                     rest = {
                         "id": n + 1,
                         "heading": "Rest",
-                        "name": exercises[i + 1],
+                        "name": "Next: "+exercises[i + 1],
                         "duration": duration_rest,
                         "gifpath": gifpath_next[i + 1],
                         "sound": 'audiorest',
@@ -196,7 +197,7 @@ rounds = parseInt(rounds)
                 water = {
                     "id": n,
                     "heading": "Water Break",
-                    "name": exercises[0],
+                    "name": "Next: "+exercises[0],
                     "duration": duration_waterbreak,
                     "gifpath": "static/movie/WaterRefill.mp4",
                     "sound": 'audiorest',

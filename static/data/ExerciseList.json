@@ -343,15 +343,7 @@
          "level": "hard",
          "gifpath": "static/movie/Hurdles.mp4"
       },
-      {
-         "id": 38,
-         "category": [
-            "legs"
-         ],
-         "name": "Ice Skater",
-         "level": "middle",
-         "gifpath": "static/movie/IceSkater.mp4"
-      },
+
       {
          "id": 39,
          "category": [
@@ -648,7 +640,16 @@
          "name": "Wall Sit (alt: Squat)",
          "level": "easy",
          "gifpath": "static/movie/WallSit.mp4"
-      }
+      },
+            {
+         "id": 72,
+         "category": [
+            "legs"
+         ],
+         "name": "Ice Skater",
+         "level": "middle",
+         "gifpath": "static/movie/IceSkater.mp4"
+      },
 
 
    ]
