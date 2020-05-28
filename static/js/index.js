@@ -20,10 +20,10 @@ type="text/javascript">
             var time_complete = setTimeTo8and11(time_list)
             time_complete.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
             console.log('here comes time complete sorted')
-            console.log(time_complete)
-            
-            var allworkouts = ['workout2', 'workout3', 'workout4']
-            console.log(allworkouts)    
+            var current_day = time_complete[1]
+            console.log(current_day)
+
+
 
 
             $.each(time_complete, function (idx,time) {
@@ -38,7 +38,9 @@ type="text/javascript">
             // wrrite loop: if Mon, Wed, ,, is in timecomplete[1] then workout 1, else add random numer to workout and concatenate string. 
 
 
+
             $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
+
 
             // $("#next-"+idx+"-share-fb").attr('href','https://www.facebook.com/sharer.php?u='+share_link);
             // $('#next-'+idx+'-share-twitter').attr('href','https://twitter.com/intent/tweet?url='+share_link);
@@ -52,6 +54,11 @@ type="text/javascript">
         $('.clipboard-button').tooltip()
 
     });
+
+         var nr_workout = get_workoutNo()
+
+         $("#workoutanytime").attr('href','workout.html?&workout=workout'+nr_workout+".json");
+
 
     function setTimeTo8and11(time_list) {
         var return_list = []
@@ -76,19 +83,18 @@ type="text/javascript">
             if(dayjs().isBefore(dayjs(time_1700).add(1,'hour'))){
             return_list.push(time_1700)};
 
-
-
-
-
         });
         return return_list;
     }
 
 
-    function GFG_Fun2() {
-        var date = new Date();
-        // ms in 5 minutes.
-        var coff = 1000 * 60 * 5;
-        return new Date(
-            Math.floor(date / coff) * coff);
+    function get_workoutNo() {
+        var today = dayjs().day()
+console.log("sdsadasda", Math.floor((Math.random() * 5) + 2))
+ if (today == 1 ||  today == 2 ||  today == 3 ||  today == 5) {return 1;}
+ else {return Math.floor((Math.random() * 5) + 2);}
     }
+
+
+
+
