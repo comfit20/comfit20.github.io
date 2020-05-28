@@ -528,13 +528,13 @@
          "category": [
             "arms"
          ],
-         "name": "Spiderman Push Up",
-         "level": "hard",
-         "gifpath": "static/movie/SpidermanPushup.mp4"
+         "name":"Spiderman Push Up",
+         "level":"hard",
+         "gifpath":"static/movie/SpidermanPushup.mp4"
       },
-      {
-         "id": 59,
-         "category": [
+            {
+         "id":59,
+         "category":[
             "legs"
          ],
          "name": "Jump Squat (+ Touch)",
@@ -652,5 +652,5 @@
 
 
    ]
-
+   
 }

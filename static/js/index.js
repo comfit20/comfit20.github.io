@@ -1,47 +1,39 @@
 type="text/javascript">
     $(document).ready(function(){
-            var next_monday = new Date();
-            next_monday.setDate(next_monday.getDate() + (1 + 7 - next_monday.getDay()) % 7);
-            console.log(next_monday);
+        // Get current active workout from workout_active.json
+        renderWebsite()
+    });
 
-            var next_tuesday = new Date()
-            next_tuesday.setDate(next_tuesday.getDate() + (2 + 7 - next_tuesday.getDay()) % 7);
-            console.log(next_tuesday);
+    function renderWebsite() {
+        var next_monday = new Date();
+        next_monday.setDate(next_monday.getDate() + (1 + 7 - next_monday.getDay()) % 7);
+        console.log(next_monday);
 
-            var next_wednesday = new Date()
-            next_wednesday.setDate(next_wednesday.getDate() + (3 + 7 - next_wednesday.getDay()) % 7);
-            console.log(next_wednesday);
+        var next_tuesday = new Date()
+        next_tuesday.setDate(next_tuesday.getDate() + (2 + 7 - next_tuesday.getDay()) % 7);
+        console.log(next_tuesday);
 
-            var next_friday = new Date();
-            next_friday.setDate(next_friday.getDate() + (5 + 7 - next_friday.getDay()) % 7);
-            console.log(next_friday);
+        var next_wednesday = new Date()
+        next_wednesday.setDate(next_wednesday.getDate() + (3 + 7 - next_wednesday.getDay()) % 7);
+        console.log(next_wednesday);
 
-            var time_list = [next_monday,next_tuesday, next_wednesday,next_friday]
-            var time_complete = setTimeTo8and11(time_list)
-            time_complete.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
-            console.log('here comes time complete sorted')
-            var current_day = time_complete[1]
-            console.log(current_day)
+        var next_friday = new Date();
+        next_friday.setDate(next_friday.getDate() + (5 + 7 - next_friday.getDay()) % 7);
+        console.log(next_friday);
+
+        var time_list = [next_monday,next_tuesday, next_wednesday,next_friday]
+        var time_complete = setTimeTo8and11(time_list)
+        time_complete.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
 
 
 
-
-            $.each(time_complete, function (idx,time) {
-                console.log('show time')
-                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hours: 'numeric' };
-
+        $.each(time_complete, function (idx,time) {
+            console.log('show time')
+            const options = { weekday: 'long', month: 'long', day: 'numeric', hours: 'numeric' };
 
             $("#next-"+idx).text(time.toLocaleTimeString(undefined,options));
-            var share_link = window.location.hostname+'/workout.html?timestamp='+time.toISOString();
-
-
-            // wrrite loop: if Mon, Wed, ,, is in timecomplete[1] then workout 1, else add random numer to workout and concatenate string. 
-
-
-
+            var share_link = window.location.hostname+'/workout.html?workout_file=workout1.json'+'&timestamp='+time.toISOString();
             $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
-
-
             // $("#next-"+idx+"-share-fb").attr('href','https://www.facebook.com/sharer.php?u='+share_link);
             // $('#next-'+idx+'-share-twitter').attr('href','https://twitter.com/intent/tweet?url='+share_link);
             // $('#next-'+idx+'-share-ig').attr('href','https://instagram.com/');
@@ -53,7 +45,7 @@ type="text/javascript">
         var clipboard = new ClipboardJS('.clipboard-button');
         $('.clipboard-button').tooltip()
 
-    });
+    };
 
          var nr_workout = get_workoutNo()
 
@@ -83,6 +75,7 @@ type="text/javascript">
             if(dayjs().isBefore(dayjs(time_1700).add(1,'hour'))){
             return_list.push(time_1700)};
 
+
         });
         return return_list;
     }
@@ -94,7 +87,3 @@ console.log("sdsadasda", Math.floor((Math.random() * 5) + 2))
  if (today == 1 ||  today == 2 ||  today == 3 ||  today == 5) {return 1;}
  else {return Math.floor((Math.random() * 5) + 2);}
     }
-
-
-
-

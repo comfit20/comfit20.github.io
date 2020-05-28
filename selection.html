@@ -18,67 +18,158 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>COMFit</title>
+    <title>ComFIT</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <!-- CDN example (unpkg) -->
+    <link href="static/css/global.css" rel="stylesheet">
+
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="https://unpkg.com/dayjs@1.8.21/plugin/utc.js"></script>
     <script>dayjs.extend(window.dayjs_plugin_utc)</script>
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link
             href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
-            rel="stylesheet"  type='text/css'>
+            rel="stylesheet" type='text/css'>
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="./static/css/cover.css">
-
+    <link rel="stylesheet" href="./static/css/global.css">
+    <script src="./static/js/all.min.js"></script> <!--load all styles -->
 </head>
 
-<body class="text-center">
+<body class="text-center custom-body">
 
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column  w-75 ">
     <header class="masthead mb-auto">
         <div class="inner">
-            <h1 class="masthead-brand"><a  href="index.html">ComFIT</a></h1>
+            <h1 class="masthead-brand"><a href="index.html">ComFIT</a></h1>
             <nav class="nav nav-masthead justify-content-center">
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="about.html">About</a>
                 <a class="nav-link" href="schedule.html">Schedule</a>
                 <a class="nav-link" href="contact.html">Contact</a>
-            </nav>        </div>
+            </nav>
+        </div>
     </header>
 
-
     <main role="main" class="inner cover">
-        <h1 class="cover-heading">Create your own workout</h1>
-        <br class="lead"> <b>Coming soon.</b> </br>  
-
-    </main>
-    <!-- <main role="main" class="inner cover">
         <div class="cover-container">
-            <form class="needs-validation" novalidate>
-                <div id="selections" class="form-row">
-                    <div class="form-group">
-                        <label for="dashboard-filter">Number of Rounds</label>
-                        <select id="dashboard-filter" class="form-control">
-                            <option>1</option>
-                            <option>2</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                    <label for="example-datetime-local-input" class="col-form-label">Date and time</label>
-                        <div class="col-10">
-                            <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+            <div class="row">
+                <div class="alert alert-info">
+                    <strong>Create your own workout!</strong>
+                    <p>Instuctions here: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                        Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+
+                        including versions of Lorem Ipsum.</p>
+
+                </div>
+                <div class="card-group">
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <form id="main-form" class="needs-validation" novalidate
+                                  onSubmit="return submitcheck(this);">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Number of rounds</label>
+                                    <select class="form-control custom-select mb-3" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <label for="seco" class="col-form-label">Duration per Exercise</label>
+                                <div class="form-group  mb-10">
+                                    <input type="text" id="seco" class="form-control" placeholder="40" value="40">
+                                </div>
+                                <label for="datetimepicker1" class="col-form-label">Date and time</label>
+                                <div class="form-group">
+                                    <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                        <input class="form-control datetimepicker-input" data-target="#datetimepicker1"
+                                               value="now"/>
+                                        <div class="input-group-append" data-target="#datetimepicker1"
+                                             data-toggle="datetimepicker">
+                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center m-3">
+                                    <h3 class="">Excercises</h3>
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                            Random
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <button class="btn-sm dropdown-item" type="button"
+                                                    onclick="generateRandomWorkout(5)">5 Excercises
+                                            </button>
+                                            <button class="btn-sm dropdown-item" type="button"
+                                                    onclick="generateRandomWorkout(6)">6 Excercises
+                                            </button>
+                                            <button class="btn-sm dropdown-item" type="button"
+                                                    onclick="generateRandomWorkout(7)">7 Excercises
+                                            </button>
+                                            <button class="btn-sm dropdown-item" type="button"
+                                                    onclick="generateRandomWorkout(8)">8 Excercises
+                                            </button>
+                                            <button class="btn-sm dropdown-item" type="button"
+                                                    onclick="generateRandomWorkout(9) ">9 Excercises
+                                            </button>
+                                            <button class="btn-sm dropdown-item" type="button"
+                                                    onclick="generateRandomWorkout(10)">10 Excercises
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="excercises-boxes" class="form-row">
+
+                                </div>
+                                <button class="btn btn-primary" type="submit">Create my Workout</button>
+                            </form>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col">
-                            <label for="seco" class="col-form-label">Duration per Exercise</label>
-                            <input type="text" id="seco" class="form-control" placeholder="40">
+                </div>
+            </div>
+        </div>
+
+        <!-- Dialog which shows the link. Hidden by default. Gets visible if form is submitted. -->
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Share your workout</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Summary</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="mt-1">
+                            <div class="input-group">
+                                <input  class="form-control" id="next-0-link"/>
+                                <span class="input-group-button copy-span">
+                                    <button class="btn clipboard-button" data-clipboard-target="#next-0-link" data-toggle="tooltip" data-placement="bottom" title="Copy to Clipboard">
+                                        <i class="fas fa-clipboard"></i>
+                                    </button></span></div>
                         </div>
+                        <a id="btn-go-to-workout" role="button" class="btn btn-primary">Go to workout</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                     </div>
                 </div>
                 <div id="excercises-boxes" class="form-row">
@@ -88,12 +179,13 @@
             </form>
 
             </div>
- -->
+        </div>
     </main>
 
     <footer class="mastfoot mt-auto">
         <div class="inner">
-            <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a
+                    href="https://twitter.com/mdo">@mdo</a>.</p>
         </div>
     </footer>
 </div>
@@ -102,37 +194,143 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="./static//libs/easytimer.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
 <script type="text/javascript" src="./static//libs/jquery.plugin.js"></script>
 <script type="text/javascript" src="./static//libs/jquery.countdown.js"></script>
 <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+<!-- Stuff for the date selection -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css"/>
+<script src="./static/libs/clipboard.min.js"></script>
+<script type="text/javascript" src="static/js/workout_generator.js"></script>
+
 <script type="text/javascript">
-    $(document).ready(function(){
+    var number_of_workouts = 0;
+    $(document).ready(function () {
+
+        $(function () {
+$('#datetimepicker1').datetimepicker({
+        // format: 'YYYY/MM/DD'
+        debug: true,
+        icons: {
+            time: 'far fa-clock',
+            date: 'far fa-calendar-alt',
+            up: 'fas fa-arrow-up',
+            down: 'fas fa-arrow-down',
+            previous: 'fas fa-chevron-left',
+            next: 'fas fa-chevron-right',
+            today: 'far fa-calendar-check',
+            clear: 'far fa-trash-alt',
+            close: 'fas fa-times'
+        }
+        }
+                                                                            );
+        });
         fetch('./static/data/ExerciseList.json')
             .then((response) => {
                 return response.json();
             })
             .then((data) => {
+                number_of_workouts = data['exercises'].length
                 parseExercisesToForm(data);
             });
-
     });
 
-    function parseExercisesToForm(data) {
+    function generateRandomWorkout(number) {
+        // Uncheck all in case some where selected already
+        for (i = 0; i < number_of_workouts; i++) {
+            $("#exercise-" + i).attr("checked", false);
+        }
 
-        $.each (data['exercises'], function(index,elem) {
-            $( '<div class="col-md-3 mb-3">' +
-               '<div class="custom-control custom-checkbox">' +
-            ' <input type="checkbox" class="custom-control-input" id="exercise-'+elem.id+'">' +
-            '   <label class="custom-control-label" for=excercise-'+elem.id+'">'+elem.name+'</label>'+
-            '</div></div>').appendTo("#excercises-boxes");
-        });
+        var number_of_random_workouts = number;
+        var total_exercises = number_of_workouts;
+        for (i = 0; i < number_of_random_workouts; i++) {
+            var randomnumber = Math.floor(Math.random() * total_exercises) + 1;
+            $("#exercise-" + randomnumber).attr("checked", true);
+        }
 
     }
 
+    function parseExercisesToForm(data) {
+        // Filter for categories
+        const belly_list = data['exercises'].filter(excercise => excercise.category.includes("belly"));
+        const legs_list = data['exercises'].filter(excercise => excercise.category.includes("legs"));
+        const core_list = data['exercises'].filter(excercise => excercise.category.includes("core"));
+        const arms_list = data['exercises'].filter(excercise => excercise.category.includes("arms"));
+
+        categorys = [core_list,legs_list,belly_list,arms_list]
+        $.each(categorys,function (index, category) {
+            var wrapper = $("<div class='form-row'></div>")
+            $('<h2 class="col-sm-12">'+category[0].category[0]+'</h2>').appendTo(wrapper);
+        $.each(category, function (index, elem) {
+            $('<div class="col-md-4 mb-3 input-check-exercise"' +
+                '>' +
+                '<div class="form-check">' +
+                ' <input type="checkbox" class="form-check-input" name="' + elem.name + '" id="exercise-' + elem.id + '">' +
+                '   <label class="form-check-label" for=' + elem.name + '">' + elem.name + '</br></label>' +
+                '</div></div>').appendTo(wrapper);
+        });
+        wrapper.appendTo("#excercises-boxes")
+        });
+    }
+
+    function submitcheck(element) {
+        var selected_rounds = element[0].options[element[0].selectedIndex].value;
+        console.log(selected_rounds)
+        var selected_duration = element[1].value;
+        console.log(selected_duration)
+        var selected_date = element[2].value;
+        console.log(selected_date)
+        var selected_elements = $(element).serializeArray();
+        exercise_list = [];
+        $.each(selected_elements, function (index, element) {
+            exercise_list.push(element.name)
+        });
+
+        // Generate HTML List from exercise list for summary
+        ul = document.createElement('ul')
+        ul.classList.add("list-group");
+
+        exercise_list.forEach(function (item) {
+            let li = document.createElement('li');
+            li.classList.add('list-group-item')
+            li.style.backgroundColor = "#555"
+            ul.appendChild(li);
+            li.innerHTML += item;
+        });
+        $('.modal-body').empty();
+        $('.modal-body').append("<h5>Summary</h5>");
+        $('.modal-body').append(ul);
+        createModal(exercise_list,selected_date,selected_duration,selected_rounds);
+        return false;
+    }
+
+    function createModal(exercises, timestamp, duration,rounds) {
+        //Here workout.json should be created and saved in jsonbin.io
+        $('.modal').modal();
+                if(timestamp=="now"){
+                    timestamp= dayjs().add(20,'seconds').toLocaleString();
+                }
+                $('#btn-go-to-workout').attr("href", "workout.html?excercises=" + encodeURIComponent(JSON.stringify(exercises)) + "&timestamp=" + timestamp +"&wo_duration=" + duration + "&wo_rounds="+rounds);
+                var clipboard = new ClipboardJS('.clipboard-button');
+                document.getElementById('next-0-link').value = window.location.hostname+"/workout.html?excercises=" + encodeURIComponent(JSON.stringify(exercises)) + "&timestamp=" + timestamp +"&wo_duration=" + duration + "&rounds="+rounds;
+
+
+
+    }
 </script>
 
 </body>

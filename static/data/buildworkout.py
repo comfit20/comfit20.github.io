@@ -45,8 +45,6 @@ if workoutstyle == 'regular':
   duration_waterbreak =35
   rounds = 3
 
-
-
   arrayelements = [{
         "id": 0,
         "heading": "Wait for Group Session",

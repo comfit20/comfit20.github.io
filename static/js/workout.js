@@ -15,57 +15,81 @@ var audio_mute = true;
 
 $(document).ready(function(){
     //Get workoutfile from URL, if not there take workout1.json as default
+    // If workoutfile is specified, load it from the file
     var workoutFile = "workout1.json";
     var searchParams = new URLSearchParams(window.location.search)
     if(searchParams.has('workout')) {
         workoutFile = searchParams.get('workout');
+        fetch('./static/data/'+workoutFile)
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                buildSiteFromWorkoutFile(data)
+            });
+    }
+    // Otherwise parse it from the exercises list
+    if(searchParams.has('excercises')) {
+        var exercise_list = searchParams.get('excercises');
+        fetch('./static/data/ExerciseList.json')
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                let searchParams = new URLSearchParams(window.location.search)
+                var selected_duration = searchParams.get("wo_duration")
+                var selected_rounds = searchParams.get("wo_rounds")
+
+                    var generated_workout = generateWorkoutJson(selected_duration,selected_rounds,data,JSON.parse(exercise_list))
+
+                buildSiteFromWorkoutFile(generated_workout)
+
+            });
+    }});
+
+
+function buildSiteFromWorkoutFile(workoutjson){
+    let searchParams = new URLSearchParams(window.location.search)
+    console.log(workoutjson)
+    if(searchParams.has('timestamp')) {
+        let timestamp = searchParams.get('timestamp')
+        if(timestamp==""){
+            timestamp = new Date()
+        }
+        workoutjson.startTime = dayjs(timestamp);
+    }else{
+        workoutjson.startTime = 'now';
     }
 
-    // Load workoutfile
-    fetch('./static/data/'+workoutFile)
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
+    var startTime = null;
+    if(workoutjson.startTime!="now"){
+        startTime = dayjs(workoutjson.startTime)
+    }else{
+        startTime = dayjs(Date.now())
+    }
+    workoutjson.elements.sort(function(a, b){
+        return a.id - b.id;
+    });
 
-            // If workout file loaded, check if timestamp is in URL
-            // If not, set time to now TODO: Clean this up
-            let searchParams = new URLSearchParams(window.location.search)
-            if(searchParams.has('timestamp')) {
-                let timestamp = searchParams.get('timestamp')
-                console.log("Timestamp found!!")
-                data.startTime = dayjs(timestamp);
-            }else{
-                data.startTime = 'now';
-            }
+    // Calculate start time for each workout. Needed if someone joins after the workout started
+    var time_list = [startTime]
+    var old_time = startTime;
 
-            var startTime = null;
-            if(data.startTime!="now"){
-                startTime = dayjs(data.startTime)
-            }else{
-                startTime = dayjs(Date.now())
-            }
-            data.elements.sort(function(a, b){
-                return a.id - b.id;
-            });
+    workoutjson.elements.forEach(function (item, index) {
+        item.timeStamp = old_time.add(item.duration,'seconds')
+        old_time = item.timeStamp
+    });
 
-            // Calculate start time for each workout. Needed if someone joins after the workout started
-            var time_list = [startTime]
-            var old_time = startTime;
-            data['elements'].forEach(function (item, index) {
-                item.timeStamp = old_time.add(item.duration,'seconds')
-                old_time = item.timeStamp
-            });
+    // Crate the carousel based on the data loaded from the json
+    createCarousel(workoutjson);
 
-            // Crate the carousel based on the data loaded from the json
-            createCarousel(data);
+    // Start the timers for each page on the carousel
+    parseResults(workoutjson);
 
-            // Start the timers for each page on the carousel
-            parseResults(data);
+    $("#wait-spinner").css("visibility","hidden");
+    $("#sound-button-custom").css("visibility","visible");
 
-        });
-
-});
+}
 
 function createCarousel(data) {
     var expired_count = 0;
@@ -94,8 +118,8 @@ function createCarousel(data) {
             content = wrapper;
         }else {
            content = $('<div class="carousel-item"><h1 id="name-'+elem.id+'">'+elem.name+'</h1>' +
-                '<video class="main-video" onloadeddata="this.play();"  playsinline loop muted preload autoplay>\n' +
-                '    <source src="'+elem.gifpath+'" type="video/mp4" />\n' +
+                '<video class="main-video" preload="metadata" playsinline loop muted autoplay>\n' +
+                '    <source src="'+elem.gifpath+'#t=0.1" type="video/mp4" />\n' +
                 '    Your browser does not support the video tag or the file format of this video.\n' +
                 '</video>'+
                 '<div id=timer-'+elem.id+'></div>')
@@ -163,7 +187,14 @@ function startJqueryTimer(startTime) {
     $('#heading').text(element.heading);
     var elemId = uniqId()
     var timer_gui = $("#timer-"+element.id).text("00:00").css('font-size', 'xx-large');
-
+    if(element.indicator == "hidden" && (element.heading!=="Rest")){
+        // If current page has no indictator, hide indicator bar
+        console.log("Unmake visible")
+        $(".carousel-indicators").css("visibility","hidden");
+    }else{
+        console.log("Make visible")
+        $(".carousel-indicators").css("visibility","visible");
+    }
     timer_gui.countdown({
         until: new Date((element['timeStamp'])),
         compact: true, format: 'dhMS',

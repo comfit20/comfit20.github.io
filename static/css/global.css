@@ -17,3 +17,14 @@ box-shadow: inset 0 0 0rem rgba(0, 0, 0, .5);}
     margin-left: 3%;
     margin-right: 3%;
 }
+
+.card-body{background-color: #555;}
+.modal-content{background-color: #555;}
+
+
+
+/*.bootstrap-datetimepicker-widget.picker-switch.td*/
+
+.bootstrap-datetimepicker-widget{background-color: #A9A9A9;}
+
+modal-content

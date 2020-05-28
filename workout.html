@@ -21,6 +21,8 @@
     <title>ComFIT</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -58,7 +60,10 @@
             </div>
             <ol class="carousel-indicators" style="position: relative;">
         </ol>
-            <button onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button>
+            <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button>
+            <div id="wait-spinner" class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
 
             <iframe src="https://open.spotify.com/embed/playlist/7tomPgUhW87NOkg6BDTvvN"  width="380" height="80"  
  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -87,6 +92,7 @@
 
 <script type="text/javascript" src="./static/libs/jquery.plugin.js"></script>
 <script type="text/javascript" src="./static/libs/jquery.countdown.js"></script>
-<script type="text/javascript" src="./static/js/main.js"></script>
+<script type="text/javascript" src="static/js/workout_generator.js"></script>
+<script type="text/javascript" src="static/js/workout.js"></script>
 </body>
 </html>
