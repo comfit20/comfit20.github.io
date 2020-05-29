@@ -189,14 +189,14 @@ function startJqueryTimer(startTime) {
     $('#heading').text(element.heading);
     var elemId = uniqId()
     var timer_gui = $("#timer-"+element.id).text("00:00").css('font-size', 'xx-large');
-    // if(element.indicator == "hidden" && (element.heading!=="Rest")){
-    //     // If current page has no indictator, hide indicator bar
-    //     console.log("Unmake visible")
-    //     $(".carousel-indicators").css("visibility","hidden");
-    // }else{
-    //     console.log("Make visible")
-    //     $(".carousel-indicators").css("visibility","visible");
-    // }
+    if(element.indicator == "hidden" && (element.heading!=="Rest")){
+        // If current page has no indictator, hide indicator bar
+        console.log("Unmake visible")
+        $(".carousel-indicators").css("visibility","hidden");
+    }else{
+        console.log("Make visible")
+        $(".carousel-indicators").css("visibility","visible");
+    }
     
     timer_gui.countdown({
         until: new Date((element['timeStamp'])),
