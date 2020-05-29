@@ -3,7 +3,6 @@
          "id": 1,
          "playName": "90s RnB",
          "playLink": "4ZVPeMocdBqFm7YbZsE3ap"
-
       },
       {
          "id": 2,
@@ -33,5 +32,3 @@
       }
    ]
 }
-
-// id1: <iframe src="https://open.spotify.com/embed/playlist/4ZVPeMocdBqFm7YbZsE3ap" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
