@@ -1,0 +1,13 @@
+{
+   "workouts": [
+   	{
+         "id": 1,
+         "exercises": ["Sumo Squat","3 Fast Knee Rise","Plank to Bear & Tap Knees", "V Crunch & Clap Under Leg", "Ladder (alt: Fast Feet)", 
+"Bear Crawl", "Frog Squats", "Static Spiderman", "Heel Touch Crunches", "Shoot Through", "Jump & Squat Backwards",
+ "Mountain Climber Side Step"],
+         "workoutstyle": "decrease",
+         "date": "20200529"
+   }
+]
+}
+

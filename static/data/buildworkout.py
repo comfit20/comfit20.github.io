@@ -126,7 +126,7 @@ if workoutstyle == 'regular':
   getreadywork = {
         "id": n,
         "heading": "Get Ready to Work Out",
-        "name": " Let's go !!!!! ",
+        "name": " Let's go: "+exercises[0],
         "duration": 5,
         "gifpath": "static/movie/GetReadyToWorkout.mp4",
         "sound": 'audiorest',
@@ -175,7 +175,7 @@ if workoutstyle == 'regular':
   			rest = {
   		    "id": n+1,
   		    "heading": "Rest",
-  		    "name": "Up Next",#: "+exercises[i+1],
+  		    "name": "Next: "+exercises[i+1],
   		    "duration": duration_rest,
   		    #"gifpath": "static/movie/Rest1.mp4",
           "gifpath": gifpath_next[i],
@@ -329,7 +329,7 @@ if workoutstyle == 'increase':
   getreadywork = {
         "id": n,
         "heading": "Get Ready to Work Out",
-        "name": " Let's go !!!!! ",
+        "name": " Let's go: "+exercises[0],
         "duration": 5,
         "gifpath": "static/movie/GetReadyToWorkout.mp4",
         "sound": 'audiowork',
@@ -379,7 +379,7 @@ if workoutstyle == 'increase':
         rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Up Next:",
+          "name": "Next: "+exercises[i+1],
           "duration": duration_rest,
           "gifpath": gifpath_next[i],
           "sound": 'audiorest',
@@ -534,7 +534,7 @@ if workoutstyle == 'decrease':
   getreadywork = {
         "id": n,
         "heading": "Get Ready to Work Out",
-        "name": " Let's go !!!!! ",
+        "name": " Let's go: "+exercises[0],
         "duration": 5,
         "gifpath": "static/movie/GetReadyToWorkout.mp4",
         "sound": 'audiorest',
@@ -583,7 +583,7 @@ if workoutstyle == 'decrease':
         rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Up Next:",
+          "name": "Next: "+exercises[i+1],
           "duration": duration_rest,
           "gifpath": gifpath_next[i],
           "sound": 'audiorest',
@@ -747,7 +747,7 @@ if workoutstyle == 'repeat_iso':
   getreadywork = {
         "id": n,
         "heading": "Get Ready to Work Out",
-        "name": " Let's go !!!!! ",
+        "name": " Let's go: "+exercises[0],
         "duration": 5,
         "gifpath": "static/movie/GetReadyToWorkout.mp4",
         "sound": 'audiorest',
@@ -795,7 +795,7 @@ if workoutstyle == 'repeat_iso':
       rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Up Next:",
+          "name": "Next",
           "duration": duration_rest,
           "gifpath": gifpath_next[i],
           "sound": 'audiorest',
@@ -937,7 +937,7 @@ if workoutstyle == 'repeat_diff':
   getreadywork = {
         "id": n,
         "heading": "Get Ready to Work Out",
-        "name": " Let's go !!!!! ",
+        "name": " Let's go: "+exercises[0],
         "duration": 5,
         "gifpath": "static/movie/GetReadyToWorkout.mp4",
         "sound": 'audiorest',
@@ -986,7 +986,7 @@ if workoutstyle == 'repeat_diff':
         rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Up Next:",
+          "name": "Next",
           "duration": duration_rest[0],
           "gifpath": gifpath_next[i],
           "sound": 'audiorest',
@@ -1012,7 +1012,7 @@ if workoutstyle == 'repeat_diff':
         rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Up Next:",
+          "name": "Next",
           "duration": duration_rest[1],
           "gifpath": gifpath_next[i],
           "sound": 'audiorest',

@@ -55,15 +55,29 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  data-interval="false" data-wrap="false" data-touch="false">
 
 
-            <div class="carousel-inner">
+         <div class="carousel-inner">
 
             </div>
+
             <ol class="carousel-indicators" style="position: relative;">
-        </ol>
+        
             <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button>
             <div id="wait-spinner" class="spinner-border" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
+
+            </ol>
+
+<script>
+fetch('./static/data/music.json').then(function(response) {
+  response.json().then(function(music_playlist)
+  {console.log(music_playlist["playlists"])
+  var playlist = music_playlist["playlists"]
+  console.log(music_playlist.id)
+       })
+   }) 
+</script>
+
 
             <iframe src="https://open.spotify.com/embed/playlist/7tomPgUhW87NOkg6BDTvvN"  width="380" height="80"  
  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
