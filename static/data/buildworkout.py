@@ -7,23 +7,13 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Leg Lift & Hold', 'Jump Squat (+ Touch)', 
-                        'Jump & Donkey Kick (n+1)', 'Superman (alt: Pull Ups)',
-                       '10 High Knee & 3 Tuck Jumps', 'Diamond Push Up', 'Single Leg Donkey Kick' , 'Glute Bridge', 'Side Plank Crunches', 
-                       'Butt Kicker', 'Fast Squats', 'Sit Up']
+exercises = ['Sumo Squat','3 Fast Knee Rise','Plank to Bear & Tap Knees', 'V Crunch & Clap Under Leg', 'Ladder (alt: Fast Feet)', 
+'Bear Crawl', 'Frog Squats', 'Static Spiderman', 'Heel Touch Crunches', 'Shoot Through', 'Jump & Squat Backwards',
+ 'Mountain Climber Side Step']
 
 
-# ['10 Fast Feet & Jump', 'Plank', 'Frog Squats', 'Sit Up', 'Fast Front Kicks', 'Push Up & Side Turn', 
-# 'Jack Knife', 'Shoot Through', 'Ladder (alt: Fast Feet)','Side Plank Crunches', 'Inch Worm', 'Low & High Plank Switch']
-
-# [ 'Backward Lunge & 3 Pulses','10 High Knee & 3 Tuck Jumps', 'Push Up & Side Turn', 'Heel Touch Crunches', 'Calf Rises',
-#  'Mountain Climber',  'Leg Lift & Hold', 'Jump Squat (+ Touch)', 'Static Spiderman']  
-
-
-#todo: write the same code for warm up list
 
 warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']#'Glute bridge','Single Leg Hip Circles', '5 shoulder circles + 2 wind mills',
-
 
 
 #different workouts:
@@ -33,7 +23,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_iso 10 exercise 3*45 no water break
   #repeat_diff erenttimes 10 exercise 45 + 25 + 45 + 25 (1400); no water break
 
-workoutstyle = 'regular' # change workout styles here
+workoutstyle = 'decrease' # change workout styles here
 
 duration_warmup = 25
 applaus = random.randint(1,2)
