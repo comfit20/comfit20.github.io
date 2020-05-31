@@ -88,6 +88,7 @@ function buildSiteFromWorkoutFile(workoutjson){
 
     $("#wait-spinner").css("visibility","hidden");
     $("#sound-button-custom").css("visibility","visible");
+    $("#spotifylink").css("visibility","visible");
 
 }
 
