@@ -69,15 +69,35 @@
             </ol>
 
 <script>
+
+ // $(document).ready(function(){
+
+  // jQuery methods go here...
+
 fetch('./static/data/music.json').then(function(response) {
   response.json().then(function(music_playlist)
   {console.log(music_playlist["playlists"])
   var playlist = music_playlist["playlists"]
 
-       })
+  console.log($("#playLink"))
+  //var test = $('h1')
+  //var test = $("#playLink")
+  //console.log(test)
+// var items = shuffle($("#playLink"));
 
-   }) 
+//    console.log(shuffle($("#playLink")))
+
+// $(document).ready(function(){
+//     console.log($("#playLink").text());
+//  $("#playLink").text();
+//   });
+}); 
+});
+ // }) 
+
 </script>
+
+
 
               <iframe src="https://open.spotify.com/embed/playlist/3oLKVWqy7vh8XeukJavyyi"  width="360" height="80"  
  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
