@@ -121,7 +121,7 @@
       {
          "id": 14,
          "category": [
-            "core"
+            "arms"
          ],
          "name": "Push Up",
          "level": "middle",
@@ -428,7 +428,7 @@
       {
          "id": 48,
          "category": [
-            "core"
+            "arms"
          ],
          "name": "Prayer Pulse",
          "level": "easy",
@@ -439,7 +439,7 @@
          "category": [
             "core"
          ],
-         "name": "Push & Squat & Turn",
+         "name": "Push Up & Squat & Turn",
          "level": "hard",
          "gifpath": "static/movie/PushSquatTurn.mp4"
       },
@@ -476,7 +476,7 @@
             "core"
          ],
          "name": "High Plank Shoulder Tap",
-         "level": "easy",
+         "level": "middle",
          "gifpath": "static/movie/ShoulderTap.mp4"
       },
       {
@@ -548,7 +548,7 @@
             "arms"
          ],
          "name": "Static Spiderman",
-         "level": "hard",
+         "level": "middle",
          "gifpath": "static/movie/StaticSpiderman.mp4"
       },
       {
@@ -566,7 +566,7 @@
             "arms"
          ],
          "name": "Swimmer",
-         "level": "easy",
+         "level": "middle",
          "gifpath": "static/movie/Swimmer.mp4"
       },
       {

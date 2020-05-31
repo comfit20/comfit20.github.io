@@ -104,7 +104,7 @@ function createCarousel(data) {
         elem.carousel_index = index-expired_count;
 
         var content = null;
-        console.log(elem.gifpath)
+        // console.log(elem.gifpath)
         if(elem.gifpath==""){
             var wrapper = $('<div class="carousel-item"></div>');
             var ol = $("<ol class='list-group'></ol>")
@@ -197,7 +197,7 @@ function startJqueryTimer(startTime) {
     if(element.indicator == "hidden" && (element.heading!=="Rest")){
         // If current page has no indictator, hide indicator bar
         console.log("Unmake visible")
-        $(".carousel-indicators").css("opacity","13%");
+        $(".carousel-indicators").css("opacity","15%");
     }else{
         console.log("Make visible")
         $(".carousel-indicators").css("opacity","100%");

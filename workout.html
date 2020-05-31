@@ -69,17 +69,31 @@
 
 
 <script>
+
 fetch('./static/data/music.json').then(function(response) {
   response.json().then(function(music_playlist)
-  {console.log(music_playlist["playlists"])
-  var playlist = music_playlist["playlists"]
+  {
 
-       })
 
-   }) 
+console.log(Math.floor((Math.random() * music_playlist["playlists"].length) + 0))
+
+var radommusic = Math.floor((Math.random() * music_playlist["playlists"].length) + 0)
+console.log(radommusic)
+
+$("#spotifylink").attr("src", "https://open.spotify.com/embed/playlist/"+ music_playlist["playlists"][radommusic]["playLink"])
+
+}); 
+});
+
+
 </script>
 
-              <iframe src="https://open.spotify.com/embed/playlist/3oLKVWqy7vh8XeukJavyyi"  width="360" height="80"  
+
+
+<!--               <iframe id = "spotifylink" src="https://open.spotify.com/embed/playlist/3oLKVWqy7vh8XeukJavyyi"  width="360" height="80"  
+ frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+
+               <iframe id = "spotifylink"  width="360" height="80"  
  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 
