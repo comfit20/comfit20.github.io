@@ -70,36 +70,27 @@
 
 <script>
 
- // $(document).ready(function(){
-
-  // jQuery methods go here...
-
 fetch('./static/data/music.json').then(function(response) {
   response.json().then(function(music_playlist)
-  {console.log(music_playlist["playlists"])
-  var playlist = music_playlist["playlists"]
+  {
 
-  console.log($("#playLink"))
-  //var test = $('h1')
-  //var test = $("#playLink")
-  //console.log(test)
-// var items = shuffle($("#playLink"));
+    console.log(music_playlist["playlists"][0]["playLink"])
+    var playlist = music_playlist["playlists"]
 
-//    console.log(shuffle($("#playLink")))
+$(#"spotifylink").attr("src", "https://open.spotify.com/embed/playlist/3oLKVWqy7vh8XeukJavyyi")
 
-// $(document).ready(function(){
-//     console.log($("#playLink").text());
-//  $("#playLink").text();
-//   });
 }); 
 });
- // }) 
+
 
 </script>
 
 
 
-              <iframe src="https://open.spotify.com/embed/playlist/3oLKVWqy7vh8XeukJavyyi"  width="360" height="80"  
+<!--               <iframe id = "spotifylink" src="https://open.spotify.com/embed/playlist/3oLKVWqy7vh8XeukJavyyi"  width="360" height="80"  
+ frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+
+               <iframe id = "spotifylink"  width="360" height="80"  
  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 
