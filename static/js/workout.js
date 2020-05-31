@@ -119,7 +119,7 @@ function createCarousel(data) {
         }else {
             var webm_path =  elem.gifpath.substr(0, elem.gifpath.lastIndexOf(".")) + ".webm";
            content = $('<div class="carousel-item"><h1 id="name-'+elem.id+'">'+elem.name+'</h1>' +
-                '<video class="video-js main-video" preload="none" playsinline loop muted autoplay>\n' +
+                '<video id="vid-'+elem.id+'" class="main-video" preload="none" playsinline loop muted>\n' +
                 '    <source src="'+elem.gifpath+'" type="video/mp4" />\n' +
                 '    <source src="'+webm_path+'" type="video/webm" />\n' +
                 '    Your browser does not support the video tag or the file format of this video.\n' +
@@ -189,13 +189,18 @@ function startJqueryTimer(startTime) {
     $('#heading').text(element.heading);
     var elemId = uniqId()
     var timer_gui = $("#timer-"+element.id).text("00:00").css('font-size', 'xx-large');
+    if(element.gifpath!=""){
+    var myPlayer = $("#vid-"+element.id)
+        console.log(myPlayer)
+    myPlayer.get(0).play()
+        }
     if(element.indicator == "hidden" && (element.heading!=="Rest")){
         // If current page has no indictator, hide indicator bar
         console.log("Unmake visible")
-        $(".carousel-indicators").css("visibility","hidden");
+        $(".carousel-indicators").css("opacity","13%");
     }else{
         console.log("Make visible")
-        $(".carousel-indicators").css("visibility","visible");
+        $(".carousel-indicators").css("opacity","100%");
     }
     timer_gui.countdown({
         until: new Date((element['timeStamp'])),
