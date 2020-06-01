@@ -7,9 +7,8 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Sumo Squat','3 Fast Knee Rise','Plank to Bear & Tap Knees', 'V Crunch & Clap Under Leg', 'Ladder (alt: Fast Feet)', 
-'Bear Crawl', 'Frog Squats', 'Static Spiderman', 'Heel Touch Crunches', 'Shoot Through', 'Jump & Squat Backwards',
- 'Mountain Climber Side Step']
+exercises = ['Jack Knife','2 Squats, 2 Squat Jumps', 'Windshield Wiper', 'Bird Dog', 'Burpees', 'Squat Walk', 'Prayer Pulse', 
+'Jumping Lunges', '4 Sprawl & 2 Push Up', 'Butt Kicker',  'Inch Worm','Side Plank Crunches']
 
 
 
@@ -23,7 +22,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_iso 10 exercise 3*45 no water break
   #repeat_diff erenttimes 10 exercise 45 + 25 + 45 + 25 (1400); no water break
 
-workoutstyle = 'decrease' # change workout styles here
+workoutstyle = 'regular' # change workout styles here
 
 duration_warmup = 25
 applaus = random.randint(1,2)
@@ -175,7 +174,7 @@ if workoutstyle == 'regular':
   			rest = {
   		    "id": n+1,
   		    "heading": "Rest",
-  		    "name": "Next: "+exercises[i+1],
+  		     "name": "Up Next", # "+exercises[i+1],
   		    "duration": duration_rest,
   		    #"gifpath": "static/movie/Rest1.mp4",
           "gifpath": gifpath_next[i],
@@ -379,7 +378,7 @@ if workoutstyle == 'increase':
         rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Next: "+exercises[i+1],
+          "name": "Up Next", #+exercises[i+1],
           "duration": duration_rest,
           "gifpath": gifpath_next[i],
           "sound": 'audiorest',
@@ -583,7 +582,7 @@ if workoutstyle == 'decrease':
         rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Next: "+exercises[i+1],
+          "name": "Up Next", #+exercises[i+1],
           "duration": duration_rest,
           "gifpath": gifpath_next[i],
           "sound": 'audiorest',
@@ -795,7 +794,7 @@ if workoutstyle == 'repeat_iso':
       rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Next",
+          "name": "Up Next",
           "duration": duration_rest,
           "gifpath": gifpath_next[i],
           "sound": 'audiorest',
@@ -986,7 +985,7 @@ if workoutstyle == 'repeat_diff':
         rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Next",
+          "name": "Up Next",
           "duration": duration_rest[0],
           "gifpath": gifpath_next[i],
           "sound": 'audiorest',
@@ -1012,7 +1011,7 @@ if workoutstyle == 'repeat_diff':
         rest = {
           "id": n+1,
           "heading": "Rest",
-          "name": "Next",
+          "name": "Up Next",
           "duration": duration_rest[1],
           "gifpath": gifpath_next[i],
           "sound": 'audiorest',
