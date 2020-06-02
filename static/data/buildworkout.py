@@ -7,8 +7,8 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Jack Knife','2 Squats, 2 Squat Jumps', 'Windshield Wiper', 'Bird Dog', 'Burpees', 'Squat Walk', 'Prayer Pulse', 
-'Jumping Lunges', '4 Sprawl & 2 Push Up', 'Butt Kicker',  'Inch Worm','Side Plank Crunches']
+exercises = ['Flutter Kicks (Scissor)', 'Butt Kicker',  'Burpee & Jump 180', 'Ice Skater', 'Plank',
+ 'Sumo Squat','Side Plank Crunches', 'Glute Bridge', 'Single Leg Donkey Kick', 'Mountain Climber','Swimmer', 'Side Hops' ]
 
 
 
