@@ -7,8 +7,8 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Flutter Kicks (Scissor)', 'Butt Kicker',  'Burpee & Jump 180', 'Ice Skater', 'Plank',
- 'Sumo Squat','Side Plank Crunches', 'Glute Bridge', 'Single Leg Donkey Kick', 'Mountain Climber','Swimmer', 'Side Hops' ]
+exercises = ['Flutter Kicks (Scissor)', 'Burpee & Jump 180', 'Ice Skater', 'Plank',
+ 'Crunches', 'Single-Leg Glute Bridge', 'Single Leg Donkey Kick', 'Mountain Climber', 'Side Hops' ]
 
 
 
@@ -22,13 +22,20 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_iso 10 exercise 3*45 no water break
   #repeat_diff erenttimes 10 exercise 45 + 25 + 45 + 25 (1400); no water break
 
-workoutstyle = 'regular' # change workout styles here
+workoutstyle = 'repeat_iso' # change workout styles here
 
 duration_warmup = 25
 applaus = random.randint(1,2)
 #print(applaus)
 
-############################################### WORKOUT STYLE REGULAR
+
+############################################### 
+############################################## 
+############################################## 
+############################################## WORKOUT STYLE REGULAR
+############################################### 
+
+
 if workoutstyle == 'regular':
 
   duration_work = 40
