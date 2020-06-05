@@ -83,7 +83,7 @@ type="text/javascript">
 
     function get_workoutNo() {
         var today = dayjs().day()
-console.log("workout No", Math.floor((Math.random() * 18) + 2))
+//console.log("workout No", Math.floor((Math.random() * 18) + 2))
  if (today == 1 ||  today == 2 ||  today == 3 ||  today == 5) {return 1;}
- else {return Math.floor((Math.random() * 18) + 2);}
+ else {return Math.floor((Math.random() * 22) + 2);}
     }
