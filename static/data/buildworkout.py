@@ -8,7 +8,7 @@ exerlist = exerlist['exercises']
 
 
 exercises = ['Swimmer', 'Ladder (alt: Fast Feet)', 'Plank to Bear & Tap Knees',  'Sumo Squat', 'Hurdles', 'Bicycle Crunches',
-'Inch Worm', '2 Jumping Jack & 1 Tuck Jump', 'Superman (alt: Pull Ups)', 'Plank', 'Jumping Lunges', 'Crunches',  '3 Fast Knee Rise'] 
+'Inch Worm', '2 Jumping Jack & 1 Tuck Jump', 'Superman (alt: Pull Ups)', 'Plank', 'Jumping Lunges', 'Crunches'] 
 
 
 
