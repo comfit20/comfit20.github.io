@@ -22,7 +22,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_iso 10 exercise 3*45 no water break
   #repeat_diff erenttimes 10 exercise 45 + 25 + 45 + 25 (1400); no water break
 
-workoutstyle = 'decrease' # change workout styles here
+workoutstyle = 'up_and_down' # change workout styles here
 
 duration_warmup = 25
 applaus = random.randint(1,2)
@@ -236,7 +236,6 @@ if workoutstyle == 'regular':
   arrayelements.append(dict(finished))
 
 ##################################################################### HERE TO BUILD WORKOUTSTYLE INCREASE ############################
-
 
 if workoutstyle == 'increase':
 
@@ -1047,6 +1046,231 @@ if workoutstyle == 'repeat_diff':
     }
 
   arrayelements.append(dict(finished))
+
+
+
+
+##################################################################### HERE TO BUILD WORKOUTSTYLE up_and_down ############################
+##################################################################### HERE TO BUILD WORKOUTSTYLE up_and_down ############################
+##################################################################### HERE TO BUILD WORKOUTSTYLE up_and_down ############################
+
+
+if workoutstyle == 'up_and_down':
+
+  duration_work = 30
+  duration_rest = 10
+  duration_waterbreak = 35
+  rounds = 3
+
+
+  arrayelements = [{
+        "id": 0,
+        "heading": "Wait for Group Session",
+        "name": "Session will start soon",
+        "duration": 0,
+        "gifpath": "static/movie/waitnextworkout.mp4",
+        "sound": None,
+        "indicator": "hidden"
+      },
+      {
+        "id": 1,
+        "heading": "Workout Timing:",
+        "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " + "+ str(duration_work+30)+ " + "+ str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds"],
+        # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
+        # "name": exercises,
+        "duration": 10,
+        "gifpath": "",
+        "sound": None,
+        "indicator": "hidden"
+      }]
+
+  ##### introduction to workout
+  n = 2
+
+  for i in range(len(exercises)):
+
+      exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
+      exer_elem = exerlist[exer_index]
+      #print(exer_elem)
+
+      wo1 =     {
+          "id": n,
+          "heading": "Introduction to exercises",
+          "name": exer_elem['name'],
+          "duration": 10,
+          "gifpath": exer_elem['gifpath'],
+          "sound": None,
+          "indicator": "hidden"
+        }
+      
+
+      arrayelements.append(dict(wo1))
+      
+      n = n+1
+      #print(n)
+
+  getreadywu = {
+        "id": n,
+        "heading": "Get Ready to Warm Up",
+        "name": " Let's go !!!!! ",
+        "duration": 10,
+        "gifpath": "static/movie/getready.mp4",
+        "sound": None,
+        "indicator": "hidden"
+      }
+
+  arrayelements.append(dict(getreadywu))
+   
+  n = n +1 
+
+
+  #write part for warm up
+  for i in range(len(warmups)):
+      #print(len(warmups))
+      exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == warmups[i]), None)
+      exer_elem = exerlist[exer_index]
+      #print(exer_index)
+      #print(exer_elem)
+      wu =     {
+          "id": n,
+          "heading": "Warm Up",
+          "name": exer_elem['name'],
+          "duration": duration_warmup,
+          "gifpath": exer_elem['gifpath'],
+          "sound": 'audiowork',
+          "indicator": "hidden"
+        }
+      
+      arrayelements.append(dict(wu))
+      
+      n = n+1
+      #print(n)
+
+
+
+
+  getreadywork = {
+        "id": n,
+        "heading": "Get Ready to Work Out",
+        "name": " Let's go: "+exercises[0],
+        "duration": 5,
+        "gifpath": "static/movie/GetReadyToWorkout.mp4",
+        "sound": 'audiowork',
+        "indicator": "hidden"  
+      }
+
+  arrayelements.append(dict(getreadywork))
+   
+  n = n +1 
+  #print(n)
+
+  ################# TIMING 3 repeats #####
+
+  cal_work =  []
+  gifpath_next = []
+  for i in range(len(exercises)-1):
+
+    exer_index_next = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i+1]), None)
+    exer_elem_next = exerlist[exer_index_next]
+    gifpath_next.append(exer_elem_next['gifpath']) 
+
+
+
+
+  while (rounds > 0):
+
+    for i in range(len(exercises)):
+
+      exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
+      exer_elem = exerlist[exer_index]
+
+      wo1 =     {
+          "id": n,
+          "heading": "Work",
+          "name": exer_elem['name'],
+          "duration": duration_work,
+          "gifpath": exer_elem['gifpath'],
+          "sound": 'audiowork',
+          "indicator": "exer_visible"
+        }
+      
+
+      arrayelements.append(dict(wo1))
+
+      if i < len(exercises)-1:
+        #print('hello worlds')
+        rest = {
+          "id": n+1,
+          "heading": "Rest",
+          "name": "Up Next", #+exercises[i+1],
+          "duration": duration_rest,
+          "gifpath": gifpath_next[i],
+          "sound": 'audiorest',
+          "indicator": "hidden"
+          }
+
+        arrayelements.append(dict(rest))
+
+        cal_work.append(duration_work) #ti calculate amount of time for checking
+
+      n = n+2
+
+    if rounds == 1:
+      break 
+    else:
+      n = n-1
+      water =     {
+            "id": n,
+            "heading": "Water Break",
+            "name": "Up Next: "+ exercises[0],
+            "duration": duration_waterbreak,
+            "gifpath": "static/movie/WaterRefill.mp4",
+            "sound": 'audiorest',
+            "indicator": "water_break"
+          }
+
+      n = n+1 
+      
+      
+      arrayelements.append(dict(water))
+      print(duration_waterbreak)
+
+    rounds = rounds-1
+   
+
+    if rounds == 2:
+      duration_work = duration_work + 30
+    else:
+      duration_work = 30
+
+    print(duration_work)   
+
+
+    duration_waterbreak =  duration_waterbreak + 10
+
+    if rounds == 2:
+      duration_rest = duration_rest + 5
+    else:
+      duration_rest = 10
+
+    
+    
+
+  n = n-1
+  #print(n)
+
+  finished = {
+        "id": n,
+        "heading": "Congrats You Finished",
+        "name": " Well Done !!!!! ",
+        "duration": 20,
+        "gifpath": "static/movie/Applause"+str(applaus)+".mp4",
+        "sound": 'audiofinish',
+        "indicator": "hidden"  
+      }
+
+  arrayelements.append(dict(finished))
+
 
 
 
