@@ -189,7 +189,7 @@ function startJqueryTimer(startTime) {
 
     $('#heading').text(element.heading);
     var elemId = uniqId()
-    var timer_gui = $("#timer-"+element.id).text("00:00").css('font-size', 'xx-large');
+    var timer_gui = $("#timer-"+element.id).text("00:00").css('font-size', 'xx-large'); //
     if(element.gifpath!=""){
     var myPlayer = $("#vid-"+element.id)
         console.log(myPlayer)
