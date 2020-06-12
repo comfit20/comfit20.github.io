@@ -841,7 +841,7 @@ if workoutstyle == 'repeat_iso':
 
 if workoutstyle == 'repeat_diff':
 
-  duration_work = [45, 30]
+  duration_work = [45, 25]
   duration_rest = [15, 10]
   duration_waterbreak = 0
   rounds = 4
