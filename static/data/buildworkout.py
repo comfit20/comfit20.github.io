@@ -7,12 +7,14 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Static Spiderman', 'Leg Lift & Hold',  'Rope Jump', 'Russian Twist', 'Jump Squat (+ Touch)', 
-'Push Up & Side Turn',  'Single-Leg Glute Bridge', 'Squat Walk', 'High Plank Shoulder Tap','Sit Up','Backward Lunge & 3 Pulses', 'Burpees']
+exercises = ['Jump & Squat Backwards', '10 Fast Feet & Jump', 'Diamond Push Up',  'V Crunch & Clap Under Leg', 
+'Ice Skater', 'Mountain Climber', 'Frog Squats', 'Side Plank Crunches', 'Shoot Through']
 
 
 
 warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']#'Glute bridge','Single Leg Hip Circles', '5 shoulder circles + 2 wind mills',
+
+
 
 
 #different workouts:
@@ -22,7 +24,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_iso 10 exercise 3*45 no water break
   #repeat_diff erenttimes 10 exercise 45 + 25 + 45 + 25 (1400); no water break
 
-workoutstyle = 'up_and_down' # change workout styles here
+workoutstyle = 'repeat_diff' # change workout styles here
 
 duration_warmup = 25
 applaus = random.randint(1,2)
@@ -881,7 +883,7 @@ if workoutstyle == 'repeat_diff':
 
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
-      #print(exer_elem)
+      print(exer_elem)
 
       wo1 =     {
           "id": n,

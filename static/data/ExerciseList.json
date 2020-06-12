@@ -649,7 +649,36 @@
          "name": "Ice Skater",
          "level": "middle",
          "gifpath": "static/movie/IceSkater.mp4"
+      },
+            {
+         "id": 73,
+         "category": [
+            "legs"
+         ],
+         "name": "High Knees",
+         "level": "easy",
+         "gifpath": "static/movie/HighKnee.mp4"
+      },
+            {
+         "id": 74,
+         "category": [
+            "legs"
+         ],
+         "name": "Pistol Squat",
+         "level": "hard",
+         "gifpath": "static/movie/PistolSquat.mp4"
+      },
+            {
+         "id": 75,
+         "category": [
+            "legs"
+         ],
+         "name": "Squat",
+         "level": "hard",
+         "gifpath": "static/movie/Squat.mp4"
       }
+
+
 
 
    ]
