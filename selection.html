@@ -159,7 +159,8 @@
                                     </button></span></div>
                         </div>
                         <a id="btn-go-to-workout" role="button" class="btn btn-primary">Go to workout</a>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"   
+                        onclick = "uncheckForCancel()">Cancel</button>
                     </div>
                 </div>
                 <div id="excercises-boxes" class="form-row">
@@ -243,13 +244,16 @@ $('#datetimepicker1').datetimepicker({
         // Uncheck all in case some where selected already
         for (i = 0; i < number_of_workouts; i++) {
             $("#exercise-" + i).attr("checked", false);
+            // console.log("uncheck all", i)
         }
 
         var number_of_random_workouts = number;
         var total_exercises = number_of_workouts;
         for (i = 0; i < number_of_random_workouts; i++) {
-            var randomnumber = Math.floor(Math.random() * total_exercises) + 1;
+            var randomnumber = Math.floor(Math.random() * total_exercises);
+            console.log(randomnumber, i, "nr exer", number)
             $("#exercise-" + randomnumber).attr("checked", true);
+
         }
 
     }
@@ -286,8 +290,9 @@ $('#datetimepicker1').datetimepicker({
         console.log(selected_date)
         var selected_elements = $(element).serializeArray();
         exercise_list = [];
-        $.each(selected_elements, function (index, element) {
+        $.each(selected_elements, function (index, element) {   
             exercise_list.push(element.name)
+            console.log("exerlist", exercise_list.length)
         });
 
         // Generate HTML List from exercise list for summary
@@ -318,9 +323,16 @@ $('#datetimepicker1').datetimepicker({
                 var clipboard = new ClipboardJS('.clipboard-button');
                 document.getElementById('next-0-link').value = window.location.hostname+"/workout.html?excercises=" + encodeURIComponent(JSON.stringify(exercises)) + "&timestamp=" + timestamp +"&wo_duration=" + duration + "&rounds="+rounds;
 
-
-
     }
+
+    function uncheckForCancel(){
+        console.log("cancel",number_of_workouts)
+        for (i = 0; i < number_of_workouts; i++) {
+            $("#exercise-" + i).attr("checked", false);
+        }
+    }
+
+
 </script>
 
 </body>
