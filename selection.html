@@ -247,12 +247,24 @@ $('#datetimepicker1').datetimepicker({
             // console.log("uncheck all", i)
         }
 
-        var number_of_random_workouts = number;
+
+
+        // 
+            var number_of_random_workouts = number;
         var total_exercises = number_of_workouts;
+ var chosenRandomExer = [];
+
+
+        while(chosenRandomExer.length < number_of_random_workouts){
+    var r = Math.floor(Math.random() * total_exercises)+1;
+    if(chosenRandomExer.indexOf(r) === -1) chosenRandomExer.push(r);
+}
+
+console.log("bewtest", chosenRandomExer.length)
+       
         for (i = 0; i < number_of_random_workouts; i++) {
-            var randomnumber = Math.floor(Math.random() * total_exercises);
-            console.log(randomnumber, i, "nr exer", number)
-            $("#exercise-" + randomnumber).attr("checked", true);
+
+             $("#exercise-" + chosenRandomExer[i]).attr("checked", true);
 
         }
 
@@ -274,7 +286,7 @@ $('#datetimepicker1').datetimepicker({
                 '>' +
                 '<div class="form-check">' +
                 ' <input type="checkbox" class="form-check-input" name="' + elem.name + '" id="exercise-' + elem.id + '">' +
-                '   <label class="form-check-label" for=' + elem.name + '">' + elem.name + '</br></label>' +
+                '   <label class="form-check-label" for=excercise-' + elem.id + '>' + elem.name + '</br></label>' +
                 '</div></div>').appendTo(wrapper);
         });
         wrapper.appendTo("#excercises-boxes")
@@ -289,16 +301,16 @@ $('#datetimepicker1').datetimepicker({
         var selected_date = element[2].value;
         console.log(selected_date)
         var selected_elements = $(element).serializeArray();
+        console.log(selected_elements)
         exercise_list = [];
         $.each(selected_elements, function (index, element) {   
             exercise_list.push(element.name)
-            console.log("exerlist", exercise_list.length)
         });
 
         // Generate HTML List from exercise list for summary
         ul = document.createElement('ul')
         ul.classList.add("list-group");
-
+        console.log("excercise",exercise_list)
         exercise_list.forEach(function (item) {
             let li = document.createElement('li');
             li.classList.add('list-group-item')
@@ -326,8 +338,9 @@ $('#datetimepicker1').datetimepicker({
     }
 
     function uncheckForCancel(){
-        console.log("cancel",number_of_workouts)
-        for (i = 0; i < number_of_workouts; i++) {
+        // console.log("cancel",number_of_workouts)
+        for (i = 1; i <= number_of_workouts; i++) {
+            // console.log($("#exercise-" + i))
             $("#exercise-" + i).attr("checked", false);
         }
     }

@@ -22,7 +22,7 @@
       {
          "id": 3,
          "category": [
-            "warmup"
+            "warmup","arms"
          ],
          "name": "5 Shoulder Circles & Windmill",
          "level": "easy",
@@ -328,7 +328,7 @@
       {
          "id": 37,
          "category": [
-            "warmup"
+            "warmup", "legs"
          ],
          "name": "Single Leg Hip Circles",
          "level": "easy",
@@ -617,7 +617,7 @@
       {
          "id": 69,
          "category": [
-            "leg"
+            "legs"
          ],
          "name": "Side Hops",
          "level": "middle",
