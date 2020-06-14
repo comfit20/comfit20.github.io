@@ -5,15 +5,15 @@ type="text/javascript">
     });
 
     function renderWebsite() {
-        var next_monday = new Date();
+        var next_monday = new Date(new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"}));
         next_monday.setDate(next_monday.getDate() + (1 + 7 - next_monday.getDay()) % 7);
         console.log(next_monday);
 
-        var next_wednesday = new Date()
+        var next_wednesday = new Date(new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"}));
         next_wednesday.setDate(next_wednesday.getDate() + (3 + 7 - next_wednesday.getDay()) % 7);
         console.log(next_wednesday);
 
-        var next_friday = new Date();
+        var next_friday = new Date(new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"}));
         next_friday.setDate(next_friday.getDate() + (5 + 7 - next_friday.getDay()) % 7);
         console.log(next_friday);
 
@@ -51,9 +51,9 @@ type="text/javascript">
     function setTimeTo8and11(time_list) {
         var return_list = []
         $.each(time_list, function (idx,time) {
-            var time_830 = new Date(time);
-            var time_1130 = new Date(time);
-            var time_1700 = new Date(time);
+            var time_830 = new Date(time)
+            var time_1130 = new Date(time)
+            var time_1700 = new Date(time)
 
             time_830.setHours(8)
             time_830.setMinutes(32)
