@@ -51,7 +51,7 @@ type="text/javascript">
     function setTimeTo8and11(time_list) {
         var return_list = []
         $.each(time_list, function (idx,time) {
-            var time_830 = new Date(time)
+            var time_830 = new Date(time) 
             var time_1130 = new Date(time)
             var time_1700 = new Date(time)
 
@@ -81,5 +81,5 @@ type="text/javascript">
         var today = dayjs().day()
 //console.log("workout No", Math.floor((Math.random() * 18) + 2))
  if (today == 1 ||  today == 3 ||  today == 5) {return 1;}
- else {return Math.floor((Math.random() * 25) + 2);}
+ else {return Math.floor((Math.random() * 26) + 2);}
     }
