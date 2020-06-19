@@ -198,7 +198,6 @@ function startJqueryTimer(startTime) {
         until: new Date((element['timeStamp'])),
         compact: true, format: 'dhMS',
         onExpiry: function expired() {
-            console.log("expired"+element.id)
             $('#heading').text('-');
             $(".carousel.active").empty()
             
