@@ -50,7 +50,6 @@ $(document).ready(function(){
 
 function buildSiteFromWorkoutFile(workoutjson){
     let searchParams = new URLSearchParams(window.location.search)
-    console.log(workoutjson)
     if(searchParams.has('timestamp')) {
         let timestamp = searchParams.get('timestamp')
         if(timestamp==""){
@@ -96,7 +95,6 @@ function createCarousel(data) {
     var expired_count = 0;
     $.each (data['elements'], function(index,elem) {
         if(dayjs(elem.timeStamp).isBefore(dayjs(Date.now()))) {
-            console.log("expired");
             elem.expired = true;
             expired_count = expired_count +1;
             return;
@@ -105,7 +103,6 @@ function createCarousel(data) {
         elem.carousel_index = index-expired_count;
 
         var content = null;
-        // console.log(elem.gifpath)
         if(elem.gifpath==""){
             var wrapper = $('<div class="carousel-item"></div>');
             var ol = $("<ol class='list-group'></ol>")
@@ -157,7 +154,6 @@ function parseResults(data) {
 }
 
 function startJqueryTimer(startTime) {
-    console.log(startTime);
     if(startTime['elements'].length==0){
         $("#content").empty()
         $("#content").html('<h1>!!! Workout over !!!!</h1>')
@@ -166,7 +162,6 @@ function startJqueryTimer(startTime) {
 
     var element = startTime['elements'].shift()
     if(element.expired){
-        console.log("Element is expired. Dont start timer")
         $(".carousel.active").empty()
         $('.carousel').carousel(element.carousel_index)
         startJqueryTimer(startTime);
@@ -184,7 +179,6 @@ function startJqueryTimer(startTime) {
 
     if(element['sound']=="audiofinish"){
         audiofinish.play();
-        console.log(audiofinish)
     }
 
     $('#heading').text(element.heading);
@@ -192,15 +186,12 @@ function startJqueryTimer(startTime) {
     var timer_gui = $("#timer-"+element.id).text("00:00").addClass('display-4'); //
     if(element.gifpath!=""){
     var myPlayer = $("#vid-"+element.id)
-        console.log(myPlayer)
     myPlayer.get(0).play()
         }
     if(element.indicator == "hidden" && (element.heading!=="Rest")){
         // If current page has no indictator, hide indicator bar
-        console.log("Unmake visible")
         $(".carousel-indicators").css("opacity","15%");
     }else{
-        console.log("Make visible")
         $(".carousel-indicators").css("opacity","100%");
     }
     timer_gui.countdown({
@@ -229,7 +220,6 @@ function toggleSound() {
     // Change icon from volume up to volume mute (see font-awesome) or the other way around
     icon.toggleClass('fa-volume-up fa-volume-mute');
     if(audio_mute){
-        console.log("Audio from mute to unmute")
         // Set all sounds to unmute
         audiowork.muted = false
         audiorest.muted = false
@@ -238,7 +228,6 @@ function toggleSound() {
         // Change text of tooltip -> This is shown if you hover over the button
         button.attr('title','Sound is on')
     }else{
-        console.log("Audio from unmute to mute")
         // Set all sounds to mute
         audiowork.muted = true
         audiorest.muted = true

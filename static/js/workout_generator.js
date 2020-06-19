@@ -1,9 +1,7 @@
 function generateWorkoutJson(duration_work,rounds,exerjson,exercises) {
-    console.log("Hello!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", typeof rounds, exercises)
     var workout = {};
 
         var exerlist  = exerjson['exercises'] // get array exercises from json file
-        console.log(exerlist)
         var applaus = 1 //random.randint(1,2)
 
         var warmups = ['Jumping Jacks', 'Single Leg Hip Circles', 'Squat Pulses', 'Glute Bridge', '5 Shoulder Circles & Windmill', 'Burpees']
@@ -99,7 +97,6 @@ rounds = parseInt(rounds)
         //write part for warm up
         var i;
         for (i = 0; i < warmups.length; i++) {
-            console.log(warmups[i])
             var exer_index = exerlist.map(function (e) {
                 return e.name;
             }).indexOf(warmups[i]);
@@ -146,15 +143,12 @@ rounds = parseInt(rounds)
             var exer_elem_next = exerlist[exer_index_next]
             gifpath_next.push(exer_elem_next['gifpath'])
         }
-        console.log("sdsdsds", gifpath_next)
-
-        
         
         while (rounds > 0) {
 
             var i;
             for (i = 0; i < exercises.length; i++) {
-                console.log(exercises.length)
+                // console.log(exercises.length)
                 var exer_index = exerlist.map(function (e) {
                     return e.name;
                 }).indexOf(exercises[i]);
@@ -236,7 +230,6 @@ rounds = parseInt(rounds)
         workout = {"startTime": "now", "elements": arrayelements}
 
 //document.getElementById("demo").innerHTML = JSON.stringify(workout)
-        console.log("Json returend~!!!!!!!!!!!!!!!!!!!!!!!",JSON.stringify(arrayelements))
         return workout;
 
 };
