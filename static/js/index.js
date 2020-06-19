@@ -4,35 +4,40 @@ type="text/javascript">
         renderWebsite()
     });
 
+    function getNextWeekday(day){
+        var today = new Date()
+        return dayjs.utc(today.setUTCDate(today.getUTCDate() + (day + 7 - today.getUTCDay()) % 7))
+    }
+
+    function createWorkoutTimeList() {
+        var time_list = []
+        var time_1 = getNextWeekday(1).set('h',15).set('m',30).set('s',0);
+        time_list.push(time_1);
+        var time_2 = getNextWeekday(2).set('h',1).set('m',0).set('s',0);
+        time_list.push(time_2);
+        var time_3 = getNextWeekday(3).set('h',15).set('m',30).set('s',0);
+        time_list.push(time_3);
+        var time_4 = getNextWeekday(4).set('h',1).set('m',0).set('s',0);
+        time_list.push(time_4);
+        var time_5 = getNextWeekday(5).set('h',15).set('m',30).set('s',0);
+        time_list.push(time_5);
+        var time_6 = getNextWeekday(5).set('h',18).set('m',30).set('s',0);
+        time_list.push(time_6);
+
+        time_list.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
+        return time_list
+    }
+
     function renderWebsite() {
-        var next_monday = new Date(new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"}));
-        next_monday.setDate(next_monday.getDate() + (1 + 7 - next_monday.getDay()) % 7);
-        console.log(next_monday);
 
-        var next_wednesday = new Date(new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"}));
-        next_wednesday.setDate(next_wednesday.getDate() + (3 + 7 - next_wednesday.getDay()) % 7);
-        console.log(next_wednesday);
+        var time_list = createWorkoutTimeList();
 
-        var next_friday = new Date(new Date().toLocaleString("en-US", {timeZone: "America/Los_Angeles"}));
-        next_friday.setDate(next_friday.getDate() + (5 + 7 - next_friday.getDay()) % 7);
-        console.log(next_friday);
-
-        var time_list = [next_monday, next_wednesday,next_friday]
-        var time_complete = setTimeTo8and11(time_list)
-        time_complete.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
-
-
-
-        $.each(time_complete, function (idx,time) {
-            console.log('show time')
-            const options = { weekday: 'long', month: 'long', day: 'numeric', hours: 'numeric' };
-
-            $("#next-"+idx).text(time.toLocaleTimeString(undefined,options));
+        $.each(time_list, function (idx,time) {
+            const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
+            console.log(time.local().format("YYYY"))
+            $("#next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
             var share_link = window.location.hostname+'/workout.html?workout=workout1.json'+'&timestamp='+time.toISOString();
             $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
-            // $("#next-"+idx+"-share-fb").attr('href','https://www.facebook.com/sharer.php?u='+share_link);
-            // $('#next-'+idx+'-share-twitter').attr('href','https://twitter.com/intent/tweet?url='+share_link);
-            // $('#next-'+idx+'-share-ig').attr('href','https://instagram.com/');
             $('#next-'+idx+'-link').attr('value',share_link);
         });
 
@@ -51,27 +56,26 @@ type="text/javascript">
     function setTimeTo8and11(time_list) {
         var return_list = []
         $.each(time_list, function (idx,time) {
-            var time_830 = new Date(time) 
-            var time_1130 = new Date(time)
-            var time_1700 = new Date(time)
-
-            time_830.setHours(8)
-            time_830.setMinutes(32)
-            time_830.setSeconds(0)
+            var time_830 = time.clone()
+            var time_1130 = time.clone()
+            var time_1700 = time.clone()
+            console.log("b",time_830)
+            time_830.hour(15)
+            time_830.minute(32)
+            time_830.second(0)
+            console.log("a",time_830)
             if(dayjs().isBefore(dayjs(time_830).add(1,'hour'))){
             return_list.push(time_830)};
-            time_1130.setHours(11)
-            time_1130.setMinutes(32)
-            time_1130.setSeconds(0)
+            time_1130.hour(18)
+            time_1130.minute(32)
+            time_1130.second(0)
             if(dayjs().isBefore(dayjs(time_1130).add(1,'hour'))){
             return_list.push(time_1130)};
-            time_1700.setHours(18)
-            time_1700.setMinutes(2)
-            time_1700.setSeconds(0)
+            time_1700.hour(22)
+            time_1700.minute(2)
+            time_1700.second(0)
             if(dayjs().isBefore(dayjs(time_1700).add(1,'hour'))){
             return_list.push(time_1700)};
-
-
         });
         return return_list;
     }

@@ -189,7 +189,7 @@ function startJqueryTimer(startTime) {
 
     $('#heading').text(element.heading);
     var elemId = uniqId()
-    var timer_gui = $("#timer-"+element.id).text("00:00").css('font-size', 'xx-large'); //
+    var timer_gui = $("#timer-"+element.id).text("00:00").addClass('display-4'); //
     if(element.gifpath!=""){
     var myPlayer = $("#vid-"+element.id)
         console.log(myPlayer)
@@ -213,8 +213,7 @@ function startJqueryTimer(startTime) {
             
             $("#ind-"+element.id).addClass('indicator-expired');
             $('.carousel').carousel(element.carousel_index+1);
-            console.log('carousel go to next')
-            startJqueryTimer(startTime);
+           startJqueryTimer(startTime);
         },
         alwaysExpire: true
     });
