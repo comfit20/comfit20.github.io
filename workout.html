@@ -83,10 +83,10 @@ fetch('./static/data/music.json').then(function(response) {
   {
 
 
-console.log(Math.floor((Math.random() * music_playlist["playlists"].length) + 0))
+// console.log(Math.floor((Math.random() * music_playlist["playlists"].length) + 0))
 
 var radommusic = Math.floor((Math.random() * music_playlist["playlists"].length) + 0)
-console.log(radommusic)
+console.log("music list no", radommusic)
 
 $("#spotifylink").attr("src", "https://open.spotify.com/embed/playlist/"+ music_playlist["playlists"][radommusic]["playLink"])
 
