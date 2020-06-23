@@ -2,8 +2,7 @@
    "exercises": [{
          "id": 1,
          "category": [
-            "legs",
-            "warmup"
+            "legs"
          ],
          "name": "Jumping Jacks",
          "level": "easy",
@@ -12,8 +11,7 @@
       {
          "id": 2,
          "category": [
-            "legs",
-            "warmup"
+            "legs"
          ],
          "name": "Squat Pulses",
          "level": "easy",
@@ -22,7 +20,7 @@
       {
          "id": 3,
          "category": [
-            "warmup","arms"
+            "arms"
          ],
          "name": "5 Shoulder Circles & Windmill",
          "level": "easy",
@@ -328,7 +326,7 @@
       {
          "id": 37,
          "category": [
-            "warmup", "legs"
+            "legs"
          ],
          "name": "Single Leg Hip Circles",
          "level": "easy",

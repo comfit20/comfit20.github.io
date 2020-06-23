@@ -141,23 +141,30 @@ function submitcheck(element) {
         counts[el] = counts[el] ? (counts[el] += 1) : 1;
     });
     console.log(counts)
+    var total = exercise_id_list.length;
+    let pb = document.createElement('div');
+    pb.classList.add("progress")
+    pb.style.height = "30px"
 
+    var color_arr = ["#d5e1df","#e3eaa7","#b5e7a0","#86af49","#82b74b"];
+    var count = 0
     for (const [key, value] of Object.entries(counts)) {
         let div = document.createElement('div');
-        div.classList.add("btn")
-        div.classList.add("btn-primary")
-        div.classList.add("m-2")
-        div.classList.add("disabled")
+        div.classList.add("progress-bar")
         div.innerHTML = key
-        let span = document.createElement('span');
-        span.classList.add("badge")
-        span.classList.add("badge-light")
-        span.classList.add("ml-2")
-        span.innerHTML = value
-        div.append(span)
-        $('.modal-body').append(div)
+        var pc = (value/total)*100;
+        var styleText = "width: "+pc.toString()+"%";
+        div.style.cssText =styleText;
+        div.style.backgroundColor = color_arr[count];
+        div.style.height = "30px"
+        div.style.fontSize = "large"
+        count = count +1
+        pb.append(div)
+
         console.log(`${key}: ${value}`);
     }
+    $('.modal-body').append(pb)
+
 
 
 
