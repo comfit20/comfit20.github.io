@@ -164,9 +164,7 @@ function createModal
 }
 
 function uncheckForCancel(){
-    // console.log("cancel",number_of_workouts)
     for (i = 1; i <= number_of_workouts; i++) {
-        // console.log($("#exercise-" + i))
         $("#exercise-" + i).attr("checked", false);
     }
 }
