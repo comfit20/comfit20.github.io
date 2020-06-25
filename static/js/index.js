@@ -85,5 +85,5 @@ type="text/javascript">
         var today = dayjs().day()
 //console.log("workout No", Math.floor((Math.random() * 18) + 2))
  if (today == 1 ||  today == 3 ||  today == 5) {return 1;}
- else {return Math.floor((Math.random() * 26) + 2);}
+ else {return Math.floor((Math.random() * 29) + 2);}
     }

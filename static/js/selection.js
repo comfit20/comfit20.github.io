@@ -1,7 +1,6 @@
 var number_of_workouts = 0;
 $(document).ready(function () {
     //Create time for the datetimepicker to set -> now plus 2 minutes
-
     var now_in_2 = new Date(getDateIn2Minutes());
 
     $('#datetimepicker1').datetimepicker({
@@ -30,7 +29,6 @@ $(document).ready(function () {
             number_of_workouts = data['exercises'].length
             //Make data global available
             window.data = data
-
             parseExercisesToForm(data);
         });
 });
@@ -99,84 +97,46 @@ function submitcheck(element) {
     var selected_date = element[3].value;
     console.log(selected_date)
     var selected_elements = $(element).serializeArray();
-    console.log(selected_elements)
+
+    // the name property of the selected elements includes the ids of the selected elements, not the acutal name
     exercise_id_list = [];
     $.each(selected_elements, function (index, element) {
         exercise_id_list.push(element.name)
     });
 
-    // Generate HTML List from exercise list for summary
-    var table_container = document.createElement('div')
-    ul = document.createElement('div')
-    ul.classList.add("row");
-    ul.classList.add("m-3");
-    var name_for_id = window.data.exercises;
-    var cat_list = []
+    // If no excercise was selected
+    if(exercise_id_list.length==0){
+        $("#error-message").text("Please select at least one workout.");
+        $("#error-message").animate({ opacity: 1 })
+        $('#error-message').delay(1000).animate({ opacity: 0 })
+
+
+        return false;
+    }
+
+    // Transform id list to name list for url: TODO: switch url to only use ids (makes it shorter)
+    var exercise_name_list = []
     exercise_id_list.forEach(function (item) {
-        var excercise_obj = name_for_id.filter(obj => {
+        var excercise_obj = data.exercises.filter(obj => {
             return obj.id === parseInt(item)
         })[0]
-        cat_list.push(excercise_obj.category)
+        exercise_name_list.push(excercise_obj.name)});
 
-        let li = document.createElement('div');
-        //li.classList.add('list-group-item')
-        li.classList.add('col-md-4')
-        li.classList.add('border')
-        li.classList.add('d-flex')
-        li.classList.add('p-3')
-        li.classList.add('justify-content-center')
-        li.style.backgroundColor = "#555"
-        ul.appendChild(li);
-        li.innerHTML += excercise_obj.name;
-    });
-    table_container.append(ul)
-
+    // Generate HTML List from exercise list for summary
+    console.log(window.data.excercises,exercise_id_list);
+    var overview = generateWorkoutOverview(window.data,exercise_id_list);
 
     $('.modal-body').empty();
     $('.modal-body').append("<h5>Summary</h5>");
-    $('.modal-body').append(table_container);
-
-    var counts = {}
-    cat_list.forEach((el) => {
-        counts[el] = counts[el] ? (counts[el] += 1) : 1;
-    });
-    console.log(counts)
-    var total = exercise_id_list.length;
-    let pb = document.createElement('div');
-    pb.classList.add("progress")
-    pb.style.height = "30px"
-
-    var color_arr = ["#d5e1df","#e3eaa7","#b5e7a0","#86af49","#82b74b"];
-    var count = 0
-    for (const [key, value] of Object.entries(counts)) {
-        let div = document.createElement('div');
-        div.classList.add("progress-bar")
-        div.innerHTML = key
-        var pc = (value/total)*100;
-        var styleText = "width: "+pc.toString()+"%";
-        div.style.cssText =styleText;
-        div.style.backgroundColor = color_arr[count];
-        div.style.height = "30px"
-        div.style.fontSize = "large"
-        count = count +1
-        pb.append(div)
-
-        console.log(`${key}: ${value}`);
-    }
-    $('.modal-body').append(pb)
-
-
-
-
+    $('.modal-body').append(overview);
 
 
     //create object for the url
     var url_builder_obj = {}
-    url_builder_obj["excercises"] = JSON.stringify(exercise_id_list)
+    url_builder_obj["excercises"] = JSON.stringify(exercise_name_list)
     var selected = dayjs(selected_date.toString())
     // Check if selected date is over. If so, take now and add 2 minutes for starting time
     if(selected.isBefore(dayjs())){
-        console.log("add 2 minures")
         selected_date = getDateIn2Minutes().toLocaleString()
     }
     url_builder_obj["timestamp"] = selected_date
