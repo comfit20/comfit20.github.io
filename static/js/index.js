@@ -53,34 +53,6 @@ type="text/javascript">
          $("#workoutanytime").attr('href','workout.html?&workout=workout'+nr_workout+".json");
 
 
-    function setTimeTo8and11(time_list) {
-        var return_list = []
-        $.each(time_list, function (idx,time) {
-            var time_830 = time.clone()
-            var time_1130 = time.clone()
-            var time_1700 = time.clone()
-            console.log("b",time_830)
-            time_830.hour(15)
-            time_830.minute(32)
-            time_830.second(0)
-            console.log("a",time_830)
-            if(dayjs().isBefore(dayjs(time_830).add(1,'hour'))){
-            return_list.push(time_830)};
-            time_1130.hour(18)
-            time_1130.minute(32)
-            time_1130.second(0)
-            if(dayjs().isBefore(dayjs(time_1130).add(1,'hour'))){
-            return_list.push(time_1130)};
-            time_1700.hour(22)
-            time_1700.minute(2)
-            time_1700.second(0)
-            if(dayjs().isBefore(dayjs(time_1700).add(1,'hour'))){
-            return_list.push(time_1700)};
-        });
-        return return_list;
-    }
-
-
     function get_workoutNo() {
         var today = dayjs().day()
 //console.log("workout No", Math.floor((Math.random() * 18) + 2))
