@@ -23,9 +23,15 @@ type="text/javascript">
         time_list.push(time_5);
         var time_6 = getNextWeekday(5).set('h',18).set('m',32).set('s',0);
         time_list.push(time_6);
+        console.log(time_list);
 
-        time_list.sort((a, b) => (dayjs(a).isAfter(dayjs(b)) ? 1 : -1))
-        return time_list
+        time_list.sort((a, b) => (a.isAfter(b) ? 1 : -1))
+
+        // Get rid of times that are over. 1 hour after the workout, delete it from list and show next
+        var filtered_time_list =   time_list.filter(function (date, iindex) {
+            return dayjs.utc().isBefore(date.add(1,'hour'))
+        });
+        return filtered_time_list
     }
 
     function renderWebsite() {
@@ -34,7 +40,7 @@ type="text/javascript">
 
         $.each(time_list, function (idx,time) {
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
-            console.log(time.local().format("YYYY"))
+            console.log(time.local().format())
             $("#next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
             var share_link = window.location.hostname+'/workout.html?workout=workout1.json'+'&timestamp='+time.toISOString();
             $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
