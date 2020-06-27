@@ -1,5 +1,7 @@
 var number_of_workouts = 0;
 $(document).ready(function () {
+    $('.clipboard-button').tooltip()
+
     //Create time for the datetimepicker to set -> now plus 2 minutes
     var now_in_2 = new Date(getDateIn2Minutes());
 
@@ -123,6 +125,7 @@ function submitcheck(element) {
         exercise_name_list.push(excercise_obj.name)});
 
     // Generate HTML List from exercise list for summary
+    shuffle(exercise_id_list)
     console.log(window.data.excercises,exercise_id_list);
     var overview = generateWorkoutOverview(window.data,exercise_id_list);
 
@@ -146,6 +149,19 @@ function submitcheck(element) {
 
     createModal(url_builder_obj);
     return false;
+}
+
+
+/** from https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
+ * Shuffles array in place. ES6 version
+ * @param {Array} a items An array containing the items.
+ */
+function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
 }
 
 function createModal

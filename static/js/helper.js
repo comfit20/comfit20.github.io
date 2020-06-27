@@ -1,10 +1,15 @@
 function generateWorkoutOverview(data2,selected_ids) {
+
+    // Colors to use for each category
+    var colors = {"core":"#55ACEEC0","belly":"#292F33C0","arms":"#66757FC0","legs":"#CCD6DDC0","reserve1":"#E1E8EDC0","reserve2":"#FFFFFFC0"};
+
     var data = window.data
-    // Generate HTML List from exercise list for summary
+
     // Generate HTML List from exercise list for summary
     var overview_container = document.createElement('div')
     var cards = document.createElement('div')
     cards.classList = "row m-3";
+    cards.style.backgroundColor = "#555";
     var category_list = []
     var exercise_name_list = []
     selected_ids.forEach(function (item) {
@@ -15,9 +20,8 @@ function generateWorkoutOverview(data2,selected_ids) {
         exercise_name_list.push(excercise_obj.name)
         let card = document.createElement('div');
 
-        //li.classList.add('list-group-item')
-        card.classList = "col-md-4 border d-flex p-3 justify-content-center"
-        card.style.backgroundColor = "#555"
+        card.classList = "col-md-4 border d-flex p-3 justify-content-center";
+        card.style.backgroundColor = colors[excercise_obj.category];
         card.innerHTML += excercise_obj.name;
         cards.appendChild(card);
 
@@ -30,23 +34,20 @@ function generateWorkoutOverview(data2,selected_ids) {
     });
     var total = selected_ids.length;
     let progress_bar = document.createElement('div');
-    progress_bar.classList = "progress m3"
-    progress_bar.style.height = "30px"
+    progress_bar.classList = "m3"
+    progress_bar.style.backgroundColor = "#555"
 
-    var color_arr = ["#55ACEE","#292F33","#66757F","#CCD6DD","#E1E8ED","#FFFFFF"];
     var count = 0;
     for (const [key, value] of Object.entries(counts)) {
-        let div = document.createElement('div');
-        div.classList.add("progress-bar")
-        div.innerHTML = key
-        var procent_value = (value/total)*100;
-        var styleText = "width: "+procent_value.toString()+"%";
-        div.style.cssText =styleText;
-        div.style.backgroundColor = color_arr[count];
-        div.style.height = "30px"
-        div.style.fontSize = "large"
-        count = count +1
-        progress_bar.append(div)
+        let outer_span = document.createElement('button')
+        outer_span.classList = "btn btn-primary m-2"
+        outer_span.style.backgroundColor = colors[key];
+        let badge = document.createElement('span');
+        badge.classList = 'badge badge-light ml-3'
+        badge.innerHTML = value
+        outer_span.innerHTML = key
+        outer_span.append(badge)
+        progress_bar.append(outer_span)
     }
 
     overview_container.append(progress_bar)
