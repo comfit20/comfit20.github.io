@@ -22,6 +22,7 @@ $(document).ready(function(){
         workoutFile = searchParams.get('workout');
         fetch('./static/data/'+workoutFile)
             .then((response) => {
+                console.log(response.headers)
                 return response.json();
             })
             .then((data) => {
@@ -236,3 +237,4 @@ function toggleSound() {
         button.attr('title','Sound is off')
     }
 }
+
