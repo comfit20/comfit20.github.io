@@ -249,13 +249,13 @@ function calcOffset(dateStr) {
         .then((response) => {
             var date = response.headers.get('Date');
             offset = dayjs(Date.now()).diff(dayjs(dateStr))
-            console.log("Offset Server->local "+offset)
         });
 }
 
 function getServerTime() {
     var date = new Date();
     date.setTime(date.getTime() + offset);
+    console.log("Offset Server->local "+offset)
     console.log(date)
     return date;
 }
