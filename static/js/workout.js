@@ -245,8 +245,12 @@ function toggleSound() {
 
 var offset = 0;
 function calcOffset(dateStr) {
-    offset = dayjs(Date.now()).diff(dayjs(dateStr))
-    console.log("Offset Server->local "+offset)
+    fetch('./static/data/fake_file_for_time_sync.json',{cache: "no-store"})
+        .then((response) => {
+            var date = response.headers.get('Date');
+            offset = dayjs(Date.now()).diff(dayjs(dateStr))
+            console.log("Offset Server->local "+offset)
+        });
 }
 
 function getServerTime() {
