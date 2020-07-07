@@ -20,9 +20,11 @@ $(document).ready(function(){
     var searchParams = new URLSearchParams(window.location.search)
     if(searchParams.has('workout')) {
         workoutFile = searchParams.get('workout');
-        fetch('./static/data/'+workoutFile)
+        fetch('./static/data/'+workoutFile,{cache: "no-store"})
             .then((response) => {
-                console.log(response.headers.get('Date'))
+                var date = response.headers.get('Date');
+                calcOffset(date);
+                console.log(offset)
                 return response.json();
             })
             .then((data) => {
@@ -32,8 +34,11 @@ $(document).ready(function(){
     // Otherwise parse it from the exercises list
     if(searchParams.has('excercises')) {
         var exercise_list = searchParams.get('excercises');
-        fetch('./static/data/ExerciseList.json')
+        fetch('./static/data/ExerciseList.json',{cache: "no-store"})
             .then((response) => {
+                var date = response.headers.get('Date');
+                calcOffset(date);
+                console.log(offset)
                 return response.json();
             })
             .then((data) => {
@@ -206,7 +211,8 @@ function startJqueryTimer(startTime) {
             $('.carousel').carousel(element.carousel_index+1);
            startJqueryTimer(startTime);
         },
-        alwaysExpire: true
+        alwaysExpire: true,
+        serverSync: getServerTime
     });
 }
 
@@ -236,5 +242,23 @@ function toggleSound() {
         // Change text of tooltip -> This is shown if you hover over the button
         button.attr('title','Sound is off')
     }
+}
+
+var offset = 0;
+function calcOffset(dateStr) {
+
+    var serverTimeMillisGMT = Date.parse(new Date(Date.parse(dateStr)).toUTCString());
+    var localMillisUTC = Date.parse(new Date().toUTCString());
+
+    offset = serverTimeMillisGMT -  localMillisUTC;
+    console.log(offset)
+}
+
+function getServerTime() {
+    var date = new Date();
+
+    date.setTime(date.getTime() + offset);
+
+    return date;
 }
 
