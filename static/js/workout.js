@@ -24,7 +24,6 @@ $(document).ready(function(){
             .then((response) => {
                 var date = response.headers.get('Date');
                 calcOffset(date);
-                console.log(offset)
                 return response.json();
             })
             .then((data) => {
@@ -256,9 +255,8 @@ function calcOffset(dateStr) {
 
 function getServerTime() {
     var date = new Date();
-
     date.setTime(date.getTime() + offset);
-
+    console.log(date)
     return date;
 }
 
