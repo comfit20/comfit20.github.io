@@ -22,7 +22,7 @@ $(document).ready(function(){
         workoutFile = searchParams.get('workout');
         fetch('./static/data/'+workoutFile)
             .then((response) => {
-                console.log(response.headers)
+                console.log(response.headers.get('Date'))
                 return response.json();
             })
             .then((data) => {
