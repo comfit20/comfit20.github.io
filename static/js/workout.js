@@ -23,7 +23,7 @@ $(document).ready(function(){
 
     if(searchParams.has('workout')) {
         workoutFile = searchParams.get('workout');
-        fetch('./static/data/'+workoutFile,{cache: "no-store"})
+        fetch('./static/data/'+workoutFile)
             .then((response) => {
                 return response.json();
             })
@@ -34,7 +34,7 @@ $(document).ready(function(){
     // Otherwise parse it from the exercises list
     if(searchParams.has('excercises')) {
         var exercise_list = searchParams.get('excercises');
-        fetch('./static/data/ExerciseList.json',{cache: "no-store"})
+        fetch('./static/data/ExerciseList.json')
             .then((response) => {
                 return response.json();
             })
