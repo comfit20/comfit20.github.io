@@ -18,12 +18,13 @@ $(document).ready(function(){
     // If workoutfile is specified, load it from the file
     var workoutFile = "workout1.json";
     var searchParams = new URLSearchParams(window.location.search)
+
+    calcOffset()
+
     if(searchParams.has('workout')) {
         workoutFile = searchParams.get('workout');
         fetch('./static/data/'+workoutFile,{cache: "no-store"})
             .then((response) => {
-                var date = response.headers.get('Date');
-                calcOffset(date);
                 return response.json();
             })
             .then((data) => {
@@ -35,9 +36,6 @@ $(document).ready(function(){
         var exercise_list = searchParams.get('excercises');
         fetch('./static/data/ExerciseList.json',{cache: "no-store"})
             .then((response) => {
-                var date = response.headers.get('Date');
-                calcOffset(date);
-                console.log(offset)
                 return response.json();
             })
             .then((data) => {
@@ -55,6 +53,7 @@ $(document).ready(function(){
 
 function buildSiteFromWorkoutFile(workoutjson){
     let searchParams = new URLSearchParams(window.location.search)
+
     if(searchParams.has('timestamp')) {
         let timestamp = searchParams.get('timestamp')
         if(timestamp==""){
@@ -248,7 +247,7 @@ function calcOffset(dateStr) {
     fetch('./static/data/fake_file_for_time_sync.json',{cache: "no-store"})
         .then((response) => {
             var date = response.headers.get('Date');
-            offset = dayjs(Date.now()).diff(dayjs(dateStr))
+            offset = dayjs(Date.now()).diff(dayjs(date))
         });
 }
 
