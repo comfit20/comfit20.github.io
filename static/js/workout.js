@@ -245,18 +245,13 @@ function toggleSound() {
 
 var offset = 0;
 function calcOffset(dateStr) {
-
-    var serverTimeMillisGMT = Date.parse(new Date(Date.parse(dateStr)).toUTCString());
-    var localMillisUTC = Date.parse(new Date().toUTCString());
-
-    offset = serverTimeMillisGMT -  localMillisUTC;
-    console.log(offset)
+    offset = dayjs(Date.now()).diff(dayjs(dateStr))
+    console.log("Offset Server->local "+offset)
 }
 
 function getServerTime() {
     var date = new Date();
     date.setTime(date.getTime() + offset);
-    console.log(date)
     return date;
 }
 
