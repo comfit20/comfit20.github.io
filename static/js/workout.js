@@ -252,6 +252,7 @@ function calcOffset(dateStr) {
 function getServerTime() {
     var date = new Date();
     date.setTime(date.getTime() + offset);
+    console.log(date)
     return date;
 }
 
