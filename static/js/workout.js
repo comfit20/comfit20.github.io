@@ -18,6 +18,9 @@ $(document).ready(function(){
     // If workoutfile is specified, load it from the file
     var workoutFile = "workout1.json";
     var searchParams = new URLSearchParams(window.location.search)
+
+    calcOffset()
+
     if(searchParams.has('workout')) {
         workoutFile = searchParams.get('workout');
         fetch('./static/data/'+workoutFile)
@@ -50,6 +53,7 @@ $(document).ready(function(){
 
 function buildSiteFromWorkoutFile(workoutjson){
     let searchParams = new URLSearchParams(window.location.search)
+
     if(searchParams.has('timestamp')) {
         let timestamp = searchParams.get('timestamp')
         if(timestamp==""){
@@ -205,7 +209,8 @@ function startJqueryTimer(startTime) {
             $('.carousel').carousel(element.carousel_index+1);
            startJqueryTimer(startTime);
         },
-        alwaysExpire: true
+        alwaysExpire: true,
+        serverSync: getServerTime
     });
 }
 
@@ -236,3 +241,21 @@ function toggleSound() {
         button.attr('title','Sound is off')
     }
 }
+
+var offset = 0;
+function calcOffset(dateStr) {
+    fetch('./static/data/fake_file_for_time_sync.json',{cache: "no-store"})
+        .then((response) => {
+            var date = response.headers.get('Date');
+            offset = dayjs(Date.now()).diff(dayjs(date))
+        });
+}
+
+function getServerTime() {
+    var date = new Date();
+    date.setTime(date.getTime() + offset);
+    console.log("Offset Server->local "+offset)
+    console.log(date)
+    return date;
+}
+
