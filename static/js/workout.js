@@ -249,10 +249,11 @@ function calcOffset(dateStr) {
         .then((response) => {
             var date = response.headers.get('Date');
             if(date){offset = dayjs(Date.now()).diff(dayjs(date))}
+            var end = new Date().getTime();
+            var duration = end - start
+            console.log("Request duration: ",duration)
         });
-    var end = new Date().getTime();
-    var duration = end - start
-    console.log("Request duration: ",duration)
+
 }
 
 function getServerTime() {
