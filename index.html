@@ -51,7 +51,17 @@
             <div class="row">
                 <div class="card-group col-sm-6">
                     <div class="card">
-                        <div class="card-body" style="background-color: #555;">
+                        <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist"  style="background-color: #555">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="workout-tab" data-toggle="tab" href="#workout" role="tab" aria-controls="profile" aria-selected="false">Workout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="yoga-tab" data-toggle="tab" href="#yoga" role="tab" aria-controls="home" aria-selected="true">Yoga</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div id="workout" class="tab-pane show active card-body" role="tabpanel" style="background-color: #555;">
                             <h3 class="card-title font-weight-bold">Next Scheduled Workout</h3>
 
                             <div class=" p-3 m-3">
@@ -74,8 +84,31 @@
                             <a href="workout.html?workout=workout3.json" class="btn btn-primary m-3">Workout 3</a> -->
                             <h3 class="card-title font-weight-bold">More Flexibility in your workouts</h3>
                             <a href="selection.html" class="btn btn-primary m-3">Create your own workout</a>
-                            </div>  
+                            </div>
+
+                        <div id="yoga" class="tab-pane show card-body" role="tabpanel" style="background-color: #555;">
+                            <h3 class="card-title font-weight-bold">Next Scheduled Yoga Class</h3>
+
+                            <div class=" p-3 m-3">
+                                <div class="input-group">
+
+                                    <a id="yoga-next-0" class="btn btn-primary">Mon, 27 Apr 2020 02:30:00 GMT</a></div>
+                                <div class="mt-1">
+                                    <div class="input-group">
+                                        <input  class="form-control" id="yoga-next-0-link"/>
+                                        <span class="input-group-button copy-span">
+                                    <button class="btn clipboard-button" data-clipboard-target="#next-0-link" data-toggle="tooltip" data-placement="bottom" title="Copy to Clipboard">
+                                        <i class="fas fa-clipboard"></i>
+                                    </button></span></div>
+                                </div>
+                            </div>
+                            <h3 class="card-title font-weight-bold">Start Yoga-Class Anytime</h3>
+
+                            <a id="yogaanytime" class="btn btn-primary m-3">Yoga Class</a>
+
                         </div>
+                    </div>
+                    </div>
                     </div>
                 </div>
                 <!-- <div class="card-group col-sm-6">
