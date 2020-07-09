@@ -248,9 +248,10 @@ function calcOffset(dateStr) {
     fetch('./static/data/fake_file_for_time_sync.json',{cache: "no-store",method:"HEAD"})
         .then((response) => {
             var date = response.headers.get('Date');
-            if(date){offset = dayjs(Date.now()).diff(dayjs(date))}
             var end = new Date().getTime();
             var duration = end - start
+            if(date){offset = dayjs(Date.now()).diff(dayjs(date.getTime()+duration))}
+            console.log("Offset Server->local "+offset)
             console.log("Request duration: ",duration)
         });
 
@@ -259,7 +260,6 @@ function calcOffset(dateStr) {
 function getServerTime() {
     var date = new Date();
     date.setTime(date.getTime() + offset);
-    console.log("Offset Server->local "+offset)
     return date;
 }
 
