@@ -250,7 +250,7 @@ function calcOffset(dateStr) {
             var date = response.headers.get('Date');
             var end = new Date().getTime();
             var duration = end - start
-            if(date){offset = dayjs(Date.now()).diff(dayjs(date.getTime()+duration))}
+            if(date){offset = dayjs(Date.now()).diff(dayjs(date).add(duration,'ms'))}
             console.log("Offset Server->local "+offset)
             console.log("Request duration: ",duration)
         });
