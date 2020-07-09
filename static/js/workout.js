@@ -244,18 +244,21 @@ function toggleSound() {
 
 var offset = 0;
 function calcOffset(dateStr) {
-    fetch('./static/data/fake_file_for_time_sync.json',{cache: "no-store"})
+    var start = new Date().getTime();
+    fetch('./static/data/fake_file_for_time_sync.json',{cache: "no-store",method:"HEAD"})
         .then((response) => {
             var date = response.headers.get('Date');
-            offset = dayjs(Date.now()).diff(dayjs(date))
+            if(date){offset = dayjs(Date.now()).diff(dayjs(date))}
         });
+    var end = new Date().getTime();
+    var duration = end - start
+    console.log("Request duration: ",duration)
 }
 
 function getServerTime() {
     var date = new Date();
     date.setTime(date.getTime() + offset);
     console.log("Offset Server->local "+offset)
-    console.log(date)
     return date;
 }
 
