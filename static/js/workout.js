@@ -113,7 +113,6 @@ function createCarousel(data) {
             var lst = elem.name;
             $.each (lst, function(index,elem) {
                 ol.append("<li style='background-color: #555 ' class=\"list-group-item\"><b>"+elem+"</b></li>");
-
             });
             wrapper.append(ol)
             wrapper.append('<div id=timer-'+elem.id+'></div>')
@@ -199,7 +198,7 @@ function startJqueryTimer(startTime) {
         $(".carousel-indicators").css("opacity","100%");
     }
     timer_gui.countdown({
-        until: new Date((element['timeStamp'])),
+        until: new Date(dayjs(element['timeStamp']).add(offset)),
         compact: true, format: 'dhMS',
         onExpiry: function expired() {
             $('#heading').text('-');
@@ -251,7 +250,6 @@ function calcOffset(dateStr) {
             var end = new Date().getTime();
             var duration = end - start
             if(date){offset = dayjs(Date.now()).diff(dayjs(date).add(duration,'ms'))}
-            console.log("Offset Server->local "+offset)
             console.log("Request duration: ",duration)
         });
 
@@ -260,6 +258,7 @@ function calcOffset(dateStr) {
 function getServerTime() {
     var date = new Date();
     date.setTime(date.getTime() + offset);
+    console.log("Offset Server->local "+offset)
     return date;
 }
 
