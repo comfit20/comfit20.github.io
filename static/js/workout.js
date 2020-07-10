@@ -258,7 +258,7 @@ function calcOffset(dateStr) {
 
 function getServerTime() {
     var date = new Date();
-    date.setTime(date.getTime() + offset);
+    date.setTime(date.getTime() - offset);
     console.log("Offset Server->local "+offset)
     return date;
 }
