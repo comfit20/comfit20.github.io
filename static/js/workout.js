@@ -197,8 +197,9 @@ function startJqueryTimer(startTime) {
     }else{
         $(".carousel-indicators").css("opacity","100%");
     }
+    console.log("Offset",offset)
     timer_gui.countdown({
-        until: new Date(dayjs(element['timeStamp']).add(offset)),
+        until: new Date(element['timeStamp']),
         compact: true, format: 'dhMS',
         onExpiry: function expired() {
             $('#heading').text('-');
