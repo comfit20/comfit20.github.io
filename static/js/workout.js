@@ -68,7 +68,7 @@ function buildSiteFromWorkoutFile(workoutjson){
     if(workoutjson.startTime!="now"){
         startTime = dayjs(workoutjson.startTime)
     }else{
-        startTime = dayjs(Date.now())
+        startTime = dayjs(getServerTime())
     }
     workoutjson.elements.sort(function(a, b){
         return a.id - b.id;
@@ -99,6 +99,7 @@ function createCarousel(data) {
     var expired_count = 0;
     $.each (data['elements'], function(index,elem) {
         if(dayjs(elem.timeStamp).isBefore(dayjs(getServerTime()))) {
+            console.log("expired",elem.id)
             elem.expired = true;
             expired_count = expired_count +1;
             return;
