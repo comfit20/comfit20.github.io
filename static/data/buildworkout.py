@@ -676,7 +676,7 @@ if workoutstyle == 'repeat_iso':
       },
       {
         "id": 1,
-        "heading": "Workout Timimg:",
+        "heading": "Workout Timing:",
         "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "No water break"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
@@ -866,7 +866,7 @@ if workoutstyle == 'repeat_diff':
       },
       {
         "id": 1,
-        "heading": "Workout Timimg:",
+        "heading": "Workout Timing:",
         "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "No water break"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
