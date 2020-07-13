@@ -98,7 +98,7 @@ function buildSiteFromWorkoutFile(workoutjson){
 function createCarousel(data) {
     var expired_count = 0;
     $.each (data['elements'], function(index,elem) {
-        if(dayjs(elem.timeStamp).isBefore(dayjs(Date.now()))) {
+        if(dayjs(elem.timeStamp).isBefore(dayjs(getServerTime()))) {
             elem.expired = true;
             expired_count = expired_count +1;
             return;
