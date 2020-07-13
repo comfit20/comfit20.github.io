@@ -57,7 +57,7 @@ function buildSiteFromWorkoutFile(workoutjson){
     if(searchParams.has('timestamp')) {
         let timestamp = searchParams.get('timestamp')
         if(timestamp==""){
-            timestamp = new Date()
+            timestamp = getServerTime()
         }
         workoutjson.startTime = dayjs(timestamp);
     }else{
