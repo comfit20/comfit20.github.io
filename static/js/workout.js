@@ -21,43 +21,56 @@ $(document).ready(function(){
 
     calcOffset()
 
-    if(searchParams.has('workout')) {
-        workoutFile = searchParams.get('workout');
-        fetch('./static/data/'+workoutFile)
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                buildSiteFromWorkoutFile(data)
-            });
-    }
-    // Otherwise parse it from the exercises list
-    if(searchParams.has('excercises')) {
-        var exercise_list = searchParams.get('excercises');
-        fetch('./static/data/ExerciseList.json')
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                let searchParams = new URLSearchParams(window.location.search)
+    fetch('./static/data/ExerciseList.json')
+        .then((response) => {
+            return response.json();
+        })
+        .then((excercise_json) => {
+            // If workout file specified in params, then load it and build the website based on the workout file
+            if(searchParams.has('workout')) {
+                console.log("from workout file")
+                workoutFile = searchParams.get('workout');
+                fetch('./static/data/'+workoutFile)
+                    .then((response) => {
+                        return response.json();
+                    })
+                    .then((data) => {
+                        buildSiteFromWorkoutFile(data,excercise_json)
+                    });
+            }
+
+            // If not workout file is specified, than create the workout file using the excercise json
+            if(searchParams.has('excercises')) {
+                var exercise_list = searchParams.get('excercises');
+
                 var selected_duration = searchParams.get("wo_duration")
                 var selected_rounds = searchParams.get("wo_rounds")
 
-                    var generated_workout = generateWorkoutJson(selected_duration,selected_rounds,data,JSON.parse(exercise_list))
+                var generated_workout = generateWorkoutJson(selected_duration,selected_rounds,excercise_json,JSON.parse(exercise_list))
+                buildSiteFromWorkoutFile(generated_workout,excercise_json) // TODO extract
+            }
 
-                buildSiteFromWorkoutFile(generated_workout)
+        });
 
-            });
-    }});
+    // const domain = 'meet.jit.si';
+    // const options = {
+    //     roomName: 'ComfitExampleRoom12334242',
+    //     width: 700,
+    //     height: 300,
+    //     parentNode: document.querySelector('#meet')
+    // };
+    // const api = new JitsiMeetExternalAPI(domain, options);
+
+});
 
 
-function buildSiteFromWorkoutFile(workoutjson){
+function buildSiteFromWorkoutFile(workoutjson,excercise_json){
     let searchParams = new URLSearchParams(window.location.search)
 
     if(searchParams.has('timestamp')) {
         let timestamp = searchParams.get('timestamp')
         if(timestamp==""){
-            timestamp = new Date()
+            timestamp = getServerTime()
         }
         workoutjson.startTime = dayjs(timestamp);
     }else{
@@ -68,7 +81,7 @@ function buildSiteFromWorkoutFile(workoutjson){
     if(workoutjson.startTime!="now"){
         startTime = dayjs(workoutjson.startTime)
     }else{
-        startTime = dayjs(Date.now())
+        startTime = dayjs(getServerTime())
     }
     workoutjson.elements.sort(function(a, b){
         return a.id - b.id;
@@ -84,7 +97,7 @@ function buildSiteFromWorkoutFile(workoutjson){
     });
 
     // Crate the carousel based on the data loaded from the json
-    createCarousel(workoutjson);
+    createCarousel(workoutjson,excercise_json);
 
     // Start the timers for each page on the carousel
     parseResults(workoutjson);
@@ -95,10 +108,11 @@ function buildSiteFromWorkoutFile(workoutjson){
 
 }
 
-function createCarousel(data) {
+function createCarousel(data,excercise_json) { // todo: better name for data e.g. workout_json
     var expired_count = 0;
     $.each (data['elements'], function(index,elem) {
-        if(dayjs(elem.timeStamp).isBefore(dayjs(Date.now()))) {
+        if(dayjs(elem.timeStamp).isBefore(dayjs(getServerTime()))) {
+            console.log("expired",elem.id)
             elem.expired = true;
             expired_count = expired_count +1;
             return;
@@ -107,7 +121,35 @@ function createCarousel(data) {
         elem.carousel_index = index-expired_count;
 
         var content = null;
-        if(elem.gifpath==""){
+        if(elem.id == 0){ // Todo: this feels like a hack, change to ids or so
+            var wrapper = $('<div class="carousel-item"></div>');
+            var header = $('<h1 id="name-'+elem.id+'">'+elem.name+'</h1>')
+            wrapper.append(header)
+            var intro_names = data['elements'].filter(obj => {
+                return obj.heading === 'Introduction to exercises'
+            })
+            var name_list = []
+            $.each (intro_names, function(index,elem) {
+                name_list.push(elem.name);
+            });
+            console.log(name_list)
+            // Transform id list to name list for url: TODO: switch url to only use ids (makes it shorter)
+            var exercise_id_list = []
+            name_list.forEach(function (item) {
+                var excercise_obj = excercise_json.exercises.filter(obj => {
+                    return 0===obj.name.localeCompare(item)
+                })[0]
+                exercise_id_list.push(excercise_obj.id)
+            });
+            var overview = generateWorkoutOverview(excercise_json,exercise_id_list);
+            overview.style.backgroundColor = "#555555"
+             wrapper.append(overview);
+            wrapper.append('<div id=timer-'+elem.id+'></div>')
+            content = wrapper;
+
+            console.log(exercise_id_list)
+        }
+        else if(elem.gifpath==""){
             var wrapper = $('<div class="carousel-item"></div>');
             var ol = $("<ol class='list-group'></ol>")
             var lst = elem.name;
@@ -188,7 +230,7 @@ function startJqueryTimer(startTime) {
     $('#heading').text(element.heading);
     var elemId = uniqId()
     var timer_gui = $("#timer-"+element.id).text("00:00").addClass('display-4'); //
-    if(element.gifpath!=""){
+    if(element.gifpath!="" && element.id !== 0){ // todo: improve checking for overview
     var myPlayer = $("#vid-"+element.id)
     myPlayer.get(0).play()
         }
@@ -198,8 +240,9 @@ function startJqueryTimer(startTime) {
     }else{
         $(".carousel-indicators").css("opacity","100%");
     }
+    console.log("Offset",offset)
     timer_gui.countdown({
-        until: new Date((element['timeStamp'])),
+        until: new Date(element['timeStamp']),
         compact: true, format: 'dhMS',
         onExpiry: function expired() {
             $('#heading').text('-');
@@ -251,7 +294,6 @@ function calcOffset(dateStr) {
             var end = new Date().getTime();
             var duration = end - start
             if(date){offset = dayjs(Date.now()).diff(dayjs(date).add(duration,'ms'))}
-            console.log("Offset Server->local "+offset)
             console.log("Request duration: ",duration)
         });
 
@@ -259,7 +301,8 @@ function calcOffset(dateStr) {
 
 function getServerTime() {
     var date = new Date();
-    date.setTime(date.getTime() + offset);
+    date.setTime(date.getTime() - offset);
+    console.log("Offset local -> server "+offset)
     return date;
 }
 
