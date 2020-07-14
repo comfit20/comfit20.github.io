@@ -52,14 +52,14 @@ $(document).ready(function(){
 
         });
 
-    // const domain = 'meet.jit.si';
-    // const options = {
-    //     roomName: 'ComfitExampleRoom12334242',
-    //     width: 700,
-    //     height: 300,
-    //     parentNode: document.querySelector('#meet')
-    // };
-    // const api = new JitsiMeetExternalAPI(domain, options);
+    const domain = 'meet.jit.si';
+    const options = {
+        roomName: 'ComfitExampleRoom12334242',
+        width: 700,
+        height: 300,
+        parentNode: document.querySelector('#meet')
+    };
+    const api = new JitsiMeetExternalAPI(domain, options);
 
 });
 
