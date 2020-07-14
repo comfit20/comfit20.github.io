@@ -32,7 +32,12 @@ $(document).ready(function () {
             //Make data global available
             window.data = data
             parseExercisesToForm(data);
+
+            // Once page is build, show it and hide spinner which is used as placeholder while loading
+            $("#wait-spinner").css("visibility","hidden");
+            $("#main-content").css("visibility","visible");
         });
+
 });
 
 function generateRandomWorkout(number) {
