@@ -104,7 +104,7 @@ function submitcheck(element) {
     var selected_date = element[3].value;
     console.log(selected_date)
     var selected_elements = $(element).serializeArray();
-
+    shuffle(selected_elements)
     // the name property of the selected elements includes the ids of the selected elements, not the acutal name
     exercise_id_list = [];
     $.each(selected_elements, function (index, element) {
@@ -130,7 +130,6 @@ function submitcheck(element) {
         exercise_name_list.push(excercise_obj.name)});
 
     // Generate HTML List from exercise list for summary
-    shuffle(exercise_id_list)
     console.log(window.data.excercises,exercise_id_list);
     var overview = generateWorkoutOverview(window.data,exercise_id_list);
 
