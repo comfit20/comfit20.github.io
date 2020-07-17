@@ -4,15 +4,13 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167369005-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+  gtag('config', 'UA-167369005-1');
 
-        gtag('js', new Date());
 
-        gtag('config', 'UA-167369005-1');
     </script>
 
 
@@ -44,7 +42,7 @@
 
 <body class="text-center custom-body">
 
-<div class="cover-container d-flex h-100 p-3 mx-auto flex-column  w-100 ">
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column  w-100 " style="max-width: 80em">
     <header class="masthead mb-auto">
         <div class="inner">
             <h1 class="masthead-brand"><a href="index.html">ComFIT</a></h1>
@@ -58,61 +56,64 @@
     </header>
 
     <main role="main" class="inner cover">
-        <h1 id="heading"></h1> <!-- include content from heading workout files here -->
-        <div id="content">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false"
-                 data-wrap="false" data-touch="false">
+        <div>
+            <div class="row">
+                <div class="card-group col-sm-6">
+                    <div class="card comfit-bg">
+
+                        <h1 id="heading" class="comfit-bg"></h1> <!-- include content from heading workout files here -->
+                        <div id="content" class="comfit-bg">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+                                 data-interval="false" data-wrap="false" data-touch="false">
 
 
-                <div class="carousel-inner">
+                                <div class="carousel-inner">
 
+                                </div>
+
+
+                                <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom"
+                                        class="btn btn-dark" data-toggle="tooltip" data-placement="bottom"
+                                        title="Sound is off" type="button"><i id="sound-icon"
+                                                                              class="fas fa-volume-mute"></i></button>
+
+                                <ol class="carousel-indicators" style="position: relative;">
+
+                                    <!--           <button  style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark  sound-button" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button> -->
+
+                                </ol>
+
+                                <!-- <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button> -->
+
+                                <div id="wait-spinner" class="spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                </ol>
+
+
+                                <!--               <iframe id = "spotifylink" src="https://open.spotify.com/embed/playlist/3oLKVWqy7vh8XeukJavyyi"  width="360" height="80"
+                                 frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+
+                                <iframe style="visibility: hidden" id="spotifylink" width="360" height="80"
+                                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="meet" class="inner cover">
 
+                <div class="card-group col-sm-6">
+                    <div class="card comfit-bg">
+
+                        <h1 id="heading_2"></h1> <!-- include content from heading workout files here -->
+                        <div id="content_2">
+                        <div id='meet'></div>
+                        </div>
+
+                    </div>
                 </div>
-
-                <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark"
-                        data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i
-                        id="sound-icon" class="fas fa-volume-mute"></i></button>
-
-                <ol class="carousel-indicators" style="position: relative;">
-
-                    <!--           <button  style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark  sound-button" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button> -->
-
-                </ol>
-
-                <!-- <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button> -->
-
-                <div id="wait-spinner" class="spinner-border" role="status">
-                    <span class="sr-only">Loading...</span>
-                </div>
-
-                </ol>
-
-                <script>
-
-                    fetch('./static/data/music.json').then(function (response) {
-                        response.json().then(function (music_playlist) {
-
-
-                            var radommusic = Math.floor((Math.random() * music_playlist["playlists"].length) + 0)
-
-                            $("#spotifylink").attr("src", "https://open.spotify.com/embed/playlist/" + music_playlist["playlists"][radommusic]["playLink"])
-
-                        });
-                    });
-
-
-                </script>
-
-
-                <!--               <iframe id = "spotifylink" src="https://open.spotify.com/embed/playlist/3oLKVWqy7vh8XeukJavyyi"  width="360" height="80"
-                 frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
-
-                <iframe style="visibility: hidden" id="spotifylink" width="360" height="80"
-                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-
             </div>
         </div>
     </main>
@@ -123,7 +124,25 @@
         </div>
     </footer>
 </div>
+<script>
 
+fetch('./static/data/music.json').then(function(response) {
+  response.json().then(function(music_playlist)
+  {
+
+
+
+var radommusic = Math.floor((Math.random() * music_playlist["playlists"].length) + 0)
+
+$("#spotifylink").attr("src", "https://open.spotify.com/embed/playlist/"+ music_playlist["playlists"][radommusic]["playLink"])
+
+});
+});
+
+
+
+
+</script>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
