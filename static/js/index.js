@@ -1,4 +1,16 @@
-type="text/javascript">
+
+    $(function(){
+  var hash = window.location.hash;
+  hash && $('a[href="'+hash+'"]').tab('show');
+
+  $('.nav-tabs a').click(function (e) {
+    $(this).tab('show');
+    var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+    window.location.hash = this.hash;
+    $('html,body').scrollTop(scrollmem);
+  });
+});
+
     $(document).ready(function(){
         // Get current active workout from workout_active.json
         renderWebsite()
@@ -33,21 +45,55 @@ type="text/javascript">
         return filtered_time_list
     }
 
+
+       function createYogaTimeList() {
+        var time_list = []
+        var time_1 = getNextWeekday(1).set('h',15).set('m',32).set('s',0).set('ms',0);
+        time_list.push(time_1);
+        var time_2 = getNextWeekday(2).set('h',1).set('m',2).set('s',0).set('ms',0);
+        time_list.push(time_2);
+
+
+        time_list.sort((a, b) => (a.isAfter(b) ? 1 : -1))
+
+        // Get rid of times that are over. 1 hour after the workout, delete it from list and show next
+        var filtered_time_list =   time_list.filter(function (date, iindex) {
+            return dayjs.utc().isBefore(date.add(1,'hour'))
+        });
+        return filtered_time_list
+    }
+
+
     function renderWebsite() {
 
+
+        // Render workout part
         var time_list = createWorkoutTimeList();
 
         $.each(time_list, function (idx,time) {
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
-            console.log(time.local().format())
             $("#next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
             var share_link = window.location.hostname+'/workout.html?workout=workout1.json'+'&timestamp='+time.toISOString();
             $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
             $('#next-'+idx+'-link').attr('value',share_link);
         });
-
-
         var btn = document.getElementById('next-0-link');
+        var clipboard = new ClipboardJS('.clipboard-button');
+        $('.clipboard-button').tooltip()
+
+        // Render yoga stuff todo: extract method
+         var yoga_time_list = createYogaTimeList();
+
+        $.each(yoga_time_list, function (idx,time) {
+            const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
+            $("#yoga-next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
+            var share_link = window.location.hostname+'/workout.html?workout=workout1.json'+'&timestamp='+time.toISOString();
+            $("#yoga-next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
+            $('#yoga-next-'+idx+'-link').attr('value',share_link);
+        });
+
+
+        var btn = document.getElementById('yoga-next-0-link');
         var clipboard = new ClipboardJS('.clipboard-button');
         $('.clipboard-button').tooltip()
 
@@ -56,6 +102,7 @@ type="text/javascript">
          var nr_workout = get_workoutNo()
 
          $("#workoutanytime").attr('href','workout.html?&workout=workout'+nr_workout+".json");
+         $("#yogaanytime").attr('href','workout.html?&workout=workout'+nr_workout+".json");
 
 
     function get_workoutNo() {

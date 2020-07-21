@@ -1,0 +1,77 @@
+{
+  "startTime": "now",
+  "elements": [
+    {
+      "id": 0,
+      "heading": "Welcome to Yoga!",
+      "name": "Find a comfortable seat and introduce yourself while you wait for class to begin",
+      "duration": 0,
+      "gifpath": "static/movie/yoga/YogaSeat.webm",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 1,
+      "heading": "Warm up",
+      "name": "Breathing",
+      "duration": 100,
+      "gifpath": "static/movie/yoga/YogaBreath.webm",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 2,
+      "heading": "Warm up",
+      "name": "Shoulder Stretch",
+      "duration": 10,
+      "gifpath": "static/movie/yoga/YogaShoulderStretch.webm",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 3,
+      "heading": "Warm up",
+      "name": "Cat Cow",
+      "duration": 10,
+      "gifpath": "static/movie/yoga/YogaCatCow.webm",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 4,
+      "heading": "Warm up",
+      "name": "Childs Pose",
+      "duration": 10,
+      "gifpath": "static/movie/yoga/YogaChildsPose.webm",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 5,
+      "heading": "Warm up",
+      "name": "Puppy pose",
+      "duration": 10,
+      "gifpath": "static/movie/yoga/YogaPuppy.webm",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 6,
+      "heading": "Yoga Path",
+      "name": "Downward facing dog",
+      "duration": 10,
+      "gifpath": "static/movie/yoga/YogaDownDog.webm",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 7,
+      "heading": "Yoga Path",
+      "name": "Classical sun salutation",
+      "duration": 10,
+      "gifpath": "static/movie/yoga/YogaClassical2X.webm",
+      "sound": null,
+      "indicator": "hidden"
+    }
+  ]
+}

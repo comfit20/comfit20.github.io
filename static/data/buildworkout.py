@@ -7,9 +7,14 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
+<<<<<<< HEAD
 exercises = [ '2 Squats, 2 Squat Jumps','High Plank Shoulder Tap', 'V Crunch & Clap Under Leg', 'Backward Lunge & 3 Pulses',
 'Mountain Climber Side Step',  'Heel Touch Crunches', '6 Fast Feet In & Out', 'Ice Skater', 'Jump & Donkey Kick (n+1)',
 'Push Up & Side Turn',  'Jump & Squat Backwards', 'Plank']
+=======
+exercises = ['Fast Squats','Crunches', 'Burpee & Jump 180','Ice Skater', 'Swimmer',  'Ladder (alt: Fast Feet)', 
+'Jump Squat (+ Touch)', 'Push Up & Side Turn', 'Heel Touch Crunches', 'Calf Rises', 'Plank Dips', 'Wall Sit (alt: Squat)']
+>>>>>>> 0d1c748aedcfa221d3e66f0b271390db4a09ec47
 
 
 
@@ -25,7 +30,11 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_diff erenttimes 9 exercise 45 + 25 + 45 + 25 (1260);   no water break
   #'up_and_down'. 30 -60 - 30: 12 exercises
 
+<<<<<<< HEAD
 workoutstyle = 'decrease' # change workout styles here
+=======
+workoutstyle = 'up_and_down' # change workout styles here
+>>>>>>> 0d1c748aedcfa221d3e66f0b271390db4a09ec47
 
 duration_warmup = 25
 applaus = random.randint(1,2)
@@ -677,7 +686,7 @@ if workoutstyle == 'repeat_iso':
       },
       {
         "id": 1,
-        "heading": "Workout Timimg:",
+        "heading": "Workout Timing:",
         "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "No water break"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
@@ -867,7 +876,7 @@ if workoutstyle == 'repeat_diff':
       },
       {
         "id": 1,
-        "heading": "Workout Timimg:",
+        "heading": "Workout Timing:",
         "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "No water break"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
