@@ -20,18 +20,6 @@ $(document).ready(function () {
 
     calcOffset()
 
-
-                if (searchParams.has('timestamp')) {
-                const domain = 'meet.jit.si';
-        const options = {
-            roomName: 'ComFit20-Video-Chat-Room',
-            height: '500px',
-            parentNode: document.querySelector('#meet')
-        };
-        const api = new JitsiMeetExternalAPI(domain, options);
-
-            }
-
     fetch('./static/data/ExerciseList.json')
         .then((response) => {
             return response.json();
