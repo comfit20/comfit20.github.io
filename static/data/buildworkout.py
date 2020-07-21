@@ -7,8 +7,10 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Rope Jump', 'Static Spiderman', '10 Fast Feet & Jump', 'Bicycle Crunches', 'Wall Sit (alt: Squat)', 'Glute Bridge',
- 'Single Leg Donkey Kick', 'Flutter Kicks (Scissor)', 'Burpees', 'Swimmer']
+exercises = ['Fast Squats','Crunches', 'Burpee & Jump 180','Ice Skater', 'Swimmer',  'Ladder (alt: Fast Feet)', 
+'Jump Squat (+ Touch)', 'Push Up & Side Turn', 'Heel Touch Crunches', 'Calf Rises', 'Plank Dips', 'Wall Sit (alt: Squat)']
+
+
 
 warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']#'Glute bridge','Single Leg Hip Circles', '5 shoulder circles + 2 wind mills',
 
@@ -22,7 +24,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_diff erenttimes 9 exercise 45 + 25 + 45 + 25 (1260);   no water break
   #'up_and_down'. 30 -60 - 30: 12 exercises
 
-workoutstyle = 'repeat_diff' # change workout styles here
+workoutstyle = 'up_and_down' # change workout styles here
 
 duration_warmup = 25
 applaus = random.randint(1,2)
@@ -674,7 +676,7 @@ if workoutstyle == 'repeat_iso':
       },
       {
         "id": 1,
-        "heading": "Workout Timimg:",
+        "heading": "Workout Timing:",
         "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "No water break"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
@@ -864,7 +866,7 @@ if workoutstyle == 'repeat_diff':
       },
       {
         "id": 1,
-        "heading": "Workout Timimg:",
+        "heading": "Workout Timing:",
         "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "No water break"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
