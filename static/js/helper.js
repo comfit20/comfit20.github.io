@@ -55,3 +55,36 @@ function generateWorkoutOverview(excercise_json,selected_ids) {
     overview_container.append(progress_bar)
     return overview_container;
 };
+
+
+function generateYogaOverview(yoga_json) {
+
+    // Colors to use for each category
+    var colors = {"core":"#55ACEEC0","belly":"#292F33C0","arms":"#66757FC0","legs":"#CCD6DDC0","reserve1":"#E1E8EDC0","reserve2":"#FFFFFFC0"};
+
+    var data = yoga_json // todo: better name than data again
+
+    // Generate HTML List from exercise list for summary
+    var overview_container = document.createElement('div')
+    var cards = document.createElement('div')
+    cards.classList = "row m-3 p-3";
+    cards.style.backgroundColor = "#555";
+    var category_list = []
+    var exercise_name_list = []
+    yoga_json.forEach(function (item) {
+
+        if(item.id===0){
+            return
+        }
+        let card = document.createElement('div');
+
+        card.classList = "col-md-4 border d-flex p-3 justify-content-center";
+        card.innerHTML += item.name;
+        cards.appendChild(card);
+
+    });
+    overview_container.append(cards)
+
+    return overview_container;
+};
+

@@ -87,8 +87,8 @@
         $.each(yoga_time_list, function (idx,time) {
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
             $("#yoga-next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
-            var share_link = window.location.hostname+'/workout.html?workout=workout1.json'+'&timestamp='+time.toISOString();
-            $("#yoga-next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
+            var share_link = window.location.hostname+'/yoga.html?workout=yoga1.json'+'&timestamp='+time.toISOString();
+            $("#yoga-next-"+idx).attr('href','yoga.html?timestamp='+time.toISOString()+"&workout=yoga1.json");
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
         });
 
@@ -102,7 +102,7 @@
          var nr_workout = get_workoutNo()
 
          $("#workoutanytime").attr('href','workout.html?&workout=workout'+nr_workout+".json");
-         $("#yogaanytime").attr('href','workout.html?&workout=workout'+nr_workout+".json");
+         $("#yogaanytime").attr('href','yoga.html?&workout=yoga1.json');
 
 
     function get_workoutNo() {
