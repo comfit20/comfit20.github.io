@@ -1,3 +1,5 @@
 Gemfile.lock
 _site/
 .idea/
+static/data/buildworkout.py
+static/data/workout1.json
