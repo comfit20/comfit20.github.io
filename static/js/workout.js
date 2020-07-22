@@ -68,17 +68,17 @@ function buildSiteFromWorkoutFile(workoutjson,excercise_json) {
 
     var startTime = null;
     if (workoutjson.startTime != "now") {
-        startTime = dayjs(workoutjson.startTime)
+        workoutjson.startTime = dayjs(workoutjson.startTime)
     } else {
-        startTime = dayjs(getServerTime())
+        workoutjson.startTime = dayjs(getServerTime())
     }
+
     workoutjson.elements.sort(function (a, b) {
         return a.id - b.id;
     });
 
     // Calculate start time for each workout. Needed if someone joins after the workout started
-    var time_list = [startTime]
-    var old_time = startTime;
+    var old_time = workoutjson.startTime;
 
     workoutjson.elements.forEach(function (item, index) {
         item.timeStamp = old_time.add(item.duration, 'seconds')

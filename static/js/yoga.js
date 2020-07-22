@@ -59,7 +59,7 @@ function buildSiteFromWorkoutFile(workoutjson,excercise_json) {
     if (searchParams.has('timestamp')) {
         let timestamp = searchParams.get('timestamp')
         if (timestamp == "") {
-            timestamp = getServerTime()
+            timestamp = dayjs(getServerTime())
         }
         workoutjson.startTime = dayjs(timestamp);
     } else {
@@ -68,17 +68,17 @@ function buildSiteFromWorkoutFile(workoutjson,excercise_json) {
 
     var startTime = null;
     if (workoutjson.startTime != "now") {
-        startTime = dayjs(workoutjson.startTime)
+        workoutjson.startTime = dayjs(workoutjson.startTime)
     } else {
-        startTime = dayjs(getServerTime())
+        workoutjson.startTime = dayjs(getServerTime())
     }
+
     workoutjson.elements.sort(function (a, b) {
         return a.id - b.id;
     });
 
     // Calculate start time for each workout. Needed if someone joins after the workout started
-    var time_list = [startTime]
-    var old_time = startTime;
+    var old_time = workoutjson.startTime;
 
     workoutjson.elements.forEach(function (item, index) {
         item.timeStamp = old_time.add(item.duration, 'seconds')
@@ -99,7 +99,10 @@ function buildSiteFromWorkoutFile(workoutjson,excercise_json) {
 
 function createCarousel(data, excercise_json) { // todo: better name for data e.g. workout_json
     var expired_count = 0;
+
     $.each(data['elements'], function (index, elem) {
+        console.log(dayjs(elem.timeStamp))
+        console.log(dayjs(getServerTime()))
         if (dayjs(elem.timeStamp).isBefore(dayjs(getServerTime()))) {
             console.log("expired", elem.id)
             elem.expired = true;
@@ -293,7 +296,7 @@ function calcOffset(dateStr) {
 function getServerTime() {
     var date = new Date();
     date.setTime(date.getTime() - offset);
-    console.log("Offset local -> server " + offset)
+    //console.log("Offset local -> server " + offset)
     return date;
 }
 
