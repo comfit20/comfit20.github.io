@@ -33,6 +33,12 @@ type="text/javascript">
         return filtered_time_list
     }
 
+
+    var day_workout = get_workoutday()
+    console.log(day_workout)
+
+
+
     function renderWebsite() {
 
         var time_list = createWorkoutTimeList();
@@ -41,9 +47,11 @@ type="text/javascript">
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
             console.log(time.local().format())
             $("#next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
-            var share_link = window.location.hostname+'/workout.html?workout=workout1.json'+'&timestamp='+time.toISOString();
-            $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
+            var share_link = window.location.hostname+'/workout.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
+            $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout"+day_workout+".json");
             $('#next-'+idx+'-link').attr('value',share_link);
+
+
         });
 
 
@@ -60,7 +68,22 @@ type="text/javascript">
 
     function get_workoutNo() {
         var today = dayjs().day()
-//console.log("workout No", Math.floor((Math.random() * 18) + 2))
- if (today == 1 ||  today == 3 ||  today == 5) {return 1;}
- else {return Math.floor((Math.random() * 29) + 2);}
+        //console.log("workout No", Math.floor((Math.random() * 18) + 2))
+ return Math.floor((Math.random() * 40) + 2);
     }
+
+    function get_workoutday() {
+        var today = dayjs().day()
+
+//console.log("workout No", Math.floor((Math.random() * 18) + 2))
+ if (today == 1 ||  today == 0 ||  today == 6) {return "_mon";}
+else if (today == 3 ||  today == 2) {return "_wed";}
+else if (today == 5 ||  today == 4) {return "_fri";}
+ // else {return Math.floor((Math.random() * 40) + 2);}
+    }
+
+ //     if (today == 1 ||  today == 3 ||  today == 5) {return 1;}
+ 
+ // else {return Math.floor((Math.random() * 29) + 2);}
+ //    }
+
