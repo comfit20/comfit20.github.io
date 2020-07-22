@@ -189,7 +189,7 @@ function parseResults(data) {
 function startJqueryTimer(startTime) {
     if (startTime['elements'].length == 0) {
         $("#content").empty()
-        $("#content").html('<h1>!!! Workout over !!!!</h1>')
+        $("#content").html('<h1>Yoga class over</h1>')
         return
     }
 
