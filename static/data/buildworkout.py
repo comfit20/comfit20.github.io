@@ -7,9 +7,8 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Plank Dips', 'Side Lunges', 'Static Spiderman',  'High Knees', 'Flutter Kicks (Scissor)', 
-'Bear Crawl',  '10 Fast Feet & Push Up', 'Ice Skater', 'High Plank Shoulder Tap', '2 Squats, 2 Squat Jumps', 'Superman (alt: Pull Ups)', 
-'Jump & Squat Backwards']
+exercises = ['Plank', 'Hurdles', 'Leg Lift & Hold', 'Fast Front Kicks', 'Mountain Climber',  'Bicycle Crunches', 'Push Up', 
+'Frog Squats', '6 Fast Feet In & Out', 'Crunches', 'Squat Walk', 'Wall Sit (alt: Squat)']
 
 
 
@@ -25,8 +24,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_diff erenttimes 9 exercise 45 + 25 + 45 + 25 (1260);   no water break
   #'up_and_down'. 30 -60 - 30: 12 exercises
 
-workoutstyle = 'decrease' # change workout styles here
-print(workoutstyle)
+workoutstyle = 'regular' # change workout styles here
 
 duration_warmup = 25
 applaus = random.randint(1,2)
@@ -678,7 +676,7 @@ if workoutstyle == 'repeat_iso':
       },
       {
         "id": 1,
-        "heading": "Workout Timing:",
+        "heading": "Workout Timimg:",
         "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "No water break"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
@@ -868,7 +866,7 @@ if workoutstyle == 'repeat_diff':
       },
       {
         "id": 1,
-        "heading": "Workout Timing:",
+        "heading": "Workout Timimg:",
         "name": ["workout style: "+workoutstyle, str(len(exercises))+" exercises", str(duration_work)+ " sec work", str(duration_rest)+ " sec rest", str(rounds)+" rounds", "No water break"],
         # "heading": "Introduction to exercises: 40 work, 10 rest, 3 rounds",
         # "name": exercises,
@@ -1289,7 +1287,7 @@ workout = {'startTime': 'now', 'elements': arrayelements}
 
 #print(workout)
 
-with open('workout_new.json', 'w') as fp:
+with open('workout1.json', 'w') as fp:
     json.dump(workout, fp)
 
 
