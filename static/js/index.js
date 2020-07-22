@@ -48,11 +48,10 @@
 
        function createYogaTimeList() {
         var time_list = []
-        var time_1 = getNextWeekday(1).set('h',15).set('m',32).set('s',0).set('ms',0);
+        var time_1 = getNextWeekday(4).set('h',01).set('m',30).set('s',0).set('ms',0);
         time_list.push(time_1);
-        var time_2 = getNextWeekday(2).set('h',1).set('m',2).set('s',0).set('ms',0);
-        time_list.push(time_2);
-
+        // Add your yoga times here (the time is in UTC
+        // --> e.g. california wednesday 06:00pm is thursday 01:00 in utc)
 
         time_list.sort((a, b) => (a.isAfter(b) ? 1 : -1))
 
