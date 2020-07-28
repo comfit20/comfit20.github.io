@@ -132,7 +132,7 @@ function createCarousel(data, excercise_json) { // todo: better name for data e.
         } else {
             var webm_path = elem.gifpath.substr(0, elem.gifpath.lastIndexOf(".")) + ".webm";
             content = $('<div class="carousel-item"><h1 id="name-' + elem.id + '">' + elem.name + '</h1>' +
-                '<video id="vid-' + elem.id + '" class="main-video" preload="auto" autoplay playsinline loop muted>\n' +
+                '<video id="vid-' + elem.id + '" class="main-video" preload="none" autoplay playsinline loop muted>\n' +
                 '    <source src="' + elem.gifpath + '" type="video/mp4" />\n' +
                 '    <source src="' + webm_path + '" type="video/webm" />\n' +
                 '    Your browser does not support the video tag or the file format of this video.\n' +
