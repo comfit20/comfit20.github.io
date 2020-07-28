@@ -117,41 +117,22 @@ function createCarousel(data, excercise_json) { // todo: better name for data e.
             var wrapper = $('<div class="carousel-item"></div>');
             var header = $('<h1 id="name-' + elem.id + '">' + elem.name + '</h1>')
             wrapper.append(header)
-            var intro_names = data['elements'].filter(obj => {
-                return obj.heading === 'Introduction to exercises'
-            })
-            var name_list = []
-            $.each(intro_names, function (index, elem) {
-                name_list.push(elem.name);
-            });
-            // Transform id list to name list for url: TODO: switch url to only use ids (makes it shorter)
-            var exercise_id_list = []
-            name_list.forEach(function (item) {
-                var excercise_obj = excercise_json.exercises.filter(obj => {
-                    return 0 === obj.name.localeCompare(item)
-                })[0]
-                exercise_id_list.push(excercise_obj.id)
-            });
             var img = $('<img>',{id:'start_image',src:'./static/photo/beach_yoga_small.jpeg',class: 'main-video'})
             wrapper.append(img);
             wrapper.append('<div id=timer-' + elem.id + '></div>')
             content = wrapper;
-        } else if (elem.gifpath == "" && elem.id == 0) {
-            console.log('render overview',elem)
+        } else if (elem.gifpath == "") {
             var wrapper = $('<div class="carousel-item"></div>');
-            var ol = $("<ol class='list-group'></ol>")
-            var lst = elem.name;
-            $.each(lst, function (index, elem) {
-                ol.append("<li style='background-color: #555 ' class=\"list-group-item\"><b>" + elem + "</b></li>");
+            var div = $('<div>',{class: 'yoga-text-content h1'})
+            div.html(elem.name)
 
-            });
-            wrapper.append(ol)
+            wrapper.append(div)
             wrapper.append('<div id=timer-' + elem.id + '></div>')
             content = wrapper;
         } else {
             var webm_path = elem.gifpath.substr(0, elem.gifpath.lastIndexOf(".")) + ".webm";
             content = $('<div class="carousel-item"><h1 id="name-' + elem.id + '">' + elem.name + '</h1>' +
-                '<video id="vid-' + elem.id + '" class="main-video" preload="none" playsinline loop muted>\n' +
+                '<video id="vid-' + elem.id + '" class="main-video" preload="auto" autoplay playsinline loop muted>\n' +
                 '    <source src="' + elem.gifpath + '" type="video/mp4" />\n' +
                 '    <source src="' + webm_path + '" type="video/webm" />\n' +
                 '    Your browser does not support the video tag or the file format of this video.\n' +
@@ -217,7 +198,7 @@ function startJqueryTimer(startTime) {
     $('#heading').text(element.heading);
     var elemId = uniqId()
     var timer_gui = $("#timer-" + element.id).text("00:00").addClass('display-4'); //
-    if (element.gifpath != "" && element.id !== 0) { // todo: improve checking for overview
+    if (element.gifpath != "" && element.id!=0) { // todo: improve checking for overview
         var myPlayer = $("#vid-" + element.id)
         myPlayer.get(0).play()
     }
