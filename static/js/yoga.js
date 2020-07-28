@@ -134,13 +134,15 @@ function createCarousel(data, excercise_json) { // todo: better name for data e.
                 exercise_id_list.push(excercise_obj.id)
             });
             var overview = generateYogaOverview(data['elements']);
+            var img = $('<img>',{id:'start_image',src:'./static/photo/beach_yoga_small.jpeg',class: 'main-video'})
             overview.style.backgroundColor = "#555555"
-            wrapper.append(overview);
+            wrapper.append(img);
             wrapper.append('<div id=timer-' + elem.id + '></div>')
             content = wrapper;
 
             console.log(exercise_id_list)
-        } else if (elem.gifpath == "") {
+        } else if (elem.gifpath == "" && elem.id == 0) {
+            console.log('render overview',elem)
             var wrapper = $('<div class="carousel-item"></div>');
             var ol = $("<ol class='list-group'></ol>")
             var lst = elem.name;
