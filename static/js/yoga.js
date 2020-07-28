@@ -124,7 +124,6 @@ function createCarousel(data, excercise_json) { // todo: better name for data e.
             $.each(intro_names, function (index, elem) {
                 name_list.push(elem.name);
             });
-            console.log(name_list)
             // Transform id list to name list for url: TODO: switch url to only use ids (makes it shorter)
             var exercise_id_list = []
             name_list.forEach(function (item) {
@@ -133,14 +132,12 @@ function createCarousel(data, excercise_json) { // todo: better name for data e.
                 })[0]
                 exercise_id_list.push(excercise_obj.id)
             });
-            var overview = generateYogaOverview(data['elements']);
-            overview.style.backgroundColor = "#555555"
-            wrapper.append(overview);
+            var img = $('<img>',{id:'start_image',src:'./static/photo/beach_yoga_small.jpeg',class: 'main-video'})
+            wrapper.append(img);
             wrapper.append('<div id=timer-' + elem.id + '></div>')
             content = wrapper;
-
-            console.log(exercise_id_list)
-        } else if (elem.gifpath == "") {
+        } else if (elem.gifpath == "" && elem.id == 0) {
+            console.log('render overview',elem)
             var wrapper = $('<div class="carousel-item"></div>');
             var ol = $("<ol class='list-group'></ol>")
             var lst = elem.name;
