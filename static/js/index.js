@@ -2,7 +2,14 @@
     $(function(){
   var hash = window.location.hash;
   hash && $('a[href="'+hash+'"]').tab('show');
-
+  if(hash==='#yoga'){
+    $('html').addClass('bg-yoga')
+    $('body').addClass('bg-yoga')
+  }
+  if(hash==='#workout'){
+    $('html').addClass('bg-workout')
+    $('body').addClass('bg-yoga')
+  }
   $('.nav-tabs a').click(function (e) {
     $(this).tab('show');
     var scrollmem = $('body').scrollTop() || $('html').scrollTop();
@@ -13,6 +20,11 @@
 
     $(document).ready(function(){
         // Get current active workout from workout_active.json
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  var target = $(e.target).attr("href") // activated tab
+   $('body').toggleClass('bg-yoga','bg-workout')
+   $('html').toggleClass('bg-yoga','bg-workout')
+});
         renderWebsite()
     });
 
