@@ -13,13 +13,16 @@ var audio_mute = true;
 
 
 $(document).ready(function () {
+
+
+    calcOffset();
+});
+
+function startSiteBuilding() {
     //Get workoutfile from URL, if not there take workout1.json as default
     // If workoutfile is specified, load it from the file
     var workoutFile = "workout1.json";
     var searchParams = new URLSearchParams(window.location.search)
-
-    calcOffset()
-
     fetch('./static/data/ExerciseList.json')
         .then((response) => {
             return response.json();
@@ -50,7 +53,7 @@ $(document).ready(function () {
             }
 
         });
-});
+}
 
 
 function buildSiteFromWorkoutFile(workoutjson,excercise_json) {
@@ -68,6 +71,7 @@ function buildSiteFromWorkoutFile(workoutjson,excercise_json) {
 
     var startTime = null;
     if (workoutjson.startTime != "now") {
+    console.log('dfjsdlkf')
         workoutjson.startTime = dayjs(workoutjson.startTime)
     } else {
         workoutjson.startTime = dayjs(getServerTime())
@@ -100,6 +104,8 @@ function buildSiteFromWorkoutFile(workoutjson,excercise_json) {
 function createCarousel(data, excercise_json) { // todo: better name for data e.g. workout_json
     var expired_count = 0;
     $.each(data['elements'], function (index, elem) {
+        console.log('if',dayjs(elem.timeStamp))
+        console.log('is before',dayjs(getServerTime()),'then expired')
         if (dayjs(elem.timeStamp).isBefore(dayjs(getServerTime()))) {
             console.log("expired", elem.id)
             elem.expired = true;
@@ -286,6 +292,7 @@ function calcOffset(dateStr) {
             }
             console.log("Offset Server->local " + offset)
             console.log("Request duration: ", duration)
+            startSiteBuilding();
         });
 
 }
