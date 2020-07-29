@@ -41,12 +41,14 @@
         time_list.push(time_2);
         var time_3 = getNextWeekday(3).set('h',15).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_3);
-        var time_4 = getNextWeekday(4).set('h',1).set('m',2).set('s',0).set('ms',0);
-        time_list.push(time_4);
+        // var time_4 = getNextWeekday(4).set('h',1).set('m',2).set('s',0).set('ms',0);
+        // time_list.push(time_4);
         var time_5 = getNextWeekday(5).set('h',15).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_5);
-        var time_6 = getNextWeekday(5).set('h',18).set('m',32).set('s',0).set('ms',0);
-        time_list.push(time_6);
+        // var time_6 = getNextWeekday(5).set('h',18).set('m',32).set('s',0).set('ms',0);
+        // time_list.push(time_6);
+
+        console.log(time_list)
 
         time_list.sort((a, b) => (a.isAfter(b) ? 1 : -1))
 
