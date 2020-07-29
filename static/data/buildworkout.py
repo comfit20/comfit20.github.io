@@ -7,9 +7,8 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Plank', 'Hurdles', 'Leg Lift & Hold', 'Fast Front Kicks', 'Mountain Climber',  'Bicycle Crunches', 'Push Up', 
-'Frog Squats', '6 Fast Feet In & Out', 'Crunches', 'Squat Walk', 'Wall Sit (alt: Squat)']
-
+exercises = ['6 Fast Feet In & Out', 'Mountain Climber',  'Calf Rises',  'V Crunch & Clap Under Leg', 'Burpees', 
+'Single-Leg Glute Bridge','Squat Walk', 'Push Up', 'Sit Up',  'Jump Squat (+ Touch)', 'Side Plank Crunches', '2 Jumping Jack & 1 Tuck Jump'] 
 
 
 warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']#'Glute bridge','Single Leg Hip Circles', '5 shoulder circles + 2 wind mills',
@@ -1287,7 +1286,7 @@ workout = {'startTime': 'now', 'elements': arrayelements}
 
 #print(workout)
 
-with open('workout1.json', 'w') as fp:
+with open('workout_new.json', 'w') as fp:
     json.dump(workout, fp)
 
 
