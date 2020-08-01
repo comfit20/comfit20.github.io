@@ -90,14 +90,21 @@ function parseExercisesToForm(data) {
             else if (elem.level == 'easy') {
                 difficulty_icon = 'circle" style="color:green'
             }
-            $('<div class="col-md-4 mb-3 input-check-exercise"' +
-                '>' +
-                '<div class="form-check">' +
-                ' <input type="checkbox" class="form-check-input" name="' + elem.id + '" id="exercise-' + elem.id + '">' +
-                '   <label class="form-check-label" for=excercise-' + elem.id + '> ' + elem.name + ' </br></label>' +
-                '<span class="badge badge-secondary"> <i class="fa fa-' + difficulty_icon + ';"></i></span> </div></div>').appendTo(wrapper);
+            $('<div class="col-md-4 mb-3 input-check-exercise">' +
+              '   <div class="d-flex justify-content-between align-items-center">' +
+              '     <div class="form-check">' +
+              '       <input type="checkbox" class="form-check-input" name="' + elem.id + '" id="exercise-' + elem.id + '">' +
+              '       <label class="form-check-label" for=excercise-' + elem.id + '>' + elem.name + '</label>' +
+              '     </div>' +
+              '     <div><i class="fa fa-fw fa-' + difficulty_icon + ';"></i></div>' +
+              '  </div>' +
+              '</div>').appendTo(wrapper);
+          //   var test = document.getElementById("exercise-" + elem.id);
+          //
+          //   test.addEventListener("mouseover", function( event ) {
+          //   event.target.style.color = "purple";
+          // }, false)
         });
-        // <span class="badge badge-secondary">New</span></h1>
         wrapper.appendTo("#excercises-boxes");
     });
 }
