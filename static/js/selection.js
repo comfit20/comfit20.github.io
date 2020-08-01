@@ -94,9 +94,10 @@ function parseExercisesToForm(data) {
                 '>' +
                 '<div class="form-check">' +
                 ' <input type="checkbox" class="form-check-input" name="' + elem.id + '" id="exercise-' + elem.id + '">' +
-                '   <label class="form-check-label" for=excercise-' + elem.id + '>' + elem.name + '</br></label>' +
-                '<i class="fa fa-' + difficulty_icon + ';"></i> </div></div>').appendTo(wrapper);
+                '   <label class="form-check-label" for=excercise-' + elem.id + '> ' + elem.name + ' </br></label>' +
+                '<span class="badge badge-secondary"> <i class="fa fa-' + difficulty_icon + ';"></i></span> </div></div>').appendTo(wrapper);
         });
+        // <span class="badge badge-secondary">New</span></h1>
         wrapper.appendTo("#excercises-boxes");
     });
 }
