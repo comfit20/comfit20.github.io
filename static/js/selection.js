@@ -81,12 +81,21 @@ function parseExercisesToForm(data) {
         var wrapper = $("<div class='form-row'></div>")
         $('<h2 class="col-sm-12">'+category[0].category[0]+'</h2>').appendTo(wrapper);
         $.each(category, function (index, elem) {
+            difficulty_icon= 'question'
+            if (elem.level == 'hard') {
+                difficulty_icon = 'square" data-fa-transform="rotate-45" style="color:black '
+            } else if (elem.level == 'middle') {
+                difficulty_icon = 'square" style="color:blue'
+            }
+            else if (elem.level == 'easy') {
+                difficulty_icon = 'circle" style="color:green'
+            }
             $('<div class="col-md-4 mb-3 input-check-exercise"' +
                 '>' +
                 '<div class="form-check">' +
                 ' <input type="checkbox" class="form-check-input" name="' + elem.id + '" id="exercise-' + elem.id + '">' +
                 '   <label class="form-check-label" for=excercise-' + elem.id + '>' + elem.name + '</br></label>' +
-                '</div></div>').appendTo(wrapper);
+                '<i class="fa fa-' + difficulty_icon + ';"></i> </div></div>').appendTo(wrapper);
         });
         wrapper.appendTo("#excercises-boxes");
     });
@@ -188,4 +197,3 @@ function uncheckForCancel(){
         $("#exercise-" + i).attr("checked", false);
     }
 }
-
