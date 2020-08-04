@@ -7,6 +7,8 @@ var audiorest = new Audio('./static/sounds/BikeHorn-SoundBible.com-602544869.wav
 audiorest.muted = true
 var audiofinish = new Audio('./static/sounds/finish.wav');
 audiofinish.muted = true
+var audioyoga = new Audio('./static/sounds/Zymbel_18sec-1113884951.wav');
+audiofinish.muted = true
 
 // Variable to store current state of audio: mute or unmute? By default everything muted = true
 var audio_mute = true;
