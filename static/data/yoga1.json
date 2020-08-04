@@ -34,7 +34,7 @@
       "name": "Thread the needle right",
       "duration": 198,
       "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -43,7 +43,7 @@
       "name": "Thread the needle left",
       "duration": 198,
       "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -52,7 +52,7 @@
       "name": "Sphinx pose",
       "duration": 76,
       "gifpath": "static/movie/yoga/YogaSphinxNeckRoll.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Open shoulders right",
       "duration": 98,
       "gifpath": "static/movie/yoga/YogaOpenShoulders.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -70,7 +70,7 @@
       "name": "Open shoulders left",
       "duration": 98,
       "gifpath": "static/movie/yoga/YogaOpenShoulders.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -79,7 +79,7 @@
       "name": "Half bow or quad stretch right",
       "duration": 62,
       "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -88,7 +88,7 @@
       "name": "Half bow or quad stretch left",
       "duration": 62,
       "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -97,7 +97,7 @@
       "name": "Supported bridge",
       "duration": 224,
       "gifpath": "static/movie/yoga/YogaSupportedBridge.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -106,7 +106,7 @@
       "name": "Reclining Bound Angle Pose",
       "duration": 216,
       "gifpath": "static/movie/yoga/YogaSuptaBaddhaKonasana.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -115,7 +115,7 @@
       "name": "Staff pose",
       "duration": 136,
       "gifpath": "static/movie/yoga/YogaDandasana.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -124,7 +124,7 @@
       "name": "Wide-angle seated forward bend",
       "duration": 228,
       "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -133,7 +133,7 @@
       "name": "Frog pose",
       "duration": 198,
       "gifpath": "static/movie/yoga/YogaFrog.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -142,7 +142,7 @@
       "name": "Figure four left",
       "duration": 144,
       "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -151,7 +151,7 @@
       "name": "Gentle twist left",
       "duration": 95,
       "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -160,7 +160,7 @@
       "name": "Figure four right",
       "duration": 144,
       "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -169,7 +169,7 @@
       "name": "Gentle twist right",
       "duration": 95,
       "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -178,7 +178,7 @@
       "name": "Supported Savasana",
       "duration": 360,
       "gifpath": "static/movie/yoga/YogaSupportedSavasana.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -196,7 +196,7 @@
       "name": "Namaste",
       "duration": 61,
       "gifpath": "static/movie/yoga/YogaNamaste.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
