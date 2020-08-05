@@ -7,8 +7,8 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Crunches', 'Swimmer', 'Leg Lift & Hold', 'Push Up & Side Turn', 'Bird Dog', '3 Fast Knee Rise', 
-'Jump & Squat Backwards','Low & High Plank Switch', 'Jumping Lunges', 'Sumo Squat', 'Butt Kicker', 'Plank']
+exercises = ['High Knees', '3 Frog Squats & 6 Plank Jumps', 'Ice Skater', 'Jump Squat (+ Touch)','Russian Twist',  'Inch Worm',  
+'Side Hops','Flutter Kicks (Scissor)','Glute Bridge', 'Static Spiderman' ]
 
 
 warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']#'Glute bridge','Single Leg Hip Circles', '5 shoulder circles + 2 wind mills',
@@ -23,7 +23,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_diff erenttimes 9 exercise 45 + 25 + 45 + 25 (1260);   no water break
   #'up_and_down'. 30 -60 - 30: 12 exercises
 
-workoutstyle = 'regular' # change workout styles here
+workoutstyle = 'repeat_diff' # change workout styles here
 
 duration_warmup = 25
 applaus = random.randint(1,2)

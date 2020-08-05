@@ -124,7 +124,7 @@
     function get_workoutNo() {
         var today = dayjs().day()
         //console.log("workout No", Math.floor((Math.random() * 18) + 2))
- return Math.floor((Math.random() * 40) + 2);
+ return Math.floor((Math.random() * 46) + 2);
     }
 
     function get_workoutday() {
