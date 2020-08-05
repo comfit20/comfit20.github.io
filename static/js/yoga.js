@@ -8,7 +8,7 @@ audiorest.muted = true
 var audiofinish = new Audio('./static/sounds/finish.wav');
 audiofinish.muted = true
 var audioyoga = new Audio('./static/sounds/Zymbel_18sec-1113884951.wav');
-audiofinish.muted = true
+audioyoga.muted = true
 
 // Variable to store current state of audio: mute or unmute? By default everything muted = true
 var audio_mute = true;
@@ -194,6 +194,11 @@ function startJqueryTimer(startTime) {
 
     }
 
+        if (element['sound'] == "audioyoga") {
+        audioyoga.play();
+
+    }
+
     if (element['sound'] == "audiofinish") {
         audiofinish.play();
     }
@@ -242,6 +247,7 @@ function toggleSound() {
         audiowork.muted = false
         audiorest.muted = false
         audiofinish.muted = false
+        audioyoga.muted = false
         audio_mute = false
         // Change text of tooltip -> This is shown if you hover over the button
         button.attr('title', 'Sound is on')
@@ -251,6 +257,7 @@ function toggleSound() {
         audiorest.muted = true
         audiofinish.muted = true
         audio_mute = true
+        audioyoga.muted = true
         // Change text of tooltip -> This is shown if you hover over the button
         button.attr('title', 'Sound is off')
     }
