@@ -90,20 +90,28 @@ function parseExercisesToForm(data) {
             else if (elem.level == 'easy') {
                 difficulty_icon = 'circle" style="color:green'
             }
+            var webm_path = elem.gifpath.substr(0, elem.gifpath.lastIndexOf(".")) + ".webm";
             $('<div class="col-md-4 mb-3 input-check-exercise">' +
-              '   <div class="d-flex justify-content-between align-items-center">' +
-              '     <div class="form-check">' +
-              '       <input type="checkbox" class="form-check-input" name="' + elem.id + '" id="exercise-' + elem.id + '">' +
-              '       <label class="form-check-label" for=excercise-' + elem.id + '>' + elem.name + '</label>' +
-              '     </div>' +
+              '   <div class="d-flex rounded border justify-content-between align-items-center">' +
+              '       <div class="form-check ml-1">' +
+              '         <div class="hover-div">' +
+              '           <input type="checkbox" class="form-check-input" name="' + elem.id + '" id="exercise-' + elem.id + '">' +
+              '           <label class="form-check-label" for=excercise-' + elem.id + '>' + elem.name + '</label>' +
+              '         </div>' +
+              '         <div class="hide">' +
+              '           <video id="vid-' + elem.id + '" playsinline autoplay loop muted>\n' +
+              '             <source src="' + elem.gifpath + '" type="video/mp4" />\n' +
+              '             <source src="' + webm_path + '" type="video/webm" />\n' +
+              '         </div>' +
+              '       </div>' +
               '     <div><i class="fa fa-fw fa-' + difficulty_icon + ';"></i></div>' +
               '  </div>' +
               '</div>').appendTo(wrapper);
-          //   var test = document.getElementById("exercise-" + elem.id);
-          //
-          //   test.addEventListener("mouseover", function( event ) {
-          //   event.target.style.color = "purple";
-          // }, false)
+              //   var test = document.getElementById("exercise-" + elem.id);
+              //
+              //   test.addEventListener("mouseover", function( event ) {
+              //   event.target.style.color = "purple";
+              // }, false)
         });
         wrapper.appendTo("#excercises-boxes");
     });
