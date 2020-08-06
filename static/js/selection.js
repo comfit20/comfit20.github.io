@@ -95,8 +95,11 @@ function parseExercisesToForm(data) {
               '   <div class="d-flex rounded border justify-content-between align-items-center">' +
               '       <div class="form-check ml-1">' +
               '         <div class="hover-div">' +
-              '           <input type="checkbox" class="form-check-input" name="' + elem.id + '" id="exercise-' + elem.id + '">' +
-              '           <label class="form-check-label" for=excercise-' + elem.id + '>' + elem.name + '</label>' +
+              '           <label class="form-check-label">' +
+              '              <input type="checkbox" class="form-check-input" name="' + elem.id +
+                                                                  '" id="exercise-' + elem.id + '">'
+                                                                   + elem.name +
+                          '</label>' +
               '         </div>' +
               '         <div class="hide">' +
               '           <video id="vid-' + elem.id + '" playsinline autoplay loop muted>\n' +
