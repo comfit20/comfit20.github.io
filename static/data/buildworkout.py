@@ -7,10 +7,11 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Ladder (alt: Fast Feet)', 'Push Up & Side Turn', 'Plank Dips','Frog Squats', 'V Crunch & Clap Under Leg','Glute Bridge',
-'Single Leg Donkey Kick',  'Diamond Push Up', '10 Fast Feet & Jump', 'Plank', 'Mountain Climber',  'Pistol Squat' ]
+exercises = ['2 Jumping Jack & 1 Tuck Jump', 'Bear Crawl', 'Rope Jump','Sumo Squat', 'Static Spiderman','Heel Touch Crunches','Jumping Lunges', 
+'Bird Dog', '4 Sprawl & 2 Push Up', 'Sit Up',  'Swimmer', '2 Squats, 2 Squat Jumps'] 
 
-
+'Russian Twist', 
+  
 
 
 warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']#'Glute bridge','Single Leg Hip Circles', '5 shoulder circles + 2 wind mills',
@@ -25,8 +26,9 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_diff erenttimes 9 exercise 45 + 25 + 45 + 25 (1260);   no water break
   #'up_and_down'. 30 -60 - 30: 12 exercises
 
-workoutstyle = 'up_and_down' # change workout styles here
+workoutstyle = 'regular' # change workout styles here
 
+print('Todays workout style is: '+workoutstyle)
 duration_warmup = 25
 applaus = random.randint(1,2)
 #print(applaus)
@@ -77,7 +79,7 @@ if workoutstyle == 'regular':
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
 
-      print(exer_elem)
+      #print(exer_elem)
 
       wo1 =     {
           "id": n,
@@ -481,7 +483,7 @@ if workoutstyle == 'decrease':
 
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
-      print(exer_elem)
+      #print(exer_elem)
 
       wo1 =     {
           "id": n,
