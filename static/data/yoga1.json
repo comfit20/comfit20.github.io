@@ -12,7 +12,7 @@
     },
     {
       "id": 1,
-      "heading": "Welcome to Restorative Yoga",
+      "heading": "Welcome to Yoga!",
       "name": "Find a comfortable seated position",
       "duration": 68,
       "gifpath": "static/movie/yoga/YogaSeat.mp4",
@@ -22,122 +22,149 @@
     {
       "id": 2,
       "heading": "",
-      "name": "Let's start in child's pose.",
-      "duration": 396,
-      "gifpath": "static/movie/yoga/YogaChildsPose1X.mp4",
+      "name": "Take five deep breaths. Then begin constricting your breath on the exhale (as though you are fogging a mirror) for ujjayi breathing.",
+      "duration": 83,
+      "gifpath": "static/movie/yoga/YogaBreath.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 3,
-      "heading": "",
-      "name": "Thread the needle right",
-      "duration": 198,
-      "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
-      "sound": "audioyoga",
+      "heading": "Keep breathing!",
+      "name": "Try to maintain this breath throughout the practice.",
+      "duration": 10,
+      "gifpath": "",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 4,
       "heading": "",
-      "name": "Thread the needle left",
-      "duration": 198,
-      "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
-      "sound": "audioyoga",
+      "name": "Let's warm up our shoulders",
+      "duration": 69,
+      "gifpath": "static/movie/yoga/YogaShoulderStretch.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 5,
       "heading": "",
-      "name": "Sphinx pose",
-      "duration": 76,
-      "gifpath": "static/movie/yoga/YogaSphinxNeckRoll.mp4",
-      "sound": "audioyoga",
+      "name": "Come to all fours with shoulders over wrists and hips over knees. Inhale cow, exhale cat",
+      "duration": 63,
+      "gifpath": "static/movie/yoga/YogaCatCow.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 6,
       "heading": "",
-      "name": "Open shoulders right",
-      "duration": 98,
-      "gifpath": "static/movie/yoga/YogaOpenShoulders.mp4",
+      "name": "Thread the needle right",
+      "duration": 99,
+      "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 7,
       "heading": "",
-      "name": "Open shoulders left",
-      "duration": 98,
-      "gifpath": "static/movie/yoga/YogaOpenShoulders.mp4",
+      "name": "Thread the needle left",
+      "duration": 99,
+      "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 8,
       "heading": "",
-      "name": "Half bow or quad stretch right",
-      "duration": 62,
-      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
-      "sound": "audioyoga",
+      "name": "Feel free to return to child's pose at any point during this class",
+      "duration": 99,
+      "gifpath": "static/movie/yoga/YogaChildsPose.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 9,
       "heading": "",
-      "name": "Half bow or quad stretch left",
-      "duration": 62,
-      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
-      "sound": "audioyoga",
+      "name": "Downward facing dog",
+      "duration": 79,
+      "gifpath": "static/movie/yoga/YogaDownDog.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 10,
       "heading": "",
-      "name": "Supported bridge",
-      "duration": 224,
-      "gifpath": "static/movie/yoga/YogaSupportedBridge.mp4",
-      "sound": "audioyoga",
+      "name": "Classical sun salutation with low lunge",
+      "duration": 139,
+      "gifpath": "static/movie/yoga/YogaClassical2X.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 11,
       "heading": "",
-      "name": "Reclining Bound Angle Pose",
-      "duration": 216,
-      "gifpath": "static/movie/yoga/YogaSuptaBaddhaKonasana.mp4",
-      "sound": "audioyoga",
+      "name": "Classical sun salutation with crescent",
+      "duration": 68,
+      "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 12,
       "heading": "",
-      "name": "Staff pose",
-      "duration": 136,
-      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
-      "sound": "audioyoga",
+      "name": "Tree pose",
+      "duration": 74,
+      "gifpath": "static/movie/yoga/YogaTree.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 13,
       "heading": "",
-      "name": "Wide-angle seated forward bend",
-      "duration": 228,
-      "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
-      "sound": "audioyoga",
+      "name": "Warrior II pose, extended side angle pose",
+      "duration": 95,
+      "gifpath": "static/movie/yoga/YogaWarriorIIExtSideAngle.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 14,
       "heading": "",
-      "name": "Frog pose",
-      "duration": 198,
-      "gifpath": "static/movie/yoga/YogaFrog.mp4",
-      "sound": "audioyoga",
+      "name": "Classical sun salutation with crescent. Add on your favorite poses!",
+      "duration": 272,
+      "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 15,
+      "heading": "",
+      "name": "Are you still breathing?",
+      "duration": 10,
+      "gifpath": "",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 16,
+      "heading": "",
+      "name": "Locust pose",
+      "duration": 49,
+      "gifpath": "static/movie/yoga/YogaSalabhasanaA.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 17,
+      "heading": "",
+      "name": "Bridge",
+      "duration": 153,
+      "gifpath": "static/movie/yoga/YogaBridge.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 18,
       "heading": "",
       "name": "Figure four left",
       "duration": 144,
@@ -146,7 +173,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 16,
+      "id": 19,
       "heading": "",
       "name": "Gentle twist left",
       "duration": 95,
@@ -155,7 +182,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 17,
+      "id": 20,
       "heading": "",
       "name": "Figure four right",
       "duration": 144,
@@ -164,7 +191,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 18,
+      "id": 21,
       "heading": "",
       "name": "Gentle twist right",
       "duration": 95,
@@ -173,16 +200,43 @@
       "indicator": "hidden"
     },
     {
-      "id": 19,
+      "id": 22,
       "heading": "",
-      "name": "Supported Savasana",
+      "name": "Staff pose",
+      "duration": 136,
+      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 23,
+      "heading": "",
+      "name": "Wide-angle seated forward bend",
+      "duration": 228,
+      "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 24,
+      "heading": "",
+      "name": "Knees to chest, squeeze!",
+      "duration": 18,
+      "gifpath": "static/movie/yoga/YogaSavasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 25,
+      "heading": "",
+      "name": "Relax into savasana",
       "duration": 360,
-      "gifpath": "static/movie/yoga/YogaSupportedSavasana.mp4",
+      "gifpath": "static/movie/yoga/YogaSavasana.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
-      "id": 20,
+      "id": 26,
       "heading": "",
       "name": "You're welcome to stay here as long as you like.",
       "duration": 42,
@@ -191,7 +245,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 21,
+      "id": 27,
       "heading": "Thank you for practicing with me today!",
       "name": "Namaste",
       "duration": 61,
@@ -200,9 +254,9 @@
       "indicator": "hidden"
     },
     {
-      "id": 22,
+      "id": 28,
       "heading": "",
-      "name": "Enjoy the day",
+      "name": "Keep breathing and have a great day",
       "duration": 300,
       "gifpath": "",
       "sound": null,
