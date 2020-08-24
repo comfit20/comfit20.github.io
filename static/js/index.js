@@ -42,7 +42,7 @@ type="text/javascript">
             console.log(time.local().format())
             $("#next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
             var share_link = window.location.hostname+'/workout.html?workout=workout1.json'+'&timestamp='+time.toISOString();
-            $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout1.json");
+            $("#next-"+idx).attr('href','workout_group.html?timestamp='+time.toISOString()+"&workout=workout1.json");
             $('#next-'+idx+'-link').attr('value',share_link);
         });
 
