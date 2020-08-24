@@ -7,16 +7,8 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['2 Squats, 2 Squat Jumps','Ladder (alt: Fast Feet)', 'Bicycle Crunches', 'Ice Skater', 
-'Push Up', '3 Frog Squats & 6 Plank Jumps','Side Lunges', 'Squat Walk', 'Windshield Wiper', 'Burpees',  '6 Fast Feet In & Out','Calf Rises' ]
-
-
-['Wall Sit (alt: Squat)', 'Inch Worm', 'Hurdles', 'Crunches', 
- 'Superman (alt: Pull Ups)', 'Backward Lunge & 3 Pulses', 'Fast Squats', 'Russian Twist', 'High Plank Shoulder Tap']
-
-'Russian Twist', 
-  
-
+exercises = ['Leg Lift & Hold',  'Jumping Lunges', 'Mountain Climber Side Step','Bird Dog', 'Side Hops',  'Push Up & Squat & Turn', 
+'Pistol Squat', 'Superman (alt: Pull Ups)', 'Heel Touch Crunches' ]
 
 warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']#'Glute bridge','Single Leg Hip Circles', '5 shoulder circles + 2 wind mills',
 
@@ -30,7 +22,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_diff erenttimes 9 exercise 45 + 25 + 45 + 25 (1260);   no water break
   #'up_and_down'. 30 -60 - 30: 12 exercises
 
-workoutstyle = 'up_and_down' # change workout styles here
+workoutstyle = 'repeat_diff' # change workout styles here
 
 print('Todays workout style is: '+workoutstyle)
 duration_warmup = 25
@@ -700,7 +692,7 @@ if workoutstyle == 'repeat_iso':
 
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
-      print(exer_elem)
+      #print(exer_elem)
 
       wo1 =     {
           "id": n,
@@ -890,7 +882,7 @@ if workoutstyle == 'repeat_diff':
 
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
-      print(exer_elem)
+      #print(exer_elem)
 
       wo1 =     {
           "id": n,
