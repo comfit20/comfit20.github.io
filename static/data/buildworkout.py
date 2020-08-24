@@ -7,8 +7,8 @@ with open('ExerciseList.json') as f:
 exerlist = exerlist['exercises']
 
 
-exercises = ['Rope Jump', 'Static Spiderman', '10 Fast Feet & Jump', 'Bicycle Crunches', 'Wall Sit (alt: Squat)', 'Glute Bridge',
- 'Single Leg Donkey Kick', 'Flutter Kicks (Scissor)', 'Burpees', 'Swimmer']
+exercises = ['Leg Lift & Hold',  'Jumping Lunges', 'Mountain Climber Side Step','Bird Dog', 'Side Hops',  'Push Up & Squat & Turn', 
+'Pistol Squat', 'Superman (alt: Pull Ups)', 'Heel Touch Crunches' ]
 
 warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']#'Glute bridge','Single Leg Hip Circles', '5 shoulder circles + 2 wind mills',
 
@@ -24,6 +24,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
 
 workoutstyle = 'repeat_diff' # change workout styles here
 
+print('Todays workout style is: '+workoutstyle)
 duration_warmup = 25
 applaus = random.randint(1,2)
 #print(applaus)
@@ -74,7 +75,7 @@ if workoutstyle == 'regular':
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
 
-      print(exer_elem)
+      #print(exer_elem)
 
       wo1 =     {
           "id": n,
@@ -478,7 +479,7 @@ if workoutstyle == 'decrease':
 
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
-      print(exer_elem)
+      #print(exer_elem)
 
       wo1 =     {
           "id": n,
@@ -691,7 +692,7 @@ if workoutstyle == 'repeat_iso':
 
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
-      print(exer_elem)
+      #print(exer_elem)
 
       wo1 =     {
           "id": n,
@@ -881,7 +882,7 @@ if workoutstyle == 'repeat_diff':
 
       exer_index = next((index for (index, d) in enumerate(exerlist) if d["name"] == exercises[i]), None)
       exer_elem = exerlist[exer_index]
-      print(exer_elem)
+      #print(exer_elem)
 
       wo1 =     {
           "id": n,
@@ -1285,7 +1286,7 @@ workout = {'startTime': 'now', 'elements': arrayelements}
 
 #print(workout)
 
-with open('workout1.json', 'w') as fp:
+with open('workout_new.json', 'w') as fp:
     json.dump(workout, fp)
 
 

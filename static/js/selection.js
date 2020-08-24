@@ -81,12 +81,40 @@ function parseExercisesToForm(data) {
         var wrapper = $("<div class='form-row'></div>")
         $('<h2 class="col-sm-12">'+category[0].category[0]+'</h2>').appendTo(wrapper);
         $.each(category, function (index, elem) {
-            $('<div class="col-md-4 mb-3 input-check-exercise"' +
-                '>' +
-                '<div class="form-check">' +
-                ' <input type="checkbox" class="form-check-input" name="' + elem.id + '" id="exercise-' + elem.id + '">' +
-                '   <label class="form-check-label" for=excercise-' + elem.id + '>' + elem.name + '</br></label>' +
-                '</div></div>').appendTo(wrapper);
+            difficulty_icon= 'question'
+            if (elem.level == 'hard') {
+                difficulty_icon = 'square" data-fa-transform="rotate-45" style="color:black '
+            } else if (elem.level == 'middle') {
+                difficulty_icon = 'square" style="color:blue'
+            }
+            else if (elem.level == 'easy') {
+                difficulty_icon = 'circle" style="color:green'
+            }
+            var webm_path = elem.gifpath.substr(0, elem.gifpath.lastIndexOf(".")) + ".webm";
+            $('<div class="col-md-4 mb-3 input-check-exercise">' +
+              '   <div class="d-flex rounded border justify-content-between align-items-center">' +
+              '       <div class="form-check ml-1">' +
+              '         <div class="hover-div">' +
+              '           <label class="form-check-label">' +
+              '              <input type="checkbox" class="form-check-input" name="' + elem.id +
+                                                                  '" id="exercise-' + elem.id + '">'
+                                                                   + elem.name +
+                          '</label>' +
+              '         </div>' +
+              '         <div class="hide">' +
+              '           <video id="vid-' + elem.id + '" playsinline autoplay loop muted>\n' +
+              '             <source src="' + elem.gifpath + '" type="video/mp4" />\n' +
+              '             <source src="' + webm_path + '" type="video/webm" />\n' +
+              '         </div>' +
+              '       </div>' +
+              '     <div><i class="fa fa-fw fa-' + difficulty_icon + ';"></i></div>' +
+              '  </div>' +
+              '</div>').appendTo(wrapper);
+              //   var test = document.getElementById("exercise-" + elem.id);
+              //
+              //   test.addEventListener("mouseover", function( event ) {
+              //   event.target.style.color = "purple";
+              // }, false)
         });
         wrapper.appendTo("#excercises-boxes");
     });
@@ -104,7 +132,7 @@ function submitcheck(element) {
     var selected_date = element[3].value;
     console.log(selected_date)
     var selected_elements = $(element).serializeArray();
-
+    shuffle(selected_elements)
     // the name property of the selected elements includes the ids of the selected elements, not the acutal name
     exercise_id_list = [];
     $.each(selected_elements, function (index, element) {
@@ -130,7 +158,6 @@ function submitcheck(element) {
         exercise_name_list.push(excercise_obj.name)});
 
     // Generate HTML List from exercise list for summary
-    shuffle(exercise_id_list)
     console.log(window.data.excercises,exercise_id_list);
     var overview = generateWorkoutOverview(window.data,exercise_id_list);
 
@@ -189,4 +216,3 @@ function uncheckForCancel(){
         $("#exercise-" + i).attr("checked", false);
     }
 }
-
