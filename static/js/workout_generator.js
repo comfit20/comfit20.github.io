@@ -39,7 +39,7 @@ rounds = parseInt(rounds)
                 "id": 1,
                 "heading": "Workout Timing:",
                 "name": ["workout style: regular",exercises.length+" exercises", duration_work+ " sec work", duration_rest+ " sec rest", rounds+" rounds" ],
-                // str(duration_rest)+ " sec rest", str(rounds)+" rounds"]
+                // str(duration_rest)+ " sec arms", str(rounds)+" rounds"]
                 "duration": 10,
                 "gifpath": "",
                 "sound": null,
