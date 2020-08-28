@@ -13,6 +13,7 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-167369005-1');
+
     </script>
 
 
@@ -81,136 +82,160 @@
                 </div>
                 <div class="card-group">
                     <div class="card">
+                        <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist" style="background-color: #555">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="custom-tab" data-toggle="tab" href="#custom" role="tab"
+                                   aria-controls="profile" aria-selected="false">Custom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="preset-tab" data-toggle="tab" href="#preset" role="tab"
+                                   aria-controls="home" aria-selected="true">Preset</a>
+                            </li>
+                        </ul>
 
-                        <div class="card-body">
-
-                            <form id="main-form" class="needs-validation" novalidate
-                                  onSubmit="return submitcheck(this);">
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Rounds of Excercises</label>
-                                    <select class="selection-input form-control custom-select mb-3"
-                                            id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option selected>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <h4>Duration</h4>
-                                <div class="row">
-                                    <div class="form-group col-sm-6">
-                                        <label for="time_excercise" class="col-form-label col-sm-6">Exercise</label>
-                                        <input type="text" id="time_excercise" class="selection-input form-control"
-                                               placeholder="40" value="40">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            </div>
+                            <div id="custom" class="tab-pane show active card-body" role="tabpanel"
+                                 style="background-color: #555;">
+                                <form id="main-form" class="needs-validation" novalidate
+                                      onSubmit="return submitcheck(this);">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Rounds of Excercises</label>
+                                        <select class="selection-input form-control custom-select mb-3"
+                                                id="exampleFormControlSelect1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option selected>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
                                     </div>
-                                    <div class="form-group col-sm-6">
-                                        <label for="time_rest" class="col-form-label col-sm-6">Rest</label>
-                                        <input type="text" id="time_rest" class="selection-input form-control"
-                                               placeholder="10" value="10">
-                                    </div>
-                                </div>
-                                <label for="datetimepicker1" class="col-form-label h4">Date and time</label>
-                                <div class="form-group">
-                                    <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                                        <input class="form-control datetimepicker-input selection-input"
-                                               data-target="#datetimepicker1"/>
-                                        <div class="input-group-append" data-target="#datetimepicker1"
-                                             data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    <h4>Duration</h4>
+                                    <div class="row">
+                                        <div class="form-group col-sm-6">
+                                            <label for="time_excercise" class="col-form-label col-sm-6">Exercise</label>
+                                            <input type="text" id="time_excercise" class="selection-input form-control"
+                                                   placeholder="40" value="40">
+                                        </div>
+                                        <div class="form-group col-sm-6">
+                                            <label for="time_rest" class="col-form-label col-sm-6">Rest</label>
+                                            <input type="text" id="time_rest" class="selection-input form-control"
+                                                   placeholder="10" value="10">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row justify-content-center m-3">
-                                    <h3 class="">Excercises</h3>
-                                    <div class="dropdown">
-                                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button"
-                                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false">
-                                            Random
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                            <button class="btn-sm dropdown-item" type="button"
-                                                    onclick="generateRandomWorkout(3)">3 Excercises
-                                            </button>
-                                            <button class="btn-sm dropdown-item" type="button"
-                                                    onclick="generateRandomWorkout(6)">6 Excercises
-                                            </button>
-                                            <button class="btn-sm dropdown-item" type="button"
-                                                    onclick="generateRandomWorkout(9)">9 Excercises
-                                            </button>
-                                            <button class="btn-sm dropdown-item" type="button"
-                                                    onclick="generateRandomWorkout(10)">10 Excercises
-                                            </button>
-                                            <button class="btn-sm dropdown-item" type="button"
-                                                    onclick="generateRandomWorkout(12) ">12 Excercises
-                                            </button>
+                                    <label for="datetimepicker1" class="col-form-label h4">Date and time</label>
+                                    <div class="form-group">
+                                        <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                            <input class="form-control datetimepicker-input selection-input"
+                                                   data-target="#datetimepicker1"/>
+                                            <div class="input-group-append" data-target="#datetimepicker1"
+                                                 data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="row justify-content-center m-3">
+                                        <h3 class="">Excercises</h3>
+                                        <div class="dropdown">
+                                            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button"
+                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                Random
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <button class="btn-sm dropdown-item" type="button"
+                                                        onclick="generateRandomWorkout(3)">3 Excercises
+                                                </button>
+                                                <button class="btn-sm dropdown-item" type="button"
+                                                        onclick="generateRandomWorkout(6)">6 Excercises
+                                                </button>
+                                                <button class="btn-sm dropdown-item" type="button"
+                                                        onclick="generateRandomWorkout(9)">9 Excercises
+                                                </button>
+                                                <button class="btn-sm dropdown-item" type="button"
+                                                        onclick="generateRandomWorkout(10)">10 Excercises
+                                                </button>
+                                                <button class="btn-sm dropdown-item" type="button"
+                                                        onclick="generateRandomWorkout(12) ">12 Excercises
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                <div class="row">
-                                  <div class="col-sm">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                      easy <i class="fa fa-fw fa-circle" style="color:green;"></i>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="d-flex justify-content-around align-items-center">
+                                                easy <i class="fa fa-fw fa-circle" style="color:green;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div class="d-flex justify-content-around align-items-center">
+                                                medium <i class="fa fa-fw fa-square" style="color:blue;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div class="d-flex justify-content-around align-items-center">
+                                                hard <i class="fa fa-fw fa-square" data-fa-transform="rotate-45"
+                                                        style="color:black;"></i>
+                                            </div>
+                                        </div>
                                     </div>
-                                  </div>
-                                    <div class="col-sm">
-                                      <div class="d-flex justify-content-around align-items-center">
-                                        medium <i class="fa fa-fw fa-square" style="color:blue;"></i>
-                                      </div>
-                                    </div>
-                                    <div class="col-sm">
-                                      <div class="d-flex justify-content-around align-items-center">
-                                        hard <i class="fa fa-fw fa-square" data-fa-transform="rotate-45" style="color:black;"></i>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div id="excercises-boxes" class="form-row">
+                                    <div id="excercises-boxes" class="form-row">
 
-                                </div>
-                                <button class="btn btn-primary" type="submit">Create my Workout</button>
-                                <div id="error-message"class="alert alert-danger" role="alert" style="opacity: 0">
-                                    Placeholder text so field is same size
-                                </div>
-                            </form>
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">Create my Workout</button>
+                                    <div id="error-message" class="alert alert-danger" role="alert" style="opacity: 0">
+                                        Placeholder text so field is same size
+                                    </div>
+                                </form>
+                            </div>
+                                              <div id="preset" class="tab-pane show card-body" role="tabpanel"
+                                                   style="background-color: #555;">
+
+                                                  <div>
+                                                      <h4 class="col-sm-6"> Available Workouts </h4>
+
+                                                      <div id='wo-container' class="col-sm-6"></div>
+                                                  </div>
+
+                                              </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Dialog which shows the link. Hidden by default. Gets visible if form is submitted. -->
-        <div class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Share your workout</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h5>Summary</h5>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="mt-1">
-                            <div class="input-group">
-                                <input class="form-control" id="next-0-link"/>
-                                <span class="input-group-button copy-span">
+            <!-- Dialog which shows the link. Hidden by default. Gets visible if form is submitted. -->
+            <div class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Share your workout</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Summary</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="mt-1">
+                                <div class="input-group">
+                                    <input class="form-control" id="next-0-link"/>
+                                    <span class="input-group-button copy-span">
                                     <button class="btn clipboard-button" data-clipboard-target="#next-0-link"
                                             data-toggle="tooltip" data-placement="bottom" title="Copy to Clipboard">
                                         <i class="fas fa-clipboard"></i>
                                     </button></span></div>
+                            </div>
+                            <a id="btn-go-to-workout" role="button" class="btn btn-primary">Go to workout</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                    onclick="uncheckForCancel()">Cancel
+                            </button>
                         </div>
-                        <a id="btn-go-to-workout" role="button" class="btn btn-primary">Go to workout</a>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
-                                onclick="uncheckForCancel()">Cancel
-                        </button>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
 
     <footer class="mastfoot mt-auto">

@@ -52,6 +52,15 @@ function startSiteBuilding() {
                 buildSiteFromWorkoutFile(generated_workout, excercise_json) // TODO extract
             }
 
+               const domain = 'comfit.fun';
+    const options = {
+        roomName: 'ComfitWorkoutRoom_34434934',
+        width: "100%",
+        height: "100%",
+        parentNode: document.querySelector('#jitsi')
+    };
+    const api = new JitsiMeetExternalAPI(domain, options);
+
         });
 }
 
@@ -127,7 +136,6 @@ function createCarousel(data, excercise_json) { // todo: better name for data e.
             $.each(intro_names, function (index, elem) {
                 name_list.push(elem.name);
             });
-            console.log(name_list)
             // Transform id list to name list for url: TODO: switch url to only use ids (makes it shorter)
             var exercise_id_list = []
             name_list.forEach(function (item) {
@@ -141,8 +149,6 @@ function createCarousel(data, excercise_json) { // todo: better name for data e.
             wrapper.append(overview);
             wrapper.append('<div id=timer-' + elem.id + '></div>')
             content = wrapper;
-
-            console.log(exercise_id_list)
         } else if (elem.gifpath == "") {
             var wrapper = $('<div class="carousel-item"></div>');
             var ol = $("<ol class='list-group'></ol>")
