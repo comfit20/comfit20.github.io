@@ -1,0 +1,185 @@
+{
+  "startTime": "now",
+  "elements": [
+    {
+      "id": 0,
+      "heading": "Wait for Group Session",
+      "name": "Session will start soon",
+      "duration": 0,
+      "gifpath": "static/movie/waitnextworkout.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 1,
+      "heading": "Welcome to Restorative Yoga",
+      "name": "Find a comfortable seated position",
+      "duration": 68,
+      "gifpath": "static/movie/yoga/YogaSeat.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 2,
+      "heading": "",
+      "name": "Let's start in child's pose.",
+      "duration": 396,
+      "gifpath": "static/movie/yoga/YogaChildsPose1X.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 3,
+      "heading": "",
+      "name": "Come to all fours with shoulders over wrists and hips over knees. Inhale cow, exhale cat",
+      "duration": 103,
+      "gifpath": "static/movie/yoga/YogaCatCow.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 4,
+      "heading": "",
+      "name": "Classical sun salutation with low lunge",
+      "duration": 74,
+      "gifpath": "static/movie/yoga/YogaClassical2X.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 5,
+      "heading": "",
+      "name": "Legs up the wall is a reclined version of staff pose",
+      "duration": 300,
+      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 6,
+      "heading": "",
+      "name": "Add a hamstring stretch on your right leg with your legs still up the wall",
+      "duration": 150,
+      "gifpath": "",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 7,
+      "heading": "",
+      "name": "Add a hamstring stretch on your left leg with your legs still up the wall",
+      "duration": 150,
+      "gifpath": "",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 8,
+      "heading": "",
+      "name": "Pull your right knee in for half happy baby with your legs still up the wall",
+      "duration": 150,
+      "gifpath": "",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 9,
+      "heading": "",
+      "name": "Figure four right",
+      "duration": 150,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 10,
+      "heading": "",
+      "name": "Pull your left knee in for half happy baby with your legs still up the wall",
+      "duration": 150,
+      "gifpath": "",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 11,
+      "heading": "",
+      "name": "Figure four left",
+      "duration": 150,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 12,
+      "heading": "",
+      "name": "Wide-angle seated forward bend",
+      "duration": 300,
+      "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 13,
+      "heading": "",
+      "name": "Reclining Bound Angle Pose with feet up the wall",
+      "duration": 150,
+      "gifpath": "static/movie/yoga/YogaSuptaBaddhaKonasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 14,
+      "heading": "",
+      "name": "Gentle twist left",
+      "duration": 200,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 15,
+      "heading": "",
+      "name": "Gentle twist right",
+      "duration": 200,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 16,
+      "heading": "",
+      "name": "Relax into savasana",
+      "duration": 360,
+      "gifpath": "static/movie/yoga/YogaSavasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 17,
+      "heading": "",
+      "name": "You're welcome to stay here as long as you like.",
+      "duration": 42,
+      "gifpath": "static/movie/yoga/YogaComeOutOfSavasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 18,
+      "heading": "Thank you for practicing with me today!",
+      "name": "Namaste",
+      "duration": 61,
+      "gifpath": "static/movie/yoga/YogaNamaste.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 19,
+      "heading": "",
+      "name": "Enjoy the day",
+      "duration": 300,
+      "gifpath": "",
+      "sound": null,
+      "indicator": "hidden"
+    }
+  ]
+}
