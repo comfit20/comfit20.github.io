@@ -90,6 +90,7 @@
             console.log(time.local().format())
             $("#next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
             var share_link = window.location.hostname+'/workout_group.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
+            //var share_link = window.location.hostname+'/workout_group.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
             $("#next-"+idx).attr('href','workout_group.html?timestamp='+time.toISOString()+"&workout=workout"+day_workout+".json");
             $('#next-'+idx+'-link').attr('value',share_link);
         });
@@ -124,7 +125,7 @@
     function get_workoutNo() {
         var today = dayjs().day()
         //console.log("workout No", Math.floor((Math.random() * 18) + 2))
- return Math.floor((Math.random() * 46) + 2);
+ return Math.floor((Math.random() * 58) + 2);
     }
 
     function get_workoutday() {
