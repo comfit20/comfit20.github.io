@@ -50,7 +50,7 @@ if workoutstyle == 'regular':
         "id": 0,
         "heading": "Wait for Group Session",
         "name": "Session will start soon",
-        "duration": 0,
+        "duration": 12,
         "gifpath": "static/movie/waitnextworkout.mp4",
         "sound": None,
         "indicator": "hidden"
@@ -250,7 +250,7 @@ if workoutstyle == 'increase':
         "id": 0,
         "heading": "Wait for Group Session",
         "name": "Session will start soon",
-        "duration": 0,
+        "duration": 12,
         "gifpath": "static/movie/waitnextworkout.mp4",
         "sound": None,
         "indicator": "hidden"
@@ -455,7 +455,7 @@ if workoutstyle == 'decrease':
         "id": 0,
         "heading": "Wait for Group Session",
         "name": "Session will start soon",
-        "duration": 0,
+        "duration": 12,
         "gifpath": "static/movie/waitnextworkout.mp4",
         "sound": None,
         "indicator": "hidden"
@@ -668,7 +668,7 @@ if workoutstyle == 'repeat_iso':
         "id": 0,
         "heading": "Wait for Group Session",
         "name": "Session will start soon",
-        "duration": 0,
+        "duration": 12,
         "gifpath": "static/movie/waitnextworkout.mp4",
         "sound": None,
         "indicator": "hidden"
@@ -858,7 +858,7 @@ if workoutstyle == 'repeat_diff':
         "id": 0,
         "heading": "Wait for Group Session",
         "name": "Session will start soon",
-        "duration": 0,
+        "duration": 12,
         "gifpath": "static/movie/waitnextworkout.mp4",
         "sound": None,
         "indicator": "hidden"
@@ -1068,7 +1068,7 @@ if workoutstyle == 'up_and_down':
         "id": 0,
         "heading": "Wait for Group Session",
         "name": "Session will start soon",
-        "duration": 0,
+        "duration": 12,
         "gifpath": "static/movie/waitnextworkout.mp4",
         "sound": None,
         "indicator": "hidden"
