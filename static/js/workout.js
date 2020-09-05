@@ -49,6 +49,7 @@ function startSiteBuilding() {
                 var selected_rounds = searchParams.get("wo_rounds")
 
                 var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, excercise_json, JSON.parse(exercise_list))
+                downloadObjectAsJson(generated_workout,'workout_gen');
                 buildSiteFromWorkoutFile(generated_workout, excercise_json) // TODO extract
             }
 
@@ -302,6 +303,16 @@ function calcOffset(dateStr) {
         });
 
 }
+
+  function downloadObjectAsJson(exportObj, exportName){
+    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj, null, 2));
+    var downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href",     dataStr);
+    downloadAnchorNode.setAttribute("download", exportName + ".json");
+    document.body.appendChild(downloadAnchorNode); // required for firefox
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+  }
 
 function getServerTime() {
     var date = new Date();
