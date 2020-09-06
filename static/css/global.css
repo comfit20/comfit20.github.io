@@ -55,3 +55,5 @@ box-shadow: inset 0 0 0rem rgba(0, 0, 0, .5);}
 .bg-workout{background-color: #555555}
 
 .iframe-container{height: 100%; width: 100%}
+
+#spotifylink{max-width: 360px}
