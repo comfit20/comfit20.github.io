@@ -80,8 +80,10 @@ function parseExercisesToForm(data) {
     const legs_list = data['exercises'].filter(excercise => excercise.category.includes("legs"));
     const core_list = data['exercises'].filter(excercise => excercise.category.includes("core"));
     const arms_list = data['exercises'].filter(excercise => excercise.category.includes("arms"));
+    const back_list = data['exercises'].filter(excercise => excercise.category.includes("back"));
+    const glutes_list = data['exercises'].filter(excercise => excercise.category.includes("glutes"));
 
-    categorys = [core_list,legs_list,belly_list,arms_list]
+    categorys = [belly_list, back_list, arms_list,core_list,glutes_list,legs_list]
     $.each(categorys,function (index, category) {
         var wrapper = $("<div class='form-row'></div>")
         $('<h2 class="col-sm-12">'+category[0].category[0]+'</h2>').appendTo(wrapper);

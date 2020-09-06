@@ -11,7 +11,7 @@
       {
          "id": 2,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Squat Pulses",
          "level": "easy",
@@ -47,7 +47,7 @@
       {
          "id": 6,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Squat & Knee Rise",
          "level": "easy",
@@ -101,7 +101,7 @@
       {
          "id": 12,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Sumo Squat",
          "level": "easy",
@@ -110,7 +110,7 @@
       {
          "id": 13,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Jumping Lunges",
          "level": "middle",
@@ -191,7 +191,7 @@
       {
          "id": 22,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Backward Lunge & 3 Pulses",
          "level": "easy",
@@ -299,7 +299,7 @@
       {
          "id": 34,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Glute Bridge",
          "level": "easy",
@@ -372,7 +372,7 @@
       {
          "id": 42,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "2 Squats, 2 Squat Jumps",
          "level": "middle",
@@ -482,7 +482,7 @@
          "category": [
             "legs"
          ],
-         "name": "Side Lunges",
+         "name": "Side Lunges Forward",
          "level": "easy",
          "gifpath": "static/movie/SideLunges.mp4"
       },
@@ -498,7 +498,7 @@
       {
          "id": 56,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Single Leg Donkey Kick",
          "level": "easy",
@@ -507,7 +507,7 @@
       {
          "id": 57,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Single-Leg Glute Bridge",
          "level": "easy",
@@ -525,7 +525,7 @@
       {
          "id": 59,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Jump Squat (+ Touch)",
          "level": "middle",
@@ -552,16 +552,16 @@
       {
          "id": 62,
          "category": [
-            "arms"
+            "back"
          ],
          "name": "Superman (alt: Pull Ups)",
-         "level": "hard",
+         "level": "middle",
          "gifpath": "static/movie/Superman.mp4"
       },
       {
          "id": 63,
          "category": [
-            "arms"
+            "back"
          ],
          "name": "Swimmer",
          "level": "middle",
@@ -588,7 +588,7 @@
       {
          "id": 66,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Fast Squats",
          "level": "easy",
@@ -669,7 +669,7 @@
       {
          "id": 75,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Squat",
          "level": "easy",
@@ -725,7 +725,7 @@
          "category": [
             "legs"
          ],
-         "name": "Drop Squa & Side Step",
+         "name": "Drop Squat & Side Step",
          "level": "middle",
          "gifpath": "static/movie/DropSquatSideStep.mp4"
       },
@@ -842,7 +842,7 @@
       {
          "id": 94,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Squat Pulse Pyramide",
          "level": "easy",
@@ -853,7 +853,7 @@
          "category": [
             "back"
          ],
-         "name": "Superman Version 2",
+         "name": "Superman 2",
          "level": "easy",
          "gifpath": "static/movie/SupermanVariant2.mp4"
       }
