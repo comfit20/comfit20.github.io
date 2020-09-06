@@ -1,10 +1,10 @@
 var number_of_workouts = 0;
+
 $(document).ready(function () {
+    // Initialize tooltip that is shown when hovering over the copy button
     $('.clipboard-button').tooltip()
 
-    //Create time for the datetimepicker to set -> now plus 2 minutes
-    var now_in_2 = new Date(getDateIn2Minutes());
-
+    // Initialize datepicker object
     $('#datetimepicker1').datetimepicker({
         // format: 'YYYY/MM/DD'
         debug: false,
@@ -21,53 +21,58 @@ $(document).ready(function () {
         },defaultDate: now_in_2,minDate: now_in_2
     });
 
+    //Create default time for the datetimepicker to set -> now plus 2 minutes
+    var now_in_2 = new Date(getDateIn2Minutes());
 
 
+    // Load list with all possible Excercises. This is used to generate the checkboxes for
+    // the Excercises
     fetch('./static/data/ExerciseList.json')
         .then((response) => {
             return response.json();
         })
         .then((data) => {
             number_of_workouts = data['exercises'].length
-            //Make data global available
+            //Make data global available so we can use it in the methods below
             window.data = data
+
+            // Generate the selection
             parseExercisesToForm(data);
 
-            // Once page is build, show it and hide spinner which is used as placeholder while loading
+           // Once page is build, show it and hide spinner which is used as placeholder while loading
             $("#wait-spinner").css("visibility","hidden");
             $("#main-content").css("visibility","visible");
         });
 
 });
 
+// Method for generating a random workout. Checks randomly checkboxes, based
+// on the number thats provided as argument -> Number = 5, 5 random workouts
 function generateRandomWorkout(number) {
     // Uncheck all in case some where selected already
     for (i = 0; i < number_of_workouts; i++) {
         $("#exercise-" + i).attr("checked", false);
-        // console.log("uncheck all", i)
     }
 
-
-
-    //
     var number_of_random_workouts = number;
     var total_exercises = number_of_workouts;
+
+    // Generate list with random numbers
     var chosenRandomExer = [];
-
-
     while(chosenRandomExer.length < number_of_random_workouts){
         var r = Math.floor(Math.random() * total_exercises)+1;
         if(chosenRandomExer.indexOf(r) === -1) chosenRandomExer.push(r);
     }
 
+    // Check the boxes that correspond to these random numbers
     for (i = 0; i < number_of_random_workouts; i++) {
-
         $("#exercise-" + chosenRandomExer[i]).attr("checked", true);
-
     }
 
 }
 
+// Uses ExcerciseList to generate the checkbox overview with all the workouts
+// For each category the view is generated and then appended to the html page
 function parseExercisesToForm(data) {
 
     // Filter for categories
@@ -110,11 +115,6 @@ function parseExercisesToForm(data) {
               '     <div><i class="fa fa-fw fa-' + difficulty_icon + ';"></i></div>' +
               '  </div>' +
               '</div>').appendTo(wrapper);
-              //   var test = document.getElementById("exercise-" + elem.id);
-              //
-              //   test.addEventListener("mouseover", function( event ) {
-              //   event.target.style.color = "purple";
-              // }, false)
         });
         wrapper.appendTo("#excercises-boxes");
     });
@@ -125,6 +125,8 @@ function getDateIn2Minutes() {
     return now_plus_2;
 }
 
+// This function is called when the user presses create workout. The form gets submitted
+// And this function is called
 function submitcheck(element) {
     var selected_rounds = element[0].options[element[0].selectedIndex].value;
     var duration_wo = element[1].value;
@@ -144,8 +146,6 @@ function submitcheck(element) {
         $("#error-message").text("Please select at least one workout.");
         $("#error-message").animate({ opacity: 1 })
         $('#error-message').delay(1000).animate({ opacity: 0 })
-
-
         return false;
     }
 
@@ -196,6 +196,8 @@ function shuffle(a) {
     return a;
 }
 
+// Bootstrap Modal is created here. this modal gets visible is the workout is
+// Generated and a overview is shown.
 function createModal
 (url_object) {
     //Create url from object
