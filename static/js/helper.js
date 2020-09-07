@@ -1,14 +1,14 @@
 function generateWorkoutOverview(excercise_json,selected_ids) {
 
     // Colors to use for each category
-    var colors = {"core":"#55ACEEC0","belly":"#292F33C0","arms":"#66757FC0","legs":"#CCD6DDC0","reserve1":"#E1E8EDC0","reserve2":"#FFFFFFC0"};
+    var colors = {"core":"#55ACEEC0","belly":"#292F33C0","arms":"#66757FC0","legs":"#CCD6DDC0","glutes":"#0b8891","back":"#0b52bd"};
 
     var data = excercise_json // todo: better name than data again
 
     // Generate HTML List from exercise list for summary
     var overview_container = document.createElement('div')
     var cards = document.createElement('div')
-    cards.classList = "row m-3 p-3";
+    cards.classList = "grid row m-3 p-3";
     cards.style.backgroundColor = "#555";
     var category_list = []
     var exercise_name_list = []
@@ -20,9 +20,10 @@ function generateWorkoutOverview(excercise_json,selected_ids) {
         exercise_name_list.push(excercise_obj.name)
         let card = document.createElement('div');
 
-        card.classList = "col-md-4 border d-flex p-3 justify-content-center";
+        card.classList = "unselectable col-md-4 border d-flex p-3 justify-content-center";
         card.style.backgroundColor = colors[excercise_obj.category];
         card.innerHTML += excercise_obj.name;
+        card.setAttribute('data-excercise-id',excercise_obj.id);
         cards.appendChild(card);
 
     });

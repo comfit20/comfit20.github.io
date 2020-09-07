@@ -48,7 +48,6 @@ function startSiteBuilding() {
                 var selected_rounds = searchParams.get("wo_rounds")
 
                 var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, excercise_json, JSON.parse(exercise_list))
-                downloadObjectAsJson(generated_workout,'workout_gen');
                 buildSiteFromWorkoutFile(generated_workout, excercise_json) // TODO extract
             }
 
