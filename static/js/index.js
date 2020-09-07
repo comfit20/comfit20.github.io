@@ -89,9 +89,10 @@
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
             console.log(time.local().format())
             $("#next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
-            var share_link = window.location.hostname+'/workout_group.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
+            var share_link = window.location.hostname+'/workout.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
             //var share_link = window.location.hostname+'/workout_group.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
-            $("#next-"+idx).attr('href','workout_group.html?timestamp='+time.toISOString()+"&workout=workout"+day_workout+".json");
+            $("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout"+day_workout+".json");
+            //$("#next-"+idx).attr('href','workout_group.html?timestamp='+time.toISOString()+"&workout=workout"+day_workout+".json");
             $('#next-'+idx+'-link').attr('value',share_link);
         });
         var btn = document.getElementById('next-0-link');
@@ -117,16 +118,28 @@
     };
 
          var nr_workout = get_workoutNo()
+         var nr_yoga = get_yogaNo()
 
          $("#workoutanytime").attr('href','workout.html?&workout=workout'+nr_workout+".json");
-         $("#yogaanytime").attr('href','yoga.html?&workout=yoga1.json');
+
+         $("#yogaanytime").attr('href','yoga.html?&workout=yoga'+nr_yoga+'.json');
 
 
+
+     //pick random number of workout for workout anytime    
     function get_workoutNo() {
         var today = dayjs().day()
         //console.log("workout No", Math.floor((Math.random() * 18) + 2))
  return Math.floor((Math.random() * 58) + 2);
     }
+
+    //pick random number of yoga for yoga anytime   
+    function get_yogaNo() {
+        var today = dayjs().day()
+        //console.log("workout No", Math.floor((Math.random() * 18) + 2))
+ return Math.floor((Math.random() * 5) + 1);
+    }
+
 
     function get_workoutday() {
         var today = dayjs().day()

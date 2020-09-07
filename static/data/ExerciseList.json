@@ -11,7 +11,7 @@
       {
          "id": 2,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Squat Pulses",
          "level": "easy",
@@ -47,7 +47,7 @@
       {
          "id": 6,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Squat & Knee Rise",
          "level": "easy",
@@ -101,7 +101,7 @@
       {
          "id": 12,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Sumo Squat",
          "level": "easy",
@@ -110,7 +110,7 @@
       {
          "id": 13,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Jumping Lunges",
          "level": "middle",
@@ -191,7 +191,7 @@
       {
          "id": 22,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Backward Lunge & 3 Pulses",
          "level": "easy",
@@ -299,7 +299,7 @@
       {
          "id": 34,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Glute Bridge",
          "level": "easy",
@@ -372,7 +372,7 @@
       {
          "id": 42,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "2 Squats, 2 Squat Jumps",
          "level": "middle",
@@ -498,7 +498,7 @@
       {
          "id": 56,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Single Leg Donkey Kick",
          "level": "easy",
@@ -507,7 +507,7 @@
       {
          "id": 57,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Single-Leg Glute Bridge",
          "level": "easy",
@@ -518,14 +518,14 @@
          "category": [
             "arms"
          ],
-         "name":"Spiderman Push Up",
-         "level":"hard",
-         "gifpath":"static/movie/SpidermanPushup.mp4"
+         "name": "Spiderman Push Up",
+         "level": "hard",
+         "gifpath": "static/movie/SpidermanPushup.mp4"
       },
-            {
-         "id":59,
-         "category":[
-            "legs"
+      {
+         "id": 59,
+         "category": [
+            "glutes"
          ],
          "name": "Jump Squat (+ Touch)",
          "level": "middle",
@@ -552,16 +552,16 @@
       {
          "id": 62,
          "category": [
-            "arms"
+            "back"
          ],
          "name": "Superman (alt: Pull Ups)",
-         "level": "hard",
+         "level": "middle",
          "gifpath": "static/movie/Superman.mp4"
       },
       {
          "id": 63,
          "category": [
-            "arms"
+            "back"
          ],
          "name": "Swimmer",
          "level": "middle",
@@ -588,7 +588,7 @@
       {
          "id": 66,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Fast Squats",
          "level": "easy",
@@ -639,7 +639,7 @@
          "level": "easy",
          "gifpath": "static/movie/WallSit.mp4"
       },
-            {
+      {
          "id": 72,
          "category": [
             "legs"
@@ -648,7 +648,7 @@
          "level": "middle",
          "gifpath": "static/movie/IceSkater.mp4"
       },
-            {
+      {
          "id": 73,
          "category": [
             "legs"
@@ -657,7 +657,7 @@
          "level": "easy",
          "gifpath": "static/movie/HighKnee.mp4"
       },
-            {
+      {
          "id": 74,
          "category": [
             "legs"
@@ -666,19 +666,197 @@
          "level": "hard",
          "gifpath": "static/movie/PistolSquat.mp4"
       },
-            {
+      {
          "id": 75,
          "category": [
-            "legs"
+            "glutes"
          ],
          "name": "Squat",
          "level": "easy",
          "gifpath": "static/movie/Squat.mp4"
+      },
+      {
+         "id": 76,
+         "category": [
+            "legs"
+         ],
+         "name": "Backlunge & Kick",
+         "level": "middle",
+         "gifpath": "static/movie/BacklungeKick.mp4"
+      },
+      {
+         "id": 77,
+         "category": [
+            "core"
+         ],
+         "name": "Burpee & Bear Crawl",
+         "level": "middle",
+         "gifpath": "static/movie/BurpeesBearCrawl.mp4"
+      },
+      {
+         "id": 78,
+         "category": [
+            "belly"
+         ],
+         "name": "Butterfly Crunch",
+         "level": "middle",
+         "gifpath": "static/movie/ButterflyCrunch.mp4"
+      },
+      {
+         "id": 79,
+         "category": [
+            "core"
+         ],
+         "name": "Crab & Kick",
+         "level": "middle",
+         "gifpath": "static/movie/CrabKick.mp4"
+      },
+      {
+         "id": 80,
+         "category": [
+            "legs"
+         ],
+         "name": "Drop Squat & High Knees",
+         "level": "middle",
+         "gifpath": "static/movie/DropSquatHighKnees.mp4"
+      },
+      {
+         "id": 81,
+         "category": [
+            "legs"
+         ],
+         "name": "Drop Squat & Side Step",
+         "level": "middle",
+         "gifpath": "static/movie/DropSquatSideStep.mp4"
+      },
+      {
+         "id": 82,
+         "category": [
+            "legs"
+         ],
+         "name": "Duck Walk",
+         "level": "hard",
+         "gifpath": "static/movie/DuckWalk.mp4"
+      },
+      {
+         "id": 83,
+         "category": [
+            "belly"
+         ],
+         "name": "Hollow Rock",
+         "level": "hard",
+         "gifpath": "static/movie/HollowRock.mp4"
       }
 
-
-
-
+      ,
+      {
+         "id": 84,
+         "category": [
+            "legs"
+         ],
+         "name": "Lateral Lunges",
+         "level": "easy",
+         "gifpath": "static/movie/LateralLunges.mp4"
+      },
+      {
+         "id": 85,
+         "category": [
+            "legs"
+         ],
+         "name": "One Leg Forward",
+         "level": "easy",
+         "gifpath": "static/movie/OneLegForward.mp4"
+      },
+      {
+         "id": 86,
+         "category": [
+            "arms"
+         ],
+         "name": "Pike Push Up",
+         "level": "hard",
+         "gifpath": "static/movie/PikePushUp.mp4"
+      },
+      {
+         "id": 87,
+         "category": [
+            "core"
+         ],
+         "name": "Plank Pulses",
+         "level": "middle",
+         "gifpath": "static/movie/PlankPulses.mp4"
+      },
+      {
+         "id": 88,
+         "category": [
+            "core"
+         ],
+         "name": "Plank & Side Jump",
+         "level": "middle",
+         "gifpath": "static/movie/PlankSideJump.mp4"
+      },
+      {
+         "id": 89,
+         "category": [
+            "core"
+         ],
+         "name": "Plank & Side Jump & Squat",
+         "level": "middle",
+         "gifpath": "static/movie/PlankSideJumpSquat.mp4"
+      },
+      {
+         "id": 90,
+         "category": [
+            "core"
+         ],
+         "name": "Plank to Surfer",
+         "level": "hard",
+         "gifpath": "static/movie/PlankSurfer.mp4"
+      },
+      {
+         "id": 91,
+         "category": [
+            "back"
+         ],
+         "name": "Rear Delt Flies",
+         "level": "middle",
+         "gifpath": "static/movie/RearDeltFlies.mp4"
+      },
+      {
+         "id": 92,
+         "category": [
+            "arms"
+         ],
+         "name": "Seal Push Up",
+         "level": "middle",
+         "gifpath": "static/movie/SealPushUp.mp4"
+      },
+      {
+         "id": 93,
+         "category": [
+            "back"
+         ],
+         "name": "Snow Angel",
+         "level": "middle",
+         "gifpath": "static/movie/SnowAngel.mp4"
+      },
+      {
+         "id": 94,
+         "category": [
+            "glutes"
+         ],
+         "name": "Squat Pulse Pyramide",
+         "level": "easy",
+         "gifpath": "static/movie/SquatPulsePyuramide.mp4"
+      },
+      {
+         "id": 95,
+         "category": [
+            "back"
+         ],
+         "name": "Superman 2",
+         "level": "easy",
+         "gifpath": "static/movie/SupermanVariant2.mp4"
+      }
    ]
-   
+
 }
