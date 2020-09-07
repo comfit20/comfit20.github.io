@@ -123,7 +123,7 @@ function parseExercisesToForm(data) {
 }
 function getDateIn2Minutes() {
     var now = dayjs()
-    var now_plus_2 = now.add(2,'minute');
+    var now_plus_2 = now.add(1,'minute'); //decreased it to 1 min
     return now_plus_2;
 }
 
