@@ -1,7 +1,7 @@
 function generateWorkoutOverview(excercise_json,selected_ids) {
 
     // Colors to use for each category
-    var colors = {"core":"#55ACEEC0","belly":"#292F33C0","arms":"#66757FC0","legs":"#CCD6DDC0","reserve1":"#E1E8EDC0","reserve2":"#FFFFFFC0"};
+    var colors = {"core":"#55ACEEC0","belly":"#292F33C0","arms":"#66757FC0","legs":"#CCD6DDC0","glutes":"#E1E8EDC0","back":"#FFFFFFC0"};
 
     var data = excercise_json // todo: better name than data again
 
