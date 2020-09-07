@@ -19,7 +19,7 @@ def generateWorkout(exercises):
       #repeat_diff erenttimes 9 exercise 45 + 25 + 45 + 25 (1260);   no water break
       #'up_and_down'. 30 -60 - 30: 12 exercises
 
-    workoutstyle = 'repeat_diff' # change workout styles here
+    workoutstyle = 'regular' # change workout styles here
 
     print('Todays workout style is: '+workoutstyle)
     duration_warmup = 25
