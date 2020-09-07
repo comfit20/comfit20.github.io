@@ -3,7 +3,7 @@ var number_of_workouts = 0;
 $(document).ready(function () {
     var searchParams = new URLSearchParams(window.location.search)
     if(searchParams.has('download')){
-$('#btn-download').css("visibility","visible");
+$('#btn-download').css("display","block");
     }
 
 
