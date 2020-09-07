@@ -1,6 +1,11 @@
 var number_of_workouts = 0;
 
 $(document).ready(function () {
+    var searchParams = new URLSearchParams(window.location.search)
+    if(searchParams.has('download')){
+$('#btn-download').css("visibility","visible");
+    }
+
     // Initialize tooltip that is shown when hovering over the copy button
     $('.clipboard-button').tooltip()
 
@@ -150,7 +155,7 @@ function submitcheck(element) {
     }
 
     // Transform id list to name list for url: TODO: switch url to only use ids (makes it shorter)
-    var exercise_name_list = []
+
     exercise_id_list.forEach(function (item) {
         var excercise_obj = data.exercises.filter(obj => {
             return obj.id === parseInt(item)
@@ -218,3 +223,25 @@ function uncheckForCancel(){
         $("#exercise-" + i).attr("checked", false);
     }
 }
+
+function downloadFile(){
+
+        fetch('./static/data/ExerciseList.json')
+        .then((response) => {
+            return response.json();
+        })
+        .then((excercise_json) => {
+        var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, excercise_json, JSON.parse(exercise_list))
+         downloadObjectAsJson(generated_workout,'workout_gen');
+        }
+}
+
+  function downloadObjectAsJson(exportObj, exportName){
+    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj, null, 2));
+    var downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href",     dataStr);
+    downloadAnchorNode.setAttribute("download", exportName + ".json");
+    document.body.appendChild(downloadAnchorNode); // required for firefox
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+  }
