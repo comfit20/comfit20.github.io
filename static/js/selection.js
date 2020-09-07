@@ -4,6 +4,9 @@ $(document).ready(function () {
     // Initialize tooltip that is shown when hovering over the copy button
     $('.clipboard-button').tooltip()
 
+    //Create default time for the datetimepicker to set -> now plus 2 minutes
+    var now_in_2 = new Date(getDateIn2Minutes());
+
     // Initialize datepicker object
     $('#datetimepicker1').datetimepicker({
         // format: 'YYYY/MM/DD'
@@ -20,10 +23,6 @@ $(document).ready(function () {
             close: 'fas fa-times'
         },defaultDate: now_in_2,minDate: now_in_2
     });
-
-    //Create default time for the datetimepicker to set -> now plus 2 minutes
-    var now_in_2 = new Date(getDateIn2Minutes());
-
 
     // Load list with all possible Excercises. This is used to generate the checkboxes for
     // the Excercises
@@ -129,13 +128,18 @@ function getDateIn2Minutes() {
 
 // This function is called when the user presses create workout. The form gets submitted
 // And this function is called
+var selected_rounds =null;
+    var duration_wo = null;
+    var duration_rest = null;
+    var selected_date = null;
+    var selected_elements = null;
+
 function submitcheck(element) {
-    var selected_rounds = element[0].options[element[0].selectedIndex].value;
-    var duration_wo = element[1].value;
-    var duration_rest = element[2].value;
-    var selected_date = element[3].value;
-    console.log(selected_date)
-    var selected_elements = $(element).serializeArray();
+    selected_rounds = element[0].options[element[0].selectedIndex].value;
+    duration_wo = element[1].value;
+    duration_rest = element[2].value;
+    selected_date = element[3].value;
+    selected_elements = $(element).serializeArray();
     shuffle(selected_elements)
     // the name property of the selected elements includes the ids of the selected elements, not the acutal name
     exercise_id_list = [];
@@ -163,25 +167,28 @@ function submitcheck(element) {
     console.log(window.data.excercises,exercise_id_list);
     var overview = generateWorkoutOverview(window.data,exercise_id_list);
 
+
     $('.modal-body').empty();
     $('.modal-body').append("<h5>Summary</h5>");
     $('.modal-body').append(overview);
 
-
     //create object for the url
-    var url_builder_obj = {}
-    url_builder_obj["excercises"] = JSON.stringify(exercise_name_list)
-    var selected = dayjs(selected_date.toString())
-    // Check if selected date is over. If so, take now and add 2 minutes for starting time
-    if(selected.isBefore(dayjs())){
-        selected_date = getDateIn2Minutes().toLocaleString()
-    }
-    url_builder_obj["timestamp"] = selected_date
-    url_builder_obj["wo_duration"] = duration_wo
-    url_builder_obj["rest_duration"] = duration_rest
-    url_builder_obj["wo_rounds"] = selected_rounds
-
+    var url_builder_obj = buildUrlObject(exercise_name_list)
     createModal(url_builder_obj);
+
+    //Show modal
+    $('.modal').modal();
+
+
+    $('.grid').gridstrap({
+		/* default options */
+	});
+	$('.grid').on('celldrag', function() {
+    console.log('redraw');
+    console.log(serializeLayout());
+    });
+
+
     return false;
 }
 
@@ -205,9 +212,6 @@ function createModal
     //Create url from object
     var url_parameters = $.param(url_object);
 
-    //Show modal
-    $('.modal').modal();
-
     //Add link to created workout to button and clipboard
     $('#btn-go-to-workout').attr("href", "workout.html?"+url_parameters);
     var clipboard = new ClipboardJS('.clipboard-button');
@@ -219,4 +223,40 @@ function uncheckForCancel(){
     for (i = 1; i <= number_of_workouts; i++) {
         $("#exercise-" + i).attr("checked", false);
     }
+}
+
+function serializeLayout() {
+  var grid = $('.grid').data('gridstrap');
+  let cells = grid.$getCells();
+  let cellIdIndexArray = [];
+  for (let i = 0; i < cells.length; i++) {
+      let cellId = cells[i].textContent;
+      //let excersiceId = cells[i].getAttribute('data-excercise-id');
+      cellIdIndexArray.push(cellId);
+  }
+  // TODO: Update URL parameters and link based on the new order of the workouts
+  console.log(cellIdIndexArray.join(","));
+   var url_builder_obj = buildUrlObject(cellIdIndexArray)
+  createModal(url_builder_obj);
+};
+
+
+function buildUrlObject(exercise_name_list){
+
+    //create object for the url
+    var url_builder_obj = {}
+    url_builder_obj["excercises"] = JSON.stringify(exercise_name_list)
+    var selected = dayjs(selected_date.toString())
+
+    // Check if selected date is over. If so, take now and add 2 minutes for starting time
+    if(selected.isBefore(dayjs())){
+        selected_date = getDateIn2Minutes().toLocaleString()
+    }
+    console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!',selected.toString())
+    url_builder_obj["timestamp"] = selected_date
+    url_builder_obj["wo_duration"] = duration_wo
+    url_builder_obj["rest_duration"] = duration_rest
+    url_builder_obj["wo_rounds"] = selected_rounds
+
+    return url_builder_obj;
 }
