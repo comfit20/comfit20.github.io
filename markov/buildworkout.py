@@ -2,7 +2,7 @@ import json
 import random
 
 def generateWorkout(exercises):
-    with open('ExerciseList.json') as f:
+    with open('../static/data/ExerciseList.json') as f:
       exerlist = json.load(f)
 
     exerlist = exerlist['exercises']
