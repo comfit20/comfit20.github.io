@@ -44,12 +44,10 @@ function startSiteBuilding() {
             // If not workout file is specified, than create the workout file using the excercise json
             if (searchParams.has('excercises')) {
                 var exercise_list = searchParams.get('excercises');
-
                 var selected_duration = searchParams.get("wo_duration")
                 var selected_rounds = searchParams.get("wo_rounds")
 
                 var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, excercise_json, JSON.parse(exercise_list))
-                downloadObjectAsJson(generated_workout,'workout_gen');
                 buildSiteFromWorkoutFile(generated_workout, excercise_json) // TODO extract
             }
 
@@ -81,7 +79,6 @@ function buildSiteFromWorkoutFile(workoutjson,excercise_json) {
 
     var startTime = null;
     if (workoutjson.startTime != "now") {
-    console.log('dfjsdlkf')
         workoutjson.startTime = dayjs(workoutjson.startTime)
     } else {
         workoutjson.startTime = dayjs(getServerTime())
@@ -304,15 +301,7 @@ function calcOffset(dateStr) {
 
 }
 
-  function downloadObjectAsJson(exportObj, exportName){
-    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj, null, 2));
-    var downloadAnchorNode = document.createElement('a');
-    downloadAnchorNode.setAttribute("href",     dataStr);
-    downloadAnchorNode.setAttribute("download", exportName + ".json");
-    document.body.appendChild(downloadAnchorNode); // required for firefox
-    downloadAnchorNode.click();
-    downloadAnchorNode.remove();
-  }
+
 
 function getServerTime() {
     var date = new Date();

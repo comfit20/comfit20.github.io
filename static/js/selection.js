@@ -1,6 +1,12 @@
 var number_of_workouts = 0;
 
 $(document).ready(function () {
+    var searchParams = new URLSearchParams(window.location.search)
+    if(searchParams.has('download')){
+$('#btn-download').css("display","block");
+    }
+
+
     // Initialize tooltip that is shown when hovering over the copy button
     $('.clipboard-button').tooltip()
 
@@ -23,6 +29,10 @@ $(document).ready(function () {
             close: 'fas fa-times'
         },defaultDate: now_in_2,minDate: now_in_2
     });
+
+    //Create default time for the datetimepicker to set -> now plus 2 minutes
+    var now_in_2 = new Date(getDateIn2Minutes());
+
 
     // Load list with all possible Excercises. This is used to generate the checkboxes for
     // the Excercises
@@ -129,11 +139,11 @@ function getDateIn2Minutes() {
 // This function is called when the user presses create workout. The form gets submitted
 // And this function is called
 var selected_rounds =null;
-    var duration_wo = null;
-    var duration_rest = null;
-    var selected_date = null;
-    var selected_elements = null;
-
+var duration_wo = null;
+var duration_rest = null;
+var selected_date = null;
+var selected_elements = null;
+var exercise_name_list = []
 function submitcheck(element) {
     selected_rounds = element[0].options[element[0].selectedIndex].value;
     duration_wo = element[1].value;
@@ -156,7 +166,6 @@ function submitcheck(element) {
     }
 
     // Transform id list to name list for url: TODO: switch url to only use ids (makes it shorter)
-    var exercise_name_list = []
     exercise_id_list.forEach(function (item) {
         var excercise_obj = data.exercises.filter(obj => {
             return obj.id === parseInt(item)
@@ -167,10 +176,10 @@ function submitcheck(element) {
     console.log(window.data.excercises,exercise_id_list);
     var overview = generateWorkoutOverview(window.data,exercise_id_list);
 
-
     $('.modal-body').empty();
     $('.modal-body').append("<h5>Summary</h5>");
     $('.modal-body').append(overview);
+
 
     //create object for the url
     var url_builder_obj = buildUrlObject(exercise_name_list)
@@ -184,7 +193,6 @@ function submitcheck(element) {
 		/* default options */
 	});
 	$('.grid').on('celldrag', function() {
-    console.log('redraw');
     console.log(serializeLayout());
     });
 
@@ -212,6 +220,9 @@ function createModal
     //Create url from object
     var url_parameters = $.param(url_object);
 
+    //Show modal
+    $('.modal').modal();
+
     //Add link to created workout to button and clipboard
     $('#btn-go-to-workout').attr("href", "workout.html?"+url_parameters);
     var clipboard = new ClipboardJS('.clipboard-button');
@@ -236,10 +247,32 @@ function serializeLayout() {
   }
   // TODO: Update URL parameters and link based on the new order of the workouts
   console.log(cellIdIndexArray.join(","));
+  exercise_name_list = cellIdIndexArray
    var url_builder_obj = buildUrlObject(cellIdIndexArray)
   createModal(url_builder_obj);
 };
 
+function downloadFile(){
+
+        fetch('./static/data/ExerciseList.json')
+        .then((response) => {
+            return response.json();
+        })
+        .then((excercise_json) => {
+        var generated_workout = generateWorkoutJson(duration_wo, selected_rounds, excercise_json, exercise_name_list)
+         downloadObjectAsJson(generated_workout,'workout_gen');
+        });
+}
+
+  function downloadObjectAsJson(exportObj, exportName){
+    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj, null, 2));
+    var downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href",     dataStr);
+    downloadAnchorNode.setAttribute("download", exportName + ".json");
+    document.body.appendChild(downloadAnchorNode); // required for firefox
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+  }
 
 function buildUrlObject(exercise_name_list){
 
