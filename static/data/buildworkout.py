@@ -9,9 +9,8 @@ exerlist = exerlist['exercises']
 
 
 
-exercises = ['Squat Pulse Pyramide','Seal Push Up', 'Bicycle Crunches', 'Burpees', 'Bird Dog', 
-'Duck Walk', 'Plank & Side Jump & Squat', 'One Leg Forward',  'Superman 2', 'Butterfly Crunch', '2 Squats, 2 Squat Jumps',
-'Rear Delt Flies']
+exercises = ['Hollow Rock',  'Drop Squat & High Knees',  'Mountain Climber Side Step', 'Ice Skater','Pike Push Up', 
+'Side Hops','Swimmer',  'Backward Lunge & 3 Pulses', 'Russian Twist',  'Plank Pulses']
 
 warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']#'Glute bridge','Single Leg Hip Circles', '5 shoulder circles + 2 wind mills',
 
@@ -25,7 +24,7 @@ warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bri
   #repeat_diff erenttimes 9 exercise 45 + 25 + 45 + 25 (1260);   no water break
   #'up_and_down'. 30 -60 - 30: 12 exercises
 
-workoutstyle = 'decrease' # change workout styles here
+workoutstyle = 'repeat_iso' # change workout styles here
 
 print('Todays workout style is: '+workoutstyle)
 duration_warmup = 25
