@@ -66,6 +66,8 @@ function buildSiteFromWorkoutFile(workoutjson,excercise_json,skip) {
 
 
     if(skip){
+        // Filter out elements that include the following text in the heading:
+        // Introduction, 'Warm Up' ,'Wait for Group Session', 'Workout Timing'
         var skipped_workout_elements = []
         workoutjson.elements.forEach(function (item, index) {
         if(!item.heading.includes('Introduction') && !item.heading.includes('Warm Up') &&
@@ -221,7 +223,8 @@ function startJqueryTimer(startTime) {
         startJqueryTimer(startTime);
         return;
     }
-
+        // Show skip button on pages that include the folling text in heading:
+        // Introduction, 'Warm Up' ,'Wait for Group Session', 'Workout Timing'
         if(element.heading.includes('Introduction') || element.heading.includes('Warm Up')
         || element.heading.includes('Wait for Group Session') || element.heading.includes('Workout Timing')){
             $('#btn-skip-intro').css("display","inline");
