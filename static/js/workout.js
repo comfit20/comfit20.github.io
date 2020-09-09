@@ -14,7 +14,6 @@ var audio_mute = true;
 
 $(document).ready(function () {
 
-
     calcOffset();
 });
 
@@ -23,6 +22,12 @@ function startSiteBuilding() {
     // If workoutfile is specified, load it from the file
     var workoutFile = "workout1.json";
     var searchParams = new URLSearchParams(window.location.search)
+                        var skip_intro = false;
+    if(searchParams.has('skip')){
+skip_intro= true;
+    }
+
+
     fetch('./static/data/ExerciseList.json')
         .then((response) => {
             return response.json();
@@ -37,7 +42,8 @@ function startSiteBuilding() {
                         return response.json();
                     })
                     .then((data) => {
-                        buildSiteFromWorkoutFile(data, excercise_json)
+
+                        buildSiteFromWorkoutFile(data, excercise_json,skip_intro)
                     });
             }
 
@@ -48,7 +54,7 @@ function startSiteBuilding() {
                 var selected_rounds = searchParams.get("wo_rounds")
 
                 var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, excercise_json, JSON.parse(exercise_list))
-                buildSiteFromWorkoutFile(generated_workout, excercise_json) // TODO extract
+                buildSiteFromWorkoutFile(generated_workout, excercise_json,skip_intro) // TODO extract
             }
 
                const domain = 'comfit.fun';
@@ -64,8 +70,20 @@ function startSiteBuilding() {
 }
 
 
-function buildSiteFromWorkoutFile(workoutjson,excercise_json) {
+function buildSiteFromWorkoutFile(workoutjson,excercise_json,skip) {
     let searchParams = new URLSearchParams(window.location.search)
+
+
+    if(skip){
+        var skipped_workout_elements = []
+        workoutjson.elements.forEach(function (item, index) {
+        if(!item.heading.includes('Introduction') && !item.heading.includes('Warm Up')){
+            skipped_workout_elements.push(item)
+        }
+        workoutjson.elements = skipped_workout_elements;
+        console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!',skipped_workout_elements)
+    });
+    }
 
     if (searchParams.has('timestamp')) {
         let timestamp = searchParams.get('timestamp')
@@ -203,6 +221,8 @@ function startJqueryTimer(startTime) {
         return
     }
 
+
+
     var element = startTime['elements'].shift()
     if (element.expired) {
         $(".carousel.active").empty()
@@ -210,6 +230,10 @@ function startJqueryTimer(startTime) {
         startJqueryTimer(startTime);
         return;
     }
+
+        if(element.heading.includes('Introduction') || element.heading.includes('Warm Up')){
+            $('#btn-skip-intro').css("display","block");
+        }
 
     if (element['sound'] == "audiowork") {
         audiowork.play();
@@ -225,6 +249,7 @@ function startJqueryTimer(startTime) {
     }
 
     $('#heading').text(element.heading);
+
     var elemId = uniqId()
     var timer_gui = $("#timer-" + element.id).text("00:00").addClass('display-4'); //
     if (element.gifpath != "" && element.id !== 0) { // todo: improve checking for overview
@@ -310,3 +335,7 @@ function getServerTime() {
     return date;
 }
 
+function skipIntro(){
+var url = new URL(window.location.href);
+url.searchParams.set('skip','');
+window.location.href = url.href;}
