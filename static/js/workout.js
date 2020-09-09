@@ -57,15 +57,6 @@ skip_intro= true;
                 buildSiteFromWorkoutFile(generated_workout, excercise_json,skip_intro) // TODO extract
             }
 
-               const domain = 'comfit.fun';
-    const options = {
-        roomName: 'ComfitWorkoutRoom_34434934',
-        width: "100%",
-        height: "100%",
-        parentNode: document.querySelector('#jitsi')
-    };
-    const api = new JitsiMeetExternalAPI(domain, options);
-
         });
 }
 
@@ -77,11 +68,11 @@ function buildSiteFromWorkoutFile(workoutjson,excercise_json,skip) {
     if(skip){
         var skipped_workout_elements = []
         workoutjson.elements.forEach(function (item, index) {
-        if(!item.heading.includes('Introduction') && !item.heading.includes('Warm Up')){
+        if(!item.heading.includes('Introduction') && !item.heading.includes('Warm Up') &&
+        !item.heading.includes('Wait for Group Session') && !item.heading.includes('Workout Timing')){
             skipped_workout_elements.push(item)
         }
         workoutjson.elements = skipped_workout_elements;
-        console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!',skipped_workout_elements)
     });
     }
 
@@ -231,8 +222,9 @@ function startJqueryTimer(startTime) {
         return;
     }
 
-        if(element.heading.includes('Introduction') || element.heading.includes('Warm Up')){
-            $('#btn-skip-intro').css("display","block");
+        if(element.heading.includes('Introduction') || element.heading.includes('Warm Up')
+        || element.heading.includes('Wait for Group Session') || element.heading.includes('Workout Timing')){
+            $('#btn-skip-intro').css("display","inline");
         }
 
     if (element['sound'] == "audiowork") {
