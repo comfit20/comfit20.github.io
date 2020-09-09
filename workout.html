@@ -70,12 +70,15 @@
                                 <div class="carousel-inner">
 
                                 </div>
-
-
+                                <div>
                                 <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom"
                                         class="btn btn-dark" data-toggle="tooltip" data-placement="bottom"
                                         title="Sound is off" type="button"><i id="sound-icon"
                                                                               class="fas fa-volume-mute"></i></button>
+                                <button id='btn-skip-intro' type="button" class="btn btn-dark"
+                                    onclick="skipIntro()" style="display: none;">Skip Intro
+                            </button>
+                                    </div>
 
                                 <ol class="carousel-indicators" style="position: relative;">
 
@@ -150,7 +153,6 @@ $("#spotifylink").attr("src", "https://open.spotify.com/embed/playlist/"+ music_
 <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 <script defer src="./static/js/all.min.js"></script>
 <script src="https://vjs.zencdn.net/7.8.2/video.js"></script>
-<script src='https://meet.jit.si/external_api.js'></script>
 
 <script type="text/javascript" src="./static/libs/jquery.plugin.js"></script>
 <script type="text/javascript" src="./static/libs/jquery.countdown.js"></script>
