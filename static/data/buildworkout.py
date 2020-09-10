@@ -9,8 +9,8 @@ exerlist = exerlist['exercises']
 
 
 
-exercises = ['Rope Jump','Squat Pulse Pyramide', 'Crunches', '10 Fast Feet & Jump', 'Bird Dog', 
-'Ladder (alt: Fast Feet)',  'Leg Lift & Hold', 'Superman 2', 'Lateral Lunges',  'Jumping Jacks', 'Plank' ]
+exercises = ['Rope Jump', 'Squat Pulse Pyramide', 'Crunches', '10 Fast Feet & Jump', 'Bird Dog', 
+'Ladder (alt: Fast Feet)', 'Lateral Lunges',  'Leg Lift & Hold', 'Superman 2',  'Jumping Jacks', 'Squat & Knee Rise', 'Plank' ]
 
 warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','High Knees']
 

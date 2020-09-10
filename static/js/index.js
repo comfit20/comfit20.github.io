@@ -45,8 +45,9 @@
         // time_list.push(time_4);
         var time_5 = getNextWeekday(5).set('h',15).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_5);
-        // var time_6 = getNextWeekday(5).set('h',18).set('m',32).set('s',0).set('ms',0);
-        // time_list.push(time_6);
+
+        var time_6 = getNextWeekday(5).set('h',18).set('m',35).set('s',0).set('ms',0);
+        time_list.push(time_6);
 
         console.log(time_list)
 
