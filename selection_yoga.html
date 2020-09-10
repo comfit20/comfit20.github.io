@@ -46,6 +46,9 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css"/>
 
+    <!-- Custom styles for drag and drop stuff -->
+    <link rel="stylesheet" href="./static/css/jquery.gridstrap.min.css">
+
     <title>ComFIT</title>
 
 </head>
@@ -181,8 +184,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="excercises-boxes" class="form-row">
 
+                                    <div id="excercises-boxes" class="form-row">
                                     </div>
                                     <button class="btn btn-primary" type="submit">Create my Workout</button>
                                     <div id="error-message" class="alert alert-danger" role="alert" style="opacity: 0">
@@ -194,7 +197,7 @@
                                                    style="background-color: #555;">
 
                                                   <div>
-                                                      <h4 class="col-sm-6"> Available Workouts </h4>
+                                                      <h4 class="col-sm-6"> Coming Soon </h4>
 
                                                       <div id='wo-container' class="col-sm-6"></div>
                                                   </div>
@@ -204,6 +207,7 @@
                     </div>
                 </div>
             </div>
+
 
             <!-- Dialog which shows the link. Hidden by default. Gets visible if form is submitted. -->
             <div class="modal" tabindex="-1" role="dialog">
@@ -229,9 +233,16 @@
                                     </button></span></div>
                             </div>
                             <a id="btn-go-to-workout" role="button" class="btn btn-primary">Go to workout</a>
+
+                            <button id="btn-download" type="button" class="btn btn-secondary" data-dismiss="modal"
+                                    style="display: none;" onclick="downloadFile()">Download
+                            </button>
+
                             <button type="button" class="btn btn-secondary" data-dismiss="modal"
                                     onclick="uncheckForCancel()">Cancel
                             </button>
+
+
                         </div>
                     </div>
                 </div>
@@ -245,10 +256,9 @@
         </div>
     </footer>
 </div>
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+<!-- Placed at the end of the document so the pages load faster  -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -277,10 +287,11 @@
 
 <!-- Script for clipboard stuff -->
 <script src="./static/libs/clipboard.min.js"></script>
+<script src="./static/js/jquery.gridstrap.min.js"></script>
 
 <!-- Scripts for comfit20 -->
-<script type="text/javascript" src="static/js/workout_generator.js"></script>
-<script src="./static/js/selection.js" type="text/javascript"></script>
+<script type="text/javascript" src="static/js/workout_generator_yoga.js"></script>
+<script src="./static/js/selection_yoga.js" type="text/javascript"></script>
 <script src="./static/js/helper.js" type="text/javascript"></script>
 
 </body>
