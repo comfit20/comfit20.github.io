@@ -1,0 +1,73 @@
+{
+   "poses": [{
+         "id": 1,
+         "category": [
+            "standing"
+         ],
+         "name": "low lunge pose",
+         "sanskrit": "anjaneyasana",
+         "level": "easy",
+         "counterposes": "adho mukha svanasana, balasana, uttanasana",
+         "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
+      },
+      {
+         "id": 2,
+         "category": [
+            "standing"
+         ],
+         "name": "hand to foot pose",
+         "sanskrit": "pada hastasana",
+         "level": "easy",
+         "counterposes": "tadasana, adho mukha svanasana, balasana, simple twists",
+         "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
+      },
+      {
+         "id": 3,
+         "category": [
+            "standing"
+         ],
+         "name": "big toe pose",
+         "sanskrit": "padangusthasana",
+         "level": "easy",
+         "counterposes": "tadasana, adho mukha svanasana, balasana, simple twists",
+         "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
+      },
+      {
+         "id": 4,
+         "category": [
+            "standing"
+         ],
+         "name": "warrior III pose",
+         "sanskrit": "virabhadrasana III",
+         "level": "middle",
+         "counterposes": "malasana, garudasana, supta baddha konasana, balasana",
+         "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
+      },
+
+      {
+         "id": 5,
+         "category": [
+            "lying"
+         ],
+         "name": "corpse pose",
+         "sanskrit": "savasana",
+         "level": "easy",
+         "counterposes": "",
+         "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
+      },
+
+      {
+         "id": 6,
+         "category": [
+            "sitting"
+         ],
+         "name": "downward facing dog pose",
+         "sanskrit": "adho mukha svanasana",
+         "level": "easy",
+         "counterposes": "",
+         "gifpath": "static/movie/Yoga/YogaDownDog.mp4"
+      }
+     
+   ]
+   
+}
