@@ -67,6 +67,8 @@
         var time_list = []
         var time_1 = getNextWeekday(4).set('h',01).set('m',02).set('s',0).set('ms',0);
         time_list.push(time_1);
+        var time_2 = getNextWeekday(5).set('h',18).set('m',35).set('s',0).set('ms',0);
+        time_list.push(time_2);
         // Add your yoga times here (the time is in UTC
         // --> e.g. california wednesday 06:00pm is thursday 01:00 in utc)
 
