@@ -34,8 +34,8 @@ $('#btn-download').css("display","block");
     var now_in_2 = new Date(getDateIn2Minutes());
 
 
-    // Load list with all possible Excercises. This is used to generate the checkboxes for
-    // the Excercises
+    // Load list with all possible Exercises. This is used to generate the checkboxes for
+    // the Exercises
     fetch('./static/data/ExerciseList_yoga.json')
         .then((response) => {
             return response.json();
@@ -58,6 +58,7 @@ $('#btn-download').css("display","block");
 // Method for generating a random workout. Checks randomly checkboxes, based
 // on the number thats provided as argument -> Number = 5, 5 random workouts
 function generateRandomWorkout(number) {
+    // Fails if not enough workouts
     // Uncheck all in case some where selected already
     for (i = 0; i < number_of_workouts; i++) {
         $("#exercise-" + i).attr("checked", false);
@@ -80,14 +81,14 @@ function generateRandomWorkout(number) {
 
 }
 
-// Uses ExcerciseList_yoga to generate the checkbox overview with all the workouts
+// Uses ExerciseList_yoga to generate the checkbox overview with all the workouts
 // For each category the view is generated and then appended to the html page
 function parseExercisesToForm(data) {
 
     // Filter for categories
-    const standing_list = data['poses'].filter(excercise => excercise.category.includes("standing"));
-    const lying_list = data['poses'].filter(excercise => excercise.category.includes("lying"));
-    const sitting_list = data['poses'].filter(excercise => excercise.category.includes("sitting"));
+    const standing_list = data['poses'].filter(exercise => exercise.category.includes("standing"));
+    const lying_list = data['poses'].filter(exercise => exercise.category.includes("lying"));
+    const sitting_list = data['poses'].filter(exercise => exercise.category.includes("sitting"));
   
     categorys = [standing_list, lying_list, sitting_list]
     $.each(categorys,function (index, category) {
@@ -125,7 +126,7 @@ function parseExercisesToForm(data) {
               '  </div>' +
               '</div>').appendTo(wrapper);
         });
-        wrapper.appendTo("#excercises-boxes");
+        wrapper.appendTo("#exercises-boxes");
     });
 }
 function getDateIn2Minutes() {
@@ -155,7 +156,7 @@ function submitcheck(element) {
         exercise_id_list.push(element.name)
     });
 
-    // If no excercise was selected
+    // If no exercise was selected
     if(exercise_id_list.length==0){
         $("#error-message").text("Please select at least one workout.");
         $("#error-message").animate({ opacity: 1 })
@@ -163,16 +164,21 @@ function submitcheck(element) {
         return false;
     }
 
+
     // Transform id list to name list for url: TODO: switch url to only use ids (makes it shorter)
     exercise_id_list.forEach(function (item) {
-        var excercise_obj = data.exercises.filter(obj => {
+        var exercise_obj = data.exercises.filter(obj => {
             return obj.id === parseInt(item)
         })[0]
-        exercise_name_list.push(excercise_obj.name)});
+        exercise_name_list.push(exercise_obj.name)});
+
 
     // Generate HTML List from exercise list for summary
-    console.log(window.data.excercises,exercise_id_list);
+    console.log(window.data.exercises,exercise_id_list);
+
+    // Change WorkoutOverview to YogaOverview ?
     var overview = generateWorkoutOverview(window.data,exercise_id_list);
+    // var overview = generateYogaOverview(exercise_id_list);
 
     $('.modal-body').empty();
     $('.modal-body').append("<h5>Summary</h5>");
@@ -222,9 +228,9 @@ function createModal
     $('.modal').modal();
 
     //Add link to created workout to button and clipboard
-    $('#btn-go-to-workout').attr("href", "workout.html?"+url_parameters);
+    $('#btn-go-to-workout').attr("href", "yoga.html?"+url_parameters);
     var clipboard = new ClipboardJS('.clipboard-button');
-    document.getElementById('next-0-link').value = window.location.hostname+"/workout.html?"+url_parameters;
+    document.getElementById('next-0-link').value = window.location.hostname+"/yoga.html?"+url_parameters;
 
 }
 
@@ -240,7 +246,7 @@ function serializeLayout() {
   let cellIdIndexArray = [];
   for (let i = 0; i < cells.length; i++) {
       let cellId = cells[i].textContent;
-      //let excersiceId = cells[i].getAttribute('data-excercise-id');
+      //let exersiceId = cells[i].getAttribute('data-exercise-id');
       cellIdIndexArray.push(cellId);
   }
   // TODO: Update URL parameters and link based on the new order of the workouts
@@ -256,8 +262,8 @@ function downloadFile(){
         .then((response) => {
             return response.json();
         })
-        .then((excercise_json) => {
-        var generated_workout = generateWorkoutJson(duration_wo, selected_rounds, excercise_json, exercise_name_list)
+        .then((exercise_json) => {
+        var generated_workout = generateWorkoutJson(duration_wo, selected_rounds, exercise_json, exercise_name_list)
          downloadObjectAsJson(generated_workout,'workout_gen');
         });
 }
@@ -276,7 +282,7 @@ function buildUrlObject(exercise_name_list){
 
     //create object for the url
     var url_builder_obj = {}
-    url_builder_obj["excercises"] = JSON.stringify(exercise_name_list)
+    url_builder_obj["exercises"] = JSON.stringify(exercise_name_list)
     var selected = dayjs(selected_date.toString())
 
     // Check if selected date is over. If so, take now and add 2 minutes for starting time
