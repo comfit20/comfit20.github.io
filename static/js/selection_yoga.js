@@ -1,7 +1,6 @@
 var number_of_workouts = 0;
 
 $(document).ready(function () {
-<<<<<<< HEAD
     var searchParams = new URLSearchParams(window.location.search)
     if(searchParams.has('download')){
 $('#btn-download').css("display","block");
@@ -14,11 +13,6 @@ $('#btn-download').css("display","block");
     //Create default time for the datetimepicker to set -> now plus 2 minutes
     var now_in_2 = new Date(getDateIn2Minutes());
 
-=======
-    // Initialize tooltip that is shown when hovering over the copy button
-    $('.clipboard-button').tooltip()
-
->>>>>>> ddef6d640cf6ec9b6d18544a1f97219ff9ae9702
     // Initialize datepicker object
     $('#datetimepicker1').datetimepicker({
         // format: 'YYYY/MM/DD'
@@ -42,20 +36,12 @@ $('#btn-download').css("display","block");
 
     // Load list with all possible Excercises. This is used to generate the checkboxes for
     // the Excercises
-<<<<<<< HEAD
     fetch('./static/data/ExerciseList_yoga.json')
-=======
-    fetch('./static/data/ExerciseList.json')
->>>>>>> ddef6d640cf6ec9b6d18544a1f97219ff9ae9702
         .then((response) => {
             return response.json();
         })
         .then((data) => {
-<<<<<<< HEAD
             number_of_workouts = data['poses'].length
-=======
-            number_of_workouts = data['exercises'].length
->>>>>>> ddef6d640cf6ec9b6d18544a1f97219ff9ae9702
             //Make data global available so we can use it in the methods below
             window.data = data
 
@@ -94,29 +80,16 @@ function generateRandomWorkout(number) {
 
 }
 
-<<<<<<< HEAD
 // Uses ExcerciseList_yoga to generate the checkbox overview with all the workouts
-=======
-// Uses ExcerciseList to generate the checkbox overview with all the workouts
->>>>>>> ddef6d640cf6ec9b6d18544a1f97219ff9ae9702
 // For each category the view is generated and then appended to the html page
 function parseExercisesToForm(data) {
 
     // Filter for categories
-<<<<<<< HEAD
     const standing_list = data['poses'].filter(excercise => excercise.category.includes("standing"));
     const lying_list = data['poses'].filter(excercise => excercise.category.includes("lying"));
     const sitting_list = data['poses'].filter(excercise => excercise.category.includes("sitting"));
   
     categorys = [standing_list, lying_list, sitting_list]
-=======
-    const belly_list = data['exercises'].filter(excercise => excercise.category.includes("belly"));
-    const legs_list = data['exercises'].filter(excercise => excercise.category.includes("legs"));
-    const core_list = data['exercises'].filter(excercise => excercise.category.includes("core"));
-    const arms_list = data['exercises'].filter(excercise => excercise.category.includes("arms"));
-
-    categorys = [core_list,legs_list,belly_list,arms_list]
->>>>>>> ddef6d640cf6ec9b6d18544a1f97219ff9ae9702
     $.each(categorys,function (index, category) {
         var wrapper = $("<div class='form-row'></div>")
         $('<h2 class="col-sm-12">'+category[0].category[0]+'</h2>').appendTo(wrapper);
@@ -130,10 +103,7 @@ function parseExercisesToForm(data) {
             else if (elem.level == 'easy') {
                 difficulty_icon = 'circle" style="color:green'
             }
-<<<<<<< HEAD
             // There is an error here if there is no gif path
-=======
->>>>>>> ddef6d640cf6ec9b6d18544a1f97219ff9ae9702
             var webm_path = elem.gifpath.substr(0, elem.gifpath.lastIndexOf(".")) + ".webm";
             $('<div class="col-md-4 mb-3 input-check-exercise">' +
               '   <div class="d-flex rounded border justify-content-between align-items-center">' +
@@ -160,17 +130,12 @@ function parseExercisesToForm(data) {
 }
 function getDateIn2Minutes() {
     var now = dayjs()
-<<<<<<< HEAD
     var now_plus_2 = now.add(1,'minute'); //decreased it to 1 min
-=======
-    var now_plus_2 = now.add(2,'minute');
->>>>>>> ddef6d640cf6ec9b6d18544a1f97219ff9ae9702
     return now_plus_2;
 }
 
 // This function is called when the user presses create workout. The form gets submitted
 // And this function is called
-<<<<<<< HEAD
 var selected_rounds =null;
 var duration_wo = null;
 var duration_rest = null;
@@ -183,15 +148,6 @@ function submitcheck(element) {
     duration_rest = element[2].value;
     selected_date = element[3].value;
     selected_elements = $(element).serializeArray();
-=======
-function submitcheck(element) {
-    var selected_rounds = element[0].options[element[0].selectedIndex].value;
-    var duration_wo = element[1].value;
-    var duration_rest = element[2].value;
-    var selected_date = element[3].value;
-    console.log(selected_date)
-    var selected_elements = $(element).serializeArray();
->>>>>>> ddef6d640cf6ec9b6d18544a1f97219ff9ae9702
     shuffle(selected_elements)
     // the name property of the selected elements includes the ids of the selected elements, not the acutal name
     exercise_id_list = [];
@@ -208,10 +164,6 @@ function submitcheck(element) {
     }
 
     // Transform id list to name list for url: TODO: switch url to only use ids (makes it shorter)
-<<<<<<< HEAD
-=======
-    var exercise_name_list = []
->>>>>>> ddef6d640cf6ec9b6d18544a1f97219ff9ae9702
     exercise_id_list.forEach(function (item) {
         var excercise_obj = data.exercises.filter(obj => {
             return obj.id === parseInt(item)
@@ -228,7 +180,6 @@ function submitcheck(element) {
 
 
     //create object for the url
-<<<<<<< HEAD
     var url_builder_obj = buildUrlObject(exercise_name_list)
     createModal(url_builder_obj);
 
@@ -244,21 +195,6 @@ function submitcheck(element) {
     });
 
 
-=======
-    var url_builder_obj = {}
-    url_builder_obj["excercises"] = JSON.stringify(exercise_name_list)
-    var selected = dayjs(selected_date.toString())
-    // Check if selected date is over. If so, take now and add 2 minutes for starting time
-    if(selected.isBefore(dayjs())){
-        selected_date = getDateIn2Minutes().toLocaleString()
-    }
-    url_builder_obj["timestamp"] = selected_date
-    url_builder_obj["wo_duration"] = duration_wo
-    url_builder_obj["rest_duration"] = duration_rest
-    url_builder_obj["wo_rounds"] = selected_rounds
-
-    createModal(url_builder_obj);
->>>>>>> ddef6d640cf6ec9b6d18544a1f97219ff9ae9702
     return false;
 }
 
@@ -297,7 +233,6 @@ function uncheckForCancel(){
         $("#exercise-" + i).attr("checked", false);
     }
 }
-<<<<<<< HEAD
 
 function serializeLayout() {
   var grid = $('.grid').data('gridstrap');
@@ -356,5 +291,3 @@ function buildUrlObject(exercise_name_list){
 
     return url_builder_obj;
 }
-=======
->>>>>>> ddef6d640cf6ec9b6d18544a1f97219ff9ae9702
