@@ -12,7 +12,7 @@
     },
     {
       "id": 1,
-      "heading": "Welcome to Yoga!",
+      "heading": "Welcome to (mostly) Restorative Yoga",
       "name": "Find a comfortable seated position",
       "duration": 68,
       "gifpath": "static/movie/yoga/YogaSeat.mp4",
@@ -166,68 +166,41 @@
     {
       "id": 18,
       "heading": "",
-      "name": "Classical sun salutation with crescent",
-      "duration": 68,
+      "name": "Classical sun salutation with crescent. Then add on your favorite poses.",
+      "duration": 23,
       "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
-      "sound": "audioyoga",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 19,
       "heading": "",
-      "name": "Tree pose",
-      "duration": 74,
-      "gifpath": "static/movie/yoga/YogaTree.mp4",
+      "name": "Add on poses such as warrior I and warrior II. End in downward facing dog or child's pose.",
+      "duration": 180,
+      "gifpath": "",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 20,
       "heading": "",
-      "name": "Warrior II pose, extended side angle pose",
-      "duration": 95,
-      "gifpath": "static/movie/yoga/YogaWarriorIIExtSideAngle.mp4",
+      "name": "Classical sun salutation with crescent on the other side. Then add on your favorite poses.",
+      "duration": 23,
+      "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 21,
       "heading": "",
-      "name": "Classical sun salutation with crescent on the other side. Then on your favorite poses.",
-      "duration": 23,
-      "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
+      "name": "Repeat poses on the other side such as warrior I and warrior II. End in downward facing dog or child's pose.",
+      "duration": 240,
+      "gifpath": "",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 22,
-      "heading": "",
-      "name": "Add on poses such as warrior II, triangle, pyramid, revolved triangle! End in downward facing dog or child's pose.",
-      "duration": 240,
-      "gifpath": "",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 23,
-      "heading": "",
-      "name": "Classical sun salutation with crescent on the other side. Then on your favorite poses.",
-      "duration": 23,
-      "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 24,
-      "heading": "",
-      "name": "Repeat poses on the other side such as warrior II, triangle, pyramid, revolved triangle. End in downward facing dog or child's pose.",
-      "duration": 240,
-      "gifpath": "",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 25,
       "heading": "",
       "name": "Locust pose",
       "duration": 49,
@@ -236,7 +209,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 26,
+      "id": 23,
       "heading": "",
       "name": "Bridge",
       "duration": 153,
@@ -245,70 +218,105 @@
       "indicator": "hidden"
     },
     {
-      "id": 27,
+      "id": 24,
       "heading": "",
       "name": "Figure four right",
-      "duration": 35,
+      "duration": 60,
       "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 25,
+      "heading": "",
+      "name": "Gentle twist right",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 26,
+      "heading": "",
+      "name": "Figure four left",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 27,
+      "heading": "",
+      "name": "Gentle twist left",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 28,
       "heading": "",
-      "name": "Gentle twist right",
-      "duration": 19,
-      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "name": "Legs up the wall is a reclined version of staff pose",
+      "duration": 120,
+      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
       "sound": "audioyoga",
-      "indicator": "hidden"
-    },
+      "ind
     {
       "id": 29,
       "heading": "",
-      "name": "Figure four left",
-      "duration": 35,
-      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "name": "Pull your right knee in for half happy baby with your legs still up the wall",
+      "duration": 120,
+      "gifpath": "",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 30,
       "heading": "",
-      "name": "Gentle twist left",
-      "duration": 19,
-      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "name": "Pull your left knee in for half happy baby with your legs still up the wall",
+      "duration": 120,
+      "gifpath": "",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 31,
       "heading": "",
-      "name": "Staff pose",
-      "duration": 68,
-      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
-      "sound": null,
+      "name": "Add a hamstring stretch on your right leg with your legs still up the wall",
+      "duration": 120,
+      "gifpath": "",
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 32,
       "heading": "",
-      "name": "Wide-angle seated forward bend",
-      "duration": 114,
-      "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
-      "sound": null,
+      "name": "Add a hamstring stretch on your left leg with your legs still up the wall",
+      "duration": 120,
+      "gifpath": "",
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 33,
       "heading": "",
-      "name": "Knees to chest, squeeze!",
-      "duration": 9,
-      "gifpath": "static/movie/yoga/YogaSavasana.mp4",
+      "name": "Wide-angle seated forward bend with feet up the wall",
+      "duration": 150,
+      "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 34,
+      "heading": "",
+      "name": "Reclining Bound Angle Pose with feet up the wall",
+      "duration": 150,
+      "gifpath": "static/movie/yoga/YogaSuptaBaddhaKonasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 35,
       "heading": "",
       "name": "Relax into savasana",
       "duration": 300,
@@ -317,7 +325,16 @@
       "indicator": "hidden"
     },
     {
-      "id": 35,
+      "id": 36,
+      "heading": "",
+      "name": "You're welcome to stay here as long as you like.",
+      "duration": 42,
+      "gifpath": "static/movie/yoga/YogaComeOutOfSavasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 37,
       "heading": "Thank you for practicing with me today!",
       "name": "Namaste",
       "duration": 61,
@@ -326,9 +343,9 @@
       "indicator": "hidden"
     },
     {
-      "id": 36,
+      "id": 38,
       "heading": "",
-      "name": "Keep breathing and have a great day",
+      "name": "Enjoy the day",
       "duration": 300,
       "gifpath": "",
       "sound": null,
