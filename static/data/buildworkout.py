@@ -12,7 +12,7 @@ exerlist = exerlist['exercises']
 exercises = ['Sit Up', 'Side Hops', 'Pike Push Up' , 'Ice Skater','Pistol Squat',
  '10 Fast Feet & Push Up',  'Bear Crawl',  'Heel Touch Crunches',  'Backlunge & Kick','Static Spiderman' ]
 
-warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','High Knees']
+warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']
 
 
 
