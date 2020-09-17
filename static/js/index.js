@@ -36,18 +36,17 @@
     function createWorkoutTimeList() {
         var time_list = []
         var time_1 = getNextWeekday(1).set('h',15).set('m',32).set('s',0).set('ms',0);
-        time_list.push(time_1);
+        time_list.push(time_1); //this is Monday 8:30 am 
         var time_2 = getNextWeekday(2).set('h',1).set('m',2).set('s',0).set('ms',0);
-        time_list.push(time_2);
+        time_list.push(time_2); // this is Monday 6:00 pm
         var time_3 = getNextWeekday(3).set('h',15).set('m',32).set('s',0).set('ms',0);
-        time_list.push(time_3);
+        time_list.push(time_3); //this is Wednedsay 8:30 am
         // var time_4 = getNextWeekday(4).set('h',1).set('m',2).set('s',0).set('ms',0);
         // time_list.push(time_4);
         var time_5 = getNextWeekday(5).set('h',15).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_5);
 
-        var time_6 = getNextWeekday(5).set('h',18).set('m',35).set('s',0).set('ms',0);
-        time_list.push(time_6);
+
 
         console.log(time_list)
 
@@ -67,8 +66,10 @@
         var time_list = []
         var time_1 = getNextWeekday(4).set('h',01).set('m',02).set('s',0).set('ms',0);
         time_list.push(time_1);
-        var time_2 = getNextWeekday(5).set('h',18).set('m',35).set('s',0).set('ms',0);
+        var time_2 = getNextWeekday(3).set('h',22).set('m',05).set('s',0).set('ms',0);
         time_list.push(time_2);
+        // var time_2 = getNextWeekday(5).set('h',18).set('m',35).set('s',0).set('ms',0);
+        // time_list.push(time_2); // this time is Friday 11:35 PST
         // Add your yoga times here (the time is in UTC
         // --> e.g. california wednesday 06:00pm is thursday 01:00 in utc)
 
@@ -133,14 +134,14 @@
     function get_workoutNo() {
         var today = dayjs().day()
         //console.log("workout No", Math.floor((Math.random() * 18) + 2))
- return Math.floor((Math.random() * 58) + 2);
+ return Math.floor((Math.random() * 65) + 2);
     }
 
     //pick random number of yoga for yoga anytime   
     function get_yogaNo() {
         var today = dayjs().day()
         //console.log("workout No", Math.floor((Math.random() * 18) + 2))
- return Math.floor((Math.random() * 5) + 1);
+ return Math.floor((Math.random() * 7) + 1);
     }
 
 
