@@ -260,7 +260,8 @@
       "duration": 120,
       "gifpath": "static/movie/yoga/YogaDandasana.mp4",
       "sound": "audioyoga",
-      "ind
+      "indicator": "hidden"
+    },
     {
       "id": 29,
       "heading": "",
