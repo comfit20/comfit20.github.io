@@ -14,6 +14,22 @@ var audio_mute = true;
 
 $(document).ready(function () {
 
+// Try to start jitsi if embedded, if not embedded (e.g. in workout.html and not workout_group.html catch exception
+//  to go on with execution of script.)
+try {
+    const domain = 'comfit.fun';
+    const options = {
+        roomName: 'Comfit_Group_Room',
+        parentNode: document.querySelector('#jitsi')
+    };
+    const api = new JitsiMeetExternalAPI(domain, options);
+    api.executeCommand('toggleTileView'); // Set tileview by default
+}
+catch (e) {
+   // Exception caught. Happens in workout.html since script is not embedded.
+   console.log(e); // Fehler-Objekt an die Error-Funktion geben
+}
+
     calcOffset();
 });
 
