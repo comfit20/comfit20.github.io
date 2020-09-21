@@ -23,7 +23,19 @@ try {
         parentNode: document.querySelector('#jitsi')
     };
     const api = new JitsiMeetExternalAPI(domain, options);
-    api.executeCommand('toggleTileView'); // Set tileview by default
+      // Make tileview default: From https://github.com/jitsi/jitsi-meet/issues/5764
+      api.addEventListener(`videoConferenceJoined`, () => {
+    const listener = ({ enabled }) => {
+      api.removeEventListener(`tileViewChanged`, listener);
+
+      if (!enabled) {
+        api.executeCommand(`toggleTileView`);
+      }
+    };
+
+    api.addEventListener(`tileViewChanged`, listener);
+    api.executeCommand(`toggleTileView`);
+  });
 }
 catch (e) {
    // Exception caught. Happens in workout.html since script is not embedded.
