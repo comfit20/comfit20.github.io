@@ -52,7 +52,7 @@
       "name": "Come to all fours with shoulders over wrists and hips over knees. Inhale cow, exhale cat",
       "duration": 63,
       "gifpath": "static/movie/yoga/YogaCatCow.mp4",
-      "sound": "audioyoga",
+      "sound": null,
       "indicator": "hidden"
     },
     {
@@ -115,7 +115,7 @@
       "name": "Puppy pose",
       "duration": 31,
       "gifpath": "static/movie/yoga/YogaPuppy.mp4",
-      "sound": "audioyoga",
+      "sound": null,
       "indicator": "hidden"
     },
     {
@@ -124,7 +124,7 @@
       "name": "Downward facing dog",
       "duration": 79,
       "gifpath": "static/movie/yoga/YogaDownDog.mp4",
-      "sound": "audioyoga",
+      "sound": null,
       "indicator": "hidden"
     },
     {
@@ -211,7 +211,7 @@
     {
       "id": 23,
       "heading": "",
-      "name": "Add on poses such as warrior II, triangle, pyramid, revolved triangle! End in downward facing dog or child's pose.",
+      "name": "Add on poses such as warrior II, reverse warrior II, triangle, reverse triangle! End in downward facing dog or child's pose.",
       "duration": 240,
       "gifpath": "",
       "sound": null,
@@ -229,7 +229,7 @@
     {
       "id": 25,
       "heading": "",
-      "name": "Repeat poses on the other side such as warrior II, triangle, pyramid, revolved triangle. End in downward facing dog or child's pose.",
+      "name": "Repeat poses on the other side such as warrior II, reverse warrior II, triangle, reverse triangle. End in downward facing dog or child's pose.",
       "duration": 240,
       "gifpath": "",
       "sound": null,
