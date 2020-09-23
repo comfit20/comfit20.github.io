@@ -268,7 +268,7 @@
       "name": "Bridge",
       "duration": 153,
       "gifpath": "static/movie/yoga/YogaBridge.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -313,7 +313,7 @@
       "name": "Staff pose",
       "duration": 68,
       "gifpath": "static/movie/yoga/YogaDandasana.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -322,7 +322,7 @@
       "name": "Wide-angle seated forward bend",
       "duration": 114,
       "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -331,7 +331,7 @@
       "name": "Bound angle pose or try happy baby",
       "duration": 60,
       "gifpath": "static/movie/yoga/YogaSuptaBaddhaKonasana.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
@@ -358,7 +358,7 @@
       "name": "You're welcome to stay here as long as you like.",
       "duration": 42,
       "gifpath": "static/movie/yoga/YogaComeOutOfSavasana.mp4",
-      "sound": null,
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
