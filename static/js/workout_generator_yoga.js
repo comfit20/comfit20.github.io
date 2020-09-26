@@ -1,12 +1,11 @@
 function generateWorkoutJson(duration_work,rounds,exerjson,exercises) {
     var workout = {};
 
-
         var exerlist  = exerjson['exercises'] // get array exercises from json file
 
         var applaus = 1 //random.randint(1,2)
 
-        var warmups = ['Jumping Jacks', 'Single Leg Hip Circles', 'Squat Pulses', 'Glute Bridge', '5 Shoulder Circles & Windmill', 'Burpees']
+        var warmups = []
 
 
 duration_work = parseInt(duration_work)
