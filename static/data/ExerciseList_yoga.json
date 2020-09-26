@@ -1,49 +1,60 @@
 {
-   "poses": [{
+   "exercises": [{
          "id": 1,
          "category": [
-            "standing"
+            "kneeling"
          ],
-         "name": "low lunge pose",
+         "name": "low lunge",
          "sanskrit": "anjaneyasana",
          "level": "easy",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
          "counterposes": "adho mukha svanasana, balasana, uttanasana",
-         "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
+         "gifpath": "static/movie/Yoga/YogaClassical2X.mp4"
       },
       {
          "id": 2,
          "category": [
             "standing"
          ],
-         "name": "hand to foot pose",
-         "sanskrit": "pada hastasana",
+         "name": "standing forward fold",
+         "sanskrit": "uttanasana",
          "level": "easy",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
          "counterposes": "tadasana, adho mukha svanasana, balasana, simple twists",
-         "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
+         "gifpath": "static/movie/Yoga/YogaClassicalCrescent.mp4"
       },
       {
          "id": 3,
          "category": [
-            "standing"
+            "sitting"
          ],
-         "name": "big toe pose",
-         "sanskrit": "padangusthasana",
+         "name": "child's pose",
+         "sanskrit": "balasana",
          "level": "easy",
-         "counterposes": "tadasana, adho mukha svanasana, balasana, simple twists",
-         "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
+         "prepposestoopen": "apanasana",
+         "prepposestostabilize": "",
+         "preparesfor": "utthita balasana, anahatasana, virasana, sasangasana",
+         "counterposes": "svanasana",
+         "gifpath": "static/movie/Yoga/YogaChildsPose.mp4"
       },
       {
          "id": 4,
          "category": [
-            "standing"
+            "sittinging"
          ],
-         "name": "warrior III pose",
-         "sanskrit": "virabhadrasana III",
-         "level": "middle",
+         "name": "Thread the needle",
+         "sanskrit": "parsva balasana",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
          "counterposes": "malasana, garudasana, supta baddha konasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
+         "gifpath": "static/movie/Yoga/YogaThreadTheNeedle.mp4"
       },
-
       {
          "id": 5,
          "category": [
@@ -52,20 +63,107 @@
          "name": "corpse pose",
          "sanskrit": "savasana",
          "level": "easy",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
          "counterposes": "",
          "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
       },
-
       {
          "id": 6,
          "category": [
-            "sitting"
+            "standing"
          ],
          "name": "downward facing dog pose",
          "sanskrit": "adho mukha svanasana",
-         "level": "easy",
-         "counterposes": "",
+         "level": "intermediate",
+         "prepposestoopen": "ardha uttanasana, bidalasana, uttanasana, anahatasana, urdhva hastasana arms, gomukhasana arms, garudasana arms",
+         "prepposestostabilize": "anjaneyasana, bidalasana, phalakasana, shishulasana, tadasana, uttanasana",
+         "preparesfor": "bakasana, adho mukha vrksasana, salamba sirsasanaI, salamba sirsasana II; uttanasana",
+         "counterposes": "balasana, apanasana, supta parivartanasana, viparita karani, savasana",
          "gifpath": "static/movie/Yoga/YogaDownDog.mp4"
+      },
+      {
+         "id": 7,
+         "category": [
+            "sitting"
+         ],
+         "name": "puppy pose",
+         "sanskrit": "uttana shishosana",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/Yoga/YogaPuppy.mp4"
+      },
+      {
+         "id": 8,
+         "category": [
+            "standing"
+         ],
+         "name": "crescent",
+         "sanskrit": "ashta chandrasana",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/Yoga/YogaClassicalCrescent.mp4"
+      },
+      {
+         "id": 8,
+         "category": [
+            "standing"
+         ],
+         "name": "extended side angle",
+         "sanskrit": "parsvakonasana",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/Yoga/YogaWarriorIIExtSideAngle.mp4"
+      },
+      {
+         "id": 8,
+         "category": [
+            "standing"
+         ],
+         "name": "warrior II",
+         "sanskrit": "virabhadrasana II",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/Yoga/YogaWarriorIIExtSideAngle.mp4"
+      },
+      {
+         "id": 8,
+         "category": [
+            "sitting"
+         ],
+         "name": "sitting forward fold",
+         "sanskrit": "paschimottanasana",
+         "level": "easy",
+         "prepposestoopen": "adho mukha svanasana, blasana, dandasana, janu sirsasana, supta padangusthasana",
+         "prepposestostabilize": "adho mukha svanasana, agnistambhasana, ardha uttanasana, balasana, dandasana, halasana, karnapidasana, pada hastasana, padangusthasana, parsvottanasana, prasarita padottanasana D, supta padangusthasana, upavista konasana, uttanasana",
+         "counterposes": "supta baddha konasana, apanasana, savasana",
+         "gifpath": "static/movie/Yoga/YogaDandasana.mp4"
+      },
+      {
+         "id": 8,
+         "category": [
+            "sitting"
+         ],
+         "name": "staff",
+         "sanskrit": "dandasana",
+         "level": "easy",
+         "prepposestoopen": "adho mukha svanasana, ardha uttanasana, supta padangusthasana, uttanasana",
+         "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, supta padangusthasana, uttanasana",
+         "counterposes": "apanasana, baddha konasana, supta baddha konasana, viparita karani, savasana",
+         "gifpath": "static/movie/Yoga/YogaDandasana.mp4"
       }
      
    ]

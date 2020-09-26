@@ -41,7 +41,7 @@ $('#btn-download').css("display","block");
             return response.json();
         })
         .then((data) => {
-            number_of_workouts = data['poses'].length
+            number_of_workouts = data['exercises'].length
             //Make data global available so we can use it in the methods below
             window.data = data
 
@@ -86,11 +86,12 @@ function generateRandomWorkout(number) {
 function parseExercisesToForm(data) {
 
     // Filter for categories
-    const standing_list = data['poses'].filter(exercise => exercise.category.includes("standing"));
-    const lying_list = data['poses'].filter(exercise => exercise.category.includes("lying"));
-    const sitting_list = data['poses'].filter(exercise => exercise.category.includes("sitting"));
+    const standing_list = data['exercises'].filter(exercise => exercise.category.includes("standing"));
+    const lying_list = data['exercises'].filter(exercise => exercise.category.includes("lying"));
+    const sitting_list = data['exercises'].filter(exercise => exercise.category.includes("sitting"));
+    const kneeling_list = data['exercises'].filter(exercise => exercise.category.includes("kneeling"));
   
-    categorys = [standing_list, lying_list, sitting_list]
+    categorys = [standing_list, lying_list, sitting_list, kneeling_list]
     $.each(categorys,function (index, category) {
         var wrapper = $("<div class='form-row'></div>")
         $('<h2 class="col-sm-12">'+category[0].category[0]+'</h2>').appendTo(wrapper);
@@ -98,7 +99,7 @@ function parseExercisesToForm(data) {
             difficulty_icon= 'question'
             if (elem.level == 'hard') {
                 difficulty_icon = 'square" data-fa-transform="rotate-45" style="color:black '
-            } else if (elem.level == 'middle') {
+            } else if (elem.level == 'intermediate') {
                 difficulty_icon = 'square" style="color:blue'
             }
             else if (elem.level == 'easy') {
@@ -143,6 +144,7 @@ var duration_rest = null;
 var selected_date = null;
 var selected_elements = null;
 var exercise_name_list = []
+
 function submitcheck(element) {
     selected_rounds = element[0].options[element[0].selectedIndex].value;
     duration_wo = element[1].value;
@@ -176,9 +178,7 @@ function submitcheck(element) {
     // Generate HTML List from exercise list for summary
     console.log(window.data.exercises,exercise_id_list);
 
-    // Change WorkoutOverview to YogaOverview ?
-    var overview = generateWorkoutOverview(window.data,exercise_id_list);
-    // var overview = generateYogaOverview(exercise_id_list);
+    var overview = generateYogaOverview(window.data,exercise_id_list);
 
     $('.modal-body').empty();
     $('.modal-body').append("<h5>Summary</h5>");

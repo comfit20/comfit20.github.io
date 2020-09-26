@@ -22,11 +22,11 @@ $(document).ready(function () {
 
     calcOffset()
 
-    fetch('./static/data/ExerciseList.json')
+    fetch('./static/data/ExerciseList_yoga.json')
         .then((response) => {
             return response.json();
         })
-        .then((excercise_json) => {
+        .then((yoga_json) => {
             // If workout file specified in params, then load it and build the website based on the workout file
             if (searchParams.has('workout')) {
                 console.log("from workout file")
@@ -36,26 +36,26 @@ $(document).ready(function () {
                         return response.json();
                     })
                     .then((data) => {
-                        buildSiteFromWorkoutFile(data, excercise_json)
+                        buildSiteFromWorkoutFile(data, yoga_json)
                     });
             }
 
             // If not workout file is specified, than create the workout file using the excercise json
-            if (searchParams.has('excercises')) {
-                var exercise_list = searchParams.get('excercises');
+            if (searchParams.has('exercises')) {
+                var exercise_list = searchParams.get('exercises');
 
                 var selected_duration = searchParams.get("wo_duration")
                 var selected_rounds = searchParams.get("wo_rounds")
 
-                var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, excercise_json, JSON.parse(exercise_list))
-                buildSiteFromWorkoutFile(generated_workout, excercise_json) // TODO extract
+                var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, yoga_json, JSON.parse(exercise_list))
+                buildSiteFromWorkoutFile(generated_workout, yoga_json) // TODO extract
             }
 
         });
 });
 
 
-function buildSiteFromWorkoutFile(workoutjson,excercise_json) {
+function buildSiteFromWorkoutFile(workoutjson,yoga_json) {
     let searchParams = new URLSearchParams(window.location.search)
 
     if (searchParams.has('timestamp')) {
@@ -88,7 +88,7 @@ function buildSiteFromWorkoutFile(workoutjson,excercise_json) {
     });
 
     // Crate the carousel based on the data loaded from the json
-    createCarousel(workoutjson, excercise_json);
+    createCarousel(workoutjson, yoga_json);
 
     // Start the timers for each page on the carousel
     parseResults(workoutjson);
