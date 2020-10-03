@@ -7,9 +7,6 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
     var warmups = ['Jumping Jacks', 'Single Leg Hip Circles', 'Squat Pulses', 'Glute Bridge', '5 Shoulder Circles & Windmill', 'Burpees']
 
 
-    console.log('this is input style' + typeof(style_variant))
-
-
     duration_work = parseInt(duration_work)
     rounds = parseInt(rounds)
     duration_rest = parseInt(duration_rest)
@@ -1044,47 +1041,222 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
 
 //////////////////////////////////////////// REPEAT DIFF 6 /////////////////
 
+else if (workoutstyle == 6) {
 
 
-  // ################# TIMING 4 repeats ##### workoutstyle repeat
+    var duration_work = [45, 25]
+    var duration_rest = [15, 10]
+    var duration_waterbreak = 0
+    var rounds = 4
+
+    exercises_new = []
+
+    for (i = 0; i < exercises.length; i++) {
+        exercises_new.push(exercises[i])
+        exercises_new.push(exercises[i])
+        exercises_new.push(exercises[i])
+        exercises_new.push(exercises[i])
+    }
+    var arrayelements = [{
+            "id": 0,
+            "heading": "Wait for Group Session",
+            "name": "Session will start soon",
+            "duration": 12,
+            "gifpath": "static/movie/waitnextworkout.mp4",
+            "sound": null,
+            "indicator": "hidden"
+        },
+        {
+            "id": 1,
+            "heading": "Workout Timing:",
+            "name": ["workout style: regular", exercises.length + " exercises", duration_work + " sec work", duration_rest + " sec rest", rounds + " rounds"],
+            // str(duration_rest)+ " sec arms", str(rounds)+" rounds"]
+            "duration": 10,
+            "gifpath": "",
+            "sound": null,
+            "indicator": "hidden"
+        }
+    ]
+
+    /// intro workout
+    var n = 2
+    var i;
+    for (i = 0; i < exercises.length; i++) {
+
+        exer_index = exerlist.map(function(e) {
+            return e.name;
+        }).indexOf(exercises[i]);
+        exer_elem = exerlist[exer_index]
+
+
+        wo1 = {
+            "id": n,
+            "heading": "Introduction to exercises",
+            "name": exer_elem['name'],
+            // exer_elem['name'],
+            "duration": 10,
+            "gifpath": exer_elem['gifpath'],
+            "sound": null,
+            "indicator": "hidden"
+        }
+
+        arrayelements.push(wo1)
+
+        n = n + 1
+    }
+
+    getreadywu = {
+        "id": n,
+        "heading": "Get Ready to Warm Up",
+        "name": " Let's go !!!!! ",
+        "duration": 10,
+        "gifpath": "static/movie/getready.mp4",
+        "sound": null,
+        "indicator": "hidden"
+    }
+
+    arrayelements.push(getreadywu)
+
+    n = n + 1
+
+
+    //warm up
+    var i;
+    for (i = 0; i < warmups.length; i++) {
+        var exer_index = exerlist.map(function(e) {
+            return e.name;
+        }).indexOf(warmups[i]);
+        var exer_elem = exerlist[exer_index]
+
+        wu = {
+            "id": n,
+            "heading": "Warm Up",
+            "name": exer_elem['name'],
+            "duration": duration_warmup,
+            "gifpath": exer_elem['gifpath'],
+            "sound": 'audiowork',
+            "indicator": "hidden"
+        }
+
+        arrayelements.push(wu)
+
+        n = n + 1
+    }
+
+
+    getreadywork = {
+        "id": n,
+        "heading": "Get Ready to Work Out",
+        "name": " Let's go: " + exercises[0],
+        "duration": 5,
+        "gifpath": "static/movie/GetReadyToWorkout.mp4",
+        "sound": 'audiorest',
+        "indicator": "hidden"
+    }
+
+    arrayelements.push(getreadywork)
+
+    n = n + 1
+
+    /////////////////////  TIMING REGULAR 4 REPEATS       /////////////////////
+
+
+    var gifpath_next = []
+
+    for (i = 0; i < exercises_new.length; i++) {
+        var exer_index_next = exerlist.map(function(e) {
+            return e.name;
+        }).indexOf(exercises_new[i]);
+        var exer_elem_next = exerlist[exer_index_next]
+        gifpath_next.push(exer_elem_next['gifpath'])
+    }
+
+
+    var i;
+    for (i = 0; i < exercises_new.length; i++) {
+        var exer_index = exerlist.map(function(e) {
+            return e.name;
+        }).indexOf(exercises_new[i]);
+        var exer_elem = exerlist[exer_index]
+
+
+        if (i % 2 == 0) {
+            wo1 = {
+                "id": n,
+                "heading": "Work",
+                "name": exer_elem['name'],
+                "duration": duration_work[0],
+                "gifpath": exer_elem['gifpath'],
+                "sound": 'audiowork',
+                "indicator": "exer_visible"
+            }
+
+            arrayelements.push(wo1)
 
 
 
+            if (i < exercises_new.length - 1) {
+                rest = {
+                    "id": n + 1,
+                    "heading": "Rest",
+                    "name": "Up Next",
+                    "duration": duration_rest[0],
+                    "gifpath": gifpath_next[i + 1],
+                    "sound": 'audiorest',
+                    "indicator": "hidden"
+                }
 
-  // n = n-1
-  // #print(n)
+                arrayelements.push(rest)
 
-  // finished = {
-  //     "id": n,
-  //     "heading": "Congrats You Finished",
-  //     "name": " Well Done !!!!! ",
-  //     "duration": 20,
-  //     "gifpath": "static/movie/Applause"+str(applaus)+".mp4",
-  //     "sound": 'audiofinish',
-  //     "indicator": "hidden"  
-  //   }
+            }
+        } else {
+            wo1 = {
+                "id": n,
+                "heading": "Work",
+                "name": exer_elem['name'],
+                "duration": duration_work[1],
+                "gifpath": exer_elem['gifpath'],
+                "sound": 'audiowork',
+                "indicator": "exer_visible"
+            }
 
-  // arrayelements.append(dict(finished))
+            arrayelements.push(wo1)
 
 
 
+            if (i < exercises_new.length - 1) {
+                rest = {
+                    "id": n + 1,
+                    "heading": "Rest",
+                    "name": "Up Next",
+                    "duration": duration_rest[1],
+                    "gifpath": gifpath_next[i + 1],
+                    "sound": 'audiorest',
+                    "indicator": "hidden"
+                }
 
-    
+                arrayelements.push(rest)
+            }
+        }
 
-//   n = n-1
-//   #print(n)
 
-//   finished = {
-//         "id": n,
-//         "heading": "Congrats You Finished",
-//         "name": " Well Done !!!!! ",
-//         "duration": 20,
-//         "gifpath": "static/movie/Applause"+str(applaus)+".mp4",
-//         "sound": 'audiofinish',
-//         "indicator": "hidden"  
-//       }
+        n = n + 2
+    } // for loop to build exercise
 
-//   arrayelements.append(dict(finished))
+    n = n - 1
+
+    finished = {
+        "id": n,
+        "heading": "Congrats You Finished",
+        "name": " Well Done !!!!! ",
+        "duration": 20,
+        "gifpath": "static/movie/Applause1.mp4", //+str(applaus)+".mp4",
+        "sound": 'audiofinish',
+        "indicator": "hidden"
+    }
+
+    arrayelements.push(finished)
+} // closing brackets for style repeat iso
 
 
 
