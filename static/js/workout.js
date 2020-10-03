@@ -85,10 +85,9 @@ skip_intro= true;
                 var selected_duration = searchParams.get("wo_duration")
                 var selected_rounds = searchParams.get("wo_rounds")
                 var selected_rest = searchParams.get("rest_duration")
+                var selected_style = searchParams.get("wo_style")
                
-
-
-                var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, excercise_json, JSON.parse(exercise_list),selected_rest)
+                var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, excercise_json, JSON.parse(exercise_list),selected_rest,selected_style)
                 buildSiteFromWorkoutFile(generated_workout, excercise_json,skip_intro) // TODO extract
             }
 

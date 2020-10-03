@@ -1,18 +1,21 @@
-function generateWorkoutJson(duration_work,rounds,exerjson,exercises,duration_rest) {
+function generateWorkoutJson(duration_work,rounds,exerjson,exercises,duration_rest, style_variant) {
     var workout = {};
 
-        var exerlist  = exerjson['exercises'] // get array exercises from json file
-        var applaus = 1 //random.randint(1,2)
+    var exerlist  = exerjson['exercises'] // get array exercises from json file
+    var applaus = 1 //random.randint(1,2)
 
-        var warmups = ['Jumping Jacks', 'Single Leg Hip Circles', 'Squat Pulses', 'Glute Bridge', '5 Shoulder Circles & Windmill', 'Burpees']
+    var warmups = ['Jumping Jacks', 'Single Leg Hip Circles', 'Squat Pulses', 'Glute Bridge', '5 Shoulder Circles & Windmill', 'Burpees']
 
 
-// var duration_rest = 10
+    console.log('this is input style'+typeof(style_variant))
+    duration_work = parseInt(duration_work)
+    rounds = parseInt(rounds)
+    duration_rest = parseInt(duration_rest)
+    var workoutstyle = 'regular' 
 
-duration_work = parseInt(duration_work)
-rounds = parseInt(rounds)
-duration_rest = parseInt(duration_rest)
-console.log('thats the rest time'+ duration_rest)
+    console.log('thats the rest time'+ duration_rest)
+    console.log(workoutstyle)
+
 
 //rounds = 3
 
@@ -24,6 +27,8 @@ console.log('thats the rest time'+ duration_rest)
 //   repeat_iso 10 exercise 3*45 no water break
 //   repeat_diff erenttimes 10 exercise 45 + 25 + 45 + 25 (1400); no water break
 
+    if (workoutstyle = 'regular' ) {
+        console.log('this is regular')
 
         var duration_warmup = 25
         // var duration_rest = 10
@@ -225,6 +230,8 @@ console.log('thats the rest time'+ duration_rest)
         }
 
         arrayelements.push(finished)
+    }
+     //  this is the end of workout style regular
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
