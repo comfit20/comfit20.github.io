@@ -162,8 +162,8 @@ function submitcheck(element) {
     duration_rest = element[2].value;
     selected_date = element[3].value;
     selected_elements = $(element).serializeArray();
-    selected_style = element[4].value;
-
+    selected_style = element[10].value;
+    console.log('element',selected_style)
     console.log('this is element'+element.html)
     shuffle(selected_elements)
     // the name property of the selected elements includes the ids of the selected elements, not the acutal name

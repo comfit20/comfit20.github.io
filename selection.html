@@ -14,6 +14,7 @@
 
         gtag('config', 'UA-167369005-1');
 
+
     </script>
 
 
@@ -128,7 +129,8 @@
                                                    placeholder="10" value="10">
                                         </div>
                                     </div>
-                                    <label for="datetimepicker1" class="col-form-label h4"><h5>Date and time</h5></label>
+                                    <label for="datetimepicker1" class="col-form-label h4"><h5>Date and time</h5>
+                                    </label>
                                     <div class="form-group">
                                         <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
                                             <input class="form-control datetimepicker-input selection-input"
@@ -171,39 +173,17 @@
                                     <!-- include new dropdown menu for selecting workout style -->
                                     <div class="row justify-content-center m-3">
                                         <h5 class="">Workout style</h5>
-                                        <div class="dropdown">
-                                            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button"
-                                                    id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                style
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                                <button class="btn-sm dropdown-item" type="button"
-                                                        onclick="generateWorkoutStyle('regular')"> regular
-                                                </button>
-                                                <button class="btn-sm dropdown-item" type="button"
-                                                        onclick="generateWorkoutStyle('decrease')"> decrease
-                                                </button>
-                                                <button class="btn-sm dropdown-item" type="button"
-                                                        onclick="generateWorkoutStyle('increase')"> increase
-                                                </button>
-                                                 <button class="btn-sm dropdown-item" type="button"
-                                                        onclick="generateWorkoutStyle('up_and_down')"> up_and_down
-                                                </button>
-                                                <button class="btn-sm dropdown-item" type="button"
-                                                        onclick="generateWorkoutStyle('repeat_iso')"> repeat_iso
-                                                </button>
-                                                <button class="btn-sm dropdown-item" type="button"
-                                                        onclick="generateWorkoutStyle('repeat_diff')"> repeat_diff
-                                                </button>
-                                            </div>
-                                        </div>
+      <select class="browser-default custom-select">
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
                                     </div>
 
 
                                     <div class="row">
                                         <div class="col-sm">
-                                            <div class="d-flex justify-content-around align-items-center">
+                                            <div class="d-flex align-items-center">
                                                 easy <i class="fa fa-fw fa-circle" style="color:green;"></i>
                                             </div>
                                         </div>
@@ -228,16 +208,16 @@
                                     </div>
                                 </form>
                             </div>
-                                              <div id="preset" class="tab-pane show card-body" role="tabpanel"
-                                                   style="background-color: #555;">
+                            <div id="preset" class="tab-pane show card-body" role="tabpanel"
+                                 style="background-color: #555;">
 
-                                                  <div>
-                                                      <h4 class="col-sm-6"> Coming Soon </h4>
+                                <div>
+                                    <h4 class="col-sm-6"> Coming Soon </h4>
 
-                                                      <div id='wo-container' class="col-sm-6"></div>
-                                                  </div>
+                                    <div id='wo-container' class="col-sm-6"></div>
+                                </div>
 
-                                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
