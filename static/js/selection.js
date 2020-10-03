@@ -81,15 +81,15 @@ function generateRandomWorkout(number) {
 
 }
 
-var test_style = ''
-function generateWorkoutStyle(style_variant) {
-    console.log('this is the style_variant'+ typeof(style_variant))
-    console.log('this is the style_variant'+ style_variant)
-   test_style = style_variant
+// var test_style = ''
+// function generateWorkoutStyle(style_variant) {
+//     console.log('this is the style_variant'+ typeof(style_variant))
+//     console.log('this is the style_variant'+ style_variant)
+//    test_style = style_variant
 
-}
+// }
 
-console.log('this is test'+ test_style)
+
 // Uses ExcerciseList to generate the checkbox overview with all the workouts
 // For each category the view is generated and then appended to the html page
 function parseExercisesToForm(data) {
@@ -164,7 +164,6 @@ function submitcheck(element) {
     selected_elements = $(element).serializeArray();
     selected_style = element[10].value;
     console.log('element',selected_style)
-    console.log('this is element'+element.html)
     shuffle(selected_elements)
     // the name property of the selected elements includes the ids of the selected elements, not the acutal name
     exercise_id_list = [];
