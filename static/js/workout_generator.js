@@ -7,6 +7,9 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
     var warmups = ['Jumping Jacks', 'Single Leg Hip Circles', 'Squat Pulses', 'Glute Bridge', '5 Shoulder Circles & Windmill', 'Burpees']
 
 
+    console.log('this is input style' + typeof(style_variant))
+
+
     duration_work = parseInt(duration_work)
     rounds = parseInt(rounds)
     duration_rest = parseInt(duration_rest)
@@ -878,7 +881,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
         {
             "id": 1,
             "heading": "Workout Timing:",
-            "name": ["workout style: regular", exercises.length + " exercises", rounds + '*'+ duration_work + " sec work", duration_rest + " sec rest", rounds + " rounds"],
+            "name": ["workout style: repeat iso", exercises.length + " exercises", rounds + '*'+ duration_work + " sec work", duration_rest + " sec rest", rounds + " rounds"],
             // str(duration_rest)+ " sec arms", str(rounds)+" rounds"]
             "duration": 10,
             "gifpath": "",
@@ -1069,7 +1072,7 @@ else if (workoutstyle == 6) {
         {
             "id": 1,
             "heading": "Workout Timing:",
-            "name": ["workout style: regular", exercises.length + " exercises", duration_work + " sec work", duration_rest + " sec rest", rounds + " rounds"],
+            "name": ["workout style: repeat diff", exercises.length + " exercises", duration_work + " sec work", duration_rest + " sec rest", rounds + " rounds"],
             // str(duration_rest)+ " sec arms", str(rounds)+" rounds"]
             "duration": 10,
             "gifpath": "",
