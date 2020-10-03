@@ -1,4 +1,4 @@
-function generateWorkoutJson(duration_work,rounds,exerjson,exercises) {
+function generateWorkoutJson(duration_work,rounds,exerjson,exercises,duration_rest) {
     var workout = {};
 
         var exerlist  = exerjson['exercises'] // get array exercises from json file
@@ -7,8 +7,12 @@ function generateWorkoutJson(duration_work,rounds,exerjson,exercises) {
         var warmups = ['Jumping Jacks', 'Single Leg Hip Circles', 'Squat Pulses', 'Glute Bridge', '5 Shoulder Circles & Windmill', 'Burpees']
 
 
+// var duration_rest = 10
+
 duration_work = parseInt(duration_work)
 rounds = parseInt(rounds)
+duration_rest = parseInt(duration_rest)
+console.log('thats the rest time'+ duration_rest)
 
 //rounds = 3
 
@@ -22,7 +26,7 @@ rounds = parseInt(rounds)
 
 
         var duration_warmup = 25
-        var duration_rest = 10
+        // var duration_rest = 10
         var duration_waterbreak = 35
 
 

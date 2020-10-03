@@ -43,7 +43,7 @@ try {
 }
 catch (e) {
    // Exception caught. Happens in workout.html since script is not embedded.
-   console.log(e); // Fehler-Objekt an die Error-Funktion geben
+   // console.log(e); // Fehler-Objekt an die Error-Funktion geben
 }
 
     calcOffset();
@@ -67,7 +67,7 @@ skip_intro= true;
         .then((excercise_json) => {
             // If workout file specified in params, then load it and build the website based on the workout file
             if (searchParams.has('workout')) {
-                console.log("from workout file")
+                // console.log("from workout file")
                 workoutFile = searchParams.get('workout');
                 fetch('./static/data/' + workoutFile)
                     .then((response) => {
@@ -84,8 +84,11 @@ skip_intro= true;
                 var exercise_list = searchParams.get('excercises');
                 var selected_duration = searchParams.get("wo_duration")
                 var selected_rounds = searchParams.get("wo_rounds")
+                var selected_rest = searchParams.get("rest_duration")
+               
 
-                var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, excercise_json, JSON.parse(exercise_list))
+
+                var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, excercise_json, JSON.parse(exercise_list),selected_rest)
                 buildSiteFromWorkoutFile(generated_workout, excercise_json,skip_intro) // TODO extract
             }
 
@@ -154,10 +157,10 @@ function buildSiteFromWorkoutFile(workoutjson,excercise_json,skip) {
 function createCarousel(data, excercise_json) { // todo: better name for data e.g. workout_json
     var expired_count = 0;
     $.each(data['elements'], function (index, elem) {
-        console.log('if',dayjs(elem.timeStamp))
-        console.log('is before',dayjs(getServerTime()),'then expired')
+        // console.log('if',dayjs(elem.timeStamp))
+        // console.log('is before',dayjs(getServerTime()),'then expired')
         if (dayjs(elem.timeStamp).isBefore(dayjs(getServerTime()))) {
-            console.log("expired", elem.id)
+            // console.log("expired", elem.id)
             elem.expired = true;
             expired_count = expired_count + 1;
             return;
@@ -289,7 +292,7 @@ function startJqueryTimer(startTime) {
     } else {
         $(".carousel-indicators").css("opacity", "100%");
     }
-    console.log("Offset", offset)
+    // console.log("Offset", offset)
     timer_gui.countdown({
         until: new Date(element['timeStamp']),
         compact: true, format: 'dhMS',
@@ -346,8 +349,8 @@ function calcOffset(dateStr) {
             if (date) {
                 offset = dayjs(Date.now()).diff(dayjs(date).add(duration, 'ms'))
             }
-            console.log("Offset Server->local " + offset)
-            console.log("Request duration: ", duration)
+            // console.log("Offset Server->local " + offset)
+            // console.log("Request duration: ", duration)
             startSiteBuilding();
         });
 
@@ -358,7 +361,7 @@ function calcOffset(dateStr) {
 function getServerTime() {
     var date = new Date();
     date.setTime(date.getTime() - offset);
-    console.log("Offset local -> server " + offset)
+    // console.log("Offset local -> server " + offset)
     return date;
 }
 
