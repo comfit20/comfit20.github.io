@@ -40,15 +40,19 @@ $(document).ready(function () {
                     });
             }
 
+
             // If not workout file is specified, than create the workout file using the exercise json
             if (searchParams.has('exercises')) {
                 console.log("from URL")
+
                 var exercise_list = searchParams.get('exercises');
 
                 var selected_duration = searchParams.get("wo_duration")
                 var selected_rounds = searchParams.get("wo_rounds")
 
+
                 var generated_workout = generateWorkoutJson(selected_duration, yoga_json, JSON.parse(exercise_list))
+
                 buildSiteFromWorkoutFile(generated_workout, yoga_json) // TODO extract
             }
 

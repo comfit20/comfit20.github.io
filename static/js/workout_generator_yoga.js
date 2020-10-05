@@ -1,4 +1,3 @@
-
 // To do:
 // Add first half of yoga1.json as warmup (through sphinx pose) 
 // - Other warmup exercises need to be added to ExerciseList
@@ -154,14 +153,9 @@ function generateWorkoutJson(duration_work, exerjson, exercises) {
         n = n + 1
     }
 
-
-//////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
-
     workout = {"startTime": "now", "elements": arrayelements}
 
     return workout;
-
 };
 
 

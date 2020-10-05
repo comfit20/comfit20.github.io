@@ -113,6 +113,7 @@
       },
       {
          "id": 9,
+
          "category": [
             "standing"
          ],
@@ -127,6 +128,7 @@
       },
       {
          "id": 10,
+
          "category": [
             "standing"
          ],
@@ -140,7 +142,9 @@
          "gifpath": "static/movie/Yoga/YogaWarriorIIExtSideAngle.mp4"
       },
       {
+
          "id": 11,
+
          "category": [
             "sitting"
          ],
@@ -153,7 +157,9 @@
          "gifpath": "static/movie/Yoga/YogaDandasana.mp4"
       },
       {
+
          "id": 12,
+
          "category": [
             "sitting"
          ],

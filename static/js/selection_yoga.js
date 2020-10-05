@@ -13,10 +13,6 @@ $('#btn-download').css("display","block");
     //Create default time for the datetimepicker to set -> now plus 2 minutes
     var now_in_2 = new Date(getDateIn2Minutes());
 
-
-    // Initialize tooltip that is shown when hovering over the copy button
-    $('.clipboard-button').tooltip()
-
     // Initialize datepicker object
     $('#datetimepicker1').datetimepicker({
         // format: 'YYYY/MM/DD'
@@ -47,16 +43,16 @@ $('#btn-download').css("display","block");
         .then((data) => {
             number_of_workouts = data['exercises'].length
 
-            //Make data global available so we can use it in the methods below
-            window.data = data
+        //Make data global available so we can use it in the methods below
+        window.data = data
 
-            // Generate the selection
-            parseExercisesToForm(data);
+        // Generate the selection
+        parseExercisesToForm(data);
 
-           // Once page is build, show it and hide spinner which is used as placeholder while loading
-            $("#wait-spinner").css("visibility","hidden");
-            $("#main-content").css("visibility","visible");
-        });
+       // Once page is build, show it and hide spinner which is used as placeholder while loading
+        $("#wait-spinner").css("visibility","hidden");
+        $("#main-content").css("visibility","visible");
+    });
 
 });
 
@@ -85,7 +81,6 @@ function generateRandomWorkout(number) {
     }
 
 }
-
 
 // Uses ExerciseList_yoga to generate the checkbox overview with all the workouts
 
@@ -148,6 +143,7 @@ function getDateIn2Minutes() {
 
 // This function is called when the user presses create workout. The form gets submitted
 // And this function is called
+
 // var selected_rounds =null;
 // var duration_wo = null;
 // var duration_rest = null;
@@ -179,6 +175,7 @@ function submitcheck(element) {
 
 
     // Transform id list to name list for url: TODO: switch url to only use ids (makes it shorter)
+
 
     var exercise_name_list = []
 
@@ -286,6 +283,7 @@ function serializeLayout() {
 };
 
 function downloadFile(){
+
     // Redundant with submitcheck for now.  I'm surpised this works -Aaron
 
     var exercise_name_list = []
@@ -304,6 +302,7 @@ function downloadFile(){
     var generated_workout = generateWorkoutJson(duration_wo, exercise_json, exercise_name_list)
      downloadObjectAsJson(generated_workout,'workout_gen');
     });
+
 }
 
   function downloadObjectAsJson(exportObj, exportName){
@@ -330,6 +329,7 @@ function buildUrlObject(exercise_name_list){
     console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!',selected.toString())
     url_builder_obj["timestamp"] = selected_date
     url_builder_obj["wo_duration"] = duration_wo
+
     // url_builder_obj["rest_duration"] = duration_rest
     // url_builder_obj["wo_rounds"] = selected_rounds
 
