@@ -15,9 +15,9 @@ var audio_mute = true;
 
 
 $(document).ready(function () {
-    //Get workoutfile from URL, if not there take workout1.json as default
+    //Get workoutfile from URL, if not there take yoga1.json as default
     // If workoutfile is specified, load it from the file
-    var workoutFile = "workout1.json";
+    var workoutFile = "yoga1.json";
     var searchParams = new URLSearchParams(window.location.search)
 
     calcOffset()
@@ -40,14 +40,15 @@ $(document).ready(function () {
                     });
             }
 
-            // If not workout file is specified, than create the workout file using the excercise json
+            // If not workout file is specified, than create the workout file using the exercise json
             if (searchParams.has('exercises')) {
+                console.log("from URL")
                 var exercise_list = searchParams.get('exercises');
 
                 var selected_duration = searchParams.get("wo_duration")
                 var selected_rounds = searchParams.get("wo_rounds")
 
-                var generated_workout = generateWorkoutJson(selected_duration, selected_rounds, yoga_json, JSON.parse(exercise_list))
+                var generated_workout = generateWorkoutJson(selected_duration, yoga_json, JSON.parse(exercise_list))
                 buildSiteFromWorkoutFile(generated_workout, yoga_json) // TODO extract
             }
 
@@ -99,7 +100,7 @@ function buildSiteFromWorkoutFile(workoutjson,yoga_json) {
 
 }
 
-function createCarousel(data, excercise_json) { // todo: better name for data e.g. workout_json
+function createCarousel(data, exercise_json) { // todo: better name for data e.g. workout_json
     var expired_count = 0;
 
     $.each(data['elements'], function (index, elem) {

@@ -87,7 +87,7 @@ function generateRandomWorkout(number) {
 }
 
 
-// Uses ExcerciseList_yoga to generate the checkbox overview with all the workouts
+// Uses ExerciseList_yoga to generate the checkbox overview with all the workouts
 
 // For each category the view is generated and then appended to the html page
 function parseExercisesToForm(data) {
@@ -148,18 +148,18 @@ function getDateIn2Minutes() {
 
 // This function is called when the user presses create workout. The form gets submitted
 // And this function is called
-var selected_rounds =null;
-var duration_wo = null;
-var duration_rest = null;
-var selected_date = null;
-var selected_elements = null;
-var exercise_name_list = []
+// var selected_rounds =null;
+// var duration_wo = null;
+// var duration_rest = null;
+// var selected_date = null;
+// var selected_elements = null;
+// var exercise_name_list = []
 
 function submitcheck(element) {
-    selected_rounds = element[0].options[element[0].selectedIndex].value;
-    duration_wo = element[1].value;
-    duration_rest = element[2].value;
-    selected_date = element[3].value;
+    // selected_rounds = element[0].options[element[0].selectedIndex].value;
+    duration_wo = element[0].value;
+    // duration_rest = element[2].value;
+    selected_date = element[1].value;
     selected_elements = $(element).serializeArray();
 
     shuffle(selected_elements)
@@ -217,7 +217,7 @@ function submitcheck(element) {
 
 
     var url_builder_obj = {}
-    url_builder_obj["excercises"] = JSON.stringify(exercise_name_list)
+    url_builder_obj["exercises"] = JSON.stringify(exercise_name_list)
     var selected = dayjs(selected_date.toString())
     // Check if selected date is over. If so, take now and add 2 minutes for starting time
     if(selected.isBefore(dayjs())){
@@ -225,8 +225,8 @@ function submitcheck(element) {
     }
     url_builder_obj["timestamp"] = selected_date
     url_builder_obj["wo_duration"] = duration_wo
-    url_builder_obj["rest_duration"] = duration_rest
-    url_builder_obj["wo_rounds"] = selected_rounds
+    // url_builder_obj["rest_duration"] = duration_rest
+    // url_builder_obj["wo_rounds"] = selected_rounds
 
     createModal(url_builder_obj);
 
@@ -286,15 +286,24 @@ function serializeLayout() {
 };
 
 function downloadFile(){
+    // Redundant with submitcheck for now.  I'm surpised this works -Aaron
 
-        fetch('./static/data/ExerciseList_yoga.json')
-        .then((response) => {
-            return response.json();
-        })
-        .then((exercise_json) => {
-        var generated_workout = generateWorkoutJson(duration_wo, selected_rounds, exercise_json, exercise_name_list)
-         downloadObjectAsJson(generated_workout,'workout_gen');
-        });
+    var exercise_name_list = []
+
+    exercise_id_list.forEach(function (item) {
+        var exercise_obj = data.exercises.filter(obj => {
+            return obj.id === parseInt(item)
+        })[0]
+        exercise_name_list.push(exercise_obj.name)});
+
+    fetch('./static/data/ExerciseList_yoga.json')
+    .then((response) => {
+        return response.json();
+    })
+    .then((exercise_json) => {
+    var generated_workout = generateWorkoutJson(duration_wo, exercise_json, exercise_name_list)
+     downloadObjectAsJson(generated_workout,'workout_gen');
+    });
 }
 
   function downloadObjectAsJson(exportObj, exportName){
@@ -321,8 +330,8 @@ function buildUrlObject(exercise_name_list){
     console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!',selected.toString())
     url_builder_obj["timestamp"] = selected_date
     url_builder_obj["wo_duration"] = duration_wo
-    url_builder_obj["rest_duration"] = duration_rest
-    url_builder_obj["wo_rounds"] = selected_rounds
+    // url_builder_obj["rest_duration"] = duration_rest
+    // url_builder_obj["wo_rounds"] = selected_rounds
 
     return url_builder_obj;
 }
