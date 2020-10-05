@@ -1,3 +1,21 @@
+
+// To do:
+// Add first half of yoga1.json as warmup (through sphinx pose)
+// Then selected poses
+// The from figure four left at end
+// Try to save json file from share workout
+
+// allow multiple selections?
+// Have preferences in custom pane, create random yoga class
+// Remove rounds of exercises
+// Change duration in share your workout
+// Make links to older classes available (preset)
+
+// Name workouts
+// Rebase with main branch
+
+// Merge in 2 weeks
+
 function generateWorkoutJson(duration_work,rounds,exerjson,exercises) {
     var workout = {};
 

@@ -112,7 +112,7 @@
          "gifpath": "static/movie/Yoga/YogaClassicalCrescent.mp4"
       },
       {
-         "id": 8,
+         "id": 9,
          "category": [
             "standing"
          ],
@@ -126,7 +126,7 @@
          "gifpath": "static/movie/Yoga/YogaWarriorIIExtSideAngle.mp4"
       },
       {
-         "id": 8,
+         "id": 10,
          "category": [
             "standing"
          ],
@@ -140,7 +140,7 @@
          "gifpath": "static/movie/Yoga/YogaWarriorIIExtSideAngle.mp4"
       },
       {
-         "id": 8,
+         "id": 11,
          "category": [
             "sitting"
          ],
@@ -153,7 +153,7 @@
          "gifpath": "static/movie/Yoga/YogaDandasana.mp4"
       },
       {
-         "id": 8,
+         "id": 12,
          "category": [
             "sitting"
          ],
