@@ -33,7 +33,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
                 "id": 0,
                 "heading": "Wait for Group Session",
                 "name": "Session will start soon",
-                "duration": 0,
+                "duration": 12,
                 "gifpath": "static/movie/waitnextworkout.mp4",
                 "sound": null,
                 "indicator": "hidden"
