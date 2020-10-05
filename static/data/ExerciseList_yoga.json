@@ -25,7 +25,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/yoga/YogaSeat.mp4",
+         "gifpath": "static/movie/yoga/YogaSeat.mp4"
       },
       {
          "id": 3,
@@ -39,7 +39,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/yoga/YogaBreath.mp4",
+         "gifpath": "static/movie/yoga/YogaBreath.mp4"
       },
       {
          "id": 4,
@@ -53,7 +53,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/yoga/YogaShoulderStretch.mp4",
+         "gifpath": "static/movie/yoga/YogaShoulderStretch.mp4"
       },
       {
          "id": 5,
@@ -67,7 +67,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/yoga/YogaCatCow.mp4",
+         "gifpath": "static/movie/yoga/YogaCatCow.mp4"
       },
       {
          "id": 6,
@@ -207,7 +207,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+         "gifpath": "static/movie/yoga/YogaFigureFour.mp4"
       },
       {
          "id": 16,
@@ -221,7 +221,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+         "gifpath": "static/movie/yoga/YogaGentleTwist.mp4"
       },
       {
          "id": 17,
