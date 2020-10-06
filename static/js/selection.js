@@ -273,7 +273,7 @@ function downloadFile(){
             return response.json();
         })
         .then((excercise_json) => {
-        var generated_workout = generateWorkoutJson(duration_wo, selected_rounds, excercise_json, exercise_name_list, selected_rest,selected_style)
+        var generated_workout = generateWorkoutJson(duration_wo, selected_rounds, excercise_json, exercise_name_list, duration_rest,selected_style)
          downloadObjectAsJson(generated_workout,'workout_gen');
         });
 }
