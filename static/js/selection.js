@@ -64,6 +64,7 @@ function generateRandomWorkout(number) {
     }
 
     var number_of_random_workouts = number;
+    console.log('number'+number)
     var total_exercises = number_of_workouts;
 
     // Generate list with random numbers
@@ -79,6 +80,15 @@ function generateRandomWorkout(number) {
     }
 
 }
+
+// var test_style = ''
+// function generateWorkoutStyle(style_variant) {
+//     console.log('this is the style_variant'+ typeof(style_variant))
+//     console.log('this is the style_variant'+ style_variant)
+//    test_style = style_variant
+
+// }
+
 
 // Uses ExcerciseList to generate the checkbox overview with all the workouts
 // For each category the view is generated and then appended to the html page
@@ -144,12 +154,16 @@ var duration_rest = null;
 var selected_date = null;
 var selected_elements = null;
 var exercise_name_list = []
+var seletcted_style = ''
+
 function submitcheck(element) {
     selected_rounds = element[0].options[element[0].selectedIndex].value;
     duration_wo = element[1].value;
     duration_rest = element[2].value;
     selected_date = element[3].value;
     selected_elements = $(element).serializeArray();
+    selected_style = element[10].value;
+    console.log('element',selected_style)
     shuffle(selected_elements)
     // the name property of the selected elements includes the ids of the selected elements, not the acutal name
     exercise_id_list = [];
@@ -259,7 +273,7 @@ function downloadFile(){
             return response.json();
         })
         .then((excercise_json) => {
-        var generated_workout = generateWorkoutJson(duration_wo, selected_rounds, excercise_json, exercise_name_list)
+        var generated_workout = generateWorkoutJson(duration_wo, selected_rounds, excercise_json, exercise_name_list, selected_rest,selected_style)
          downloadObjectAsJson(generated_workout,'workout_gen');
         });
 }
@@ -290,6 +304,7 @@ function buildUrlObject(exercise_name_list){
     url_builder_obj["wo_duration"] = duration_wo
     url_builder_obj["rest_duration"] = duration_rest
     url_builder_obj["wo_rounds"] = selected_rounds
+    url_builder_obj["wo_style"] = selected_style
 
     return url_builder_obj;
 }
