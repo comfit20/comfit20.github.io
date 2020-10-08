@@ -8,7 +8,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
 
 
     console.log('this is input style' + typeof(style_variant))
-
+    console.log(exercises)
 
     duration_work = parseInt(duration_work)
     rounds = parseInt(rounds)
