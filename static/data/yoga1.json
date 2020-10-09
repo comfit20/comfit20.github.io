@@ -59,7 +59,7 @@
       "id": 6,
       "heading": "",
       "name": "Thread the needle right",
-      "duration": 110,
+      "duration": 60,
       "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
@@ -68,7 +68,7 @@
       "id": 7,
       "heading": "",
       "name": "Thread the needle left",
-      "duration": 110,
+      "duration": 60,
       "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
@@ -139,149 +139,23 @@
     {
       "id": 15,
       "heading": "",
-      "name": "Forward fold",
-      "duration": 7,
-      "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
+      "name": "Classical sun salutation with low lunge again. Try sitting back and forth to stretch hamstrings.",
+      "duration": 139,
+      "gifpath": "static/movie/yoga/YogaClassical2X.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 16,
-      "heading": "Forward fold continued",
-      "name": "Try bending your right knee and look to the left.",
-      "duration": 20,
-      "gifpath": "",
-      "sound": "audioyoga",
+      "heading": "",
+      "name": "Warrior II pose, extended side angle pose",
+      "duration": 95,
+      "gifpath": "static/movie/yoga/YogaWarriorIIExtSideAngle.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 17,
-      "heading": "Forward fold continued",
-      "name": "Try bending your left knee and look to the right.",
-      "duration": 20,
-      "gifpath": "",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 18,
-      "heading": "",
-      "name": "Classical sun salutation with crescent. Then add on your favorite poses.",
-      "duration": 23,
-      "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 19,
-      "heading": "",
-      "name": "Add on poses such as warrior II, side plank! End in downward facing dog or child's pose.",
-      "duration": 180,
-      "gifpath": "",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 20,
-      "heading": "",
-      "name": "Classical sun salutation with crescent on the other side. Then add on your favorite poses.",
-      "duration": 23,
-      "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 21,
-      "heading": "",
-      "name": "Repeat poses on the other side such as warrior II, side plank. End in downward facing dog or child's pose.",
-      "duration": 180,
-      "gifpath": "",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 22,
-      "heading": "",
-      "name": "Locust pose",
-      "duration": 49,
-      "gifpath": "static/movie/yoga/YogaSalabhasanaA.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 23,
-      "heading": "",
-      "name": "Half bow or quad stretch right",
-      "duration": 30,
-      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 24,
-      "heading": "",
-      "name": "Half bow or quad stretch left",
-      "duration": 30,
-      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 25,
-      "heading": "Seated side bend",
-      "name": "Bend right knee in, side bend over left leg",
-      "duration": 50,
-      "gifpath": "",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 26,
-      "heading": "Seated forward bend",
-      "name": "Keep right knee in, fold forward over left leg",
-      "duration": 50,
-      "gifpath": "",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 27,
-      "heading": "Seated side bend other side",
-      "name": "Bend left knee in, side bend over right leg",
-      "duration": 50,
-      "gifpath": "",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 28,
-      "heading": "Seated forward bend other side",
-      "name": "Keep left knee in, fold forward over right leg",
-      "duration": 50,
-      "gifpath": "",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 29,
-      "heading": "",
-      "name": "Staff pose",
-      "duration": 68,
-      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 30,
-      "heading": "",
-      "name": "Wide-angle seated forward bend",
-      "duration": 100,
-      "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 31,
       "heading": "",
       "name": "Figure four right",
       "duration": 60,
@@ -290,16 +164,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 32,
-      "heading": "",
-      "name": "Gentle twist right",
-      "duration": 90,
-      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 33,
+      "id": 18,
       "heading": "",
       "name": "Figure four left",
       "duration": 60,
@@ -308,16 +173,88 @@
       "indicator": "hidden"
     },
     {
-      "id": 34,
+      "id": 19,
       "heading": "",
-      "name": "Gentle twist left",
-      "duration": 90,
-      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "name": "Frog pose",
+      "duration": 198,
+      "gifpath": "static/movie/yoga/YogaFrog.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
-      "id": 35,
+      "id": 20,
+      "heading": "",
+      "name": "Half bow or quad stretch right",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 21,
+      "heading": "",
+      "name": "Half bow or quad stretch left",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 22,
+      "heading": "Seated side bend",
+      "name": "Bend right knee in, side bend over left leg",
+      "duration": 50,
+      "gifpath": "",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 23,
+      "heading": "Seated side bend other side",
+      "name": "Bend left knee in, side bend over right leg",
+      "duration": 50,
+      "gifpath": "",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 24,
+      "heading": "",
+      "name": "Staff pose",
+      "duration": 120,
+      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 25,
+      "heading": "",
+      "name": "Figure four right",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 26,
+      "heading": "",
+      "name": "Figure four left",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 27,
+      "heading": "",
+      "name": "Bridge",
+      "duration": 153,
+      "gifpath": "static/movie/yoga/YogaBridge.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 28,
       "heading": "",
       "name": "Bound angle pose",
       "duration": 120,
@@ -326,7 +263,25 @@
       "indicator": "hidden"
     },
     {
-      "id": 36,
+      "id": 29,
+      "heading": "",
+      "name": "Gentle twist right",
+      "duration": 90,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 30,
+      "heading": "",
+      "name": "Gentle twist left",
+      "duration": 90,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 31,
       "heading": "",
       "name": "Knees to chest, squeeze!",
       "duration": 9,
@@ -335,7 +290,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 37,
+      "id": 32,
       "heading": "",
       "name": "Relax into savasana",
       "duration": 300,
@@ -344,7 +299,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 38,
+      "id": 33,
       "heading": "",
       "name": "You're welcome to stay here as long as you like.",
       "duration": 42,
@@ -353,7 +308,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 39,
+      "id": 34,
       "heading": "Thank you for practicing with me today!",
       "name": "Namaste",
       "duration": 61,
@@ -362,7 +317,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 40,
+      "id": 35,
       "heading": "",
       "name": "Keep breathing and have a great day",
       "duration": 300,
