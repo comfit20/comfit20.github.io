@@ -8,9 +8,9 @@
 
 // allow multiple selections?
 // Have preferences in custom pane, create random yoga class
-// Remove rounds of exercises
+// Remove rounds of exercises - Done
 // Change duration in share your workout
-// Make links to older classes available (preset)
+// Make links to older classes available (preset) -Done!
 
 // Name workouts
 // Rebase with main branch -Done!
