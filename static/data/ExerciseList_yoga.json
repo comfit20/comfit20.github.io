@@ -1,0 +1,255 @@
+{
+   "exercises": [{
+         "id": 1,
+         "category": [
+            "kneeling"
+         ],
+         "name": "low lunge",
+         "sanskrit": "anjaneyasana",
+         "level": "easy",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "adho mukha svanasana, balasana, uttanasana",
+         "gifpath": "static/movie/Yoga/YogaClassical2X.mp4"
+      },
+      {
+         "id": 2,
+         "category": [
+            "sitting"
+         ],
+         "name": "Find a comfortable seated position",
+         "sanskrit": "sukhasana",
+         "level": "easy",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/yoga/YogaSeat.mp4"
+      },
+      {
+         "id": 3,
+         "category": [
+            "sitting"
+         ],
+         "name": "Take five deep breaths. Then begin constricting your breath on the exhale (as though you are fogging a mirror) for ujjayi breathing.",
+         "sanskrit": "ujjayi",
+         "level": "easy",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/yoga/YogaBreath.mp4"
+      },
+      {
+         "id": 4,
+         "category": [
+            "sitting"
+         ],
+         "name": "Shoulder warm up",
+         "sanskrit": "sukhasana2",
+         "level": "easy",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/yoga/YogaShoulderStretch.mp4"
+      },
+      {
+         "id": 5,
+         "category": [
+            "kneeling"
+         ],
+         "name": "Come to all fours with shoulders over wrists and hips over knees. Inhale cow, exhale cat",
+         "sanskrit": "sukhasana2",
+         "level": "easy",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/yoga/YogaCatCow.mp4"
+      },
+      {
+         "id": 6,
+         "category": [
+            "standing"
+         ],
+         "name": "standing forward fold",
+         "sanskrit": "uttanasana",
+         "level": "easy",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "tadasana, adho mukha svanasana, balasana, simple twists",
+         "gifpath": "static/movie/Yoga/YogaClassicalCrescent.mp4"
+      },
+      {
+         "id": 7,
+         "category": [
+            "sitting"
+         ],
+         "name": "childs pose",
+         "sanskrit": "balasana",
+         "level": "easy",
+         "prepposestoopen": "apanasana",
+         "prepposestostabilize": "",
+         "preparesfor": "utthita balasana, anahatasana, virasana, sasangasana",
+         "counterposes": "svanasana",
+         "gifpath": "static/movie/Yoga/YogaChildsPose.mp4"
+      },
+      {
+         "id": 8,
+         "category": [
+            "kneeling"
+         ],
+         "name": "Thread the needle",
+         "sanskrit": "parsva balasana",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "malasana, garudasana, supta baddha konasana, balasana",
+         "gifpath": "static/movie/Yoga/YogaThreadTheNeedle.mp4"
+      },
+      {
+         "id": 9,
+         "category": [
+            "lying"
+         ],
+         "name": "corpse pose",
+         "sanskrit": "savasana",
+         "level": "easy",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
+      },
+      {
+         "id": 10,
+         "category": [
+            "kneeling"
+         ],
+         "name": "downward facing dog pose",
+         "sanskrit": "adho mukha svanasana",
+         "level": "intermediate",
+         "prepposestoopen": "ardha uttanasana, bidalasana, uttanasana, anahatasana, urdhva hastasana arms, gomukhasana arms, garudasana arms",
+         "prepposestostabilize": "anjaneyasana, bidalasana, phalakasana, shishulasana, tadasana, uttanasana",
+         "preparesfor": "bakasana, adho mukha vrksasana, salamba sirsasanaI, salamba sirsasana II; uttanasana",
+         "counterposes": "balasana, apanasana, supta parivartanasana, viparita karani, savasana",
+         "gifpath": "static/movie/Yoga/YogaDownDog.mp4"
+      },
+      {
+         "id": 11,
+         "category": [
+            "kneeling"
+         ],
+         "name": "puppy pose",
+         "sanskrit": "uttana shishosana",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/Yoga/YogaPuppy.mp4"
+      },
+      {
+         "id": 12,
+         "category": [
+            "standing"
+         ],
+         "name": "crescent",
+         "sanskrit": "ashta chandrasana",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/Yoga/YogaClassicalCrescent.mp4"
+      },
+      {
+         "id": 13,
+         "category": [
+            "standing"
+         ],
+         "name": "extended side angle",
+         "sanskrit": "parsvakonasana",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/Yoga/YogaWarriorIIExtSideAngle.mp4"
+      },
+      {
+         "id": 14,
+         "category": [
+            "standing"
+         ],
+         "name": "warrior II",
+         "sanskrit": "virabhadrasana II",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/Yoga/YogaWarriorIIExtSideAngle.mp4"
+      },
+      {
+         "id": 15,
+         "category": [
+            "kneeling"
+         ],
+         "name": "Figure four",
+         "sanskrit": "",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/yoga/YogaFigureFour.mp4"
+      },
+      {
+         "id": 16,
+         "category": [
+            "lying"
+         ],
+         "name": "Gentle twist",
+         "sanskrit": "",
+         "level": "intermediate",
+         "prepposestoopen": "",
+         "prepposestostabilize": "",
+         "preparesfor": "",
+         "counterposes": "",
+         "gifpath": "static/movie/yoga/YogaGentleTwist.mp4"
+      },
+      {
+         "id": 17,
+         "category": [
+            "sitting"
+         ],
+         "name": "sitting forward fold",
+         "sanskrit": "paschimottanasana",
+         "level": "easy",
+         "prepposestoopen": "adho mukha svanasana, blasana, dandasana, janu sirsasana, supta padangusthasana",
+         "prepposestostabilize": "adho mukha svanasana, agnistambhasana, ardha uttanasana, balasana, dandasana, halasana, karnapidasana, pada hastasana, padangusthasana, parsvottanasana, prasarita padottanasana D, supta padangusthasana, upavista konasana, uttanasana",
+         "counterposes": "supta baddha konasana, apanasana, savasana",
+         "gifpath": "static/movie/Yoga/YogaDandasana.mp4"
+      },
+      {
+         "id": 18,
+         "category": [
+            "sitting"
+         ],
+         "name": "staff",
+         "sanskrit": "dandasana",
+         "level": "easy",
+         "prepposestoopen": "adho mukha svanasana, ardha uttanasana, supta padangusthasana, uttanasana",
+         "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, supta padangusthasana, uttanasana",
+         "counterposes": "apanasana, baddha konasana, supta baddha konasana, viparita karani, savasana",
+         "gifpath": "static/movie/Yoga/YogaDandasana.mp4"
+      }
+     
+   ]
+   
+}
