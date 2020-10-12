@@ -14,6 +14,7 @@
 
         gtag('config', 'UA-167369005-1');
 
+
     </script>
 
 
@@ -105,7 +106,7 @@
                                 <form id="main-form" class="needs-validation" novalidate
                                       onSubmit="return submitcheck(this);">
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Rounds of Excercises</label>
+                                        <label for="exampleFormControlSelect1"><h5>Rounds of Excercises</h5></label>
                                         <select class="selection-input form-control custom-select mb-3"
                                                 id="exampleFormControlSelect1">
                                             <option>1</option>
@@ -115,7 +116,7 @@
                                             <option>5</option>
                                         </select>
                                     </div>
-                                    <h4>Duration</h4>
+                                    <h5>Duration</h5>
                                     <div class="row">
                                         <div class="form-group col-sm-6">
                                             <label for="time_excercise" class="col-form-label col-sm-6">Exercise</label>
@@ -128,7 +129,8 @@
                                                    placeholder="10" value="10">
                                         </div>
                                     </div>
-                                    <label for="datetimepicker1" class="col-form-label h4">Date and time</label>
+                                    <label for="datetimepicker1" class="col-form-label h4"><h5>Date and time</h5>
+                                    </label>
                                     <div class="form-group">
                                         <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
                                             <input class="form-control datetimepicker-input selection-input"
@@ -140,7 +142,8 @@
                                         </div>
                                     </div>
                                     <div class="row justify-content-center m-3">
-                                        <h3 class="">Excercises</h3>
+                                        <h5 class="">Excercises</h5>
+                                        <!-- todo: include space in between exercise and menu -->
                                         <div class="dropdown">
                                             <button class="btn btn-sm btn-secondary dropdown-toggle" type="button"
                                                     id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
@@ -167,9 +170,23 @@
                                         </div>
                                     </div>
 
+                                    <!-- include new dropdown menu for selecting workout style -->
+                                    <div class="row justify-content-center m-3">
+                                        <h5 class="">Workout style</h5>
+      <select class="browser-default custom-select">
+  <option value="1">regular</option>
+  <option value="2">decrease</option>
+  <option value="3">increase</option>
+  <option value="4">up_and_down</option>
+  <option value="5">repeat_iso</option>
+  <option value="6">repeat_diff</option>
+</select>
+                                    </div>
+
+
                                     <div class="row">
                                         <div class="col-sm">
-                                            <div class="d-flex justify-content-around align-items-center">
+                                            <div class="d-flex align-items-center">
                                                 easy <i class="fa fa-fw fa-circle" style="color:green;"></i>
                                             </div>
                                         </div>
@@ -194,16 +211,16 @@
                                     </div>
                                 </form>
                             </div>
-                                              <div id="preset" class="tab-pane show card-body" role="tabpanel"
-                                                   style="background-color: #555;">
+                            <div id="preset" class="tab-pane show card-body" role="tabpanel"
+                                 style="background-color: #555;">
 
-                                                  <div>
-                                                      <h4 class="col-sm-6"> Coming Soon </h4>
+                                <div>
+                                    <h4 class="col-sm-6"> Coming Soon </h4>
 
-                                                      <div id='wo-container' class="col-sm-6"></div>
-                                                  </div>
+                                    <div id='wo-container' class="col-sm-6"></div>
+                                </div>
 
-                                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>

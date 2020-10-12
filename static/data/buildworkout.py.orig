@@ -11,7 +11,10 @@ exerlist = exerlist['exercises']
  
 exercises = ['Hollow Rock', 'Mountain Climber','Frog Squats', 'Backward Lunge & 3 Pulses', 'Static Spiderman', 'Heel Touch Crunches', 
 'Plank Pulses', 'Rope Jump', 'Crunches', 'Swimmer', 'Ice Skater', 'Burpee & Jump 180']
+<<<<<<< HEAD
 
+=======
+>>>>>>> diff_time
 
 warmups = ['Jumping Jacks', 'Single Leg Hip Circles',  'Squat Pulses','Glute Bridge','5 Shoulder Circles & Windmill','Burpees']
 
