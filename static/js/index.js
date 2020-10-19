@@ -134,14 +134,14 @@
     function get_workoutNo() {
         var today = dayjs().day()
         //console.log("workout No", Math.floor((Math.random() * 18) + 2))
- return Math.floor((Math.random() * 72) + 1);
+ return Math.floor((Math.random() * 78) + 1);
     }
 
     //pick random number of yoga for yoga anytime   
     function get_yogaNo() {
         var today = dayjs().day()
         //console.log("workout No", Math.floor((Math.random() * 18) + 2))
- return Math.floor((Math.random() * 9) + 1);
+ return Math.floor((Math.random() * 11) + 1);
     }
 
 
