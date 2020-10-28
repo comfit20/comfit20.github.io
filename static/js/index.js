@@ -66,8 +66,6 @@
         var time_list = []
         var time_1 = getNextWeekday(5).set('h',01).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_1);
-        var time_2 = getNextWeekday(3).set('h',22).set('m',08).set('s',0).set('ms',0);
-        time_list.push(time_2);
         // var time_2 = getNextWeekday(5).set('h',18).set('m',35).set('s',0).set('ms',0);
         // time_list.push(time_2); // this time is Friday 11:35 PST
         // Add your yoga times here (the time is in UTC
