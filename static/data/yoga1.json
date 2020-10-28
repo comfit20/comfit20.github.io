@@ -23,6 +23,15 @@
     {
       "id": 2,
       "heading": "",
+      "name": "Remain sitting or start in child's pose.",
+      "duration": 120,
+      "gifpath": "static/movie/yoga/YogaChildsPose1X.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 3,
+      "heading": "",
       "name": "Take five deep breaths. Then begin constricting your breath on the exhale (as though you are fogging a mirror) for ujjayi breathing.",
       "duration": 83,
       "gifpath": "static/movie/yoga/YogaBreath.mp4",
@@ -30,7 +39,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 3,
+      "id": 4,
       "heading": "Keep breathing!",
       "name": "Try to maintain this breath throughout the practice.",
       "duration": 10,
@@ -39,7 +48,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 4,
+      "id": 5,
       "heading": "",
       "name": "Let's warm up our shoulders",
       "duration": 69,
@@ -48,7 +57,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 5,
+      "id": 6,
       "heading": "",
       "name": "Come to all fours with shoulders over wrists and hips over knees. Inhale cow, exhale cat",
       "duration": 63,
@@ -57,7 +66,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 6,
+      "id": 7,
       "heading": "",
       "name": "Thread the needle right",
       "duration": 30,
@@ -66,7 +75,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 7,
+      "id": 8,
       "heading": "",
       "name": "Thread the needle left",
       "duration": 30,
@@ -75,7 +84,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 8,
+      "id": 9,
       "heading": "",
       "name": "Sphinx pose",
       "duration": 60,
@@ -84,7 +93,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 9,
+      "id": 10,
       "heading": "",
       "name": "Open shoulders right",
       "duration": 40,
@@ -93,7 +102,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 10,
+      "id": 11,
       "heading": "",
       "name": "Open shoulders left",
       "duration": 40,
@@ -102,7 +111,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 11,
+      "id": 12,
       "heading": "",
       "name": "Feel free to return to child's pose at any point during this class",
       "duration": 40,
@@ -111,7 +120,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 12,
+      "id": 13,
       "heading": "",
       "name": "Puppy pose",
       "duration": 31,
@@ -120,7 +129,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 13,
+      "id": 14,
       "heading": "",
       "name": "Downward facing dog",
       "duration": 79,
@@ -129,7 +138,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 14,
+      "id": 15,
       "heading": "",
       "name": "Classical sun salutation with low lunge",
       "duration": 139,
@@ -138,18 +147,9 @@
       "indicator": "hidden"
     },
     {
-      "id": 15,
-      "heading": "",
-      "name": "Classical sun salutation with low lunge again. Try sitting back and forth to stretch hamstrings.",
-      "duration": 139,
-      "gifpath": "static/movie/yoga/YogaClassical2X.mp4",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
       "id": 16,
       "heading": "",
-      "name": "Warrior II pose, extended side angle pose",
+      "name": "Warrior II pose, extended side angle pose. Try this on your knees instead of standing.",
       "duration": 95,
       "gifpath": "static/movie/yoga/YogaWarriorIIExtSideAngle.mp4",
       "sound": null,
@@ -158,90 +158,90 @@
     {
       "id": 17,
       "heading": "",
-      "name": "Legs up the wall is a reclined version of staff pose",
-      "duration": 120,
-      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
+      "name": "Classical sun salutation with crescent",
+      "duration": 68,
+      "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 18,
       "heading": "",
-      "name": "Add a hamstring stretch on your right leg with your legs still up the wall",
-      "duration": 120,
-      "gifpath": "",
-      "sound": "audioyoga",
+      "name": "Tree pose",
+      "duration": 74,
+      "gifpath": "static/movie/yoga/YogaTree.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 19,
       "heading": "",
-      "name": "Add a hamstring stretch on your left leg with your legs still up the wall",
-      "duration": 120,
-      "gifpath": "",
-      "sound": "audioyoga",
+      "name": "Warrior II pose, extended side angle pose",
+      "duration": 95,
+      "gifpath": "static/movie/yoga/YogaWarriorIIExtSideAngle.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 20,
       "heading": "",
-      "name": "Pull your right knee in for half happy baby with your legs still up the wall",
-      "duration": 120,
-      "gifpath": "",
-      "sound": "audioyoga",
+      "name": "Locust pose",
+      "duration": 49,
+      "gifpath": "static/movie/yoga/YogaSalabhasanaA.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 21,
       "heading": "",
-      "name": "Figure four right",
-      "duration": 150,
-      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "name": "Half bow or quad stretch right",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 22,
       "heading": "",
-      "name": "Pull your left knee in for half happy baby with your legs still up the wall",
-      "duration": 120,
-      "gifpath": "",
+      "name": "Half bow or quad stretch left",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 23,
       "heading": "",
-      "name": "Figure four left",
-      "duration": 150,
-      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "name": "Bridge",
+      "duration": 153,
+      "gifpath": "static/movie/yoga/YogaBridge.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 24,
       "heading": "",
-      "name": "Wide-angle seated forward bend",
-      "duration": 300,
-      "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
-      "sound": null,
+      "name": "Figure four right ankle over left knee",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 25,
       "heading": "",
-      "name": "Reclining Bound Angle Pose with feet up the wall",
-      "duration": 150,
-      "gifpath": "static/movie/yoga/YogaSuptaBaddhaKonasana.mp4",
-      "sound": null,
+      "name": "Gentle twist left",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 26,
       "heading": "",
-      "name": "Gentle twist left",
-      "duration": 200,
-      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "name": "Figure four left ankle over right knee",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
@@ -249,22 +249,103 @@
       "id": 27,
       "heading": "",
       "name": "Gentle twist right",
-      "duration": 200,
+      "duration": 60,
       "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 28,
-      "heading": "",
-      "name": "Relax into savasana",
-      "duration": 360,
-      "gifpath": "static/movie/yoga/YogaSavasana.mp4",
+      "heading": "Seated side bend",
+      "name": "Bend right knee in, side bend over left leg",
+      "duration": 60,
+      "gifpath": "",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 29,
+      "heading": "Seated forward fold",
+      "name": "Keep right knee in, fold forward over left leg",
+      "duration": 60,
+      "gifpath": "",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 30,
+      "heading": "Seated side bend other side",
+      "name": "Bend left knee in, side bend over right leg",
+      "duration": 60,
+      "gifpath": "",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 31,
+      "heading": "Seated forward fold other side",
+      "name": "Keep left knee in, fold forward over right leg",
+      "duration": 50,
+      "gifpath": "",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 32,
+      "heading": "",
+      "name": "Staff pose or try cow face pose!",
+      "duration": 68,
+      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 33,
+      "heading": "",
+      "name": "Stay in staff pose or try cow face pose on the other side",
+      "duration": 68,
+      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 34,
+      "heading": "",
+      "name": "Wide-angle seated forward bend",
+      "duration": 114,
+      "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 35,
+      "heading": "",
+      "name": "Bound angle pose or try happy baby",
+      "duration": 120,
+      "gifpath": "static/movie/yoga/YogaSuptaBaddhaKonasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 36,
+      "heading": "",
+      "name": "Knees to chest, squeeze!",
+      "duration": 9,
+      "gifpath": "static/movie/yoga/YogaSavasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 37,
+      "heading": "",
+      "name": "Relax into savasana",
+      "duration": 300,
+      "gifpath": "static/movie/yoga/YogaSavasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 38,
       "heading": "",
       "name": "You're welcome to stay here as long as you like.",
       "duration": 42,
@@ -273,7 +354,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 30,
+      "id": 39,
       "heading": "Thank you for practicing with me today!",
       "name": "Namaste",
       "duration": 61,
@@ -282,7 +363,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 31,
+      "id": 40,
       "heading": "",
       "name": "Enjoy the day",
       "duration": 300,
