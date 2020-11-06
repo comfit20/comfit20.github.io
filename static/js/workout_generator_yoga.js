@@ -24,14 +24,14 @@ function generateWorkoutJson(duration_work, exerjson, exercises) {
 
     // var applaus = 1 //random.randint(1,2)
 
-    var warmups = ['Find a comfortable seated position',
-    'Take five deep breaths. Then begin constricting your breath on the exhale (as though you are fogging a mirror) for ujjayi breathing.',
-    'Shoulder warm up',
-    'Come to all fours with shoulders over wrists and hips over knees. Inhale cow, exhale cat',
-    'Thread the needle',
+    var warmups = ['comfortable seat',
+    'ujjayi breath',
+    'shoulder warm up',
+    'inhale cow, exhale cat',
+    'thread the needle',
     'childs pose']
-    var cooldown = ['Figure four',
-    'Gentle twist',
+    var cooldown = ['figure four',
+    'gentle twist',
     'corpse pose']
 
 
