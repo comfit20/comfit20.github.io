@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" class="bg-yoga">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167369005-1"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167369005-1');
+
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>ComFIT</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="./static/css/cover.css">
+    <!-- Custom styles created for ComFit20 -->
+    <link href="./static/css/global.css" rel="stylesheet">
+    <link href="./static/css/workout.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet"/>
+
+</head>
+
+<body class="text-center custom-body bg-yoga">
+
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column  w-100 " style="max-width: 80em">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h1 class="masthead-brand"><a href="index.html">ComFIT</a></h1>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="schedule.html">Schedule</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="disclaimer.html">Disclaimer</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover h-100">
+            <div class="row h-100">
+                <div class="card-group col-sm-6">
+                    <div class="card comfit-bg">
+
+                        <h1 id="heading" class="comfit-bg"></h1> <!-- include content from heading workout files here -->
+                        <div id="content" class="comfit-bg">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+                                 data-interval="false" data-wrap="false" data-touch="false">
+
+
+                                <div class="carousel-inner">
+
+                                </div>
+
+
+                                <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom"
+                                        class="btn btn-dark" data-toggle="tooltip" data-placement="bottom"
+                                        title="Sound is off" type="button"><i id="sound-icon"
+                                                                              class="fas fa-volume-mute"></i></button>
+
+                                <ol class="carousel-indicators" style="position: relative;">
+
+                                    <!--           <button  style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark  sound-button" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button> -->
+
+                                </ol>
+
+                                <!-- <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button> -->
+
+                                <div id="wait-spinner" class="spinner-border" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+
+                                </ol>
+
+
+                                <!--               <iframe id = "spotifylink" src="https://open.spotify.com/embed/playlist/3oLKVWqy7vh8XeukJavyyi"  width="360" height="80"
+                                 frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+
+                                <iframe style="visibility: hidden" id="spotifylink" width="90%" height="80"
+                                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-group col-sm-6">
+                    <div class="card comfit-bg">
+
+<div class="iframe-container" id="jitsi">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <!--            <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>-->
+        </div>
+    </footer>
+</div>
+<script>
+
+fetch('./static/data/music_yoga.json').then(function(response) {
+  response.json().then(function(music_playlist)
+  {
+
+
+
+var radommusic = Math.floor((Math.random() * music_playlist["playlists"].length) + 0)
+
+$("#spotifylink").attr("src", "https://open.spotify.com/embed/playlist/"+ music_playlist["playlists"][radommusic]["playLink"])
+
+});
+});
+
+
+
+
+</script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script defer src="./static/js/all.min.js"></script>
+<script src="https://vjs.zencdn.net/7.8.2/video.js"></script>
+<script src='https://comfit.fun/external_api.js'></script>
+
+<script type="text/javascript" src="./static/libs/jquery.plugin.js"></script>
+<script type="text/javascript" src="./static/libs/jquery.countdown.js"></script>
+<script type="text/javascript" src="static/js/workout_generator_yoga.js"></script>
+<script type="text/javascript" src="static/js/yoga.js"></script>
+<script type="text/javascript" src="static/js/helper.js"></script>
+
+</body>
+</html>
