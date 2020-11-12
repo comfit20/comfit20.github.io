@@ -48,7 +48,7 @@ catch (e) {
    // console.log(e); // Fehler-Objekt an die Error-Funktion geben
 }
 
-    calcOffset();
+startSiteBuilding();
 });
 
 function startSiteBuilding() {
@@ -93,8 +93,7 @@ function startSiteBuilding() {
                 buildSiteFromWorkoutFile(generated_workout, yoga_json) // TODO extract
             }
 
-        });
-});
+        });}
 
 
 function buildSiteFromWorkoutFile(workoutjson,yoga_json) {
