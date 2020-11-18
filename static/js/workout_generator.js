@@ -372,7 +372,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
                     rest = {
                         "id": n + 1,
                         "heading": "Rest",
-                        "name": "Up Next:" + exercises[i + 1],
+                        "name": "Up Next: " + exercises[i + 1],
                         "duration": duration_rest,
                         "gifpath": gifpath_next[i + 1],
                         "sound": 'audiorest',
@@ -582,7 +582,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
                 rest = {
                     "id": n + 1,
                     "heading": "Rest",
-                    "name": "Up Next:" + exercises[i + 1],
+                    "name": "Up Next: " + exercises[i + 1],
                     "duration": duration_rest,
                     "gifpath": gifpath_next[i + 1],
                     "sound": 'audiorest',
@@ -785,7 +785,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
                 rest = {
                     "id": n + 1,
                     "heading": "Rest",
-                    "name": "Up Next:" + exercises[i + 1],
+                    "name": "Up Next: " + exercises[i + 1],
                     "duration": duration_rest,
                     "gifpath": gifpath_next[i + 1],
                     "sound": 'audiorest',
@@ -1231,7 +1231,7 @@ else if (workoutstyle == 6) {
                 rest = {
                     "id": n + 1,
                     "heading": "Rest",
-                    "name": "Up Next:" + exercises_new[i + 1] ,
+                    "name": "Up Next: " + exercises_new[i + 1] ,
                     "duration": duration_rest[1],
                     "gifpath": gifpath_next[i + 1],
                     "sound": 'audiorest',
