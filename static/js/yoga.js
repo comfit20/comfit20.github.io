@@ -15,6 +15,43 @@ var audio_mute = true;
 
 
 $(document).ready(function () {
+
+// Try to start jitsi if embedded, if not embedded (e.g. in workout.html and not workout_group.html catch exception
+//  to go on with execution of script.)
+try {
+    const domain = 'comfit.fun';
+    const options = {
+        roomName: 'Comfit_Group_Yoga_Room',
+        parentNode: document.querySelector('#jitsi')
+    };
+    const api = new JitsiMeetExternalAPI(domain, options);
+      // Make tileview default: From https://github.com/jitsi/jitsi-meet/issues/5764
+      api.addEventListener(`videoConferenceJoined`, () => {
+    const listener = ({ enabled }) => {
+      api.removeEventListener(`tileViewChanged`, listener);
+
+      if (!enabled) {
+        api.executeCommand(`toggleTileView`);
+      }
+    };
+
+    api.addEventListener(`tileViewChanged`, listener);
+    api.executeCommand(`toggleTileView`);
+    api.on('readyToClose', () => { //Hack: Hide jitsi frame after exit meeting to get rid of regular jitsi page
+    // see https://community.jitsi.org/t/redirect-url-on-hangup/29948/23
+    $('#jitsi').hide();
+});
+  });
+}
+catch (e) {
+   // Exception caught. Happens in workout.html since script is not embedded.
+   // console.log(e); // Fehler-Objekt an die Error-Funktion geben
+}
+
+startSiteBuilding();
+});
+
+function startSiteBuilding() {
     //Get workoutfile from URL, if not there take yoga1.json as default
     // If workoutfile is specified, load it from the file
     var workoutFile = "yoga1.json";
@@ -56,8 +93,7 @@ $(document).ready(function () {
                 buildSiteFromWorkoutFile(generated_workout, yoga_json) // TODO extract
             }
 
-        });
-});
+        });}
 
 
 function buildSiteFromWorkoutFile(workoutjson,yoga_json) {
@@ -179,6 +215,9 @@ function startJqueryTimer(startTime) {
     if (startTime['elements'].length == 0) {
         $("#content").empty()
         $("#content").html('<h1>Yoga class over</h1>')
+        $("#content").append('<h4> We kindly ask you for feedback </h4>')
+        $("#content").append('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczvz3N2V88GTI-fqWajOqTNn5LjxGF5X35rIslHD5GOHxgGA/viewform?embedded=true" width="450" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>');
+
         return
     }
 
