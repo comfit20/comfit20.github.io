@@ -24,15 +24,15 @@ function generateWorkoutJson(duration_work, exerjson, exercises) {
 
     // var applaus = 1 //random.randint(1,2)
 
-    var warmups = ['comfortable seat',
+    var warmups = ['yoga seat',
     'ujjayi breath',
     'shoulder warm up',
-    'inhale cow, exhale cat',
+    'cat cow',
     'thread the needle',
     'childs pose']
     var cooldown = ['figure four',
-    'gentle twist',
-    'corpse pose']
+    'supine twist',
+    'savasana']
 
 
     duration_work = parseInt(duration_work)
