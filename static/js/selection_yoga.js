@@ -92,8 +92,11 @@ function parseExercisesToForm(data) {
     const lying_list = data['exercises'].filter(exercise => exercise.category.includes("lying"));
     const sitting_list = data['exercises'].filter(exercise => exercise.category.includes("sitting"));
     const kneeling_list = data['exercises'].filter(exercise => exercise.category.includes("kneeling"));
+    const backbend_list = data['exercises'].filter(exercise => exercise.category.includes("backbend"));
+    const restorative_list = data['exercises'].filter(exercise => exercise.category.includes("restorative"));
+    const vinyasa_list = data['exercises'].filter(exercise => exercise.category.includes("vinyasa"));
   
-    categorys = [standing_list, lying_list, sitting_list, kneeling_list]
+    categorys = [sitting_list, kneeling_list, vinyasa_list, standing_list, lying_list, backbend_list, restorative_list]
 
     $.each(categorys,function (index, category) {
         var wrapper = $("<div class='form-row'></div>")
