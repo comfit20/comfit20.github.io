@@ -11,7 +11,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, bhujangasana, bidalasana, phalakasana, salabhasana A, salabhasana B, salabhasana C, utkatasana, anahatasana, uttanasana",
          "preparesfor": "ashta chandrasana, eka pada adho mukha vrksasana, hanumanasana, supta virasana, virabhadrasana I, virabhadrasana II, virasana",
          "counterposes": "adho mukha svanasana, balasana, uttanasana",
-         "gifpath": "static/movie/Yoga/YogaClassical2X.mp4"
+         "gifpath": "static/movie/yoga/YogaClassical2X.mp4"
       },
       {
          "id": 2,
@@ -81,7 +81,7 @@
          "prepposestostabilize": "adho mukha svanasana, bidalasana, utkatasana, uttanasana",
          "preparesfor": "uttanasana, virabhadrasana III, utkatasana, paschimottanasana",
          "counterposes": "balasana, apanasana, tadasana",
-         "gifpath": "static/movie/Yoga/YogaHalfStandingForwardFold.mp4"
+         "gifpath": "static/movie/yoga/YogaHalfStandingForwardFold.mp4"
       },
       {
          "id": 7,
@@ -95,7 +95,7 @@
          "prepposestostabilize": "",
          "preparesfor": "utthita balasana, anahatasana, virasana, sasangasana",
          "counterposes": "svanasana",
-         "gifpath": "static/movie/Yoga/YogaChildsPose1X.mp4"
+         "gifpath": "static/movie/yoga/YogaChildsPose1X.mp4"
       },
       {
          "id": 8,
@@ -109,7 +109,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "malasana, garudasana, supta baddha konasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaThreadTheNeedle.mp4"
+         "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4"
       },
       {
          "id": 9,
@@ -123,7 +123,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaSavasana.mp4"
+         "gifpath": "static/movie/yoga/YogaSavasana.mp4"
       },
       {
          "id": 10,
@@ -137,7 +137,7 @@
          "prepposestostabilize": "anjaneyasana, bidalasana, phalakasana, shishulasana, tadasana, uttanasana",
          "preparesfor": "bakasana, adho mukha vrksasana, salamba sirsasanaI, salamba sirsasana II; uttanasana",
          "counterposes": "balasana, apanasana, supta parivartanasana, viparita karani, savasana",
-         "gifpath": "static/movie/Yoga/YogaDownDog.mp4"
+         "gifpath": "static/movie/yoga/YogaDownDog.mp4"
       },
       {
          "id": 11,
@@ -151,7 +151,7 @@
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ardha uttanasana, ashta chandrasana, balasana, bidalasana, shishulasana, utkatasana, malasana, parsvottanasana",
          "preparesfor": "adho mukha svanasana, adho mukha vrksasana, urdhva dhanurasana, gomukhasana arms",
          "counterposes": "apanasana, balasana, savasana",
-         "gifpath": "static/movie/Yoga/YogaPuppy.mp4"
+         "gifpath": "static/movie/yoga/YogaPuppy.mp4"
       },
       {
          "id": 12,
@@ -165,7 +165,7 @@
          "prepposestostabilize": "adho mukha svanasana, urdhva mukha svanasana, anjaneyasana, bidalasana, bhujangasana, garudasana, prasarita padottanasana, tadasana, urdhva hastasana, utkatasana, uttanasana, utthita trikonasana, virabhadrasana II",
          "preparesfor": "virabhadrasana I, virabhadrasana II, parivrtta ashta chandrasana, parivrtta parsvakonasana, virabhadrasana III, parivritta ardha chandrasana, adho mukha vrksasana, parsvakonasana",
          "counterposes": "balasana, vinyasa, adho mukha svanasana",
-         "gifpath": "static/movie/Yoga/YogaClassicalCrescent.mp4"
+         "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4"
       },
       {
          "id": 13,
@@ -179,7 +179,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaWarriorIIExtSideAngle.mp4"
+         "gifpath": "static/movie/yoga/YogaWarriorIIExtSideAngle.mp4"
       },
       {
          "id": 14,
@@ -193,7 +193,7 @@
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ardha uttanasana, ashta chandrasana, bidalasana, prasarita padottanasana D, tadasana, vasisthasana",
          "preparesfor": "reverse warrior, utthita parsvakonasana, utthita trikonasana, ardha chandrasana, svarga dvijasana, dancing warrior",
          "counterposes": "vinyasa, urdhva mukha svanasana, adho mukha svanasana, gomukhasana, paschimottanasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaWarriorIIExtSideAngle.mp4"
+         "gifpath": "static/movie/yoga/YogaWarriorIIExtSideAngle.mp4"
       },
       {
          "id": 15,
@@ -235,7 +235,7 @@
          "prepposestostabilize": "adho mukha svanasana, agnistambhasana, ardha uttanasana, balasana, dandasana, halasana, karnapidasana, pada hastasana, padangusthasana, parsvottanasana, prasarita padottanasana D, supta padangusthasana, upavista konasana, uttanasana",
          "preparesfor": "transition to halasana, salamba sarvangasana, karnapidasana, upavista konasana, tiriang mukha eka pada paschimottanasana, krounchasana, kurmasana, ubhaya padangusthasana, urdhva mukha paschimottanasana",
          "counterposes": "supine twist, supta baddha konasana, apanasana, savasana",
-         "gifpath": "static/movie/Yoga/YogaDandasana.mp4"
+         "gifpath": "static/movie/yoga/YogaDandasana.mp4"
       },
       {
          "id": 18,
@@ -249,7 +249,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, supta padangusthasana, uttanasana",
          "preparesfor": "paschimotanasana, hip openers, twists, pursvottanasana",
          "counterposes": "apanasana, baddha konasana, supta baddha konasana, viparita karani, savasana",
-         "gifpath": "static/movie/Yoga/YogaDandasana.mp4"
+         "gifpath": "static/movie/yoga/YogaDandasana.mp4"
       },
       {
          "id": 19,
@@ -263,7 +263,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaApanasana.mp4"
+         "gifpath": "static/movie/yoga/YogaApanasana.mp4"
       },
       {
          "id": 20,
@@ -277,7 +277,7 @@
          "prepposestostabilize": "ardha uttanasana, dandasana, gomukhasana, malasana, prasarita padottanasana, upavista konasana",
          "preparesfor": "supta baddha konasana, janu sirsasana, parivrtta janu sirsasana, akarna dandasana, marichyasana A, padmasana, swastikasana",
          "counterposes": "apanasana, balasana, adho mukha svanasana, gomukhasana",
-         "gifpath": "static/movie/Yoga/YogaBaddhaKonasana.mp4"
+         "gifpath": "static/movie/yoga/YogaBaddhaKonasana.mp4"
       },
       {
          "id": 21,
@@ -291,7 +291,7 @@
          "prepposestostabilize": "bhujangasana, dhanurasana, eka pada raj kapotasana I, salamba sarvangasana, setu bandha sarvangasana, supta virasana, urdhva mukha svanasana, ustrasana",
          "preparesfor": "urdhva dhanurasana, bhujangasana, eka pada variation, salmba sarvangasana",
          "counterposes": "apanasana, simple twists, supta baddha konasana, ananda balasana, balasana, seated forward bends",
-         "gifpath": "static/movie/Yoga/YogaBridge.mp4"
+         "gifpath": "static/movie/yoga/YogaBridge.mp4"
       },
       {
          "id": 22,
@@ -305,7 +305,7 @@
          "prepposestostabilize": "",
          "preparesfor": "utthita balasana, anahatasana, virasana, sasangasana",
          "counterposes": "svanasana",
-         "gifpath": "static/movie/Yoga/YogaChildsPose2X.mp4"
+         "gifpath": "static/movie/yoga/YogaChildsPose2X.mp4"
       },
       {
          "id": 23,
@@ -319,7 +319,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaComeOutOfSavasana.mp4"
+         "gifpath": "static/movie/yoga/YogaComeOutOfSavasana.mp4"
       },
       {
          "id": 24,
@@ -333,7 +333,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaFrog.mp4"
+         "gifpath": "static/movie/yoga/YogaFrog.mp4"
       },
       {
          "id": 25,
@@ -347,7 +347,7 @@
          "prepposestostabilize": "bhujangasana, pursvottanasana, salabhasana A, salabhasana C, setu bandha sarvangasana",
          "preparesfor": "parsva dhanurasana bhekasana, raj. Kapotasana, ustrasana, laghu vajrasana",
          "counterposes": "balasana, apanasana, ardha matsyendrasana, supta parivartanasana",
-         "gifpath": "static/movie/Yoga/YogaHalfBow.mp4"
+         "gifpath": "static/movie/yoga/YogaHalfBow.mp4"
       },
       {
          "id": 26,
@@ -361,7 +361,7 @@
          "prepposestostabilize": "baddha konasana, dandasana, prasarita padottanasana A, padottanasana B, padottanasana D, upavista konasana, uttanasana",
          "preparesfor": "parivrtta janu sirsasana, upavista konasana, tiriang mukha eka pada paschimottanasana",
          "counterposes": "apanasana, setu bandha sarvangasana, gomukhasana",
-         "gifpath": "static/movie/Yoga/YogaJanuSirsasanaRestorative.mp4"
+         "gifpath": "static/movie/yoga/YogaJanuSirsasanaRestorative.mp4"
       },
       {
          "id": 27,
@@ -375,7 +375,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaNamaste.mp4"
+         "gifpath": "static/movie/yoga/YogaNamaste.mp4"
       },
       {
          "id": 28,
@@ -389,7 +389,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaOpenShoulders.mp4"
+         "gifpath": "static/movie/yoga/YogaOpenShoulders.mp4"
       },
       {
          "id": 29,
@@ -403,7 +403,7 @@
          "prepposestostabilize": "adho mukha svanasana, urdhva mukha svanasana, anjaneyasana, ashtra chandrasana, bhujangasana, parivrtta parsvakonasana, salabhasana B, virabhadrasana I",
          "preparesfor": "eka pada raj kapotasana II, natarajasana, eka pada sirsasana, hanumanasana, kapotasana, raj kapotasana",
          "counterposes": "vinyasa, simple twists, balasana",
-         "gifpath": "static/movie/Yoga/YogaPigeon.mp4"
+         "gifpath": "static/movie/yoga/YogaPigeon.mp4"
       },
       {
          "id": 30,
@@ -417,7 +417,7 @@
          "prepposestostabilize": "bidalasana",
          "preparesfor": "dhanurasana, bhekasana, bhujangasana, setu bandha sarvangasana",
          "counterposes": "balasana, simple twists, supta baddha konasana, seated forward bends",
-         "gifpath": "static/movie/Yoga/YogaSalabhasanaA.mp4"
+         "gifpath": "static/movie/yoga/YogaSalabhasanaA.mp4"
       },
       {
          "id": 31,
@@ -431,7 +431,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaSphinxNeckRoll.mp4"
+         "gifpath": "static/movie/yoga/YogaSphinxNeckRoll.mp4"
       },
       {
          "id": 32,
@@ -445,7 +445,7 @@
          "prepposestostabilize": "bhujangasana, dhanurasana, eka pada raj kapotasana I, salamba sarvangasana, setu bandha sarvangasana, supta virasana, urdhva mukha svanasana, ustrasana",
          "preparesfor": "urdhva dhanurasana, bhujangasana, eka pada variation, salmba sarvangasana",
          "counterposes": "apanasana, simple twists, supta baddha konasana, ananda balasana, balasana, seated forward bends",
-         "gifpath": "static/movie/Yoga/YogaSupportedBridge.mp4"
+         "gifpath": "static/movie/yoga/YogaSupportedBridge.mp4"
       },
       {
          "id": 33,
@@ -459,7 +459,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaSupportedSavasana.mp4"
+         "gifpath": "static/movie/yoga/YogaSupportedSavasana.mp4"
       },
       {
          "id": 34,
@@ -473,7 +473,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "apanasana, ananda balasana, supta parivartanasana, viparita karani, savanasana",
-         "gifpath": "static/movie/Yoga/YogaSuptaBaddhaKonasana.mp4"
+         "gifpath": "static/movie/yoga/YogaSuptaBaddhaKonasana.mp4"
       },
       {
          "id": 35,
@@ -487,7 +487,7 @@
          "prepposestostabilize": "adho mukha svanasana, adho mukha vrksasana, anjaneyasana, ardha uttanasana, ashta chandrasana, baddha konasana, bidalasana, garudasana, malasana, phalakasana, prasarita padottanasana B, prasarita padottanasana D, salamba sirsasana I, slamba sirsasana II, tadasana, urdhva hastasana, virabhadrasana II",
          "preparesfor": "utthita hasta padangusthasana, vasisthasana with top leg in tree",
          "counterposes": "tadasana, ardha uttanasana,uttanasana, garudasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaTree.mp4"
+         "gifpath": "static/movie/yoga/YogaTree.mp4"
       },
       {
          "id": 36,
@@ -501,7 +501,7 @@
          "prepposestostabilize": "adho mukha svanasana, agnistambhasana, ardha uttanasana, baddha konasana, balasana, bidalasana, dandasana, balasana, padangusthasana, paschimottanasana, prasarita padottanasana D, supta padangusthasana, uttana prasithasana, utthita hasta padangusthasana I, utthita hasta padangusthasana II, utthita trikonasana, virabhadrasana II",
          "preparesfor": "kurmasana, tittibhasana, bhujapidasana, supta konasana",
          "counterposes": "dhanurasana, marichyasana C, virasana, gomukhasana, adho mukha svanasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaUpavistaKonasana.mp4"
+         "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4"
       },
       {
          "id": 37,
@@ -515,7 +515,7 @@
          "prepposestostabilize": "",
          "preparesfor": "ardha salamba sarvangasana, supta konasana",
          "counterposes": "apanasana, supta baddha konasana, savasana",
-         "gifpath": "static/movie/Yoga/YogaViparitaKarani.mp4"
+         "gifpath": "static/movie/yoga/YogaViparitaKarani.mp4"
       },
       {
          "id": 38,
@@ -529,7 +529,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, balasana, bidalasana, prasarita padottanasana A, prasarita padottanasana B, tadasana, utkatasana",
          "preparesfor": "padangusthasana, pada hastasana, eka pada adho mukha vrksasana, paschimottanasana",
          "counterposes": "malasana, supta baddha konasana, apanasana, balasana, savasana",
-         "gifpath": "static/movie/Yoga/YogaStandingForwardFold.mp4"
+         "gifpath": "static/movie/yoga/YogaStandingForwardFold.mp4"
       },
       {
          "id": 39,
@@ -543,7 +543,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaSunSalA.mp4"
+         "gifpath": "static/movie/yoga/YogaSunSalA.mp4"
       },
       {
          "id": 40,
@@ -557,7 +557,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaCobra.mp4"
+         "gifpath": "static/movie/yoga/YogaCobra.mp4"
       },
       {
          "id": 41,
@@ -571,7 +571,7 @@
          "prepposestostabilize": "bhujangasana, dhanurasana, pursvottanasana, slabhasana A, salabhasana C, setu bandha sarvangasana, urdhva mukha svanasana, ustrasana",
          "preparesfor": "supta virasana, natarajasana, eka pada raj kapotasana, urdhva dhanurasana",
          "counterposes": "balasana, ardha matsyendrasana, adho mukha svanasana, dandasana, paschimottanasana",
-         "gifpath": "static/movie/Yoga/YogaHalfBhekasana.mp4"
+         "gifpath": "static/movie/yoga/YogaHalfBhekasana.mp4"
       },
       {
          "id": 42,
@@ -585,7 +585,7 @@
          "prepposestostabilize": "bhujangasana, pursvottanasana, salabhasana A, salabhasana C, setu bandha sarvangasana",
          "preparesfor": "parsva dhanurasana bhekasana, raj. Kapotasana, ustrasana, laghu vajrasana",
          "counterposes": "balasana, apanasana, ardha matsyendrasana, supta parivartanasana",
-         "gifpath": "static/movie/Yoga/YogaBow.mp4"
+         "gifpath": "static/movie/yoga/YogaBow.mp4"
       },
       {
          "id": 43,
@@ -599,7 +599,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaCatCowRoll.mp4"
+         "gifpath": "static/movie/yoga/YogaCatCowRoll.mp4"
       },
       {
          "id": 44,
@@ -613,7 +613,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, ashta chandrasana, parivrtta ardha chandrasana, parivrtta parsvakonasana, paschimottanasana, prasarita padottanasana C, supta padangusthasana",
          "preparesfor": "parivrtta trikonasana, hanumanasana, virabhadrasana I, virabhadrasana III",
          "counterposes": "tadasana, balasana, apanasana, supta baddha konasana, supta padangusthasana",
-         "gifpath": "static/movie/Yoga/YogaPyramid.mp4"
+         "gifpath": "static/movie/yoga/YogaPyramid.mp4"
       },
       {
          "id": 45,
@@ -627,7 +627,7 @@
          "prepposestostabilize": "ardha uttanasana, baddha konasana, balasana, uttanasana, virabhadrasana II",
          "preparesfor": "akarna dandasana, bakasana, bhujapidasana, tittibhasana",
          "counterposes": "balasana, paschimottanasana, adho mukha svanasana, simple twists, uttanasana",
-         "gifpath": "static/movie/Yoga/YogaSquat.mp4"
+         "gifpath": "static/movie/yoga/YogaSquat.mp4"
       },
       {
          "id": 46,
@@ -641,7 +641,7 @@
          "prepposestostabilize": "adho mukha svanasana, bidalasana, chaturanga dandasana, garudasana, malasana, marichyasana A, navasana, phalakasana",
          "preparesfor": "tittibasana, parsva bakasana, eka pada koundinyasana, sirsasana II series",
          "counterposes": "vinyasa, urdhva mukha svanasana, adho mukha svanasana, writ therapy, balasana",
-         "gifpath": "static/movie/Yoga/YogaCrow.mp4"
+         "gifpath": "static/movie/yoga/YogaCrow.mp4"
       },
       {
          "id": 47,
@@ -655,7 +655,7 @@
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ardha uttanasana, ashta chandrasana, bidalasana, tadasana, uttanasana",
          "preparesfor": "parivrtta utkatasana, parivrtta ashta chandrasana",
          "counterposes": "uttanasana, adho mukha svanasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaChair.mp4"
+         "gifpath": "static/movie/yoga/YogaChair.mp4"
       },
       {
          "id": 48,
@@ -669,7 +669,7 @@
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ashta chandrasana, garudasana, parivrtta hasta padangusthasana, tadasana, utkatasana, uttanasana",
          "preparesfor": "astavakrasana, eka pada koundinyasana A, parivrtta ardha chandrasana, parivrtta hasta padangusthasana, parivrtta janu sirsasana, parivrtta parsvakonasana, parivrtta trikonasana, parsva bakasana",
          "counterposes": "adho mukha svanasana, balasana, uttanasana, vinyasa",
-         "gifpath": "static/movie/Yoga/YogaChairTwistSideCrow.mp4"
+         "gifpath": "static/movie/yoga/YogaChairTwistSideCrow.mp4"
       },
       {
          "id": 49,
@@ -683,7 +683,7 @@
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ardha matsyendrasana, ashta chandrasana, marichyasana C, parivrtta hasta padangusthasana, parivrtta utkatasana, uttana prasithasana, virabhadrasana I, virabhadrasana III",
          "preparesfor": "eka pada koundinyasana B, chaturanga, bharadvajrasana, marichyasana C",
          "counterposes": "urdhva mukha svanasana, adho mukha svanasana, balasana, supta baddha konasana",
-         "gifpath": "static/movie/Yoga/YogaRevolvedSideAngle.mp4"
+         "gifpath": "static/movie/yoga/YogaRevolvedSideAngle.mp4"
       },
       {
          "id": 50,
@@ -697,7 +697,7 @@
          "prepposestostabilize": "anjaneyasana, ashta chandrasana, prasarita padottanasana, tadasana, vasisthasana, virabhadrasana II",
          "preparesfor": "parivrtta janu sirsasana, utthita trikonasana, utthita parsvakonasana",
          "counterposes": "adho mukha svanasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaGate.mp4"
+         "gifpath": "static/movie/yoga/YogaGate.mp4"
       },
       {
          "id": 51,
@@ -711,7 +711,7 @@
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ardha uttanasana, ashta chandrasana, parsvottanasana, prasarita padottanasana B, salabhasana B, virabhadrasana I, virabhadrasana II",
          "preparesfor": "eka pada koundinyasana A, svarga dvijasana",
          "counterposes": "vinyasa, urdhva mukha svanasana, adho mukha svanasana, prasarita padottanasana C, apanasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaExtSideAngleR.mp4"
+         "gifpath": "static/movie/yoga/YogaExtSideAngleR.mp4"
       },
       {
          "id": 52,
@@ -725,7 +725,7 @@
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ardha uttanasana, ashta chandrasana, parsvottanasana, prasarita padottanasana B, salabhasana B, virabhadrasana I, virabhadrasana II",
          "preparesfor": "eka pada koundinyasana A, svarga dvijasana",
          "counterposes": "vinyasa, urdhva mukha svanasana, adho mukha svanasana, prasarita padottanasana C, apanasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaExtSideAngleL.mp4"
+         "gifpath": "static/movie/yoga/YogaExtSideAngleL.mp4"
       },
       {
          "id": 53,
@@ -739,7 +739,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/KneelingWarriorIIExtSideAngle.mp4"
+         "gifpath": "static/movie/yoga/KneelingWarriorIIExtSideAngle.mp4"
       },
       {
          "id": 54,
@@ -753,7 +753,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, ashta chandrasana, parivrtta hasta padangusthasana, parivrtta parsvakonasana, parivrtta trikonasana, parivrtta utkatasana, parsvottanasana, utthita hasta padangusthasana I, virabhadrasana III, vrksasana",
          "preparesfor": "virabhadrasana III, adho mukha vrksasana, chaturanga dandasana",
          "counterposes": "uttanasana, adho mukha svanasana, balasana, gomukhasana",
-         "gifpath": "static/movie/Yoga/YogaRevolvedTriangleHalfMoon.mp4"
+         "gifpath": "static/movie/yoga/YogaRevolvedTriangleHalfMoon.mp4"
       },
       {
          "id": 55,
@@ -767,7 +767,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, parighasana, phalakasana, prasarita padottanasana D, tadasana, utthita parsvakonasana, utthita trikonasana, vasisthasana, virabhadrasana II, vrksasana",
          "preparesfor": "vasisthasana",
          "counterposes": "balasana, malasana, prasarita padottanasana A",
-         "gifpath": "static/movie/Yoga/YogaTriangleHalfMoonLeft.mp4"
+         "gifpath": "static/movie/yoga/YogaTriangleHalfMoonLeft.mp4"
       },
       {
          "id": 56,
@@ -781,7 +781,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, parighasana, phalakasana, prasarita padottanasana D, tadasana, utthita parsvakonasana, utthita trikonasana, vasisthasana, virabhadrasana II, vrksasana",
          "preparesfor": "vasisthasana",
          "counterposes": "balasana, malasana, prasarita padottanasana A",
-         "gifpath": "static/movie/Yoga/YogaTriangleHalfMoonRight.mp4"
+         "gifpath": "static/movie/yoga/YogaTriangleHalfMoonRight.mp4"
       },
       {
          "id": 57,
@@ -795,7 +795,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, ashta chandrasana, dandasana, parivrtta parsvakonasana, parivrtta trikonasana, parivrtta utkatasana, parsvottanasana, virabhadrasana III, vrksasana",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaRevolvedHandtobigtoeRight.mp4"
+         "gifpath": "static/movie/yoga/YogaRevolvedHandtobigtoeRight.mp4"
       },
       {
          "id": 58,
@@ -809,7 +809,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, ashta chandrasana, dandasana, parivrtta parsvakonasana, parivrtta trikonasana, parivrtta utkatasana, parsvottanasana, virabhadrasana III, vrksasana",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/YogaRevolvedHandtobigtoeLeft.mp4"
+         "gifpath": "static/movie/yoga/YogaRevolvedHandtobigtoeLeft.mp4"
       },
       {
          "id": 59,
@@ -823,7 +823,7 @@
          "prepposestostabilize": "adho mukha svanasana, agnistambhasana, ardha baddha padmottanasana",
          "preparesfor": "upavista konasana, baddha konasana, kurmasana",
          "counterposes": "symmetrical forward bends, supta baddha konasana, apanasana",
-         "gifpath": "static/movie/Yoga/YogaParivrttaJanuSirsasanaLeft.mp4"
+         "gifpath": "static/movie/yoga/YogaParivrttaJanuSirsasanaLeft.mp4"
       },
       {
          "id": 60,
@@ -837,7 +837,7 @@
          "prepposestostabilize": "baddha konasana, dandasana, prasarita padottanasana A, padottanasana B, padottanasana D, upavista konasana, uttanasana",
          "preparesfor": "parivrtta janu sirsasana, upavista konasana, tiriang mukha eka pada paschimottanasana",
          "counterposes": "apanasana, setu bandha sarvangasana, gomukhasana",
-         "gifpath": "static/movie/Yoga/YogaJanuSirsasanaLeft.mp4"
+         "gifpath": "static/movie/yoga/YogaJanuSirsasanaLeft.mp4"
       },
       {
          "id": 61,
@@ -851,7 +851,7 @@
          "prepposestostabilize": "adho mukha svanasana, agnistambhasana, ardha baddha padmottanasana",
          "preparesfor": "upavista konasana, baddha konasana, kurmasana",
          "counterposes": "symmetrical forward bends, supta baddha konasana, apanasana",
-         "gifpath": "static/movie/Yoga/YogaParivrttaJanuSirsasanaRight.mp4"
+         "gifpath": "static/movie/yoga/YogaParivrttaJanuSirsasanaRight.mp4"
       },
       {
          "id": 62,
@@ -865,7 +865,7 @@
          "prepposestostabilize": "baddha konasana, dandasana, prasarita padottanasana A, padottanasana B, padottanasana D, upavista konasana, uttanasana",
          "preparesfor": "parivrtta janu sirsasana, upavista konasana, tiriang mukha eka pada paschimottanasana",
          "counterposes": "apanasana, setu bandha sarvangasana, gomukhasana",
-         "gifpath": "static/movie/Yoga/YogaJanuSirsasanaRight.mp4"
+         "gifpath": "static/movie/yoga/YogaJanuSirsasanaRight.mp4"
       },
       {
          "id": 63,
@@ -879,7 +879,7 @@
          "prepposestostabilize": "",
          "preparesfor": "",
          "counterposes": "",
-         "gifpath": "static/movie/Yoga/WristTherapy.mp4"
+         "gifpath": "static/movie/yoga/WristTherapy.mp4"
       },
       {
          "id": 64,
@@ -893,7 +893,7 @@
          "prepposestostabilize": "bidalasana",
          "preparesfor": "urdhva mukha svanasana, raj kapotasana, ustrasana, bhekasana, eka pada bakasana",
          "counterposes": "adho mukha svanasana, balasana, supine twist, apanasana, supta baddha konasana",
-         "gifpath": "static/movie/Yoga/YogaCobra1X.mp4"
+         "gifpath": "static/movie/yoga/YogaCobra1X.mp4"
       },
       {
          "id": 65,
@@ -907,7 +907,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, ashta chandrasana, bidalasana, prasarita padottanasana B, prasarita padottanasana D, utthita parsvakonasana, vasisthasana, virabhadrasana I, virabhadrasana II",
          "preparesfor": "ardha chandrasana",
          "counterposes": "adho mukha svanasana, garudasana, gomukhasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaTriangleRight.mp4"
+         "gifpath": "static/movie/yoga/YogaTriangleRight.mp4"
       },
       {
          "id": 66,
@@ -921,7 +921,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, ashta chandrasana, bidalasana, prasarita padottanasana B, prasarita padottanasana D, utthita parsvakonasana, vasisthasana, virabhadrasana I, virabhadrasana II",
          "preparesfor": "ardha chandrasana",
          "counterposes": "adho mukha svanasana, garudasana, gomukhasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaTriangleLeft.mp4"
+         "gifpath": "static/movie/yoga/YogaTriangleLeft.mp4"
       },
       {
          "id": 67,
@@ -935,7 +935,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, phalakasana, samastihi, tadasana, urdhva mukha svanasana",
          "preparesfor": "surya namaskara A, surya namaskara B, nakrasana, bakasana",
          "counterposes": "adho mukha svanasana, blasana, wrist therapy",
-         "gifpath": "static/movie/Yoga/YogaChaturanga.mp4"
+         "gifpath": "static/movie/yoga/YogaChaturanga.mp4"
       },
       {
          "id": 68,
@@ -949,7 +949,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, ashta chandrasana, parivrtta ardha chandrasana, parivrtta hasta padangusthasana, parivrtta parsvakonasana, parivrtta utkatasana, parsvottanasana, prasarita padottanasana",
          "preparesfor": "parivrtta ardha chandrasana",
          "counterposes": "tadasana, uttanasana, vinyasa, adho mukha svanasana, balasana, supta baddha konasana, ardha matsyendrasana, marichyasana C",
-         "gifpath": "static/movie/Yoga/YogaRevolvedTriangleRight.mp4"
+         "gifpath": "static/movie/yoga/YogaRevolvedTriangleRight.mp4"
       },
       {
          "id": 69,
@@ -963,7 +963,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, ashta chandrasana, parivrtta ardha chandrasana, parivrtta hasta padangusthasana, parivrtta parsvakonasana, parivrtta utkatasana, parsvottanasana, prasarita padottanasana",
          "preparesfor": "parivrtta ardha chandrasana",
          "counterposes": "tadasana, uttanasana, vinyasa, adho mukha svanasana, balasana, supta baddha konasana, ardha matsyendrasana, marichyasana C",
-         "gifpath": "static/movie/Yoga/YogaRevolvedTriangleLeft.mp4"
+         "gifpath": "static/movie/yoga/YogaRevolvedTriangleLeft.mp4"
       },
       {
          "id": 70,
@@ -977,7 +977,7 @@
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ardha matsyendrasana, ardha uttanasana, ashta chandrasana, bakasana, chaturanga dandasana, garudasana, marichyasana C, parivrtta ardha chandrasana, parivrtta parsvakonasana, parivrtta trikonasana, parivrtta utkatasana, phalakasana, utkatasana, uttana prasithasana, uttanasana",
          "preparesfor": "dwi pada koundinyasana, eka pada koundinyasana A, chaturanga dandasana, salamba sirsasana II vinyasa",
          "counterposes": "wrist therapy, balasana, supta baddha konasana, uttanasana, viparita karani",
-         "gifpath": "static/movie/Yoga/YogaSideCrowLeft.mp4"
+         "gifpath": "static/movie/yoga/YogaSideCrowLeft.mp4"
       },
       {
          "id": 71,
@@ -991,7 +991,7 @@
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ardha matsyendrasana, ardha uttanasana, ashta chandrasana, bakasana, chaturanga dandasana, garudasana, marichyasana C, parivrtta ardha chandrasana, parivrtta parsvakonasana, parivrtta trikonasana, parivrtta utkatasana, phalakasana, utkatasana, uttana prasithasana, uttanasana",
          "preparesfor": "dwi pada koundinyasana, eka pada koundinyasana A, chaturanga dandasana, salamba sirsasana II vinyasa",
          "counterposes": "wrist therapy, balasana, supta baddha konasana, uttanasana, viparita karani",
-         "gifpath": "static/movie/Yoga/YogaSideCrowRight.mp4"
+         "gifpath": "static/movie/yoga/YogaSideCrowRight.mp4"
       },
       {
          "id": 72,
@@ -1005,7 +1005,7 @@
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, bhujangasana, shishulasana, tadasana",
          "preparesfor": "chaturanga dandasana, adho mukha svanasana, vasisthasana, shishula phalakasana",
          "counterposes": "adho mukha svanasana, balasana, wrist therapy",
-         "gifpath": "static/movie/Yoga/YogaPlank.mp4"
+         "gifpath": "static/movie/yoga/YogaPlank.mp4"
       },
       {
          "id": 73,
@@ -1019,7 +1019,7 @@
          "prepposestostabilize": "bidalasana, tadasana",
          "preparesfor": "utkatasana, vrksasana",
          "counterposes": "uttanasana, ardha uttanasana, adho mukha svanasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaSamastihi.mp4"
+         "gifpath": "static/movie/yoga/YogaSamastihi.mp4"
       },
       {
          "id": 74,
@@ -1033,7 +1033,7 @@
          "prepposestostabilize": "",
          "preparesfor": "vrksasana",
          "counterposes": "uttanasana, ardha uttanasana, adho mukha svanasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaTadasana.mp4"
+         "gifpath": "static/movie/yoga/YogaTadasana.mp4"
       },
       {
          "id": 75,
@@ -1047,7 +1047,7 @@
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ardha uttanasana, ashta chandrasana, garudasana, padangusthasana, parsvottanasana, paschimottanasana, prasarita padottanasana D, supta padangusthasana, tadasana, ubhaya padangusthasana, utkatasana, virabhadrasana III,",
          "preparesfor": "parvritta variation",
          "counterposes": "tadasana, garudasana, vinyasa, urdhva mukha svanasana, adho mukha svanasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaUHPright.mp4"
+         "gifpath": "static/movie/yoga/YogaUHPright.mp4"
       },
       {
          "id": 76,
@@ -1061,7 +1061,7 @@
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ardha uttanasana, ashta chandrasana, garudasana, padangusthasana, parsvottanasana, paschimottanasana, prasarita padottanasana D, supta padangusthasana, tadasana, ubhaya padangusthasana, utkatasana, virabhadrasana III,",
          "preparesfor": "parvritta variation",
          "counterposes": "tadasana, garudasana, vinyasa, urdhva mukha svanasana, adho mukha svanasana, balasana",
-         "gifpath": "static/movie/Yoga/YogaUHPleft.mp4"
+         "gifpath": "static/movie/yoga/YogaUHPleft.mp4"
       }
      
    ]
