@@ -191,17 +191,17 @@
          "level": "intermediate",
          "prepposestoopen": "anjaneyasana, ashta chandrasana, baddha konasana, supta padangusthasana, tadasana, utthita trikonasana, vrksasana",
          "prepposestostabilize": "adho mukha svanasana, anjaneyasana, ardha uttanasana, ashta chandrasana, bidalasana, prasarita padottanasana D, tadasana, vasisthasana",
-         "preparesfor": "vinyasa, urdhva mukha svanasana, adho mukha svanasana, gomukhasana, paschimottanasana, balasana",
-         "counterposes": "",
+         "preparesfor": "reverse warrior, utthita parsvakonasana, utthita trikonasana, ardha chandrasana, svarga dvijasana, dancing warrior",
+         "counterposes": "vinyasa, urdhva mukha svanasana, adho mukha svanasana, gomukhasana, paschimottanasana, balasana",
          "gifpath": "static/movie/Yoga/YogaWarriorIIExtSideAngle.mp4"
       },
       {
          "id": 15,
          "category": [
-            "kneeling"
+            "lying"
          ],
          "name": "figure four",
-         "sanskrit": "",
+         "sanskrit": "supta kapotasana",
          "level": "intermediate",
          "prepposestoopen": "",
          "prepposestostabilize": "",
@@ -214,7 +214,7 @@
          "category": [
             "lying"
          ],
-         "name": "gentle twist",
+         "name": "supine twist",
          "sanskrit": "",
          "level": "intermediate",
          "prepposestoopen": "",
@@ -233,8 +233,8 @@
          "level": "easy",
          "prepposestoopen": "adho mukha svanasana, blasana, dandasana, janu sirsasana, supta padangusthasana",
          "prepposestostabilize": "adho mukha svanasana, agnistambhasana, ardha uttanasana, balasana, dandasana, halasana, karnapidasana, pada hastasana, padangusthasana, parsvottanasana, prasarita padottanasana D, supta padangusthasana, upavista konasana, uttanasana",
-         "preparesfor": "",
-         "counterposes": "supta baddha konasana, apanasana, savasana",
+         "preparesfor": "transition to halasana, salamba sarvangasana, karnapidasana, upavista konasana, tiriang mukha eka pada paschimottanasana, krounchasana, kurmasana, ubhaya padangusthasana, urdhva mukha paschimottanasana",
+         "counterposes": "supine twist, supta baddha konasana, apanasana, savasana",
          "gifpath": "static/movie/Yoga/YogaDandasana.mp4"
       },
       {
@@ -242,12 +242,12 @@
          "category": [
             "sitting"
          ],
-         "name": "staff",
+         "name": "staff pose",
          "sanskrit": "dandasana",
          "level": "easy",
          "prepposestoopen": "adho mukha svanasana, ardha uttanasana, supta padangusthasana, uttanasana",
          "prepposestostabilize": "adho mukha svanasana, ardha uttanasana, supta padangusthasana, uttanasana",
-         "preparesfor": "",
+         "preparesfor": "paschimotanasana, hip openers, twists, pursvottanasana",
          "counterposes": "apanasana, baddha konasana, supta baddha konasana, viparita karani, savasana",
          "gifpath": "static/movie/Yoga/YogaDandasana.mp4"
       }
