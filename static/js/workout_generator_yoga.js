@@ -32,7 +32,7 @@ function generateWorkoutJson(duration_work, exerjson, exercises) {
     'childs pose']
     var cooldown = ['figure four',
     'supine twist',
-    'savasana']
+    'corpse pose']
 
 
     duration_work = parseInt(duration_work)
