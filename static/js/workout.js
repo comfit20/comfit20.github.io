@@ -35,6 +35,7 @@ try {
 
     api.addEventListener(`tileViewChanged`, listener);
     api.executeCommand(`toggleTileView`);
+    api.executeCommand('setVideoQuality', 360);
     api.on('readyToClose', () => { //Hack: Hide jitsi frame after exit meeting to get rid of regular jitsi page
     // see https://community.jitsi.org/t/redirect-url-on-hangup/29948/23
     $('#jitsi').hide();
