@@ -4,9 +4,9 @@
   "elements": [
     {
       "id": 0,
-      "heading": "Welcome to Thursday Mostly Restorative Yoga",
+      "heading": "Welcome to Yoga!",
       "name": "Class will start soon",
-      "duration": 0,
+      "duration": 10,
       "gifpath": "static/movie/waitnextworkout.mp4",
       "sound": null,
       "indicator": "hidden"
