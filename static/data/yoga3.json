@@ -3,9 +3,9 @@
   "elements": [
     {
       "id": 0,
-      "heading": "Wait for Group Session",
-      "name": "Session will start soon",
-      "duration": 0,
+      "heading": "Welcome Yoga",
+      "name": "Class will start soon",
+      "duration": 5,
       "gifpath": "static/movie/waitnextworkout.mp4",
       "sound": null,
       "indicator": "hidden"
