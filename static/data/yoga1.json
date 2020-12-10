@@ -4,7 +4,7 @@
   "elements": [
     {
       "id": 0,
-      "heading": "Welcome to Mostly Restorative Yoga",
+      "heading": "Welcome to Yoga",
       "name": "Class will start soon",
       "duration": 5,
       "gifpath": "static/movie/waitnextworkout.mp4",
@@ -13,7 +13,7 @@
     },
     {
       "id": 1,
-      "heading": "Welcome to Yoga!",
+      "heading": "Welcome to Thursday (mostly) Restorative Yoga",
       "name": "Find a comfortable seated position",
       "duration": 60,
       "gifpath": "static/movie/yoga/YogaSeat.mp4",
