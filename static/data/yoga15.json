@@ -4,16 +4,16 @@
   "elements": [
     {
       "id": 0,
-      "heading": "Welcome to Thursday (mostly) Restorative Yoga with a focus on cobra pose",
-      "name": "Session will start soon",
-      "duration": 0,
+      "heading": "Welcome to Yoga",
+      "name": "Class will start soon",
+      "duration": 5,
       "gifpath": "static/movie/waitnextworkout.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 1,
-      "heading": "",
+      "heading": "Welcome to Thursday (mostly) Restorative Yoga with a focus on cobra pose",
       "name": "Find a comfortable seated position",
       "duration": 68,
       "gifpath": "static/movie/yoga/YogaSeat.mp4",
