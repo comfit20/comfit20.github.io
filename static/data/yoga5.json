@@ -3,7 +3,7 @@
   "elements": [
     {
       "id": 0,
-      "heading": "Welcome Yoga",
+      "heading": "Welcome to Yoga",
       "name": "Class will start soon",
       "duration": 5,
       "gifpath": "static/movie/waitnextworkout.mp4",
