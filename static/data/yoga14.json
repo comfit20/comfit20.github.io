@@ -4,16 +4,16 @@
   "elements": [
     {
       "id": 0,
-      "heading": "Welcome to Thursday (mostly) Restorative Yoga with a focus on the forward fold paschimottanasana",
-      "name": "Session will start soon",
-      "duration": 0,
+      "heading": "Welcome to Yoga",
+      "name": "Class will start soon",
+      "duration": 5,
       "gifpath": "static/movie/waitnextworkout.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 1,
-      "heading": "",
+      "heading": "Welcome to Thursday (mostly) Restorative Yoga with a focus on the forward fold paschimottanasana",
       "name": "Let's start in savasana",
       "duration": 660,
       "gifpath": "static/movie/yoga/YogaSavasana.mp4",
