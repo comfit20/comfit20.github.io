@@ -6,7 +6,7 @@
       "id": 0,
       "heading": "Welcome to Mostly Restorative Yoga",
       "name": "Class will start soon",
-      "duration": 0,
+      "duration": 5,
       "gifpath": "static/movie/waitnextworkout.mp4",
       "sound": null,
       "indicator": "hidden"
