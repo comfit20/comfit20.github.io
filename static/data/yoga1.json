@@ -39,7 +39,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 36,
+      "id": 4,
       "heading": "",
       "name": "Figure four right",
       "duration": 60,
@@ -48,7 +48,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 37,
+      "id": 5,
       "heading": "",
       "name": "Figure four left",
       "duration": 60,
@@ -129,7 +129,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 13,
+      "id": 14,
       "heading": "",
       "name": "Try some yoga bicycles!",
       "duration": 60,
@@ -138,7 +138,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 14,
+      "id": 15,
       "heading": "",
       "name": "Come to all fours with shoulders over wrists and hips over knees. Inhale cow, exhale cat",
       "duration": 63,
@@ -147,7 +147,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 8,
+      "id": 16,
       "heading": "",
       "name": "pec stretch right",
       "duration": 40,
@@ -156,7 +156,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 9,
+      "id": 17,
       "heading": "",
       "name": "pec stretch left",
       "duration": 40,
@@ -165,7 +165,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 13,
+      "id": 18,
       "heading": "",
       "name": "Feel free to return to child's pose at any point during this class",
       "duration": 60,
@@ -174,7 +174,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 14,
+      "id": 19,
       "heading": "",
       "name": "puppy pose",
       "duration": 40,
@@ -183,7 +183,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 15,
+      "id": 20,
       "heading": "",
       "name": "low lunge",
       "duration": 139,
@@ -192,7 +192,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 15,
+      "id": 21,
       "heading": "",
       "name": "Forward fold",
       "duration": 7,
@@ -201,7 +201,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 16,
+      "id": 22,
       "heading": "Forward fold continued",
       "name": "Try bending your right knee and look to the left.",
       "duration": 30,
@@ -210,7 +210,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 17,
+      "id": 23,
       "heading": "Forward fold continued",
       "name": "Try bending your left knee and look to the right.",
       "duration": 30,
@@ -219,7 +219,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 17,
+      "id": 24,
       "heading": "",
       "name": "chair pose and then sit down",
       "duration": 19,
@@ -228,7 +228,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 35,
+      "id": 25,
       "heading": "",
       "name": "supported bridge",
       "duration": 120,
@@ -237,7 +237,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 35,
+      "id": 26,
       "heading": "",
       "name": "supported bridge with right knee in",
       "duration": 60,
@@ -246,7 +246,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 35,
+      "id": 27,
       "heading": "",
       "name": "supported bridge with left knee in",
       "duration": 60,
@@ -255,7 +255,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 35,
+      "id": 28,
       "heading": "",
       "name": "roll onto stomach for half frog with right knee out",
       "duration": 60,
@@ -264,7 +264,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 35,
+      "id": 29,
       "heading": "",
       "name": "half frog with left knee out",
       "duration": 60,
@@ -273,7 +273,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 36,
+      "id": 30,
       "heading": "",
       "name": "side bend over left leg",
       "duration": 60,
@@ -282,7 +282,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 36,
+      "id": 31,
       "heading": "",
       "name": "side bend over right leg",
       "duration": 60,
@@ -291,7 +291,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 42,
+      "id": 32,
       "heading": "",
       "name": "staff pose with ankle circles",
       "duration": 136,
@@ -300,16 +300,16 @@
       "indicator": "hidden"
     },
     {
-      "id": 48,
+      "id": 33,
       "heading": "",
-      "name": "Savasana",
+      "name": "savasana",
       "duration": 300,
       "gifpath": "static/movie/yoga/YogaSavasana.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
-      "id": 49,
+      "id": 34,
       "heading": "",
       "name": "You're welcome to stay here as long as you like.",
       "duration": 42,
@@ -318,7 +318,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 50,
+      "id": 35,
       "heading": "Thank you for practicing with me today!",
       "name": "",
       "duration": 61,
