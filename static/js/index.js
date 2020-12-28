@@ -150,10 +150,10 @@
         var today = dayjs().day()
 
 //console.log("workout No", Math.floor((Math.random() * 18) + 2))
- if (today == 1 ||  today == 1 ||  today == 1) {return "_mon";}
+ if (today == 1 ||  today == 0 ||  today == 6) {return "_mon";}
 else if (today == 3 ||  today == 2) {return "_wed";}
 else if (today == 5 ||  today == 4) {return "_fri";}
- else if (today == 0 ||  today == 6) {return "_family";}
+ //else if (today == 0 ||  today == 6) {return "_family";}
 
  // else {return Math.floor((Math.random() * 40) + 2);}
     }
