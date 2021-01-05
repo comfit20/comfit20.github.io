@@ -66,8 +66,12 @@
 
        function createYogaTimeList() {
         var time_list = []
-        var time_1 = getNextWeekday(5).set('h',02).set('m',32).set('s',0).set('ms',0);
-        time_list.push(time_1);
+        var time_1 = getNextWeekday(2).set('h',24).set('m',32).set('s',0).set('ms',0);
+        time_list.push(time_1); //this is Tuesday 4:30 pm 
+        var time_1 = getNextWeekday(4).set('h',24).set('m',32).set('s',0).set('ms',0);
+        time_list.push(time_1); //this is Thursday 4:30 pm 
+        var time_3 = getNextWeekday(5).set('h',02).set('m',32).set('s',0).set('ms',0);
+        time_list.push(time_3); //this is Thursday 6:30pm
 
         // var time_2 = getNextWeekday(5).set('h',18).set('m',35).set('s',0).set('ms',0);
         // time_list.push(time_2); // this time is Friday 11:35 PST
