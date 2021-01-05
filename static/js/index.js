@@ -68,8 +68,8 @@
         var time_list = []
         var time_1 = getNextWeekday(2).set('h',24).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_1); //this is Tuesday 4:30 pm 
-        var time_1 = getNextWeekday(4).set('h',24).set('m',32).set('s',0).set('ms',0);
-        time_list.push(time_1); //this is Thursday 4:30 pm 
+        var time_2 = getNextWeekday(4).set('h',24).set('m',32).set('s',0).set('ms',0);
+        time_list.push(time_2); //this is Thursday 4:30 pm 
         var time_3 = getNextWeekday(5).set('h',02).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_3); //this is Thursday 6:30pm
 
@@ -114,9 +114,18 @@
         $.each(yoga_time_list, function (idx,time) {
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
             $("#yoga-next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
+            
+            if (today == 2 ||  today == 4) {
+            var share_link = window.location.hostname+'/yoga_group_vinyasa.html'+'&timestamp='+time.toISOString();
+            $("#yoga-next-"+idx).attr('href','yoga_group_vinyasa.html?timestamp='+time.toISOString());
+            $('#yoga-next-'+idx+'-link').attr('value',share_link);
+            }
+
+            else if (today == 5) {
             var share_link = window.location.hostname+'/yoga_group.html?workout=yoga1.json'+'&timestamp='+time.toISOString();
             $("#yoga-next-"+idx).attr('href','yoga_group.html?timestamp='+time.toISOString()+"&workout=yoga1.json");
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
+            }
         });
 
 
