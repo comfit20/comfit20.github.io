@@ -39,7 +39,7 @@
 
 </head>
 
-<body class="text-center custom-body bg-yoga">
+<body class="text-center bg-yoga flex-grow-1">
 
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column  w-100 " style="max-width: 80em">
     <header class="masthead mb-auto">
@@ -57,56 +57,9 @@
 
     <main role="main" class="inner cover h-100">
             <div class="row h-100">
-                <div class="card-group col-sm-6">
+                <div class="card-group col-sm-12">
                     <div class="card comfit-bg">
-
-                        <h1 id="heading" class="comfit-bg"></h1> <!-- include content from heading workout files here -->
-                        <div id="content" class="comfit-bg">
-                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
-                                 data-interval="false" data-wrap="false" data-touch="false">
-
-
-                                <div class="carousel-inner">
-
-                                </div>
-
-
-                                <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom"
-                                        class="btn btn-dark" data-toggle="tooltip" data-placement="bottom"
-                                        title="Sound is off" type="button"><i id="sound-icon"
-                                                                              class="fas fa-volume-mute"></i></button>
-
-                                <ol class="carousel-indicators" style="position: relative;">
-
-                                    <!--           <button  style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark  sound-button" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button> -->
-
-                                </ol>
-
-                                <!-- <button style="visibility: hidden" onclick="toggleSound()" id="sound-button-custom" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Sound is off" type="button"><i  id="sound-icon" class="fas fa-volume-mute"></i></button> -->
-
-                                <div id="wait-spinner" class="spinner-border" role="status">
-                                    <span class="sr-only">Loading...</span>
-                                </div>
-
-                                </ol>
-
-
-                                <!--               <iframe id = "spotifylink" src="https://open.spotify.com/embed/playlist/3oLKVWqy7vh8XeukJavyyi"  width="360" height="80"
-                                 frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
-
-                                <iframe style="visibility: hidden" id="spotifylink" width="90%" height="80"
-                                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-group col-sm-6">
-                    <div class="card comfit-bg">
-
-<div class="iframe-container" id="jitsi">
+                        <div class="iframe-container" id="jitsi">
                     </div>
                 </div>
             </div>
@@ -158,9 +111,7 @@ $("#spotifylink").attr("src", "https://open.spotify.com/embed/playlist/"+ music_
 
 <script type="text/javascript" src="./static/libs/jquery.plugin.js"></script>
 <script type="text/javascript" src="./static/libs/jquery.countdown.js"></script>
-<script type="text/javascript" src="static/js/workout_generator_yoga.js"></script>
-<script type="text/javascript" src="static/js/yoga.js"></script>
-<script type="text/javascript" src="static/js/helper.js"></script>
+<script type="text/javascript" src="static/js/yoga_vinyasa.js"></script>
 
 </body>
 </html>
