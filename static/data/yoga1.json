@@ -439,7 +439,7 @@
       "heading": "",
       "name": "side bend over right leg",
       "duration": 60,
-      "gifpath": "static/movie/yoga/YogaJanuSirsasanaRight.mp4",
+      "gifpath": "static/movie/yoga/YogaParivrttaJanuSirsasanaRight.mp4",
       "sound": null,
       "indicator": "hidden"
     },
@@ -448,7 +448,7 @@
       "heading": "",
       "name": "side bend over left leg",
       "duration": 60,
-      "gifpath": "static/movie/yoga/YogaJanuSirsasanaLeft.mp4",
+      "gifpath": "static/movie/yoga/YogaParivrttaJanuSirsasanaLeft.mp4",
       "sound": null,
       "indicator": "hidden"
     },
