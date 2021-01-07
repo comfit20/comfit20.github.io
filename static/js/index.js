@@ -36,7 +36,7 @@
     function createWorkoutTimeList() {
         var time_list = []
         var time_1 = getNextWeekday(1).set('h',16).set('m',32).set('s',0).set('ms',0);
-        time_list.push(time_1); //this is Monday 8:30 am 
+        time_list.push(time_1); //this is Monday 8:30 am
         var time_2 = getNextWeekday(2).set('h',2).set('m',2).set('s',0).set('ms',0);
         time_list.push(time_2); // this is Monday 6:00 pm
         var time_3 = getNextWeekday(3).set('h',16).set('m',32).set('s',0).set('ms',0);
@@ -66,8 +66,12 @@
 
        function createYogaTimeList() {
         var time_list = []
-        var time_1 = getNextWeekday(5).set('h',02).set('m',32).set('s',0).set('ms',0);
-        time_list.push(time_1);
+        var time_1 = getNextWeekday(2).set('h',24).set('m',32).set('s',0).set('ms',0);
+        time_list.push(time_1); //this is Tuesday 4:30 pm
+        var time_2 = getNextWeekday(4).set('h',24).set('m',32).set('s',0).set('ms',0);
+        time_list.push(time_2); //this is Thursday 4:30 pm
+        var time_3 = getNextWeekday(5).set('h',02).set('m',32).set('s',0).set('ms',0);
+        time_list.push(time_3); //this is Thursday 6:30pm
 
         // var time_2 = getNextWeekday(5).set('h',18).set('m',35).set('s',0).set('ms',0);
         // time_list.push(time_2); // this time is Friday 11:35 PST
@@ -107,12 +111,22 @@
         // Render yoga stuff todo: extract method
          var yoga_time_list = createYogaTimeList();
 
+        var today = dayjs().day();
         $.each(yoga_time_list, function (idx,time) {
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
             $("#yoga-next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
+
+            if (today == 2 ||  today == 4) {
+            var share_link = window.location.hostname+'/yoga_group_vinyasa.html'+'&timestamp='+time.toISOString();
+            $("#yoga-next-"+idx).attr('href','yoga_group_vinyasa.html?timestamp='+time.toISOString());
+            $('#yoga-next-'+idx+'-link').attr('value',share_link);
+            }
+
+            else if (today == 5) {
             var share_link = window.location.hostname+'/yoga_group.html?workout=yoga1.json'+'&timestamp='+time.toISOString();
             $("#yoga-next-"+idx).attr('href','yoga_group.html?timestamp='+time.toISOString()+"&workout=yoga1.json");
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
+            }
         });
 
 
@@ -131,14 +145,14 @@
 
 
 
-     //pick random number of workout for workout anytime    
+     //pick random number of workout for workout anytime
     function get_workoutNo() {
         var today = dayjs().day()
         //console.log("workout No", Math.floor((Math.random() * 18) + 2))
  return Math.floor((Math.random() * 78) + 1);
     }
 
-    //pick random number of yoga for yoga anytime   
+    //pick random number of yoga for yoga anytime
     function get_yogaNo() {
         var today = dayjs().day()
         //console.log("workout No", Math.floor((Math.random() * 18) + 2))
