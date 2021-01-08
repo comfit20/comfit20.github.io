@@ -116,13 +116,13 @@
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
             $("#yoga-next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
 
-            if (today == 2 ||  today == 4) {
+            if (today == 2 ||  today == 3) {
             var share_link = window.location.hostname+'/yoga_group_vinyasa.html'+'&timestamp='+time.toISOString();
             $("#yoga-next-"+idx).attr('href','yoga_group_vinyasa.html?timestamp='+time.toISOString());
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
             }
 
-            else if (today == 5) {
+            else if (today == 4) {
             var share_link = window.location.hostname+'/yoga_group.html?workout=yoga1.json'+'&timestamp='+time.toISOString();
             $("#yoga-next-"+idx).attr('href','yoga_group.html?timestamp='+time.toISOString()+"&workout=yoga1.json");
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
