@@ -122,7 +122,7 @@
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
             }
 
-            else if (today == 4) {
+            else if (today == 4 ||  today == 5) {
             var share_link = window.location.hostname+'/yoga_group.html?workout=yoga1.json'+'&timestamp='+time.toISOString();
             $("#yoga-next-"+idx).attr('href','yoga_group.html?timestamp='+time.toISOString()+"&workout=yoga1.json");
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
