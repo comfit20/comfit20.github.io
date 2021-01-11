@@ -35,21 +35,27 @@
 
     function createWorkoutTimeList() {
         var time_list = []
+
         var time_1 = getNextWeekday(1).set('h',16).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_1); //this is Monday 8:30 am
         var time_2 = getNextWeekday(2).set('h',2).set('m',2).set('s',0).set('ms',0);
         time_list.push(time_2); // this is Monday 6:00 pm
+
+        var time_4 = getNextWeekday(2).set('h',18).set('m',2).set('s',0).set('ms',0);
+        time_list.push(time_4); // this is Tuesday 10:00 am  
+
         var time_3 = getNextWeekday(3).set('h',16).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_3); //this is Wednedsay 8:30 am
-        // var time_4 = getNextWeekday(4).set('h',1).set('m',2).set('s',0).set('ms',0);
-        // time_list.push(time_4);
+
+        var time_6 = getNextWeekday(4).set('h',18).set('m',2).set('s',0).set('ms',0);
+        time_list.push(time_6); // this is Thursday 10:00 am  
+
         var time_5 = getNextWeekday(5).set('h',16).set('m',32).set('s',0).set('ms',0);
-        time_list.push(time_5);
-        var time_6 = getNextWeekday(0).set('h',16).set('m',34).set('s',0).set('ms',0);
-        time_list.push(time_6);
+        time_list.push(time_5); //this is Friday 8:30 am
 
-
-
+        // var time_6 = getNextWeekday(0).set('h',16).set('m',34).set('s',0).set('ms',0);
+        // time_list.push(time_6);
+        
         console.log(time_list)
 
         time_list.sort((a, b) => (a.isAfter(b) ? 1 : -1))
@@ -77,7 +83,7 @@
         // time_list.push(time_2); // this time is Friday 11:35 PST
         // Add your yoga times here (the time is in UTC
         // --> e.g. california wednesday 06:00pm is thursday 01:00 in utc)
-
+        console.log(time_list)
         time_list.sort((a, b) => (a.isAfter(b) ? 1 : -1))
 
         // Get rid of times that are over. 1 hour after the workout, delete it from list and show next
@@ -111,12 +117,13 @@
         // Render yoga stuff todo: extract method
          var yoga_time_list = createYogaTimeList();
 
+
         var today = dayjs().day();
         $.each(yoga_time_list, function (idx,time) {
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
             $("#yoga-next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
 
-            if (today == 2 ||  today == 3) {
+            if (today == 1 || today == 2 ||  today == 3 ||  today == 6 || today == 0 ) {
             var share_link = window.location.hostname+'/yoga_group_vinyasa.html'+'&timestamp='+time.toISOString();
             $("#yoga-next-"+idx).attr('href','yoga_group_vinyasa.html?timestamp='+time.toISOString());
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
@@ -128,7 +135,7 @@
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
             }
         });
-
+        console.log(yoga_time_list)
 
         var btn = document.getElementById('yoga-next-0-link');
         var clipboard = new ClipboardJS('.clipboard-button');
@@ -162,11 +169,12 @@
 
     function get_workoutday() {
         var today = dayjs().day()
-
 //console.log("workout No", Math.floor((Math.random() * 18) + 2))
  if (today == 1 ||  today == 0 ||  today == 6) {return "_mon";}
-else if (today == 3 ||  today == 2) {return "_wed";}
-else if (today == 5 ||  today == 4) {return "_fri";}
+ else if (today == 2) {return "_tue";}
+else if (today == 3 ) {return "_wed";}
+else if (today == 4) {return "_thu";}
+else if (today == 5) {return "_fri";}
  //else if (today == 0 ||  today == 6) {return "_family";}
 
  // else {return Math.floor((Math.random() * 40) + 2);}
