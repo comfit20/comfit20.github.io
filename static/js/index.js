@@ -156,7 +156,7 @@
     function get_workoutNo() {
         var today = dayjs().day()
         //console.log("workout No", Math.floor((Math.random() * 18) + 2))
- return Math.floor((Math.random() * 78) + 1);
+ return Math.floor((Math.random() * 112) + 1);
     }
 
     //pick random number of yoga for yoga anytime
