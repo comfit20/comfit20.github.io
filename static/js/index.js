@@ -82,7 +82,6 @@
 function createYogaTimeList() {
 
 
-
         var time_list = []
         var time_1 = getNextWeekday(2).set('h',24).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_1); //this is Tuesday 4:30 pm
@@ -166,7 +165,6 @@ function createYogaTimeList() {
             $("#yoga-next-"+idx).attr('href','yoga_group.html?timestamp='+time.toISOString()+"&workout=yoga1.json");
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
             }
-
 
         });
         //console.log(yoga_time_list)
