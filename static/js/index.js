@@ -78,7 +78,11 @@
     var day_workout = get_workoutday()
     //console.log(day_workout)
 
-       function createYogaTimeList() {
+        
+function createYogaTimeList() {
+
+
+
         var time_list = []
         var time_1 = getNextWeekday(2).set('h',24).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_1); //this is Tuesday 4:30 pm
@@ -87,17 +91,19 @@
         var time_3 = getNextWeekday(5).set('h',02).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_3); //this is Thursday 6:30pm
 
-        // var time_2 = getNextWeekday(5).set('h',18).set('m',35).set('s',0).set('ms',0);
-        // time_list.push(time_2); // this time is Friday 11:35 PST
+        
         // Add your yoga times here (the time is in UTC
         // --> e.g. california wednesday 06:00pm is thursday 01:00 in utc)
         //console.log(time_list)
         time_list.sort((a, b) => (a.isAfter(b) ? 1 : -1))
 
-        // Get rid of times that are over. 1 hour after the workout, delete it from list and show next
+        //console.log("yoga times", time_list)
+
+     // Get rid of times that are over. 1 hour after the workout, delete it from list and show next
         var filtered_time_list =   time_list.filter(function (date, iindex) {
             return dayjs.utc().isBefore(date.add(1,'hour'))
         });
+
         return filtered_time_list
     }
 
@@ -110,7 +116,7 @@
 
         $.each(time_list, function (idx,time) {
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
-            //console.log(time.local().format())
+            //console.log("times",time.local().format())
             $("#next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
             //var share_link = window.location.hostname+'/workout.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
             var share_link = window.location.hostname+'/workout_group.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
@@ -125,23 +131,43 @@
         // Render yoga stuff todo: extract method
          var yoga_time_list = createYogaTimeList();
 
+        var time_test = Object();
+          time_test = {
+          time_Tue: getNextWeekday(2).set('h',24).set('m',32).set('s',0).set('ms',0),
+          time_Thu: getNextWeekday(4).set('h',24).set('m',32).set('s',0).set('ms',0),
+          time_Thu2: getNextWeekday(5).set('h',02).set('m',32).set('s',0).set('ms',0)
+      }
 
         var today = dayjs().day();
         $.each(yoga_time_list, function (idx,time) {
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
+            //console.log("yoga",time.local().format())
+            //console.log(time_test)
             $("#yoga-next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
 
-            if (today == 1 || today == 2 ||  today == 3 ||  today == 6 || today == 0 ) {
+
+            console.log('test eeual', _.isEqual(time_test["time_Thu"], yoga_time_list[0]));
+
+
+            if (_.isEqual(time_test["time_Thu"], yoga_time_list[0]) == true) {
             var share_link = window.location.hostname+'/yoga_group_vinyasa.html'+'&timestamp='+time.toISOString();
             $("#yoga-next-"+idx).attr('href','yoga_group_vinyasa.html?timestamp='+time.toISOString());
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
             }
 
-            else if (today == 4 ||  today == 5) {
+            else if (_.isEqual(time_test["time_Tue"], yoga_time_list[0]) == true) {
+            var share_link = window.location.hostname+'/yoga_group_vinyasa.html'+'&timestamp='+time.toISOString();
+            $("#yoga-next-"+idx).attr('href','yoga_group_vinyasa.html?timestamp='+time.toISOString());
+            $('#yoga-next-'+idx+'-link').attr('value',share_link);
+            }
+
+            else if (_.isEqual(time_test["time_Thu2"], yoga_time_list[0]) == true) {
             var share_link = window.location.hostname+'/yoga_group.html?workout=yoga1.json'+'&timestamp='+time.toISOString();
             $("#yoga-next-"+idx).attr('href','yoga_group.html?timestamp='+time.toISOString()+"&workout=yoga1.json");
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
             }
+
+
         });
         //console.log(yoga_time_list)
 
