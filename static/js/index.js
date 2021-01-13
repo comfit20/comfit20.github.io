@@ -56,19 +56,27 @@
         // var time_6 = getNextWeekday(0).set('h',16).set('m',34).set('s',0).set('ms',0);
         // time_list.push(time_6);
         
-        console.log(time_list)
+        console.log("workout times", time_list)
 
         time_list.sort((a, b) => (a.isAfter(b) ? 1 : -1))
+        // var sorted_times = time_list.sort((a, b) => (a.isAfter(b) ? 1 : -1))
+        // window.sorted_times
+        
+
 
         // Get rid of times that are over. 1 hour after the workout, delete it from list and show next
         var filtered_time_list =   time_list.filter(function (date, iindex) {
             return dayjs.utc().isBefore(date.add(1,'hour'))
         });
+        //console.log("filtered time ", filtered_time_list[1])
         return filtered_time_list
+
     }
 
+     
+
     var day_workout = get_workoutday()
-    console.log(day_workout)
+    //console.log(day_workout)
 
        function createYogaTimeList() {
         var time_list = []
@@ -83,7 +91,7 @@
         // time_list.push(time_2); // this time is Friday 11:35 PST
         // Add your yoga times here (the time is in UTC
         // --> e.g. california wednesday 06:00pm is thursday 01:00 in utc)
-        console.log(time_list)
+        //console.log(time_list)
         time_list.sort((a, b) => (a.isAfter(b) ? 1 : -1))
 
         // Get rid of times that are over. 1 hour after the workout, delete it from list and show next
@@ -102,7 +110,7 @@
 
         $.each(time_list, function (idx,time) {
             const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit',minute: '2-digit' };
-            console.log(time.local().format())
+            //console.log(time.local().format())
             $("#next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
             //var share_link = window.location.hostname+'/workout.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
             var share_link = window.location.hostname+'/workout_group.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
@@ -135,7 +143,7 @@
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
             }
         });
-        console.log(yoga_time_list)
+        //console.log(yoga_time_list)
 
         var btn = document.getElementById('yoga-next-0-link');
         var clipboard = new ClipboardJS('.clipboard-button');
