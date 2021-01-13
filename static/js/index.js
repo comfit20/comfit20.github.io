@@ -179,8 +179,8 @@
         var today = dayjs().day()
 //console.log("workout No", Math.floor((Math.random() * 18) + 2))
  if (today == 1 ||  today == 0 ||  today == 6) {return "_mon";}
- else if (today == 2) {return "_tue";}
-else if (today == 3 ) {return "_wed";}
+ else if (today == 1) {return "_tue";}
+else if (today == 3 today == 2 || ) {return "_wed";}
 else if (today == 4) {return "_thu";}
 else if (today == 5) {return "_fri";}
  //else if (today == 0 ||  today == 6) {return "_family";}
