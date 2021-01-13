@@ -55,23 +55,32 @@
     {
       "id": 5,
       "heading": "Introduction to exercises",
-      "name": "Burpee & Jump 180",
+      "name": "Diamond Push Up",
       "duration": 10,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 6,
       "heading": "Introduction to exercises",
-      "name": "Seal Push Up",
+      "name": "High Knees",
       "duration": 10,
-      "gifpath": "static/movie/SealPushUp.mp4",
+      "gifpath": "static/movie/HighKnee.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 7,
+      "heading": "Introduction to exercises",
+      "name": "10 Fast Feet & Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 8,
       "heading": "Introduction to exercises",
       "name": "5 Shoulder Circles & Windmill",
       "duration": 10,
@@ -80,25 +89,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 8,
-      "heading": "Introduction to exercises",
-      "name": "Shoot Through",
-      "duration": 10,
-      "gifpath": "static/movie/ShootThrough.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
       "id": 9,
-      "heading": "Introduction to exercises",
-      "name": "Diamond Push Up",
-      "duration": 10,
-      "gifpath": "static/movie/DiamondPushup.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 10,
       "heading": "Introduction to exercises",
       "name": "Crab Walk",
       "duration": 10,
@@ -107,11 +98,20 @@
       "indicator": "hidden"
     },
     {
+      "id": 10,
+      "heading": "Introduction to exercises",
+      "name": "Crunches",
+      "duration": 10,
+      "gifpath": "static/movie/Crunches.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
       "id": 11,
       "heading": "Introduction to exercises",
-      "name": "Plank & Side Jump",
+      "name": "Seal Push Up",
       "duration": 10,
-      "gifpath": "static/movie/PlankSideJump.mp4",
+      "gifpath": "static/movie/SealPushUp.mp4",
       "sound": null,
       "indicator": "hidden"
     },
@@ -397,123 +397,447 @@
     {
       "id": 43,
       "heading": "Rest",
-      "name": "Up Next: Burpee & Jump 180",
+      "name": "Up Next: Diamond Push Up",
       "duration": 10,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 44,
       "heading": "Work",
-      "name": "Burpee & Jump 180",
+      "name": "Diamond Push Up",
       "duration": 45,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 45,
       "heading": "Rest",
-      "name": "Up Next: Burpee & Jump 180",
+      "name": "Up Next: Diamond Push Up",
       "duration": 15,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 46,
       "heading": "Work",
-      "name": "Burpee & Jump 180",
+      "name": "Diamond Push Up",
       "duration": 25,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 47,
       "heading": "Rest",
-      "name": "Up Next: Burpee & Jump 180",
+      "name": "Up Next: Diamond Push Up",
       "duration": 10,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 48,
       "heading": "Work",
-      "name": "Burpee & Jump 180",
+      "name": "Diamond Push Up",
       "duration": 45,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 49,
       "heading": "Rest",
-      "name": "Up Next: Burpee & Jump 180",
+      "name": "Up Next: Diamond Push Up",
       "duration": 15,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 50,
       "heading": "Work",
-      "name": "Burpee & Jump 180",
+      "name": "Diamond Push Up",
       "duration": 25,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 51,
       "heading": "Rest",
-      "name": "Up Next: Seal Push Up",
+      "name": "Up Next: High Knees",
       "duration": 10,
-      "gifpath": "static/movie/SealPushUp.mp4",
+      "gifpath": "static/movie/HighKnee.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 52,
       "heading": "Work",
-      "name": "Seal Push Up",
+      "name": "High Knees",
       "duration": 45,
-      "gifpath": "static/movie/SealPushUp.mp4",
+      "gifpath": "static/movie/HighKnee.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 53,
       "heading": "Rest",
-      "name": "Up Next: Seal Push Up",
+      "name": "Up Next: High Knees",
       "duration": 15,
-      "gifpath": "static/movie/SealPushUp.mp4",
+      "gifpath": "static/movie/HighKnee.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 54,
       "heading": "Work",
-      "name": "Seal Push Up",
+      "name": "High Knees",
       "duration": 25,
-      "gifpath": "static/movie/SealPushUp.mp4",
+      "gifpath": "static/movie/HighKnee.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 55,
       "heading": "Rest",
-      "name": "Up Next: Seal Push Up",
+      "name": "Up Next: High Knees",
       "duration": 10,
-      "gifpath": "static/movie/SealPushUp.mp4",
+      "gifpath": "static/movie/HighKnee.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 56,
       "heading": "Work",
+      "name": "High Knees",
+      "duration": 45,
+      "gifpath": "static/movie/HighKnee.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 57,
+      "heading": "Rest",
+      "name": "Up Next: High Knees",
+      "duration": 15,
+      "gifpath": "static/movie/HighKnee.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 58,
+      "heading": "Work",
+      "name": "High Knees",
+      "duration": 25,
+      "gifpath": "static/movie/HighKnee.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 59,
+      "heading": "Rest",
+      "name": "Up Next: 10 Fast Feet & Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 60,
+      "heading": "Work",
+      "name": "10 Fast Feet & Push Up",
+      "duration": 45,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 61,
+      "heading": "Rest",
+      "name": "Up Next: 10 Fast Feet & Push Up",
+      "duration": 15,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 62,
+      "heading": "Work",
+      "name": "10 Fast Feet & Push Up",
+      "duration": 25,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 63,
+      "heading": "Rest",
+      "name": "Up Next: 10 Fast Feet & Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 64,
+      "heading": "Work",
+      "name": "10 Fast Feet & Push Up",
+      "duration": 45,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 65,
+      "heading": "Rest",
+      "name": "Up Next: 10 Fast Feet & Push Up",
+      "duration": 15,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 66,
+      "heading": "Work",
+      "name": "10 Fast Feet & Push Up",
+      "duration": 25,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 67,
+      "heading": "Rest",
+      "name": "Up Next: 5 Shoulder Circles & Windmill",
+      "duration": 10,
+      "gifpath": "static/movie/ShouldrCircles.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 68,
+      "heading": "Work",
+      "name": "5 Shoulder Circles & Windmill",
+      "duration": 45,
+      "gifpath": "static/movie/ShouldrCircles.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 69,
+      "heading": "Rest",
+      "name": "Up Next: 5 Shoulder Circles & Windmill",
+      "duration": 15,
+      "gifpath": "static/movie/ShouldrCircles.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 70,
+      "heading": "Work",
+      "name": "5 Shoulder Circles & Windmill",
+      "duration": 25,
+      "gifpath": "static/movie/ShouldrCircles.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 71,
+      "heading": "Rest",
+      "name": "Up Next: 5 Shoulder Circles & Windmill",
+      "duration": 10,
+      "gifpath": "static/movie/ShouldrCircles.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 72,
+      "heading": "Work",
+      "name": "5 Shoulder Circles & Windmill",
+      "duration": 45,
+      "gifpath": "static/movie/ShouldrCircles.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 73,
+      "heading": "Rest",
+      "name": "Up Next: 5 Shoulder Circles & Windmill",
+      "duration": 15,
+      "gifpath": "static/movie/ShouldrCircles.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 74,
+      "heading": "Work",
+      "name": "5 Shoulder Circles & Windmill",
+      "duration": 25,
+      "gifpath": "static/movie/ShouldrCircles.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 75,
+      "heading": "Rest",
+      "name": "Up Next: Crab Walk",
+      "duration": 10,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 76,
+      "heading": "Work",
+      "name": "Crab Walk",
+      "duration": 45,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 77,
+      "heading": "Rest",
+      "name": "Up Next: Crab Walk",
+      "duration": 15,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 78,
+      "heading": "Work",
+      "name": "Crab Walk",
+      "duration": 25,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 79,
+      "heading": "Rest",
+      "name": "Up Next: Crab Walk",
+      "duration": 10,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 80,
+      "heading": "Work",
+      "name": "Crab Walk",
+      "duration": 45,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 81,
+      "heading": "Rest",
+      "name": "Up Next: Crab Walk",
+      "duration": 15,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 82,
+      "heading": "Work",
+      "name": "Crab Walk",
+      "duration": 25,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 83,
+      "heading": "Rest",
+      "name": "Up Next: Crunches",
+      "duration": 10,
+      "gifpath": "static/movie/Crunches.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 84,
+      "heading": "Work",
+      "name": "Crunches",
+      "duration": 45,
+      "gifpath": "static/movie/Crunches.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 85,
+      "heading": "Rest",
+      "name": "Up Next: Crunches",
+      "duration": 15,
+      "gifpath": "static/movie/Crunches.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 86,
+      "heading": "Work",
+      "name": "Crunches",
+      "duration": 25,
+      "gifpath": "static/movie/Crunches.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 87,
+      "heading": "Rest",
+      "name": "Up Next: Crunches",
+      "duration": 10,
+      "gifpath": "static/movie/Crunches.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 88,
+      "heading": "Work",
+      "name": "Crunches",
+      "duration": 45,
+      "gifpath": "static/movie/Crunches.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 89,
+      "heading": "Rest",
+      "name": "Up Next: Crunches",
+      "duration": 15,
+      "gifpath": "static/movie/Crunches.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 90,
+      "heading": "Work",
+      "name": "Crunches",
+      "duration": 25,
+      "gifpath": "static/movie/Crunches.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 91,
+      "heading": "Rest",
+      "name": "Up Next: Seal Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/SealPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 92,
+      "heading": "Work",
       "name": "Seal Push Up",
       "duration": 45,
       "gifpath": "static/movie/SealPushUp.mp4",
@@ -521,7 +845,7 @@
       "indicator": "exer_visible"
     },
     {
-      "id": 57,
+      "id": 93,
       "heading": "Rest",
       "name": "Up Next: Seal Push Up",
       "duration": 15,
@@ -530,7 +854,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 58,
+      "id": 94,
       "heading": "Work",
       "name": "Seal Push Up",
       "duration": 25,
@@ -539,362 +863,38 @@
       "indicator": "exer_visible"
     },
     {
-      "id": 59,
-      "heading": "Rest",
-      "name": "Up Next: 5 Shoulder Circles & Windmill",
-      "duration": 10,
-      "gifpath": "static/movie/ShouldrCircles.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 60,
-      "heading": "Work",
-      "name": "5 Shoulder Circles & Windmill",
-      "duration": 45,
-      "gifpath": "static/movie/ShouldrCircles.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 61,
-      "heading": "Rest",
-      "name": "Up Next: 5 Shoulder Circles & Windmill",
-      "duration": 15,
-      "gifpath": "static/movie/ShouldrCircles.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 62,
-      "heading": "Work",
-      "name": "5 Shoulder Circles & Windmill",
-      "duration": 25,
-      "gifpath": "static/movie/ShouldrCircles.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 63,
-      "heading": "Rest",
-      "name": "Up Next: 5 Shoulder Circles & Windmill",
-      "duration": 10,
-      "gifpath": "static/movie/ShouldrCircles.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 64,
-      "heading": "Work",
-      "name": "5 Shoulder Circles & Windmill",
-      "duration": 45,
-      "gifpath": "static/movie/ShouldrCircles.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 65,
-      "heading": "Rest",
-      "name": "Up Next: 5 Shoulder Circles & Windmill",
-      "duration": 15,
-      "gifpath": "static/movie/ShouldrCircles.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 66,
-      "heading": "Work",
-      "name": "5 Shoulder Circles & Windmill",
-      "duration": 25,
-      "gifpath": "static/movie/ShouldrCircles.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 67,
-      "heading": "Rest",
-      "name": "Up Next: Shoot Through",
-      "duration": 10,
-      "gifpath": "static/movie/ShootThrough.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 68,
-      "heading": "Work",
-      "name": "Shoot Through",
-      "duration": 45,
-      "gifpath": "static/movie/ShootThrough.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 69,
-      "heading": "Rest",
-      "name": "Up Next: Shoot Through",
-      "duration": 15,
-      "gifpath": "static/movie/ShootThrough.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 70,
-      "heading": "Work",
-      "name": "Shoot Through",
-      "duration": 25,
-      "gifpath": "static/movie/ShootThrough.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 71,
-      "heading": "Rest",
-      "name": "Up Next: Shoot Through",
-      "duration": 10,
-      "gifpath": "static/movie/ShootThrough.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 72,
-      "heading": "Work",
-      "name": "Shoot Through",
-      "duration": 45,
-      "gifpath": "static/movie/ShootThrough.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 73,
-      "heading": "Rest",
-      "name": "Up Next: Shoot Through",
-      "duration": 15,
-      "gifpath": "static/movie/ShootThrough.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 74,
-      "heading": "Work",
-      "name": "Shoot Through",
-      "duration": 25,
-      "gifpath": "static/movie/ShootThrough.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 75,
-      "heading": "Rest",
-      "name": "Up Next: Diamond Push Up",
-      "duration": 10,
-      "gifpath": "static/movie/DiamondPushup.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 76,
-      "heading": "Work",
-      "name": "Diamond Push Up",
-      "duration": 45,
-      "gifpath": "static/movie/DiamondPushup.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 77,
-      "heading": "Rest",
-      "name": "Up Next: Diamond Push Up",
-      "duration": 15,
-      "gifpath": "static/movie/DiamondPushup.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 78,
-      "heading": "Work",
-      "name": "Diamond Push Up",
-      "duration": 25,
-      "gifpath": "static/movie/DiamondPushup.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 79,
-      "heading": "Rest",
-      "name": "Up Next: Diamond Push Up",
-      "duration": 10,
-      "gifpath": "static/movie/DiamondPushup.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 80,
-      "heading": "Work",
-      "name": "Diamond Push Up",
-      "duration": 45,
-      "gifpath": "static/movie/DiamondPushup.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 81,
-      "heading": "Rest",
-      "name": "Up Next: Diamond Push Up",
-      "duration": 15,
-      "gifpath": "static/movie/DiamondPushup.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 82,
-      "heading": "Work",
-      "name": "Diamond Push Up",
-      "duration": 25,
-      "gifpath": "static/movie/DiamondPushup.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 83,
-      "heading": "Rest",
-      "name": "Up Next: Crab Walk",
-      "duration": 10,
-      "gifpath": "static/movie/CrabWalk.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 84,
-      "heading": "Work",
-      "name": "Crab Walk",
-      "duration": 45,
-      "gifpath": "static/movie/CrabWalk.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 85,
-      "heading": "Rest",
-      "name": "Up Next: Crab Walk",
-      "duration": 15,
-      "gifpath": "static/movie/CrabWalk.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 86,
-      "heading": "Work",
-      "name": "Crab Walk",
-      "duration": 25,
-      "gifpath": "static/movie/CrabWalk.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 87,
-      "heading": "Rest",
-      "name": "Up Next: Crab Walk",
-      "duration": 10,
-      "gifpath": "static/movie/CrabWalk.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 88,
-      "heading": "Work",
-      "name": "Crab Walk",
-      "duration": 45,
-      "gifpath": "static/movie/CrabWalk.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 89,
-      "heading": "Rest",
-      "name": "Up Next: Crab Walk",
-      "duration": 15,
-      "gifpath": "static/movie/CrabWalk.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 90,
-      "heading": "Work",
-      "name": "Crab Walk",
-      "duration": 25,
-      "gifpath": "static/movie/CrabWalk.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 91,
-      "heading": "Rest",
-      "name": "Up Next: Plank & Side Jump",
-      "duration": 10,
-      "gifpath": "static/movie/PlankSideJump.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 92,
-      "heading": "Work",
-      "name": "Plank & Side Jump",
-      "duration": 45,
-      "gifpath": "static/movie/PlankSideJump.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 93,
-      "heading": "Rest",
-      "name": "Up Next: Plank & Side Jump",
-      "duration": 15,
-      "gifpath": "static/movie/PlankSideJump.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 94,
-      "heading": "Work",
-      "name": "Plank & Side Jump",
-      "duration": 25,
-      "gifpath": "static/movie/PlankSideJump.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
       "id": 95,
       "heading": "Rest",
-      "name": "Up Next: Plank & Side Jump",
+      "name": "Up Next: Seal Push Up",
       "duration": 10,
-      "gifpath": "static/movie/PlankSideJump.mp4",
+      "gifpath": "static/movie/SealPushUp.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 96,
       "heading": "Work",
-      "name": "Plank & Side Jump",
+      "name": "Seal Push Up",
       "duration": 45,
-      "gifpath": "static/movie/PlankSideJump.mp4",
+      "gifpath": "static/movie/SealPushUp.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 97,
       "heading": "Rest",
-      "name": "Up Next: Plank & Side Jump",
+      "name": "Up Next: Seal Push Up",
       "duration": 15,
-      "gifpath": "static/movie/PlankSideJump.mp4",
+      "gifpath": "static/movie/SealPushUp.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 98,
       "heading": "Work",
-      "name": "Plank & Side Jump",
+      "name": "Seal Push Up",
       "duration": 25,
-      "gifpath": "static/movie/PlankSideJump.mp4",
+      "gifpath": "static/movie/SealPushUp.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
