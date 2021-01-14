@@ -145,7 +145,7 @@ function createYogaTimeList() {
             $("#yoga-next-"+idx).text(new Date(time.local()).toLocaleTimeString(undefined,options));
 
 
-            console.log('test eeual', _.isEqual(time_test["time_Thu"], yoga_time_list[0]));
+            console.log('test equal', _.isEqual(time_test["time_Thu"], yoga_time_list[0]));
 
 
             if (_.isEqual(time_test["time_Thu"], yoga_time_list[0]) == true) {
