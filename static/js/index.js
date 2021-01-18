@@ -236,6 +236,8 @@ function createYogaTimeList() {
          var nr_workout = get_workoutNo()
          var nr_yoga = get_yogaNo()
 
+         console.log("nr workout", nr_workout)
+
          $("#workoutanytime").attr('href','workout.html?&workout=workout'+nr_workout+".json");
 
          $("#yogaanytime").attr('href','yoga.html?&workout=yoga'+nr_yoga+'.json');
@@ -244,8 +246,8 @@ function createYogaTimeList() {
 
      //pick random number of workout for workout anytime
     function get_workoutNo() {
-        var today = dayjs().day()
-        //console.log("workout No", Math.floor((Math.random() * 18) + 2))
+         var today = dayjs().day() // I don't think this needs to be here
+        // console.log("workout No", Math.floor((Math.random() * 18) + 2))
  return Math.floor((Math.random() * 112) + 1);
     }
 
@@ -258,15 +260,15 @@ function createYogaTimeList() {
 
 
 
-    // function get_workoutday() {
+// I don't know where it's asking for getworkout day anymore???? but without it  I can't start workout anytime, clean mess up
+    function get_workoutday() {
+       var today = dayjs().day()
+console.log("workout No", Math.floor((Math.random() * 18) + 2))
+ if (today == 1 ||  today == 0 ||  today == 6) {return "_mon";}
+ else if (today == 1) {return "_tue";}
+else if (today == 3 || today == 2 ) {return "_wed";}
+else if (today == 4) {return "_thu";}
+else if (today == 5) {return "_fri";}
+ else if (today == 0 ||  today == 6) {return "_family";}
 
-       // var today = dayjs().day()
-//console.log("workout No", Math.floor((Math.random() * 18) + 2))
-//  if (today == 1 ||  today == 0 ||  today == 6) {return "_mon";}
-//  else if (today == 1) {return "_tue";}
-// else if (today == 3 || today == 2 ) {return "_wed";}
-// else if (today == 4) {return "_thu";}
-// else if (today == 5) {return "_fri";}
- //else if (today == 0 ||  today == 6) {return "_family";}
-
-    // }
+    }
