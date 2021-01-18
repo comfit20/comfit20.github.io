@@ -75,7 +75,7 @@
 
      
 
-    var day_workout = get_workoutday()
+    // var day_workout = get_workoutday()
     //console.log(day_workout)
 
         
@@ -261,14 +261,15 @@ function createYogaTimeList() {
 
 
 // I don't know where it's asking for getworkout day anymore???? but without it  I can't start workout anytime, clean mess up
-    function get_workoutday() {
-       var today = dayjs().day()
-console.log("workout No", Math.floor((Math.random() * 18) + 2))
- if (today == 1 ||  today == 0 ||  today == 6) {return "_mon";}
- else if (today == 1) {return "_tue";}
-else if (today == 3 || today == 2 ) {return "_wed";}
-else if (today == 4) {return "_thu";}
-else if (today == 5) {return "_fri";}
- else if (today == 0 ||  today == 6) {return "_family";}
+// okey didn't work becuase it asked for var day_workout = get_workoutday() above, make nicer 
+//     function get_workoutday() {
+//        var today = dayjs().day()
+// console.log("workout No", Math.floor((Math.random() * 18) + 2))
+//  if (today == 1 ||  today == 0 ||  today == 6) {return "_mon";}
+//  else if (today == 1) {return "_tue";}
+// else if (today == 3 || today == 2 ) {return "_wed";}
+// else if (today == 4) {return "_thu";}
+// else if (today == 5) {return "_fri";}
+//  else if (today == 0 ||  today == 6) {return "_family";}
 
-    }
+//     }
