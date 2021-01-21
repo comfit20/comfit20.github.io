@@ -85,8 +85,8 @@ function createYogaTimeList() {
         var time_list = []
         var time_1 = getNextWeekday(3).set('h',0).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_1); //this is Tuesday 4:30 pm
-        var time_2 = getNextWeekday(5).set('h',0).set('m',32).set('s',0).set('ms',0);
-        time_list.push(time_2); //this is Thursday 4:30 pm
+        // var time_2 = getNextWeekday(5).set('h',0).set('m',32).set('s',0).set('ms',0);
+        // time_list.push(time_2); //this is Thursday 4:30 pm
         var time_3 = getNextWeekday(5).set('h',02).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_3); //this is Thursday 6:30pm
 
@@ -131,7 +131,7 @@ function createYogaTimeList() {
 
             console.log('test equal', _.isEqual(time_test["time_Fri"], time_list[0]));
 
-             if (_.isEqual(time_test["time_Mon"], time_list[0]) == true || _.isEqual(time_test["time_Mon2"], time_list[0]) == true)  {
+            if (_.isEqual(time_test["time_Mon"], time_list[0]) == true || _.isEqual(time_test["time_Mon2"], time_list[0]) == true)  {
             //var share_link = window.location.hostname+'/workout.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
             var share_link = window.location.hostname+'/workout_group.html?workout=workout'+'_mon'+'.json'+'&timestamp='+time.toISOString();
             //$("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout"+day_workout+".json");
@@ -191,7 +191,7 @@ function createYogaTimeList() {
         var time_test = Object();
           time_test = {
           time_Tue: getNextWeekday(3).set('h',0).set('m',32).set('s',0).set('ms',0),
-          time_Thu: getNextWeekday(5).set('h',0).set('m',32).set('s',0).set('ms',0),
+          // time_Thu: getNextWeekday(5).set('h',0).set('m',32).set('s',0).set('ms',0),
           time_Thu2: getNextWeekday(5).set('h',02).set('m',32).set('s',0).set('ms',0)
       }
 
@@ -206,13 +206,8 @@ function createYogaTimeList() {
             // console.log('test equal', _.isEqual(time_test["time_Thu"], time_list[0]));
 
 
-            if (_.isEqual(time_test["time_Thu"], time_list[0]) == true) {
-            var share_link = window.location.hostname+'/yoga_group_vinyasa.html'+'&timestamp='+time.toISOString();
-            $("#yoga-next-"+idx).attr('href','yoga_group_vinyasa.html?timestamp='+time.toISOString());
-            $('#yoga-next-'+idx+'-link').attr('value',share_link);
-            }
 
-            else if (_.isEqual(time_test["time_Tue"], time_list[0]) == true) {
+            if (_.isEqual(time_test["time_Tue"], time_list[0]) == true) {
             var share_link = window.location.hostname+'/yoga_group_vinyasa.html'+'&timestamp='+time.toISOString();
             $("#yoga-next-"+idx).attr('href','yoga_group_vinyasa.html?timestamp='+time.toISOString());
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
