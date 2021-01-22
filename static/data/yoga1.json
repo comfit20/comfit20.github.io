@@ -152,7 +152,7 @@
       "name": "crescent",
       "duration": 88,
       "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
-      "sound": "audioyoga",
+      "sound": null,
       "indicator": "hidden"
     },
     {
@@ -278,14 +278,14 @@
       "name": "Relax into savasana",
       "duration": 300,
       "gifpath": "static/movie/yoga/YogaSavasana.mp4",
-      "sound": "audioyoga",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 31,
       "heading": "",
       "name": "You're welcome to stay here as long as you like.",
-      "duration": 42,
+      "duration": 20,
       "gifpath": "static/movie/yoga/YogaComeOutOfSavasana.mp4",
       "sound": null,
       "indicator": "hidden"
@@ -294,7 +294,7 @@
       "id": 32,
       "heading": "Thank you for practicing with me today!",
       "name": "",
-      "duration": 20,
+      "duration": 10,
       "gifpath": "static/movie/yoga/YogaNamaste.mp4",
       "sound": null,
       "indicator": "hidden"
