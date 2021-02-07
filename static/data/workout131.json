@@ -15,7 +15,7 @@
       "heading": "Workout Timing:",
       "name": [
         "workout style: repeat iso",
-        "12 exercises",
+        "10 exercises",
         "3*45 sec work",
         "15 sec rest",
         "3 rounds"
@@ -28,113 +28,95 @@
     {
       "id": 2,
       "heading": "Introduction to exercises",
-      "name": "Fast Front Kicks",
+      "name": "Hollow Rock",
       "duration": 10,
-      "gifpath": "static/movie/FastFrontKick.mp4",
+      "gifpath": "static/movie/HollowRock.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 3,
       "heading": "Introduction to exercises",
-      "name": "Plank Pulses",
+      "name": "Plank",
       "duration": 10,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "gifpath": "static/movie/Plank.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 4,
       "heading": "Introduction to exercises",
-      "name": "Windshield Wiper",
+      "name": "Butterfly Crunch",
       "duration": 10,
-      "gifpath": "static/movie/WindshieldWiper.mp4",
+      "gifpath": "static/movie/ButterflyCrunch.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 5,
       "heading": "Introduction to exercises",
-      "name": "Squat Walk",
+      "name": "Burpees",
       "duration": 10,
-      "gifpath": "static/movie/SquatWalk.mp4",
+      "gifpath": "static/movie/Burpee.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 6,
       "heading": "Introduction to exercises",
-      "name": "Jump & Donkey Kick (n+1)",
+      "name": "Heel Touch Crunches",
       "duration": 10,
-      "gifpath": "static/movie/DonkeyKick.mp4",
+      "gifpath": "static/movie/HeelTouchCrunches.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 7,
       "heading": "Introduction to exercises",
-      "name": "Ladder (alt: Fast Feet)",
+      "name": "Crab & Kick",
       "duration": 10,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 8,
       "heading": "Introduction to exercises",
-      "name": "Drop Squat & Side Step",
+      "name": "Jack Knife",
       "duration": 10,
-      "gifpath": "static/movie/DropSquatSideStep.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 9,
       "heading": "Introduction to exercises",
-      "name": "Snow Angel",
+      "name": "Bear Crawl",
       "duration": 10,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/BearCrawl.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 10,
       "heading": "Introduction to exercises",
-      "name": "Push Up",
+      "name": "Leg Lift & Hold",
       "duration": 10,
-      "gifpath": "static/movie/PushUp.mp4",
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 11,
       "heading": "Introduction to exercises",
-      "name": "Glute Bridge",
+      "name": "10 Fast Feet & Push Up",
       "duration": 10,
-      "gifpath": "static/movie/GluteBridge.mp4",
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 12,
-      "heading": "Introduction to exercises",
-      "name": "Mountain Climber",
-      "duration": 10,
-      "gifpath": "static/movie/MountainClimber.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 13,
-      "heading": "Introduction to exercises",
-      "name": "Side Lunges",
-      "duration": 10,
-      "gifpath": "static/movie/SideLunges.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 14,
       "heading": "Get Ready to Warm Up",
       "name": " Let's go !!!!! ",
       "duration": 10,
@@ -143,7 +125,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 15,
+      "id": 13,
       "heading": "Warm Up",
       "name": "Jumping Jacks",
       "duration": 25,
@@ -152,7 +134,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 16,
+      "id": 14,
       "heading": "Warm Up",
       "name": "Single Leg Hip Circles",
       "duration": 25,
@@ -161,7 +143,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 17,
+      "id": 15,
       "heading": "Warm Up",
       "name": "Squat Pulses",
       "duration": 25,
@@ -170,7 +152,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 18,
+      "id": 16,
       "heading": "Warm Up",
       "name": "Glute Bridge",
       "duration": 25,
@@ -179,7 +161,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 19,
+      "id": 17,
       "heading": "Warm Up",
       "name": "5 Shoulder Circles & Windmill",
       "duration": 25,
@@ -188,7 +170,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 20,
+      "id": 18,
       "heading": "Warm Up",
       "name": "Burpees",
       "duration": 25,
@@ -197,655 +179,547 @@
       "indicator": "hidden"
     },
     {
-      "id": 21,
+      "id": 19,
       "heading": "Get Ready to Work Out",
-      "name": " Let's go: Fast Front Kicks",
+      "name": " Let's go: Hollow Rock",
       "duration": 5,
       "gifpath": "static/movie/GetReadyToWorkout.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
+      "id": 20,
+      "heading": "Work",
+      "name": "Hollow Rock",
+      "duration": 45,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 21,
+      "heading": "Rest",
+      "name": "Next: Hollow Rock",
+      "duration": 15,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
       "id": 22,
       "heading": "Work",
-      "name": "Fast Front Kicks",
+      "name": "Hollow Rock",
       "duration": 45,
-      "gifpath": "static/movie/FastFrontKick.mp4",
+      "gifpath": "static/movie/HollowRock.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 23,
       "heading": "Rest",
-      "name": "Next: Fast Front Kicks",
+      "name": "Next: Hollow Rock",
       "duration": 15,
-      "gifpath": "static/movie/FastFrontKick.mp4",
+      "gifpath": "static/movie/HollowRock.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 24,
       "heading": "Work",
-      "name": "Fast Front Kicks",
+      "name": "Hollow Rock",
       "duration": 45,
-      "gifpath": "static/movie/FastFrontKick.mp4",
+      "gifpath": "static/movie/HollowRock.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 25,
       "heading": "Rest",
-      "name": "Next: Fast Front Kicks",
+      "name": "Next: Plank",
       "duration": 15,
-      "gifpath": "static/movie/FastFrontKick.mp4",
+      "gifpath": "static/movie/Plank.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 26,
       "heading": "Work",
-      "name": "Fast Front Kicks",
+      "name": "Plank",
       "duration": 45,
-      "gifpath": "static/movie/FastFrontKick.mp4",
+      "gifpath": "static/movie/Plank.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 27,
       "heading": "Rest",
-      "name": "Next: Plank Pulses",
+      "name": "Next: Plank",
       "duration": 15,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "gifpath": "static/movie/Plank.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 28,
       "heading": "Work",
-      "name": "Plank Pulses",
+      "name": "Plank",
       "duration": 45,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "gifpath": "static/movie/Plank.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 29,
       "heading": "Rest",
-      "name": "Next: Plank Pulses",
+      "name": "Next: Plank",
       "duration": 15,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "gifpath": "static/movie/Plank.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 30,
       "heading": "Work",
-      "name": "Plank Pulses",
+      "name": "Plank",
       "duration": 45,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "gifpath": "static/movie/Plank.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 31,
       "heading": "Rest",
-      "name": "Next: Plank Pulses",
+      "name": "Next: Butterfly Crunch",
       "duration": 15,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "gifpath": "static/movie/ButterflyCrunch.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 32,
       "heading": "Work",
-      "name": "Plank Pulses",
+      "name": "Butterfly Crunch",
       "duration": 45,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "gifpath": "static/movie/ButterflyCrunch.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 33,
       "heading": "Rest",
-      "name": "Next: Windshield Wiper",
+      "name": "Next: Butterfly Crunch",
       "duration": 15,
-      "gifpath": "static/movie/WindshieldWiper.mp4",
+      "gifpath": "static/movie/ButterflyCrunch.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 34,
       "heading": "Work",
-      "name": "Windshield Wiper",
+      "name": "Butterfly Crunch",
       "duration": 45,
-      "gifpath": "static/movie/WindshieldWiper.mp4",
+      "gifpath": "static/movie/ButterflyCrunch.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 35,
       "heading": "Rest",
-      "name": "Next: Windshield Wiper",
+      "name": "Next: Butterfly Crunch",
       "duration": 15,
-      "gifpath": "static/movie/WindshieldWiper.mp4",
+      "gifpath": "static/movie/ButterflyCrunch.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 36,
       "heading": "Work",
-      "name": "Windshield Wiper",
+      "name": "Butterfly Crunch",
       "duration": 45,
-      "gifpath": "static/movie/WindshieldWiper.mp4",
+      "gifpath": "static/movie/ButterflyCrunch.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 37,
       "heading": "Rest",
-      "name": "Next: Windshield Wiper",
+      "name": "Next: Burpees",
       "duration": 15,
-      "gifpath": "static/movie/WindshieldWiper.mp4",
+      "gifpath": "static/movie/Burpee.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 38,
       "heading": "Work",
-      "name": "Windshield Wiper",
+      "name": "Burpees",
       "duration": 45,
-      "gifpath": "static/movie/WindshieldWiper.mp4",
+      "gifpath": "static/movie/Burpee.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 39,
       "heading": "Rest",
-      "name": "Next: Squat Walk",
+      "name": "Next: Burpees",
       "duration": 15,
-      "gifpath": "static/movie/SquatWalk.mp4",
+      "gifpath": "static/movie/Burpee.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 40,
       "heading": "Work",
-      "name": "Squat Walk",
+      "name": "Burpees",
       "duration": 45,
-      "gifpath": "static/movie/SquatWalk.mp4",
+      "gifpath": "static/movie/Burpee.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 41,
       "heading": "Rest",
-      "name": "Next: Squat Walk",
+      "name": "Next: Burpees",
       "duration": 15,
-      "gifpath": "static/movie/SquatWalk.mp4",
+      "gifpath": "static/movie/Burpee.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 42,
       "heading": "Work",
-      "name": "Squat Walk",
+      "name": "Burpees",
       "duration": 45,
-      "gifpath": "static/movie/SquatWalk.mp4",
+      "gifpath": "static/movie/Burpee.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 43,
       "heading": "Rest",
-      "name": "Next: Squat Walk",
+      "name": "Next: Heel Touch Crunches",
       "duration": 15,
-      "gifpath": "static/movie/SquatWalk.mp4",
+      "gifpath": "static/movie/HeelTouchCrunches.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 44,
       "heading": "Work",
-      "name": "Squat Walk",
+      "name": "Heel Touch Crunches",
       "duration": 45,
-      "gifpath": "static/movie/SquatWalk.mp4",
+      "gifpath": "static/movie/HeelTouchCrunches.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 45,
       "heading": "Rest",
-      "name": "Next: Jump & Donkey Kick (n+1)",
+      "name": "Next: Heel Touch Crunches",
       "duration": 15,
-      "gifpath": "static/movie/DonkeyKick.mp4",
+      "gifpath": "static/movie/HeelTouchCrunches.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 46,
       "heading": "Work",
-      "name": "Jump & Donkey Kick (n+1)",
+      "name": "Heel Touch Crunches",
       "duration": 45,
-      "gifpath": "static/movie/DonkeyKick.mp4",
+      "gifpath": "static/movie/HeelTouchCrunches.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 47,
       "heading": "Rest",
-      "name": "Next: Jump & Donkey Kick (n+1)",
+      "name": "Next: Heel Touch Crunches",
       "duration": 15,
-      "gifpath": "static/movie/DonkeyKick.mp4",
+      "gifpath": "static/movie/HeelTouchCrunches.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 48,
       "heading": "Work",
-      "name": "Jump & Donkey Kick (n+1)",
+      "name": "Heel Touch Crunches",
       "duration": 45,
-      "gifpath": "static/movie/DonkeyKick.mp4",
+      "gifpath": "static/movie/HeelTouchCrunches.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 49,
       "heading": "Rest",
-      "name": "Next: Jump & Donkey Kick (n+1)",
+      "name": "Next: Crab & Kick",
       "duration": 15,
-      "gifpath": "static/movie/DonkeyKick.mp4",
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 50,
       "heading": "Work",
-      "name": "Jump & Donkey Kick (n+1)",
+      "name": "Crab & Kick",
       "duration": 45,
-      "gifpath": "static/movie/DonkeyKick.mp4",
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 51,
       "heading": "Rest",
-      "name": "Next: Ladder (alt: Fast Feet)",
+      "name": "Next: Crab & Kick",
       "duration": 15,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 52,
       "heading": "Work",
-      "name": "Ladder (alt: Fast Feet)",
+      "name": "Crab & Kick",
       "duration": 45,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 53,
       "heading": "Rest",
-      "name": "Next: Ladder (alt: Fast Feet)",
+      "name": "Next: Crab & Kick",
       "duration": 15,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 54,
       "heading": "Work",
-      "name": "Ladder (alt: Fast Feet)",
+      "name": "Crab & Kick",
       "duration": 45,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 55,
       "heading": "Rest",
-      "name": "Next: Ladder (alt: Fast Feet)",
+      "name": "Next: Jack Knife",
       "duration": 15,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 56,
       "heading": "Work",
-      "name": "Ladder (alt: Fast Feet)",
+      "name": "Jack Knife",
       "duration": 45,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 57,
       "heading": "Rest",
-      "name": "Next: Drop Squat & Side Step",
+      "name": "Next: Jack Knife",
       "duration": 15,
-      "gifpath": "static/movie/DropSquatSideStep.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 58,
       "heading": "Work",
-      "name": "Drop Squat & Side Step",
+      "name": "Jack Knife",
       "duration": 45,
-      "gifpath": "static/movie/DropSquatSideStep.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 59,
       "heading": "Rest",
-      "name": "Next: Drop Squat & Side Step",
+      "name": "Next: Jack Knife",
       "duration": 15,
-      "gifpath": "static/movie/DropSquatSideStep.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 60,
       "heading": "Work",
-      "name": "Drop Squat & Side Step",
+      "name": "Jack Knife",
       "duration": 45,
-      "gifpath": "static/movie/DropSquatSideStep.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 61,
       "heading": "Rest",
-      "name": "Next: Drop Squat & Side Step",
+      "name": "Next: Bear Crawl",
       "duration": 15,
-      "gifpath": "static/movie/DropSquatSideStep.mp4",
+      "gifpath": "static/movie/BearCrawl.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 62,
       "heading": "Work",
-      "name": "Drop Squat & Side Step",
+      "name": "Bear Crawl",
       "duration": 45,
-      "gifpath": "static/movie/DropSquatSideStep.mp4",
+      "gifpath": "static/movie/BearCrawl.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 63,
       "heading": "Rest",
-      "name": "Next: Snow Angel",
+      "name": "Next: Bear Crawl",
       "duration": 15,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/BearCrawl.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 64,
       "heading": "Work",
-      "name": "Snow Angel",
+      "name": "Bear Crawl",
       "duration": 45,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/BearCrawl.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 65,
       "heading": "Rest",
-      "name": "Next: Snow Angel",
+      "name": "Next: Bear Crawl",
       "duration": 15,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/BearCrawl.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 66,
       "heading": "Work",
-      "name": "Snow Angel",
+      "name": "Bear Crawl",
       "duration": 45,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/BearCrawl.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 67,
       "heading": "Rest",
-      "name": "Next: Snow Angel",
+      "name": "Next: Leg Lift & Hold",
       "duration": 15,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 68,
       "heading": "Work",
-      "name": "Snow Angel",
+      "name": "Leg Lift & Hold",
       "duration": 45,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 69,
       "heading": "Rest",
-      "name": "Next: Push Up",
+      "name": "Next: Leg Lift & Hold",
       "duration": 15,
-      "gifpath": "static/movie/PushUp.mp4",
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 70,
       "heading": "Work",
-      "name": "Push Up",
+      "name": "Leg Lift & Hold",
       "duration": 45,
-      "gifpath": "static/movie/PushUp.mp4",
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 71,
       "heading": "Rest",
-      "name": "Next: Push Up",
+      "name": "Next: Leg Lift & Hold",
       "duration": 15,
-      "gifpath": "static/movie/PushUp.mp4",
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 72,
       "heading": "Work",
-      "name": "Push Up",
+      "name": "Leg Lift & Hold",
       "duration": 45,
-      "gifpath": "static/movie/PushUp.mp4",
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 73,
       "heading": "Rest",
-      "name": "Next: Push Up",
+      "name": "Next: 10 Fast Feet & Push Up",
       "duration": 15,
-      "gifpath": "static/movie/PushUp.mp4",
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 74,
       "heading": "Work",
-      "name": "Push Up",
+      "name": "10 Fast Feet & Push Up",
       "duration": 45,
-      "gifpath": "static/movie/PushUp.mp4",
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 75,
       "heading": "Rest",
-      "name": "Next: Glute Bridge",
+      "name": "Next: 10 Fast Feet & Push Up",
       "duration": 15,
-      "gifpath": "static/movie/GluteBridge.mp4",
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 76,
       "heading": "Work",
-      "name": "Glute Bridge",
+      "name": "10 Fast Feet & Push Up",
       "duration": 45,
-      "gifpath": "static/movie/GluteBridge.mp4",
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 77,
       "heading": "Rest",
-      "name": "Next: Glute Bridge",
+      "name": "Next: 10 Fast Feet & Push Up",
       "duration": 15,
-      "gifpath": "static/movie/GluteBridge.mp4",
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 78,
       "heading": "Work",
-      "name": "Glute Bridge",
+      "name": "10 Fast Feet & Push Up",
       "duration": 45,
-      "gifpath": "static/movie/GluteBridge.mp4",
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 79,
-      "heading": "Rest",
-      "name": "Next: Glute Bridge",
-      "duration": 15,
-      "gifpath": "static/movie/GluteBridge.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 80,
-      "heading": "Work",
-      "name": "Glute Bridge",
-      "duration": 45,
-      "gifpath": "static/movie/GluteBridge.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 81,
-      "heading": "Rest",
-      "name": "Next: Mountain Climber",
-      "duration": 15,
-      "gifpath": "static/movie/MountainClimber.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 82,
-      "heading": "Work",
-      "name": "Mountain Climber",
-      "duration": 45,
-      "gifpath": "static/movie/MountainClimber.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 83,
-      "heading": "Rest",
-      "name": "Next: Mountain Climber",
-      "duration": 15,
-      "gifpath": "static/movie/MountainClimber.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 84,
-      "heading": "Work",
-      "name": "Mountain Climber",
-      "duration": 45,
-      "gifpath": "static/movie/MountainClimber.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 85,
-      "heading": "Rest",
-      "name": "Next: Mountain Climber",
-      "duration": 15,
-      "gifpath": "static/movie/MountainClimber.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 86,
-      "heading": "Work",
-      "name": "Mountain Climber",
-      "duration": 45,
-      "gifpath": "static/movie/MountainClimber.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 87,
-      "heading": "Rest",
-      "name": "Next: Side Lunges",
-      "duration": 15,
-      "gifpath": "static/movie/SideLunges.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 88,
-      "heading": "Work",
-      "name": "Side Lunges",
-      "duration": 45,
-      "gifpath": "static/movie/SideLunges.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 89,
-      "heading": "Rest",
-      "name": "Next: Side Lunges",
-      "duration": 15,
-      "gifpath": "static/movie/SideLunges.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 90,
-      "heading": "Work",
-      "name": "Side Lunges",
-      "duration": 45,
-      "gifpath": "static/movie/SideLunges.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 91,
-      "heading": "Rest",
-      "name": "Next: Side Lunges",
-      "duration": 15,
-      "gifpath": "static/movie/SideLunges.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 92,
-      "heading": "Work",
-      "name": "Side Lunges",
-      "duration": 45,
-      "gifpath": "static/movie/SideLunges.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 93,
       "heading": "Congrats You Finished",
       "name": " Well Done !!!!! ",
       "duration": 20,
