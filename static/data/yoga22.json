@@ -23,10 +23,10 @@
     {
       "id": 2,
       "heading": "",
-      "name": "Let's start with constructive rest",
-      "duration": 600,
-      "gifpath": "static/movie/yoga/ConstructiveRest.jpg",
-      "sound": null,
+      "name": "Let's start in child's pose.",
+      "duration": 396,
+      "gifpath": "static/movie/yoga/YogaChildsPose1X.mp4",
+      "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
