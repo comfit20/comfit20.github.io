@@ -415,15 +415,6 @@
       "gifpath": "static/movie/yoga/YogaNamaste.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
-    },
-    {
-      "id": 46,
-      "heading": "",
-      "name": "Enjoy the day",
-      "duration": 10,
-      "gifpath": "",
-      "sound": null,
-      "indicator": "hidden"
     }
   ] 
 }
