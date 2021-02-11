@@ -57,7 +57,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 4,
+      "id": 6,
       "heading": "",
       "name": "Come back to all fours for hip mobility.",
       "duration": 60,
@@ -66,7 +66,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 5,
+      "id": 7,
       "heading": "",
       "name": "Bring left foot back towards plank and then to the side.",
       "duration": 50,
@@ -75,7 +75,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 6,
+      "id": 8,
       "heading": "",
       "name": "Inhale up to gate pose, bring hands to waist or behind head.",
       "duration": 30,
@@ -84,7 +84,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 7,
+      "id": 9,
       "heading": "",
       "name": "Come back to all fours for hip mobility.",
       "duration": 60,
@@ -93,7 +93,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 8,
+      "id": 10,
       "heading": "",
       "name": "Lower to belly for sphinx",
       "duration": 76,
@@ -102,7 +102,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 9,
+      "id": 11,
       "heading": "",
       "name": "Open shoulders right",
       "duration": 98,
@@ -120,7 +120,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 10,
+      "id": 12,
       "heading": "",
       "name": "On your belly, bend knees and windshield wiper legs",
       "duration": 40,
@@ -129,29 +129,11 @@
       "indicator": "hidden"
     },
     {
-      "id": 11,
+      "id": 13,
       "heading": "",
       "name": "Press back to child's pose or squat",
       "duration": 34,
       "gifpath": "static/movie/yoga/YogaBelly.jpg",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 12,
-      "heading": "",
-      "name": "low lunge right",
-      "duration": 15,
-      "gifpath": "static/movie/yoga/YogaClassical2X.jmp4",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 13,
-      "heading": "",
-      "name": "shift hips back or up on exhale",
-      "duration": 15,
-      "gifpath": "static/movie/yoga/YogaPyramid.jmp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
@@ -176,27 +158,27 @@
     {
       "id": 16,
       "heading": "",
-      "name": "Press back to child's pose or squat",
-      "duration": 34,
-      "gifpath": "static/movie/yoga/YogaBelly.jpg",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 17,
-      "heading": "",
-      "name": "low lunge left",
+      "name": "low lunge right",
       "duration": 15,
       "gifpath": "static/movie/yoga/YogaClassical2X.jmp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
-      "id": 18,
+      "id": 17,
       "heading": "",
       "name": "shift hips back or up on exhale",
       "duration": 15,
       "gifpath": "static/movie/yoga/YogaPyramid.jmp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 18,
+      "heading": "",
+      "name": "Press back to child's pose or squat",
+      "duration": 34,
+      "gifpath": "static/movie/yoga/YogaBelly.jpg",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
@@ -221,6 +203,24 @@
     {
       "id": 21,
       "heading": "",
+      "name": "low lunge left",
+      "duration": 15,
+      "gifpath": "static/movie/yoga/YogaClassical2X.jmp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 22,
+      "heading": "",
+      "name": "shift hips back or up on exhale",
+      "duration": 15,
+      "gifpath": "static/movie/yoga/YogaPyramid.jmp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 23,
+      "heading": "",
       "name": "Transition through all fours or downward facing dog",
       "duration": 60,
       "gifpath": "static/movie/yoga/YogaDownDog.mp4",
@@ -228,7 +228,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 22,
+      "id": 24,
       "heading": "",
       "name": "Extended side angle right",
       "duration": 30,
@@ -237,7 +237,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 23,
+      "id": 25,
       "heading": "",
       "name": "warrior II right",
       "duration": 30,
@@ -246,7 +246,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 24,
+      "id": 26,
       "heading": "",
       "name": "wide leg forward fold",
       "duration": 30,
@@ -255,7 +255,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 25,
+      "id": 27,
       "heading": "",
       "name": "Extended side angle left",
       "duration": 60,
@@ -264,7 +264,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 26,
+      "id": 28,
       "heading": "",
       "name": "warrior II left",
       "duration": 30,
@@ -273,7 +273,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 27,
+      "id": 29,
       "heading": "",
       "name": "wide leg forward fold",
       "duration": 30,
@@ -282,7 +282,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 28,
+      "id": 30,
       "heading": "",
       "name": "child's pose",
       "duration": 39,
@@ -291,7 +291,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 29,
+      "id": 31,
       "heading": "",
       "name": "figure four or pigeon right",
       "duration": 60,
@@ -300,7 +300,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 30,
+      "id": 32,
       "heading": "",
       "name": "lizard or low lunge right",
       "duration": 60,
@@ -309,7 +309,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 31,
+      "id": 33,
       "heading": "",
       "name": "figure four or pigeon left",
       "duration": 60,
@@ -318,7 +318,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 32,
+      "id": 34,
       "heading": "",
       "name": "lizard or low lunge left",
       "duration": 60,
@@ -327,7 +327,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 33,
+      "id": 35,
       "heading": "",
       "name": "Gentle twist left and right",
       "duration": 60,
@@ -336,7 +336,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 34,
+      "id": 36,
       "heading": "",
       "name": "Bend both knees and grab your legs or feet for happy baby pose",
       "duration": 60,
@@ -345,7 +345,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 35,
+      "id": 37,
       "heading": "",
       "name": "Supported bridge - try bending one knee in, then the other",
       "duration": 200,
@@ -354,7 +354,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 27,
+      "id": 38,
       "heading": "",
       "name": "Figure four right",
       "duration": 50,
@@ -363,7 +363,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 28,
+      "id": 39,
       "heading": "",
       "name": "Gentle twist left",
       "duration": 50,
@@ -372,7 +372,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 29,
+      "id": 40,
       "heading": "",
       "name": "Figure four left",
       "duration": 50,
@@ -381,7 +381,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 30,
+      "id": 41,
       "heading": "",
       "name": "Gentle twist right",
       "duration": 50,
@@ -390,7 +390,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 31,
+      "id": 42,
       "heading": "",
       "name": "Supported Savasana",
       "duration": 300,
@@ -399,7 +399,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 32,
+      "id": 43,
       "heading": "",
       "name": "You're welcome to stay here as long as you like.",
       "duration": 10,
@@ -408,7 +408,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 33,
+      "id": 44,
       "heading": "Thank you for practicing with me today!",
       "name": "Namaste",
       "duration": 10,
@@ -417,7 +417,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 34,
+      "id": 45,
       "heading": "",
       "name": "Enjoy the day",
       "duration": 10,
