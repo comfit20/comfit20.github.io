@@ -856,6 +856,186 @@
          "name": "Superman 2",
          "level": "easy",
          "gifpath": "static/movie/SupermanVariant2.mp4"
+      },
+      {
+         "id": 96,
+         "category": [
+            "glutes"
+         ],
+         "name": "2 Squats & 2 Lunge Pulses",
+         "level": "easy",
+         "gifpath": "static/movie/2Squat2LungePulses.mp4"
+      },
+      {
+         "id": 97,
+         "category": [
+            "glutes"
+         ],
+         "name": "Adductor Squat Jump",
+         "level": "middle",
+         "gifpath": "static/movie/AdductorSquat.mp4"
+      },
+      {
+         "id": 98,
+         "category": [
+            "belly"
+         ],
+         "name": "Bicycle Boat",
+         "level": "middle",
+         "gifpath": "static/movie/BicycleBoat.mp4"
+      },
+      {
+         "id": 99,
+         "category": [
+            "core"
+         ],
+         "name": "Burpee & MountainClimber",
+         "level": "hard",
+         "gifpath": "static/movie/BurpeeAndMountainClimber.mp4"
+      },
+      {
+         "id": 100,
+         "category": [
+            "core"
+         ],
+         "name": "Cross MountainClimber",
+         "level": "middle",
+         "gifpath": "static/movie/CrossMountainClimber.mp4"
+      },
+      {
+         "id": 101,
+         "category": [
+            "core"
+         ],
+         "name": "Diagonal Plank Walk-Out",
+         "level": "middle",
+         "gifpath": "static/movie/DiagonalPlankWalkOut.mp4"
+      },
+      {
+         "id": 102,
+         "category": [
+            "core"
+         ],
+         "name": "Low & High Plank Jacks",
+         "level": "hard",
+         "gifpath": "static/movie/HighPlankLowPlankJacks.mp4"
+      },
+      {
+         "id": 103,
+         "category": [
+            "back"
+         ],
+         "name": "High Plank Rower & Touch Back",
+         "level": "middle",
+         "gifpath": "static/movie/HighPlankRowerTouchBack.mp4"
+      },
+      {
+         "id": 104,
+         "category": [
+            "legs"
+         ],
+         "name": "Ice Skater & Shuffle",
+         "level": "easy",
+         "gifpath": "static/movie/IceSkaterAndShuffel.mp4"
+      },
+      {
+         "id": 105,
+         "category": [
+            "core"
+         ],
+         "name": "Plank Skater Hops",
+         "level": "middle",
+         "gifpath": "static/movie/PlankSkaterHops.mp4"
+      },
+      {
+         "id": 106,
+         "category": [
+            "core"
+         ],
+         "name": "Plank To Toe-Touch",
+         "level": "easy",
+         "gifpath": "static/movie/PlankToToeTouch.mp4"
+      },
+      {
+         "id": 107,
+         "category": [
+            "core"
+         ],
+         "name": "2 Plank Walk-Outs & 2 Jumps",
+         "level": "middle",
+         "gifpath": "static/movie/PlankWalkOutsJumps.mp4"
+      },
+      {
+         "id": 108,
+         "category": [
+            "arms"
+         ],
+         "name": "Push Up & Clap",
+         "level": "hard",
+         "gifpath": "static/movie/PushUpClap.mp4"
+      },
+      {
+         "id": 109,
+         "category": [
+            "arms"
+         ],
+         "name": "Rotational Reach & Push Up",
+         "level": "middle",
+         "gifpath": "static/movie/RotationalReachPushUp.mp4"
+      },
+      {
+         "id": 110,
+         "category": [
+            "legs"
+         ],
+         "name": "Shuffle & Lateral Crawl",
+         "level": "middle",
+         "gifpath": "static/movie/ShuffelAndLateralCrawl.mp4"
+      },
+      {
+         "id": 111,
+         "category": [
+            "core"
+         ],
+         "name": "Rotational Front Plank Jumps",
+         "level": "middle",
+         "gifpath": "static/movie/SideFrontPlankJumps.mp4"
+      },
+      {
+         "id": 112,
+         "category": [
+            "core"
+         ],
+         "name": "Side Plank & Star",
+         "level": "hard",
+         "gifpath": "static/movie/SidePlankStars.mp4"
+      },
+      {
+         "id": 113,
+         "category": [
+            "glutes"
+         ],
+         "name": "Side Twist Squat Jumps",
+         "level": "easy",
+         "gifpath": "static/movie/SideTwistSquatJumps.mp4"
+      },
+      {
+         "id": 114,
+         "category": [
+            "core"
+         ],
+         "name": "Side Twist Squats & Plank Jumps",
+         "level": "middle",
+         "gifpath": "static/movie/SideTwistSquatsAndFrontPlankJumps.mp4"
+      },
+      {
+         "id": 115,
+         "category": [
+            "glutes"
+         ],
+         "name": "Squat & Side Steps",
+         "level": "middle",
+         "gifpath": "static/movie/SquatSideStep.mp4"
       }
    ]
 
