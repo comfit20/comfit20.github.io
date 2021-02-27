@@ -96,6 +96,16 @@ function parseExercisesToForm(data) {
 
     // Filter for categories
     const belly_list = data['exercises'].filter(excercise => excercise.category.includes("belly"));
+    belly2 = belly_list//Collections.sort(belly_list)
+
+    console.log('this is belly list', belly2[0]['name'])//[]['name'])
+
+    belly2.sort(function(a, b){return a-b});
+    console.log('sorted',belly2)
+
+
+
+
     const legs_list = data['exercises'].filter(excercise => excercise.category.includes("legs"));
     const core_list = data['exercises'].filter(excercise => excercise.category.includes("core"));
     const arms_list = data['exercises'].filter(excercise => excercise.category.includes("arms"));
