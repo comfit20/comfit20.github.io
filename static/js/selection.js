@@ -96,21 +96,17 @@ function parseExercisesToForm(data) {
 
     // Filter for categories
     const belly_list = data['exercises'].filter(excercise => excercise.category.includes("belly"));
-    belly2 = belly_list//Collections.sort(belly_list)
-
-    console.log('this is belly list', belly2[0]['name'])//[]['name'])
-
-    belly2.sort(function(a, b){return a-b});
-    console.log('sorted',belly2)
-
-
-
-
+    belly_list.sort((a, b) => a.name.localeCompare(b.name))
     const legs_list = data['exercises'].filter(excercise => excercise.category.includes("legs"));
+    legs_list.sort((a, b) => a.name.localeCompare(b.name))
     const core_list = data['exercises'].filter(excercise => excercise.category.includes("core"));
+    core_list.sort((a, b) => a.name.localeCompare(b.name))
     const arms_list = data['exercises'].filter(excercise => excercise.category.includes("arms"));
+    arms_list.sort((a, b) => a.name.localeCompare(b.name))
     const back_list = data['exercises'].filter(excercise => excercise.category.includes("back"));
+    back_list.sort((a, b) => a.name.localeCompare(b.name))
     const glutes_list = data['exercises'].filter(excercise => excercise.category.includes("glutes"));
+    glutes_list.sort((a, b) => a.name.localeCompare(b.name))
 
     categorys = [belly_list, back_list, arms_list,core_list,glutes_list,legs_list]
     $.each(categorys,function (index, category) {
