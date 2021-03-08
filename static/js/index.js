@@ -36,7 +36,7 @@
     function createWorkoutTimeList() {
         var time_list = []
 
-        var time_1 = getNextWeekday(1).set('h',16).set('m',32).set('s',0).set('ms',0);
+        var time_1 = getNextWeekday(1).set('h',16).set('m',2).set('s',0).set('ms',0);
         time_list.push(time_1); //this is Monday 8:30 am
         var time_2 = getNextWeekday(2).set('h',2).set('m',2).set('s',0).set('ms',0);
         time_list.push(time_2); // this is Monday 6:00 pm
@@ -44,13 +44,13 @@
         var time_4 = getNextWeekday(2).set('h',18).set('m',2).set('s',0).set('ms',0);
         time_list.push(time_4); // this is Tuesday 10:00 am  
 
-        var time_3 = getNextWeekday(3).set('h',16).set('m',32).set('s',0).set('ms',0);
+        var time_3 = getNextWeekday(3).set('h',15).set('m',2).set('s',0).set('ms',0);
         time_list.push(time_3); //this is Wednedsay 8:30 am
 
         var time_6 = getNextWeekday(4).set('h',18).set('m',2).set('s',0).set('ms',0);
         time_list.push(time_6); // this is Thursday 10:00 am  
 
-        var time_5 = getNextWeekday(5).set('h',16).set('m',32).set('s',0).set('ms',0);
+        var time_5 = getNextWeekday(5).set('h',15).set('m',2).set('s',0).set('ms',0);
         time_list.push(time_5); //this is Friday 8:30 am
 
         // var time_6 = getNextWeekday(0).set('h',16).set('m',34).set('s',0).set('ms',0);
@@ -116,12 +116,12 @@ function createYogaTimeList() {
 
                 var time_test = Object();
           time_test = {
-          time_Mon: getNextWeekday(1).set('h',16).set('m',32).set('s',0).set('ms',0),
+          time_Mon: getNextWeekday(1).set('h',16).set('m',2).set('s',0).set('ms',0),
           time_Mon2: getNextWeekday(2).set('h',2).set('m',2).set('s',0).set('ms',0),
           time_Tue: getNextWeekday(2).set('h',18).set('m',2).set('s',0).set('ms',0),
-          time_Wed: getNextWeekday(3).set('h',16).set('m',32).set('s',0).set('ms',0),
+          time_Wed: getNextWeekday(3).set('h',15).set('m',2).set('s',0).set('ms',0),
           time_Thu: getNextWeekday(4).set('h',18).set('m',2).set('s',0).set('ms',0),
-          time_Fri: getNextWeekday(5).set('h',16).set('m',32).set('s',0).set('ms',0)
+          time_Fri: getNextWeekday(5).set('h',15).set('m',2).set('s',0).set('ms',0)
       }
 
 
