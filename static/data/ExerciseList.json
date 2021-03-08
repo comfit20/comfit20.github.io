@@ -1036,7 +1036,287 @@
          "name": "Squat & Side Steps",
          "level": "middle",
          "gifpath": "static/movie/SquatSideStep.mp4"
+      },
+      {
+         "id": 116,
+         "category": [
+            "barbell"
+         ],
+         "name": "Back Squat (Barbell)",
+         "level": "hard",
+         "gifpath": "static/movie/BarbellBackSquat.mp4"
+      },
+      {
+         "id": 117,
+         "category": [
+            "barbell"
+         ],
+         "name": "Bicep Curl (Barbell)",
+         "level": "middle",
+         "gifpath": "static/movie/BarbellBicepCurl.mp4"
+      },
+      {
+         "id": 118,
+         "category": [
+            "barbell"
+         ],
+         "name": "Change Barbells or High Knees",
+         "level": "middle",
+         "gifpath": "static/movie/BarbellChanging.mp4"
+      },
+      {
+         "id": 119,
+         "category": [
+            "barbell"
+         ],
+         "name": "Deadlift (Barbell)",
+         "level": "hard",
+         "gifpath": "static/movie/BarbellDeadlift.mp4"
+      },
+      {
+         "id": 120,
+         "category": [
+            "barbell"
+         ],
+         "name": "Front Squat (Barbell)",
+         "level": "hard",
+         "gifpath": "static/movie/BarbellFrontSquat.mp4"
+      },
+      {
+         "id": 121,
+         "category": [
+            "barbell"
+         ],
+         "name": "Good Morning (Barbell)",
+         "level": "hard",
+         "gifpath": "static/movie/BarbellGoodMorning.mp4"
+      },
+      {
+         "id": 122,
+         "category": [
+            "barbell"
+         ],
+         "name": "One Leg Forward (Barbell)",
+         "level": "middle",
+         "gifpath": "static/movie/BarbellOneLegForward.mp4"
+      },
+      {
+         "id": 123,
+         "category": [
+            "barbell"
+         ],
+         "name": "Overhead Press (Barbell)",
+         "level": "middle",
+         "gifpath": "static/movie/BarbellOverheadPress.mp4"
+      },
+      {
+         "id": 124,
+         "category": [
+            "barbell"
+         ],
+         "name": "Reverse Curl (Barbell)",
+         "level": "middle",
+         "gifpath": "static/movie/BarbellReverseCurl.mp4"
+      },
+      {
+         "id": 125,
+         "category": [
+            "barbell"
+         ],
+         "name": "Rowers (Barbell)",
+         "level": "middle",
+         "gifpath": "static/movie/BarbellRowers.mp4"
+      },
+      {
+         "id": 126,
+         "category": [
+            "barbell"
+         ],
+         "name": "Squat & Press (Barbell)",
+         "level": "hard",
+         "gifpath": "static/movie/BarbellSquatAndPress.mp4"
+      },
+      {
+         "id": 127,
+         "category": [
+            "barbell"
+         ],
+         "name": "Sumo Back Squat (Barbell)",
+         "level": "hard",
+         "gifpath": "static/movie/BarbellSumoBackSquat.mp4"
+      },
+      {
+         "id": 128,
+         "category": [
+            "barbell"
+         ],
+         "name": "Upright Row (Barbell)",
+         "level": "middle",
+         "gifpath": "static/movie/BarbellUprightRow.mp4"
+      },
+      {
+         "id": 129,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Bench Press (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellBenchPress.mp4"
+      },
+      {
+         "id": 130,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Bent Forward Seesaw (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellBentForwardSeesaw.mp4"
+      },
+      {
+         "id": 131,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Bicep Curl (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellBicepCurl.mp4"
+      },
+      {
+         "id": 132,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Change Dumbbells or Crunches",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellChanging1.mp4"
+      },
+      {
+         "id": 133,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Deadlift (Dumbbell)",
+         "level": "hard",
+         "gifpath": "static/movie/DumbbellDeadlift.mp4"
+      },
+      {
+         "id": 134,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Front Raise (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellFrontRaise.mp4"
+      },
+      {
+         "id": 135,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Glute Bridge (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellGluteBridge.mp4"
+      },
+      {
+         "id": 136,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Hammer Curl (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellHammerCurl.mp4"
+      },
+      {
+         "id": 137,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Lunges (Dumbbell)",
+         "level": "hard",
+         "gifpath": "static/movie/DumbbellLunges.mp4"
+      },
+      {
+         "id": 138,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Plank Side Twist (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellPlankSideTwist.mp4"
+      },
+      {
+         "id": 139,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Russian Twist (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellRussianTwist.mp4"
+      },
+      {
+         "id": 140,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Seesaw (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellSeesaw.mp4"
+      },
+      {
+         "id": 141,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Shoulder Press (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellShoulderPress.mp4"
+      },
+      {
+         "id": 142,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Side Raise (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellSideRaise.mp4"
+      },
+      {
+         "id": 143,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Squat (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellSquat.mp4"
+      },
+      {
+         "id": 144,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Tricep Extensions (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellTricepExtensions.mp4"
+      },
+      {
+         "id": 145,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Tricep Kickbacks (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellTricepKickbacks.mp4"
+      },
+      {
+         "id": 146,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Upper Body Twist (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/DumbbellTwist.mp4"
       }
+   
    ]
 
 }

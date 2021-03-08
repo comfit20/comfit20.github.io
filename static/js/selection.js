@@ -107,8 +107,12 @@ function parseExercisesToForm(data) {
     back_list.sort((a, b) => a.name.localeCompare(b.name))
     const glutes_list = data['exercises'].filter(excercise => excercise.category.includes("glutes"));
     glutes_list.sort((a, b) => a.name.localeCompare(b.name))
+    const dumbbell_list = data['exercises'].filter(excercise => excercise.category.includes("dumbbell"));
+    dumbbell_list.sort((a, b) => a.name.localeCompare(b.name))
+    const barbell_list = data['exercises'].filter(excercise => excercise.category.includes("barbell"));
+    barbell_list.sort((a, b) => a.name.localeCompare(b.name))
 
-    categorys = [belly_list, back_list, arms_list,core_list,glutes_list,legs_list]
+    categorys = [belly_list, back_list, arms_list,core_list,glutes_list,legs_list,dumbbell_list,barbell_list]
     $.each(categorys,function (index, category) {
         var wrapper = $("<div class='form-row'></div>")
         $('<h2 class="col-sm-12">'+category[0].category[0]+'</h2>').appendTo(wrapper);
