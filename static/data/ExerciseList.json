@@ -889,7 +889,7 @@
          "category": [
             "core"
          ],
-         "name": "Burpee & MountainClimber",
+         "name": "Burpee & Mountain Climber",
          "level": "hard",
          "gifpath": "static/movie/BurpeeAndMountainClimber.mp4"
       },
@@ -898,7 +898,7 @@
          "category": [
             "core"
          ],
-         "name": "Cross MountainClimber",
+         "name": "Cross Mountain Climber",
          "level": "middle",
          "gifpath": "static/movie/CrossMountainClimber.mp4"
       },
