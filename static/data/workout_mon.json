@@ -28,9 +28,9 @@
     {
       "id": 2,
       "heading": "Introduction to exercises",
-      "name": "Backlunge & Kick",
+      "name": "Side Plank & Star",
       "duration": 10,
-      "gifpath": "static/movie/BacklungeKick.mp4",
+      "gifpath": "static/movie/SidePlankStars.mp4",
       "sound": null,
       "indicator": "hidden"
     },
@@ -91,18 +91,18 @@
     {
       "id": 9,
       "heading": "Introduction to exercises",
-      "name": "Rotational Reach & Push Up",
+      "name": "One Leg Forward",
       "duration": 10,
-      "gifpath": "static/movie/RotationalReachPushUp.mp4",
+      "gifpath": "static/movie/OneLegForward.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 10,
       "heading": "Introduction to exercises",
-      "name": "One Leg Forward",
+      "name": "Rotational Reach & Push Up",
       "duration": 10,
-      "gifpath": "static/movie/OneLegForward.mp4",
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
       "sound": null,
       "indicator": "hidden"
     },
@@ -199,7 +199,7 @@
     {
       "id": 21,
       "heading": "Get Ready to Work Out",
-      "name": " Let's go: Backlunge & Kick",
+      "name": " Let's go: Side Plank & Star",
       "duration": 5,
       "gifpath": "static/movie/GetReadyToWorkout.mp4",
       "sound": "audiorest",
@@ -208,9 +208,9 @@
     {
       "id": 22,
       "heading": "Work",
-      "name": "Backlunge & Kick",
+      "name": "Side Plank & Star",
       "duration": 40,
-      "gifpath": "static/movie/BacklungeKick.mp4",
+      "gifpath": "static/movie/SidePlankStars.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
@@ -325,24 +325,6 @@
     {
       "id": 35,
       "heading": "Rest",
-      "name": "Up Next: Rotational Reach & Push Up",
-      "duration": 10,
-      "gifpath": "static/movie/RotationalReachPushUp.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 36,
-      "heading": "Work",
-      "name": "Rotational Reach & Push Up",
-      "duration": 40,
-      "gifpath": "static/movie/RotationalReachPushUp.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 37,
-      "heading": "Rest",
       "name": "Up Next: One Leg Forward",
       "duration": 10,
       "gifpath": "static/movie/OneLegForward.mp4",
@@ -350,11 +332,29 @@
       "indicator": "hidden"
     },
     {
-      "id": 38,
+      "id": 36,
       "heading": "Work",
       "name": "One Leg Forward",
       "duration": 40,
       "gifpath": "static/movie/OneLegForward.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 37,
+      "heading": "Rest",
+      "name": "Up Next: Rotational Reach & Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 38,
+      "heading": "Work",
+      "name": "Rotational Reach & Push Up",
+      "duration": 40,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
@@ -415,7 +415,7 @@
     {
       "id": 45,
       "heading": "Water Break",
-      "name": "Next: Backlunge & Kick",
+      "name": "Next: Side Plank & Star",
       "duration": 35,
       "gifpath": "static/movie/WaterRefill.mp4",
       "sound": "audiorest",
@@ -424,9 +424,9 @@
     {
       "id": 46,
       "heading": "Work",
-      "name": "Backlunge & Kick",
+      "name": "Side Plank & Star",
       "duration": 40,
-      "gifpath": "static/movie/BacklungeKick.mp4",
+      "gifpath": "static/movie/SidePlankStars.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
@@ -541,24 +541,6 @@
     {
       "id": 59,
       "heading": "Rest",
-      "name": "Up Next: Rotational Reach & Push Up",
-      "duration": 10,
-      "gifpath": "static/movie/RotationalReachPushUp.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 60,
-      "heading": "Work",
-      "name": "Rotational Reach & Push Up",
-      "duration": 40,
-      "gifpath": "static/movie/RotationalReachPushUp.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 61,
-      "heading": "Rest",
       "name": "Up Next: One Leg Forward",
       "duration": 10,
       "gifpath": "static/movie/OneLegForward.mp4",
@@ -566,11 +548,29 @@
       "indicator": "hidden"
     },
     {
-      "id": 62,
+      "id": 60,
       "heading": "Work",
       "name": "One Leg Forward",
       "duration": 40,
       "gifpath": "static/movie/OneLegForward.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 61,
+      "heading": "Rest",
+      "name": "Up Next: Rotational Reach & Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 62,
+      "heading": "Work",
+      "name": "Rotational Reach & Push Up",
+      "duration": 40,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
@@ -631,7 +631,7 @@
     {
       "id": 69,
       "heading": "Water Break",
-      "name": "Next: Backlunge & Kick",
+      "name": "Next: Side Plank & Star",
       "duration": 35,
       "gifpath": "static/movie/WaterRefill.mp4",
       "sound": "audiorest",
@@ -640,9 +640,9 @@
     {
       "id": 70,
       "heading": "Work",
-      "name": "Backlunge & Kick",
+      "name": "Side Plank & Star",
       "duration": 40,
-      "gifpath": "static/movie/BacklungeKick.mp4",
+      "gifpath": "static/movie/SidePlankStars.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
@@ -757,24 +757,6 @@
     {
       "id": 83,
       "heading": "Rest",
-      "name": "Up Next: Rotational Reach & Push Up",
-      "duration": 10,
-      "gifpath": "static/movie/RotationalReachPushUp.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 84,
-      "heading": "Work",
-      "name": "Rotational Reach & Push Up",
-      "duration": 40,
-      "gifpath": "static/movie/RotationalReachPushUp.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 85,
-      "heading": "Rest",
       "name": "Up Next: One Leg Forward",
       "duration": 10,
       "gifpath": "static/movie/OneLegForward.mp4",
@@ -782,11 +764,29 @@
       "indicator": "hidden"
     },
     {
-      "id": 86,
+      "id": 84,
       "heading": "Work",
       "name": "One Leg Forward",
       "duration": 40,
       "gifpath": "static/movie/OneLegForward.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 85,
+      "heading": "Rest",
+      "name": "Up Next: Rotational Reach & Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 86,
+      "heading": "Work",
+      "name": "Rotational Reach & Push Up",
+      "duration": 40,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
