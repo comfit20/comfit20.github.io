@@ -84,7 +84,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 2,
+      "id": 9,
       "heading": "",
       "name": "Meditate in child's pose. Use your bolster!",
       "duration": 396,
@@ -93,7 +93,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 11,
+      "id": 10,
       "heading": "",
       "name": "Locust",
       "duration": 49,
@@ -102,7 +102,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 9,
+      "id": 11,
       "heading": "",
       "name": "Half bow or quad stretch right",
       "duration": 62,
@@ -111,7 +111,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 10,
+      "id": 12,
       "heading": "",
       "name": "Half bow or quad stretch left",
       "duration": 62,
@@ -120,7 +120,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 11,
+      "id": 13,
       "heading": "",
       "name": "Reclined hero pose",
       "duration": 224,
@@ -129,7 +129,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 12,
+      "id": 14,
       "heading": "",
       "name": "Supported bridge",
       "duration": 224,
@@ -138,7 +138,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 13,
+      "id": 15,
       "heading": "",
       "name": "Reclined Bound Angle Pose",
       "duration": 216,
@@ -147,7 +147,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 14,
+      "id": 16,
       "heading": "",
       "name": "Legs up the wall is a reclined version of staff pose",
       "duration": 300,
@@ -156,7 +156,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 15,
+      "id": 17,
       "heading": "",
       "name": "Stay at the wall for wide-angle forward bend",
       "duration": 228,
@@ -165,7 +165,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 16,
+      "id": 18,
       "heading": "",
       "name": "Figure four right",
       "duration": 144,
@@ -174,7 +174,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 17,
+      "id": 19,
       "heading": "",
       "name": "Gentle twist left",
       "duration": 95,
@@ -183,7 +183,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 18,
+      "id": 20,
       "heading": "",
       "name": "Figure four left",
       "duration": 144,
@@ -192,7 +192,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 19,
+      "id": 21,
       "heading": "",
       "name": "Gentle twist right",
       "duration": 95,
@@ -201,7 +201,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 20,
+      "id": 22,
       "heading": "",
       "name": "Supported Savasana",
       "duration": 300,
@@ -210,7 +210,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 21,
+      "id": 23,
       "heading": "",
       "name": "You're welcome to stay here as long as you like.",
       "duration": 30,
@@ -219,7 +219,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 22,
+      "id": 24,
       "heading": "Thank you for practicing with me today!",
       "name": "Namaste",
       "duration": 20,
