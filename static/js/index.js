@@ -87,7 +87,7 @@ function createYogaTimeList() {
         time_list.push(time_1); //this is Tuesday 4:30 pm
         // var time_2 = getNextWeekday(5).set('h',0).set('m',32).set('s',0).set('ms',0);
         // time_list.push(time_2); //this is Thursday 4:30 pm
-        var time_3 = getNextWeekday(5).set('h',02).set('m',32).set('s',0).set('ms',0);
+        var time_3 = getNextWeekday(5).set('h',01).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_3); //this is Thursday 6:30pm
 
         
