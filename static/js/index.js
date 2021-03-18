@@ -192,7 +192,7 @@ function createYogaTimeList() {
           time_test = {
           time_Tue: getNextWeekday(3).set('h',0).set('m',32).set('s',0).set('ms',0),
           // time_Thu: getNextWeekday(5).set('h',0).set('m',32).set('s',0).set('ms',0),
-          time_Thu2: getNextWeekday(5).set('h',02).set('m',32).set('s',0).set('ms',0)
+          time_Thu2: getNextWeekday(5).set('h',01).set('m',32).set('s',0).set('ms',0)
       }
 
         var today = dayjs().day();
