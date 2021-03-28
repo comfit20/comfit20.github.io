@@ -28,32 +28,14 @@
     {
       "id": 2,
       "heading": "Introduction to exercises",
-      "name": "Mountain Climber Side Step",
+      "name": "Static Spiderman",
       "duration": 10,
-      "gifpath": "static/movie/MountainClimberSideStep.mp4",
+      "gifpath": "static/movie/StaticSpiderman.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 3,
-      "heading": "Introduction to exercises",
-      "name": "Frog Squats",
-      "duration": 10,
-      "gifpath": "static/movie/FrogSquat.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 4,
-      "heading": "Introduction to exercises",
-      "name": "High Plank Rower & Touch Back",
-      "duration": 10,
-      "gifpath": "static/movie/HighPlankRowerTouchBack.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 5,
       "heading": "Introduction to exercises",
       "name": "Heel Touch Crunches",
       "duration": 10,
@@ -62,52 +44,52 @@
       "indicator": "hidden"
     },
     {
+      "id": 4,
+      "heading": "Introduction to exercises",
+      "name": "4 Sprawl & 2 Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 5,
+      "heading": "Introduction to exercises",
+      "name": "Crab Walk",
+      "duration": 10,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
       "id": 6,
       "heading": "Introduction to exercises",
-      "name": "Shoot Through",
+      "name": "Backlunge & Kick",
       "duration": 10,
-      "gifpath": "static/movie/ShootThrough.mp4",
+      "gifpath": "static/movie/BacklungeKick.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 7,
       "heading": "Introduction to exercises",
-      "name": "Burpee & Jump 180",
+      "name": "Squat Pulses",
       "duration": 10,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/SquatPulses.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 8,
       "heading": "Introduction to exercises",
-      "name": "Single-Leg Glute Bridge",
+      "name": "10 High Knee & 3 Tuck Jumps",
       "duration": 10,
-      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "gifpath": "static/movie/HighKneeTuckJump.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 9,
-      "heading": "Introduction to exercises",
-      "name": "Star Push Up Jump",
-      "duration": 10,
-      "gifpath": "static/movie/StarPushUpJump.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 10,
-      "heading": "Introduction to exercises",
-      "name": "Fast Squats",
-      "duration": 10,
-      "gifpath": "static/movie/FastSquat.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 11,
       "heading": "Introduction to exercises",
       "name": "Side Plank Crunches",
       "duration": 10,
@@ -116,20 +98,38 @@
       "indicator": "hidden"
     },
     {
+      "id": 10,
+      "heading": "Introduction to exercises",
+      "name": "Squat & Knee Rise",
+      "duration": 10,
+      "gifpath": "static/movie/SquatKneeTap.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 11,
+      "heading": "Introduction to exercises",
+      "name": "Burpee & Mountain Climber",
+      "duration": 10,
+      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
       "id": 12,
       "heading": "Introduction to exercises",
-      "name": "Plank to Bear & Tap Knees",
+      "name": "Squat Walk",
       "duration": 10,
-      "gifpath": "static/movie/PlankToBearKnees.mp4",
+      "gifpath": "static/movie/SquatWalk.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 13,
       "heading": "Introduction to exercises",
-      "name": "Diagonal Plank Walk-Out",
+      "name": "Plank Skater Hops",
       "duration": 10,
-      "gifpath": "static/movie/DiagonalPlankWalkOut.mp4",
+      "gifpath": "static/movie/PlankSkaterHops.mp4",
       "sound": null,
       "indicator": "hidden"
     },
@@ -199,7 +199,7 @@
     {
       "id": 21,
       "heading": "Get Ready to Work Out",
-      "name": " Let's go: Mountain Climber Side Step",
+      "name": " Let's go: Static Spiderman",
       "duration": 5,
       "gifpath": "static/movie/GetReadyToWorkout.mp4",
       "sound": "audiorest",
@@ -208,50 +208,14 @@
     {
       "id": 22,
       "heading": "Work",
-      "name": "Mountain Climber Side Step",
+      "name": "Static Spiderman",
       "duration": 40,
-      "gifpath": "static/movie/MountainClimberSideStep.mp4",
+      "gifpath": "static/movie/StaticSpiderman.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 23,
-      "heading": "Rest",
-      "name": "Up Next: Frog Squats",
-      "duration": 10,
-      "gifpath": "static/movie/FrogSquat.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 24,
-      "heading": "Work",
-      "name": "Frog Squats",
-      "duration": 40,
-      "gifpath": "static/movie/FrogSquat.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 25,
-      "heading": "Rest",
-      "name": "Up Next: High Plank Rower & Touch Back",
-      "duration": 10,
-      "gifpath": "static/movie/HighPlankRowerTouchBack.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 26,
-      "heading": "Work",
-      "name": "High Plank Rower & Touch Back",
-      "duration": 40,
-      "gifpath": "static/movie/HighPlankRowerTouchBack.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 27,
       "heading": "Rest",
       "name": "Up Next: Heel Touch Crunches",
       "duration": 10,
@@ -260,7 +224,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 28,
+      "id": 24,
       "heading": "Work",
       "name": "Heel Touch Crunches",
       "duration": 40,
@@ -269,97 +233,97 @@
       "indicator": "exer_visible"
     },
     {
+      "id": 25,
+      "heading": "Rest",
+      "name": "Up Next: 4 Sprawl & 2 Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 26,
+      "heading": "Work",
+      "name": "4 Sprawl & 2 Push Up",
+      "duration": 40,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 27,
+      "heading": "Rest",
+      "name": "Up Next: Crab Walk",
+      "duration": 10,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 28,
+      "heading": "Work",
+      "name": "Crab Walk",
+      "duration": 40,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
       "id": 29,
       "heading": "Rest",
-      "name": "Up Next: Shoot Through",
+      "name": "Up Next: Backlunge & Kick",
       "duration": 10,
-      "gifpath": "static/movie/ShootThrough.mp4",
+      "gifpath": "static/movie/BacklungeKick.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 30,
       "heading": "Work",
-      "name": "Shoot Through",
+      "name": "Backlunge & Kick",
       "duration": 40,
-      "gifpath": "static/movie/ShootThrough.mp4",
+      "gifpath": "static/movie/BacklungeKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 31,
       "heading": "Rest",
-      "name": "Up Next: Burpee & Jump 180",
+      "name": "Up Next: Squat Pulses",
       "duration": 10,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/SquatPulses.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 32,
       "heading": "Work",
-      "name": "Burpee & Jump 180",
+      "name": "Squat Pulses",
       "duration": 40,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/SquatPulses.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 33,
       "heading": "Rest",
-      "name": "Up Next: Single-Leg Glute Bridge",
+      "name": "Up Next: 10 High Knee & 3 Tuck Jumps",
       "duration": 10,
-      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "gifpath": "static/movie/HighKneeTuckJump.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 34,
       "heading": "Work",
-      "name": "Single-Leg Glute Bridge",
+      "name": "10 High Knee & 3 Tuck Jumps",
       "duration": 40,
-      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "gifpath": "static/movie/HighKneeTuckJump.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 35,
-      "heading": "Rest",
-      "name": "Up Next: Star Push Up Jump",
-      "duration": 10,
-      "gifpath": "static/movie/StarPushUpJump.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 36,
-      "heading": "Work",
-      "name": "Star Push Up Jump",
-      "duration": 40,
-      "gifpath": "static/movie/StarPushUpJump.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 37,
-      "heading": "Rest",
-      "name": "Up Next: Fast Squats",
-      "duration": 10,
-      "gifpath": "static/movie/FastSquat.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 38,
-      "heading": "Work",
-      "name": "Fast Squats",
-      "duration": 40,
-      "gifpath": "static/movie/FastSquat.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 39,
       "heading": "Rest",
       "name": "Up Next: Side Plank Crunches",
       "duration": 10,
@@ -368,7 +332,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 40,
+      "id": 36,
       "heading": "Work",
       "name": "Side Plank Crunches",
       "duration": 40,
@@ -377,45 +341,81 @@
       "indicator": "exer_visible"
     },
     {
+      "id": 37,
+      "heading": "Rest",
+      "name": "Up Next: Squat & Knee Rise",
+      "duration": 10,
+      "gifpath": "static/movie/SquatKneeTap.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 38,
+      "heading": "Work",
+      "name": "Squat & Knee Rise",
+      "duration": 40,
+      "gifpath": "static/movie/SquatKneeTap.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 39,
+      "heading": "Rest",
+      "name": "Up Next: Burpee & Mountain Climber",
+      "duration": 10,
+      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 40,
+      "heading": "Work",
+      "name": "Burpee & Mountain Climber",
+      "duration": 40,
+      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
       "id": 41,
       "heading": "Rest",
-      "name": "Up Next: Plank to Bear & Tap Knees",
+      "name": "Up Next: Squat Walk",
       "duration": 10,
-      "gifpath": "static/movie/PlankToBearKnees.mp4",
+      "gifpath": "static/movie/SquatWalk.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 42,
       "heading": "Work",
-      "name": "Plank to Bear & Tap Knees",
+      "name": "Squat Walk",
       "duration": 40,
-      "gifpath": "static/movie/PlankToBearKnees.mp4",
+      "gifpath": "static/movie/SquatWalk.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 43,
       "heading": "Rest",
-      "name": "Up Next: Diagonal Plank Walk-Out",
+      "name": "Up Next: Plank Skater Hops",
       "duration": 10,
-      "gifpath": "static/movie/DiagonalPlankWalkOut.mp4",
+      "gifpath": "static/movie/PlankSkaterHops.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 44,
       "heading": "Work",
-      "name": "Diagonal Plank Walk-Out",
+      "name": "Plank Skater Hops",
       "duration": 40,
-      "gifpath": "static/movie/DiagonalPlankWalkOut.mp4",
+      "gifpath": "static/movie/PlankSkaterHops.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 45,
       "heading": "Water Break",
-      "name": "Next: Mountain Climber Side Step",
+      "name": "Next: Static Spiderman",
       "duration": 35,
       "gifpath": "static/movie/WaterRefill.mp4",
       "sound": "audiorest",
@@ -424,50 +424,14 @@
     {
       "id": 46,
       "heading": "Work",
-      "name": "Mountain Climber Side Step",
+      "name": "Static Spiderman",
       "duration": 40,
-      "gifpath": "static/movie/MountainClimberSideStep.mp4",
+      "gifpath": "static/movie/StaticSpiderman.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 47,
-      "heading": "Rest",
-      "name": "Up Next: Frog Squats",
-      "duration": 10,
-      "gifpath": "static/movie/FrogSquat.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 48,
-      "heading": "Work",
-      "name": "Frog Squats",
-      "duration": 40,
-      "gifpath": "static/movie/FrogSquat.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 49,
-      "heading": "Rest",
-      "name": "Up Next: High Plank Rower & Touch Back",
-      "duration": 10,
-      "gifpath": "static/movie/HighPlankRowerTouchBack.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 50,
-      "heading": "Work",
-      "name": "High Plank Rower & Touch Back",
-      "duration": 40,
-      "gifpath": "static/movie/HighPlankRowerTouchBack.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 51,
       "heading": "Rest",
       "name": "Up Next: Heel Touch Crunches",
       "duration": 10,
@@ -476,7 +440,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 52,
+      "id": 48,
       "heading": "Work",
       "name": "Heel Touch Crunches",
       "duration": 40,
@@ -485,97 +449,97 @@
       "indicator": "exer_visible"
     },
     {
+      "id": 49,
+      "heading": "Rest",
+      "name": "Up Next: 4 Sprawl & 2 Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 50,
+      "heading": "Work",
+      "name": "4 Sprawl & 2 Push Up",
+      "duration": 40,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 51,
+      "heading": "Rest",
+      "name": "Up Next: Crab Walk",
+      "duration": 10,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 52,
+      "heading": "Work",
+      "name": "Crab Walk",
+      "duration": 40,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
       "id": 53,
       "heading": "Rest",
-      "name": "Up Next: Shoot Through",
+      "name": "Up Next: Backlunge & Kick",
       "duration": 10,
-      "gifpath": "static/movie/ShootThrough.mp4",
+      "gifpath": "static/movie/BacklungeKick.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 54,
       "heading": "Work",
-      "name": "Shoot Through",
+      "name": "Backlunge & Kick",
       "duration": 40,
-      "gifpath": "static/movie/ShootThrough.mp4",
+      "gifpath": "static/movie/BacklungeKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 55,
       "heading": "Rest",
-      "name": "Up Next: Burpee & Jump 180",
+      "name": "Up Next: Squat Pulses",
       "duration": 10,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/SquatPulses.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 56,
       "heading": "Work",
-      "name": "Burpee & Jump 180",
+      "name": "Squat Pulses",
       "duration": 40,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/SquatPulses.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 57,
       "heading": "Rest",
-      "name": "Up Next: Single-Leg Glute Bridge",
+      "name": "Up Next: 10 High Knee & 3 Tuck Jumps",
       "duration": 10,
-      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "gifpath": "static/movie/HighKneeTuckJump.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 58,
       "heading": "Work",
-      "name": "Single-Leg Glute Bridge",
+      "name": "10 High Knee & 3 Tuck Jumps",
       "duration": 40,
-      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "gifpath": "static/movie/HighKneeTuckJump.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 59,
-      "heading": "Rest",
-      "name": "Up Next: Star Push Up Jump",
-      "duration": 10,
-      "gifpath": "static/movie/StarPushUpJump.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 60,
-      "heading": "Work",
-      "name": "Star Push Up Jump",
-      "duration": 40,
-      "gifpath": "static/movie/StarPushUpJump.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 61,
-      "heading": "Rest",
-      "name": "Up Next: Fast Squats",
-      "duration": 10,
-      "gifpath": "static/movie/FastSquat.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 62,
-      "heading": "Work",
-      "name": "Fast Squats",
-      "duration": 40,
-      "gifpath": "static/movie/FastSquat.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 63,
       "heading": "Rest",
       "name": "Up Next: Side Plank Crunches",
       "duration": 10,
@@ -584,7 +548,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 64,
+      "id": 60,
       "heading": "Work",
       "name": "Side Plank Crunches",
       "duration": 40,
@@ -593,45 +557,81 @@
       "indicator": "exer_visible"
     },
     {
+      "id": 61,
+      "heading": "Rest",
+      "name": "Up Next: Squat & Knee Rise",
+      "duration": 10,
+      "gifpath": "static/movie/SquatKneeTap.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 62,
+      "heading": "Work",
+      "name": "Squat & Knee Rise",
+      "duration": 40,
+      "gifpath": "static/movie/SquatKneeTap.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 63,
+      "heading": "Rest",
+      "name": "Up Next: Burpee & Mountain Climber",
+      "duration": 10,
+      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 64,
+      "heading": "Work",
+      "name": "Burpee & Mountain Climber",
+      "duration": 40,
+      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
       "id": 65,
       "heading": "Rest",
-      "name": "Up Next: Plank to Bear & Tap Knees",
+      "name": "Up Next: Squat Walk",
       "duration": 10,
-      "gifpath": "static/movie/PlankToBearKnees.mp4",
+      "gifpath": "static/movie/SquatWalk.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 66,
       "heading": "Work",
-      "name": "Plank to Bear & Tap Knees",
+      "name": "Squat Walk",
       "duration": 40,
-      "gifpath": "static/movie/PlankToBearKnees.mp4",
+      "gifpath": "static/movie/SquatWalk.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 67,
       "heading": "Rest",
-      "name": "Up Next: Diagonal Plank Walk-Out",
+      "name": "Up Next: Plank Skater Hops",
       "duration": 10,
-      "gifpath": "static/movie/DiagonalPlankWalkOut.mp4",
+      "gifpath": "static/movie/PlankSkaterHops.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 68,
       "heading": "Work",
-      "name": "Diagonal Plank Walk-Out",
+      "name": "Plank Skater Hops",
       "duration": 40,
-      "gifpath": "static/movie/DiagonalPlankWalkOut.mp4",
+      "gifpath": "static/movie/PlankSkaterHops.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 69,
       "heading": "Water Break",
-      "name": "Next: Mountain Climber Side Step",
+      "name": "Next: Static Spiderman",
       "duration": 35,
       "gifpath": "static/movie/WaterRefill.mp4",
       "sound": "audiorest",
@@ -640,50 +640,14 @@
     {
       "id": 70,
       "heading": "Work",
-      "name": "Mountain Climber Side Step",
+      "name": "Static Spiderman",
       "duration": 40,
-      "gifpath": "static/movie/MountainClimberSideStep.mp4",
+      "gifpath": "static/movie/StaticSpiderman.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 71,
-      "heading": "Rest",
-      "name": "Up Next: Frog Squats",
-      "duration": 10,
-      "gifpath": "static/movie/FrogSquat.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 72,
-      "heading": "Work",
-      "name": "Frog Squats",
-      "duration": 40,
-      "gifpath": "static/movie/FrogSquat.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 73,
-      "heading": "Rest",
-      "name": "Up Next: High Plank Rower & Touch Back",
-      "duration": 10,
-      "gifpath": "static/movie/HighPlankRowerTouchBack.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 74,
-      "heading": "Work",
-      "name": "High Plank Rower & Touch Back",
-      "duration": 40,
-      "gifpath": "static/movie/HighPlankRowerTouchBack.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 75,
       "heading": "Rest",
       "name": "Up Next: Heel Touch Crunches",
       "duration": 10,
@@ -692,7 +656,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 76,
+      "id": 72,
       "heading": "Work",
       "name": "Heel Touch Crunches",
       "duration": 40,
@@ -701,97 +665,97 @@
       "indicator": "exer_visible"
     },
     {
+      "id": 73,
+      "heading": "Rest",
+      "name": "Up Next: 4 Sprawl & 2 Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 74,
+      "heading": "Work",
+      "name": "4 Sprawl & 2 Push Up",
+      "duration": 40,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 75,
+      "heading": "Rest",
+      "name": "Up Next: Crab Walk",
+      "duration": 10,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 76,
+      "heading": "Work",
+      "name": "Crab Walk",
+      "duration": 40,
+      "gifpath": "static/movie/CrabWalk.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
       "id": 77,
       "heading": "Rest",
-      "name": "Up Next: Shoot Through",
+      "name": "Up Next: Backlunge & Kick",
       "duration": 10,
-      "gifpath": "static/movie/ShootThrough.mp4",
+      "gifpath": "static/movie/BacklungeKick.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 78,
       "heading": "Work",
-      "name": "Shoot Through",
+      "name": "Backlunge & Kick",
       "duration": 40,
-      "gifpath": "static/movie/ShootThrough.mp4",
+      "gifpath": "static/movie/BacklungeKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 79,
       "heading": "Rest",
-      "name": "Up Next: Burpee & Jump 180",
+      "name": "Up Next: Squat Pulses",
       "duration": 10,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/SquatPulses.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 80,
       "heading": "Work",
-      "name": "Burpee & Jump 180",
+      "name": "Squat Pulses",
       "duration": 40,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/SquatPulses.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 81,
       "heading": "Rest",
-      "name": "Up Next: Single-Leg Glute Bridge",
+      "name": "Up Next: 10 High Knee & 3 Tuck Jumps",
       "duration": 10,
-      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "gifpath": "static/movie/HighKneeTuckJump.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 82,
       "heading": "Work",
-      "name": "Single-Leg Glute Bridge",
+      "name": "10 High Knee & 3 Tuck Jumps",
       "duration": 40,
-      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "gifpath": "static/movie/HighKneeTuckJump.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 83,
-      "heading": "Rest",
-      "name": "Up Next: Star Push Up Jump",
-      "duration": 10,
-      "gifpath": "static/movie/StarPushUpJump.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 84,
-      "heading": "Work",
-      "name": "Star Push Up Jump",
-      "duration": 40,
-      "gifpath": "static/movie/StarPushUpJump.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 85,
-      "heading": "Rest",
-      "name": "Up Next: Fast Squats",
-      "duration": 10,
-      "gifpath": "static/movie/FastSquat.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 86,
-      "heading": "Work",
-      "name": "Fast Squats",
-      "duration": 40,
-      "gifpath": "static/movie/FastSquat.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 87,
       "heading": "Rest",
       "name": "Up Next: Side Plank Crunches",
       "duration": 10,
@@ -800,7 +764,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 88,
+      "id": 84,
       "heading": "Work",
       "name": "Side Plank Crunches",
       "duration": 40,
@@ -809,38 +773,74 @@
       "indicator": "exer_visible"
     },
     {
+      "id": 85,
+      "heading": "Rest",
+      "name": "Up Next: Squat & Knee Rise",
+      "duration": 10,
+      "gifpath": "static/movie/SquatKneeTap.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 86,
+      "heading": "Work",
+      "name": "Squat & Knee Rise",
+      "duration": 40,
+      "gifpath": "static/movie/SquatKneeTap.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 87,
+      "heading": "Rest",
+      "name": "Up Next: Burpee & Mountain Climber",
+      "duration": 10,
+      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 88,
+      "heading": "Work",
+      "name": "Burpee & Mountain Climber",
+      "duration": 40,
+      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
       "id": 89,
       "heading": "Rest",
-      "name": "Up Next: Plank to Bear & Tap Knees",
+      "name": "Up Next: Squat Walk",
       "duration": 10,
-      "gifpath": "static/movie/PlankToBearKnees.mp4",
+      "gifpath": "static/movie/SquatWalk.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 90,
       "heading": "Work",
-      "name": "Plank to Bear & Tap Knees",
+      "name": "Squat Walk",
       "duration": 40,
-      "gifpath": "static/movie/PlankToBearKnees.mp4",
+      "gifpath": "static/movie/SquatWalk.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 91,
       "heading": "Rest",
-      "name": "Up Next: Diagonal Plank Walk-Out",
+      "name": "Up Next: Plank Skater Hops",
       "duration": 10,
-      "gifpath": "static/movie/DiagonalPlankWalkOut.mp4",
+      "gifpath": "static/movie/PlankSkaterHops.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 92,
       "heading": "Work",
-      "name": "Diagonal Plank Walk-Out",
+      "name": "Plank Skater Hops",
       "duration": 40,
-      "gifpath": "static/movie/DiagonalPlankWalkOut.mp4",
+      "gifpath": "static/movie/PlankSkaterHops.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
