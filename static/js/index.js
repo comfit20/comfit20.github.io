@@ -119,7 +119,7 @@ function createYogaTimeList() {
           time_Mon2: getNextWeekday(2).set('h',1).set('m',2).set('s',0).set('ms',0),
           time_Tue: getNextWeekday(2).set('h',17).set('m',2).set('s',0).set('ms',0),
           time_Wed: getNextWeekday(3).set('h',14).set('m',2).set('s',0).set('ms',0),
-          time_Thu: getNextWeekday(4).set('h',18).set('m',2).set('s',0).set('ms',0),
+          time_Thu: getNextWeekday(4).set('h',17).set('m',2).set('s',0).set('ms',0),
           time_Fri: getNextWeekday(5).set('h',14).set('m',2).set('s',0).set('ms',0)
       }
 
