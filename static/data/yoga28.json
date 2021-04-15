@@ -1,0 +1,447 @@
+{
+  "title": "Restorative Yoga",
+  "startTime": "now",
+  "elements": [
+    {
+      "id": 0,
+      "heading": "Welcome to Yoga",
+      "name": "Class will start soon. Please grab a block or cushion to sit on.",
+      "duration": 5,
+      "gifpath": "static/movie/waitnextworkout.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 1,
+      "heading": "Welcome to Thursday (mostly) Restorative Yoga",
+      "name": "Find a comfortable seated position",
+      "duration": 120,
+      "gifpath": "static/movie/yoga/YogaSeat.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 2,
+      "heading": "",
+      "name": "Take five deep breaths. Then begin constricting your breath on the exhale (as though you are fogging a mirror) for ujjayi breathing.",
+      "duration": 83,
+      "gifpath": "static/movie/yoga/YogaBreath.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 3,
+      "heading": "Keep breathing!",
+      "name": "Try to maintain this breath throughout the practice.",
+      "duration": 10,
+      "gifpath": "",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 4,
+      "heading": "",
+      "name": "Let's warm up our shoulders",
+      "duration": 69,
+      "gifpath": "static/movie/yoga/YogaShoulderStretch.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 5,
+      "heading": "",
+      "name": "Inhale cow, exhale cat",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaCatCow.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 6,
+      "heading": "",
+      "name": "Sphinx pose",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaSphinxNeckRoll.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 7,
+      "heading": "",
+      "name": "Open shoulders right",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaOpenShoulders.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 8,
+      "heading": "",
+      "name": "Open shoulders left",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaOpenShoulders.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 9,
+      "heading": "",
+      "name": "Feel free to return to child's pose at any point during this class",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaChildsPose.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 10,
+      "heading": "",
+      "name": "Locust",
+      "duration": 49,
+      "gifpath": "static/movie/yoga/YogaSalabhasanaA.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 11,
+      "heading": "",
+      "name": "Half bow or quad stretch right",
+      "duration": 62,
+      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 12,
+      "heading": "",
+      "name": "Half bow or quad stretch left",
+      "duration": 62,
+      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 13,
+      "heading": "",
+      "name": "puppy pose",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaPuppy.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 14,
+      "heading": "",
+      "name": "Downward facing dog",
+      "duration": 79,
+      "gifpath": "static/movie/yoga/YogaDownDog.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 15,
+      "heading": "",
+      "name": "Classical sun salutation with low lunge",
+      "duration": 139,
+      "gifpath": "static/movie/yoga/YogaClassical2X.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 16,
+      "heading": "",
+      "name": "Classical sun salutation with crescent",
+      "duration": 68,
+      "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 17,
+      "heading": "",
+      "name": "Tree pose",
+      "duration": 74,
+      "gifpath": "static/movie/yoga/YogaTree.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 18,
+      "heading": "",
+      "name": "Warrior II pose, extended side angle pose",
+      "duration": 95,
+      "gifpath": "static/movie/yoga/YogaWarriorIIExtSideAngle.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 19,
+      "heading": "",
+      "name": "Triangle right",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaTriangleRight.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 20,
+      "heading": "",
+      "name": "Pyramid right",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaPyramid.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 21,
+      "heading": "",
+      "name": "Revolved triangle right",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaRevolvedTriangleRight.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 22,
+      "heading": "",
+      "name": "mountain pose or goddess",
+      "duration": 45,
+      "gifpath": "static/movie/yoga/YogaTadasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 23,
+      "heading": "",
+      "name": "Triangle left",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaTriangleRight.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 24,
+      "heading": "",
+      "name": "Pyramid left",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaPyramid.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 25,
+      "heading": "",
+      "name": "Revolved triangle left",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaRevolvedTriangleRight.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 26,
+      "heading": "",
+      "name": "mountain pose or goddess",
+      "duration": 45,
+      "gifpath": "static/movie/yoga/YogaTadasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 27,
+      "heading": "",
+      "name": "hand to knee and twist right",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaRevolvedHandtobigtoeRight.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 28,
+      "heading": "",
+      "name": "hand to knee and twist left",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaRevolvedHandtobigtoeLeft.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 29,
+      "heading": "",
+      "name": "mountain pose",
+      "duration": 45,
+      "gifpath": "static/movie/yoga/YogaTadasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 30,
+      "heading": "",
+      "name": "chair pose",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaChair.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 31,
+      "heading": "",
+      "name": "squat",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaSquat.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 32,
+      "heading": "",
+      "name": "From sitting on the floor, lower to your back through boat",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaApanasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 33,
+      "heading": "",
+      "name": "Gentle twist",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 34,
+      "heading": "",
+      "name": "Bridge",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaBridge.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 35,
+      "heading": "",
+      "name": "Supported bridge",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaSupportedBridge.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 36,
+      "heading": "",
+      "name": "roll onto stomach for half frog with right knee out",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaFrog.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 37,
+      "heading": "",
+      "name": "half frog with left knee out",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaFrog.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 38,
+      "heading": "",
+      "name": "single leg side stretch right",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaParivrttaJanuSirsasanaRight.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 39,
+      "heading": "",
+      "name": "single leg side stretch left",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaParivrttaJanuSirsasanaLeft.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 40,
+      "heading": "",
+      "name": "staff pose with ankle circles",
+      "duration": 136,
+      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 41,
+      "heading": "",
+      "name": "Figure four right",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 42,
+      "heading": "",
+      "name": "Gentle twist left",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 43,
+      "heading": "",
+      "name": "Figure four left",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 44,
+      "heading": "",
+      "name": "Gentle twist right",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 45,
+      "heading": "",
+      "name": "Knees to chest, squeeze!",
+      "duration": 9,
+      "gifpath": "static/movie/yoga/YogaSavasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 46,
+      "heading": "",
+      "name": "Supported Savasana",
+      "duration": 300,
+      "gifpath": "static/movie/yoga/YogaSupportedSavasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 47,
+      "heading": "",
+      "name": "You're welcome to stay here as long as you like.",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaComeOutOfSavasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 48,
+      "heading": "Thank you for practicing with me today!",
+      "name": "Namaste",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaNamaste.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    }
+  ] 
+}

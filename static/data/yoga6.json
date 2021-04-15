@@ -1,0 +1,212 @@
+{
+  "startTime": "now",
+  "elements": [
+    {
+      "id": 0,
+      "heading": "Welcome to Yoga",
+      "name": "Class will start soon",
+      "duration": 5,
+      "gifpath": "static/movie/waitnextworkout.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 1,
+      "heading": "Welcome to Restorative Yoga 3",
+      "name": "Find a comfortable seated position",
+      "duration": 68,
+      "gifpath": "static/movie/yoga/YogaSeat.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 2,
+      "heading": "",
+      "name": "Let's start in child's pose.",
+      "duration": 396,
+      "gifpath": "static/movie/yoga/YogaChildsPose1X.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 3,
+      "heading": "",
+      "name": "Thread the needle right",
+      "duration": 198,
+      "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 4,
+      "heading": "",
+      "name": "Thread the needle left",
+      "duration": 198,
+      "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 5,
+      "heading": "",
+      "name": "Sphinx pose",
+      "duration": 152,
+      "gifpath": "static/movie/yoga/YogaSphinxNeckRoll.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 6,
+      "heading": "",
+      "name": "Open shoulders right",
+      "duration": 98,
+      "gifpath": "static/movie/yoga/YogaOpenShoulders.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 7,
+      "heading": "",
+      "name": "Open shoulders left",
+      "duration": 98,
+      "gifpath": "static/movie/yoga/YogaOpenShoulders.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 8,
+      "heading": "",
+      "name": "Half bow or quad stretch right",
+      "duration": 62,
+      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 9,
+      "heading": "",
+      "name": "Half bow or quad stretch left",
+      "duration": 62,
+      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 10,
+      "heading": "",
+      "name": "Supported bridge",
+      "duration": 224,
+      "gifpath": "static/movie/yoga/YogaSupportedBridge.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 11,
+      "heading": "",
+      "name": "Reclining Bound Angle Pose",
+      "duration": 216,
+      "gifpath": "static/movie/yoga/YogaSuptaBaddhaKonasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 12,
+      "heading": "",
+      "name": "Staff pose",
+      "duration": 136,
+      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 13,
+      "heading": "",
+      "name": "Wide-angle seated forward bend",
+      "duration": 228,
+      "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 14,
+      "heading": "",
+      "name": "Frog pose",
+      "duration": 198,
+      "gifpath": "static/movie/yoga/YogaFrog.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 15,
+      "heading": "",
+      "name": "Figure four left",
+      "duration": 144,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 16,
+      "heading": "",
+      "name": "Gentle twist left",
+      "duration": 95,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 17,
+      "heading": "",
+      "name": "Figure four right",
+      "duration": 144,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 18,
+      "heading": "",
+      "name": "Gentle twist right",
+      "duration": 95,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 19,
+      "heading": "",
+      "name": "Supported Savasana",
+      "duration": 360,
+      "gifpath": "static/movie/yoga/YogaSupportedSavasana.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 20,
+      "heading": "",
+      "name": "You're welcome to stay here as long as you like.",
+      "duration": 42,
+      "gifpath": "static/movie/yoga/YogaComeOutOfSavasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 21,
+      "heading": "Thank you for practicing with me today!",
+      "name": "Namaste",
+      "duration": 61,
+      "gifpath": "static/movie/yoga/YogaNamaste.mp4",
+      "sound": "audioyoga",
+      "indicator": "hidden"
+    },
+    {
+      "id": 22,
+      "heading": "",
+      "name": "Enjoy the day",
+      "duration": 300,
+      "gifpath": "",
+      "sound": null,
+      "indicator": "hidden"
+    }
+  ]
+}
