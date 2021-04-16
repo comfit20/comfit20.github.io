@@ -247,7 +247,9 @@ function startJqueryTimer(startTime) {
         $("#content").empty()
         $("#content").html('<h2>!!! Good Job: Workout over !!!')
         $("#content").append('<h4> We kindly ask you for feedback </h4>')
-        $("#content").append('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdP8wpxa9pXAzYhNkFlHjpi_I2GPAEQGvGbUTUEHbzerTE0Uw/viewform?embedded=true" width="450" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>');
+        $("#content").append('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2oFTWgx-SGEe-_CDIwf0E-mOWphH8vDf9Q7IiloPiR3vW7g/viewform?embedded=true" width="450" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>');
+
+        // $("#content").append('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdP8wpxa9pXAzYhNkFlHjpi_I2GPAEQGvGbUTUEHbzerTE0Uw/viewform?embedded=true" width="450" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>');
 
 
         return
