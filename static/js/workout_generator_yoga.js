@@ -24,7 +24,7 @@ function generateWorkoutJson(duration_work, exerjson, exercises) {
 
     // var applaus = 1 //random.randint(1,2)
 
-    var warmups = ['yoga seat',
+    var warmups = ['comfortable seat',
     'ujjayi breath',
     'shoulder warm up',
     'cat cow',
