@@ -87,8 +87,8 @@ function createYogaTimeList() {
         time_list.push(time_1); //this is Tuesday 4:30 pm
         // var time_2 = getNextWeekday(5).set('h',0).set('m',32).set('s',0).set('ms',0);
         // time_list.push(time_2); //this is Thursday 4:30 pm
-        var time_3 = getNextWeekday(3).set('h',01).set('m',32).set('s',0).set('ms',0);
-        time_list.push(time_3); //this is Tuesday 6:30pm
+        var time_3 = getNextWeekday(1).set('h',01).set('m',32).set('s',0).set('ms',0);
+        time_list.push(time_3); //this is Tuesday 6:30pm #TEST SUNDAY!?!?
 
         
         // Add your yoga times here (the time is in UTC
@@ -192,7 +192,7 @@ function createYogaTimeList() {
           time_test = {
           time_Tue: getNextWeekday(3).set('h',0).set('m',32).set('s',0).set('ms',0),
           // time_Thu: getNextWeekday(5).set('h',0).set('m',32).set('s',0).set('ms',0),
-          time_Thu2: getNextWeekday(3).set('h',01).set('m',32).set('s',0).set('ms',0)
+          time_Thu2: getNextWeekday(1).set('h',01).set('m',32).set('s',0).set('ms',0)
       }
 
         var today = dayjs().day();
