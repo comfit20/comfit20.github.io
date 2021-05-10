@@ -83,11 +83,11 @@ function createYogaTimeList() {
 
 
         var time_list = []
-        var time_1 = getNextWeekday(3).set('h',0).set('m',32).set('s',0).set('ms',0);
-        time_list.push(time_1); //this is Tuesday 4:30 pm
+        //var time_1 = getNextWeekday(3).set('h',0).set('m',32).set('s',0).set('ms',0);
+        //time_list.push(time_1); //this is Tuesday 4:30 pm
         // var time_2 = getNextWeekday(5).set('h',0).set('m',32).set('s',0).set('ms',0);
         // time_list.push(time_2); //this is Thursday 4:30 pm
-        var time_3 = getNextWeekday(3).set('h',01).set('m',32).set('s',0).set('ms',0);
+        var time_3 = getNextWeekday(3).set('h',1).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_3); //this is Tuesday 6:30pm 
 
         
@@ -190,9 +190,9 @@ function createYogaTimeList() {
 
         var time_test = Object();
           time_test = {
-          time_Tue: getNextWeekday(3).set('h',0).set('m',32).set('s',0).set('ms',0),
+          //time_Tue: getNextWeekday(3).set('h',0).set('m',32).set('s',0).set('ms',0),
           // time_Thu: getNextWeekday(5).set('h',0).set('m',32).set('s',0).set('ms',0),
-          time_Thu2: getNextWeekday(3).set('h',01).set('m',32).set('s',0).set('ms',0)
+          time_Thu2: getNextWeekday(3).set('h',1).set('m',32).set('s',0).set('ms',0)
       }
 
         var today = dayjs().day();
@@ -207,17 +207,17 @@ function createYogaTimeList() {
 
 
 
-            if (_.isEqual(time_test["time_Tue"], time_list[0]) == true) {
-            var share_link = window.location.hostname+'/yoga_group_vinyasa.html'+'&timestamp='+time.toISOString();
-            $("#yoga-next-"+idx).attr('href','yoga_group_vinyasa.html?timestamp='+time.toISOString());
-            $('#yoga-next-'+idx+'-link').attr('value',share_link);
-            }
+            // if (_.isEqual(time_test["time_Tue"], time_list[0]) == true) {
+            // var share_link = window.location.hostname+'/yoga_group_vinyasa.html'+'&timestamp='+time.toISOString();
+            // $("#yoga-next-"+idx).attr('href','yoga_group_vinyasa.html?timestamp='+time.toISOString());
+            // $('#yoga-next-'+idx+'-link').attr('value',share_link);
+            // }
 
-            else if (_.isEqual(time_test["time_Thu2"], time_list[0]) == true) {
+            // else if (_.isEqual(time_test["time_Thu2"], time_list[0]) == true) {
             var share_link = window.location.hostname+'/yoga_group.html?workout=yoga1.json'+'&timestamp='+time.toISOString();
             $("#yoga-next-"+idx).attr('href','yoga_group.html?timestamp='+time.toISOString()+"&workout=yoga1.json");
             $('#yoga-next-'+idx+'-link').attr('value',share_link);
-            }
+            // }
 
         });
         //console.log(yoga_time_list)
