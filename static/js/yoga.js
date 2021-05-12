@@ -216,7 +216,7 @@ function startJqueryTimer(startTime) {
     if (startTime['elements'].length == 0) {
         $("#content").empty()
         $("#content").html('<h1>Yoga class over</h1>')
-        $("#content").append('<h4> We wouldd love to hear your feedback! </h4>')
+        $("#content").append('<h4> We would love to hear your feedback! </h4>')
         $("#content").append('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczvz3N2V88GTI-fqWajOqTNn5LjxGF5X35rIslHD5GOHxgGA/viewform?embedded=true" width="640" height="653" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>');
 
         return
