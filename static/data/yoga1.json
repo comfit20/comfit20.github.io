@@ -33,7 +33,7 @@
       "id": 3,
       "heading": "",
       "name": "Thread the needle right",
-      "duration": 130,
+      "duration": 60,
       "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
@@ -42,7 +42,7 @@
       "id": 4,
       "heading": "",
       "name": "Thread the needle left",
-      "duration": 130,
+      "duration": 60,
       "gifpath": "static/movie/yoga/YogaThreadTheNeedle.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
@@ -240,7 +240,7 @@
       "id": 26,
       "heading": "",
       "name": "Supported Savasana",
-      "duration": 360,
+      "duration": 300,
       "gifpath": "static/movie/yoga/YogaSupportedSavasana.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
