@@ -139,7 +139,7 @@
     {
       "id": 15,
       "heading": "",
-      "name": "Figure four left",
+      "name": "Figure four right",
       "duration": 144,
       "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
       "sound": "audioyoga",
@@ -157,7 +157,7 @@
     {
       "id": 17,
       "heading": "",
-      "name": "Figure four right",
+      "name": "Figure four left",
       "duration": 144,
       "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
       "sound": "audioyoga",
