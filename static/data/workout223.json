@@ -28,6 +28,24 @@
     {
       "id": 2,
       "heading": "Introduction to exercises",
+      "name": "Burpee & Mountain Climber",
+      "duration": 10,
+      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 3,
+      "heading": "Introduction to exercises",
+      "name": "Inch Worm",
+      "duration": 10,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 4,
+      "heading": "Introduction to exercises",
       "name": "10 Fast Feet & Push Up",
       "duration": 10,
       "gifpath": "static/movie/FastFeetPushUp.mp4",
@@ -35,25 +53,61 @@
       "indicator": "hidden"
     },
     {
-      "id": 3,
-      "heading": "Introduction to exercises",
-      "name": "High Knees",
-      "duration": 10,
-      "gifpath": "static/movie/HighKnee.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 4,
-      "heading": "Introduction to exercises",
-      "name": "4 Sprawl & 2 Push Up",
-      "duration": 10,
-      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
       "id": 5,
+      "heading": "Introduction to exercises",
+      "name": "Backlunge & Kick",
+      "duration": 10,
+      "gifpath": "static/movie/BacklungeKick.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 6,
+      "heading": "Introduction to exercises",
+      "name": "Jump & Donkey Kick (n+1)",
+      "duration": 10,
+      "gifpath": "static/movie/DonkeyKick.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 7,
+      "heading": "Introduction to exercises",
+      "name": "Bicycle Crunches",
+      "duration": 10,
+      "gifpath": "static/movie/BicycleCrunches.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 8,
+      "heading": "Introduction to exercises",
+      "name": "Rotational Reach & Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 9,
+      "heading": "Introduction to exercises",
+      "name": "Swimmer",
+      "duration": 10,
+      "gifpath": "static/movie/Swimmer.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 10,
+      "heading": "Introduction to exercises",
+      "name": "Low & High Plank Switch",
+      "duration": 10,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 11,
       "heading": "Introduction to exercises",
       "name": "Squat & Knee Rise",
       "duration": 10,
@@ -62,74 +116,20 @@
       "indicator": "hidden"
     },
     {
-      "id": 6,
-      "heading": "Introduction to exercises",
-      "name": "Static Spiderman",
-      "duration": 10,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 7,
-      "heading": "Introduction to exercises",
-      "name": "Hollow Rock",
-      "duration": 10,
-      "gifpath": "static/movie/HollowRock.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 8,
-      "heading": "Introduction to exercises",
-      "name": "Single Leg Donkey Kick",
-      "duration": 10,
-      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 9,
-      "heading": "Introduction to exercises",
-      "name": "Bicycle Boat",
-      "duration": 10,
-      "gifpath": "static/movie/BicycleBoat.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 10,
-      "heading": "Introduction to exercises",
-      "name": "Crab & Kick",
-      "duration": 10,
-      "gifpath": "static/movie/CrabKick.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 11,
-      "heading": "Introduction to exercises",
-      "name": "Burpee & Mountain Climber",
-      "duration": 10,
-      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
       "id": 12,
       "heading": "Introduction to exercises",
-      "name": "Snow Angel",
+      "name": "Side Plank Crunches",
       "duration": 10,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 13,
       "heading": "Introduction to exercises",
-      "name": "2 Jumping Jack & 1 Tuck Jump",
+      "name": "Jack Knife",
       "duration": 10,
-      "gifpath": "static/movie/JumpingJackTuckJump.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": null,
       "indicator": "hidden"
     },
@@ -199,7 +199,7 @@
     {
       "id": 21,
       "heading": "Get Ready to Work Out",
-      "name": " Let's go: 10 Fast Feet & Push Up",
+      "name": " Let's go: Burpee & Mountain Climber",
       "duration": 5,
       "gifpath": "static/movie/GetReadyToWorkout.mp4",
       "sound": "audiorest",
@@ -208,6 +208,42 @@
     {
       "id": 22,
       "heading": "Work",
+      "name": "Burpee & Mountain Climber",
+      "duration": 60,
+      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 23,
+      "heading": "Rest",
+      "name": "Up Next: Inch Worm",
+      "duration": 15,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 24,
+      "heading": "Work",
+      "name": "Inch Worm",
+      "duration": 60,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 25,
+      "heading": "Rest",
+      "name": "Up Next: 10 Fast Feet & Push Up",
+      "duration": 15,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 26,
+      "heading": "Work",
       "name": "10 Fast Feet & Push Up",
       "duration": 60,
       "gifpath": "static/movie/FastFeetPushUp.mp4",
@@ -215,43 +251,115 @@
       "indicator": "exer_visible"
     },
     {
-      "id": 23,
-      "heading": "Rest",
-      "name": "Up Next: High Knees",
-      "duration": 15,
-      "gifpath": "static/movie/HighKnee.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 24,
-      "heading": "Work",
-      "name": "High Knees",
-      "duration": 60,
-      "gifpath": "static/movie/HighKnee.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 25,
-      "heading": "Rest",
-      "name": "Up Next: 4 Sprawl & 2 Push Up",
-      "duration": 15,
-      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 26,
-      "heading": "Work",
-      "name": "4 Sprawl & 2 Push Up",
-      "duration": 60,
-      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
       "id": 27,
+      "heading": "Rest",
+      "name": "Up Next: Backlunge & Kick",
+      "duration": 15,
+      "gifpath": "static/movie/BacklungeKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 28,
+      "heading": "Work",
+      "name": "Backlunge & Kick",
+      "duration": 60,
+      "gifpath": "static/movie/BacklungeKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 29,
+      "heading": "Rest",
+      "name": "Up Next: Jump & Donkey Kick (n+1)",
+      "duration": 15,
+      "gifpath": "static/movie/DonkeyKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 30,
+      "heading": "Work",
+      "name": "Jump & Donkey Kick (n+1)",
+      "duration": 60,
+      "gifpath": "static/movie/DonkeyKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 31,
+      "heading": "Rest",
+      "name": "Up Next: Bicycle Crunches",
+      "duration": 15,
+      "gifpath": "static/movie/BicycleCrunches.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 32,
+      "heading": "Work",
+      "name": "Bicycle Crunches",
+      "duration": 60,
+      "gifpath": "static/movie/BicycleCrunches.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 33,
+      "heading": "Rest",
+      "name": "Up Next: Rotational Reach & Push Up",
+      "duration": 15,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 34,
+      "heading": "Work",
+      "name": "Rotational Reach & Push Up",
+      "duration": 60,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 35,
+      "heading": "Rest",
+      "name": "Up Next: Swimmer",
+      "duration": 15,
+      "gifpath": "static/movie/Swimmer.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 36,
+      "heading": "Work",
+      "name": "Swimmer",
+      "duration": 60,
+      "gifpath": "static/movie/Swimmer.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 37,
+      "heading": "Rest",
+      "name": "Up Next: Low & High Plank Switch",
+      "duration": 15,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 38,
+      "heading": "Work",
+      "name": "Low & High Plank Switch",
+      "duration": 60,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 39,
       "heading": "Rest",
       "name": "Up Next: Squat & Knee Rise",
       "duration": 15,
@@ -260,7 +368,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 28,
+      "id": 40,
       "heading": "Work",
       "name": "Squat & Knee Rise",
       "duration": 60,
@@ -269,153 +377,45 @@
       "indicator": "exer_visible"
     },
     {
-      "id": 29,
-      "heading": "Rest",
-      "name": "Up Next: Static Spiderman",
-      "duration": 15,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 30,
-      "heading": "Work",
-      "name": "Static Spiderman",
-      "duration": 60,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 31,
-      "heading": "Rest",
-      "name": "Up Next: Hollow Rock",
-      "duration": 15,
-      "gifpath": "static/movie/HollowRock.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 32,
-      "heading": "Work",
-      "name": "Hollow Rock",
-      "duration": 60,
-      "gifpath": "static/movie/HollowRock.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 33,
-      "heading": "Rest",
-      "name": "Up Next: Single Leg Donkey Kick",
-      "duration": 15,
-      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 34,
-      "heading": "Work",
-      "name": "Single Leg Donkey Kick",
-      "duration": 60,
-      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 35,
-      "heading": "Rest",
-      "name": "Up Next: Bicycle Boat",
-      "duration": 15,
-      "gifpath": "static/movie/BicycleBoat.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 36,
-      "heading": "Work",
-      "name": "Bicycle Boat",
-      "duration": 60,
-      "gifpath": "static/movie/BicycleBoat.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 37,
-      "heading": "Rest",
-      "name": "Up Next: Crab & Kick",
-      "duration": 15,
-      "gifpath": "static/movie/CrabKick.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 38,
-      "heading": "Work",
-      "name": "Crab & Kick",
-      "duration": 60,
-      "gifpath": "static/movie/CrabKick.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 39,
-      "heading": "Rest",
-      "name": "Up Next: Burpee & Mountain Climber",
-      "duration": 15,
-      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 40,
-      "heading": "Work",
-      "name": "Burpee & Mountain Climber",
-      "duration": 60,
-      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
       "id": 41,
       "heading": "Rest",
-      "name": "Up Next: Snow Angel",
+      "name": "Up Next: Side Plank Crunches",
       "duration": 15,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 42,
       "heading": "Work",
-      "name": "Snow Angel",
+      "name": "Side Plank Crunches",
       "duration": 60,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 43,
       "heading": "Rest",
-      "name": "Up Next: 2 Jumping Jack & 1 Tuck Jump",
+      "name": "Up Next: Jack Knife",
       "duration": 15,
-      "gifpath": "static/movie/JumpingJackTuckJump.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 44,
       "heading": "Work",
-      "name": "2 Jumping Jack & 1 Tuck Jump",
+      "name": "Jack Knife",
       "duration": 60,
-      "gifpath": "static/movie/JumpingJackTuckJump.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 45,
       "heading": "Water Break",
-      "name": "Up Next: 10 Fast Feet & Push Up",
+      "name": "Up Next: Burpee & Mountain Climber",
       "duration": 45,
       "gifpath": "static/movie/WaterRefill.mp4",
       "sound": "audiorest",
@@ -424,6 +424,42 @@
     {
       "id": 46,
       "heading": "Work",
+      "name": "Burpee & Mountain Climber",
+      "duration": 40,
+      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 47,
+      "heading": "Rest",
+      "name": "Up Next: Inch Worm",
+      "duration": 10,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 48,
+      "heading": "Work",
+      "name": "Inch Worm",
+      "duration": 40,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 49,
+      "heading": "Rest",
+      "name": "Up Next: 10 Fast Feet & Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 50,
+      "heading": "Work",
       "name": "10 Fast Feet & Push Up",
       "duration": 40,
       "gifpath": "static/movie/FastFeetPushUp.mp4",
@@ -431,43 +467,115 @@
       "indicator": "exer_visible"
     },
     {
-      "id": 47,
-      "heading": "Rest",
-      "name": "Up Next: High Knees",
-      "duration": 10,
-      "gifpath": "static/movie/HighKnee.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 48,
-      "heading": "Work",
-      "name": "High Knees",
-      "duration": 40,
-      "gifpath": "static/movie/HighKnee.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 49,
-      "heading": "Rest",
-      "name": "Up Next: 4 Sprawl & 2 Push Up",
-      "duration": 10,
-      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 50,
-      "heading": "Work",
-      "name": "4 Sprawl & 2 Push Up",
-      "duration": 40,
-      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
       "id": 51,
+      "heading": "Rest",
+      "name": "Up Next: Backlunge & Kick",
+      "duration": 10,
+      "gifpath": "static/movie/BacklungeKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 52,
+      "heading": "Work",
+      "name": "Backlunge & Kick",
+      "duration": 40,
+      "gifpath": "static/movie/BacklungeKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 53,
+      "heading": "Rest",
+      "name": "Up Next: Jump & Donkey Kick (n+1)",
+      "duration": 10,
+      "gifpath": "static/movie/DonkeyKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 54,
+      "heading": "Work",
+      "name": "Jump & Donkey Kick (n+1)",
+      "duration": 40,
+      "gifpath": "static/movie/DonkeyKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 55,
+      "heading": "Rest",
+      "name": "Up Next: Bicycle Crunches",
+      "duration": 10,
+      "gifpath": "static/movie/BicycleCrunches.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 56,
+      "heading": "Work",
+      "name": "Bicycle Crunches",
+      "duration": 40,
+      "gifpath": "static/movie/BicycleCrunches.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 57,
+      "heading": "Rest",
+      "name": "Up Next: Rotational Reach & Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 58,
+      "heading": "Work",
+      "name": "Rotational Reach & Push Up",
+      "duration": 40,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 59,
+      "heading": "Rest",
+      "name": "Up Next: Swimmer",
+      "duration": 10,
+      "gifpath": "static/movie/Swimmer.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 60,
+      "heading": "Work",
+      "name": "Swimmer",
+      "duration": 40,
+      "gifpath": "static/movie/Swimmer.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 61,
+      "heading": "Rest",
+      "name": "Up Next: Low & High Plank Switch",
+      "duration": 10,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 62,
+      "heading": "Work",
+      "name": "Low & High Plank Switch",
+      "duration": 40,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 63,
       "heading": "Rest",
       "name": "Up Next: Squat & Knee Rise",
       "duration": 10,
@@ -476,7 +584,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 52,
+      "id": 64,
       "heading": "Work",
       "name": "Squat & Knee Rise",
       "duration": 40,
@@ -485,153 +593,45 @@
       "indicator": "exer_visible"
     },
     {
-      "id": 53,
-      "heading": "Rest",
-      "name": "Up Next: Static Spiderman",
-      "duration": 10,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 54,
-      "heading": "Work",
-      "name": "Static Spiderman",
-      "duration": 40,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 55,
-      "heading": "Rest",
-      "name": "Up Next: Hollow Rock",
-      "duration": 10,
-      "gifpath": "static/movie/HollowRock.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 56,
-      "heading": "Work",
-      "name": "Hollow Rock",
-      "duration": 40,
-      "gifpath": "static/movie/HollowRock.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 57,
-      "heading": "Rest",
-      "name": "Up Next: Single Leg Donkey Kick",
-      "duration": 10,
-      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 58,
-      "heading": "Work",
-      "name": "Single Leg Donkey Kick",
-      "duration": 40,
-      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 59,
-      "heading": "Rest",
-      "name": "Up Next: Bicycle Boat",
-      "duration": 10,
-      "gifpath": "static/movie/BicycleBoat.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 60,
-      "heading": "Work",
-      "name": "Bicycle Boat",
-      "duration": 40,
-      "gifpath": "static/movie/BicycleBoat.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 61,
-      "heading": "Rest",
-      "name": "Up Next: Crab & Kick",
-      "duration": 10,
-      "gifpath": "static/movie/CrabKick.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 62,
-      "heading": "Work",
-      "name": "Crab & Kick",
-      "duration": 40,
-      "gifpath": "static/movie/CrabKick.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 63,
-      "heading": "Rest",
-      "name": "Up Next: Burpee & Mountain Climber",
-      "duration": 10,
-      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 64,
-      "heading": "Work",
-      "name": "Burpee & Mountain Climber",
-      "duration": 40,
-      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
       "id": 65,
       "heading": "Rest",
-      "name": "Up Next: Snow Angel",
+      "name": "Up Next: Side Plank Crunches",
       "duration": 10,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 66,
       "heading": "Work",
-      "name": "Snow Angel",
+      "name": "Side Plank Crunches",
       "duration": 40,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 67,
       "heading": "Rest",
-      "name": "Up Next: 2 Jumping Jack & 1 Tuck Jump",
+      "name": "Up Next: Jack Knife",
       "duration": 10,
-      "gifpath": "static/movie/JumpingJackTuckJump.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 68,
       "heading": "Work",
-      "name": "2 Jumping Jack & 1 Tuck Jump",
+      "name": "Jack Knife",
       "duration": 40,
-      "gifpath": "static/movie/JumpingJackTuckJump.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 69,
       "heading": "Water Break",
-      "name": "Up Next: 10 Fast Feet & Push Up",
+      "name": "Up Next: Burpee & Mountain Climber",
       "duration": 25,
       "gifpath": "static/movie/WaterRefill.mp4",
       "sound": "audiorest",
@@ -640,6 +640,42 @@
     {
       "id": 70,
       "heading": "Work",
+      "name": "Burpee & Mountain Climber",
+      "duration": 20,
+      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 71,
+      "heading": "Rest",
+      "name": "Up Next: Inch Worm",
+      "duration": 5,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 72,
+      "heading": "Work",
+      "name": "Inch Worm",
+      "duration": 20,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 73,
+      "heading": "Rest",
+      "name": "Up Next: 10 Fast Feet & Push Up",
+      "duration": 5,
+      "gifpath": "static/movie/FastFeetPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 74,
+      "heading": "Work",
       "name": "10 Fast Feet & Push Up",
       "duration": 20,
       "gifpath": "static/movie/FastFeetPushUp.mp4",
@@ -647,43 +683,115 @@
       "indicator": "exer_visible"
     },
     {
-      "id": 71,
-      "heading": "Rest",
-      "name": "Up Next: High Knees",
-      "duration": 5,
-      "gifpath": "static/movie/HighKnee.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 72,
-      "heading": "Work",
-      "name": "High Knees",
-      "duration": 20,
-      "gifpath": "static/movie/HighKnee.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 73,
-      "heading": "Rest",
-      "name": "Up Next: 4 Sprawl & 2 Push Up",
-      "duration": 5,
-      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 74,
-      "heading": "Work",
-      "name": "4 Sprawl & 2 Push Up",
-      "duration": 20,
-      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
       "id": 75,
+      "heading": "Rest",
+      "name": "Up Next: Backlunge & Kick",
+      "duration": 5,
+      "gifpath": "static/movie/BacklungeKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 76,
+      "heading": "Work",
+      "name": "Backlunge & Kick",
+      "duration": 20,
+      "gifpath": "static/movie/BacklungeKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 77,
+      "heading": "Rest",
+      "name": "Up Next: Jump & Donkey Kick (n+1)",
+      "duration": 5,
+      "gifpath": "static/movie/DonkeyKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 78,
+      "heading": "Work",
+      "name": "Jump & Donkey Kick (n+1)",
+      "duration": 20,
+      "gifpath": "static/movie/DonkeyKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 79,
+      "heading": "Rest",
+      "name": "Up Next: Bicycle Crunches",
+      "duration": 5,
+      "gifpath": "static/movie/BicycleCrunches.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 80,
+      "heading": "Work",
+      "name": "Bicycle Crunches",
+      "duration": 20,
+      "gifpath": "static/movie/BicycleCrunches.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 81,
+      "heading": "Rest",
+      "name": "Up Next: Rotational Reach & Push Up",
+      "duration": 5,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 82,
+      "heading": "Work",
+      "name": "Rotational Reach & Push Up",
+      "duration": 20,
+      "gifpath": "static/movie/RotationalReachPushUp.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 83,
+      "heading": "Rest",
+      "name": "Up Next: Swimmer",
+      "duration": 5,
+      "gifpath": "static/movie/Swimmer.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 84,
+      "heading": "Work",
+      "name": "Swimmer",
+      "duration": 20,
+      "gifpath": "static/movie/Swimmer.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 85,
+      "heading": "Rest",
+      "name": "Up Next: Low & High Plank Switch",
+      "duration": 5,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 86,
+      "heading": "Work",
+      "name": "Low & High Plank Switch",
+      "duration": 20,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 87,
       "heading": "Rest",
       "name": "Up Next: Squat & Knee Rise",
       "duration": 5,
@@ -692,7 +800,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 76,
+      "id": 88,
       "heading": "Work",
       "name": "Squat & Knee Rise",
       "duration": 20,
@@ -701,146 +809,38 @@
       "indicator": "exer_visible"
     },
     {
-      "id": 77,
-      "heading": "Rest",
-      "name": "Up Next: Static Spiderman",
-      "duration": 5,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 78,
-      "heading": "Work",
-      "name": "Static Spiderman",
-      "duration": 20,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 79,
-      "heading": "Rest",
-      "name": "Up Next: Hollow Rock",
-      "duration": 5,
-      "gifpath": "static/movie/HollowRock.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 80,
-      "heading": "Work",
-      "name": "Hollow Rock",
-      "duration": 20,
-      "gifpath": "static/movie/HollowRock.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 81,
-      "heading": "Rest",
-      "name": "Up Next: Single Leg Donkey Kick",
-      "duration": 5,
-      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 82,
-      "heading": "Work",
-      "name": "Single Leg Donkey Kick",
-      "duration": 20,
-      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 83,
-      "heading": "Rest",
-      "name": "Up Next: Bicycle Boat",
-      "duration": 5,
-      "gifpath": "static/movie/BicycleBoat.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 84,
-      "heading": "Work",
-      "name": "Bicycle Boat",
-      "duration": 20,
-      "gifpath": "static/movie/BicycleBoat.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 85,
-      "heading": "Rest",
-      "name": "Up Next: Crab & Kick",
-      "duration": 5,
-      "gifpath": "static/movie/CrabKick.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 86,
-      "heading": "Work",
-      "name": "Crab & Kick",
-      "duration": 20,
-      "gifpath": "static/movie/CrabKick.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 87,
-      "heading": "Rest",
-      "name": "Up Next: Burpee & Mountain Climber",
-      "duration": 5,
-      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 88,
-      "heading": "Work",
-      "name": "Burpee & Mountain Climber",
-      "duration": 20,
-      "gifpath": "static/movie/BurpeeAndMountainClimber.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
       "id": 89,
       "heading": "Rest",
-      "name": "Up Next: Snow Angel",
+      "name": "Up Next: Side Plank Crunches",
       "duration": 5,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 90,
       "heading": "Work",
-      "name": "Snow Angel",
+      "name": "Side Plank Crunches",
       "duration": 20,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 91,
       "heading": "Rest",
-      "name": "Up Next: 2 Jumping Jack & 1 Tuck Jump",
+      "name": "Up Next: Jack Knife",
       "duration": 5,
-      "gifpath": "static/movie/JumpingJackTuckJump.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 92,
       "heading": "Work",
-      "name": "2 Jumping Jack & 1 Tuck Jump",
+      "name": "Jack Knife",
       "duration": 20,
-      "gifpath": "static/movie/JumpingJackTuckJump.mp4",
+      "gifpath": "static/movie/JackKnife.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
