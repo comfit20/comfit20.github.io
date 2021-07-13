@@ -122,18 +122,18 @@
     {
       "id": 13,
       "heading": "",
-      "name": "Child's pose",
-      "duration": 79,
-      "gifpath": "static/movie/yoga/YogaChildsPose1X.mp4",
+      "name": "Raise right leg for fire hydrant and hip mobility",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaCatCow.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 14,
       "heading": "",
-      "name": "Puppy",
-      "duration": 79,
-      "gifpath": "static/movie/yoga/YogaPuppy.mp4",
+      "name": "Raise left leg for fire hydrant and hip mobility",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaCatCow.mp4",
       "sound": null,
       "indicator": "hidden"
     },
@@ -149,7 +149,7 @@
     {
       "id": 16,
       "heading": "",
-      "name": "sun salutation with low lunge and wrist circles",
+      "name": "sun salutation with low lunge and half split",
       "duration": 139,
       "gifpath": "static/movie/yoga/YogaClassical2X.jmp4",
       "sound": "audioyoga",
@@ -158,95 +158,77 @@
     {
       "id": 17,
       "heading": "",
-      "name": "sun salutation with low lunge and side planks inbetween",
-      "duration": 200,
-      "gifpath": "static/movie/yoga/YogaClassical2X.jmp4",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 18,
-      "heading": "",
-      "name": "sun salutation with crescent and eagle arms right",
+      "name": "sun salutation with crescent right",
       "duration": 70,
       "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
+      "id": 18,
+      "heading": "",
+      "name": "warrior two right",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaWarriorIIExtSideAngle.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
       "id": 19,
       "heading": "",
-      "name": "crescent twist, side plank dips right",
-      "duration": 90,
-      "gifpath": "",
+      "name": "extended side angle right",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaExtSideAngleR.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 20,
       "heading": "",
-      "name": "seated twist",
-      "duration": 90,
-      "gifpath": "",
+      "name": "lizard, squat, come to standing",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaExtSideAngleR.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 21,
       "heading": "",
-      "name": "wide leg standing forward fold",
-      "duration": 30,
-      "gifpath": "",
+      "name": "sun salutation to crescent left",
+      "duration": 70,
+      "gifpath": "static/movie/yoga/YogaClassicalCrescent.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 22,
-      "heading": "",
-      "name": "seated twist other side",
-      "duration": 90,
-      "gifpath": "",
+      "heading": "inhale to",
+      "name": "warrior two left",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaWarriorIIExtSideAngle.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 23,
       "heading": "",
-      "name": "side plank dips other side",
-      "duration": 45,
-      "gifpath": "",
+      "name": "extended side angle left",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaExtSideAngleL.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 24,
       "heading": "",
-      "name": "crescent twist other side",
-      "duration": 45,
-      "gifpath": "",
+      "name": "lizard, lower down to belly",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaExtSideAngleL.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 25,
-      "heading": "",
-      "name": "crescent with eagle arms, come back to standing",
-      "duration": 45,
-      "gifpath": "",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 26,
-      "heading": "",
-      "name": "Downward facing dog to side plank with eagle legs",
-      "duration": 79,
-      "gifpath": "static/movie/yoga/YogaDownDog.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 27,
       "heading": "",
       "name": "locust",
       "duration": 40,
@@ -255,16 +237,61 @@
       "indicator": "hidden"
     },
     {
+      "id": 26,
+      "heading": "",
+      "name": "dynamic cobra",
+      "duration": 40,
+      "gifpath": "static/movie/yoga/YogaCobra.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 27,
+      "heading": "",
+      "name": "quad stretch right",
+      "duration": 20,
+      "gifpath": "static/movie/yoga/YogaHalfBhekasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
       "id": 28,
       "heading": "",
-      "name": "bridge 3X",
-      "duration": 224,
-      "gifpath": "static/movie/yoga/YogaSupportedBridge.mp4",
-      "sound": "audioyoga",
+      "name": "half bow right",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
+      "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 29,
+      "heading": "",
+      "name": "quad stretch left",
+      "duration": 20,
+      "gifpath": "static/movie/yoga/YogaHalfBhekasana.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 30,
+      "heading": "",
+      "name": "half bow left",
+      "duration": 30,
+      "gifpath": "static/movie/yoga/YogaHalfBow.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 31,
+      "heading": "",
+      "name": "bow pose",
+      "duration": 60,
+      "gifpath": "static/movie/yoga/YogaBow.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 32,
       "heading": "",
       "name": "Reclining Bound Angle Pose",
       "duration": 60,
@@ -273,37 +300,10 @@
       "indicator": "hidden"
     },
     {
-      "id": 30,
-      "heading": "",
-      "name": "Legs up the wall is a reclined version of staff pose",
-      "duration": 100,
-      "gifpath": "static/movie/yoga/YogaDandasana.mp4",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 31,
-      "heading": "",
-      "name": "Pull your right knee in for half happy baby with your legs still up the wall",
-      "duration": 150,
-      "gifpath": "",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
-      "id": 32,
-      "heading": "",
-      "name": "Figure four right or pigeon",
-      "duration": 150,
-      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
-      "sound": "audioyoga",
-      "indicator": "hidden"
-    },
-    {
       "id": 33,
       "heading": "",
-      "name": "Pull your left knee in for half happy baby with your legs still up the wall",
-      "duration": 150,
+      "name": "Hip 90-90",
+      "duration": 80,
       "gifpath": "",
       "sound": "audioyoga",
       "indicator": "hidden"
@@ -311,36 +311,36 @@
     {
       "id": 34,
       "heading": "",
-      "name": "Figure four left or pigeon",
-      "duration": 150,
-      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
+      "name": "Gentle twist left or peace pose",
+      "duration": 80,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 35,
       "heading": "",
-      "name": "Wide-angle legs up the wall",
-      "duration": 200,
-      "gifpath": "static/movie/yoga/YogaUpavistaKonasana.mp4",
+      "name": "Gentle twist right or peace pose",
+      "duration": 80,
+      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 36,
       "heading": "",
-      "name": "Gentle twist left",
-      "duration": 80,
-      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "name": "Figure four right or pigeon",
+      "duration": 90,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
     {
       "id": 37,
       "heading": "",
-      "name": "Gentle twist right",
-      "duration": 80,
-      "gifpath": "static/movie/yoga/YogaGentleTwist.mp4",
+      "name": "Figure four left or pigeon",
+      "duration": 90,
+      "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
     },
