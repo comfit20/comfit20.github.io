@@ -14,10 +14,10 @@
       "id": 1,
       "heading": "Workout Timing:",
       "name": [
-        "workout style: increase",
-        "12 exercises",
-        "20, 40, 60 sec",
-        "5 sec rest",
+        "workout style: repeat iso",
+        "20 exercises",
+        "3*45 sec work",
+        "15 sec rest",
         "3 rounds"
       ],
       "duration": 10,
@@ -28,113 +28,185 @@
     {
       "id": 2,
       "heading": "Introduction to exercises",
-      "name": "2 Squats, 2 Squat Jumps",
+      "name": "Plank & Side Jump & Squat",
       "duration": 10,
-      "gifpath": "static/movie/JumpSquatSquat.mp4",
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 3,
       "heading": "Introduction to exercises",
-      "name": "Plank Pulses",
+      "name": "Jump Squat (+ Touch)",
       "duration": 10,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 4,
       "heading": "Introduction to exercises",
-      "name": "Butterfly Crunch",
+      "name": "Crab & Kick",
       "duration": 10,
-      "gifpath": "static/movie/ButterflyCrunch.mp4",
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 5,
       "heading": "Introduction to exercises",
-      "name": "Burpee & Jump 180",
+      "name": "Rope Jump",
       "duration": 10,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/RopeJump.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 6,
       "heading": "Introduction to exercises",
-      "name": "Static Spiderman",
+      "name": "Leg Lift & Hold",
       "duration": 10,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 7,
       "heading": "Introduction to exercises",
-      "name": "10 High Knee & 3 Tuck Jumps",
+      "name": "Mountain Climber Side Step",
       "duration": 10,
-      "gifpath": "static/movie/HighKneeTuckJump.mp4",
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 8,
       "heading": "Introduction to exercises",
-      "name": "Backward Lunge & 3 Pulses",
+      "name": "Bird Dog",
       "duration": 10,
-      "gifpath": "static/movie/BacklungePulse.mp4",
+      "gifpath": "static/movie/BirdDog.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 9,
       "heading": "Introduction to exercises",
-      "name": "Snow Angel",
+      "name": "Single Leg Donkey Kick",
       "duration": 10,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 10,
       "heading": "Introduction to exercises",
-      "name": "Squat & Side Steps",
+      "name": "Pistol Squat",
       "duration": 10,
-      "gifpath": "static/movie/SquatSideStep.mp4",
+      "gifpath": "static/movie/PistolSquat.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 11,
       "heading": "Introduction to exercises",
-      "name": "Prayer Pulse",
+      "name": "Diamond Push Up",
       "duration": 10,
-      "gifpath": "static/movie/PrayerPulse.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 12,
       "heading": "Introduction to exercises",
-      "name": "Drop Squat & High Knees",
+      "name": "Plank & Side Jump & Squat",
       "duration": 10,
-      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 13,
       "heading": "Introduction to exercises",
-      "name": "High Plank Shoulder Tap",
+      "name": "Leg Lift & Hold",
       "duration": 10,
-      "gifpath": "static/movie/ShoulderTap.mp4",
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 14,
+      "heading": "Introduction to exercises",
+      "name": "Jump Squat (+ Touch)",
+      "duration": 10,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 15,
+      "heading": "Introduction to exercises",
+      "name": "Crab & Kick",
+      "duration": 10,
+      "gifpath": "static/movie/CrabKick.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 16,
+      "heading": "Introduction to exercises",
+      "name": "Rope Jump",
+      "duration": 10,
+      "gifpath": "static/movie/RopeJump.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 17,
+      "heading": "Introduction to exercises",
+      "name": "Mountain Climber Side Step",
+      "duration": 10,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 18,
+      "heading": "Introduction to exercises",
+      "name": "Side Plank Crunches",
+      "duration": 10,
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 19,
+      "heading": "Introduction to exercises",
+      "name": "Bird Dog",
+      "duration": 10,
+      "gifpath": "static/movie/BirdDog.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 20,
+      "heading": "Introduction to exercises",
+      "name": "Pistol Squat",
+      "duration": 10,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 21,
+      "heading": "Introduction to exercises",
+      "name": "Diamond Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 22,
       "heading": "Get Ready to Warm Up",
       "name": " Let's go !!!!! ",
       "duration": 10,
@@ -143,7 +215,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 15,
+      "id": 23,
       "heading": "Warm Up",
       "name": "Jumping Jacks",
       "duration": 25,
@@ -152,7 +224,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 16,
+      "id": 24,
       "heading": "Warm Up",
       "name": "Single Leg Hip Circles",
       "duration": 25,
@@ -161,7 +233,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 17,
+      "id": 25,
       "heading": "Warm Up",
       "name": "Squat Pulses",
       "duration": 25,
@@ -170,7 +242,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 18,
+      "id": 26,
       "heading": "Warm Up",
       "name": "Glute Bridge",
       "duration": 25,
@@ -179,7 +251,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 19,
+      "id": 27,
       "heading": "Warm Up",
       "name": "5 Shoulder Circles & Windmill",
       "duration": 25,
@@ -188,7 +260,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 20,
+      "id": 28,
       "heading": "Warm Up",
       "name": "Burpees",
       "duration": 25,
@@ -197,655 +269,1087 @@
       "indicator": "hidden"
     },
     {
-      "id": 21,
+      "id": 29,
       "heading": "Get Ready to Work Out",
-      "name": " Let's go: 2 Squats, 2 Squat Jumps",
+      "name": " Let's go: Plank & Side Jump & Squat",
       "duration": 5,
       "gifpath": "static/movie/GetReadyToWorkout.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
-      "id": 22,
-      "heading": "Work",
-      "name": "2 Squats, 2 Squat Jumps",
-      "duration": 20,
-      "gifpath": "static/movie/JumpSquatSquat.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 23,
-      "heading": "Rest",
-      "name": "Up Next: Plank Pulses",
-      "duration": 5,
-      "gifpath": "static/movie/PlankPulses.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 24,
-      "heading": "Work",
-      "name": "Plank Pulses",
-      "duration": 20,
-      "gifpath": "static/movie/PlankPulses.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 25,
-      "heading": "Rest",
-      "name": "Up Next: Butterfly Crunch",
-      "duration": 5,
-      "gifpath": "static/movie/ButterflyCrunch.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 26,
-      "heading": "Work",
-      "name": "Butterfly Crunch",
-      "duration": 20,
-      "gifpath": "static/movie/ButterflyCrunch.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 27,
-      "heading": "Rest",
-      "name": "Up Next: Burpee & Jump 180",
-      "duration": 5,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 28,
-      "heading": "Work",
-      "name": "Burpee & Jump 180",
-      "duration": 20,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 29,
-      "heading": "Rest",
-      "name": "Up Next: Static Spiderman",
-      "duration": 5,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
       "id": 30,
       "heading": "Work",
-      "name": "Static Spiderman",
-      "duration": 20,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
+      "name": "Plank & Side Jump & Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 31,
       "heading": "Rest",
-      "name": "Up Next: 10 High Knee & 3 Tuck Jumps",
-      "duration": 5,
-      "gifpath": "static/movie/HighKneeTuckJump.mp4",
+      "name": "Next: Plank & Side Jump & Squat",
+      "duration": 15,
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 32,
       "heading": "Work",
-      "name": "10 High Knee & 3 Tuck Jumps",
-      "duration": 20,
-      "gifpath": "static/movie/HighKneeTuckJump.mp4",
+      "name": "Plank & Side Jump & Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 33,
       "heading": "Rest",
-      "name": "Up Next: Backward Lunge & 3 Pulses",
-      "duration": 5,
-      "gifpath": "static/movie/BacklungePulse.mp4",
+      "name": "Next: Plank & Side Jump & Squat",
+      "duration": 15,
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 34,
       "heading": "Work",
-      "name": "Backward Lunge & 3 Pulses",
-      "duration": 20,
-      "gifpath": "static/movie/BacklungePulse.mp4",
+      "name": "Plank & Side Jump & Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 35,
       "heading": "Rest",
-      "name": "Up Next: Snow Angel",
-      "duration": 5,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "name": "Next: Jump Squat (+ Touch)",
+      "duration": 15,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 36,
       "heading": "Work",
-      "name": "Snow Angel",
-      "duration": 20,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "name": "Jump Squat (+ Touch)",
+      "duration": 45,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 37,
       "heading": "Rest",
-      "name": "Up Next: Squat & Side Steps",
-      "duration": 5,
-      "gifpath": "static/movie/SquatSideStep.mp4",
+      "name": "Next: Jump Squat (+ Touch)",
+      "duration": 15,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 38,
       "heading": "Work",
-      "name": "Squat & Side Steps",
-      "duration": 20,
-      "gifpath": "static/movie/SquatSideStep.mp4",
+      "name": "Jump Squat (+ Touch)",
+      "duration": 45,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 39,
       "heading": "Rest",
-      "name": "Up Next: Prayer Pulse",
-      "duration": 5,
-      "gifpath": "static/movie/PrayerPulse.mp4",
+      "name": "Next: Jump Squat (+ Touch)",
+      "duration": 15,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 40,
       "heading": "Work",
-      "name": "Prayer Pulse",
-      "duration": 20,
-      "gifpath": "static/movie/PrayerPulse.mp4",
+      "name": "Jump Squat (+ Touch)",
+      "duration": 45,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 41,
       "heading": "Rest",
-      "name": "Up Next: Drop Squat & High Knees",
-      "duration": 5,
-      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "name": "Next: Crab & Kick",
+      "duration": 15,
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 42,
       "heading": "Work",
-      "name": "Drop Squat & High Knees",
-      "duration": 20,
-      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "name": "Crab & Kick",
+      "duration": 45,
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 43,
       "heading": "Rest",
-      "name": "Up Next: High Plank Shoulder Tap",
-      "duration": 5,
-      "gifpath": "static/movie/ShoulderTap.mp4",
+      "name": "Next: Crab & Kick",
+      "duration": 15,
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 44,
       "heading": "Work",
-      "name": "High Plank Shoulder Tap",
-      "duration": 20,
-      "gifpath": "static/movie/ShoulderTap.mp4",
+      "name": "Crab & Kick",
+      "duration": 45,
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 45,
-      "heading": "Water Break",
-      "name": "Up Next: 2 Squats, 2 Squat Jumps",
+      "heading": "Rest",
+      "name": "Next: Crab & Kick",
       "duration": 15,
-      "gifpath": "static/movie/WaterRefill.mp4",
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiorest",
-      "indicator": "water_break"
+      "indicator": "hidden"
     },
     {
       "id": 46,
       "heading": "Work",
-      "name": "2 Squats, 2 Squat Jumps",
-      "duration": 40,
-      "gifpath": "static/movie/JumpSquatSquat.mp4",
+      "name": "Crab & Kick",
+      "duration": 45,
+      "gifpath": "static/movie/CrabKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 47,
       "heading": "Rest",
-      "name": "Up Next: Plank Pulses",
-      "duration": 10,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "name": "Next: Rope Jump",
+      "duration": 15,
+      "gifpath": "static/movie/RopeJump.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 48,
       "heading": "Work",
-      "name": "Plank Pulses",
-      "duration": 40,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "name": "Rope Jump",
+      "duration": 45,
+      "gifpath": "static/movie/RopeJump.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 49,
       "heading": "Rest",
-      "name": "Up Next: Butterfly Crunch",
-      "duration": 10,
-      "gifpath": "static/movie/ButterflyCrunch.mp4",
+      "name": "Next: Rope Jump",
+      "duration": 15,
+      "gifpath": "static/movie/RopeJump.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 50,
       "heading": "Work",
-      "name": "Butterfly Crunch",
-      "duration": 40,
-      "gifpath": "static/movie/ButterflyCrunch.mp4",
+      "name": "Rope Jump",
+      "duration": 45,
+      "gifpath": "static/movie/RopeJump.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 51,
       "heading": "Rest",
-      "name": "Up Next: Burpee & Jump 180",
-      "duration": 10,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "name": "Next: Rope Jump",
+      "duration": 15,
+      "gifpath": "static/movie/RopeJump.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 52,
       "heading": "Work",
-      "name": "Burpee & Jump 180",
-      "duration": 40,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "name": "Rope Jump",
+      "duration": 45,
+      "gifpath": "static/movie/RopeJump.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 53,
       "heading": "Rest",
-      "name": "Up Next: Static Spiderman",
-      "duration": 10,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
+      "name": "Next: Leg Lift & Hold",
+      "duration": 15,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 54,
       "heading": "Work",
-      "name": "Static Spiderman",
-      "duration": 40,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
+      "name": "Leg Lift & Hold",
+      "duration": 45,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 55,
       "heading": "Rest",
-      "name": "Up Next: 10 High Knee & 3 Tuck Jumps",
-      "duration": 10,
-      "gifpath": "static/movie/HighKneeTuckJump.mp4",
+      "name": "Next: Leg Lift & Hold",
+      "duration": 15,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 56,
       "heading": "Work",
-      "name": "10 High Knee & 3 Tuck Jumps",
-      "duration": 40,
-      "gifpath": "static/movie/HighKneeTuckJump.mp4",
+      "name": "Leg Lift & Hold",
+      "duration": 45,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 57,
       "heading": "Rest",
-      "name": "Up Next: Backward Lunge & 3 Pulses",
-      "duration": 10,
-      "gifpath": "static/movie/BacklungePulse.mp4",
+      "name": "Next: Leg Lift & Hold",
+      "duration": 15,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 58,
       "heading": "Work",
-      "name": "Backward Lunge & 3 Pulses",
-      "duration": 40,
-      "gifpath": "static/movie/BacklungePulse.mp4",
+      "name": "Leg Lift & Hold",
+      "duration": 45,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 59,
       "heading": "Rest",
-      "name": "Up Next: Snow Angel",
-      "duration": 10,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "name": "Next: Mountain Climber Side Step",
+      "duration": 15,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 60,
       "heading": "Work",
-      "name": "Snow Angel",
-      "duration": 40,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "name": "Mountain Climber Side Step",
+      "duration": 45,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 61,
       "heading": "Rest",
-      "name": "Up Next: Squat & Side Steps",
-      "duration": 10,
-      "gifpath": "static/movie/SquatSideStep.mp4",
+      "name": "Next: Mountain Climber Side Step",
+      "duration": 15,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 62,
       "heading": "Work",
-      "name": "Squat & Side Steps",
-      "duration": 40,
-      "gifpath": "static/movie/SquatSideStep.mp4",
+      "name": "Mountain Climber Side Step",
+      "duration": 45,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 63,
       "heading": "Rest",
-      "name": "Up Next: Prayer Pulse",
-      "duration": 10,
-      "gifpath": "static/movie/PrayerPulse.mp4",
+      "name": "Next: Mountain Climber Side Step",
+      "duration": 15,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 64,
       "heading": "Work",
-      "name": "Prayer Pulse",
-      "duration": 40,
-      "gifpath": "static/movie/PrayerPulse.mp4",
+      "name": "Mountain Climber Side Step",
+      "duration": 45,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 65,
       "heading": "Rest",
-      "name": "Up Next: Drop Squat & High Knees",
-      "duration": 10,
-      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "name": "Next: Bird Dog",
+      "duration": 15,
+      "gifpath": "static/movie/BirdDog.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 66,
       "heading": "Work",
-      "name": "Drop Squat & High Knees",
-      "duration": 40,
-      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "name": "Bird Dog",
+      "duration": 45,
+      "gifpath": "static/movie/BirdDog.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 67,
       "heading": "Rest",
-      "name": "Up Next: High Plank Shoulder Tap",
-      "duration": 10,
-      "gifpath": "static/movie/ShoulderTap.mp4",
+      "name": "Next: Bird Dog",
+      "duration": 15,
+      "gifpath": "static/movie/BirdDog.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 68,
       "heading": "Work",
-      "name": "High Plank Shoulder Tap",
-      "duration": 40,
-      "gifpath": "static/movie/ShoulderTap.mp4",
+      "name": "Bird Dog",
+      "duration": 45,
+      "gifpath": "static/movie/BirdDog.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 69,
-      "heading": "Water Break",
-      "name": "Up Next: 2 Squats, 2 Squat Jumps",
-      "duration": 40,
-      "gifpath": "static/movie/WaterRefill.mp4",
+      "heading": "Rest",
+      "name": "Next: Bird Dog",
+      "duration": 15,
+      "gifpath": "static/movie/BirdDog.mp4",
       "sound": "audiorest",
-      "indicator": "water_break"
+      "indicator": "hidden"
     },
     {
       "id": 70,
       "heading": "Work",
-      "name": "2 Squats, 2 Squat Jumps",
-      "duration": 60,
-      "gifpath": "static/movie/JumpSquatSquat.mp4",
+      "name": "Bird Dog",
+      "duration": 45,
+      "gifpath": "static/movie/BirdDog.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 71,
       "heading": "Rest",
-      "name": "Up Next: Plank Pulses",
+      "name": "Next: Single Leg Donkey Kick",
       "duration": 15,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 72,
       "heading": "Work",
-      "name": "Plank Pulses",
-      "duration": 60,
-      "gifpath": "static/movie/PlankPulses.mp4",
+      "name": "Single Leg Donkey Kick",
+      "duration": 45,
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 73,
       "heading": "Rest",
-      "name": "Up Next: Butterfly Crunch",
+      "name": "Next: Single Leg Donkey Kick",
       "duration": 15,
-      "gifpath": "static/movie/ButterflyCrunch.mp4",
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 74,
       "heading": "Work",
-      "name": "Butterfly Crunch",
-      "duration": 60,
-      "gifpath": "static/movie/ButterflyCrunch.mp4",
+      "name": "Single Leg Donkey Kick",
+      "duration": 45,
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 75,
       "heading": "Rest",
-      "name": "Up Next: Burpee & Jump 180",
+      "name": "Next: Single Leg Donkey Kick",
       "duration": 15,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 76,
       "heading": "Work",
-      "name": "Burpee & Jump 180",
-      "duration": 60,
-      "gifpath": "static/movie/Burpee180Turn.mp4",
+      "name": "Single Leg Donkey Kick",
+      "duration": 45,
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 77,
       "heading": "Rest",
-      "name": "Up Next: Static Spiderman",
+      "name": "Next: Pistol Squat",
       "duration": 15,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
+      "gifpath": "static/movie/PistolSquat.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 78,
       "heading": "Work",
-      "name": "Static Spiderman",
-      "duration": 60,
-      "gifpath": "static/movie/StaticSpiderman.mp4",
+      "name": "Pistol Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PistolSquat.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 79,
       "heading": "Rest",
-      "name": "Up Next: 10 High Knee & 3 Tuck Jumps",
+      "name": "Next: Pistol Squat",
       "duration": 15,
-      "gifpath": "static/movie/HighKneeTuckJump.mp4",
+      "gifpath": "static/movie/PistolSquat.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 80,
       "heading": "Work",
-      "name": "10 High Knee & 3 Tuck Jumps",
-      "duration": 60,
-      "gifpath": "static/movie/HighKneeTuckJump.mp4",
+      "name": "Pistol Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PistolSquat.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 81,
       "heading": "Rest",
-      "name": "Up Next: Backward Lunge & 3 Pulses",
+      "name": "Next: Pistol Squat",
       "duration": 15,
-      "gifpath": "static/movie/BacklungePulse.mp4",
+      "gifpath": "static/movie/PistolSquat.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 82,
       "heading": "Work",
-      "name": "Backward Lunge & 3 Pulses",
-      "duration": 60,
-      "gifpath": "static/movie/BacklungePulse.mp4",
+      "name": "Pistol Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PistolSquat.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 83,
       "heading": "Rest",
-      "name": "Up Next: Snow Angel",
+      "name": "Next: Diamond Push Up",
       "duration": 15,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 84,
       "heading": "Work",
-      "name": "Snow Angel",
-      "duration": 60,
-      "gifpath": "static/movie/SnowAngel.mp4",
+      "name": "Diamond Push Up",
+      "duration": 45,
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 85,
       "heading": "Rest",
-      "name": "Up Next: Squat & Side Steps",
+      "name": "Next: Diamond Push Up",
       "duration": 15,
-      "gifpath": "static/movie/SquatSideStep.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 86,
       "heading": "Work",
-      "name": "Squat & Side Steps",
-      "duration": 60,
-      "gifpath": "static/movie/SquatSideStep.mp4",
+      "name": "Diamond Push Up",
+      "duration": 45,
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 87,
       "heading": "Rest",
-      "name": "Up Next: Prayer Pulse",
+      "name": "Next: Diamond Push Up",
       "duration": 15,
-      "gifpath": "static/movie/PrayerPulse.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 88,
       "heading": "Work",
-      "name": "Prayer Pulse",
-      "duration": 60,
-      "gifpath": "static/movie/PrayerPulse.mp4",
+      "name": "Diamond Push Up",
+      "duration": 45,
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 89,
       "heading": "Rest",
-      "name": "Up Next: Drop Squat & High Knees",
+      "name": "Next: Plank & Side Jump & Squat",
       "duration": 15,
-      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 90,
       "heading": "Work",
-      "name": "Drop Squat & High Knees",
-      "duration": 60,
-      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "name": "Plank & Side Jump & Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 91,
       "heading": "Rest",
-      "name": "Up Next: High Plank Shoulder Tap",
+      "name": "Next: Plank & Side Jump & Squat",
       "duration": 15,
-      "gifpath": "static/movie/ShoulderTap.mp4",
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 92,
       "heading": "Work",
-      "name": "High Plank Shoulder Tap",
-      "duration": 60,
-      "gifpath": "static/movie/ShoulderTap.mp4",
+      "name": "Plank & Side Jump & Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 93,
+      "heading": "Rest",
+      "name": "Next: Plank & Side Jump & Squat",
+      "duration": 15,
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 94,
+      "heading": "Work",
+      "name": "Plank & Side Jump & Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PlankSideJumpSquat.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 95,
+      "heading": "Rest",
+      "name": "Next: Leg Lift & Hold",
+      "duration": 15,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 96,
+      "heading": "Work",
+      "name": "Leg Lift & Hold",
+      "duration": 45,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 97,
+      "heading": "Rest",
+      "name": "Next: Leg Lift & Hold",
+      "duration": 15,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 98,
+      "heading": "Work",
+      "name": "Leg Lift & Hold",
+      "duration": 45,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 99,
+      "heading": "Rest",
+      "name": "Next: Leg Lift & Hold",
+      "duration": 15,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 100,
+      "heading": "Work",
+      "name": "Leg Lift & Hold",
+      "duration": 45,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 101,
+      "heading": "Rest",
+      "name": "Next: Jump Squat (+ Touch)",
+      "duration": 15,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 102,
+      "heading": "Work",
+      "name": "Jump Squat (+ Touch)",
+      "duration": 45,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 103,
+      "heading": "Rest",
+      "name": "Next: Jump Squat (+ Touch)",
+      "duration": 15,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 104,
+      "heading": "Work",
+      "name": "Jump Squat (+ Touch)",
+      "duration": 45,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 105,
+      "heading": "Rest",
+      "name": "Next: Jump Squat (+ Touch)",
+      "duration": 15,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 106,
+      "heading": "Work",
+      "name": "Jump Squat (+ Touch)",
+      "duration": 45,
+      "gifpath": "static/movie/SquatJumpTouch.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 107,
+      "heading": "Rest",
+      "name": "Next: Crab & Kick",
+      "duration": 15,
+      "gifpath": "static/movie/CrabKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 108,
+      "heading": "Work",
+      "name": "Crab & Kick",
+      "duration": 45,
+      "gifpath": "static/movie/CrabKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 109,
+      "heading": "Rest",
+      "name": "Next: Crab & Kick",
+      "duration": 15,
+      "gifpath": "static/movie/CrabKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 110,
+      "heading": "Work",
+      "name": "Crab & Kick",
+      "duration": 45,
+      "gifpath": "static/movie/CrabKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 111,
+      "heading": "Rest",
+      "name": "Next: Crab & Kick",
+      "duration": 15,
+      "gifpath": "static/movie/CrabKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 112,
+      "heading": "Work",
+      "name": "Crab & Kick",
+      "duration": 45,
+      "gifpath": "static/movie/CrabKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 113,
+      "heading": "Rest",
+      "name": "Next: Rope Jump",
+      "duration": 15,
+      "gifpath": "static/movie/RopeJump.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 114,
+      "heading": "Work",
+      "name": "Rope Jump",
+      "duration": 45,
+      "gifpath": "static/movie/RopeJump.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 115,
+      "heading": "Rest",
+      "name": "Next: Rope Jump",
+      "duration": 15,
+      "gifpath": "static/movie/RopeJump.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 116,
+      "heading": "Work",
+      "name": "Rope Jump",
+      "duration": 45,
+      "gifpath": "static/movie/RopeJump.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 117,
+      "heading": "Rest",
+      "name": "Next: Rope Jump",
+      "duration": 15,
+      "gifpath": "static/movie/RopeJump.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 118,
+      "heading": "Work",
+      "name": "Rope Jump",
+      "duration": 45,
+      "gifpath": "static/movie/RopeJump.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 119,
+      "heading": "Rest",
+      "name": "Next: Mountain Climber Side Step",
+      "duration": 15,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 120,
+      "heading": "Work",
+      "name": "Mountain Climber Side Step",
+      "duration": 45,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 121,
+      "heading": "Rest",
+      "name": "Next: Mountain Climber Side Step",
+      "duration": 15,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 122,
+      "heading": "Work",
+      "name": "Mountain Climber Side Step",
+      "duration": 45,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 123,
+      "heading": "Rest",
+      "name": "Next: Mountain Climber Side Step",
+      "duration": 15,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 124,
+      "heading": "Work",
+      "name": "Mountain Climber Side Step",
+      "duration": 45,
+      "gifpath": "static/movie/MountainClimberSideStep.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 125,
+      "heading": "Rest",
+      "name": "Next: Side Plank Crunches",
+      "duration": 15,
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 126,
+      "heading": "Work",
+      "name": "Side Plank Crunches",
+      "duration": 45,
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 127,
+      "heading": "Rest",
+      "name": "Next: Side Plank Crunches",
+      "duration": 15,
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 128,
+      "heading": "Work",
+      "name": "Side Plank Crunches",
+      "duration": 45,
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 129,
+      "heading": "Rest",
+      "name": "Next: Side Plank Crunches",
+      "duration": 15,
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 130,
+      "heading": "Work",
+      "name": "Side Plank Crunches",
+      "duration": 45,
+      "gifpath": "static/movie/SidePlankCrunches.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 131,
+      "heading": "Rest",
+      "name": "Next: Bird Dog",
+      "duration": 15,
+      "gifpath": "static/movie/BirdDog.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 132,
+      "heading": "Work",
+      "name": "Bird Dog",
+      "duration": 45,
+      "gifpath": "static/movie/BirdDog.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 133,
+      "heading": "Rest",
+      "name": "Next: Bird Dog",
+      "duration": 15,
+      "gifpath": "static/movie/BirdDog.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 134,
+      "heading": "Work",
+      "name": "Bird Dog",
+      "duration": 45,
+      "gifpath": "static/movie/BirdDog.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 135,
+      "heading": "Rest",
+      "name": "Next: Bird Dog",
+      "duration": 15,
+      "gifpath": "static/movie/BirdDog.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 136,
+      "heading": "Work",
+      "name": "Bird Dog",
+      "duration": 45,
+      "gifpath": "static/movie/BirdDog.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 137,
+      "heading": "Rest",
+      "name": "Next: Pistol Squat",
+      "duration": 15,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 138,
+      "heading": "Work",
+      "name": "Pistol Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 139,
+      "heading": "Rest",
+      "name": "Next: Pistol Squat",
+      "duration": 15,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 140,
+      "heading": "Work",
+      "name": "Pistol Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 141,
+      "heading": "Rest",
+      "name": "Next: Pistol Squat",
+      "duration": 15,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 142,
+      "heading": "Work",
+      "name": "Pistol Squat",
+      "duration": 45,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 143,
+      "heading": "Rest",
+      "name": "Next: Diamond Push Up",
+      "duration": 15,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 144,
+      "heading": "Work",
+      "name": "Diamond Push Up",
+      "duration": 45,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 145,
+      "heading": "Rest",
+      "name": "Next: Diamond Push Up",
+      "duration": 15,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 146,
+      "heading": "Work",
+      "name": "Diamond Push Up",
+      "duration": 45,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 147,
+      "heading": "Rest",
+      "name": "Next: Diamond Push Up",
+      "duration": 15,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 148,
+      "heading": "Work",
+      "name": "Diamond Push Up",
+      "duration": 45,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 149,
       "heading": "Congrats You Finished",
       "name": " Well Done !!!!! ",
       "duration": 20,
