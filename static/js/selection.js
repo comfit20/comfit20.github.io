@@ -254,11 +254,11 @@ function createModal
 
 }
 
-function uncheckForCancel(){
-    for (i = 1; i <= number_of_workouts; i++) {
-        $("#exercise-" + i).attr("checked", false);
-    }
-}
+// function uncheckForCancel(){
+//     for (i = 1; i <= number_of_workouts; i++) {
+//         $("#exercise-" + i).attr("checked", false);
+//     }
+// }
 
 function serializeLayout() {
   var grid = $('.grid').data('gridstrap');

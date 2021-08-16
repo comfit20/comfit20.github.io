@@ -1315,8 +1315,54 @@
          "name": "Upper Body Twist (Dumbbell)",
          "level": "middle",
          "gifpath": "static/movie/DumbbellTwist.mp4"
+      },
+            {
+         "id": 147,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Squat Single-Arm Overhead (Dumbbell)",
+         "level": "middle",
+         "gifpath": "static/movie/SquatSingleArmOverhead.mp4"
+      },
+            {
+         "id": 148,
+         "category": [
+            "core"
+         ],
+         "name": "Single-Leg Inch Worm & Push Up",
+         "level": "hard",
+         "gifpath": "static/movie/SingleLegInchWormPushUp.mp4"
+      },
+            {
+         "id": 149,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Kettlebell Swing",
+         "level": "middle",
+         "gifpath": "static/movie/KettlebellSwing.mp4"
       }
-   
+   ,
+            {
+         "id": 150,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Figure 8 through legs",
+         "level": "middle",
+         "gifpath": "static/movie/Figure8ThroughLegs.mp4"
+      }
+      ,
+            {
+         "id": 152,
+         "category": [
+            "belly"
+         ],
+         "name": "Dead Bug",
+         "level": "easy",
+         "gifpath": "static/movie/DeadBug.mp4"
+      }
    ]
 
 }
