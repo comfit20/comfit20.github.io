@@ -1362,6 +1362,195 @@
          "name": "Dead Bug",
          "level": "easy",
          "gifpath": "static/movie/DeadBug.mp4"
+      }      ,
+            {
+         "id": 153,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "4 Punches & Squat Jump",
+         "level": "middle",
+         "gifpath": "static/movie/4PunchesAndSquatJump.mp4"
+      }
+         ,
+            {
+         "id": 154,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Bench Press And Leg Extension",
+         "level": "middle",
+         "gifpath": "static/movie/BenchPressAndElongatedLegs.mp4"
+      }
+     ,
+            {
+         "id": 155,
+         "category": [
+            "core"
+         ],
+         "name": "Burpee Jack",
+         "level": "hard",
+         "gifpath": "static/movie/BurpeesJack.mp4"
+      }
+      ,
+            {
+         "id": 156,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Butterfly Crunch With Dumbbell",
+         "level": "hard",
+         "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4"
+      }
+      ,
+            {
+         "id": 157,
+         "category": [
+            "glutes"
+         ],
+         "name": "Cross Lunges",
+         "level": "easy",
+         "gifpath": "static/movie/CrossLunges.mp4"
+      }
+    ,
+            {
+         "id": 158,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Cross Lunges With Dumbbells",
+         "level": "easy",
+         "gifpath": "static/movie/CrossLungesDumbbell.mp4"
+      }
+      ,
+            {
+         "id": 159,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Crunch & Pass Dumbbell Under Leg",
+         "level": "middle",
+         "gifpath": "static/movie/CrunchUnderLegDumbbell.mp4"
+      }
+      ,
+            {
+         "id": 160,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Deadlift To Overhead Press",
+         "level": "hard",
+         "gifpath": "static/movie/DeadLiftToOverheadPress.mp4"
+      }
+      ,
+            {
+         "id": 161,
+         "category": [
+            "dumbbell"
+         ],
+         "name": "Forward Lunge & 2 Bicep Curl",
+         "level": "middle",
+         "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4"
+      }
+      ,
+            {
+         "id": 162,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Forward Lunge & Upper Body Twist",
+         "level": "middle",
+         "gifpath": "static/movie/ForwardLungeAndUplerBodyTwist.mp4"
+      }
+      ,
+            {
+         "id": 163,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Jumping Jacks With Dumbells",
+         "level": "middle",
+         "gifpath": "static/movie/JumpingJacksDumbells.mp4"
+      }
+      ,
+            {
+         "id": 164,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "One-Leg Forward & 2 Rear Fly",
+         "level": "middle",
+         "gifpath": "static/movie/OneLegForwardAndRearFly.mp4"
+      }
+      ,
+            {
+         "id": 165,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Push Up To Lunge Pulses",
+         "level": "middle",
+         "gifpath": "static/movie/PushUpAndLunge.mp4"
+      }
+       ,
+            {
+         "id": 166,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Push Up & Lateral Dumbbell Move",
+         "level": "middle",
+         "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4"
+      }
+       ,
+            {
+         "id": 167,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Shoulder Circles With Dumbbells",
+         "level": "middle",
+         "gifpath": "static/movie/ShoulderCircles.mp4"
+      }
+      ,
+            {
+         "id": 168,
+         "category": [
+            "core"
+         ], 
+         "name": "Sprawls",
+         "level": "middle",
+         "gifpath": "static/movie/Sprawls.mp4"
+      }
+       ,
+            {
+         "id": 169,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Squat & Knee Rise To Overhead Reach",
+         "level": "middle",
+         "gifpath": "static/movie/SquatKneeRiseOverheadReach.mp4"
+      }
+      ,
+            {
+         "id": 170,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Walk Forward & Backwards",
+         "level": "middle",
+         "gifpath": "static/movie/WalkForwardsAmdBackwards.mp4"
+      }
+      ,
+            {
+         "id": 171,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Windmill With Dumbbells",
+         "level": "middle",
+         "gifpath": "static/movie/WindmillDumbbell.mp4"
       }
    ]
 
