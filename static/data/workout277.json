@@ -1,0 +1,731 @@
+{
+  "startTime": "now",
+  "elements": [
+    {
+      "id": 0,
+      "heading": "Wait for Group Session",
+      "name": "Session will start soon",
+      "duration": 12,
+      "gifpath": "static/movie/waitnextworkout.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 1,
+      "heading": "Workout Timing:",
+      "name": [
+        "workout style: repeat iso",
+        "10 exercises",
+        "3*45 sec work",
+        "15 sec rest",
+        "3 rounds"
+      ],
+      "duration": 10,
+      "gifpath": "",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 2,
+      "heading": "Introduction to exercises",
+      "name": "Hollow Rock",
+      "duration": 10,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 3,
+      "heading": "Introduction to exercises",
+      "name": "Push Up & Lateral Dumbbell Move",
+      "duration": 10,
+      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 4,
+      "heading": "Introduction to exercises",
+      "name": "Drop Squat & High Knees",
+      "duration": 10,
+      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 5,
+      "heading": "Introduction to exercises",
+      "name": "Superman 2",
+      "duration": 10,
+      "gifpath": "static/movie/SupermanVariant2.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 6,
+      "heading": "Introduction to exercises",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 10,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 7,
+      "heading": "Introduction to exercises",
+      "name": "Flutter Kicks (Scissor)",
+      "duration": 10,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 8,
+      "heading": "Introduction to exercises",
+      "name": "Low & High Plank Switch",
+      "duration": 10,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 9,
+      "heading": "Introduction to exercises",
+      "name": "Squat Walk",
+      "duration": 10,
+      "gifpath": "static/movie/SquatWalk.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 10,
+      "heading": "Introduction to exercises",
+      "name": "4 Sprawl & 2 Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 11,
+      "heading": "Introduction to exercises",
+      "name": "Cross Lunges With Dumbbells",
+      "duration": 10,
+      "gifpath": "static/movie/CrossLungesDumbbell.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 12,
+      "heading": "Get Ready to Warm Up",
+      "name": " Let's go !!!!! ",
+      "duration": 10,
+      "gifpath": "static/movie/getready.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 13,
+      "heading": "Warm Up",
+      "name": "Jumping Jacks",
+      "duration": 25,
+      "gifpath": "static/movie/JumpingJack.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 14,
+      "heading": "Warm Up",
+      "name": "Single Leg Hip Circles",
+      "duration": 25,
+      "gifpath": "static/movie/HipCircles.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 15,
+      "heading": "Warm Up",
+      "name": "Squat Pulses",
+      "duration": 25,
+      "gifpath": "static/movie/SquatPulses.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 16,
+      "heading": "Warm Up",
+      "name": "Glute Bridge",
+      "duration": 25,
+      "gifpath": "static/movie/GluteBridge.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 17,
+      "heading": "Warm Up",
+      "name": "5 Shoulder Circles & Windmill",
+      "duration": 25,
+      "gifpath": "static/movie/ShouldrCircles.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 18,
+      "heading": "Warm Up",
+      "name": "Burpees",
+      "duration": 25,
+      "gifpath": "static/movie/Burpee.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 19,
+      "heading": "Get Ready to Work Out",
+      "name": " Let's go: Hollow Rock",
+      "duration": 5,
+      "gifpath": "static/movie/GetReadyToWorkout.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 20,
+      "heading": "Work",
+      "name": "Hollow Rock",
+      "duration": 45,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 21,
+      "heading": "Rest",
+      "name": "Next: Hollow Rock",
+      "duration": 15,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 22,
+      "heading": "Work",
+      "name": "Hollow Rock",
+      "duration": 45,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 23,
+      "heading": "Rest",
+      "name": "Next: Hollow Rock",
+      "duration": 15,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 24,
+      "heading": "Work",
+      "name": "Hollow Rock",
+      "duration": 45,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 25,
+      "heading": "Rest",
+      "name": "Next: Push Up & Lateral Dumbbell Move",
+      "duration": 15,
+      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 26,
+      "heading": "Work",
+      "name": "Push Up & Lateral Dumbbell Move",
+      "duration": 45,
+      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 27,
+      "heading": "Rest",
+      "name": "Next: Push Up & Lateral Dumbbell Move",
+      "duration": 15,
+      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 28,
+      "heading": "Work",
+      "name": "Push Up & Lateral Dumbbell Move",
+      "duration": 45,
+      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 29,
+      "heading": "Rest",
+      "name": "Next: Push Up & Lateral Dumbbell Move",
+      "duration": 15,
+      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 30,
+      "heading": "Work",
+      "name": "Push Up & Lateral Dumbbell Move",
+      "duration": 45,
+      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 31,
+      "heading": "Rest",
+      "name": "Next: Drop Squat & High Knees",
+      "duration": 15,
+      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 32,
+      "heading": "Work",
+      "name": "Drop Squat & High Knees",
+      "duration": 45,
+      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 33,
+      "heading": "Rest",
+      "name": "Next: Drop Squat & High Knees",
+      "duration": 15,
+      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 34,
+      "heading": "Work",
+      "name": "Drop Squat & High Knees",
+      "duration": 45,
+      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 35,
+      "heading": "Rest",
+      "name": "Next: Drop Squat & High Knees",
+      "duration": 15,
+      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 36,
+      "heading": "Work",
+      "name": "Drop Squat & High Knees",
+      "duration": 45,
+      "gifpath": "static/movie/DropSquatHighKnees.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 37,
+      "heading": "Rest",
+      "name": "Next: Superman 2",
+      "duration": 15,
+      "gifpath": "static/movie/SupermanVariant2.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 38,
+      "heading": "Work",
+      "name": "Superman 2",
+      "duration": 45,
+      "gifpath": "static/movie/SupermanVariant2.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 39,
+      "heading": "Rest",
+      "name": "Next: Superman 2",
+      "duration": 15,
+      "gifpath": "static/movie/SupermanVariant2.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 40,
+      "heading": "Work",
+      "name": "Superman 2",
+      "duration": 45,
+      "gifpath": "static/movie/SupermanVariant2.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 41,
+      "heading": "Rest",
+      "name": "Next: Superman 2",
+      "duration": 15,
+      "gifpath": "static/movie/SupermanVariant2.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 42,
+      "heading": "Work",
+      "name": "Superman 2",
+      "duration": 45,
+      "gifpath": "static/movie/SupermanVariant2.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 43,
+      "heading": "Rest",
+      "name": "Next: Push Up To Lunge Pulses",
+      "duration": 15,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 44,
+      "heading": "Work",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 45,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 45,
+      "heading": "Rest",
+      "name": "Next: Push Up To Lunge Pulses",
+      "duration": 15,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 46,
+      "heading": "Work",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 45,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 47,
+      "heading": "Rest",
+      "name": "Next: Push Up To Lunge Pulses",
+      "duration": 15,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 48,
+      "heading": "Work",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 45,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 49,
+      "heading": "Rest",
+      "name": "Next: Flutter Kicks (Scissor)",
+      "duration": 15,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 50,
+      "heading": "Work",
+      "name": "Flutter Kicks (Scissor)",
+      "duration": 45,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 51,
+      "heading": "Rest",
+      "name": "Next: Flutter Kicks (Scissor)",
+      "duration": 15,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 52,
+      "heading": "Work",
+      "name": "Flutter Kicks (Scissor)",
+      "duration": 45,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 53,
+      "heading": "Rest",
+      "name": "Next: Flutter Kicks (Scissor)",
+      "duration": 15,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 54,
+      "heading": "Work",
+      "name": "Flutter Kicks (Scissor)",
+      "duration": 45,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 55,
+      "heading": "Rest",
+      "name": "Next: Low & High Plank Switch",
+      "duration": 15,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 56,
+      "heading": "Work",
+      "name": "Low & High Plank Switch",
+      "duration": 45,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 57,
+      "heading": "Rest",
+      "name": "Next: Low & High Plank Switch",
+      "duration": 15,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 58,
+      "heading": "Work",
+      "name": "Low & High Plank Switch",
+      "duration": 45,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 59,
+      "heading": "Rest",
+      "name": "Next: Low & High Plank Switch",
+      "duration": 15,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 60,
+      "heading": "Work",
+      "name": "Low & High Plank Switch",
+      "duration": 45,
+      "gifpath": "static/movie/HighPlankLowPlank.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 61,
+      "heading": "Rest",
+      "name": "Next: Squat Walk",
+      "duration": 15,
+      "gifpath": "static/movie/SquatWalk.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 62,
+      "heading": "Work",
+      "name": "Squat Walk",
+      "duration": 45,
+      "gifpath": "static/movie/SquatWalk.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 63,
+      "heading": "Rest",
+      "name": "Next: Squat Walk",
+      "duration": 15,
+      "gifpath": "static/movie/SquatWalk.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 64,
+      "heading": "Work",
+      "name": "Squat Walk",
+      "duration": 45,
+      "gifpath": "static/movie/SquatWalk.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 65,
+      "heading": "Rest",
+      "name": "Next: Squat Walk",
+      "duration": 15,
+      "gifpath": "static/movie/SquatWalk.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 66,
+      "heading": "Work",
+      "name": "Squat Walk",
+      "duration": 45,
+      "gifpath": "static/movie/SquatWalk.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 67,
+      "heading": "Rest",
+      "name": "Next: 4 Sprawl & 2 Push Up",
+      "duration": 15,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 68,
+      "heading": "Work",
+      "name": "4 Sprawl & 2 Push Up",
+      "duration": 45,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 69,
+      "heading": "Rest",
+      "name": "Next: 4 Sprawl & 2 Push Up",
+      "duration": 15,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 70,
+      "heading": "Work",
+      "name": "4 Sprawl & 2 Push Up",
+      "duration": 45,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 71,
+      "heading": "Rest",
+      "name": "Next: 4 Sprawl & 2 Push Up",
+      "duration": 15,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 72,
+      "heading": "Work",
+      "name": "4 Sprawl & 2 Push Up",
+      "duration": 45,
+      "gifpath": "static/movie/4Sprawls2PushUps.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 73,
+      "heading": "Rest",
+      "name": "Next: Cross Lunges With Dumbbells",
+      "duration": 15,
+      "gifpath": "static/movie/CrossLungesDumbbell.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 74,
+      "heading": "Work",
+      "name": "Cross Lunges With Dumbbells",
+      "duration": 45,
+      "gifpath": "static/movie/CrossLungesDumbbell.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 75,
+      "heading": "Rest",
+      "name": "Next: Cross Lunges With Dumbbells",
+      "duration": 15,
+      "gifpath": "static/movie/CrossLungesDumbbell.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 76,
+      "heading": "Work",
+      "name": "Cross Lunges With Dumbbells",
+      "duration": 45,
+      "gifpath": "static/movie/CrossLungesDumbbell.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 77,
+      "heading": "Rest",
+      "name": "Next: Cross Lunges With Dumbbells",
+      "duration": 15,
+      "gifpath": "static/movie/CrossLungesDumbbell.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 78,
+      "heading": "Work",
+      "name": "Cross Lunges With Dumbbells",
+      "duration": 45,
+      "gifpath": "static/movie/CrossLungesDumbbell.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 79,
+      "heading": "Congrats You Finished",
+      "name": " Well Done !!!!! ",
+      "duration": 20,
+      "gifpath": "static/movie/Applause1.mp4",
+      "sound": "audiofinish",
+      "indicator": "hidden"
+    }
+  ]
+}
