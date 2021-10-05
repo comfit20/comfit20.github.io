@@ -213,7 +213,7 @@
       "id": 23,
       "heading": "",
       "name": "Legs up the wall is a reclined version of staff pose",
-      "duration": 100,
+      "duration": 60,
       "gifpath": "static/movie/yoga/YogaDandasana.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
@@ -222,7 +222,7 @@
       "id": 24,
       "heading": "",
       "name": "Pull your right knee in for half happy baby with your legs still up the wall",
-      "duration": 150,
+      "duration": 60,
       "gifpath": "",
       "sound": "audioyoga",
       "indicator": "hidden"
@@ -231,7 +231,7 @@
       "id": 25,
       "heading": "",
       "name": "Figure four right or pigeon",
-      "duration": 150,
+      "duration": 60,
       "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
@@ -240,7 +240,7 @@
       "id": 26,
       "heading": "",
       "name": "Pull your left knee in for half happy baby with your legs still up the wall",
-      "duration": 150,
+      "duration": 60,
       "gifpath": "",
       "sound": "audioyoga",
       "indicator": "hidden"
@@ -249,7 +249,7 @@
       "id": 27,
       "heading": "",
       "name": "Figure four left or pigeon",
-      "duration": 150,
+      "duration": 60,
       "gifpath": "static/movie/yoga/YogaFigureFour.mp4",
       "sound": "audioyoga",
       "indicator": "hidden"
