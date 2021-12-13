@@ -134,11 +134,18 @@ function createYogaTimeList() {
 
             console.log('test equal', _.isEqual(time_test["time_Fri"], time_list[0]));
 
-            if (_.isEqual(time_test["time_Mon"], time_list[0]) == true || _.isEqual(time_test["time_Mon2"], time_list[0]) == true)  {
+            if (_.isEqual(time_test["time_Mon2"], time_list[0]) == true)  {
             //var share_link = window.location.hostname+'/workout.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
             var share_link = window.location.hostname+'/workout_group.html?workout=workout'+'_mon'+'.json'+'&timestamp='+time.toISOString();
             //$("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout"+day_workout+".json");
             $("#next-"+idx).attr('href','workout_group.html?timestamp='+time.toISOString()+"&workout=workout"+'_mon'+".json");
+            $('#next-'+idx+'-link').attr('value',share_link);}
+
+            if (_.isEqual(time_test["time_Mon"], time_list[0]) == true)  {
+            //var share_link = window.location.hostname+'/workout.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
+            var share_link = window.location.hostname+'/workout_group.html?workout=workout'+'_weights'+'.json'+'&timestamp='+time.toISOString();
+            //$("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout"+day_workout+".json");
+            $("#next-"+idx).attr('href','workout_group.html?timestamp='+time.toISOString()+"&workout=workout"+'_weights'+".json");
             $('#next-'+idx+'-link').attr('value',share_link);}
 
             else if (_.isEqual(time_test["time_Tue7am"], time_list[0]) == true)  {
