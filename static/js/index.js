@@ -168,7 +168,7 @@ function createYogaTimeList() {
             //var share_link = window.location.hostname+'/workout.html?workout=workout'+day_workout+'.json'+'&timestamp='+time.toISOString();
             var share_link = window.location.hostname+'/workout_group.html?workout=workout'+'_wed'+'.json'+'&timestamp='+time.toISOString();
             //$("#next-"+idx).attr('href','workout.html?timestamp='+time.toISOString()+"&workout=workout"+day_workout+".json");
-            $("#next-"+idx).attr('href','workout_group.html?timestamp='+time.toISOString()+"&workout=workout"+'_wed'+".json");
+            $("#next-"+idx).attr('href','workout_group.html?timestamp='+time.toISOString()+"&workout=workout"+'_weights'+".json");
             $('#next-'+idx+'-link').attr('value',share_link);}
 
             else if (_.isEqual(time_test["time_Thu"], time_list[0]) == true)  {
