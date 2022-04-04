@@ -1551,6 +1551,267 @@
          "name": "Windmill With Dumbbells",
          "level": "middle",
          "gifpath": "static/movie/WindmillDumbbell.mp4"
+      }      ,
+            {
+         "id": 172,
+         "category": [
+            "core"
+         ], 
+         "name": "Bear To Runner",
+         "level": "middle",
+         "gifpath": "static/movie/BearToRunner.mp4"
+      }   ,
+            {
+         "id": 173,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Bird Dog With Dumbbell",
+         "level": "easy",
+         "gifpath": "static/movie/BirdDogWithDumbbell.mp4"
+      } ,
+            {
+         "id": 174,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Burpess With Dumbbell",
+         "level": "middle",
+         "gifpath": "static/movie/BurpeesWithWeights.mp4"
+      },
+            {
+         "id": 175,
+         "category": [
+            "glutes"
+         ], 
+         "name": "Clamp Shell",
+         "level": "easy",
+         "gifpath": "static/movie/ClampShell.mp4"
+      },
+            {
+         "id": 176,
+         "category": [
+            "belly"
+         ], 
+         "name": "Elevated Leg Toe Touch",
+         "level": "middle",
+         "gifpath": "static/movie/ElevatedLegToeTouch.mp4"
+      },
+            {
+         "id": 177,
+         "category": [
+            "core"
+         ], 
+         "name": "Get Up To Overhead Reach",
+         "level": "middle",
+         "gifpath": "static/movie/GetUpToOverhead.mp4"
+      },
+            {
+         "id": 178,
+         "category": [
+            "glutes"
+         ], 
+         "name": "Hip Mobility 90/90 Get Up",
+         "level": "middle",
+         "gifpath": "static/movie/HipMobility.mp4"
+      },
+            {
+         "id": 179,
+         "category": [
+            "core"
+         ], 
+         "name": "Inch Worm, Toe Touch, Push Up & Jump",
+         "level": "middle",
+         "gifpath": "static/movie/InchWormToJump.mp4"
+      },
+            {
+         "id": 180,
+         "category": [
+            "legs"
+         ], 
+         "name": "2 Jumping Jacks & 2 Knee Rises",
+         "level": "easy",
+         "gifpath": "static/movie/JumpingJacksAndKneeRises.mp4"
+      },
+            {
+         "id": 181,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Overhead Kettlebell & Leg Lift Hold",
+         "level": "middle",
+         "gifpath": "static/movie/KettlebellLegLift.mp4"
+      },
+            {
+         "id": 182,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Knee Rise & Chest Press",
+         "level": "middle",
+         "gifpath": "static/movie/KneeRiseAndPress.mp4"
+      },
+            {
+         "id": 183,
+         "category": [
+            "belly"
+         ], 
+         "name": "Knee Tucks",
+         "level": "middle",
+         "gifpath": "static/movie/KneeTucks.mp4"
+      },
+            {
+         "id": 184,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Knee Tucks With Weights",
+         "level": "middle",
+         "gifpath": "static/movie/KneeTucksWithWeights.mp4"
+      },
+            {
+         "id": 185,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Get Up & Down With Weights",
+         "level": "middle",
+         "gifpath": "static/movie/KneeUpAndDownWeights.mp4"
+      },
+            {
+         "id": 186,
+         "category": [
+            "legs"
+         ], 
+         "name": "Get Up & Down",
+         "level": "middle",
+         "gifpath": "static/movie/KneeUpDown.mp4"
+      },
+            {
+         "id": 187,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Lateral Lunge With Chest Press",
+         "level": "middle",
+         "gifpath": "static/movie/LateralLungeWithChestPress.mp4"
+      },
+            {
+         "id": 188,
+         "category": [
+            "glutes"
+         ], 
+         "name": "Monster Walks",
+         "level": "middle",
+         "gifpath": "static/movie/MonsterWalks.mp4"
+      },
+            {
+         "id": 189,
+         "category": [
+            "arms"
+         ], 
+         "name": "Push Up & Jacks",
+         "level": "hard",
+         "gifpath": "static/movie/PushUpAndJacks.mp4"
+      },
+            {
+         "id": 190,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Push Up & Rowers",
+         "level": "hard",
+         "gifpath": "static/movie/PushUpAndRowers.mp4"
+      },
+            {
+         "id": 191,
+         "category": [
+            "core"
+         ], 
+         "name": "Push Up & Side Mountain Climber",
+         "level": "hard",
+         "gifpath": "static/movie/PushUpAndSideMountainClimber.mp4"
+      },
+            {
+         "id": 192,
+         "category": [
+            "dumbbell"
+         ], 
+         "name": "Renegade Rows",
+         "level": "middle",
+         "gifpath": "static/movie/RenegadeRows.mp4"
+      },
+            {
+         "id": 193,
+         "category": [
+            "belly"
+         ], 
+         "name": "Reverse Crunch",
+         "level": "middle",
+         "gifpath": "static/movie/ReverseCrunch.mp4"
+      },
+            {
+         "id": 194,
+         "category": [
+            "legs"
+         ],  
+         "name": "Seal Claps",
+         "level": "easy",
+         "gifpath": "static/movie/SealClaps.mp4"
+      },
+            {
+         "id": 195,
+         "category": [
+            "dumbbell"
+         ],  
+         "name": "Sit & Leg Over Dumbbell",
+         "level": "easy",
+         "gifpath": "static/movie/SitAndLegOverDumbbell.mp4"
+      },
+            {
+         "id": 196,
+         "category": [
+            "dumbbell"
+         ],  
+         "name": "Squat Walks With Dumbbells",
+         "level": "easy",
+         "gifpath": "static/movie/SquatWalksWithDumbbells.mp4"
+      },
+            {
+         "id": 197,
+         "category": [
+            "belly"
+         ],  
+         "name": "Standing Side Crunches",
+         "level": "easy",
+         "gifpath": "static/movie/StandingSideCrunches.mp4"
+      },
+            {
+         "id": 198,
+         "category": [
+            "legs"
+         ],  
+         "name": "Standing Twist Jumps",
+         "level": "easy",
+         "gifpath": "static/movie/StandingTwistJump.mp4"
+      },
+            {
+         "id": 199,
+         "category": [
+            "legs"
+         ],  
+         "name": "Wall Walks",
+         "level": "middle",
+         "gifpath": "static/movie/WallWalks.mp4"
+      },
+            {
+         "id": 200,
+         "category": [
+            "dumbbell"
+         ],  
+         "name": "Alternating Wall Walks & Punches",
+         "level": "middle",
+         "gifpath": "static/movie/WallWalksAndPunches.mp4"
       }
    ]
 
