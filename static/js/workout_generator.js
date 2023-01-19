@@ -6,6 +6,8 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
 
     var warmups = ['Jumping Jacks', 'Single Leg Hip Circles', 'Squat Pulses', 'Glute Bridge', '5 Shoulder Circles & Windmill', 'Burpees']
 
+    var stretching =['shoulder warm up','half standing forward fold']
+
 
     console.log('this is input style' + typeof(style_variant))
     console.log(exercises)
@@ -201,6 +203,17 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
         }
 
         n = n - 1
+
+        // {
+        //         "id": n,
+        //         "heading": "Wait for Group Session",
+        //         "name": "Session will start soon",
+        //         "duration": 12,
+        //         "gifpath": "static/movie/waitnextworkout.mp4",
+        //         "sound": null,
+        //         "indicator": "hidden"
+        //     },
+
 
         finished = {
             "id": n,
