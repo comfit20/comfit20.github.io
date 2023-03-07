@@ -40,7 +40,7 @@
         time_list.push(time_1); //this is Monday 7:00 am
         var time_2 = getNextWeekday(2).set('h',2).set('m',2).set('s',0).set('ms',0);
         time_list.push(time_2); // this is Monday 6:00 pm
-        var time_7 = getNextWeekday(2).set('h',16).set('m',0).set('s',0).set('ms',0);
+        var time_7 = getNextWeekday(2).set('h',16).set('m',15).set('s',0).set('ms',0);
         time_list.push(time_7); // this is  Tuesday 7:00 am
 
         var time_4 = getNextWeekday(2).set('h',18).set('m',32).set('s',0).set('ms',0);
@@ -119,7 +119,7 @@ function createYogaTimeList() {
           time_test = {
           time_Mon: getNextWeekday(1).set('h',15).set('m',2).set('s',0).set('ms',0),
           time_Mon2: getNextWeekday(2).set('h',2).set('m',2).set('s',0).set('ms',0),
-          time_Tue7am: getNextWeekday(2).set('h',16).set('m',0).set('s',0).set('ms',0),
+          time_Tue7am: getNextWeekday(2).set('h',16).set('m',15).set('s',0).set('ms',0),
           time_Tue: getNextWeekday(2).set('h',18).set('m',32).set('s',0).set('ms',0),
           time_Wed: getNextWeekday(3).set('h',15).set('m',2).set('s',0).set('ms',0),
           time_Thu: getNextWeekday(4).set('h',15).set('m',2).set('s',0).set('ms',0),
