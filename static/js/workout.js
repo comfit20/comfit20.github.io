@@ -249,8 +249,11 @@ function startJqueryTimer(startTime) {
     if (startTime['elements'].length == 0) {
         $("#content").empty()
         $("#content").html('<h2>!!! Good Job: Workout over !!!')
-        $("#content").append('<h4> We kindly ask you for feedback </h4>')
-        $("#content").append('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdP8wpxa9pXAzYhNkFlHjpi_I2GPAEQGvGbUTUEHbzerTE0Uw/viewform?embedded=true" width="450" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>');
+        $("#content").append('<h4> Time for stretching </h4>')
+        // <img src="https://www.example.com/images/dinosaur.jpg" alt="Dinosaur" />
+        // </video>
+ 
+        // $("#content").append('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdP8wpxa9pXAzYhNkFlHjpi_I2GPAEQGvGbUTUEHbzerTE0Uw/viewform?embedded=true" width="450" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>');
 
 
         return
