@@ -52,7 +52,7 @@
         // var time_6 = getNextWeekday(4).set('h',17).set('m',2).set('s',0).set('ms',0);
         // time_list.push(time_6); // this is Thursday 7:00 am  
 
-        var time_5 = getNextWeekday(5).set('h',14).set('m',2).set('s',0).set('ms',0);
+        var time_5 = getNextWeekday(5).set('h',13).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_5); //this is Friday 7:02 am
 
         // var time_6 = getNextWeekday(0).set('h',16).set('m',34).set('s',0).set('ms',0);
@@ -123,7 +123,7 @@ function createYogaTimeList() {
           // time_Tue: getNextWeekday(2).set('h',18).set('m',32).set('s',0).set('ms',0),
           // time_Wed: getNextWeekday(3).set('h',16).set('m',32).set('s',0).set('ms',0),
           // time_Thu: getNextWeekday(4).set('h',17).set('m',2).set('s',0).set('ms',0),
-          time_Fri: getNextWeekday(5).set('h',14).set('m',2).set('s',0).set('ms',0)
+          time_Fri: getNextWeekday(5).set('h',13).set('m',32).set('s',0).set('ms',0)
       }
 
 
