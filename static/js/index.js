@@ -262,7 +262,7 @@ function createYogaTimeList() {
     function get_workoutNo() {
          var today = dayjs().day() // I don't think this needs to be here
         // console.log("workout No", Math.floor((Math.random() * 18) + 2))
- return Math.floor((Math.random() * 274) + 1);
+ return Math.floor((Math.random() * 420) + 1);
     }
 
     //pick random number of yoga for yoga anytime
