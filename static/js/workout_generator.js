@@ -214,6 +214,36 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
         //         "indicator": "hidden"
         //     },
 
+        
+
+        rest = {
+                        "id": n,
+                        "heading": "Rest",
+                        "name": "Plank Challenge",
+                        "duration": 5,
+                        "gifpath": "static/movie/Plank.mp4",
+                        "sound": 'audiorest',
+                        "indicator": "hidden"
+                    }
+
+                    arrayelements.push(rest)
+
+        n = n+1
+
+
+        plank_challenge = {
+            "id": n,
+            "heading": "Plank Challenge",
+            "name": " Plank ",
+            "duration": 30,
+            "gifpath": "static/movie/Plank.mp4", //+str(applaus)+".mp4",
+            "sound": 'audiowork',
+            "indicator": "hidden"
+        }
+
+        arrayelements.push(plank_challenge)
+
+        n = n+1
 
         finished = {
             "id": n,
