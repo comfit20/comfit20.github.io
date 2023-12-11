@@ -235,7 +235,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
             "id": n,
             "heading": "Plank Challenge",
             "name": " Plank ",
-            "duration": 120,
+            "duration": 300,
             "gifpath": "static/movie/Plank.mp4", //+str(applaus)+".mp4",
             "sound": 'audiowork',
             "indicator": "hidden"
