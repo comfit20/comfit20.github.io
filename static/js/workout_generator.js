@@ -458,6 +458,20 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
 
         n = n - 1
 
+ plank_challenge = {
+            "id": n,
+            "heading": "Plank Challenge",
+            "name": " Plank ",
+            "duration": 120,
+            "gifpath": "static/movie/Plank.mp4", //+str(applaus)+".mp4",
+            "sound": 'audiowork',
+            "indicator": "hidden"
+        }
+
+        arrayelements.push(plank_challenge)
+
+        n = n+1
+
 
         finished = {
             "id": n,
@@ -472,6 +486,9 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
         arrayelements.push(finished)
 
     } //bracket for function decrease
+
+
+
 
 
 //////////////////////////////////////////// INCREASE  3 ///////////////////
@@ -667,6 +684,21 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
     n = n - 1
 
 
+   plank_challenge = {
+            "id": n,
+            "heading": "Plank Challenge",
+            "name": " Plank ",
+            "duration": 120,
+            "gifpath": "static/movie/Plank.mp4", //+str(applaus)+".mp4",
+            "sound": 'audiowork',
+            "indicator": "hidden"
+        }
+
+        arrayelements.push(plank_challenge)
+
+        n = n+1
+
+
     finished = {
         "id": n,
         "heading": "Congrats You Finished",
@@ -681,6 +713,9 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
 } //bracket for workoutstyle increase
 
   
+
+
+
 //////////////////////////////////////////// UP AND DOWN 4 /////////////////
 
     else if (workoutstyle == 4) {
