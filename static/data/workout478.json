@@ -1,0 +1,875 @@
+{
+  "startTime": "now",
+  "elements": [
+    {
+      "id": 0,
+      "heading": "Wait for Group Session",
+      "name": "Session will start soon",
+      "duration": 12,
+      "gifpath": "static/movie/waitnextworkout.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 1,
+      "heading": "Workout Timing:",
+      "name": [
+        "workout style: regular",
+        "12 exercises",
+        "40 sec work",
+        "10 sec rest",
+        "3 rounds"
+      ],
+      "duration": 10,
+      "gifpath": "",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 2,
+      "heading": "Introduction to exercises",
+      "name": "Squat Single-Arm Overhead (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/SquatSingleArmOverhead.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 3,
+      "heading": "Introduction to exercises",
+      "name": "Single Leg Donkey Kick",
+      "duration": 10,
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 4,
+      "heading": "Introduction to exercises",
+      "name": "Push Up & Side Mountain Climber",
+      "duration": 10,
+      "gifpath": "static/movie/PushUpAndSideMountainClimber.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 5,
+      "heading": "Introduction to exercises",
+      "name": "Leg Lift & Hold",
+      "duration": 10,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 6,
+      "heading": "Introduction to exercises",
+      "name": "Upper Body Twist (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellTwist.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 7,
+      "heading": "Introduction to exercises",
+      "name": "Seal Claps",
+      "duration": 10,
+      "gifpath": "static/movie/SealClaps.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 8,
+      "heading": "Introduction to exercises",
+      "name": "Lunges (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellLunges.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 9,
+      "heading": "Introduction to exercises",
+      "name": "Hollow Rock",
+      "duration": 10,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 10,
+      "heading": "Introduction to exercises",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 10,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 11,
+      "heading": "Introduction to exercises",
+      "name": "Glute Bridge (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 12,
+      "heading": "Introduction to exercises",
+      "name": "Side Hops",
+      "duration": 10,
+      "gifpath": "static/movie/SideHops.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 13,
+      "heading": "Introduction to exercises",
+      "name": "Inch Worm",
+      "duration": 10,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 14,
+      "heading": "Get Ready to Warm Up",
+      "name": " Let's go !!!!! ",
+      "duration": 10,
+      "gifpath": "static/movie/getready.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 15,
+      "heading": "Warm Up",
+      "name": "Jumping Jacks",
+      "duration": 25,
+      "gifpath": "static/movie/JumpingJack.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 16,
+      "heading": "Warm Up",
+      "name": "Single Leg Hip Circles",
+      "duration": 25,
+      "gifpath": "static/movie/HipCircles.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 17,
+      "heading": "Warm Up",
+      "name": "Squat Pulses",
+      "duration": 25,
+      "gifpath": "static/movie/SquatPulses.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 18,
+      "heading": "Warm Up",
+      "name": "Glute Bridge",
+      "duration": 25,
+      "gifpath": "static/movie/GluteBridge.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 19,
+      "heading": "Warm Up",
+      "name": "5 Shoulder Circles & Windmill",
+      "duration": 25,
+      "gifpath": "static/movie/ShouldrCircles.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 20,
+      "heading": "Warm Up",
+      "name": "Burpees",
+      "duration": 25,
+      "gifpath": "static/movie/Burpee.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 21,
+      "heading": "Get Ready to Work Out",
+      "name": " Let's go: Squat Single-Arm Overhead (Dumbbell)",
+      "duration": 5,
+      "gifpath": "static/movie/GetReadyToWorkout.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 22,
+      "heading": "Work",
+      "name": "Squat Single-Arm Overhead (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/SquatSingleArmOverhead.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 23,
+      "heading": "Rest",
+      "name": "Up Next: Single Leg Donkey Kick",
+      "duration": 10,
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 24,
+      "heading": "Work",
+      "name": "Single Leg Donkey Kick",
+      "duration": 40,
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 25,
+      "heading": "Rest",
+      "name": "Up Next: Push Up & Side Mountain Climber",
+      "duration": 10,
+      "gifpath": "static/movie/PushUpAndSideMountainClimber.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 26,
+      "heading": "Work",
+      "name": "Push Up & Side Mountain Climber",
+      "duration": 40,
+      "gifpath": "static/movie/PushUpAndSideMountainClimber.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 27,
+      "heading": "Rest",
+      "name": "Up Next: Leg Lift & Hold",
+      "duration": 10,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 28,
+      "heading": "Work",
+      "name": "Leg Lift & Hold",
+      "duration": 40,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 29,
+      "heading": "Rest",
+      "name": "Up Next: Upper Body Twist (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellTwist.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 30,
+      "heading": "Work",
+      "name": "Upper Body Twist (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellTwist.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 31,
+      "heading": "Rest",
+      "name": "Up Next: Seal Claps",
+      "duration": 10,
+      "gifpath": "static/movie/SealClaps.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 32,
+      "heading": "Work",
+      "name": "Seal Claps",
+      "duration": 40,
+      "gifpath": "static/movie/SealClaps.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 33,
+      "heading": "Rest",
+      "name": "Up Next: Lunges (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellLunges.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 34,
+      "heading": "Work",
+      "name": "Lunges (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellLunges.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 35,
+      "heading": "Rest",
+      "name": "Up Next: Hollow Rock",
+      "duration": 10,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 36,
+      "heading": "Work",
+      "name": "Hollow Rock",
+      "duration": 40,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 37,
+      "heading": "Rest",
+      "name": "Up Next: Push Up To Lunge Pulses",
+      "duration": 10,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 38,
+      "heading": "Work",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 40,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 39,
+      "heading": "Rest",
+      "name": "Up Next: Glute Bridge (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 40,
+      "heading": "Work",
+      "name": "Glute Bridge (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 41,
+      "heading": "Rest",
+      "name": "Up Next: Side Hops",
+      "duration": 10,
+      "gifpath": "static/movie/SideHops.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 42,
+      "heading": "Work",
+      "name": "Side Hops",
+      "duration": 40,
+      "gifpath": "static/movie/SideHops.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 43,
+      "heading": "Rest",
+      "name": "Up Next: Inch Worm",
+      "duration": 10,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 44,
+      "heading": "Work",
+      "name": "Inch Worm",
+      "duration": 40,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 45,
+      "heading": "Water Break",
+      "name": "Next: Squat Single-Arm Overhead (Dumbbell)",
+      "duration": 35,
+      "gifpath": "static/movie/WaterRefill.mp4",
+      "sound": "audiorest",
+      "indicator": "water_break"
+    },
+    {
+      "id": 46,
+      "heading": "Work",
+      "name": "Squat Single-Arm Overhead (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/SquatSingleArmOverhead.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 47,
+      "heading": "Rest",
+      "name": "Up Next: Single Leg Donkey Kick",
+      "duration": 10,
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 48,
+      "heading": "Work",
+      "name": "Single Leg Donkey Kick",
+      "duration": 40,
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 49,
+      "heading": "Rest",
+      "name": "Up Next: Push Up & Side Mountain Climber",
+      "duration": 10,
+      "gifpath": "static/movie/PushUpAndSideMountainClimber.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 50,
+      "heading": "Work",
+      "name": "Push Up & Side Mountain Climber",
+      "duration": 40,
+      "gifpath": "static/movie/PushUpAndSideMountainClimber.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 51,
+      "heading": "Rest",
+      "name": "Up Next: Leg Lift & Hold",
+      "duration": 10,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 52,
+      "heading": "Work",
+      "name": "Leg Lift & Hold",
+      "duration": 40,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 53,
+      "heading": "Rest",
+      "name": "Up Next: Upper Body Twist (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellTwist.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 54,
+      "heading": "Work",
+      "name": "Upper Body Twist (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellTwist.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 55,
+      "heading": "Rest",
+      "name": "Up Next: Seal Claps",
+      "duration": 10,
+      "gifpath": "static/movie/SealClaps.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 56,
+      "heading": "Work",
+      "name": "Seal Claps",
+      "duration": 40,
+      "gifpath": "static/movie/SealClaps.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 57,
+      "heading": "Rest",
+      "name": "Up Next: Lunges (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellLunges.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 58,
+      "heading": "Work",
+      "name": "Lunges (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellLunges.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 59,
+      "heading": "Rest",
+      "name": "Up Next: Hollow Rock",
+      "duration": 10,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 60,
+      "heading": "Work",
+      "name": "Hollow Rock",
+      "duration": 40,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 61,
+      "heading": "Rest",
+      "name": "Up Next: Push Up To Lunge Pulses",
+      "duration": 10,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 62,
+      "heading": "Work",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 40,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 63,
+      "heading": "Rest",
+      "name": "Up Next: Glute Bridge (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 64,
+      "heading": "Work",
+      "name": "Glute Bridge (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 65,
+      "heading": "Rest",
+      "name": "Up Next: Side Hops",
+      "duration": 10,
+      "gifpath": "static/movie/SideHops.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 66,
+      "heading": "Work",
+      "name": "Side Hops",
+      "duration": 40,
+      "gifpath": "static/movie/SideHops.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 67,
+      "heading": "Rest",
+      "name": "Up Next: Inch Worm",
+      "duration": 10,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 68,
+      "heading": "Work",
+      "name": "Inch Worm",
+      "duration": 40,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 69,
+      "heading": "Water Break",
+      "name": "Next: Squat Single-Arm Overhead (Dumbbell)",
+      "duration": 35,
+      "gifpath": "static/movie/WaterRefill.mp4",
+      "sound": "audiorest",
+      "indicator": "water_break"
+    },
+    {
+      "id": 70,
+      "heading": "Work",
+      "name": "Squat Single-Arm Overhead (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/SquatSingleArmOverhead.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 71,
+      "heading": "Rest",
+      "name": "Up Next: Single Leg Donkey Kick",
+      "duration": 10,
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 72,
+      "heading": "Work",
+      "name": "Single Leg Donkey Kick",
+      "duration": 40,
+      "gifpath": "static/movie/SingleLegDonkeyKick.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 73,
+      "heading": "Rest",
+      "name": "Up Next: Push Up & Side Mountain Climber",
+      "duration": 10,
+      "gifpath": "static/movie/PushUpAndSideMountainClimber.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 74,
+      "heading": "Work",
+      "name": "Push Up & Side Mountain Climber",
+      "duration": 40,
+      "gifpath": "static/movie/PushUpAndSideMountainClimber.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 75,
+      "heading": "Rest",
+      "name": "Up Next: Leg Lift & Hold",
+      "duration": 10,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 76,
+      "heading": "Work",
+      "name": "Leg Lift & Hold",
+      "duration": 40,
+      "gifpath": "static/movie/LegLiftAndHold.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 77,
+      "heading": "Rest",
+      "name": "Up Next: Upper Body Twist (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellTwist.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 78,
+      "heading": "Work",
+      "name": "Upper Body Twist (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellTwist.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 79,
+      "heading": "Rest",
+      "name": "Up Next: Seal Claps",
+      "duration": 10,
+      "gifpath": "static/movie/SealClaps.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 80,
+      "heading": "Work",
+      "name": "Seal Claps",
+      "duration": 40,
+      "gifpath": "static/movie/SealClaps.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 81,
+      "heading": "Rest",
+      "name": "Up Next: Lunges (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellLunges.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 82,
+      "heading": "Work",
+      "name": "Lunges (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellLunges.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 83,
+      "heading": "Rest",
+      "name": "Up Next: Hollow Rock",
+      "duration": 10,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 84,
+      "heading": "Work",
+      "name": "Hollow Rock",
+      "duration": 40,
+      "gifpath": "static/movie/HollowRock.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 85,
+      "heading": "Rest",
+      "name": "Up Next: Push Up To Lunge Pulses",
+      "duration": 10,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 86,
+      "heading": "Work",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 40,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 87,
+      "heading": "Rest",
+      "name": "Up Next: Glute Bridge (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 88,
+      "heading": "Work",
+      "name": "Glute Bridge (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 89,
+      "heading": "Rest",
+      "name": "Up Next: Side Hops",
+      "duration": 10,
+      "gifpath": "static/movie/SideHops.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 90,
+      "heading": "Work",
+      "name": "Side Hops",
+      "duration": 40,
+      "gifpath": "static/movie/SideHops.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 91,
+      "heading": "Rest",
+      "name": "Up Next: Inch Worm",
+      "duration": 10,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 92,
+      "heading": "Work",
+      "name": "Inch Worm",
+      "duration": 40,
+      "gifpath": "static/movie/InchWorm.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 93,
+      "heading": "Rest",
+      "name": "Plank Challenge",
+      "duration": 5,
+      "gifpath": "static/movie/Plank.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 94,
+      "heading": "Plank Challenge",
+      "name": " Plank ",
+      "duration": 120,
+      "gifpath": "static/movie/Plank.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 95,
+      "heading": "Congrats You Finished",
+      "name": " Well Done !!!!! ",
+      "duration": 20,
+      "gifpath": "static/movie/Applause1.mp4",
+      "sound": "audiofinish",
+      "indicator": "hidden"
+    }
+  ]
+}
