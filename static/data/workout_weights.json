@@ -15,9 +15,9 @@
       "heading": "Workout Timing:",
       "name": [
         "workout style: regular",
-        "8 exercises",
-        "45 sec work",
-        "5 sec rest",
+        "6 exercises",
+        "40 sec work",
+        "10 sec rest",
         "3 rounds"
       ],
       "duration": 10,
@@ -28,50 +28,32 @@
     {
       "id": 2,
       "heading": "Introduction to exercises",
-      "name": "Upper Body Twist (Dumbbell)",
+      "name": "Forward Lunge & 2 Bicep Curl",
       "duration": 10,
-      "gifpath": "static/movie/DumbbellTwist.mp4",
+      "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 3,
       "heading": "Introduction to exercises",
-      "name": "Glute Bridge (Dumbbell)",
+      "name": "Pistol Squat",
       "duration": 10,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "gifpath": "static/movie/PistolSquat.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 4,
       "heading": "Introduction to exercises",
-      "name": "Deadlift To Overhead Press",
+      "name": "Bench Press (Dumbbell)",
       "duration": 10,
-      "gifpath": "static/movie/DeadLiftToOverheadPress.mp4",
+      "gifpath": "static/movie/DumbbellBenchPress.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 5,
-      "heading": "Introduction to exercises",
-      "name": "Lateral Lunge With Chest Press",
-      "duration": 10,
-      "gifpath": "static/movie/LateralLungeWithChestPress.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 6,
-      "heading": "Introduction to exercises",
-      "name": "Squat Single-Arm Overhead (Dumbbell)",
-      "duration": 10,
-      "gifpath": "static/movie/SquatSingleArmOverhead.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 7,
       "heading": "Introduction to exercises",
       "name": "Butterfly Crunch With Dumbbell",
       "duration": 10,
@@ -80,25 +62,25 @@
       "indicator": "hidden"
     },
     {
+      "id": 6,
+      "heading": "Introduction to exercises",
+      "name": "Rowers (Barbell)",
+      "duration": 10,
+      "gifpath": "static/movie/BarbellRowers.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 7,
+      "heading": "Introduction to exercises",
+      "name": "One-Leg Forward & 2 Rear Fly",
+      "duration": 10,
+      "gifpath": "static/movie/OneLegForwardAndRearFly.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
       "id": 8,
-      "heading": "Introduction to exercises",
-      "name": "Push Up & Lateral Dumbbell Move",
-      "duration": 10,
-      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 9,
-      "heading": "Introduction to exercises",
-      "name": "Bicep Curl (Dumbbell)",
-      "duration": 10,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 10,
       "heading": "Get Ready to Warm Up",
       "name": " Let's go !!!!! ",
       "duration": 10,
@@ -107,7 +89,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 11,
+      "id": 9,
       "heading": "Warm Up",
       "name": "Jumping Jacks",
       "duration": 25,
@@ -116,7 +98,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 12,
+      "id": 10,
       "heading": "Warm Up",
       "name": "Single Leg Hip Circles",
       "duration": 25,
@@ -125,7 +107,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 13,
+      "id": 11,
       "heading": "Warm Up",
       "name": "Squat Pulses",
       "duration": 25,
@@ -134,7 +116,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 14,
+      "id": 12,
       "heading": "Warm Up",
       "name": "Glute Bridge",
       "duration": 25,
@@ -143,7 +125,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 15,
+      "id": 13,
       "heading": "Warm Up",
       "name": "5 Shoulder Circles & Windmill",
       "duration": 25,
@@ -152,7 +134,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 16,
+      "id": 14,
       "heading": "Warm Up",
       "name": "Burpees",
       "duration": 25,
@@ -161,439 +143,331 @@
       "indicator": "hidden"
     },
     {
-      "id": 17,
+      "id": 15,
       "heading": "Get Ready to Work Out",
-      "name": " Let's go: Upper Body Twist (Dumbbell)",
+      "name": " Let's go: Forward Lunge & 2 Bicep Curl",
       "duration": 5,
       "gifpath": "static/movie/GetReadyToWorkout.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
+      "id": 16,
+      "heading": "Work",
+      "name": "Forward Lunge & 2 Bicep Curl",
+      "duration": 40,
+      "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 17,
+      "heading": "Rest",
+      "name": "Up Next: Pistol Squat",
+      "duration": 10,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
       "id": 18,
       "heading": "Work",
-      "name": "Upper Body Twist (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/DumbbellTwist.mp4",
+      "name": "Pistol Squat",
+      "duration": 40,
+      "gifpath": "static/movie/PistolSquat.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 19,
       "heading": "Rest",
-      "name": "Up Next: Glute Bridge (Dumbbell)",
-      "duration": 5,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "name": "Up Next: Bench Press (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellBenchPress.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 20,
       "heading": "Work",
-      "name": "Glute Bridge (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "name": "Bench Press (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellBenchPress.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 21,
       "heading": "Rest",
-      "name": "Up Next: Deadlift To Overhead Press",
-      "duration": 5,
-      "gifpath": "static/movie/DeadLiftToOverheadPress.mp4",
+      "name": "Up Next: Butterfly Crunch With Dumbbell",
+      "duration": 10,
+      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 22,
       "heading": "Work",
-      "name": "Deadlift To Overhead Press",
-      "duration": 45,
-      "gifpath": "static/movie/DeadLiftToOverheadPress.mp4",
+      "name": "Butterfly Crunch With Dumbbell",
+      "duration": 40,
+      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 23,
       "heading": "Rest",
-      "name": "Up Next: Lateral Lunge With Chest Press",
-      "duration": 5,
-      "gifpath": "static/movie/LateralLungeWithChestPress.mp4",
+      "name": "Up Next: Rowers (Barbell)",
+      "duration": 10,
+      "gifpath": "static/movie/BarbellRowers.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 24,
       "heading": "Work",
-      "name": "Lateral Lunge With Chest Press",
-      "duration": 45,
-      "gifpath": "static/movie/LateralLungeWithChestPress.mp4",
+      "name": "Rowers (Barbell)",
+      "duration": 40,
+      "gifpath": "static/movie/BarbellRowers.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 25,
       "heading": "Rest",
-      "name": "Up Next: Squat Single-Arm Overhead (Dumbbell)",
-      "duration": 5,
-      "gifpath": "static/movie/SquatSingleArmOverhead.mp4",
+      "name": "Up Next: One-Leg Forward & 2 Rear Fly",
+      "duration": 10,
+      "gifpath": "static/movie/OneLegForwardAndRearFly.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 26,
       "heading": "Work",
-      "name": "Squat Single-Arm Overhead (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/SquatSingleArmOverhead.mp4",
+      "name": "One-Leg Forward & 2 Rear Fly",
+      "duration": 40,
+      "gifpath": "static/movie/OneLegForwardAndRearFly.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 27,
-      "heading": "Rest",
-      "name": "Up Next: Butterfly Crunch With Dumbbell",
-      "duration": 5,
-      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
+      "heading": "Water Break",
+      "name": "Next: Forward Lunge & 2 Bicep Curl",
+      "duration": 35,
+      "gifpath": "static/movie/WaterRefill.mp4",
       "sound": "audiorest",
-      "indicator": "hidden"
+      "indicator": "water_break"
     },
     {
       "id": 28,
       "heading": "Work",
-      "name": "Butterfly Crunch With Dumbbell",
-      "duration": 45,
-      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
+      "name": "Forward Lunge & 2 Bicep Curl",
+      "duration": 40,
+      "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 29,
       "heading": "Rest",
-      "name": "Up Next: Push Up & Lateral Dumbbell Move",
-      "duration": 5,
-      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
+      "name": "Up Next: Pistol Squat",
+      "duration": 10,
+      "gifpath": "static/movie/PistolSquat.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 30,
       "heading": "Work",
-      "name": "Push Up & Lateral Dumbbell Move",
-      "duration": 45,
-      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
+      "name": "Pistol Squat",
+      "duration": 40,
+      "gifpath": "static/movie/PistolSquat.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 31,
       "heading": "Rest",
-      "name": "Up Next: Bicep Curl (Dumbbell)",
-      "duration": 5,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
+      "name": "Up Next: Bench Press (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellBenchPress.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 32,
       "heading": "Work",
-      "name": "Bicep Curl (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
+      "name": "Bench Press (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellBenchPress.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 33,
-      "heading": "Water Break",
-      "name": "Next: Upper Body Twist (Dumbbell)",
-      "duration": 35,
-      "gifpath": "static/movie/WaterRefill.mp4",
+      "heading": "Rest",
+      "name": "Up Next: Butterfly Crunch With Dumbbell",
+      "duration": 10,
+      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
       "sound": "audiorest",
-      "indicator": "water_break"
+      "indicator": "hidden"
     },
     {
       "id": 34,
       "heading": "Work",
-      "name": "Upper Body Twist (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/DumbbellTwist.mp4",
+      "name": "Butterfly Crunch With Dumbbell",
+      "duration": 40,
+      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 35,
       "heading": "Rest",
-      "name": "Up Next: Glute Bridge (Dumbbell)",
-      "duration": 5,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "name": "Up Next: Rowers (Barbell)",
+      "duration": 10,
+      "gifpath": "static/movie/BarbellRowers.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 36,
       "heading": "Work",
-      "name": "Glute Bridge (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "name": "Rowers (Barbell)",
+      "duration": 40,
+      "gifpath": "static/movie/BarbellRowers.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 37,
       "heading": "Rest",
-      "name": "Up Next: Deadlift To Overhead Press",
-      "duration": 5,
-      "gifpath": "static/movie/DeadLiftToOverheadPress.mp4",
+      "name": "Up Next: One-Leg Forward & 2 Rear Fly",
+      "duration": 10,
+      "gifpath": "static/movie/OneLegForwardAndRearFly.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 38,
       "heading": "Work",
-      "name": "Deadlift To Overhead Press",
-      "duration": 45,
-      "gifpath": "static/movie/DeadLiftToOverheadPress.mp4",
+      "name": "One-Leg Forward & 2 Rear Fly",
+      "duration": 40,
+      "gifpath": "static/movie/OneLegForwardAndRearFly.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 39,
-      "heading": "Rest",
-      "name": "Up Next: Lateral Lunge With Chest Press",
-      "duration": 5,
-      "gifpath": "static/movie/LateralLungeWithChestPress.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 40,
-      "heading": "Work",
-      "name": "Lateral Lunge With Chest Press",
-      "duration": 45,
-      "gifpath": "static/movie/LateralLungeWithChestPress.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 41,
-      "heading": "Rest",
-      "name": "Up Next: Squat Single-Arm Overhead (Dumbbell)",
-      "duration": 5,
-      "gifpath": "static/movie/SquatSingleArmOverhead.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 42,
-      "heading": "Work",
-      "name": "Squat Single-Arm Overhead (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/SquatSingleArmOverhead.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 43,
-      "heading": "Rest",
-      "name": "Up Next: Butterfly Crunch With Dumbbell",
-      "duration": 5,
-      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 44,
-      "heading": "Work",
-      "name": "Butterfly Crunch With Dumbbell",
-      "duration": 45,
-      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 45,
-      "heading": "Rest",
-      "name": "Up Next: Push Up & Lateral Dumbbell Move",
-      "duration": 5,
-      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 46,
-      "heading": "Work",
-      "name": "Push Up & Lateral Dumbbell Move",
-      "duration": 45,
-      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 47,
-      "heading": "Rest",
-      "name": "Up Next: Bicep Curl (Dumbbell)",
-      "duration": 5,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 48,
-      "heading": "Work",
-      "name": "Bicep Curl (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 49,
       "heading": "Water Break",
-      "name": "Next: Upper Body Twist (Dumbbell)",
+      "name": "Next: Forward Lunge & 2 Bicep Curl",
       "duration": 35,
       "gifpath": "static/movie/WaterRefill.mp4",
       "sound": "audiorest",
       "indicator": "water_break"
     },
     {
+      "id": 40,
+      "heading": "Work",
+      "name": "Forward Lunge & 2 Bicep Curl",
+      "duration": 40,
+      "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 41,
+      "heading": "Rest",
+      "name": "Up Next: Pistol Squat",
+      "duration": 10,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 42,
+      "heading": "Work",
+      "name": "Pistol Squat",
+      "duration": 40,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 43,
+      "heading": "Rest",
+      "name": "Up Next: Bench Press (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellBenchPress.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 44,
+      "heading": "Work",
+      "name": "Bench Press (Dumbbell)",
+      "duration": 40,
+      "gifpath": "static/movie/DumbbellBenchPress.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 45,
+      "heading": "Rest",
+      "name": "Up Next: Butterfly Crunch With Dumbbell",
+      "duration": 10,
+      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 46,
+      "heading": "Work",
+      "name": "Butterfly Crunch With Dumbbell",
+      "duration": 40,
+      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 47,
+      "heading": "Rest",
+      "name": "Up Next: Rowers (Barbell)",
+      "duration": 10,
+      "gifpath": "static/movie/BarbellRowers.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 48,
+      "heading": "Work",
+      "name": "Rowers (Barbell)",
+      "duration": 40,
+      "gifpath": "static/movie/BarbellRowers.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 49,
+      "heading": "Rest",
+      "name": "Up Next: One-Leg Forward & 2 Rear Fly",
+      "duration": 10,
+      "gifpath": "static/movie/OneLegForwardAndRearFly.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
       "id": 50,
       "heading": "Work",
-      "name": "Upper Body Twist (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/DumbbellTwist.mp4",
+      "name": "One-Leg Forward & 2 Rear Fly",
+      "duration": 40,
+      "gifpath": "static/movie/OneLegForwardAndRearFly.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 51,
-      "heading": "Rest",
-      "name": "Up Next: Glute Bridge (Dumbbell)",
-      "duration": 5,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 52,
-      "heading": "Work",
-      "name": "Glute Bridge (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 53,
-      "heading": "Rest",
-      "name": "Up Next: Deadlift To Overhead Press",
-      "duration": 5,
-      "gifpath": "static/movie/DeadLiftToOverheadPress.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 54,
-      "heading": "Work",
-      "name": "Deadlift To Overhead Press",
-      "duration": 45,
-      "gifpath": "static/movie/DeadLiftToOverheadPress.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 55,
-      "heading": "Rest",
-      "name": "Up Next: Lateral Lunge With Chest Press",
-      "duration": 5,
-      "gifpath": "static/movie/LateralLungeWithChestPress.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 56,
-      "heading": "Work",
-      "name": "Lateral Lunge With Chest Press",
-      "duration": 45,
-      "gifpath": "static/movie/LateralLungeWithChestPress.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 57,
-      "heading": "Rest",
-      "name": "Up Next: Squat Single-Arm Overhead (Dumbbell)",
-      "duration": 5,
-      "gifpath": "static/movie/SquatSingleArmOverhead.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 58,
-      "heading": "Work",
-      "name": "Squat Single-Arm Overhead (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/SquatSingleArmOverhead.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 59,
-      "heading": "Rest",
-      "name": "Up Next: Butterfly Crunch With Dumbbell",
-      "duration": 5,
-      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 60,
-      "heading": "Work",
-      "name": "Butterfly Crunch With Dumbbell",
-      "duration": 45,
-      "gifpath": "static/movie/ButterflyCrunchDumbbell.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 61,
-      "heading": "Rest",
-      "name": "Up Next: Push Up & Lateral Dumbbell Move",
-      "duration": 5,
-      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 62,
-      "heading": "Work",
-      "name": "Push Up & Lateral Dumbbell Move",
-      "duration": 45,
-      "gifpath": "static/movie/PushUpAndMoveDumbbell.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 63,
-      "heading": "Rest",
-      "name": "Up Next: Bicep Curl (Dumbbell)",
-      "duration": 5,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 64,
-      "heading": "Work",
-      "name": "Bicep Curl (Dumbbell)",
-      "duration": 45,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 65,
       "heading": "Rest",
       "name": "Plank Challenge",
       "duration": 5,
@@ -602,7 +476,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 66,
+      "id": 52,
       "heading": "Plank Challenge",
       "name": " Plank ",
       "duration": 120,
@@ -611,7 +485,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 67,
+      "id": 53,
       "heading": "Congrats You Finished",
       "name": " Well Done !!!!! ",
       "duration": 20,
