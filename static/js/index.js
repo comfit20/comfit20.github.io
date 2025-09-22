@@ -36,7 +36,7 @@
     function createWorkoutTimeList() {
         var time_list = []
 
-        var time_1 = getNextWeekday(1).set('h',18).set('m',2).set('s',0).set('ms',0);
+        var time_1 = getNextWeekday(1).set('h',1).set('m',2).set('s',0).set('ms',0);
         time_list.push(time_1); //this is Monday 7:00 am
         var time_2 = getNextWeekday(2).set('h',1).set('m',32).set('s',0).set('ms',0);
         time_list.push(time_2); // this is Monday 6:00 pm
@@ -117,7 +117,7 @@ function createYogaTimeList() {
 
                 var time_test = Object();
           time_test = {
-          time_Mon: getNextWeekday(1).set('h',18).set('m',2).set('s',0).set('ms',0),
+          time_Mon: getNextWeekday(1).set('h',1).set('m',2).set('s',0).set('ms',0),
           time_Mon2: getNextWeekday(2).set('h',1).set('m',32).set('s',0).set('ms',0),
           time_Tue7am: getNextWeekday(2).set('h',14).set('m',2).set('s',0).set('ms',0),
           // time_Tue: getNextWeekday(2).set('h',18).set('m',32).set('s',0).set('ms',0),
