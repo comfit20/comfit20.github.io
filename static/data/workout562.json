@@ -1,0 +1,686 @@
+{
+  "startTime": "now",
+  "elements": [
+    {
+      "id": 0,
+      "heading": "Wait for Group Session",
+      "name": "Session will start soon",
+      "duration": 12,
+      "gifpath": "static/movie/waitnextworkout.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 1,
+      "heading": "Workout Timing:",
+      "name": [
+        "workout style: regular",
+        "9 exercises",
+        "45 sec work",
+        "5 sec rest",
+        "3 rounds"
+      ],
+      "duration": 10,
+      "gifpath": "",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 2,
+      "heading": "Introduction to exercises",
+      "name": "Rowers (Barbell)",
+      "duration": 10,
+      "gifpath": "static/movie/BarbellRowers.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 3,
+      "heading": "Introduction to exercises",
+      "name": "Calf Rises",
+      "duration": 10,
+      "gifpath": "static/movie/CalfRises.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 4,
+      "heading": "Introduction to exercises",
+      "name": "3 Frog Squats & 6 Plank Jumps",
+      "duration": 10,
+      "gifpath": "static/movie/FrogSquatPlankJump.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 5,
+      "heading": "Introduction to exercises",
+      "name": "Squat Pulse Pyramide",
+      "duration": 10,
+      "gifpath": "static/movie/SquatPulsePyuramide.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 6,
+      "heading": "Introduction to exercises",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 10,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 7,
+      "heading": "Introduction to exercises",
+      "name": "Flutter Kicks (Scissor)",
+      "duration": 10,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 8,
+      "heading": "Introduction to exercises",
+      "name": "Single-Leg Glute Bridge",
+      "duration": 10,
+      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 9,
+      "heading": "Introduction to exercises",
+      "name": "Plank Side Twist (Dumbbell)",
+      "duration": 10,
+      "gifpath": "static/movie/DumbbellPlankSideTwist.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 10,
+      "heading": "Introduction to exercises",
+      "name": "Ladder (alt: Fast Feet)",
+      "duration": 10,
+      "gifpath": "static/movie/Ladder.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 11,
+      "heading": "Get Ready to Warm Up",
+      "name": " Let's go !!!!! ",
+      "duration": 10,
+      "gifpath": "static/movie/getready.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 12,
+      "heading": "Warm Up",
+      "name": "Jumping Jacks",
+      "duration": 25,
+      "gifpath": "static/movie/JumpingJack.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 13,
+      "heading": "Warm Up",
+      "name": "Single Leg Hip Circles",
+      "duration": 25,
+      "gifpath": "static/movie/HipCircles.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 14,
+      "heading": "Warm Up",
+      "name": "Squat Pulses",
+      "duration": 25,
+      "gifpath": "static/movie/SquatPulses.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 15,
+      "heading": "Warm Up",
+      "name": "Glute Bridge",
+      "duration": 25,
+      "gifpath": "static/movie/GluteBridge.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 16,
+      "heading": "Warm Up",
+      "name": "5 Shoulder Circles & Windmill",
+      "duration": 25,
+      "gifpath": "static/movie/ShouldrCircles.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 17,
+      "heading": "Warm Up",
+      "name": "Burpees",
+      "duration": 25,
+      "gifpath": "static/movie/Burpee.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 18,
+      "heading": "Get Ready to Work Out",
+      "name": " Let's go: Rowers (Barbell)",
+      "duration": 5,
+      "gifpath": "static/movie/GetReadyToWorkout.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 19,
+      "heading": "Work",
+      "name": "Rowers (Barbell)",
+      "duration": 45,
+      "gifpath": "static/movie/BarbellRowers.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 20,
+      "heading": "Rest",
+      "name": "Up Next: Calf Rises",
+      "duration": 5,
+      "gifpath": "static/movie/CalfRises.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 21,
+      "heading": "Work",
+      "name": "Calf Rises",
+      "duration": 45,
+      "gifpath": "static/movie/CalfRises.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 22,
+      "heading": "Rest",
+      "name": "Up Next: 3 Frog Squats & 6 Plank Jumps",
+      "duration": 5,
+      "gifpath": "static/movie/FrogSquatPlankJump.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 23,
+      "heading": "Work",
+      "name": "3 Frog Squats & 6 Plank Jumps",
+      "duration": 45,
+      "gifpath": "static/movie/FrogSquatPlankJump.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 24,
+      "heading": "Rest",
+      "name": "Up Next: Squat Pulse Pyramide",
+      "duration": 5,
+      "gifpath": "static/movie/SquatPulsePyuramide.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 25,
+      "heading": "Work",
+      "name": "Squat Pulse Pyramide",
+      "duration": 45,
+      "gifpath": "static/movie/SquatPulsePyuramide.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 26,
+      "heading": "Rest",
+      "name": "Up Next: Push Up To Lunge Pulses",
+      "duration": 5,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 27,
+      "heading": "Work",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 45,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 28,
+      "heading": "Rest",
+      "name": "Up Next: Flutter Kicks (Scissor)",
+      "duration": 5,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 29,
+      "heading": "Work",
+      "name": "Flutter Kicks (Scissor)",
+      "duration": 45,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 30,
+      "heading": "Rest",
+      "name": "Up Next: Single-Leg Glute Bridge",
+      "duration": 5,
+      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 31,
+      "heading": "Work",
+      "name": "Single-Leg Glute Bridge",
+      "duration": 45,
+      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 32,
+      "heading": "Rest",
+      "name": "Up Next: Plank Side Twist (Dumbbell)",
+      "duration": 5,
+      "gifpath": "static/movie/DumbbellPlankSideTwist.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 33,
+      "heading": "Work",
+      "name": "Plank Side Twist (Dumbbell)",
+      "duration": 45,
+      "gifpath": "static/movie/DumbbellPlankSideTwist.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 34,
+      "heading": "Rest",
+      "name": "Up Next: Ladder (alt: Fast Feet)",
+      "duration": 5,
+      "gifpath": "static/movie/Ladder.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 35,
+      "heading": "Work",
+      "name": "Ladder (alt: Fast Feet)",
+      "duration": 45,
+      "gifpath": "static/movie/Ladder.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 36,
+      "heading": "Water Break",
+      "name": "Next: Rowers (Barbell)",
+      "duration": 35,
+      "gifpath": "static/movie/WaterRefill.mp4",
+      "sound": "audiorest",
+      "indicator": "water_break"
+    },
+    {
+      "id": 37,
+      "heading": "Work",
+      "name": "Rowers (Barbell)",
+      "duration": 45,
+      "gifpath": "static/movie/BarbellRowers.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 38,
+      "heading": "Rest",
+      "name": "Up Next: Calf Rises",
+      "duration": 5,
+      "gifpath": "static/movie/CalfRises.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 39,
+      "heading": "Work",
+      "name": "Calf Rises",
+      "duration": 45,
+      "gifpath": "static/movie/CalfRises.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 40,
+      "heading": "Rest",
+      "name": "Up Next: 3 Frog Squats & 6 Plank Jumps",
+      "duration": 5,
+      "gifpath": "static/movie/FrogSquatPlankJump.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 41,
+      "heading": "Work",
+      "name": "3 Frog Squats & 6 Plank Jumps",
+      "duration": 45,
+      "gifpath": "static/movie/FrogSquatPlankJump.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 42,
+      "heading": "Rest",
+      "name": "Up Next: Squat Pulse Pyramide",
+      "duration": 5,
+      "gifpath": "static/movie/SquatPulsePyuramide.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 43,
+      "heading": "Work",
+      "name": "Squat Pulse Pyramide",
+      "duration": 45,
+      "gifpath": "static/movie/SquatPulsePyuramide.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 44,
+      "heading": "Rest",
+      "name": "Up Next: Push Up To Lunge Pulses",
+      "duration": 5,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 45,
+      "heading": "Work",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 45,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 46,
+      "heading": "Rest",
+      "name": "Up Next: Flutter Kicks (Scissor)",
+      "duration": 5,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 47,
+      "heading": "Work",
+      "name": "Flutter Kicks (Scissor)",
+      "duration": 45,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 48,
+      "heading": "Rest",
+      "name": "Up Next: Single-Leg Glute Bridge",
+      "duration": 5,
+      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 49,
+      "heading": "Work",
+      "name": "Single-Leg Glute Bridge",
+      "duration": 45,
+      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 50,
+      "heading": "Rest",
+      "name": "Up Next: Plank Side Twist (Dumbbell)",
+      "duration": 5,
+      "gifpath": "static/movie/DumbbellPlankSideTwist.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 51,
+      "heading": "Work",
+      "name": "Plank Side Twist (Dumbbell)",
+      "duration": 45,
+      "gifpath": "static/movie/DumbbellPlankSideTwist.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 52,
+      "heading": "Rest",
+      "name": "Up Next: Ladder (alt: Fast Feet)",
+      "duration": 5,
+      "gifpath": "static/movie/Ladder.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 53,
+      "heading": "Work",
+      "name": "Ladder (alt: Fast Feet)",
+      "duration": 45,
+      "gifpath": "static/movie/Ladder.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 54,
+      "heading": "Water Break",
+      "name": "Next: Rowers (Barbell)",
+      "duration": 35,
+      "gifpath": "static/movie/WaterRefill.mp4",
+      "sound": "audiorest",
+      "indicator": "water_break"
+    },
+    {
+      "id": 55,
+      "heading": "Work",
+      "name": "Rowers (Barbell)",
+      "duration": 45,
+      "gifpath": "static/movie/BarbellRowers.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 56,
+      "heading": "Rest",
+      "name": "Up Next: Calf Rises",
+      "duration": 5,
+      "gifpath": "static/movie/CalfRises.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 57,
+      "heading": "Work",
+      "name": "Calf Rises",
+      "duration": 45,
+      "gifpath": "static/movie/CalfRises.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 58,
+      "heading": "Rest",
+      "name": "Up Next: 3 Frog Squats & 6 Plank Jumps",
+      "duration": 5,
+      "gifpath": "static/movie/FrogSquatPlankJump.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 59,
+      "heading": "Work",
+      "name": "3 Frog Squats & 6 Plank Jumps",
+      "duration": 45,
+      "gifpath": "static/movie/FrogSquatPlankJump.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 60,
+      "heading": "Rest",
+      "name": "Up Next: Squat Pulse Pyramide",
+      "duration": 5,
+      "gifpath": "static/movie/SquatPulsePyuramide.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 61,
+      "heading": "Work",
+      "name": "Squat Pulse Pyramide",
+      "duration": 45,
+      "gifpath": "static/movie/SquatPulsePyuramide.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 62,
+      "heading": "Rest",
+      "name": "Up Next: Push Up To Lunge Pulses",
+      "duration": 5,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 63,
+      "heading": "Work",
+      "name": "Push Up To Lunge Pulses",
+      "duration": 45,
+      "gifpath": "static/movie/PushUpAndLunge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 64,
+      "heading": "Rest",
+      "name": "Up Next: Flutter Kicks (Scissor)",
+      "duration": 5,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 65,
+      "heading": "Work",
+      "name": "Flutter Kicks (Scissor)",
+      "duration": 45,
+      "gifpath": "static/movie/FlutterKicks.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 66,
+      "heading": "Rest",
+      "name": "Up Next: Single-Leg Glute Bridge",
+      "duration": 5,
+      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 67,
+      "heading": "Work",
+      "name": "Single-Leg Glute Bridge",
+      "duration": 45,
+      "gifpath": "static/movie/SingleLegGluteBridge.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 68,
+      "heading": "Rest",
+      "name": "Up Next: Plank Side Twist (Dumbbell)",
+      "duration": 5,
+      "gifpath": "static/movie/DumbbellPlankSideTwist.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 69,
+      "heading": "Work",
+      "name": "Plank Side Twist (Dumbbell)",
+      "duration": 45,
+      "gifpath": "static/movie/DumbbellPlankSideTwist.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 70,
+      "heading": "Rest",
+      "name": "Up Next: Ladder (alt: Fast Feet)",
+      "duration": 5,
+      "gifpath": "static/movie/Ladder.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 71,
+      "heading": "Work",
+      "name": "Ladder (alt: Fast Feet)",
+      "duration": 45,
+      "gifpath": "static/movie/Ladder.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 72,
+      "heading": "Rest",
+      "name": "Plank Challenge",
+      "duration": 5,
+      "gifpath": "static/movie/Plank.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 73,
+      "heading": "Plank Challenge",
+      "name": " Plank ",
+      "duration": 120,
+      "gifpath": "static/movie/Plank.mp4",
+      "sound": "audiowork",
+      "indicator": "hidden"
+    },
+    {
+      "id": 74,
+      "heading": "Congrats You Finished",
+      "name": " Well Done !!!!! ",
+      "duration": 20,
+      "gifpath": "static/movie/Applause1.mp4",
+      "sound": "audiofinish",
+      "indicator": "hidden"
+    }
+  ]
+}
