@@ -28,24 +28,6 @@
     {
       "id": 2,
       "heading": "Introduction to exercises",
-      "name": "Rowers (Barbell)",
-      "duration": 10,
-      "gifpath": "static/movie/BarbellRowers.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 3,
-      "heading": "Introduction to exercises",
-      "name": "Flutter Kicks (Scissor)",
-      "duration": 10,
-      "gifpath": "static/movie/FlutterKicks.mp4",
-      "sound": null,
-      "indicator": "hidden"
-    },
-    {
-      "id": 4,
-      "heading": "Introduction to exercises",
       "name": "Bench Press (Dumbbell)",
       "duration": 10,
       "gifpath": "static/movie/DumbbellBenchPress.mp4",
@@ -53,65 +35,83 @@
       "indicator": "hidden"
     },
     {
+      "id": 3,
+      "heading": "Introduction to exercises",
+      "name": "Pistol Squat",
+      "duration": 10,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
+      "id": 4,
+      "heading": "Introduction to exercises",
+      "name": "Deadlift (Barbell)",
+      "duration": 10,
+      "gifpath": "static/movie/BarbellDeadlift.mp4",
+      "sound": null,
+      "indicator": "hidden"
+    },
+    {
       "id": 5,
       "heading": "Introduction to exercises",
-      "name": "Ladder (alt: Fast Feet)",
+      "name": "Plank to Bear & Tap Knees",
       "duration": 10,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/PlankToBearKnees.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 6,
       "heading": "Introduction to exercises",
-      "name": "Bicep Curl (Dumbbell)",
+      "name": "Squat & Knee Rise To Overhead Reach",
       "duration": 10,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
+      "gifpath": "static/movie/SquatKneeRiseOverheadReach.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 7,
       "heading": "Introduction to exercises",
-      "name": "Seal Claps",
+      "name": "Tricep Extensions (Dumbbell)",
       "duration": 10,
-      "gifpath": "static/movie/SealClaps.mp4",
+      "gifpath": "static/movie/DumbbellTricepExtensions.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 8,
       "heading": "Introduction to exercises",
-      "name": "Glute Bridge (Dumbbell)",
+      "name": "Reverse Crunch",
       "duration": 10,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
+      "gifpath": "static/movie/ReverseCrunch.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 9,
       "heading": "Introduction to exercises",
-      "name": "Swimmer",
+      "name": "Forward Lunge & 2 Bicep Curl",
       "duration": 10,
-      "gifpath": "static/movie/Swimmer.mp4",
+      "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 10,
       "heading": "Introduction to exercises",
-      "name": "Clamp Shell",
+      "name": "High Knees",
       "duration": 10,
-      "gifpath": "static/movie/ClampShell.mp4",
+      "gifpath": "static/movie/HighKnee.mp4",
       "sound": null,
       "indicator": "hidden"
     },
     {
       "id": 11,
       "heading": "Introduction to exercises",
-      "name": "Tricep Extensions (Dumbbell)",
+      "name": "Diamond Push Up",
       "duration": 10,
-      "gifpath": "static/movie/DumbbellTricepExtensions.mp4",
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": null,
       "indicator": "hidden"
     },
@@ -181,7 +181,7 @@
     {
       "id": 19,
       "heading": "Get Ready to Work Out",
-      "name": " Let's go: Rowers (Barbell)",
+      "name": " Let's go: Bench Press (Dumbbell)",
       "duration": 5,
       "gifpath": "static/movie/GetReadyToWorkout.mp4",
       "sound": "audiorest",
@@ -190,42 +190,6 @@
     {
       "id": 20,
       "heading": "Work",
-      "name": "Rowers (Barbell)",
-      "duration": 40,
-      "gifpath": "static/movie/BarbellRowers.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 21,
-      "heading": "Rest",
-      "name": "Up Next: Flutter Kicks (Scissor)",
-      "duration": 10,
-      "gifpath": "static/movie/FlutterKicks.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 22,
-      "heading": "Work",
-      "name": "Flutter Kicks (Scissor)",
-      "duration": 40,
-      "gifpath": "static/movie/FlutterKicks.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 23,
-      "heading": "Rest",
-      "name": "Up Next: Bench Press (Dumbbell)",
-      "duration": 10,
-      "gifpath": "static/movie/DumbbellBenchPress.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 24,
-      "heading": "Work",
       "name": "Bench Press (Dumbbell)",
       "duration": 40,
       "gifpath": "static/movie/DumbbellBenchPress.mp4",
@@ -233,115 +197,79 @@
       "indicator": "exer_visible"
     },
     {
+      "id": 21,
+      "heading": "Rest",
+      "name": "Up Next: Pistol Squat",
+      "duration": 10,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 22,
+      "heading": "Work",
+      "name": "Pistol Squat",
+      "duration": 40,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 23,
+      "heading": "Rest",
+      "name": "Up Next: Deadlift (Barbell)",
+      "duration": 10,
+      "gifpath": "static/movie/BarbellDeadlift.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 24,
+      "heading": "Work",
+      "name": "Deadlift (Barbell)",
+      "duration": 40,
+      "gifpath": "static/movie/BarbellDeadlift.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
       "id": 25,
       "heading": "Rest",
-      "name": "Up Next: Ladder (alt: Fast Feet)",
+      "name": "Up Next: Plank to Bear & Tap Knees",
       "duration": 10,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/PlankToBearKnees.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 26,
       "heading": "Work",
-      "name": "Ladder (alt: Fast Feet)",
+      "name": "Plank to Bear & Tap Knees",
       "duration": 40,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/PlankToBearKnees.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 27,
       "heading": "Rest",
-      "name": "Up Next: Bicep Curl (Dumbbell)",
+      "name": "Up Next: Squat & Knee Rise To Overhead Reach",
       "duration": 10,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
+      "gifpath": "static/movie/SquatKneeRiseOverheadReach.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 28,
       "heading": "Work",
-      "name": "Bicep Curl (Dumbbell)",
+      "name": "Squat & Knee Rise To Overhead Reach",
       "duration": 40,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
+      "gifpath": "static/movie/SquatKneeRiseOverheadReach.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 29,
-      "heading": "Rest",
-      "name": "Up Next: Seal Claps",
-      "duration": 10,
-      "gifpath": "static/movie/SealClaps.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 30,
-      "heading": "Work",
-      "name": "Seal Claps",
-      "duration": 40,
-      "gifpath": "static/movie/SealClaps.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 31,
-      "heading": "Rest",
-      "name": "Up Next: Glute Bridge (Dumbbell)",
-      "duration": 10,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 32,
-      "heading": "Work",
-      "name": "Glute Bridge (Dumbbell)",
-      "duration": 40,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 33,
-      "heading": "Rest",
-      "name": "Up Next: Swimmer",
-      "duration": 10,
-      "gifpath": "static/movie/Swimmer.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 34,
-      "heading": "Work",
-      "name": "Swimmer",
-      "duration": 40,
-      "gifpath": "static/movie/Swimmer.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 35,
-      "heading": "Rest",
-      "name": "Up Next: Clamp Shell",
-      "duration": 10,
-      "gifpath": "static/movie/ClampShell.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 36,
-      "heading": "Work",
-      "name": "Clamp Shell",
-      "duration": 40,
-      "gifpath": "static/movie/ClampShell.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 37,
       "heading": "Rest",
       "name": "Up Next: Tricep Extensions (Dumbbell)",
       "duration": 10,
@@ -350,7 +278,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 38,
+      "id": 30,
       "heading": "Work",
       "name": "Tricep Extensions (Dumbbell)",
       "duration": 40,
@@ -359,9 +287,81 @@
       "indicator": "exer_visible"
     },
     {
+      "id": 31,
+      "heading": "Rest",
+      "name": "Up Next: Reverse Crunch",
+      "duration": 10,
+      "gifpath": "static/movie/ReverseCrunch.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 32,
+      "heading": "Work",
+      "name": "Reverse Crunch",
+      "duration": 40,
+      "gifpath": "static/movie/ReverseCrunch.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 33,
+      "heading": "Rest",
+      "name": "Up Next: Forward Lunge & 2 Bicep Curl",
+      "duration": 10,
+      "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 34,
+      "heading": "Work",
+      "name": "Forward Lunge & 2 Bicep Curl",
+      "duration": 40,
+      "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 35,
+      "heading": "Rest",
+      "name": "Up Next: High Knees",
+      "duration": 10,
+      "gifpath": "static/movie/HighKnee.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 36,
+      "heading": "Work",
+      "name": "High Knees",
+      "duration": 40,
+      "gifpath": "static/movie/HighKnee.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 37,
+      "heading": "Rest",
+      "name": "Up Next: Diamond Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 38,
+      "heading": "Work",
+      "name": "Diamond Push Up",
+      "duration": 40,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
       "id": 39,
       "heading": "Water Break",
-      "name": "Next: Rowers (Barbell)",
+      "name": "Next: Bench Press (Dumbbell)",
       "duration": 35,
       "gifpath": "static/movie/WaterRefill.mp4",
       "sound": "audiorest",
@@ -370,42 +370,6 @@
     {
       "id": 40,
       "heading": "Work",
-      "name": "Rowers (Barbell)",
-      "duration": 40,
-      "gifpath": "static/movie/BarbellRowers.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 41,
-      "heading": "Rest",
-      "name": "Up Next: Flutter Kicks (Scissor)",
-      "duration": 10,
-      "gifpath": "static/movie/FlutterKicks.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 42,
-      "heading": "Work",
-      "name": "Flutter Kicks (Scissor)",
-      "duration": 40,
-      "gifpath": "static/movie/FlutterKicks.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 43,
-      "heading": "Rest",
-      "name": "Up Next: Bench Press (Dumbbell)",
-      "duration": 10,
-      "gifpath": "static/movie/DumbbellBenchPress.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 44,
-      "heading": "Work",
       "name": "Bench Press (Dumbbell)",
       "duration": 40,
       "gifpath": "static/movie/DumbbellBenchPress.mp4",
@@ -413,115 +377,79 @@
       "indicator": "exer_visible"
     },
     {
+      "id": 41,
+      "heading": "Rest",
+      "name": "Up Next: Pistol Squat",
+      "duration": 10,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 42,
+      "heading": "Work",
+      "name": "Pistol Squat",
+      "duration": 40,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 43,
+      "heading": "Rest",
+      "name": "Up Next: Deadlift (Barbell)",
+      "duration": 10,
+      "gifpath": "static/movie/BarbellDeadlift.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 44,
+      "heading": "Work",
+      "name": "Deadlift (Barbell)",
+      "duration": 40,
+      "gifpath": "static/movie/BarbellDeadlift.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
       "id": 45,
       "heading": "Rest",
-      "name": "Up Next: Ladder (alt: Fast Feet)",
+      "name": "Up Next: Plank to Bear & Tap Knees",
       "duration": 10,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/PlankToBearKnees.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 46,
       "heading": "Work",
-      "name": "Ladder (alt: Fast Feet)",
+      "name": "Plank to Bear & Tap Knees",
       "duration": 40,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/PlankToBearKnees.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 47,
       "heading": "Rest",
-      "name": "Up Next: Bicep Curl (Dumbbell)",
+      "name": "Up Next: Squat & Knee Rise To Overhead Reach",
       "duration": 10,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
+      "gifpath": "static/movie/SquatKneeRiseOverheadReach.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 48,
       "heading": "Work",
-      "name": "Bicep Curl (Dumbbell)",
+      "name": "Squat & Knee Rise To Overhead Reach",
       "duration": 40,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
+      "gifpath": "static/movie/SquatKneeRiseOverheadReach.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 49,
-      "heading": "Rest",
-      "name": "Up Next: Seal Claps",
-      "duration": 10,
-      "gifpath": "static/movie/SealClaps.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 50,
-      "heading": "Work",
-      "name": "Seal Claps",
-      "duration": 40,
-      "gifpath": "static/movie/SealClaps.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 51,
-      "heading": "Rest",
-      "name": "Up Next: Glute Bridge (Dumbbell)",
-      "duration": 10,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 52,
-      "heading": "Work",
-      "name": "Glute Bridge (Dumbbell)",
-      "duration": 40,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 53,
-      "heading": "Rest",
-      "name": "Up Next: Swimmer",
-      "duration": 10,
-      "gifpath": "static/movie/Swimmer.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 54,
-      "heading": "Work",
-      "name": "Swimmer",
-      "duration": 40,
-      "gifpath": "static/movie/Swimmer.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 55,
-      "heading": "Rest",
-      "name": "Up Next: Clamp Shell",
-      "duration": 10,
-      "gifpath": "static/movie/ClampShell.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 56,
-      "heading": "Work",
-      "name": "Clamp Shell",
-      "duration": 40,
-      "gifpath": "static/movie/ClampShell.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 57,
       "heading": "Rest",
       "name": "Up Next: Tricep Extensions (Dumbbell)",
       "duration": 10,
@@ -530,7 +458,7 @@
       "indicator": "hidden"
     },
     {
-      "id": 58,
+      "id": 50,
       "heading": "Work",
       "name": "Tricep Extensions (Dumbbell)",
       "duration": 40,
@@ -539,9 +467,81 @@
       "indicator": "exer_visible"
     },
     {
+      "id": 51,
+      "heading": "Rest",
+      "name": "Up Next: Reverse Crunch",
+      "duration": 10,
+      "gifpath": "static/movie/ReverseCrunch.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 52,
+      "heading": "Work",
+      "name": "Reverse Crunch",
+      "duration": 40,
+      "gifpath": "static/movie/ReverseCrunch.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 53,
+      "heading": "Rest",
+      "name": "Up Next: Forward Lunge & 2 Bicep Curl",
+      "duration": 10,
+      "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 54,
+      "heading": "Work",
+      "name": "Forward Lunge & 2 Bicep Curl",
+      "duration": 40,
+      "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 55,
+      "heading": "Rest",
+      "name": "Up Next: High Knees",
+      "duration": 10,
+      "gifpath": "static/movie/HighKnee.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 56,
+      "heading": "Work",
+      "name": "High Knees",
+      "duration": 40,
+      "gifpath": "static/movie/HighKnee.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 57,
+      "heading": "Rest",
+      "name": "Up Next: Diamond Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 58,
+      "heading": "Work",
+      "name": "Diamond Push Up",
+      "duration": 40,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
       "id": 59,
       "heading": "Water Break",
-      "name": "Next: Rowers (Barbell)",
+      "name": "Next: Bench Press (Dumbbell)",
       "duration": 35,
       "gifpath": "static/movie/WaterRefill.mp4",
       "sound": "audiorest",
@@ -550,42 +550,6 @@
     {
       "id": 60,
       "heading": "Work",
-      "name": "Rowers (Barbell)",
-      "duration": 40,
-      "gifpath": "static/movie/BarbellRowers.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 61,
-      "heading": "Rest",
-      "name": "Up Next: Flutter Kicks (Scissor)",
-      "duration": 10,
-      "gifpath": "static/movie/FlutterKicks.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 62,
-      "heading": "Work",
-      "name": "Flutter Kicks (Scissor)",
-      "duration": 40,
-      "gifpath": "static/movie/FlutterKicks.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 63,
-      "heading": "Rest",
-      "name": "Up Next: Bench Press (Dumbbell)",
-      "duration": 10,
-      "gifpath": "static/movie/DumbbellBenchPress.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 64,
-      "heading": "Work",
       "name": "Bench Press (Dumbbell)",
       "duration": 40,
       "gifpath": "static/movie/DumbbellBenchPress.mp4",
@@ -593,115 +557,79 @@
       "indicator": "exer_visible"
     },
     {
+      "id": 61,
+      "heading": "Rest",
+      "name": "Up Next: Pistol Squat",
+      "duration": 10,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 62,
+      "heading": "Work",
+      "name": "Pistol Squat",
+      "duration": 40,
+      "gifpath": "static/movie/PistolSquat.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 63,
+      "heading": "Rest",
+      "name": "Up Next: Deadlift (Barbell)",
+      "duration": 10,
+      "gifpath": "static/movie/BarbellDeadlift.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 64,
+      "heading": "Work",
+      "name": "Deadlift (Barbell)",
+      "duration": 40,
+      "gifpath": "static/movie/BarbellDeadlift.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
       "id": 65,
       "heading": "Rest",
-      "name": "Up Next: Ladder (alt: Fast Feet)",
+      "name": "Up Next: Plank to Bear & Tap Knees",
       "duration": 10,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/PlankToBearKnees.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 66,
       "heading": "Work",
-      "name": "Ladder (alt: Fast Feet)",
+      "name": "Plank to Bear & Tap Knees",
       "duration": 40,
-      "gifpath": "static/movie/Ladder.mp4",
+      "gifpath": "static/movie/PlankToBearKnees.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 67,
       "heading": "Rest",
-      "name": "Up Next: Bicep Curl (Dumbbell)",
+      "name": "Up Next: Squat & Knee Rise To Overhead Reach",
       "duration": 10,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
+      "gifpath": "static/movie/SquatKneeRiseOverheadReach.mp4",
       "sound": "audiorest",
       "indicator": "hidden"
     },
     {
       "id": 68,
       "heading": "Work",
-      "name": "Bicep Curl (Dumbbell)",
+      "name": "Squat & Knee Rise To Overhead Reach",
       "duration": 40,
-      "gifpath": "static/movie/DumbbellBicepCurl.mp4",
+      "gifpath": "static/movie/SquatKneeRiseOverheadReach.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
     {
       "id": 69,
-      "heading": "Rest",
-      "name": "Up Next: Seal Claps",
-      "duration": 10,
-      "gifpath": "static/movie/SealClaps.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 70,
-      "heading": "Work",
-      "name": "Seal Claps",
-      "duration": 40,
-      "gifpath": "static/movie/SealClaps.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 71,
-      "heading": "Rest",
-      "name": "Up Next: Glute Bridge (Dumbbell)",
-      "duration": 10,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 72,
-      "heading": "Work",
-      "name": "Glute Bridge (Dumbbell)",
-      "duration": 40,
-      "gifpath": "static/movie/DumbbellGluteBridge.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 73,
-      "heading": "Rest",
-      "name": "Up Next: Swimmer",
-      "duration": 10,
-      "gifpath": "static/movie/Swimmer.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 74,
-      "heading": "Work",
-      "name": "Swimmer",
-      "duration": 40,
-      "gifpath": "static/movie/Swimmer.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 75,
-      "heading": "Rest",
-      "name": "Up Next: Clamp Shell",
-      "duration": 10,
-      "gifpath": "static/movie/ClampShell.mp4",
-      "sound": "audiorest",
-      "indicator": "hidden"
-    },
-    {
-      "id": 76,
-      "heading": "Work",
-      "name": "Clamp Shell",
-      "duration": 40,
-      "gifpath": "static/movie/ClampShell.mp4",
-      "sound": "audiowork",
-      "indicator": "exer_visible"
-    },
-    {
-      "id": 77,
       "heading": "Rest",
       "name": "Up Next: Tricep Extensions (Dumbbell)",
       "duration": 10,
@@ -710,11 +638,83 @@
       "indicator": "hidden"
     },
     {
-      "id": 78,
+      "id": 70,
       "heading": "Work",
       "name": "Tricep Extensions (Dumbbell)",
       "duration": 40,
       "gifpath": "static/movie/DumbbellTricepExtensions.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 71,
+      "heading": "Rest",
+      "name": "Up Next: Reverse Crunch",
+      "duration": 10,
+      "gifpath": "static/movie/ReverseCrunch.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 72,
+      "heading": "Work",
+      "name": "Reverse Crunch",
+      "duration": 40,
+      "gifpath": "static/movie/ReverseCrunch.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 73,
+      "heading": "Rest",
+      "name": "Up Next: Forward Lunge & 2 Bicep Curl",
+      "duration": 10,
+      "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 74,
+      "heading": "Work",
+      "name": "Forward Lunge & 2 Bicep Curl",
+      "duration": 40,
+      "gifpath": "static/movie/ForwardLungeAndbicepCurl.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 75,
+      "heading": "Rest",
+      "name": "Up Next: High Knees",
+      "duration": 10,
+      "gifpath": "static/movie/HighKnee.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 76,
+      "heading": "Work",
+      "name": "High Knees",
+      "duration": 40,
+      "gifpath": "static/movie/HighKnee.mp4",
+      "sound": "audiowork",
+      "indicator": "exer_visible"
+    },
+    {
+      "id": 77,
+      "heading": "Rest",
+      "name": "Up Next: Diamond Push Up",
+      "duration": 10,
+      "gifpath": "static/movie/DiamondPushup.mp4",
+      "sound": "audiorest",
+      "indicator": "hidden"
+    },
+    {
+      "id": 78,
+      "heading": "Work",
+      "name": "Diamond Push Up",
+      "duration": 40,
+      "gifpath": "static/movie/DiamondPushup.mp4",
       "sound": "audiowork",
       "indicator": "exer_visible"
     },
