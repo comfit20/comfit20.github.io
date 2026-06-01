@@ -66,7 +66,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
                 "heading": "Introduction to exercises",
                 "name": exer_elem['name'],
                 // exer_elem['name'],
-                "duration": 10,
+                "duration": 3,
                 "gifpath": exer_elem['gifpath'],
                 "sound": null,
                 "indicator": "hidden"
