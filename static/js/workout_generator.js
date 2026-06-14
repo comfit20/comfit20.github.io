@@ -81,7 +81,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
             "id": n,
             "heading": "Get Ready to Warm Up",
             "name": " Let's go !!!!! ",
-            "duration": 10,
+            "duration": 3,
             "gifpath": "static/movie/getready.mp4",
             "sound": null,
             "indicator": "hidden"
@@ -310,7 +310,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
                 "id": n,
                 "heading": "Introduction to exercises",
                 "name": exer_elem['name'],
-                "duration": 10,
+                "duration": 3,
                 "gifpath": exer_elem['gifpath'],
                 "sound": null,
                 "indicator": "hidden"
@@ -537,7 +537,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
             "id": n,
             "heading": "Introduction to exercises",
             "name": exer_elem['name'],
-            "duration": 10,
+            "duration": 3,
             "gifpath": exer_elem['gifpath'],
             "sound": null,
             "indicator": "hidden"
@@ -763,7 +763,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
             "heading": "Introduction to exercises",
             "name": exer_elem['name'],
             // exer_elem['name'],
-            "duration": 10,
+            "duration": 3,
             "gifpath": exer_elem['gifpath'],
             "sound": null,
             "indicator": "hidden"
@@ -984,7 +984,7 @@ function generateWorkoutJson(duration_work, rounds, exerjson, exercises, duratio
             "heading": "Introduction to exercises",
             "name": exer_elem['name'],
             // exer_elem['name'],
-            "duration": 10,
+            "duration": 3,
             "gifpath": exer_elem['gifpath'],
             "sound": null,
             "indicator": "hidden"
@@ -1175,7 +1175,7 @@ else if (workoutstyle == 6) {
             "heading": "Introduction to exercises",
             "name": exer_elem['name'],
             // exer_elem['name'],
-            "duration": 10,
+            "duration": 3,
             "gifpath": exer_elem['gifpath'],
             "sound": null,
             "indicator": "hidden"
